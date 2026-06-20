@@ -1,0 +1,339 @@
+# Analysis of Security Vulnerabilities in S-100-Based Maritime Navigation Software
+
+**Authors:** Hoyeon Cho, Changui Lee, and Seojeong Lee  
+**Journal:** Sensors (2026), 26, 1246  
+**DOI:** https://doi.org/10.3390/s26041246  
+**Date Read:** 2026-06-20
+
+## Abstract in One Paragraph
+
+This paper presents one of the first empirical cybersecurity evaluations of S-100-based maritime navigation software, focusing on the security implications of Lua scripting within next-generation Electronic Chart Display and Information Systems (ECDIS). Using OpenS100 as a reference implementation, the authors compare four automated Static Application Security Testing (SAST) tools against expert manual review. Although automated tools detected 1,530 unique defects, they missed 83% of expert-identified vulnerabilities. The most critical issue was an unrestricted Lua interpreter that enabled Remote Code Execution (RCE) through malicious Portrayal Catalogues (PCs), demonstrating that current S-100 specifications lack essential security requirements for script execution environments.
+
+---
+
+## Research Problem
+
+The S-100 standard mandates Lua 5.1 for chart portrayal but does not define:
+
+- Script sandboxing requirements
+- Library restrictions
+- Capability controls
+- Secure execution boundaries
+
+As a result, standards-compliant implementations may introduce severe vulnerabilities even when they fully conform to functional requirements.
+
+---
+
+## Research Questions
+
+1. How effective are general-purpose SAST tools at detecting vulnerabilities in S-100 software?
+2. What security risks emerge from the C++–Lua trust boundary?
+3. Are identified vulnerabilities implementation bugs or consequences of specification-level design gaps?
+4. How should future S-100 security requirements evolve before mandatory adoption in 2029?
+
+---
+
+## Methodology
+
+### Phase 1 — Environment Setup
+
+- Target: OpenS100 (commit `f13cd82`)
+- Codebase: 1,291 files, 101,129 LOC
+- Review scope: 842 files, 60,680 LOC
+- Platform: Windows 11 Education 25H2
+- IDE: Visual Studio 2022
+
+### Phase 2 — Automated Analysis
+
+Tools used:
+
+- FlawFinder
+- CppCheck
+- MSVC Code Analysis
+- GitHub CodeQL
+
+Results:
+
+- Raw findings: 6,052
+- Security-relevant findings after filtering: 1,791
+- Unique defect locations: 1,530
+
+Severity distribution:
+
+- High: 49
+- Medium: 735
+- Low: 746
+
+### Phase 3 — Expert Manual Review
+
+Focus areas:
+
+- C++–Lua interface security
+- Trust boundary analysis
+- Sandbox configuration
+- Supply-chain attack scenarios
+- PoC exploit development
+
+---
+
+## What Is New in This Paper
+
+- First empirical security assessment of S-100 portrayal engines.
+- First quantitative comparison between SAST tools and expert review for maritime navigation software.
+- Demonstrates that 83% of critical vulnerabilities remain undetected by conventional tooling.
+- Identifies a specification-level vulnerability rather than a simple coding defect.
+- Provides a working proof-of-concept for RCE through malicious Portrayal Catalogues.
+- Shows that functional safety certification alone is insufficient for maritime cybersecurity.
+- Proposes concrete mitigation strategies for future S-100 revisions.
+
+---
+
+## Key Findings
+
+### Detection Gap
+
+| Metric | Value |
+|---|---:|
+| Expert-discovered vulnerabilities | 23 |
+| Vulnerabilities missed by tools | 19 |
+| Miss rate | 83% |
+| Exact tool/manual matches | 1 |
+| Partial matches | 3 |
+
+### Critical Vulnerabilities
+
+| Vulnerability | CWE | CVSS | Impact |
+|---|---|---:|---|
+| Unrestricted Lua Interpreter | CWE-829 / CWE-749 | 9.3 | RCE |
+| Integer Overflow | CWE-190 | 7.8 | DoS |
+| Buffer Overflow | CWE-120 | 7.8 | DoS |
+| Integer Truncation | CWE-681 | 4.3 | Parsing errors |
+
+---
+
+## Why Existing SAST Tools Failed
+
+The paper identifies four root causes:
+
+1. **No maritime domain knowledge**
+2. **Inability to analyze C++–Lua interactions**
+3. **Lack of supply-chain threat modeling**
+4. **No visibility into runtime interpreter configuration**
+
+Examples of missed vulnerabilities:
+
+- Lua sandbox failures
+- Path traversal
+- SQL injection
+- Cross-file trust boundary violations
+- Dynamic script execution risks
+
+---
+
+## Case Study: Unrestricted Lua Interpreter
+
+### Root Cause
+
+OpenS100 initializes Lua using:
+
+```cpp
+lua_State* L = luaL_newstate();
+luaL_openlibs(L);
+```
+
+This exposes dangerous libraries:
+
+- `os`
+- `io`
+- `debug`
+- `package`
+- `loadfile`
+- `loadstring`
+
+As a result, malicious PCs can execute arbitrary operating system commands.
+
+### Attack Chain
+
+1. Attacker modifies a Portrayal Catalogue.
+2. Compromised catalogue is distributed through legitimate channels.
+3. User loads chart data.
+4. Lua script executes automatically.
+5. Arbitrary code runs on the host system.
+
+### Why This Matters
+
+- Exploitation requires no memory corruption.
+- DEP and ASLR provide little protection.
+- Malicious activity is invisible to navigators.
+- Charts continue rendering normally.
+- Centralized distribution creates supply-chain risk.
+
+---
+
+## Practical Examples for Researchers
+
+### Example 1 — Supply-Chain Compromise
+
+A compromised hydrographic office distributes a signed but malicious Portrayal Catalogue.
+
+Research directions:
+
+- Secure update pipelines
+- Provenance verification
+- Reproducible catalogue builds
+
+### Example 2 — Cross-Language Analysis
+
+Critical vulnerabilities emerged at the C++–Lua boundary.
+
+Research directions:
+
+- Cross-language taint analysis
+- Hybrid static/dynamic analysis
+- Semantic modeling across runtimes
+
+### Example 3 — Safety–Security Convergence
+
+Chart manipulation can lead directly to navigation hazards.
+
+Research directions:
+
+- Joint safety-security assurance
+- Maritime threat modeling
+- Functional safety extensions
+
+---
+
+## Recommended Mitigations
+
+### Immediate Controls
+
+- Disable dangerous Lua libraries
+- Enforce interpreter sandboxing
+- Restrict native library loading
+- Implement capability whitelists
+- Validate Portrayal Catalogue integrity
+
+### Standards-Level Changes
+
+The authors recommend that IHO:
+
+- Add mandatory sandbox requirements to Part 13
+- Require security controls in Part 9a
+- Make PC signatures mandatory
+- Define secure callback interfaces
+- Include security requirements in certification programs
+
+---
+
+## Research Implications
+
+This work demonstrates that:
+
+- Standards can introduce vulnerabilities even when implementations are correct.
+- Domain-specific security expertise remains essential.
+- General-purpose SAST tools require maritime extensions.
+- Security validation must complement functional certification.
+- Future maritime software assurance should integrate safety, security, and supply-chain analysis.
+
+---
+
+## Key Takeaways
+
+1. S-100 introduces a new attack surface through executable portrayal logic.
+2. Authenticity of chart data does not guarantee safety of chart scripts.
+3. Manual review remains essential for safety-critical systems.
+4. Cross-language interfaces are a major source of hidden vulnerabilities.
+5. Security requirements must be embedded directly into international standards.
+
+---
+
+## References
+
+1.
+International Hydrographic Organization. IHO S-100 Universal Hydrographic Data Model, Edition 5.2.1. 2025. Available online:
+http://www.iho.int (accessed on 27 December 2025).
+https://doi.org/10.3390/s26041246Sensors 2026, 26, 1246
+28 of 29
+International Electrotechnical Commission. IEC 63173-2:2022 Maritime Navigation and Radiocommunication Equipment and Systems—
+Data Interfaces—Part 2: Secure Communication Between Ship and Shore (SECOM); IEC: Geneva, Switzerland, 2022.
+3. International Hydrographic Organization. S-100 Part 15—Data Protection Scheme. In IHO S-100 Universal Hydrographic Data Model,
+Edition 5.2.1; IHO: Monaco, Monaco, 2025; pp. 687–722.
+4. International Hydrographic Organization. S-100 Part 9a—Portrayal (Lua). In IHO S-100 Universal Hydrographic Data Model, Edition
+5.2.1; IHO: Monaco, Monaco, 2025; pp. 413–444.
+5. International Hydrographic Organization. S-100 Part 13—Scripting. In IHO S-100 Universal Hydrographic Data Model, Edition 5.2.1;
+IHO: Monaco, Monaco, 2025; pp. 623–658.
+6. MITRE Corporation. Common Weakness Enumeration (CWE). Available online: https://cwe.mitre.org/about/new_to_cwe.html
+(accessed on 27 December 2025).
+7. Park, J.; Shin, J.; Choi, B. Detection of Vulnerabilities by Incorrect Use of Variable Using Machine Learning. Electronics 2023, 12,
+1197. https://doi.org/10.3390/electronics12051197.
+8. International Maritime Organization (IMO). Resolution MSC.428(98)—Maritime Cyber Risk Management in Safety Management
+Systems; IMO: London, UK, 2017.
+9. Li, M.; Zhou, J.; Chattopadhyay, S.; Goh, M. Maritime Cybersecurity: A Comprehensive Review. arXiv 2024, arXiv:2409.11417.
+10. Longo, G.; Russo, E.; Armando, A.; Merlo, A. Attacking (and defending) the maritime radar system. IEEE Trans. Inf. Forensics
+Secur. 2023, 18, 3575–3589. https://doi.org/10.1109/TIFS.2023.3282132.
+11. Svilicic, B. Cyber-Security of Shipboard Navigational Computer-Based Systems. Int. J. Transp. Syst. 2024, 9, 1–3.
+12. Jo, Y.; Choi, O.; You, J.; Cha, Y.; Lee, D.H. Cyberattack Models for Ship Equipment Based on the MITRE ATT&CK Framework.
+Sensors 2022, 22, 1860. https://doi.org/10.3390/s22051860.
+13. National Vulnerability Database. CVE-2025-49844. Available online: https://nvd.nist.gov/vuln/detail/CVE-2025-49844 (accessed
+on 27 December 2025).
+14. National Vulnerability Database. CVE-2022-0543. Available online: https://nvd.nist.gov/vuln/detail/CVE-2022-0543 (accessed
+on 27 December 2025).
+15. Spravil, J.; Hemminghaus, C.; von Rechenberg, M.; Padilla, E.; Bauer, J. Detecting maritime GPS spoofing attacks based on NMEA
+sentence integrity monitoring. J. Mar. Sci. Eng. 2023, 11, 928. https://doi.org/10.3390/jmse11050928.
+16. Adámek, P. Security of the Lua Sandbox. Bachelor’s Thesis, Czech Technical University in Prague, Prague, Czech Republic, 2022.
+17. Strohmeier, M. Security in Next Generation Air Traffic Communication Networks. Ph.D. Thesis, University of Oxford, Oxford,
+UK, 2016.
+18. Schmittner, C.; Ma, Z.; Schoitsch, E.; Gruber, T. A Case Study of FMVEA and CHASSIS as Safety and Security Co-Analysis Method
+for Automotive Cyber-physical Systems. In Proceedings of the 1st ACM Workshop on Cyber-Physical System Security (CPSS ’15),
+Singapore, 14 April 2015; ACM: New York, NY, USA, 2015; pp. 69–80. https://doi.org/10.1145/2732198.2732204.
+19. Ohm, M.; Plate, H.; Sykosch, A.; Meier, M. Backstabber’s Knife Collection: A Review of Open Source Software Supply Chain
+Attacks. In Proceedings of the 17th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA
+2020), Lisbon, Portugal, 24–26 June 2020; Springer: Cham, Switzerland, 2020; pp. 23–43. https://doi.org/10.1007/978-3-030-52683-
+2_2.
+20. Raymaker, A.; Kumar, A.; Wong, M.Y.; Pickren, R.; Chhotaray, A.; Li, F.; Zonouz, S.; Beyah, R. A Sea of Cyber Threats: Mar-
+itime Cybersecurity from the Perspective of Mariners. In Proceedings of the 2025 ACM SIGSAC Conference on Computer and
+Communications Security (CCS ’25), Salt Lake City, UT, USA, 13–17 October 2025; ACM: New York, NY, USA, 2025; pp. 588–602.
+https://doi.org/10.1145/3719027.3744816.
+21. Lipp, S.; Banescu, S.; Pretschner, A. An empirical study on the effectiveness of static C code analyzers for vulnerability detection.
+In Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2022), Virtual, 18–22 July
+2022; ACM: New York, NY, USA, 2022; pp. 544–555. https://doi.org/10.1145/3533767.3534380.
+22. Charoenwet, W.; Thongtanunam, P.; Pham, V.-T.; Treude, C. An Empirical Study of Static Analysis Tools for Secure Code Review.
+In Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2024), Vienna, Austria,
+16–20 September 2024; ACM: New York, NY, USA, 2024; pp. 691–703. https://doi.org/10.1145/3650212.3680313.
+23. Li, K.; Chen, S.; Fan, L.; Feng, R.; Liu, H.; Liu, C.; Liu, Y.; Chen, Y. Comparison and Evaluation on Static Application Security
+Testing (SAST) Tools for Java. In Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the
+Foundations of Software Engineering (ESEC/FSE 2023), San Francisco, CA, USA, 3–9 December 2023; ACM: New York, NY, USA, 2023;
+pp. 921–933. https://doi.org/10.1145/3611643.3616262.
+24. Xiang, J.; Fu, L.; Ye, T.; Liu, P.; Le, H.; Zhu, L.; Wang, W. LuaTaint: A Static Analysis System for Web Configuration Interface
+Vulnerability of Internet of Things Devices. IEEE Internet Things J. 2025, 12, 5970–5984. https://doi.org/10.1109/JIOT.2024.3490661.
+25. Costin, A. Lua Code: Security Overview and Practical Approaches to Static Analysis. In Proceedings of the IEEE Se-
+curity and Privacy Workshops (SPW), San Jose, CA, USA, 25 May 2017; IEEE: Piscataway, NJ, USA, 2017; pp. 30–38.
+https://doi.org/10.1109/SPW.2017.38
+2.
+https://doi.org/10.3390/s26041246Sensors 2026, 26, 1246
+29 of 29
+26. Qian, Z.; Zhong, F.; Hu, Q.; Jiang, Y.; Huang, J.; Ren, M.; Yu, J. Software Vulnerability Analysis Across Programming Language and
+Program Representation Landscapes: A Survey. arXiv 2025, arXiv:2503.20244.
+27. Li, Z.; Dutta, S.; Naik, M. IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities. arXiv 2025, arXiv:2405.17238.
+28. Lin, S. LLM-Driven Adaptive Source-Sink Identification and False Positive Mitigation for Static Analysis (AdaTaint). arXiv 2025,
+arXiv:2511.04023.
+29. Hu, J.; Jin, X.; Zeng, Y.; Liu, Y.; Li, Y.; Du, D.; Xie, K.; Zhu, H. QLPro: Automated Code Vulnerability Discovery via LLM and Static
+Code Analysis Integration. arXiv 2025, arXiv:2506.23644.
+30. Wang, C.; Li, Z.; Dutta, S.; Naik, M. QLCoder: A Query Synthesizer For Static Analysis of Security Vulnerabilities. arXiv 2025,
+arXiv:2511.08462.
+31. Bennett, G.; Hall, T.; Winter, E.; Counsell, S. Semgrep*: Improving the Limited Performance of Static Application Security Testing
+(SAST) Tools. In Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering (EASE ’24),
+Salerno, Italy, 18–21 June 2024; ACM: New York, NY, USA, 2024; pp. 614–623. https://doi.org/10.1145/3661167.3661262.
+32. Vaarandi, R.; Tsiopoulos, L.; Visky, G.; Rehman, M.U.; Bahşi, H. A Systematic Literature Review of Cyber Security Monitoring in
+Maritime. IEEE Access 2025, 13, 85307–85329. https://doi.org/10.1109/ACCESS.2025.3567385.
+33. S-100 Expert Team. OpenS100. Available online: https://github.com/S-100ExpertTeam (accessed on 27 December 2025).
+34. Longo, G.; Orlich, A.; Musante, S.; Merlo, A.; Russo, E. MaCySTe: A virtual testbed for maritime cybersecurity. SoftwareX 2023, 23,
+101426. https://doi.org/10.1016/j.softx.2023.101426.
+35. International Maritime Organization (IMO). SOLAS—Consolidated Edition, 2024, Chapter V—Regulation 19—Carriage Requirements
+For Shipborne Navigational Systems and Equipment; IMO: London, UK, 2024.
+36. International Hydrographic Organization. S-100 Infrastructure Centre Establishment Project Team (ICE PT) Report to HSSC-16,
+HSSC16-04.5A; IHO: Monaco, Monaco, 2024.
+37. International Association of Classification Societies. Unified Requirement E26: Cyber Resilience of Ships; IACS: London, UK, 2022.
+38. International Association of Classification Societies. Unified Requirement E27: Cyber Resilience of On-board Systems and Equipment;
+IACS: London, UK, 2022.

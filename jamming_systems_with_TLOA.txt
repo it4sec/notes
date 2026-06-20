@@ -1,0 +1,523 @@
+# TLOA: A Power-Adaptive Algorithm Based on Air–Ground Cooperative Jamming
+
+**Authors:** Wenpeng Wu, Zhenhua Wei, Haiyang You, Zhaoguang Zhang, Chenxi Li, Jianwei Zhan, Shan Zhao  
+**Journal:** *Future Internet*, Volume 18, Article 81 (2026)  
+**DOI:** https://doi.org/10.3390/fi18020081  
+**Keywords:** communication jamming, resource scheduling, air–ground networks, cooperative jamming, cognitive jamming, power adaptation
+
+**Date Read:** 2026-06-20
+
+---
+
+## Executive Summary
+
+This paper introduces the **Transmission Loss Ordering Algorithm (TLOA)**, a deterministic resource-scheduling approach for air–ground cooperative jamming.
+
+The core objective is to maximize **jamming system operating duration** while maintaining effective disruption of dynamic air–ground communication networks.
+
+Unlike reinforcement learning and heuristic optimization approaches that rely on iterative search, pre-training, or extensive environmental interaction, TLOA transforms the jamming problem into a **static deterministic optimization problem** using electromagnetic propagation models and cognitive estimation of communication behavior.
+
+Simulation results show that TLOA can extend system operating duration by up to **41.6%** compared with baseline methods under ideal channel conditions while substantially reducing scheduling latency.
+
+---
+
+## Research Problem
+
+Existing jamming resource scheduling methods face several limitations in air–ground environments:
+
+- Large numbers of communication nodes and jammers
+- Dynamic transmission power adjustment by adversaries
+- Sparse and heterogeneous jammer deployment
+- Limited battery capacity
+- Complex electromagnetic propagation environments
+- High-dimensional decision spaces
+- Lack of reliable datasets for machine learning approaches
+
+Most prior work focuses on:
+
+- Radar jamming
+- Static resource allocation
+- Small-scale scenarios
+- Single-jammer optimization
+
+These assumptions do not generalize well to distributed air–ground jamming.
+
+---
+
+## Proposed Method: TLOA
+
+TLOA operates in three stages:
+
+1. Randomly select communication nodes as jamming targets.
+2. Rank candidate jammers according to **transmission path loss**.
+3. Dynamically allocate jamming power based on estimated jammer-to-signal ratio (JSR).
+
+The algorithm prioritizes jammers with lower transmission loss to reduce power consumption while maintaining effective jamming.
+
+### Key Design Principles
+
+- Deterministic optimization
+- Cognitive estimation of communication parameters
+- Path-loss-aware jammer selection
+- Continuous power control
+- Adaptive jammer activation
+- Reduced decision dimensionality
+
+---
+
+## Mathematical Contributions
+
+The paper develops:
+
+- Air–ground communication network models
+- Air–ground cooperative jamming models
+- Path-loss models for LoS and two-ray propagation
+- Quantized jammer-to-signal ratio (JSR) metrics
+- System operating duration model
+- Communication power adaptation model
+- Jamming effect estimation framework
+
+The optimization target is:
+
+> Maximize total jamming duration while ensuring all communication nodes satisfy the required JSR threshold.
+
+---
+
+## What Is New in This Paper
+
+- Introduces the first **path-loss ordering strategy** specifically designed for air–ground cooperative jamming.
+- Converts a dynamic stochastic jamming problem into a static deterministic optimization problem.
+- Proposes a cognitive framework that estimates communication power and jamming effectiveness from reconnaissance information.
+- Integrates electromagnetic propagation knowledge directly into scheduling decisions.
+- Eliminates the need for expensive iterative searches used by reinforcement learning and evolutionary algorithms.
+- Supports continuous power scheduling rather than fixed jamming levels.
+- Jointly optimizes jammer activation, power allocation, and scheduling order.
+- Explicitly addresses heterogeneous airborne and ground jammer coordination.
+
+---
+
+## Core Innovation: Dynamic-to-Static Conversion
+
+The most important conceptual contribution is the transformation of a dynamic problem into a deterministic one through:
+
+### Cognitive Certainty
+
+Instead of estimating instantaneous communication power, TLOA uses:
+
+- Historical reconnaissance data
+- Real-time electromagnetic sensing
+- Maximum possible communication power estimates
+
+This creates a stable optimization target.
+
+### Decision-Time Decoupling
+
+Rather than solving a new optimization problem at every time step, TLOA:
+
+- Builds a static jammer allocation strategy
+- Uses expected path-loss values
+- Adds safety margins for uncertainty
+
+This significantly reduces computational complexity.
+
+---
+
+## Algorithm Complexity
+
+| Algorithm | Time Complexity |
+|---|---|
+| TLOA | O(n × m + m log m) |
+| GA | O(G × N × D) |
+| PMABCA | O(G × N × (D + Tlimit)) |
+| DQN/DDQN | O(T × B × (D + H)) |
+| SRSA | O(S × D) |
+
+Where:
+
+- n = number of communication nodes
+- m = number of jammers
+
+TLOA scales linearly with network size.
+
+---
+
+## Experimental Setup
+
+The authors evaluate TLOA across four scenarios varying:
+
+- Number of communication nodes
+- Airborne versus ground jammer ratios
+- Network density
+- Electromagnetic complexity
+
+Baselines:
+
+- DQN
+- DDQN
+- PMABCA
+- SRSA
+- Genetic Algorithm (GA)
+
+Evaluation metrics:
+
+- First decision time
+- Decision latency
+- System operating duration
+
+---
+
+## Key Results
+
+### Operating Duration Improvements
+
+Compared with benchmark methods, TLOA increases operating duration by:
+
+- 41.6% (Scenario 1)
+- 102.3% (Scenario 2)
+- 82.2% (Scenario 3)
+- 2827.3% (Scenario 4)
+
+### Decision Speed
+
+TLOA requires:
+
+- 11.9–26.9 ms for initial decisions
+- 5.9–24 ms per scheduling step
+
+Deep reinforcement learning approaches require:
+
+- Up to 10 seconds for initial deployment
+- Up to 1 second per scheduling cycle
+
+---
+
+## Results Under Non-Ideal CSI
+
+The authors evaluate all methods using:
+
+- ±2 dB channel uncertainty
+- Random path-loss fluctuations
+
+Findings:
+
+- All methods degrade under imperfect CSI.
+- TLOA maintains superior scheduling speed.
+- TLOA remains computationally robust despite estimation errors.
+- Non-ideal CSI is identified as a major open challenge.
+
+---
+
+## Key Insights for Researchers
+
+### Domain Knowledge Matters
+
+Electromagnetic propagation models significantly improve decision efficiency.
+
+### Deterministic Methods Remain Competitive
+
+In time-critical environments, deterministic approaches can outperform learning-based methods.
+
+### Decision Dimensionality Is the Bottleneck
+
+Reducing the optimization space is more impactful than increasing model complexity.
+
+### Cognitive Estimation Is Underexplored
+
+Future systems should integrate:
+
+- Signal source identification
+- Communication power estimation
+- Jamming effect prediction
+
+### Robustness to CSI Errors Is Essential
+
+Future research should address:
+
+- CSI uncertainty
+- Online adaptation
+- Robust optimization
+
+---
+
+## Practical Examples
+
+| Challenge | TLOA Strategy | Benefit |
+|---|---|---|
+| Dynamic communication power | Maximum power estimation | Stable optimization |
+| Sparse jammer deployment | Path-loss ordering | Energy savings |
+| Limited battery capacity | Adaptive activation | Longer operation |
+| Complex propagation | LoS + two-ray models | Better realism |
+| Unknown communication behavior | Cognitive estimation | Reduced uncertainty |
+| Large-scale networks | Deterministic scheduling | Faster decisions |
+
+---
+
+## Limitations
+
+The authors acknowledge several limitations:
+
+- Assumes relatively accurate channel state information
+- Uses simplified propagation models
+- Does not address disconnected jammer networks
+- Requires prior knowledge of communication node locations
+- Does not model complex terrain effects
+- Limited real-world validation
+
+---
+
+## Future Research Directions
+
+- Robust scheduling under imperfect CSI
+- Hardware-in-the-loop validation
+- Multi-agent coordination with disconnected jammers
+- Terrain-aware path-loss estimation
+- Online communication node discovery
+- Integration with reinforcement learning
+- Deep learning for signal recognition
+- Image-based electromagnetic environment analysis
+
+---
+
+## Key Takeaway
+
+TLOA demonstrates that carefully designed deterministic algorithms can outperform reinforcement learning and evolutionary optimization approaches in dynamic air–ground jamming environments.
+
+The paper suggests that future communication countermeasures should combine:
+
+- Electromagnetic domain knowledge
+- Cognitive sensing
+- Deterministic optimization
+- Robust uncertainty modeling
+
+rather than relying solely on black-box machine learning.
+
+---
+
+## References
+
+References
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+Jornet, J.M.; Knightly, E.W.; Mittleman, D.M. Wireless communications sensing and security above 100 GHz. Nat. Commun. 2023,
+14, 841. [CrossRef]
+Shrestha, R.; Guerboukha, H.; Fang, Z.; Knightly, E.; Mittleman, D.M. Jamming a terahertz wireless link. Nat. Commun. 2022, 13,
+3045. [CrossRef]
+Kong, Z.; Cui, J.; Ding, L.; Huang, T.; Yan, S. Jamming precoding in AF relay-aided PLC systems with multiple eavesdroppers.
+Sci. Rep. 2024, 14, 8335. [CrossRef] [PubMed]
+Al-Turjman, F.; Hamamreh, J.M. Security in UAV/Drone Communications. In Drones in IoT-Enabled Spaces; CRC Press: Boca
+Raton, FL, USA, 2019; pp. 189–205.
+Hamamreh, J.M.; Furqan, H.M.; Arslan, H. Classifications and Applications of Physical Layer Security Techniques for Confiden-
+tiality: A Comprehensive Survey. IEEE Commun. Surv. Tutor. 2019, 21, 1773–1828. [CrossRef]
+Hamamreh, J.M.; Arslan, H. Joint PHY/MAC Layer Security Design Using ARQ with MRC and Null-Space Independent,
+PAPR-Aware Artificial Noise in SISO Systems. IEEE Trans. Wirel. Commun. 2018, 17, 6190–6204. [CrossRef]
+Kırık, M.; Hamamreh, J.M. A Novel Interference Signal Superposition Algorithm for Providing Secrecy to Subcarrier Number
+Modulation-Based Orthogonal Frequency Division Multiplexing Systems. Trans. Emerg. Telecommun. Technol. 2022, 33, e4678.
+[CrossRef]
+Hamamreh, J.M.; Madni, F. Adaptable Secure Communication Framework for Automobile Intelligent Transportation Systems. RS
+Open J. Innov. Commun. Technol. 2024, 4, 11.
+Furqan, H.M.; Hamamreh, J.M.; Arslan, H. New Physical Layer Key Generation Dimensions: Subcarrier Indices/Positions-Based
+Key Generation. IEEE Commun. Lett. 2020, 24, 2674–2678. [CrossRef]
+Hamamreh, J.M.; Furqan, H.M. A New Scheme for Improving Channel-Based Secret Key Generation Rates. IEEE Wirel. Commun.
+Lett. 2024, 13, 3133–3136. [CrossRef]
+Wang, X.; Huang, T.; Liu, Y. Resource allocation for random selection of distributed jammer towards multistatic radar system.
+IEEE Access 2021, 9, 29048–29055. [CrossRef]
+Li, S.; Liu, G.; Zhang, K.; Qian, Z.; Ding, S. DRL-Based Joint Path Planning and Jamming Power Allocation Optimization for
+Suppressing Netted Radar System. IEEE Signal Process. Lett. 2023, 30, 548–552. [CrossRef]
+Zhang, D.; Sun, J.; Yi, W.; Yang, C.; Wei, Y. Joint Jamming Beam and Power Scheduling for Suppressing Netted Radar System. In
+Proceedings of the 2021 IEEE Radar Conference (RadarConf21), Atlanta, GA, USA, 8–14 May 2021; IEEE: New York, NY, USA, 2021; pp.
+1–6.
+Lu, D.J.; Wang, X.; Wu, X.T.; Chen, Y. Adaptive allocation strategy for cooperatively jamming netted radar system based on
+improved cuckoo search algorithm. Def. Technol. 2023, 24, 285–297. [CrossRef]
+Xin, Q.; Xin, Z.; Chen, T. Cooperative Jamming Resource Allocation with Joint Multi-Domain Information Using Evolutionary
+Reinforcement Learning. Remote Sens. 2024, 16, 1955. [CrossRef]
+Yao, Z.; Tang, C.; Wang, C.; Shi, Q.; Yuan, N. Cooperative jamming resource allocation model and algorithm for netted radar.
+Electron. Lett. 2024, 58, 834–836. [CrossRef]
+Jin, W.-C.; Kim, K.; Choi, J.-W. Adaptive Jamming Considering Location Information Inaccuracy for Anti-UAV System. In
+Proceedings of the 2021 International Conference on Information Networking, Jeju Island, Republic of Korea, 13–16 January 2021; IEEE:
+New York, NY, USA, 2021; pp. 480–482.
+Xiong, M.; Zhuo, J.; Dong, Y.; Jing, X. A layout strategy for distributed barrage jamming against underwater acoustic sensor
+networks. J. Mar. Sci. Eng. 2020, 8, 252. [CrossRef]
+Wu, Z.; Luo, Y.; Hu, S. Optimization of jamming formation of USV offboard active decoy clusters based on an improved PSO
+algorithm. Def. Technol. 2024, 32, 529–540. [CrossRef]
+Wang, H. Research on Anti-Jamming Strategy of IRS Communication Pair under Information Uncertainty. Master’s Thesis,
+Nanjing University of Posts and Telecommunications, Nanjing, China, 2022.
+Wu, L.; Wang, W.; Ji, Z.; Yang, Y.; Cumanan, K.; Chen, G.; Dobre, O.A. UAV-assisted maritime legitimate surveillance: Joint
+trajectory design and power allocation. IEEE Trans. Veh. Technol. 2023, 72, 13701–13705. [CrossRef]
+Wei, Z.; Wu, W.; Zhan, J.; Zhang, Z. Distributed communication interference resource scheduling using the master-slave parallel
+scheduling genetic algorithm. Sci. Rep. 2025, 15, 3431. [CrossRef] [PubMed]
+Tang, C.; Ding, J.; Zhang, L. LEO satellite downlink distributed jamming optimization method using a non-dominated sorting
+genetic algorithm. Remote Sens. 2024, 16, 1006. [CrossRef]
+Amuru, S.; Buehrer, R.M. Optimal Jamming Against Digital Modulation. IEEE Trans. Inf. Forensics Secur. 2015, 10, 2212–2224.
+[CrossRef]
+Yao, Z.; Liu, T.; Wang, C. Cooperative jamming resource allocation model based on the improved firefly algorithm. In Proceedings
+of the 6th International Conference on Electronic Information Technology and Computer Engineering, Xiamen, China, 21–23 October 2022;
+Association for Computing Machinery: New York, NY, USA, 2023; pp. 1719–1724.
+https://doi.org/10.3390/fi18020081Future Internet 2026, 18, 81
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+39.
+40.
+41.
+42.
+43.
+44.
+45.
+46.
+47.
+48.
+49.
+50.
+51.
+22 of 23
+Ke, L. Research on Communication and Jamming Integrated Resource Allocation Based on Intelligent Optimization Algorithm.
+Master’s Thesis, Xidian University, Xi’an, China, 2023.
+Wu, T.; Zou, Q.; Yang, Y.; Zhang, X.; Liu, S. A hierarchical comb interference resource allocation algorithm based on greedy
+strategy and evolutionary algorithm. In Proceedings of the 2022 7th International Conference on Intelligent Computing and Signal
+Processing, Xi’an, China, 15–17 April 2022; IEEE: New York, NY, USA; pp. 299–303.
+Wu, W.; Wei, Z.; You, H.; Li, X.; Zhan, J.; Zhang, Z. EPRSA: Interference resource scheduling algorithms for air-ground
+communication networks. Sci. Rep. 2025, 15, 28436. [CrossRef]
+Fan, K. Knowledge Based Communication Jamming Decisions. Master’s Thesis, University of Electronic Science and Technology
+of China, Chengdu, China, 2022.
+Deng, Q.; Ge, Y.; Ding, Z. Jamming Suppression via Resource Hopping in High-Mobility OTFS-SCMA Systems. IEEE Wirel.
+Commun. Lett. 2023, 12, 2138–2142. [CrossRef]
+Wang, S.; et al. The Future Is Calling. In Cognitive Electronic Warfare: The Intelligent Game in the Electromagnetic Space, 1st ed.;
+Science Press: Beijing, China, 2024; pp. 89–122. (In Chinese)
+Sharma, P.; Sarma, K.K.; Mastorakis, N.E. Artificial Intelligence Aided Electronic Warfare Systems—Recent Trends and Evolving
+Applications. IEEE Access 2020, 8, 224761–224780. [CrossRef]
+Liu, Z.; Wang, X.; Kang, W.; Chen, Y. Research on multi-UAV collaborative electronic countermeasures effectiveness method
+based on CRITIC weighting and improved gray correlation analysis. AIP Adv. 2024, 14, 045123. [CrossRef]
+Xiang, P.; Hua, X.; Lei, J.; Yue, Z.; Ning, R.A. Dynamic Adaptive Jamming Power Allocation Method Based on Deep Reinforcement
+Learning. Acta Electron. Sin. 2023, 51, 1223–1234.
+Zhao, C.; Wang, Q.; Liu, X.; Li, C.; Shi, L. Reinforcement learning based a non-zero-sum game for secure transmission against
+smart jamming. Digit. Signal Process. 2021, 112, 103002. [CrossRef]
+Rao, N.; Xu, H.; Jiang, L.; Song, B.; Shi, Y. Allocation Algorithm of Distributed Cooperative Jamming Power Based on Multi-Agent
+Deep Reinforcement Learning. Acta Electron. Sin. 2022, 50, 1319–1330.
+Amuru, S.; Tekin, C.; van der Schaar, M.; Buehrer, R.M. Jamming Bandits—A Novel Learning Method for Optimal Jamming.
+IEEE Trans. Wirel. Commun. 2015, 15, 2792–2808. [CrossRef]
+ZhuanSun, S.; Yang, J.-A.; Liu, H.; Huang, K. A novel jamming strategy-greedy bandit. In Proceedings of the 2017 IEEE 9th
+International Conference on Communication Software and Networks (ICCSN), Guangzhou, China, 6–8 May 2017; IEEE: New York, NY,
+USA, 2017; pp. 1142–1146.
+ZhuanSun, S.; Yang, J.A.; Liu, H. An algorithm for jamming strategy using OMP and MAB. EURASIP J. Wirel. Commun. Netw.
+2019, 2019, 85. [CrossRef]
+ZhuanSun, S.; Yang, J.; Liu, H.; Huang, K. An Algorithm for Jamming Decision Using Dual Reinforcement Learning. J. Xi’an
+Jiaotong Univ. 2018, 52, 63–69.
+Zhou, C.; Ma, C.; Lin, Q.; Man, X.; Ying, T. Intelligent Bandit Learning for Jamming Strategy Generation. Wirel. Netw. 2023, 29,
+2391–2403. [CrossRef]
+Rao, N.; Xu, H.; Zhang, Y.; Wang, D.; Jiang, L.; Peng, X. Joint Optimization of Jamming Link and Power Control in Communication
+Countermeasures: A Multiagent Deep Reinforcement Learning Approach. Wirel. Commun. Mob. Comput. 2022, 2022, 7962686.
+[CrossRef]
+Li, X.; Cui, Q.; Zhao, B.; Zhang, X.; Jiang, B.; Tao, X. Distributed Multi-Agent Interference Coordination in Native AI Enabled
+Multi-Cell Networks for 6G. In Proceedings of the 2023 26th International Symposium on Wireless Personal Multimedia Communications
+(WPMC), Tampa, FL, USA, 16–19 November 2023; IEEE: New York, NY, USA, 2023; pp. 8–13.
+Li, F.; Xiong, J.; Zhao, X.; Zhao, H.; Wei, J.; Su, M. Wireless Communications Interference Avoidance Based on Fast Reinforcement
+Learning. J. Electron. Inf. Technol. 2022, 44, 3842–3849.
+Niu, Y.; Wan, B.; Chen, C. A Centralized Multi-User Anti-Composite Intelligent Interference Algorithm Based on Improved
+Q-Learning. Electronics 2023, 12, 1803. [CrossRef]
+Mobini, Z.; Chalise, B.K.; Mohammadi, M.; Suraweera, H.A.; Ding, Z. Proactive Eavesdropping Using UAV Systems with
+Full-Duplex Ground Terminals. In Proceedings of the 2018 IEEE International Conference on Communications Workshops, Kansas City,
+MO, USA, 20–24 May 2018; IEEE: New York, NY, USA, 2018; pp. 1–6.
+Tom, V. Reinforcement Learning: The Markov Decision Process Approach; MIT Press: Cambridge, MA, USA, 2021; pp. 133–152.
+Yang, H.; Zhang, J. Research on Intelligent Interference Algorithm Based on Reinforcement Learning. Electron. Meas. Technol.
+2018, 41, 49–54.
+Martin, A.; Anders, H. Reinforcement Learning; Wiley: Hoboken, NJ, USA, 2023; pp. 327–349.
+Zhou, C.; Lin, X.; Ma, S.; Ying, T.; Man, X. Intelligent Decision-Making for Selection of Communication Jamming Channel and
+Power. J. Electron. Inf. Technol. 2024, 46, 3957–3965.
+Ning, R.; Hua, X.; Zisen, Q.; Song, B.; Yujhao, S. Allocation Method of Communication Interference Resource Based on Deep
+Reinforcement Learning of Maximum Policy Entropy. J. Northwestern Polytech. Univ. 2021, 39, 1077–1086.
+https://doi.org/10.3390/fi18020081Future Internet 2026, 18, 81
+52.
+53.
+54.
+55.
+56.
+57.
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+66.
+67.
+68.
+69.
+70.
+23 of 23
+Peng, X.; Xu, H.; Jiang, L.; Rao, N.; Song, B. A Deep Reinforcement Learning Communication Jamming Resource Allocation
+Algorithm Fused with Noise Network. J. Electron. Inf. Technol. 2023, 45, 1043–1054.
+Ning, R.; Hu, X.; Jialin, S.S. Q-Learning Intelligent Jamming Decision Algorithm Based on Efficient Upper Confidence Bound
+Variance. J. Harbin Inst. Technol. Engl. Ed. 2022, 54, 162–170.
+Hua, X.; Bailin, S.; Lei, J.; Ning, R.; Yunhao, S. An Intelligent Decision-Making Algorithm for Communication Countermeasure
+Jamming Resource Allocation. J. Electron. Inf. Technol. 2021, 43, 3086–3095.
+Bailin, S.; Hux, X.; Zisen, Q.; Ning, R.; Peng, P. A Collaborative Communication Jamming Decision Algorithm Based on Deep
+Reinforcement Learning. Acta Electron. Sin. 2022, 50, 1301–1309.
+Liu, Y.F.; Li, X.S.; Yang, J.A.; Yang, D.J.; Wang, J. SANER-PPO Algorithm-Based Jamming Resource Allocation for UAV Swarm.
+Control Decis. 2024, 39, 3937–3945.
+Fu, X.; Yan, H. Neural Network Optimal Control for Tripartite UAV Confrontation Systems Based on Fuzzy Differential Game.
+Sci. Rep. 2024, 14, 21547. [CrossRef]
+Wu, Z.; Pan, L.; Yu, M.; Liu, J.; Mei, D. A Game-Based Approach for Designing a Collaborative Evolution Mechanism for
+Unmanned Swarms on Community Networks. Sci. Rep. 2022, 12, 18892. [CrossRef]
+Liu, Y.; Mao, H.; Zhu, L.; Xiao, Z.; Han, Z.; Xia, X.-G. Routing and Resource Scheduling for Air-Ground Integrated Mesh Networks.
+IEEE Trans. Wirel. Commun. 2022, 22, 4090–4105. [CrossRef]
+Russell, S. AI Weapons: Russia’s War in Ukraine Shows Why the World Must Enact a Ban. Nature 2023, 614, 620–623. [CrossRef]
+Frachetti, M.D.; Berner, J.; Liu, X.; Henry, E.R.; Maksudov, F.; Ju, T. Large-Scale Medieval Urbanism Traced by UAV–LiDAR in
+Highland Central Asia. Nature 2024, 634, 1118–1124. [CrossRef]
+Gao, Y.; Liu, M.; Yuan, X.; Hu, Y.; Sun, P.; Schmeink, A. Federated Deep Reinforcement Learning Based Trajectory Design for
+UAV-Assisted Networks with Mobile Ground Devices. Sci. Rep. 2024, 14, 22753. [CrossRef]
+Liao, Y.; Gao, G.; Jing, Y. Ultra-Reliable Intelligent Link Scheduling Based on DRL for Manned/Unmanned Aerial Vehicle
+Cooperative Scenarios. Phys. Commun. 2024, 63, 102304. [CrossRef]
+Li, Q.; Cheng, H.; Yang, Y.; Tang, H.; Wang, J.; Luo, G.; Sun, W. Deep Reinforcement Learning-Based Resource Allocation for
+5G Machine-Type Communication in Active Distribution Networks with Time-Varying Interference. Mob. Netw. Appl. 2022, 27,
+2264–2279. [CrossRef]
+Tossa, F.; Abdou, W.; Ansari, K.; Ezin, E.C.; Gouton, P. Area Coverage Maximization under Connectivity Constraint in Wireless
+Sensor Networks. Sensors 2022, 22, 1712. [CrossRef] [PubMed]
+Gu, J.; Ding, G.; Wang, H.; Xu, Y. Integrated Communications and Jamming: Toward Dual-Functional Wireless Networks Under
+Antagonistic Environment. IEEE Commun. Mag. 2023, 61, 181–187. [CrossRef]
+Gu, J.; Ding, G.; Wang, H.; Xu, Y. Sensing Assisted Integrated Communication and Jamming Systems with RSMA for Dynamic
+Suspicious Communications. IEEE Trans. Veh. Technol. 2024, 73, 5965–5970. [CrossRef]
+Rao, N.; Xu, H.; Wang, D.; Qi, Z.; Zhang, Y.; Gu, W.; Peng, X. Efficient Jamming Resource Allocation Against Frequency-Hopping
+Spread Spectrum in WSNs with Asynchronous Deep Reinforcement Learning. IEEE Sens. J. 2024, 24, 13560–13577. [CrossRef]
+Zhenhua, W.; Jianwei, Z.; Siming, H. Introduction. In Air-Ground Joint Distributed Communication Jamming Technology and Practice,
+1st ed.; National Defense Industry Press: Xi’an, China, 2023; pp. 1–5.
+Hua, X.; Jun, W.; Lei, J. Communication Interference Technologies and Methods. In Principles and Applications of Modern
+Communication Countermeasures, 1st ed.; National Defense Industry Press: Beijing, China, 2022; pp. 403–411.
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/fi18020081
