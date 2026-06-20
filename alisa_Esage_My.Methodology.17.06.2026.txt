@@ -1,0 +1,478 @@
+# Summary: Vulnerability Research Methodology
+
+In this talk, security researcher **Alisa S.** outlines a structured methodology for discovering vulnerabilities and developing exploits in highly hardened targets such as browsers, hypervisors, and embedded systems. The central theme is that successful vulnerability research is not driven by luck, intuition, or isolated tools—it is driven by building reusable systems, abstract models, and research infrastructure.
+
+The methodology consists of ten interconnected principles.
+
+---
+
+## 1. Build Systems, Not Ad-Hoc Workflows
+
+The foundation of the methodology is a **systematic approach**.
+
+Rather than solving individual problems independently, the researcher builds recursive systems that support larger objectives. These systems can be:
+
+* Mental models
+* Technical workflows
+* Research pipelines
+* Productivity frameworks
+* Organizational processes
+
+The key insight is that complex goals should be decomposed recursively into smaller subsystems.
+
+Instead of asking:
+
+> "How do I find a bug?"
+
+The researcher asks:
+
+> "What system consistently generates bug discoveries?"
+
+This systems-thinking approach creates repeatable outcomes rather than one-off successes.
+
+### Example:
+
+To study a new software target:
+
+1. Build a research environment.
+2. Create attack surface models.
+3. Analyze historical vulnerabilities.
+4. Develop tooling.
+5. Form hypotheses.
+6. Execute targeted research.
+
+Each stage becomes a reusable subsystem within a larger research framework.
+
+---
+
+## 2. Reverse Engineer Historical Case Studies
+
+A major component of the methodology is studying historical vulnerabilities extensively.
+
+The researcher reviews:
+
+* Vulnerabilities from the past decade or more
+* Public write-ups
+* Exploit chains
+* Architectural weaknesses
+* Root causes
+
+This produces two major advantages:
+
+### Attack Surface Visibility
+
+Historical bugs reveal:
+
+* Reachable components
+* Trust boundaries
+* Privileged interfaces
+* Common exploitation paths
+
+### Bug Pattern Recognition
+
+Bug classes frequently reappear across:
+
+* Different implementations
+* Different subsystems
+* Different time periods
+
+The same conceptual flaw often resurfaces under new conditions.
+
+### Example:
+
+A memory corruption pattern discovered 10–20 years ago may reappear:
+
+* In a different browser subsystem
+* In a new virtualization platform
+* In an optimized compiler backend
+
+The implementation changes, but the underlying vulnerability model remains similar.
+
+---
+
+## 3. Think Abstractly
+
+Although vulnerability research operates on concrete artifacts—source code, binaries, debuggers—the researcher argues that the real leverage exists at higher levels of abstraction.
+
+The goal is to identify:
+
+* Abstract bug models
+* Abstract exploit primitives
+* Abstract architectural patterns
+
+An abstract vulnerability model is what remains after implementation details are removed.
+
+The researcher derives these models by examining multiple vulnerabilities and extracting their shared essence.
+
+The benefit is transferability.
+
+Instead of learning:
+
+> "How this specific bug works."
+
+You learn:
+
+> "What category of failure this bug represents."
+
+That knowledge transfers across:
+
+* Vendors
+* Products
+* Architectures
+* Time
+
+### Example:
+
+Multiple vulnerabilities may differ in implementation details but share the same abstract structure:
+
+* Improper trust boundary validation
+* Incorrect ownership assumptions
+* Type confusion
+* State desynchronization
+
+Recognizing the abstract pattern enables discovery of similar bugs elsewhere.
+
+---
+
+## 4. Create Attack Surface Models
+
+An attack surface model is a specialized abstract model focused on offensive opportunities.
+
+Characteristics:
+
+* Hierarchical
+* Visual
+* Architecture-centric
+* Attacker-oriented
+
+The model answers questions such as:
+
+* What can an attacker reach?
+* Which boundaries exist?
+* Which interfaces process untrusted input?
+* Which subsystems expose valuable primitives?
+
+Importantly, attack surface models describe a **class of software**, not a specific implementation.
+
+### Example: Hypervisors
+
+The researcher studied:
+
+* VirtualBox
+* Hyper-V
+* VMware Workstation
+* ESXi
+* KVM
+
+Despite evolving independently and lacking a common specification, they shared remarkably similar attack surface structures.
+
+Common attack surfaces included:
+
+* Virtual devices
+* Hypercalls
+* Shared memory mechanisms
+* Emulated hardware
+* Management interfaces
+
+This abstract model provides predictive power for analyzing new hypervisors.
+
+### Example: JavaScript Engines
+
+Specifications define behavior but not implementation details.
+
+Critical attack surfaces often emerge from:
+
+* JIT compilation
+* Optimization pipelines
+* Garbage collection
+* Internal object representations
+
+These areas vary between vendors yet often conform to similar abstract models.
+
+---
+
+## 5. Set Expectations Before Research Begins
+
+Before touching code, the researcher establishes expectations about:
+
+* Likely bug classes
+* Promising attack vectors
+* Useful tools
+* Expected hardening levels
+
+This prevents aimless exploration.
+
+The methodology emphasizes understanding the target's place within its hardening lifecycle.
+
+Modern software evolves through a continuous loop:
+
+1. Attackers discover vulnerabilities.
+2. Developers patch them.
+3. New defensive layers appear.
+4. Attackers adapt.
+
+This process leaves observable signals.
+
+By analyzing recent vulnerabilities, researchers can estimate:
+
+* Which bug classes are already eliminated
+* Which areas remain underexplored
+* Which tools are most effective
+
+### Example:
+
+Suppose recent vulnerabilities show:
+
+* Heavy mitigation against buffer overflows
+* Frequent logic bugs in a specific subsystem
+
+Research efforts should shift toward:
+
+* State machine flaws
+* Logic errors
+* Novel attack vectors
+
+Instead of continuing to optimize for memory corruption.
+
+### Example:
+
+A generic fuzzer may miss important vulnerability classes because it was not designed for the relevant bug pattern.
+
+Without prior expectations, researchers cannot measure what their tooling fails to detect.
+
+---
+
+## 6. Build an R&D Platform Before Researching
+
+Beginners often start by opening source code and immediately searching for bugs.
+
+The methodology rejects this approach.
+
+Instead, significant time is invested in building a research platform.
+
+Core components include:
+
+* Self-built binaries
+* Debug symbols
+* Source indexing
+* Cross-references
+* CPU debuggers
+* Fuzzing infrastructure
+* Program analysis tools
+
+The goal is to eliminate friction.
+
+### Required Components
+
+* IDE with code navigation
+* Clangd or IntelliSense
+* Self-compiled targets
+* Debugger integration
+* Automated launch scripts
+* CodeQL databases
+* Fuzzing setup
+
+### Example:
+
+A small buffer overflow may never crash in a production binary because overwritten memory is not immediately used.
+
+An instrumented build with:
+
+* AddressSanitizer
+* Debug symbols
+* Custom assertions
+
+can reveal the issue instantly.
+
+### Example:
+
+When researching Qualcomm Hexagon systems, no debugger existed.
+
+Rather than accepting this limitation, the researcher's first task would be creating the missing tooling.
+
+The principle is:
+
+> If an essential research capability does not exist, build it.
+
+---
+
+## 7. Focus on Foundational Tools
+
+The methodology prioritizes foundational tools over constantly chasing new utilities.
+
+Most specialized tools are built on a small set of core technologies.
+
+Key foundations include:
+
+* WinDbg
+* GDB
+* LLDB
+* Python
+* Linux command-line tools
+
+Higher-level capabilities are layered on top:
+
+* Fuzzers
+* Static analyzers
+* Symbolic execution engines
+* AI assistants
+
+AI is treated as an accelerator rather than a replacement for methodology.
+
+It enhances existing workflows by:
+
+* Reducing routine analysis
+* Increasing scale
+* Expanding coverage
+
+### Example:
+
+Instead of replacing research methodology, AI can accelerate tasks such as:
+
+* Reviewing large codebases
+* Generating scripts
+* Explaining unfamiliar subsystems
+* Automating repetitive analysis
+
+The underlying reasoning process remains unchanged.
+
+---
+
+## 8. Optimize for Novelty
+
+The researcher deliberately avoids highly publicized attack vectors.
+
+Rather than following existing exploit trends, the goal is to discover:
+
+* New attack surfaces
+* New bug classes
+* New methodologies
+
+This approach compounds over time.
+
+Popular techniques become saturated and increasingly automated.
+
+Novel research areas remain valuable.
+
+### Example:
+
+A shallow approach:
+
+1. Read a blog post.
+2. Reproduce the technique.
+3. Search for another instance.
+
+A novelty-driven approach:
+
+1. Understand why the technique works.
+2. Abstract the underlying principle.
+3. Identify unexplored domains where the principle applies.
+4. Develop entirely new attack vectors.
+
+This strategy becomes increasingly important as AI automates common knowledge.
+
+---
+
+## 9. Manage Cognitive and Physiological Constraints
+
+High-complexity research places significant demands on cognition.
+
+The methodology treats mental performance as a systems problem.
+
+The researcher emphasizes:
+
+* Sleep quality
+* Recovery cycles
+* Work scheduling
+* Neurochemistry awareness
+
+A specific focus is placed on adenosine regulation.
+
+### Adenosine Model
+
+During intensive cognitive work:
+
+1. ATP is consumed.
+2. Adenosine accumulates.
+3. Mental fatigue increases.
+
+Adenosine functions as a protective mechanism that limits cognitive overload.
+
+Caffeine blocks adenosine receptors but does not remove accumulated adenosine.
+
+This can produce:
+
+* Energy crashes
+* Cognitive instability
+* Long-term dysregulation
+
+### Example:
+
+Instead of masking fatigue with caffeine, the methodology recommends:
+
+* Sufficient sleep
+* Structured recovery periods
+* Appropriate scheduling
+* Nutritional support
+
+### Example:
+
+When adenosine accumulation exceeds overnight clearance capacity, adding recovery days during the week may be more effective than extending work sessions.
+
+The broader principle is:
+
+> Sustainable performance outperforms forced productivity.
+
+---
+
+## 10. Set Strict Boundaries
+
+Complex research problems contain unlimited uncertainty.
+
+Without constraints, they consume unlimited time and attention.
+
+The methodology imposes boundaries on:
+
+* Project scope
+* Time allocation
+* Research objectives
+* Exploration depth
+
+Every project receives predefined limits.
+
+Boundaries are dynamic and evolve as expertise grows.
+
+### Example:
+
+For a completely unfamiliar target:
+
+* Allocate one month to discover the first vulnerability.
+
+After building infrastructure and understanding the target:
+
+* Reduce future investigations to one week.
+
+As knowledge compounds, research cycles accelerate.
+
+The objective is to prevent open-ended exploration while maintaining momentum.
+
+---
+
+# Core Takeaways
+
+The methodology can be summarized as five overarching principles:
+
+1. Build systems instead of relying on intuition.
+2. Learn from historical vulnerabilities.
+3. Operate through abstraction.
+4. Invest heavily in infrastructure.
+5. Optimize for novelty and sustainability.
+
+The researcher argues that the future of vulnerability research—especially in the age of AI—belongs to practitioners who develop:
+
+* Deep abstract models
+* Original methodologies
+* Custom tooling
+* Strong research systems
+
+AI automates common knowledge; therefore, competitive advantage increasingly comes from creating knowledge that does not yet exist. 
