@@ -1,0 +1,651 @@
+# A Digital-Twin Strategy Using Robots for Marine Ecosystem Monitoring
+
+## Authors
+
+* Jacopo Aguzzi
+* Elias Chatzidouros
+* Damianos Chatzievangelou
+* Morane Clavel-Henry
+* Sascha Flögel
+* Nixon Bahamon
+* Michael Tangerlini
+* Laurenz Thomsen
+* Giacomo Picardi
+* Joan Navarro
+* Ivan Masmitja
+* Nathan J. Robinson
+* Tim Nattkemper
+* Sergio Stefanni
+* José Quintana
+* Ricard Campos
+* Rafael García
+* Emanuela Fanelli
+* Marco Francescangeli
+* Luca Mirimin
+* Roberto Danovaro
+* Daniel Mihai Toma
+* Joaquín Del Rio-Fernandez
+* Enoc Martinez
+* Pol Baños
+* Oriol Prat
+* David Sarria
+* Matias Carandell
+* Jonathan White
+* Thomas Parissis
+* Stavroula Panagiotidou
+* Juliana Quevedo
+* Silvia Gallegati
+* Jordi Grinyó
+* Erik Simon-Lledó
+* Joan B. Company
+* Jennifer Doyle
+
+---
+
+## Publication Information
+
+* **Journal:** *Ecological Informatics*
+* **Volume:** 91
+* **Article ID:** 103409
+* **Year:** 2025
+* **Published Online:** 28 August 2025
+* **DOI:** https://doi.org/10.1016/j.ecoinf.2025.103409
+* **License:** CC BY 4.0
+
+---
+
+## Date of Reading
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This paper proposes a comprehensive framework for building a **Digital Twin of the Ocean (DTO)** for marine ecosystem monitoring using networks of autonomous and semi-autonomous robotic platforms.
+
+The proposed strategy combines:
+
+* Fixed ocean observatories
+* Autonomous underwater vehicles (AUVs)
+* Remotely operated vehicles (ROVs)
+* Surface vehicles
+* Research vessels
+* Satellite observations
+* Citizen science datasets
+
+The framework introduces the concept of **Physical Twin Observers (PTOs)** and presents a four-step roadmap for transforming heterogeneous environmental observations into operational digital twins capable of supporting ecosystem monitoring, biodiversity assessment, and socioecological modelling.
+
+The study emphasizes that effective DTOs require more than visualization platforms: they need integrated sensing infrastructures, AI-enabled analytics, standardized data pipelines, interoperable metadata, and ecological forecasting models.
+
+---
+
+# Research Problem
+
+Current marine monitoring approaches face several limitations:
+
+* Sparse spatial coverage
+* Limited temporal continuity
+* High operational costs
+* Heterogeneous data formats
+* Insufficient interoperability
+* Fragmented sensor networks
+* Limited capacity for real-time decision support
+
+Traditional vessel-based surveys cannot provide continuous observations across large marine environments.
+
+Digital twins offer a promising solution but require:
+
+1. Continuous multiparametric observations.
+2. Scalable robotic infrastructures.
+3. Automated data processing.
+4. Standardized data management.
+5. Ecological forecasting capabilities.
+
+---
+
+# Research Objectives
+
+The paper aims to:
+
+1. Define a DTO architecture for ecological monitoring.
+2. Introduce robotic Physical Twin Observers (PTOs).
+3. Establish a workflow for integrating heterogeneous data sources.
+4. Develop AI-based ecological data extraction pipelines.
+5. Enable computation of ecological indicators.
+6. Support predictive socioecological modelling.
+
+---
+
+# Core Contributions
+
+The authors contribute:
+
+* A general DTO architecture for marine ecosystems.
+* The concept of **Physical Twin Observers (PTOs)**.
+* A four-step implementation roadmap.
+* The novel concept of **data bubbles**.
+* Integration of fixed and mobile robotic systems.
+* AI pipelines for image analysis.
+* Ecological indicator computation frameworks.
+* Connectivity and biodiversity modelling approaches.
+
+---
+
+# Key Concept: Physical Twin Observers (PTOs)
+
+PTOs are the sensing and observation layer of the DTO.
+
+Unlike conventional sensors, PTOs actively interact with the environment and can adapt their behavior according to DTO outputs.
+
+The authors divide PTOs into two categories:
+
+## Fixed PTOs (F-PTOs)
+
+Examples:
+
+* Cabled observatories
+* Landers
+* Moored buoys
+* Seabed stations
+* Docked crawlers
+* Stationary AUV docking systems
+
+Characteristics:
+
+* Continuous monitoring
+* High temporal resolution
+* Limited spatial coverage
+
+---
+
+## Geographically Expanded PTOs (G-PTOs)
+
+Examples:
+
+* Research vessels
+* ROVs
+* AUVs
+* Autonomous surface vehicles (ASVs)
+* Wave gliders
+* Drones
+* Satellite systems
+* ARGO floats
+
+Characteristics:
+
+* Broad spatial coverage
+* Lower temporal resolution
+* Episodic sampling
+
+---
+
+# DTO Development Roadmap
+
+The framework consists of four sequential steps:
+
+## Step 1: Robotic Data Acquisition
+
+Deploy coordinated networks of:
+
+* Fixed observatories
+* Mobile robotic systems
+* Surface vehicles
+* Satellite assets
+
+Goal:
+
+Capture multiparametric environmental data across multiple scales.
+
+---
+
+## Step 2: AI-Based Data Extraction
+
+Apply AI methods to:
+
+* Species detection
+* Object tracking
+* Habitat classification
+* Biodiversity estimation
+* Acoustic signal analysis
+
+Key technologies:
+
+* Deep Learning
+* Convolutional Neural Networks (CNNs)
+* Edge AI
+* Computer vision
+
+---
+
+## Step 3: Data Management via Data Bubbles
+
+Introduce localized spatiotemporal information units called:
+
+**Data Bubbles**
+
+Each bubble contains:
+
+* Latitude
+* Longitude
+* Depth
+* Timestamp
+* Environmental variables
+* Biological observations
+
+Purpose:
+
+Enable harmonization of heterogeneous datasets.
+
+---
+
+## Step 4: DTO Construction
+
+Integrate observations into a virtual ecosystem representation that supports:
+
+* Ecological indicators
+* Forecasting
+* Scenario analysis
+* Decision support
+* Socioecological modelling
+
+---
+
+# Novel Concept: Data Bubbles
+
+The paper introduces **data bubbles** as a localized alternative to conventional data cubes.
+
+## Definition
+
+A data bubble is a georeferenced spatiotemporal container that aggregates:
+
+* Biological data
+* Environmental observations
+* Sensor metadata
+* Platform information
+
+Each bubble represents a localized ecological state.
+
+---
+
+## Metadata Components
+
+Minimum metadata requirements:
+
+* Latitude
+* Longitude
+* Depth
+* Time
+* Sensor type
+* Platform type
+* Acquisition parameters
+
+---
+
+## Why Data Bubbles Matter
+
+Data bubbles enable:
+
+* Real-time ecological monitoring
+* Localized ecological inference
+* Cross-platform interoperability
+* Integration of public and private datasets
+* AI-driven forecasting
+
+---
+
+# Data Standardization Strategy
+
+The authors emphasize that interoperability is foundational.
+
+## Standard Formats
+
+* NetCDF
+* HDF5
+* GeoTIFF
+* JPEG
+* MP4
+* FLAC
+
+---
+
+## Metadata Standards
+
+* Climate and Forecast (CF) conventions
+* INSPIRE
+* SeaDataNet
+* iFDO
+* Dublin Core
+* Audubon Core
+* SmartarID
+* PDS4
+
+---
+
+## Data Access Technologies
+
+* ERDDAP
+* OPeNDAP
+* REST APIs
+* SensorThings API
+
+---
+
+# FAIR Data Principles
+
+The DTO architecture follows:
+
+* **Findable**
+* **Accessible**
+* **Interoperable**
+* **Reusable**
+
+principles to maximize data utility.
+
+---
+
+# AI for Ecological Monitoring
+
+The framework relies heavily on AI.
+
+## Main Tasks
+
+* Animal detection
+* Species classification
+* Tracking
+* Image segmentation
+* Acoustic classification
+* Habitat mapping
+
+---
+
+## Example AI Pipeline
+
+Input:
+
+* Observatory imagery
+* Video streams
+
+Processing:
+
+* CNN inference
+* Object detection
+* Taxonomic classification
+
+Output:
+
+* Species counts
+* Time series
+* Ecological indicators
+
+---
+
+## Example Tools
+
+* YOLO
+* BIIGLE
+* DELPHI
+* MAIA
+* Segment Anything Model (SAM)
+* FathomNet
+* RoboFlow
+* Grafana
+
+---
+
+# Example: OBSEA Observatory
+
+The OBSEA coastal observatory demonstrates real-time DTO functionality.
+
+Capabilities:
+
+* Automated fish classification
+* Continuous environmental monitoring
+* AI-based biodiversity estimation
+* Interactive visualization
+
+Reported processing performance:
+
+* ~0.1 seconds per Full-HD image using YOLO-based architectures
+
+---
+
+# Technical Challenges
+
+## Energy Constraints
+
+Challenges:
+
+* Limited AUV endurance
+* Long-duration deployments
+
+Solutions:
+
+* Fuel cells
+* Docking stations
+* Wireless underwater charging
+
+---
+
+## Communication Constraints
+
+Challenges:
+
+* Low-bandwidth acoustic communication
+* High latency
+* Multipath propagation
+
+Solutions:
+
+* Acoustic modems
+* Visible Light Communication (VLC)
+* Surface relays
+* Satellite communications
+
+---
+
+## Remote Operations
+
+The authors recommend:
+
+* Robotic Operating System (ROS)
+* Planning Domain Definition Language (PDDL)
+* Remote mission planning interfaces
+
+---
+
+# Ecological Indicators Supported
+
+The DTO computes indicators across three dimensions.
+
+## 1. Temporal Biodiversity
+
+Measures:
+
+* Species abundance changes
+* Seasonal dynamics
+* Diel activity rhythms
+
+---
+
+## 2. Spatial Biodiversity
+
+Measures:
+
+* Species richness
+* Biomass distribution
+* Alpha diversity
+* Beta diversity
+* Gamma diversity
+
+---
+
+## 3. Functional Connectivity
+
+Measures:
+
+* Larval dispersal
+* Migration pathways
+* Gene flow
+* Habitat connectivity
+
+---
+
+# Ecological Modelling Approaches
+
+## Joint Species Distribution Models (JSDMs)
+
+Applications:
+
+* Species occurrence prediction
+* Community analysis
+* Biodiversity forecasting
+
+Inputs:
+
+* Environmental variables
+* Species observations
+
+Outputs:
+
+* Spatial biodiversity predictions
+
+---
+
+## Individual-Based Models (IBMs)
+
+Applications:
+
+* Larval transport
+* Connectivity estimation
+* Population dynamics
+
+Inputs:
+
+* Oceanographic data
+* Species life-history parameters
+
+Outputs:
+
+* Connectivity metrics
+* Dispersal pathways
+
+---
+
+# Example Use Cases
+
+The DTO can support:
+
+* Marine protected area management
+* Fisheries management
+* Biodiversity conservation
+* Pollution monitoring
+* Oil spill forecasting
+* Sediment transport analysis
+* Rescue operations
+* Climate impact assessment
+
+---
+
+# System Architecture
+
+```text
+Physical Twin Observers
+        ↓
+Data Acquisition
+        ↓
+AI Processing
+        ↓
+Data Bubbles
+        ↓
+Standardized Storage
+        ↓
+Ecological Modelling
+        ↓
+DTO Visualization
+        ↓
+Decision Support
+```
+
+---
+
+# Key Insights for Researchers
+
+## Insight 1
+
+Digital twins require adaptive sensing infrastructures, not passive databases.
+
+## Insight 2
+
+Combining fixed and mobile platforms resolves the temporal-spatial tradeoff.
+
+## Insight 3
+
+AI is essential because manual processing cannot scale to modern marine datasets.
+
+## Insight 4
+
+Interoperability standards are as important as sensing technologies.
+
+## Insight 5
+
+Data bubbles provide a practical framework for integrating heterogeneous observations.
+
+## Insight 6
+
+Ecological forecasting should be treated as a core DTO capability rather than an add-on feature.
+
+---
+
+# Limitations
+
+The framework remains conceptual in several areas.
+
+Key challenges include:
+
+* Long-term energy autonomy
+* Underwater communication bandwidth
+* Metadata harmonization
+* Cross-institutional interoperability
+* AI model transferability
+* Real-time processing at scale
+* Standardized ecological ontologies
+
+---
+
+# Future Research Directions
+
+The authors recommend focusing on:
+
+* Autonomous adaptive monitoring
+* Edge AI for underwater systems
+* Semantic interoperability frameworks
+* Improved underwater communication
+* DTO-guided robotic mission planning
+* Transfer learning for species classification
+* Real-time ecological forecasting
+* Human-in-the-loop decision systems
+
+---
+
+# Key Takeaways
+
+* DTOs require tightly coupled sensing, AI, and modelling infrastructures.
+* Physical Twin Observers are the foundation of marine digital twins.
+* Combining F-PTOs and G-PTOs improves ecological representativeness.
+* Data bubbles enable scalable integration of heterogeneous data.
+* Ecological indicators transform observations into actionable knowledge.
+* AI is indispensable for processing marine imagery at operational scales.
+* Interoperable standards are critical for long-term DTO success.
+
+---
+
+# Full Reference
+
+Aguzzi, J., Chatzidouros, E., Chatzievangelou, D., Clavel-Henry, M., Flögel, S., Bahamon, N., Tangerlini, M., Thomsen, L., Picardi, G., Navarro, J., Masmitja, I., Robinson, N. J., Nattkemper, T., Stefanni, S., Quintana, J., Campos, R., García, R., Fanelli, E., Francescangeli, M., Mirimin, L., Danovaro, R., Toma, D. M., Del Rio-Fernandez, J., Martinez, E., Baños, P., Prat, O., Sarria, D., Carandell, M., White, J., Parissis, T., Panagiotidou, S., Quevedo, J., Gallegati, S., Grinyó, J., Simon-Lledó, E., Company, J. B., & Doyle, J. (2025).
+
+*A digital-twin strategy using robots for marine ecosystem monitoring.*
+
+**Ecological Informatics, 91**, 103409.
+
+https://doi.org/10.1016/j.ecoinf.2025.103409

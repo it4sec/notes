@@ -1,0 +1,389 @@
+# Analisis Forensik Jaringan Serangan ARP Spoofing Menggunakan Metode National Institute of Justice (NIJ)
+
+## Authors
+
+* Latifah Iriani
+* Muhammad Nasir Hafizh
+* Khairina Eka Setyaputri
+
+## Affiliations
+
+1. Universitas Siber Muhammadiyah, Yogyakarta, Indonesia
+2. Universitas Ahmad Dahlan, Yogyakarta, Indonesia
+3. Universitas Siber Muhammadiyah, Yogyakarta, Indonesia
+
+**Corresponding Author:** Latifah Iriani ([latifahiriani@sibermu.ac.id](mailto:latifahiriani@sibermu.ac.id))
+
+---
+
+## Publication Information
+
+* **Journal:** IT-EXPLORE: Jurnal Penerapan Teknologi Informasi dan Komunikasi
+* **Volume:** 4
+* **Issue:** 2
+* **Pages:** 150–160
+* **Year:** 2025
+* **DOI:** 10.24246/itexplore.v4i2.2025.pp150-160
+* **ISSN:** 2828-7940
+* **e-ISSN:** 2829-1727
+
+### Article Timeline
+
+* Submitted: 31 December 2024
+* Revised: 20 March 2025
+* Accepted: 26 June 2025
+
+---
+
+## Date Read
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This study investigates **Address Resolution Protocol (ARP) Spoofing attacks** using a **network forensic approach based on the National Institute of Justice (NIJ) methodology**.
+
+The authors aim to identify:
+
+* The attacker's MAC address
+* The victim's MAC address
+* The exact attack timestamp
+
+The study combines:
+
+* Controlled ARP spoofing simulations
+* Packet capture analysis
+* Traffic correlation
+* Log analysis
+
+Using **Wireshark** and **XARP**, the researchers demonstrate that the NIJ framework can effectively support forensic investigations by producing structured and legally defensible evidence.
+
+A key finding is that **XARP detected the attack 13 seconds earlier than Wireshark**, suggesting the value of dedicated ARP monitoring tools in operational environments.
+
+---
+
+# Research Objectives
+
+The study seeks to:
+
+1. Detect ARP spoofing attacks in a controlled network.
+2. Identify attackers and victims using IP and MAC address correlation.
+3. Determine attack timestamps accurately.
+4. Evaluate the effectiveness of the NIJ forensic methodology.
+5. Generate legally defensible digital evidence.
+
+---
+
+# Background
+
+ARP converts IP addresses into MAC addresses within local networks.
+
+Because ARP requests are broadcast and lack authentication mechanisms, attackers can exploit the protocol by sending forged ARP replies.
+
+Successful ARP spoofing attacks enable:
+
+* Man-in-the-Middle (MITM) attacks
+* Denial-of-Service (DoS) attacks
+* Traffic interception
+* Data manipulation
+* Credential theft
+
+---
+
+# Why This Research Matters
+
+As internet usage continues to grow, organizations increasingly rely on networked systems.
+
+However, many networks remain vulnerable to ARP-based attacks because:
+
+* ARP lacks built-in security controls.
+* Devices trust unsolicited ARP responses.
+* Attack detection mechanisms are often reactive.
+
+The study emphasizes that forensic readiness is essential for both:
+
+* Incident response
+* Legal investigation
+
+---
+
+# Research Methodology
+
+## Forensic Framework
+
+The study adopts the **National Institute of Justice (NIJ)** digital forensic methodology.
+
+### NIJ Stages
+
+1. Identification
+2. Collection
+3. Examination
+4. Analysis
+5. Reporting
+
+The NIJ approach was selected because it provides:
+
+* Structured workflows
+* Evidence integrity preservation
+* Legal admissibility support
+* Comprehensive documentation
+
+---
+
+# Experimental Setup
+
+## Hardware
+
+* Asus A456U laptop
+* Samsung Notebook
+* MikroTik RouterBoard RB951
+* Tenda switch
+* LAN cables
+
+## Software
+
+* Wireshark
+* XARP
+* Ettercap
+* Winbox
+
+---
+
+# Network Topology
+
+| Device      | IP Address   | MAC Address       | Role     |
+| ----------- | ------------ | ----------------- | -------- |
+| RouterBoard | 192.168.22.1 | 64:d1:54:f5:4d:9e | Victim   |
+| PC 1        | 192.168.22.2 | 38:d5:47:49:ed:c7 | Victim   |
+| PC 2        | 192.168.22.3 | e8:11:32:0b:a8:53 | Attacker |
+
+---
+
+# Attack Scenario
+
+The attacker (PC 2) used **Ettercap** to launch an ARP spoofing attack against:
+
+* RouterBoard
+* PC 1
+
+The attacker injected forged ARP responses claiming ownership of the router's IP address.
+
+As a result:
+
+* Victim devices updated their ARP caches incorrectly.
+* Traffic intended for the router was redirected to the attacker.
+* The attacker positioned itself between communicating devices.
+
+---
+
+# Data Collection Techniques
+
+The researchers employed:
+
+* Packet capture analysis
+* Log correlation
+* Time-based analysis
+* Traffic monitoring
+
+## Tool Roles
+
+### Wireshark
+
+Used for:
+
+* Full packet capture
+* Protocol inspection
+* Timestamp analysis
+
+Captured protocols included:
+
+* ARP
+* ICMP
+* TCP
+* SSDP
+
+### XARP
+
+Used for:
+
+* ARP-focused monitoring
+* Automated attack notification
+* ARP anomaly logging
+
+---
+
+# Key Findings
+
+## Detection Results
+
+The attack was successfully detected using both tools.
+
+### First Detection Time
+
+| Tool      | Detection Timestamp       |
+| --------- | ------------------------- |
+| XARP      | 20 January 2024, 16:25:30 |
+| Wireshark | 20 January 2024, 16:25:43 |
+
+### Observation
+
+XARP detected the attack **13 seconds earlier** than Wireshark.
+
+---
+
+## Attack Evidence
+
+### Attacker
+
+* IP Address: 192.168.22.3
+* MAC Address: e8:11:32:0b:a8:53
+
+### Victims
+
+#### RouterBoard
+
+* IP Address: 192.168.22.1
+* MAC Address: 64:d1:54:f5:4d:9e
+
+#### PC 1
+
+* IP Address: 192.168.22.2
+* MAC Address: 38:d5:47:49:ed:c7
+
+### Attack Timestamp
+
+* Date: 20 January 2024
+* Time: 16:25 WIB
+
+---
+
+# NIJ Workflow Assessment
+
+| NIJ Phase      | Outcome                             |
+| -------------- | ----------------------------------- |
+| Identification | Evidence sources documented         |
+| Collection     | Packet captures and logs preserved  |
+| Examination    | Traffic verified and validated      |
+| Analysis       | Attacker and victims identified     |
+| Reporting      | Structured forensic report produced |
+
+---
+
+# Research Contributions
+
+This work contributes:
+
+* A practical NIJ implementation for network forensics
+* A comparative evaluation of Wireshark and XARP
+* A reproducible ARP spoofing investigation workflow
+* Legally defensible evidence documentation
+
+---
+
+# Practical Takeaways for Researchers
+
+## 1. Dedicated ARP monitoring tools matter
+
+XARP provided earlier detection than general packet analysis tools.
+
+## 2. Time correlation is critical
+
+Combining timestamps from multiple sources improves forensic accuracy.
+
+## 3. Packet capture alone is insufficient
+
+Integrating:
+
+* Logs
+* Traffic correlation
+* Protocol analysis
+
+produces stronger evidence.
+
+## 4. Forensic frameworks improve reproducibility
+
+The NIJ methodology provides a repeatable investigation process.
+
+---
+
+# Limitations
+
+The study has several limitations:
+
+* Small-scale network environment
+* Single attacker scenario
+* Limited device diversity
+* No encrypted traffic analysis
+* No large-scale enterprise validation
+
+---
+
+# Future Research Directions
+
+The authors recommend:
+
+* Integration with real-time IDS platforms
+* Using Snort or Suricata for automated detection
+* Developing Python-based anomaly detection scripts
+* Applying machine learning to classify ARP traffic
+* Testing multi-segment and VLAN environments
+* Evaluating more complex network topologies
+
+---
+
+# Opportunities for Further Research
+
+Potential extensions include:
+
+* Federated learning for ARP anomaly detection
+* Graph-based attack correlation
+* Real-time forensic pipelines
+* Automated evidence preservation
+* Hybrid NIJ–NIST forensic workflows
+* Explainable AI for network attack attribution
+
+---
+
+# Key Takeaways
+
+* ARP spoofing remains a significant threat to local networks.
+* NIJ provides a systematic and legally defensible forensic framework.
+* Combining Wireshark and XARP improves detection capabilities.
+* XARP detected attacks faster in the experimental environment.
+* Time-correlated evidence is essential for accurate attribution.
+
+---
+
+# References
+
+[1] R. Irawan, A. D. Yusufianto, A. Agustina, D. Dean, *Laporan Survei Internet APJII 2019–2020*, Asosiasi Penyelenggara Jasa Internet Indonesia, 2020. Available: https://apjii.or.id/survei
+
+[2] R. D. Hapsari and K. G. Pambayun, "Ancaman Cybercrime di Indonesia: Sebuah Tinjauan Pustaka Sistematis," *Jurnal Konstituen*, vol. 5, no. 1, pp. 1–17, 2023. doi:10.33701/jk.v5i1.3208
+
+[3] N. R. Arofah and Y. Priatnasari, "Internet Banking dan Cyber Crime: Sebuah Studi Kasus di Perbankan Nasional," *Jurnal Pendidikan Akuntansi Indonesia*, vol. 18, no. 2, pp. 107–119, 2020. doi:10.21831/jpai.v18i2.35872
+
+[4] R. F. Sri Supatmi and Taufiq Nuzwir Nizar, "Sistem Kontrol Peralatan Rumah dan Monitoring Kondisi Rumah Melalui Internet Berbasis Web dan OpenWRT," *Jurnal Teknik Komputer Unikom – Komputika*, vol. 3, no. 2, pp. 23–28, 2014.
+
+[5] L. Iriani and M. N. Hafizh, "Forensik Jaringan Terhadap Serangan DDOS Menggunakan Metode Network Forensic Development Life Cycle," *JSTIE (Jurnal Sarjana Teknik Informatika)*, vol. 11, no. 3, p. 107, 2023. doi:10.12928/jstie.v11i3.26544
+
+[6] E. Permana and M. H. Sarip, "Pengembangan Jaringan Komputer," *Jurnal Mitra Manajemen*, vol. 5, no. 1, pp. 1–10, 2016.
+
+[7] M. N. Hafizh, I. Riadi, and A. Fadlil, "Forensik Jaringan Terhadap Serangan ARP Spoofing Menggunakan Metode Live Forensic," *Jurnal Telekomunikasi dan Komputer*, vol. 10, no. 2, p. 111, 2020. doi:10.22441/incomtech.v10i2.8757
+
+[8] M. E. Ayuningtyas, "Mengenal Perbedaan IP Address dan MAC Address Dari Berbagai Aspek," PuTI (Pusat Teknologi Informasi). Available: https://it.telkomuniversity.ac.id/perbedaan-ip-address-dan-mac-address/
+
+[9] H. Khalid, P. Ismael, and A. Al-Khalil, "Efficient Mechanism for Securing Software Defined Network Against ARP Spoofing Attack," *Journal of University of Duhok*, vol. 22, no. 1, pp. 124–131, 2019. doi:10.26682/sjuod.2019.22.1.14
+
+[10] I. Riadi, A. Fadlil, and M. N. Hafizh, "Analisis Bukti Serangan Address Resolution Protocol Spoofing Menggunakan Metode National Institute of Standard Technology," *Edumatic: Jurnal Pendidikan Informatika*, vol. 4, no. 1, pp. 21–29, 2020. doi:10.29408/edumatic.v4i1.2046
+
+[11] M. Abid and A. Singh, "ARP Spoofing Detection via Wireshark and Veracode," *International Journal of New Technology Research*, vol. 4, no. 5, pp. 27–30, 2018.
+
+[12] I. Riadi, A. Fadlil, and M. I. Aulia, "Investigasi Bukti Digital Optical Drive Menggunakan Metode National Institute of Standard and Technology (NIST)," *Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)*, vol. 4, no. 5, pp. 820–828, 2020. doi:10.29207/resti.v4i5.2224
+
+[13] P. Pandit and P. D. Pandit, "A Study of Operation, Detection and Prevention for ARP Spoofing," 2021. doi:10.13140/RG.2.2.16764.05764
+
+[14] M. N. Faiz, R. Umar, and A. Yudhana, "Implementasi Live Forensics untuk Perbandingan Browser pada Keamanan Email," *JISKA (Jurnal Informatika Sunan Kalijaga)*, vol. 1, no. 3, pp. 108–114, 2017. doi:10.14421/jiska.2017.13-02
+
+[15] I. Riadi, R. Umar, and I. M. Nasrulloh, "Analisis Forensik Digital Pada Frozen Solid State Drive Dengan Metode National Institute of Justice (NIJ)," *ELINVO (Electronics, Informatics, and Vocational Education)*, vol. 3, no. 1, pp. 70–82, 2018. doi:10.21831/elinvo.v3i1.19308

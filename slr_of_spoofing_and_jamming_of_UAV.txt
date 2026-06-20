@@ -1,0 +1,537 @@
+# A Systematic Literature Review on Spoofing and Jamming Approaches in Unmanned Aerial Vehicles Navigation
+
+## Authors
+
+* Simegnew Eshetu Meheretu
+* Yikeber Hailesilassie Nigussie
+* Gebeyehu Belay Gebremeskel
+* Serkalem Yikeber Hailesilassie
+
+### Affiliations
+
+1. Bahir Dar University – Institute of Technology, Department of Computer Science, Bahir Dar, Ethiopia
+2. University of Turku – Department of Computing, Turku, Finland
+
+**Corresponding Author:** Gebeyehu Belay Gebremeskel ([gebeyehu2009@gmail.com](mailto:gebeyehu2009@gmail.com))
+
+---
+
+## Publication Information
+
+* **Journal:** Journal of Aerospace Technology and Management
+* **Volume:** 17
+* **Article ID:** e3425
+* **Year:** 2025
+* **Article Type:** Systematic Literature Review
+* **DOI:** https://doi.org/10.1590/jatm.v17.1396
+
+### Timeline
+
+* **Received:** 17 April 2025
+* **Accepted:** 9 July 2025
+
+---
+
+## Date Read
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This systematic literature review (SLR) investigates the growing threat of **GNSS spoofing and jamming attacks against unmanned aerial vehicles (UAVs)**.
+
+The study analyzes how current research addresses security threats affecting UAV navigation and communication systems, focusing on:
+
+* Spoofing detection
+* Jamming mitigation
+* GNSS-denied navigation
+* Alternative localization
+* Machine learning approaches
+* Blockchain-based security
+
+The authors conclude that although numerous detection and mitigation strategies exist, most solutions continue to rely on the same vulnerable infrastructure—namely GNSS and wireless communications.
+
+The review identifies a critical research gap:
+
+> Current solutions address symptoms rather than root causes.
+
+Environmental resilience, mission completion metrics, and intentional denial-of-service scenarios remain significantly underexplored.
+
+---
+
+# Research Questions
+
+The review is organized around three questions:
+
+1. How do GNSS-based UAV systems protect themselves against security threats?
+2. How effective are existing mitigation approaches?
+3. What limitations remain in current solutions?
+
+---
+
+# Why This Study Matters
+
+Modern UAVs increasingly support:
+
+* Agriculture
+* Cargo transportation
+* Surveillance
+* Military operations
+* Disaster response
+* Remote sensing
+
+Most UAV platforms depend heavily on GNSS technologies such as:
+
+* GPS
+* GLONASS
+* Galileo
+* BeiDou
+
+Because GNSS signals are weak and open by design, they are highly susceptible to manipulation.
+
+Compromising navigation can result in:
+
+* Mission failure
+* Hijacking
+* Loss of aircraft
+* Data theft
+* Operational disruption
+
+---
+
+# Systematic Review Methodology
+
+## Search Period
+
+* Studies published between **2016 and 2024**
+
+## Databases
+
+* IEEE Xplore
+* ACM Digital Library
+* MDPI
+* Wiley Online Library
+* Elsevier / ScienceDirect
+* ResearchGate
+
+## Search Strategy
+
+Example search terms:
+
+* "UAV AND GPS AND Security"
+* "GPS spoofing"
+* "GPS jamming"
+* "UAV navigation security"
+* "GPS navigation security"
+
+## Study Selection Process
+
+1. Database search
+2. Title and abstract screening
+3. Full-text review
+4. Inclusion/exclusion filtering
+5. Forward and backward snowballing
+
+---
+
+## Literature Statistics
+
+| Metric                   | Count |
+| ------------------------ | ----: |
+| Total papers identified  |   388 |
+| Relevant papers          |    91 |
+| Final studies analyzed   |    79 |
+| Primary studies selected |    60 |
+
+---
+
+# Inclusion Criteria
+
+Studies had to:
+
+* Address UAV navigation security
+* Focus on spoofing, jamming, or GPS-denied navigation
+* Include empirical evidence
+* Be peer-reviewed
+* Be written in English
+
+Excluded materials:
+
+* Grey literature
+* White papers
+* Non-English publications
+* Non-UAV studies
+
+---
+
+# Threat Landscape
+
+## GNSS Spoofing
+
+Spoofing occurs when attackers transmit counterfeit GNSS signals to manipulate UAV positioning, velocity, and timing information.
+
+### Consequences
+
+* Route deviation
+* Unauthorized landing
+* UAV hijacking
+* Mission manipulation
+
+---
+
+## GNSS Jamming
+
+Jamming disrupts communication between GNSS satellites and UAV receivers.
+
+### Jamming Categories
+
+* Continuous jamming
+* Reactive jamming
+* Random jamming
+* Constant jamming
+
+### Consequences
+
+* Signal loss
+* Denial of service
+* Mission termination
+* Reduced operational range
+
+---
+
+# Security Approaches Identified
+
+The review groups mitigation strategies into four categories.
+
+---
+
+## 1. Intrusion Detection and Prevention (IDP)
+
+### Techniques
+
+* Rule-based IDS
+* Distributed IDS agents
+* Statistical anomaly detection
+* Kullback-Leibler divergence (KLD)
+* Kalman filters
+
+### Advantages
+
+* Early threat detection
+* Low deployment complexity
+
+### Limitations
+
+* High false-positive rates
+* Performance overhead
+* Dependence on GNSS availability
+
+---
+
+## 2. Machine Learning and Deep Learning
+
+### Algorithms Identified
+
+* Support Vector Machines (SVM)
+* Artificial Neural Networks (ANN)
+* Long Short-Term Memory (LSTM)
+* Convolutional Neural Networks (CNN)
+* Generative Adversarial Networks (GAN)
+* Dynamic ensemble selection
+
+### Features Used
+
+* Signal-to-noise ratio (SNR)
+* Carrier phase
+* Doppler shift
+* Pseudorange
+* Satellite count
+* OFDM parameters
+
+### Representative Examples
+
+| Method | Application                  |
+| ------ | ---------------------------- |
+| LSTM   | Flight trajectory prediction |
+| CNN    | Satellite image matching     |
+| GAN    | Adversarial IDS              |
+| SVM    | Spoofing classification      |
+
+### Key Insight
+
+Multiple classifier systems outperform single-model approaches.
+
+---
+
+## 3. Alternative Localization
+
+Alternative navigation approaches reduce dependence on GNSS.
+
+### Technologies
+
+* Ultra-wideband (UWB)
+* IMU/INS
+* Radar localization
+* Cellular positioning
+* Wireless ranging
+* LiDAR
+
+### Advantages
+
+* GNSS independence
+* Improved resilience
+
+### Limitations
+
+* Infrastructure requirements
+* Environmental sensitivity
+* Scalability challenges
+
+---
+
+## 4. Vision-Based Navigation
+
+### Techniques
+
+* SLAM
+* Optical flow
+* Stereo vision
+* Satellite image matching
+* Landmark localization
+
+### Advantages
+
+* Effective in GPS-denied environments
+
+### Limitations
+
+* Sensitive to lighting conditions
+* Performance degradation in fog, rain, or darkness
+* High computational requirements
+
+---
+
+## 5. Blockchain-Based Security
+
+### Applications
+
+* Secure data sharing
+* Authentication
+* Integrity verification
+* Geolocation validation
+
+### Technologies
+
+* Ethereum
+* Smart contracts
+* Byzantine fault tolerance
+* Distributed ledgers
+
+### Advantages
+
+* Immutability
+* Traceability
+* Decentralized trust
+
+### Limitations
+
+* Scalability
+* Latency
+* Environmental dependence
+* Susceptibility to jamming
+
+---
+
+# Comparative Analysis of Existing Approaches
+
+| Approach                 | Strengths         | Weaknesses                |
+| ------------------------ | ----------------- | ------------------------- |
+| IDS/IDP                  | Fast detection    | Resource intensive        |
+| Machine Learning         | High accuracy     | Requires large datasets   |
+| Blockchain               | Strong integrity  | Scalability issues        |
+| Vision Navigation        | GNSS independence | Weather sensitivity       |
+| Alternative Localization | Redundancy        | Infrastructure dependency |
+
+---
+
+# Major Research Gaps
+
+The review identifies five persistent gaps.
+
+## 1. Root Cause Analysis
+
+Most studies focus on detection rather than eliminating vulnerabilities.
+
+---
+
+## 2. Environmental Resilience
+
+Few studies consider:
+
+* Rain
+* Fog
+* Cloud cover
+* Terrain effects
+* Electromagnetic interference
+
+---
+
+## 3. Mission Performance Metrics
+
+Most work ignores:
+
+* Mission success rate
+* Flight duration
+* Energy consumption
+* Operational cost
+
+---
+
+## 4. Scalability
+
+Solutions often assume:
+
+* Single UAVs
+* Limited geographic coverage
+* Stable communication links
+
+---
+
+## 5. Intentional Service Denial
+
+Current studies rarely consider:
+
+* Service provider denial
+* Multi-jammer scenarios
+* Coordinated attacks
+
+---
+
+# Key Insights for Researchers
+
+## Insight 1
+
+GNSS dependence remains the core vulnerability across almost all UAV navigation systems.
+
+---
+
+## Insight 2
+
+Machine learning improves detection accuracy but does not solve signal availability problems.
+
+---
+
+## Insight 3
+
+Blockchain enhances trust and data integrity but cannot prevent physical-layer attacks.
+
+---
+
+## Insight 4
+
+Vision-based systems are promising but lack environmental robustness.
+
+---
+
+## Insight 5
+
+Hybrid navigation systems combining multiple sensors offer the best path toward resilient UAV operation.
+
+---
+
+# Recommended Research Directions
+
+The authors recommend:
+
+* Root-cause-focused security design
+* Mission-oriented evaluation metrics
+* Multi-sensor fusion architectures
+* GNSS-independent navigation
+* Adaptive detection algorithms
+* Real-world testing environments
+* Cross-disciplinary collaboration
+* Standardized security benchmarks
+
+---
+
+# Suggested Future Research Topics
+
+* Adversarial machine learning for UAV security
+* Multi-jammer detection frameworks
+* Self-healing navigation systems
+* Federated learning for UAV swarms
+* Explainable AI for spoofing detection
+* Resilient edge computing architectures
+* Autonomous recovery strategies
+* Quantum-resistant authentication
+
+---
+
+# Practical Implications
+
+The findings are relevant to:
+
+* UAV manufacturers
+* Aviation regulators
+* Defense organizations
+* Critical infrastructure operators
+* Autonomous logistics providers
+
+The study highlights that secure navigation should be treated as a system-level challenge rather than a standalone detection problem.
+
+---
+
+# Limitations of the Review
+
+* Focused on studies published between 2016 and 2024
+* Restricted to English-language literature
+* Limited evaluation of real-world deployments
+* Performance metrics were inconsistently reported across studies
+
+---
+
+# Key Takeaways
+
+* Spoofing and jamming remain major threats to UAV navigation.
+* Existing countermeasures largely depend on vulnerable GNSS infrastructure.
+* Machine learning and blockchain are promising but insufficient on their own.
+* Environmental resilience is significantly underexplored.
+* Future systems require hybrid, multi-modal navigation architectures.
+
+---
+
+# References
+
+> **Important Note:** The uploaded document's references section is truncated. The references below reproduce all entries visible in the uploaded text. Researchers should consult the publisher's official PDF for the complete bibliography.
+
+1. Acuna R, Zhang D, Willert V (2018). *Vision-based UAV landing on a moving platform in GPS denied environments using motion prediction.* Proceedings of the 2018 Latin American Robotics Symposium and Brazilian Robotics Symposium. https://doi.org/10.1109/LARS/SBR/WRE.2018.00096
+
+2. Alrefaei F, Alzahrani A, Song H, Alrefaei S (2022). *A survey on the jamming and spoofing attacks on the unmanned aerial vehicle networks.* Proceedings of the IEEE International IoT, Electronics, and Mechatronics Conference. https://doi.org/10.1109/IEMTRONICS55184.2022.9795809
+
+3. Altaweel A, Mukkath H, Kamel I (2023). *GPS spoofing attacks in FANETs: A systematic literature review.* IEEE Access, 11, 55233–55280. https://doi.org/10.1109/ACCESS.2023.3281731
+
+4. Arteaga SP, Hernandez LAM, Perez GS, Orozco ALS, Villalba LJG (2019). *Analysis of the GPS spoofing vulnerability in the drone 3DR Solo.* IEEE Access, 7, 51782–51789. https://doi.org/10.1109/ACCESS.2019.2911526
+
+5. Arthur MP (2019). *Detecting signal spoofing and jamming attacks in UAV networks using a lightweight IDS.* Proceedings of the International Conference on Computer, Information, and Telecommunication Systems. https://doi.org/10.1109/CITS.2019.8862148
+
+6. Asif M, Rahman MA, Akkaya K, Shahriar H, Cuzzocrea A (2023). *Adversarial data-augmented resilient intrusion detection system for unmanned aerial vehicles.* Proceedings of the IEEE International Conference on Big Data. https://doi.org/10.1109/BigData59044.2023.10386140
+
+7. Basan E, Basan A, Nekrasov A, Fidge C, Sushkin N, Peskova O (2022). *GPS-spoofing attack detection technology for UAVs based on Kullback-Leibler divergence.* Drones, 6(1), 1–18. https://doi.org/10.3390/drones6010008
+
+8. Basan E, Basan A, Nekrasov A, Fidge C, Gamec J, Gamcová M (2021). *A self-diagnosis method for detecting UAV cyber attacks based on analysis of parameter changes.* Sensors, 21(2), 1–17. https://doi.org/10.3390/s21020509
+
+9. Bhamidipati S, Gao GX (2019). *Locating multiple GPS jammers using networked UAVs.* IEEE Internet of Things Journal, 6(2), 1816–1828. https://doi.org/10.1109/JIOT.2019.2896262
+
+10. Challita U, Ferdowsi A, Chen M, Saad W (2019). *Machine learning for wireless connectivity and security of cellular-connected UAVs.* IEEE Wireless Communications, 26(1), 28–35. https://doi.org/10.1109/MWC.2018.1800155
+
+11. Ch R, Srivastava G, Reddy Gadekallu T, Maddikunta PKR, Bhattacharya S (2020). *Security and privacy of UAV data using blockchain technology.* Journal of Information Security and Applications, 55, 102670. https://doi.org/10.1016/j.jisa.2020.102670
+
+12. Khan AA, Khan MM, Khan KM, Arshad J, Ahmad F (2021). *A blockchain-based decentralized machine learning framework for collaborative intrusion detection within UAVs.* Computer Networks, 196, 108217. https://doi.org/10.1016/j.comnet.2021.108217
+
+13. White T, Jesse W, Colton L, Randall C, Kevin RM (2021). *GPS-denied navigation using SAR images and neural networks.* Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing. https://doi.org/10.1109/ICASSP39728.2021.9414421
+
+14. Xue N, Niu L, Hong X, Li Z, Hoffaeller L, Pöpper C (2020). *DeepSIM: GPS spoofing detection on UAVs using satellite imagery matching.* Proceedings of the ACM International Conference. https://doi.org/10.1145/3427228.3427254
+
+15. Wohlin C (2014). *Guidelines for snowballing in systematic literature studies and a replication in software engineering.* Proceedings of the ACM International Conference. https://doi.org/10.1145/2601248.2601268

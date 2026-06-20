@@ -1,0 +1,605 @@
+# Machine Learning Model for Detecting Attack in Service Supply Chain
+
+## Authors
+
+* A. O. Olaniyi
+* O. A. Ayeni
+* M. G. Adewunmi
+
+### Affiliations
+
+1. Department of Computer Science, Achievers University, Owo, Nigeria
+2. Department of Cyber Security, School of Computing, Federal University of Technology Akure, Nigeria
+3. Department of Computing and Information Sciences, University of Lay Adventist of Kigali, Kigali, Rwanda
+
+---
+
+## Publication Information
+
+* **Journal:** Journal of Information Security & Cybercrimes Research (JISCR)
+* **Volume:** 8
+* **Issue:** 1
+* **Pages:** 1–16
+* **Article Type:** Review Article
+* **Received:** 20 February 2025
+* **Accepted:** 24 June 2025
+* **Published Online:** 29 June 2025
+* **DOI:** https://doi.org/10.26735/GNVR4188
+* **License:** Creative Commons Attribution-NonCommercial License
+
+---
+
+## Date Read
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This study investigates the effectiveness of machine learning (ML) techniques for detecting **service supply chain attacks**, which exploit vulnerabilities in third-party vendors, software updates, and service providers.
+
+Using the **DFRLab Software Supply Chain Security Dataset**, the authors evaluate three supervised learning algorithms:
+
+* Decision Tree
+* Random Forest
+* XGBoost
+
+The study demonstrates that ensemble methods significantly outperform traditional signature-based intrusion detection systems by enabling adaptive detection of evolving threats.
+
+Among the evaluated models, **Random Forest achieved the best overall performance**, obtaining:
+
+* **Accuracy:** 96.1%
+* **Precision:** 96.4%
+* **Recall:** 96.0%
+* **F1-score:** 97.0%
+* **ROC-AUC:** 0.96
+
+The authors conclude that machine learning offers a scalable and effective approach for detecting supply chain attacks but acknowledge challenges related to computational cost and real-time deployment.
+
+---
+
+# Research Problem
+
+Supply chain attacks increasingly target:
+
+* Software vendors
+* Cloud providers
+* Third-party services
+* Hardware manufacturers
+
+Traditional security mechanisms such as:
+
+* Signature-based IDS
+* Firewalls
+* Heuristic rules
+
+often fail against:
+
+* Zero-day attacks
+* Advanced Persistent Threats (APTs)
+* Multi-stage attacks
+* Supply chain compromises
+
+Recent incidents such as:
+
+* SolarWinds
+* Kaseya
+* MOVEit
+* NotPetya
+
+demonstrate the limitations of conventional detection approaches.
+
+---
+
+# Research Objectives
+
+The study aims to:
+
+1. Design a machine learning framework for service supply chain attack detection.
+2. Implement Decision Tree, Random Forest, and XGBoost models.
+3. Compare model performance using standard evaluation metrics.
+4. Improve feature selection using explainable AI techniques.
+5. Demonstrate the feasibility of ML-based supply chain monitoring.
+
+---
+
+# Key Contributions
+
+The paper makes the following contributions:
+
+* Development of an ML-based supply chain attack detection pipeline.
+* Comparative evaluation of three tree-based classifiers.
+* Integration of SHAP values for feature importance analysis.
+* Use of Random Forest feature selection for dimensionality reduction.
+* Evaluation using real-world supply chain attack data.
+* Demonstration of improved performance over prior work.
+
+---
+
+# Supply Chain Attack Taxonomy
+
+The authors identify four major categories of supply chain attacks.
+
+## 1. Compromised Software Updates
+
+Attackers inject malicious code into software releases.
+
+### Example
+
+* SolarWinds Orion attack
+
+---
+
+## 2. Hardware Supply Chain Attacks
+
+Attackers tamper with hardware during manufacturing or distribution.
+
+### Example
+
+* Alleged malicious hardware implants in imported devices
+
+---
+
+## 3. Third-Party Service Provider Attacks
+
+Attackers exploit vendor relationships.
+
+### Examples
+
+* Target HVAC breach
+* MOVEit file transfer breach
+
+---
+
+## 4. Data Integrity Attacks
+
+Attackers manipulate or destroy organizational data.
+
+### Example
+
+* NotPetya ransomware attack
+
+---
+
+# Dataset
+
+## Source
+
+**Software Supply Chain Security Dataset**
+
+Developed by:
+
+* Cyber Statecraft Initiative
+* Atlantic Council DFRLab
+
+Dataset URL:
+
+https://dfrlab.org/2023/09/27/software-supply-chain-security-the-dataset/
+
+---
+
+## Dataset Characteristics
+
+* **Records:** 2,261
+* **Features:** 69 attributes
+
+### Included Variables
+
+* Attack vectors
+* Distribution methods
+* Attack depth
+* Disclosure events
+* Temporal attributes
+* Supply chain indicators
+
+---
+
+# Exploratory Data Analysis (EDA)
+
+Key findings include:
+
+* Attack events significantly outnumber disclosures.
+* Credential theft and code injection are dominant attack vectors.
+* Open-source dependencies are major distribution channels.
+* Attack frequency has increased over time.
+* Attack depth strongly correlates with impact severity.
+
+---
+
+## Data Challenges
+
+### Class Imbalance
+
+Attack records outnumber disclosure records.
+
+### Missing Values
+
+Missing data occurred in fields such as:
+
+* Attacker name
+* Supply chain potential
+
+---
+
+## Mitigation Strategies
+
+* SMOTE oversampling
+* k-NN imputation
+* Feature engineering
+
+---
+
+# Data Preprocessing Pipeline
+
+## Data Cleaning
+
+* Missing value imputation
+* Outlier handling
+
+---
+
+## Feature Transformation
+
+* One-hot encoding
+* Label encoding
+* Standardization
+* Min-Max scaling
+
+---
+
+## Text Processing
+
+* TF-IDF vectorization
+* Word embeddings
+
+---
+
+## Temporal Engineering
+
+Date attributes were decomposed into:
+
+* Year
+* Month
+* Temporal trends
+
+---
+
+# Feature Selection
+
+The study combines multiple feature selection approaches.
+
+## Methods Used
+
+* Random Forest feature importance
+* SHAP values
+* Recursive Feature Elimination (RFE)
+* Lasso regression
+* Statistical tests
+
+---
+
+## Research Insight
+
+The use of SHAP values improves:
+
+* Model interpretability
+* Feature prioritization
+* Explainability
+
+This is one of the study's primary methodological contributions.
+
+---
+
+# Machine Learning Models
+
+## Decision Tree
+
+### Advantages
+
+* Easy interpretation
+* Low computational complexity
+
+### Limitations
+
+* Prone to overfitting
+* Limited ability to capture complex relationships
+
+### Splitting Criterion
+
+* Gini impurity
+
+---
+
+## Random Forest
+
+### Advantages
+
+* Reduces overfitting
+* Strong generalization capability
+* Robust to noisy features
+
+### Ensemble Method
+
+* Bagging
+
+### Final Prediction
+
+Majority voting across trees.
+
+---
+
+## XGBoost
+
+### Advantages
+
+* Captures complex interactions
+* High recall performance
+* Efficient boosting strategy
+
+### Limitations
+
+* Hyperparameter sensitivity
+* Greater performance variability
+
+---
+
+# Experimental Setup
+
+## Programming Environment
+
+* Python
+
+## Libraries
+
+* Pandas
+* NumPy
+* Scikit-learn
+* XGBoost
+* Matplotlib
+* Seaborn
+
+## Development Platform
+
+* Jupyter Notebook
+
+## Hardware
+
+* Intel Core i7/i9
+* 16 GB RAM
+* SSD storage
+* GPU acceleration
+
+---
+
+# Validation Strategy
+
+## Train/Test Split
+
+* 70% training
+* 30% testing
+
+## Cross-Validation
+
+* K-fold cross-validation
+
+Purpose:
+
+* Reduce overfitting
+* Improve robustness
+* Enhance generalization
+
+---
+
+# Evaluation Metrics
+
+The models were evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* ROC-AUC
+* Precision-Recall curves
+* Confusion matrices
+
+---
+
+# Results
+
+| Model         | Accuracy | Precision | Recall | F1-Score |
+| ------------- | -------- | --------- | ------ | -------- |
+| Decision Tree | 95.0%    | 95.0%     | 95.0%  | 95.0%    |
+| Random Forest | 96.1%    | 96.4%     | 96.0%  | 97.0%    |
+| XGBoost       | 94.7%    | 94.6%     | 98.1%  | 96.3%    |
+
+---
+
+# Confusion Matrix Summary
+
+| Model         | FP | FN |
+| ------------- | -- | -- |
+| Decision Tree | 3  | 1  |
+| Random Forest | 1  | 2  |
+| XGBoost       | 2  | 1  |
+
+---
+
+# Key Findings
+
+## Random Forest
+
+* Best overall performance
+* Lowest false positives
+* Most stable across runs
+* Highest ROC-AUC (0.96)
+
+---
+
+## XGBoost
+
+* Highest recall (98.1%)
+* Better for minimizing missed attacks
+* More sensitive to hyperparameters
+
+---
+
+## Decision Tree
+
+* Highly interpretable
+* Lowest computational cost
+* Less effective for complex attack patterns
+
+---
+
+# Comparison with Previous Research
+
+| Study                   | Model         | Accuracy |
+| ----------------------- | ------------- | -------- |
+| This Study              | Random Forest | 96.1%    |
+| Al-Ansari et al. (2022) | Random Forest | 72.0%    |
+| Khan et al. (2023)      | Federated GRU | 90.0%    |
+
+The proposed approach outperforms previous work through:
+
+* Improved feature engineering
+* SHAP-based feature selection
+* Optimized hyperparameters
+
+---
+
+# Practical Implications
+
+The framework can support:
+
+* Security Operations Centers (SOCs)
+* Vendor risk assessment
+* Threat intelligence platforms
+* Continuous monitoring systems
+* Supply chain governance programs
+
+Potential application domains include:
+
+* Finance
+* Healthcare
+* Critical infrastructure
+* Cloud services
+
+---
+
+# Limitations
+
+The authors identify several limitations.
+
+## Dataset Limitations
+
+* Static dataset
+* Limited real-time applicability
+
+## Computational Cost
+
+* Random Forest may be expensive for real-time systems
+
+## Class Imbalance
+
+* Potential bias toward attack detection
+
+## Generalizability
+
+* Limited evaluation across multiple datasets
+
+---
+
+# Future Research Directions
+
+The authors recommend:
+
+* Real-time deployment pipelines
+* Hybrid classical and deep learning models
+* Federated learning
+* Adversarial machine learning evaluation
+* STIX/TAXII integration
+* Graph-based supply chain modeling
+* Bayesian hyperparameter optimization
+* Continuous retraining frameworks
+
+---
+
+# Key Insights for Researchers
+
+## Insight 1
+
+Feature engineering is as important as model selection.
+
+## Insight 2
+
+Explainable AI techniques such as SHAP improve cybersecurity model adoption.
+
+## Insight 3
+
+Ensemble methods outperform standalone classifiers for supply chain attack detection.
+
+## Insight 4
+
+High recall alone is insufficient; precision-recall balance matters.
+
+## Insight 5
+
+Static datasets remain a major obstacle for operational deployment.
+
+---
+
+# Reproducibility Checklist
+
+* Dataset source identified
+* Hardware configuration documented
+* Libraries specified
+* Validation strategy described
+* Metrics clearly defined
+* Feature selection methods reported
+
+Missing elements:
+
+* Source code repository
+* Hyperparameter search space
+* Random seed values
+* Model inference times
+
+---
+
+# Key Takeaways
+
+* Machine learning significantly improves supply chain attack detection.
+* Random Forest achieved the best overall performance.
+* SHAP values enhanced feature interpretability.
+* Ensemble learning provides robustness against complex attack patterns.
+* Real-time deployment remains an open challenge.
+* Future systems should integrate threat intelligence and adaptive learning.
+
+---
+
+# References
+
+## References Cited in the Paper
+
+[1] Khan, I., Moustafa, N., Pi, D., Hussain, Y., & Khan, N. (2023). DFF-SC4N: A deep federated defence framework for protecting Supply Chain 4.0 networks. *IEEE Transactions on Industrial Informatics, 19*, 3300–3309. https://doi.org/10.1109/TII.2021.3108811
+
+[2] Mundt, M., & Baier, H. (2022). Threat-based simulation of data exfiltration toward mitigating multiple ransomware extortions. *Digital Threats: Research and Practice, 4*, 1–23. https://doi.org/10.1145/3568993
+
+[3] Pigni, F., Bartosiak, M., Piccoli, G., & Ives, B. (2018). Targeting Target with a 100 million dollar data breach. *Journal of Information Technology Teaching Cases, 8*, 9–23. https://doi.org/10.1057/S41266-017-0028-0
+
+[4] Ismail, S., Dandan, S., Dawoud, D., & Reza, H. (2024). A comparative study of lightweight machine learning techniques for cyber-attacks detection in blockchain-enabled industrial supply chain. *IEEE Access, 12*, 102481–102491. https://doi.org/10.1109/ACCESS.2024.3432454
+
+[5] SolarWinds. (2020). SolarWinds cyberattack. *SolarWinds Blog*. https://www.solarwinds.com/securityadvisory
+
+[6] Huang, J., & Tsai, K. (2022). Securing authoritarian capitalism in the digital age: The political economy of surveillance in China. *The China Journal, 88*, 2–28. https://doi.org/10.1086/720144
+
+[7] Lokanan, M., & Maddhesia, V. (2024). Supply chain fraud prediction with machine learning and artificial intelligence. *International Journal of Production Research*. https://doi.org/10.1080/00207543.2024.2361434
+
+[8] Sebbar, A., & Zkik, K. (2023). Enhancing resilience against DDoS attacks in SDN-based supply chain networks using machine learning. In *2023 9th International Conference on Control, Decision and Information Technologies (CoDIT)* (pp. 230–234). https://doi.org/10.1109/CoDIT58514.2023.10284387
+
+[9] Kim, J., et al. (2022). Securing third-party services in supply chains. *Supply Chain Security Journal, 14*(1), 112–123.
+
+[10] Masum, M., Nazim, M., Faruk, M., Shahriar, H., Valero, M., Khan, M., Uddin, G., Barzanjeh, S., Saglamyurek, E., Rahman, A., & Ahamed, S. (2022). Quantum machine learning for software supply chain attacks: How far can we go? In *2022 IEEE 46th Annual Computers, Software, and Applications Conference (COMPSAC)* (pp. 530–538). https://doi.org/10.48550/arXiv.2204.02784
+
+> **Note:** The uploaded text appears truncated near the end of the article. References [11]–[29] are partially visible and may contain formatting inconsistencies. Researchers should verify the complete bibliography using the publisher's PDF before citation extraction or systematic review inclusion.

@@ -1,0 +1,571 @@
+# NurseVerse: Nursing in the Metaverse Era
+
+## Authors
+
+* Xia Li
+* Yaoqun Zhou
+* Miao Xue
+
+**Equal contribution:** Xia Li and Yaoqun Zhou share first authorship.
+
+---
+
+## Publication Details
+
+* **Journal:** Frontiers in Medicine
+* **Article Type:** Review
+* **Volume:** 12
+* **Article ID:** 1577153
+* **Published:** 4 July 2025
+* **DOI:** https://doi.org/10.3389/fmed.2025.1577153
+* **License:** CC BY 4.0
+
+---
+
+## Date Read
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This review introduces the concept of the **NurseVerse**, a metaverse-enabled ecosystem that integrates:
+
+* Virtual Reality (VR)
+* Augmented Reality (AR)
+* Artificial Intelligence (AI)
+* Blockchain
+* Internet of Things (IoT)
+* Digital Twins
+* Wearable Devices
+
+The NurseVerse extends existing digital health infrastructure by enabling immersive, interactive, and personalized nursing services within persistent virtual environments.
+
+The authors argue that nursing is entering a new phase of digital transformation in which virtual environments augment traditional care delivery rather than replace it.
+
+Potential applications include:
+
+* Surgical assistance
+* Chronic disease management
+* Nursing education
+* Telemedicine
+* Psychological interventions
+
+The review also identifies major barriers related to trust, privacy, regulation, cost, interoperability, and digital equity.
+
+---
+
+# Research Objectives
+
+The paper aims to:
+
+1. Define the NurseVerse concept.
+2. Explore metaverse applications in nursing.
+3. Compare NurseVerse capabilities with current digital health solutions.
+4. Identify technological, ethical, and legal challenges.
+5. Propose future directions for metaverse-based nursing systems.
+
+---
+
+# What Is the NurseVerse?
+
+The NurseVerse combines immersive technologies and healthcare infrastructure to create a persistent virtual nursing ecosystem.
+
+It enables:
+
+* Virtual nurse–patient interactions
+* Immersive clinical education
+* Remote health monitoring
+* Personalized care planning
+* Collaborative care environments
+* Digital twins of patients and healthcare facilities
+
+The NurseVerse differs from conventional telemedicine by shifting from two-dimensional communication toward interactive three-dimensional experiences.
+
+---
+
+# The Four Components of the Metaverse
+
+The framework adapts the metaverse roadmap proposed by Smart et al. (2007) and organizes NurseVerse applications into four categories.
+
+## 1. Augmented Reality (AR)
+
+AR overlays digital information onto the physical world.
+
+### Nursing Applications
+
+* Venipuncture assistance
+* Visualization of anatomy
+* Wound management
+* Emergency triage
+* Surgical navigation
+* Procedural guidance
+
+### Example
+
+AR smart glasses can project vascular structures during cannulation procedures, improving precision and reducing errors.
+
+---
+
+## 2. Lifelogging
+
+Lifelogging captures continuous health data through wearable devices.
+
+### Data Sources
+
+* Smartwatches
+* Fitness trackers
+* Blood pressure monitors
+* ECG devices
+* Glucose monitors
+* Smart clothing
+
+### Nursing Applications
+
+* Remote monitoring
+* Early warning systems
+* Chronic disease management
+* Personalized interventions
+* Self-management support
+
+### Example
+
+AI systems can analyze gait patterns from smart socks and adjust rehabilitation plans.
+
+---
+
+## 3. Mirror Worlds
+
+Mirror worlds create digital twins of physical systems.
+
+### Nursing Applications
+
+* Smart hospitals
+* Digital patient models
+* Predictive analytics
+* Workflow optimization
+* Resource management
+
+### Example
+
+Shanghai's metaverse-enabled hospitals integrate physical and digital infrastructure using digital twin technologies.
+
+---
+
+## 4. Virtual Worlds
+
+Virtual worlds are immersive, computer-generated environments accessed through avatars.
+
+### Nursing Applications
+
+* Virtual hospitals
+* Remote consultations
+* Patient education
+* Psychological interventions
+* Clinical simulations
+
+### Example
+
+Virtual waiting rooms can provide interactive 3D anatomical models tailored to individual conditions.
+
+---
+
+# Key Applications of the NurseVerse
+
+## Surgical Assistance
+
+The metaverse supports the entire perioperative workflow.
+
+### Use Cases
+
+* Preoperative planning
+* Intraoperative AR guidance
+* Virtual operating rooms
+* Surgical team training
+* Postoperative follow-up
+
+### Research Examples
+
+* Apple Vision Pro integration at Stanford Medicine
+* VR-based scrub nurse training
+* Real-time visualization of patient data during surgery
+
+### Benefits
+
+* Improved situational awareness
+* Reduced procedural errors
+* Better interdisciplinary communication
+* Enhanced surgical training
+
+---
+
+## Chronic Disease Management
+
+The NurseVerse enables continuous care beyond hospital settings.
+
+### Supported Conditions
+
+* Diabetes
+* Cardiovascular disease
+* Obesity
+* Hypertension
+
+### Core Technologies
+
+* Wearable sensors
+* AI analytics
+* Remote monitoring
+* Digital avatars
+
+### Benefits
+
+* Continuous monitoring
+* Personalized interventions
+* Increased patient engagement
+* Improved adherence
+
+### Example
+
+The SLIDES virtual community supported diabetes self-management through immersive education.
+
+---
+
+## Nursing Education
+
+The authors identify education as one of the highest-impact use cases.
+
+### Educational Capabilities
+
+* Standardized training
+* Virtual clinical scenarios
+* Simulated patients
+* Procedural rehearsal
+* Team communication training
+
+### Example Platforms
+
+* UbiSim VR
+* University of Florida "Metaversepital"
+* Queen Mary University metaverse lectures
+
+### Benefits
+
+* Safe learning environments
+* Repeatable simulations
+* Reduced training costs
+* Improved accessibility
+
+---
+
+## Telemedicine and Remote Nursing
+
+The NurseVerse enhances existing telehealth systems by adding immersive interaction.
+
+### Traditional Telemedicine
+
+* Video calls
+* Two-dimensional interfaces
+* Limited interaction
+
+### NurseVerse Telemedicine
+
+* Three-dimensional consultations
+* Avatar-based interactions
+* Shared virtual spaces
+* Digital twins for diagnostics
+
+### Benefits
+
+* Improved patient engagement
+* Greater accessibility
+* Better communication
+* Enhanced visualization
+
+---
+
+## Psychological Interventions
+
+VR-based interventions can improve mental health outcomes.
+
+### Target Outcomes
+
+* Pain reduction
+* Anxiety reduction
+* Depression management
+* Stress relief
+
+### Example Populations
+
+* Cancer patients
+* Burn patients
+* Cardiac surgery patients
+* ICU nurses
+
+### Example Findings
+
+Studies cited in the review report reductions in:
+
+* Pain scores
+* Anxiety levels
+* Depression symptoms
+* Occupational stress
+
+---
+
+# Comparison With Existing Digital Health Solutions
+
+| Dimension       | NurseVerse                    | Conventional Digital Health   |
+| --------------- | ----------------------------- | ----------------------------- |
+| Interaction     | Immersive 3D environments     | 2D interfaces                 |
+| Education       | Virtual wards and simulations | Online modules and videos     |
+| Remote Care     | Avatar-based interactions     | Video consultations           |
+| Personalization | AI-driven recommendations     | Mostly standardized workflows |
+| Clinical Skills | Virtual procedural practice   | Limited simulation            |
+| Infrastructure  | VR/AR, AI, blockchain, IoT    | Apps and monitoring devices   |
+
+---
+
+# Technical Architecture
+
+```text
+Wearables + IoT + Sensors
+            ↓
+      Data Collection
+            ↓
+      AI Analytics
+            ↓
+     Digital Twins
+            ↓
+ Virtual Metaverse Layer
+            ↓
+ Nurses ↔ Patients ↔ Clinicians
+            ↓
+ Personalized Care Delivery
+```
+
+---
+
+# Key Technologies
+
+## Artificial Intelligence
+
+Applications include:
+
+* Risk prediction
+* Decision support
+* Pattern recognition
+* Personalized care plans
+
+---
+
+## Digital Twins
+
+Applications include:
+
+* Patient modeling
+* Disease progression prediction
+* Virtual hospital environments
+
+---
+
+## Blockchain
+
+Applications include:
+
+* Data integrity
+* Decentralized health records
+* Identity verification
+
+---
+
+## Non-Fungible Tokens (NFTs)
+
+Potential uses include:
+
+* Patient-controlled health records
+* Consent management
+* Health information exchange
+
+---
+
+## Internet of Things (IoT)
+
+Applications include:
+
+* Continuous monitoring
+* Sensor integration
+* Remote data collection
+
+---
+
+# Challenges and Barriers
+
+## Trust and Security
+
+Major concerns include:
+
+* Data breaches
+* Privacy violations
+* Misinformation
+* Identity theft
+* Fraudulent avatars
+
+---
+
+## Technical Limitations
+
+Challenges include:
+
+* High hardware costs
+* Limited portability
+* Bandwidth requirements
+* Interoperability issues
+* Digital divide
+
+---
+
+## Human Factors
+
+Challenges include:
+
+* Low digital literacy
+* Resistance to adoption
+* Variable user acceptance
+* Accessibility concerns
+
+---
+
+## Clinical Risks
+
+Potential issues include:
+
+* False-positive AI outputs
+* False-negative AI outputs
+* Overreliance on automation
+* Reduced human interaction
+
+---
+
+## VR-Related Issues
+
+Extended use may cause:
+
+* Cybersickness
+* Nausea
+* Dizziness
+* Visual fatigue
+* Spatial disorientation
+
+---
+
+## Legal and Regulatory Issues
+
+Open questions remain regarding:
+
+* Clinical liability
+* Cross-border care
+* Data ownership
+* Professional licensing
+* AI accountability
+
+---
+
+# Limitations of the Review
+
+The authors acknowledge several limitations.
+
+* Most evidence comes from small-scale studies.
+* Large longitudinal studies are lacking.
+* Clinical effectiveness remains underexplored.
+* Cost-effectiveness evidence is limited.
+* Humanistic aspects of nursing are difficult to virtualize.
+
+The authors emphasize that empathy, ethical judgment, and end-of-life care cannot currently be replicated through virtual systems.
+
+---
+
+# Future Research Directions
+
+Priority areas include:
+
+* Large-scale clinical trials
+* Longitudinal outcome studies
+* Digital equity research
+* Cross-cultural acceptance studies
+* Standardized regulatory frameworks
+* Ethical guidelines for virtual care
+* AI transparency and explainability
+* Human-centered metaverse design
+
+---
+
+# Key Insights for Researchers
+
+## Insight 1
+
+The NurseVerse should augment—not replace—human nursing care.
+
+## Insight 2
+
+Digital twins combined with wearable data enable personalized care pathways.
+
+## Insight 3
+
+Immersive learning environments may significantly improve nursing education.
+
+## Insight 4
+
+Blockchain and NFTs could transform patient-controlled health information exchange.
+
+## Insight 5
+
+Regulatory and ethical frameworks are developing more slowly than the technology itself.
+
+## Insight 6
+
+Digital inequity may become a major barrier to adoption.
+
+## Insight 7
+
+Future evaluations should focus on patient outcomes rather than technological novelty.
+
+---
+
+# Key Takeaways
+
+* The NurseVerse extends telemedicine into immersive 3D environments.
+* VR, AR, AI, blockchain, and IoT form the technological foundation.
+* Nursing education and chronic disease management are the most mature use cases.
+* Digital twins enable predictive and personalized care.
+* Trust, privacy, regulation, and accessibility remain major obstacles.
+* Evidence supporting clinical effectiveness remains limited.
+* Human-centered design is essential for successful implementation.
+
+---
+
+# References
+
+The uploaded text includes a partial references section (References 1–91). Key references underpinning the review include:
+
+1. Kye B, Han N, Kim E, Park Y, Jo S. Educational applications of metaverse: Possibilities and limitations. *J Educ Eval Health Prof.* 2021;18:32. https://doi.org/10.3352/jeehp.2021.18.32
+
+2. Bobrowski M. Mark Zuckerberg Sets Facebook on Long, Costly Path to Metaverse Reality. *Wall Street Journal.* 2021.
+
+3. Wiederhold B. Ready (or not) player one: Initial musings on the metaverse. *Cyberpsychol Behav Soc Netw.* 2022;25:1–2. https://doi.org/10.1089/cyber.2021.29234.editorial
+
+4. Ergin E, Yalcinkaya T, Cinar Yucel S. Nurses' knowledge of, attitudes towards and awareness of the metaverse, and their future time perspectives: A cross-sectional study. *BMC Nurs.* 2024;23:414. https://doi.org/10.1186/s12912-024-02048-y
+
+5. Zeng Y, Zeng L, Zhang C, Cheng A. The metaverse in cancer care: Applications and challenges. *Asia Pac J Oncol Nurs.* 2022;9:100111. https://doi.org/10.1016/j.apjon.2022.100111
+
+6. Porpiglia F, Checcucci E, Amparore D, et al. Three-dimensional augmented reality robot-assisted partial nephrectomy in case of complex tumours (PADUA ≥10): A new intraoperative tool overcoming the ultrasound guidance. *Eur Urol.* 2020;78:229–238. https://doi.org/10.1016/j.eururo.2019.11.024
+
+7. ForwardPathway. Innovative nursing education: Simulation, VR and cross-professional collaboration to meet future medical challenges. 2025.
+
+8. Kim J, Ryu B, Cho S, et al. Impact of personal health records and wearables on health outcomes and patient response: Three-arm randomized controlled trial. *JMIR Mhealth Uhealth.* 2019;7:e12070. https://doi.org/10.2196/12070
+
+9. Notice on the Publication of the List of Major Metaverse Application Scene Construction Achievements in Shanghai (First Batch). 2025.
+
+10. Smart J, Cascio J, Paffendorf J. *Metaverse Roadmap: Pathways to the 3D Web.* Acceleration Studies Foundation; 2007.
+
+> **Note:** The uploaded article text appears truncated near the end of the references section. For citation management, systematic reviews, or bibliography import, consult the publisher version to extract the complete list of all 91 references.

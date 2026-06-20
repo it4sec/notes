@@ -1,0 +1,830 @@
+# Intelligent disassembly of electric-vehicle batteries: a forward-looking overview
+
+**Authors:** Kai Meng, Guiyin Xu, Xianghui Peng, Kamal Youcef-Toumi, Ju Li  
+**Journal:** Resources, Conservation & Recycling, Volume 182 (2022)  
+**DOI:** https://doi.org/10.1016/j.resconrec.2022.106207  
+**Date read:** 2026-06-20
+
+## Executive Summary
+
+This review examines how artificial intelligence (AI) and machine learning (ML) can enable scalable, safe, and economically viable disassembly of end-of-life electric vehicle lithium-ion batteries (EV-LIBs). The authors argue that battery disassembly is the key bottleneck preventing circular battery value chains from reaching industrial scale.
+
+The paper proposes a process-oriented taxonomy for intelligent disassembly spanning:
+
+1. Disassembly preprocessing
+2. Disassembly planning and decision-making
+3. Disassembly operations
+4. Human–robot interaction and collaboration
+5. Design for disassembly (DfD)
+
+The review synthesizes 123 publications published between 2010 and 2021.
+
+---
+
+## Research Questions
+
+1. Why are AI/ML methods needed for EV-LIB disassembly?
+2. How can AI/ML methods be applied across the disassembly workflow?
+3. What are the major opportunities and challenges for intelligent disassembly?
+
+---
+
+## Why EV Battery Disassembly Matters
+
+Fine-grained disassembly enables:
+
+- Battery reuse and second-life applications
+- Remanufacturing through component replacement
+- Direct recycling with higher material purity
+- Recovery of critical materials such as lithium, nickel, and cobalt
+- Lower environmental impacts versus shredding-based approaches
+
+Conventional shredding, pyrometallurgy, and hydrometallurgy introduce energy, contamination, safety, and greenhouse-gas trade-offs.
+
+---
+
+## Core Challenges Identified
+
+### 1. Safety risks
+
+- Residual charge and high voltage
+- Thermal runaway and fire hazards
+- Toxic electrolytes and gases
+- Mechanical damage during disassembly
+
+### 2. High design diversity
+
+- Lack of standardized pack architectures
+- Different module formats and joining methods
+- Diverse thermal management systems
+
+### 3. Uncertain end-of-life conditions
+
+- Unknown state of health (SOH)
+- Corrosion, deformation, and missing components
+- Variable histories and degradation mechanisms
+
+### 4. Robotic manipulation difficulties
+
+- Adhesive bonding
+- Flexible cables and connectors
+- Dense packaging and restricted access
+- Mixed joining technologies
+
+### 5. Lack of lifecycle data
+
+- Limited battery provenance information
+- Poor interoperability across manufacturers
+- Restricted data sharing due to intellectual property concerns
+
+---
+
+## AI/ML Applications Across the Workflow
+
+### Intelligent preprocessing
+
+Tasks:
+
+- Battery identification
+- State estimation (SOC, SOH, RUL)
+- Classification and sorting
+
+Representative methods:
+
+- RFID-enabled tracking
+- Computer vision with CNNs
+- Support Vector Machines
+- Gaussian Processes
+- Neural networks
+- Fuzzy inference systems
+- Self-organizing maps
+- K-means clustering
+
+### Intelligent planning and decision-making
+
+Tasks:
+
+- Disassembly depth selection
+- Sequence planning
+- Task allocation
+- Line balancing
+- Reverse logistics optimization
+
+Representative methods:
+
+- Genetic algorithms
+- Ant colony optimization
+- Swarm intelligence
+- Reinforcement learning
+- Graph neural networks
+- Attention mechanisms
+- Deep combinatorial optimization
+
+### Intelligent operations
+
+Tasks:
+
+- Component detection
+- Screw and fastener localization
+- Separation process optimization
+- Robotic manipulation
+
+Representative methods:
+
+- Faster R-CNN
+- Mask R-CNN
+- YOLO
+- Deep reinforcement learning
+- Self-supervised learning
+- Learning from demonstration
+- Simulation-to-real transfer
+
+### Human–robot collaboration
+
+Tasks:
+
+- Teleoperation
+- Shared autonomy
+- Dynamic safety monitoring
+- Human action prediction
+
+Representative methods:
+
+- Recurrent neural networks
+- Deep reinforcement learning
+- Digital twins
+- Cyber-physical systems
+- AR/VR interfaces
+
+### Design for disassembly
+
+Objectives:
+
+- Standardized interfaces
+- Modular battery architectures
+- Reduced adhesive use
+- Improved traceability
+- Embedded lifecycle information
+
+---
+
+## What Is New in This Paper
+
+- First systematic review focused specifically on AI-enabled EV-LIB disassembly.
+- Introduces a comprehensive five-stage taxonomy linking AI methods to disassembly activities.
+- Connects battery prognostics with downstream recovery decisions.
+- Highlights intelligent disassembly as a prerequisite for direct recycling.
+- Integrates perspectives from robotics, battery science, sustainability, and circular economy research.
+- Positions cloud platforms, blockchain, and digital twins as enabling infrastructure.
+- Frames disassembly as a cyber-physical decision problem rather than a purely mechanical task.
+
+---
+
+## Key Insights for Researchers
+
+### Insight 1: Battery health estimation is a disassembly problem
+
+SOH, SOC, and RUL estimates directly determine:
+
+- Recovery route selection
+- Disassembly depth
+- Economic value
+
+Future work should optimize prognostics jointly with recovery decisions.
+
+### Insight 2: Detection is not enough
+
+Industrial systems require:
+
+- Recognition
+- State estimation
+- Uncertainty quantification
+- Decision support
+
+End-to-end pipelines remain largely unexplored.
+
+### Insight 3: Data scarcity is the dominant bottleneck
+
+Critical needs include:
+
+- Shared datasets
+- Standardized battery labels
+- Open ontologies
+- Lifecycle data infrastructures
+
+### Insight 4: Human–robot collaboration will dominate near-term deployment
+
+Fully autonomous systems remain impractical because of:
+
+- Safety constraints
+- Product variability
+- Dexterity limitations
+
+Hybrid intelligence is likely to outperform full automation in the medium term.
+
+### Insight 5: Design for disassembly is underexplored
+
+Battery architecture choices strongly influence downstream recovery economics.
+
+Future studies should integrate:
+
+- Battery design
+- Manufacturing
+- Usage data
+- End-of-life processing
+
+---
+
+## Research Gaps and Future Directions
+
+- Benchmark datasets for EV-LIB disassembly
+- Foundation models for industrial manipulation
+- Explainable AI for safety-critical operations
+- Multimodal perception systems
+- Digital twins for closed-loop optimization
+- Standardized battery passports
+- Uncertainty-aware reinforcement learning
+- Simulation environments for EV battery disassembly
+- Sustainability metrics embedded in AI objectives
+- Techno-economic validation at industrial scale
+
+---
+
+## Useful Examples from the Paper
+
+| Problem | Example AI Method | Expected Benefit |
+|---|---|---|
+| Battery identification | RFID + CNN | Automated sorting |
+| SOH/RUL estimation | Gaussian Processes | Recovery value prediction |
+| Screw detection | Faster R-CNN | Robotic unscrewing |
+| Pack component detection | YOLOv3 | Real-time localization |
+| Disassembly planning | Genetic algorithms | Multi-objective optimization |
+| Human–robot collaboration | Deep RL + digital twins | Adaptive operation |
+| Cable manipulation | Self-supervised learning | Flexible object handling |
+
+---
+
+## Takeaway
+
+The paper argues that intelligent disassembly is the missing link connecting EV adoption with truly circular battery supply chains.
+
+The central message is that disassembly must evolve from fixed automation toward adaptive, data-driven, and collaborative systems that integrate battery diagnostics, perception, planning, and robotics.
+
+Success will depend as much on data infrastructure, standardization, and battery design as on advances in AI algorithms.
+
+---
+
+# References
+
+Abuzied, H., Senbel, H., Awad, M., Abbas, A., 2020. A review of advances in design for
+disassembly with active disassembly applications. Engineering Science and
+Technology. an International Journal 23 (3), 618–624.
+Ahmad, Z., Xie, T., Maheshwari, C., Grossman, J.C., Viswanathan, V., 2018. Machine
+Learning Enabled Computational Screening of Inorganic Solid Electrolytes for
+Suppression of Dendrite Formation in Lithium Metal Anodes. Acs Central Sci 4 (8),
+996–1006.
+Ai, N., Zheng, J., Chen, W., 2019. U.S. end-of-life electric vehicle batteries: Dynamic
+inventory modeling and spatial analysis for regional solutions. Resources,
+Conservation and Recycling 145, 208–219.
+Akash, K., Hu, W., Jain, N., Reid, T., 2018. A Classification Model for Sensing Human
+Trust in Machines Using EEG and GSR. ACM Transactions on Interactive Intelligent
+Systems 8 (4), 1–20.
+Alfaro-Algaba, M., Ramirez, F.J., 2020. Techno-economic and environmental
+disassembly planning of lithium-ion electric vehicle battery packs for
+remanufacturing. Resources, Conservation and Recycling 154, 104461.
+Allam, O., Cho, B.W., Kim, K.C., Jang, S.S., 2018. Application of DFT-based machine
+learning for developing molecular electrode materials in Li-ion batteries. Rsc Adv 8
+(69), 39414–39420.
+An, L., 2019. Recycling of Spent Lithium-Ion Batteries. Springer International Publishing,
+Cham, Switzerland.
+Anicic, O., Jović, S., Skrijelj, H., Nedić, B., 2017. Prediction of laser cutting heat affected
+zone by extreme learning machine. Opt Laser Eng 88, 1–4.
+Anthony, L.F.W., Kanding, B., Selvan, R., 2020. arXiv preprint.
+Apple, 2018. Apple adds Earth Day donations to trade-in and recycling program. https
+://www.apple.com/newsroom/2018/04/apple-adds-earth-day-donations-to-trade-
+in-and-recycling-program/.
+Audi, A.G., 2021a. Audi e-tron Sportback. https://www.netcarshow.com/audi/2021-e-t
+ron_sportback/.
+Audi, A.G., 2021b. Audi RS e-tron GT (2022). https://www.netcarshow.
+com/audi/2022-rs_e-tron_gt/#26.
+Aykol, M., Herring, P., Anapolsky, A., 2020. Machine learning for continuous innovation
+in battery technologies. Nature reviews. Materials 5 (10), 725–727.
+Barbariol, T., Chiara, F.D., Marcato, D., Susto, G.A., Tran, K.P., 2022. A Review of Tree-
+Based Approaches for Anomaly Detection. eds Control Charts and Machine Learning
+for Anomaly Detection in Manufacturing. Springer Series in Reliability Engineering.
+Springer, Cham. https://doi.org/10.1007/978-3-030-83819-5_7.
+Basdere, B., Seliger, G., 2003. Disassembly Factories for Electrical and Electronic
+Products To Recover Resources in Product and Material Cycles. Environ Sci Technol
+37 (23), 5354–5362.
+Battaïa, O., Dolgui, A., Heragu, S.S., Meerkov, S.M., Tiwari, M.K., 2018. Design for
+manufacturing and assembly/disassembly: joint design of products and production
+systems. Int J Prod Res 56 (24), 7181–7189.
+Bekiroglu, Y., Laaksonen, J., Jorgensen, J.A., Kyrki, V., Kragic, D., 2011. Assessing grasp
+stability based on learning and haptic data. IEEE T Robot 27 (3), 616–629.
+Bellitti, P., Angelis, A.D., Dionigi, M., Sardini, E., Serpelloni, M., Moschitta, A.,
+Carbone, P., 2020. A Wearable and Wirelessly Powered System for Multiple Finger
+Tracking. IEEE T Instrum Meas 69 (5), 2542–2551.
+Bello, I., Pham, H., Le, Q.V., Norouzi, M., Bengio, S., 2016. Neural combinatorial
+optimization with reinforcement learning arXiv preprint arXiv:1611.09940.
+Belthangady, C., Royer, L.A., 2019. Applications, promises, and pitfalls of deep learning
+for fluorescence image reconstruction. Nat Methods 16 (12), 1215–1225.
+Berecibar, M., Gandiaga, I., Villarreal, I., Omar, N., Van Mierlo, J., Van den Bossche, P.,
+2016. Critical review of state of health estimation methods of Li-ion batteries for real
+applications. Renewable and Sustainable Energy Reviews 56, 572–587.
+Bhowmik, A., Castelli, I.E., Garcia-Lastra, J.M., Jørgensen, P.B., Winther, O., Vegge, T.,
+2019. A perspective on inverse design of battery interphases using multi-scale
+modelling, experiments and generative deep learning. Energy Storage Materials 21,
+446–456.
+Billard, A., Kragic, D., 2019. Trends and challenges in robot manipulation. Science 364
+(6446), eaat8414.
+Blömeke, S., Rickert, J., Mennenga, M., Thiede, S., Spengler, T.S., Herrmann, C., 2020.
+Recycling 4.0 – Mapping smart manufacturing solutions to remanufacturing and
+recycling operations. Procedia CIRP 90, 600–605.
+Boorsma, N., Balkenende, R., Bakker, C., Tsui, T., Peck, D., 2020. Incorporating design
+for remanufacturing in the early design stage: a design management perspective.
+Journal of Remanufacturing 11 (1), 25–48.
+Bui, H., Nguyen, H., La, H.M., Li, S., 2020. A Deep Learning-Based Autonomous Robot
+Manipulator for Sorting Application. 2020 Fourth IEEE International Conference on
+Robotic Computing (IRC). IEEE, pp. 298–305.
+Burger, B., Maffettone, P.M., Gusev, V.V., Aitchison, C.M., Bai, Y., Wang, X., Li, X.,
+Alston, B.M., Li, B., Clowes, R., Rankin, N., Harris, B., Sprick, R.S., Cooper, A.I.,
+2020. A mobile robotic chemist. Nature 583, 237–241.
+C3. AI. C3. AI, 2021 Applications for Manufacturing. https://c3.ai/industries/ent
+erprise-ai-for-manufacturing/c3-ai-applications-for-manufacturing/#production-sch
+edule-optimization.
+Calandra, R., Owens, A., Jayaraman, D., Lin, J., Yuan, W., Malik, J., Adelson, E.H.,
+Levine, S., 2018. More Than a Feeling: Learning to Grasp and Regrasp Using Vision
+and Touch. IEEE Robotics and Automation Letters 3 (4), 3300–3307.
+Caldera, S., Rassau, A., Chai, D., 2018. Review of Deep Learning Methods in Robotic
+Grasp Detection. Multimodal Technologies and Interaction 2 (3), 57.
+Chang, M.M.L., Nee, A.Y., Ong, S.K., 2020. Interactive AR-assisted product disassembly
+sequence planning (ARDIS). Int J Prod Res 58 (16), 4916–4931.
+Chen, Y., Wang, Z., Li, X., Yao, X., Wang, C., Li, Y., Xue, W., Yu, D., Kim, S.Y., Yang, F.,
+Kushima, A., Zhang, G., Huang, H., Wu, N., Mai, Y., Goodenough, J.B., Li, J., 2020c.
+Li metal deposition and stripping in a solid-state battery via Coble creep. Nature 578
+(7794), 251–255.
+Chen, A., Zhang, X., Zhou, Z., 2020a. Machine learning: Accelerating materials
+development for energy storage and conversion. InfoMat 2 (3), 553–576.
+Chen, F., Jahanshahi, M.R., 2018. NB-CNN: Deep Learning-Based Crack Detection Using
+Convolutional Neural Network and Naïve Bayes Data Fusion. IEEE T Ind Electron 65
+(5), 4392–4400.
+Chen, M., Ma, X., Chen, B., Arsenault, R., Karlson, P., Simon, N., Wang, Y., 2019.
+Recycling End-of-Life Electric Vehicle Lithium-Ion Batteries. Joule 3 (11),
+2622–2646.
+Chen, W.H., Foo, G., Kara, S., Pagnucco, M., 2021. Automated generation and execution
+of disassembly actions. Robot Cim-Int Manuf 68, 102056.
+Chu, Y., Huang, C., Xie, X., Tan, B., Kamal, S., Xiong, X., 2018. Multilayer Hybrid Deep-
+Learning Method for Waste Classification and Recycling. Comput Intel Neurosc
+2018, 1–9.
+Ciez, R.E., Whitacre, J.F., 2019. Examining different recycling processes for lithium-ion
+batteries. Nature Sustainability 2 (2), 148–156.
+Chen, C., Zuo, Y., Ye, W., Li, X., Deng, Z., Ong, S.P., 2020b. A Critical Review of Machine
+Learning of Energy Materials. Adv Energy Mater 10 (8), 1903242.
+Choux, M., Marti Bigorra, E., Tyapin, I., 2021. Task Planner for Robotic Disassembly of
+Electric Vehicle Battery Pack. Metals 11 (3), 387.
+Das, A., Li, D., Williams, D., Greenwood, D., 2018. Joining Technologies for Automotive
+Battery Systems Manufacturing. World Electric Vehicle Journal 9 (2), 22.
+Dave, A., Mitchell, J., Kandasamy, K., Wang, H., Burke, S., Paria, B., Póczos, B.,
+Whitacre, J., Viswanathan, V., 2020. Autonomous Discovery of Battery Electrolytes
+with Robotic Experimentation and Machine Learning. Cell Reports Physical Science
+1 (12), 100264.
+Deng, X., Xiang, Y., Mousavian, A., Eppner, C., Bretl, T., Fox, D., 2019. Self-supervised
+6D Object Pose Estimation for Robot Manipulation. 2020 IEEE International
+Conference on Robotics and Automation (ICRA). IEEE, pp. 3665–3671.
+Deringer, V.L., 2020. Modelling and understanding battery materials with machine-
+learning-driven atomistic simulations. Journal of Physics: Energy 2 (4), 041003.
+Deringer, V.L., Caro, M.A., Csányi, G., 2019. Machine Learning Interatomic Potentials as
+Emerging Tools for Materials Science. Adv Mater 31 (46), 1902765.
+Dixit, M.B., Verma, A., Zaman, W., Zhong, X., Kenesei, P., Park, J.S., Almer, J.,
+Mukherjee, P.P., Hatzell, K.B., 2020. Synchrotron Imaging of Pore Formation in Li
+Metal Solid-State Batteries Aided by Machine Learning. ACS Applied Energy
+Materials 3 (10), 9534–9542.
+Elwert, T., Goldmann, D., Römer, F., Buchert, M., Merz, C., Schueler, D., Sutter, J., 2016.
+Current Developments and Challenges in the Recycling of Key Components of
+(Hybrid) Electric Vehicles. Recycling 1 (1), 25–60.
+Fan, E., Li, L., Wang, Z., Lin, J., Huang, Y., Yao, Y., Chen, R., Wu, F., 2020. Sustainable
+Recycling Technology for Li-Ion Batteries and Beyond: Challenges and Future
+Prospects. Chem Rev 120 (14), 7020–7063.K. Meng et al.
+Fang, K., Zhu, Y., Garg, A., Kurenkov, A., Mehta, V., Fei-Fei, L., Savarese, S., 2020.
+Learning Task-Oriented Grasping for Tool Manipulation from Simulated Self-
+Supervision. The International Journal of Robotics Research 39 (2-3), 202–216.
+Fang, Y., Liu, Q., Li, M., Laili, Y., Pham, D.T., 2019. Evolutionary many-objective
+optimization for mixed-model disassembly line balancing with multi-robotic
+workstations. Eur J Oper Res 276 (1), 160–174.
+Favi, C., Germani, M., Mandolini, M., Marconi, M., 2016. Includes Knowledge of
+Dismantling Centers in the Early Design Phase: A Knowledge-based Design for
+Disassembly Approach. Procedia CIRP 48, 401–406.
+Feng, Y., Gao, Y., Tian, G., Li, Z., Hu, H., Zheng, H., 2018. Flexible process planning and
+end-of-life decision-making for product recovery optimization based on hybrid
+disassembly. IEEE Trans Autom Sci Eng 16 (1), 311–326.
+Fleischer, J., Gerlitz, E., Rieβ, S., Coutandin, S., Hofmann, J., 2021. Concepts and
+Requirements for Flexible Disassembly Systems for Drive Train Components of
+Electric Vehicles. Procedia CIRP 98, 577–582.
+Garg, A., Yun, L., Gao, L., Putungan, D.B., 2020. Development of recycling strategy for
+large stacked systems: Experimental and machine learning approach to form reuse
+battery packs for secondary applications. J Clean Prod 275, 124152.
+Garrido-Hidalgo, C., Ramirez, F.J., Olivares, T., Roda-Sanchez, L., 2020. The adoption of
+internet of things in a circular supply chain framework for the recovery of WEEE:
+The case of lithium-ion electric vehicle battery packs. Waste Manag 103, 32–44.
+Gerlitz, E., Greifenstein, M., Hofmann, J., Fleischer, J., 2021. Analysis of the Variety of
+Lithium-Ion Battery Modules and the Challenges for an Agile Automated
+Disassembly System. Procedia CIRP 96, 175–180.
+Girshick, R., Donahue, J., Darrell, T., Malik, J., 2014. Rich feature hierarchies for
+accurate object detection and semantic segmentation. Proceedings of the IEEE
+conference on computer vision and pattern recognition 580–587.
+Gualtieri, L., Rauch, E., Vidoni, R., 2021. Emerging research fields in safety and
+ergonomics in industrial collaborative robotics: A systematic literature review.
+Robot Cim-Int Manuf 67, 101998.
+Gualtieri, M., Ten Pas, A., Saenko, K., Platt, R., 2016. High precision grasp pose detection
+in dense clutter. 2016 IEEE/RSJ International Conference on Intelligent Robots and
+Systems (IROS). IEEE, pp. 598–605.
+Harivardhini, S., Murali Krishna, K., Chakrabarti, A., 2017. An Integrated Framework for
+supporting decision making during early design stages on end-of-life disassembly.
+J Clean Prod 168, 558–574.
+Harper, G., Sommerville, R., Kendrick, E., Driscoll, L., Slater, P., Stolkin, R., Abbott, A.,
+2022. Recycling lithium-ion batteries from electric vehicles. Nature 575 (7781),
+75–86.
+Hatakeyama-Sato, K., Tezuka, T., Nishikitani, Y., Nishide, H., Oyaizu, K., 2019. Synthesis
+of Lithium-ion Conducting Polymers Designed by Machine Learning-based
+Prediction and Screening. Chem Lett 48 (2), 130–132.
+He, K., Gkioxari, G., Dollar, P., Girshick, R., 2020. Mask R-CNN. Proceedings of the IEEE
+international conference on computer vision 2961–2969.
+Henderson, P., Hu, J., Romoff, J., Brunskill, E., Jurafsky, D., Pineau, J., 2020. Towards
+the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning.
+Journal of Machine Learning Research 21 (248), 1–43.
+Hietanen, A., Pieters, R., Lanz, M., Latokartano, J., Kämäräinen, J., 2020. AR-based
+interaction for human-robot collaborative manufacturing. Robot Cim-Int Manuf 63,
+101891.
+Houchins, G., Viswanathan, V., 2020. An accurate machine-learning calculator for
+optimization of Li-ion battery cathodes. The Journal of Chemical Physics 153 (5),
+54124.
+Hsu, C.W., Xiong, R., Chen, N.Y., Li, J., Tsou, N.T., 2022. Deep neural network battery
+life and voltage prediction by using data of one cycle only. Applied Energy 306,
+118134.
+Hu, X., Feng, F., Liu, K., Zhang, L., Xie, J., Liu, B., 2019. State estimation for advanced
+battery management: Key challenges and future trends. Renewable and Sustainable
+Energy Reviews 114, 109334.
+Hu, X., Xu, L., Lin, X., Pecht, M., 2020. Battery Lifetime Prognostics. Joule 4 (2),
+310–346.
+Hua, Y., Zhou, S., Huang, Y., Liu, X., Ling, H., Zhou, X., Zhang, C., Yang, S., 2020.
+Sustainable value chain of retired lithium-ion batteries for electric vehicles. J Power
+Sources 478, 228753.
+Huang, C., Liang, W., Yi, S., 2017. Cloud-based design for disassembly to create
+environmentally friendly products. J Intell Manuf 28 (5), 1203–1218.
+IEA, 2021. Global EV Outlook 2021. https://www.iea.org/reports/global-ev-outloo
+k-2021.
+Jahanian, A., Le, Q.H., Youcef-Toumi, K., Tsetserukou, D., 2019. See the E-Waste!
+Training Visual Intelligence to See Dense Circuit Boards for Recycling. In:
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition Workshops, p. 0, 2019.
+Jiang, Z., Li, J., Yang, Y., Mu, L., Wei, C., Yu, X., Pianetta, P., Zhao, K., Cloetens, P.,
+Lin, F., Liu, Y., 2020. Machine-learning-revealed statistics of the particle-carbon/
+binder detachment in lithium-ion battery cathodes. Nat Commun 11, 2310.
+Kampker, A., Wessel, S., Fiedler, F., Maltoni, F., 2020. Battery pack remanufacturing
+process up to cell level with sorting and repurposing of battery cells. Journal of
+Remanufacturing 11, 1–23.
+Karlsson, B., Järrhed, J.O., 2000. Recycling of electrical motors by automatic
+disassembly. Meas Sci Technol 11 (4), 350–357.
+Karoly, A.I., Galambos, P., Kuti, J., Rudas, I.J., 2021. Deep Learning in Robotics: Survey
+on Model Structures and Training Strategies. IEEE Transactions on Systems, Man,
+and Cybernetics: Systems 51 (1), 266–279.
+Kassahun, Y., Yu, B., Tibebu, A.T., Stoyanov, D., Giannarou, S., Metzen, J.H., Vander
+Poorten, E., 2016. Surgical robotics beyond enhanced dexterity instrumentation: a
+survey of machine learning techniques and their role in intelligent and autonomous
+surgical actions. Int J Comput Ass Rad 11 (4), 553–568.
+Kazancoglu, Y., Ozkan-Ozen, Y.D., 2020. Sustainable disassembly line balancing model
+based on triple bottom line. Int J Prod Res 58 (14), 4246–4266.
+Kerin, M., Pham, D.T., 2019. A review of emerging industry 4.0 technologies in
+remanufacturing. J Clean Prod 237, 117805.
+Kim, D., Kim, T.J.Y., Wang, X., Kim, M., Quan, Y., Oh, J.W., Min, S., Kim, H.,
+Bhandari, B., Yang, I., Ahn, S., 2018. Smart Machining Process Using Machine
+Learning: A Review and Perspective on Machining Industry. Int J Pr Eng Man-Gt 5
+(4), 555–568.
+Kool, W, Van Hoof, H, Welling, M., 2019. Attention, learn to solve routing problems!
+Proceedings of the 7th International Conference on Learning Representations
+(ICLR2019).
+Kopacek, P., Kopacek, B., 2006. Intelligent, flexible disassembly. The International
+Journal of Advanced Manufacturing Technology 30 (5), 554–560.
+Kroemer, O., Niekum, S., Konidaris, G., 2019. A Review of Robot Learning for
+Manipulation: Challenges, Representations, and Algorithms. arXiv preprint arXiv:
+1907.03146.
+Kumar Pandey, A., Kumar Dubey, A., 2012. Simultaneous optimization of multiple
+quality characteristics in laser cutting of titanium alloy sheet. Optics & Laser
+Technology 44 (6), 1858–1865.
+Kuo, C.W., Ashmore, J.D., Huggins, D., Kira, Z., 2019. Data-Efficient Graph Embedding
+Learning for PCB Component Detection. 2019 IEEE Winter Conference on
+Applications of Computer Vision (WACV). IEEE, pp. 551–560.
+Lai, X., Deng, C., Li, J., Zhu, Z., Han, X., Zheng, Y., 2021. Rapid sorting and regrouping of
+retired lithium-ion battery modules for echelon utilization based on partial charging
+curves. IEEE T Veh Technol 70 (2), 1246–1254.
+Laili, Y., Tao, F., Pham, D.T., Wang, Y., Zhang, L., 2019. Robotic disassembly re-planning
+using a two-pointer detection strategy and a super-fast bees algorithm. Robot Cim-
+Int Manuf 59, 130–142.
+Lee, Y., Kim, M., Lee, Y., Kwon, J., Park, Y.L., Lee, D., 2018. Wearable finger tracking and
+cutaneous haptic interface with soft sensors for multi-fingered virtual manipulation.
+IEEE/ASME Trans Mechatron 24 (1), 67–77.
+Lenz, I., Lee, H., Saxena, A., 2015. Deep Learning for Detecting Robotic Grasps. The
+International Journal of Robotics Research 34 (4-5), 705–724.
+Li, J., Lim, K., Yang, H., Ren, Z., Raghavan, S., Chen, P., Buonassisi, T., Wang, X., 2020a.
+AI Applications through the Whole Life Cycle of Material Discovery. Matter 3 (2),
+393–432.
+Li, J., Barwood, M., Rahimifard, S., 2019a. A multi-criteria assessment of robotic
+disassembly to support recycling and recovery. Resources, Conservation and
+Recycling 140, 158–165.
+Li, Y., Li, S., Caballero, D., Miyasaka, M., Lewis, A., Hannaford, B., 2017. Improving
+control precision and motion adaptiveness for surgical robot with recurrent neural
+network. 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems
+(IROS). IEEE, pp. 3538–3543.
+Li, R., Pham, D.T., Huang, J., Tan, Y., Qu, M., Wang, Y., Kerin, M., Jiang, K., Su, S., Ji, C.,
+Liu, Q., Zhou, Z., 2020b. Unfastening of Hexagonal Headed Screws by a
+Collaborative Robot. IEEE T Autom Sci Eng 17 (3), 1455–1468.
+Li, Z., Su, C.Y., 2013. Neural-adaptive control of single-master-multiple-slaves
+teleoperation for coordinated multiple mobile manipulators with time-varying
+communication delays and input uncertainties. IEEE Trans Neural Netw Learn Syst
+24 (9), 1400–1413.
+Li, L., Zheng, P., Yang, T., Sturges, R., Ellis, M.W., Li, Z., 2019b. Disassembly Automation
+for Recycling End-of-Life Lithium-Ion Pouch Cells. Jom-Us 71 (12), 4457–4464.
+Lian, J., Jia, W., Zareapoor, M., Zheng, Y., Luo, R., Jain, D.K., Kumar, N., 2020. Deep-
+Learning-Based Small Surface Defect Detection via an Exaggerated Local Variation-
+Based Generative Adversarial Network. IEEE T Ind Inform 16 (2), 1343–1351.
+Lin, Y., Sun, Y., 2015. Robot grasp planning based on demonstrated grasp strategies. Int J
+Rob Res 34 (1), 26–42.
+Lipu, M.S.H., Hannan, M.A., Hussain, A., Hoque, M.M., Ker, P.J., Saad, M.H.M., Ayob, A.,
+2018. A review of state of health and remaining useful life estimation methods for
+lithium-ion battery in electric vehicles: Challenges and recommendations. J Clean
+Prod 205, 115–133.
+Liu, H., Fang, T., Zhou, T., Wang, Y., Wang, L., 2018. Deep Learning-based Multimodal
+Control Interface for Human-Robot Collaboration. Procedia CIRP 72, 3–8.
+Liu, H., Wang, L., 2020. Remote human–robot collaboration: A cyber–physical system
+application for hazard manufacturing environment. J Manuf Syst 54, 24–34.
+Liu, J., Zhou, Z., Pham, D.T., Xu, W., Ji, C., Liu, Q., 2020. Collaborative optimization of
+robotic disassembly sequence planning and robotic disassembly line balancing
+problem using improved discrete Bees algorithm in remanufacturing✰. Robot Cim-
+Int Manuf 61, 101829.
+Liu, Q., Liu, Z., Xu, W., Tang, Q., Zhou, Z., Pham, D.T., 2019. Human-robot collaboration
+in disassembly for sustainable manufacturing. Int J Prod Res 57 (12), 4027–4044.
+Liu, Y., Esan, O.C., Pan, Z., An, L., 2021. Machine learning for advanced energy
+materials. Energy and AI 3, 100049.
+Liu, Y., Zhao, T., Ju, W., Shi, S., 2017. Materials discovery and design using machine
+learning. Journal of Materiomics 3 (3), 159–177.
+Lu, L., Han, X., Li, J., Hua, J., Ouyang, M., 2013. A review on the key issues for lithium-
+ion battery management in electric vehicles. J Power Sources 226, 272–288.
+Ma, Q, Ge, S W, He, D Y, Thaker, D, Drori, I., 2020. Combinatorial optimization by graph
+pointer networks and hierarchical reinforcement learning. Proceedings of the 1st
+International Workshop on Deep Learning on Graphs: Methodologies and
+Applications. AAAI.
+Mahler, J., Liang, J., Niyaz, S., Laskey, M., Doan, R., Liu, X., Goldberg, K., 2017. Dex-Net
+2.0: Deep Learning to Plan Robust Grasps with Synthetic Point Clouds and Analytic
+Grasp Metrics. arXiv preprint arXiv:1703.09312.K. Meng et al.
+Mahler, J., Matl, M., Satish, V., Danielczuk, M., DeRose, B., McKinley, S., Goldberg, K.,
+2019. Learning ambidextrous robot grasping policies. Sci Robot 4 (26), aau4984.
+Makridakis, S., Spiliotis, E., Assimakopoulos, V., 2020. The M4 Competition: 100,000
+time series and 61 forecasting methods. Int J Forecasting 36 (1), 54–74.
+Mao, H., Liu, Z., Qiu, C., 2021. Adaptive disassembly sequence planning for VR
+maintenance training via deep reinforcement learning. Int J Adv Manuf Technol.
+https://doi.org/10.1007/s00170-021-08290-x.
+Martinez-Laserna, E., Gandiaga, I., Sarasketa-Zabala, E., Badeda, J., Stroe, D.I.,
+Swierczynski, M., Goikoetxea, A., 2018. Battery second life: Hype, hope or reality? A
+critical review of the state of the art. Renewable and Sustainable Energy Reviews 93,
+701–718.
+Mason, M.T., 2018. Toward Robotic Manipulation. Annual Review of Control Robotics,
+and Autonomous Systems 1, 1–28.
+Mei, K., Fang, Y., 2021. Multi-Robotic Disassembly Line Balancing Using Deep
+Reinforcement Learning. In: International Manufacturing Science and Engineering
+Conference, 85079. American Society of Mechanical Engineers. V002T07A005.
+Meng, H., Li, Y., 2019. A review on prognostics and health management (PHM) methods
+of lithium-ion batteries. Renewable and Sustainable Energy Reviews 116, 109405.
+Meng, K., Cao, Y., Peng, X., Prybutok, V., Youcef-Toumi, K., 2020. Smart recovery
+decision-making for end-of-life products in the context of ubiquitous information
+and computational intelligence. J Clean Prod 272, 122804.
+Meziane, R., Otis, M.J.D., Ezzaidi, H., 2017. Human-robot collaboration while sharing
+production activities in dynamic environment: SPADER system. Robot Cim-Int
+Manuf 48, 243–253.
+Michalos, G., Spiliotopoulos, J., Makris, S., Chryssolouris, G., 2018. A method for
+planning human robot shared tasks. CIRP Journal of Manufacturing Science and
+Technology 22, 76–90.
+Mironov, D., Altamirano, M., Zabihifar, H., Liviniuk, A., Liviniuk, V., Tsetserukou, D.,
+2018. Haptics of Screwing and Unscrewing for its Application in Smart Factories for
+Disassembly. International Conference on Human Haptic Sensing and Touch Enabled
+Computer Applications. Springer, Cham, pp. 428–439.
+Morgan, D., Pilania G., Couet, A., Uberuaga B. P., Sun C., Li J., 2022. Machine learning in
+nuclear materials research. Current Opinion in Solid State & Materials Science.
+https://doi.org/10.1016/j.cossms.2021.100975.
+Moreira, I., Rivas, J., Cruz, F., Dazeley, R., Ayala, A., Fernandes, B., 2020. Deep
+Reinforcement Learning with Interactive Feedback in a Human-Robot Environment.
+Applied Sciences 10 (16), 5574.
+Naha, A., Khandelwal, A., Agarwal, S., Tagade, P., Hariharan, K.S., Kaushik, A., Yadu, A.,
+Kolake, S.M., Han, S., Oh, B., 2020. Internal short circuit detection in Li-ion batteries
+using supervised machine learning. Scientific reports 10 (1), 1301.
+Nair, A., Chen, D., Agrawal, P., Isola, P., Abbeel, P., Malik, J., Levine, S., 2017.
+Combining Self-Supervised Learning and Imitation for Vision-Based Rope
+Manipulation. 2017 IEEE international conference on robotics and automation
+(ICRA). IEEE, pp. 2146–2153.
+Ng, M., Zhao, J., Yan, Q., Conduit, G.J., Seh, Z.W., 2020. Predicting the state of charge
+and health of batteries using data-driven machine learning. Nature Machine
+Intelligence 2 (3), 161–170.
+Nguyen-Tuong, D., Peters, J., 2011. Model learning for robot control: a survey. Cogn
+Process 12 (4), 319–340.
+Ni, D., Xiao, Z., Lim, M.K., 2021. Machine learning in recycling business: an investigation
+of its practicality, benefits and future trends. Soft Comput 25 (12), 7907–7927.
+Nikolakis, N., Maratos, V., Makris, S., 2019. A cyber physical system (CPS) approach for
+safe human-robot collaboration in a shared workplace. Robot Cim-Int Manuf 56,
+233–243.
+Nowakowski, P., Pamuła, T., 2020. Application of deep learning object classifier to
+improve e-waste collection planning. Waste Manage 109, 1–9.
+Nuhic, A., Terzimehic, T., Soczka-Guth, T., Buchholz, M., Dietmayer, K., 2013. Health
+diagnosis and remaining useful life prognostics of lithium-ion batteries using data-
+driven methods. J Power Sources 239, 680–688.
+Oliff, H., Liu, Y., Kumar, M., Williams, M., Ryan, M., 2020. Reinforcement learning for
+facilitating human-robot-interaction in manufacturing. J Manuf Syst 56, 326–340.
+Pastor-Fernández, C., Yu, T.F., Widanage, W.D., Marco, J., 2019. Critical review of non-
+invasive diagnosis techniques for quantification of degradation modes in lithium-ion
+batteries. Renewable and Sustainable Energy Reviews 109, 138–159.
+Peeters, J.R., Vanegas, P., Dewulf, W., Duflou, J.R., 2017. Economic and environmental
+evaluation of design for active disassembly. J Clean Prod 140, 1182–1193.
+Peng, H., Yang, X., Su, Y., Hannaford, B., 2019. Real-time Data Driven Precision
+Estimator for RAVEN-II Surgical Robot End Effector Position. 2020 IEEE
+International Conference on Robotics and Automation (ICRA). IEEE, pp. 350–356.
+Pham, T., Kyriazis, N., Argyros, A.A., Kheddar, A., 2018. Hand-Object Contact Force
+Estimation from Markerless Visual Tracking. IEEE T Pattern Anal 40 (12),
+2883–2896.
+Poschmann, H., Brüggemann, H., Goldmann, D., 2020. Disassembly 4.0: A Review on
+Using Robotics in Disassembly Tasks as a Way of Automation. Chem-Ing-Tech 92 (4),
+341–359.
+Poschmann, H., Brüggemann, H., Goldmann, D., 2021. Fostering End-of-Life Utilization
+by Information-driven Robotic Disassembly. Procedia CIRP 98, 282–287.
+Rakita, D., Mutlu, B., Gleicher, M., Hiatt, L.M., 2019. Shared control-based bimanual
+robot manipulation. Sci Robot 4 (30), aaw0955.
+Rallo, H., Benveniste, G., Gestoso, I., Amante, B., 2020. Economic analysis of the
+disassembling activities to the reuse of electric vehicles Li-ion batteries. Resources,
+Conservation and Recycling 159, 104785.
+Rao, R.V., Rai, D.P., Balic, J., 2017. A multi-objective algorithm for optimization of
+modern machining processes. Eng Appl Artif Intel 61, 103–125.
+Redmon, J., Divvala, S., Girshick, R., Farhadi, A., 2016. You only look once: Unified,
+real-time object detection. Proceedings of the IEEE conference on computer vision
+and pattern recognition 779–788.
+Reinhardt, R., Christodoulou, I., Gassó-Domingo, S., Amante García, B., 2019. Towards
+sustainable business models for electric vehicle battery second use: A critical review.
+J Environ Manage 245, 432–446.
+Ren, Y., Zhang, C., Zhao, F., Xiao, H., Tian, G., 2018. An asynchronous parallel
+disassembly planning based on genetic algorithm. Eur J Oper Res 269 (2), 647–660.
+Richardson, R.R., Osborne, M.A., A, H.D., 2017. Gaussian process regression for
+forecasting battery state of health. J Power Sources 357, 209–219.
+Sassanelli, C., Rosa, P., Terzi, S., 2021. Supporting disassembly processes through
+simulation tools: A systematic literature review with a focus on printed circuit
+boards. J Manuf Syst 60, 429–448.
+Saxena, A., Driemeyer, J., Ng, A.Y., 2008. Robotic Grasping of Novel Objects using
+Vision. The International Journal of Robotics Research 27 (2), 157–173.
+Sendek, A.D., Cubuk, E.D., Antoniuk, E.R., Cheon, G., Cui, Y., Reed, E.J., 2018. Machine
+Learning-Assisted Discovery of Solid Li-Ion Conducting Materials. Chem Mater 31
+(2), 342–352.
+Shafique, M., Naseer, M., Theocharides, T., Kyrkou, C., Mutlu, O., Orosa, L., Choi, J.,
+2020. Robust machine learning systems: Challenges, current trends, perspectives,
+and the road ahead. IEEE Design & Test 37 (2), 30–57.
+She, Y., Wang, S., Dong, S., Sunil, N., Rodriguez, A., Adelson, E., 2019. Cable
+Manipulation with a Tactile-Reactive Gripper. arXiv preprint arXiv:1910.02860.
+Shin, C., Ferguson, P.W., Pedram, S.A., Ma, J., Dutson, E.P., Rosen, J., 2019. Autonomous
+Tissue Manipulation via Surgical Robot Using Learning Based Model Predictive
+Control. 2019 International Conference on Robotics and Automation (ICRA). IEEE,
+pp. 3875–3881.
+Siciliano, B., Khatib, O, 2016. Springer handbook of robotics, 200. springer, Berlin.
+Singh, Y., Singh, J., Sharma, S., Sharma, A., Chohan, J.S., 2021. Process parameter
+optimization in laser cutting of Coir fiber reinforced Epoxy composite-a review.
+Materials Today: Proceedings.
+Sommerville, R., Shaw-Stewart, J., Goodship, V., Rowson, N., Kendrick, E., 2020.
+A review of physical processes used in the safe recycling of lithium ion batteries.
+Sustainable Materials and Technologies 25, e00197.
+Steward, D., 2020. The Role of Innovation in the Circularity of EV Lithium-ion Batteries.
+National Renewable Energy Lab (NREL). https://www.osti.gov/biblio/1669382.
+Su, H., Yang, C., Mdeihly, H., Rizzo, A., Ferrigno, G., De Momi, E., 2019. Neural Network
+Enhanced Robot Tool Identification and Calibration for Bilateral Teleoperation. IEEE
+Access 7, 122041–122051.
+Strubell, E., Ganesh, A., McCallum, A., 2020. Energy and policy considerations for
+modern deep learning research. Proceedings of the AAAI Conference on Artificial
+Intelligence 34 (09), 13693–13696.
+Tabernik, D., Šela, S., Skvarč, J., Skočaj, D., 2020. Segmentation-based deep-learning
+approach for surface-defect detection. J Intell Manuf 31 (3), 759–776.
+Takagishi, Y., Yamanaka, T., Yamaue, T., 2019. Machine Learning Approaches for
+Designing Mesoscale Structure of Li-Ion Battery Electrodes. Batteries 5 (3), 54.
+Tercan, H., Khawli, T.A., Eppelt, U., Büscher, C., Meisen, T., Jeschke, S., 2017. Improving
+the laser cutting process design by machine learning techniques. Production
+Engineering 11 (2), 195–203.
+Thompson, D., Hartley, J., Lambert, S., Shiref, M., Harper, G., Kendrick, E., Abbott, A.P.,
+2020. The Importance of Design in Lithium Ion Battery Recycling – A Critical
+Review. Green Chem 22 (22), 7585–7603.
+Tseng, H., Chang, C., Lee, S., Huang, Y., 2019. Hybrid bidirectional ant colony
+optimization (hybrid BACO): An algorithm for disassembly sequence planning. Eng
+Appl Artif Intel 83, 45–56.
+Tung, A., Wong, J., Mandlekar, A., Martín-Martín, R., Zhu, Y., Fei-Fei, L., Savarese, S.,
+2020. Learning Multi-Arm Manipulation Through Collaborative Teleoperation. arXiv
+preprint arXiv:2012.06738.
+Tuncel, E., Zeid, A., Kamarthi, S., 2014. Solving large scale disassembly line balancing
+problem with uncertainty using reinforcement learning. J Intell Manuf 25 (4),
+647–659.
+Vinyals, O., Fortunato, M., Jaitly, N., 2015. Pointer Networks. Advances in neural
+information processing systems 28 arXiv:1506.03134.
+Vongbunyong, S., Chen, W.H., 2015. Disassembly Automation. Springer, Cham.
+Vongbunyong, S., Kara, S., Pagnucco, M., 2015. Learning and revision in cognitive
+robotics disassembly automation. Robot Cim-Int Manuf 34, 79–94.
+Waag, W., Fleischer, C., Sauer, D.U., 2014. Critical review of the methods for monitoring
+of lithium-ion batteries in electric and hybrid vehicles. J Power Sources 258,
+321–339.
+Wang, K., Li, X., Gao, L., 2019. Modeling and optimization of multi-objective partial
+disassembly line balancing problem considering hazard and profit. J Clean Prod 211,
+115–133.
+Wang, P., Liu, H., Wang, L., Gao, R.X., 2018. Deep learning-based human motion
+recognition for predictive context-aware human-robot collaboration. CIRP Annals 67
+(1), 17–20.
+Wang, X.V., Kemény, Z., Váncza, J., Wang, L., 2017. Human-robot collaborative
+assembly in cyber-physical production: Classification framework and
+implementation. CIRP Annals 66 (1), 5–8.
+Wang, L., Wang, X., Yang, W., 2020b. Optimal design of electric vehicle battery recycling
+network – From the perspective of electric vehicle manufacturers. Appl Energ 275,
+115328.
+WCED, 1987. Our Common Future: Report of the World Commission on Environment
+and Development. Available at: http://www.un-documents.net/our-common-future.
+pdf (Accessed: 27 March 2018).K. Meng et al.
+Wang, C., Zhang, X., Zang, X., Liu, Y., Ding, G., Yin, W., Zhao, J., 2020a. Feature Sensing
+and Robotic Grasping of Objects with Uncertain Information: A Review. Sensors-
+Basel 20 (13), 3707.
+Wegener, K., Andrew, S., Raatz, A., Dröder, K., Herrmann, C., 2014. Disassembly of
+Electric Vehicle Batteries Using the Example of the Audi Q5 Hybrid System. Procedia
+CIRP 23, 155–160.
+Wegener, K., Chen, W.H., Dietrich, F., Dröder, K., Kara, S., 2015. Robot Assisted
+Disassembly for the Recycling of Electric Vehicle Batteries. Procedia CIRP 29,
+716–721.
+Wessel, J., Turetskyy, A., Wojahn, O., Herrmann, C., Thiede, S., 2020. Tracking and
+tracing for data mining application in the lithium-ion battery production. Procedia
+CIRP 93, 162–167.
+Wu, B., Han, S., Shin, K.G., Lu, W., 2018. Application of artificial neural networks in
+design of lithium-ion batteries. J Power Sources 395, 128–136.
+Xia, K., Gao, L., Li, W., Wang, L., Chao, K.M., 2014. A q-learning based selective
+disassembly planning service in the cloud based remanufacturing system for WEEE.
+In: International Manufacturing Science and Engineering Conference, 45806.
+American Society of Mechanical Engineers. V001T04A012.
+Xie, F., Chowdhury, A., Kaluza, M., Zhao, L., Wong, L.L., Yu, R., 2020. arXiv preprint.
+Xiong, R., Li, L., Tian, J., 2018. Towards a smarter battery management system: A critical
+review on battery state of health monitoring methods. J Power Sources 405, 18–29.
+Xiong, R., Pan, Y., Shen, W., Li, H., Sun, F., 2020. Lithium-ion battery aging mechanisms
+and diagnosis method for automotive applications: Recent advances and
+perspectives. Renewable and Sustainable Energy Reviews 131, 110048.
+Xu, L., Lv, S., Deng, Y., Li, X., 2020. A Weakly Supervised Surface Defect Detection Based
+on Convolutional Neural Network. IEEE Access 8, 42285–42296.
+Xue, M., Yuan, C., Wu, H., Zhang, Y., Liu, W., 2020. Machine learning security: Threats,
+countermeasures, and evaluations. IEEE Access 8, 74720–74742.
+Yan, M., Zhu, Y., Jin, N., Bohg, J., 2020. Self-supervised learning of state estimation for
+manipulating deformable linear objects. Robot Autom Lett 5 (2), 2372–2379.
+Yang, S., He, R., Zhang, Z., Cao, Y., Gao, X., Liu, X., 2020. CHAIN: Cyber Hierarchy and
+Interactional Network Enabling Digital Solution for Battery Full-Lifespan
+Management. Matter 3, 27–41.
+Yang, Y., Li, Y., Fermuller, C., Aloimonos, Y., 2015. Robot learning manipulation action
+plans by" watching" unconstrained videos from the world wide web. Proceedings of
+the AAAI Conference on Artificial Intelligence 29 (1).
+Yildiz, E., Worgotter, F., 2019. DCNN-Based Screw Detection for Automated Disassembly
+Processes. 2019 15th International Conference on Signal-Image Technology &
+Internet-Based Systems (SITIS). IEEE, pp. 187–192.
+Yildiz, E., Wörgötter, F., 2020. DCNN-based Screw Classification in Automated
+Disassembly Processes. ROBOVIS 61–68.
+Yun, L., Linh, D., Shui, L., Peng, X., Garg, A., LE, M.L.P., Asghari, S., Sandoval, J., 2018.
+Metallurgical and mechanical methods for recycling of lithium-ion battery pack for
+electric vehicles. Resources, Conservation and Recycling 136, 198–208.
+Zahid, T., Xu, K., Li, W., Li, C., Li, H., 2018. State of charge estimation for electric vehicle
+power battery using advanced machine learning algorithm under diversified drive
+cycles. Energy 162, 871–882.
+Zhang, J., Liu, H., Chang, Q., Wang, L., Gao, R.X., 2020b. Recurrent neural network for
+motion trajectory prediction in human-robot collaborative assembly. CIRP Annals 69
+(1), 9–12.
+Zhang, M.M., Detry, R., Matthies, L., Daniilidis, K., 2017. Tactile-Vision Integration for
+Task-Compatible Fine-Part Manipulation. Robotics: Science and Systems (RSS)
+Workshop on Revisiting Contact-Turning a Problem into a Solution.
+Zhang, Q., Zhang, X., Mu, X., Wang, Z., Tian, R., Wang, X., Liu, X., 2021. Recyclable
+waste image recognition based on deep learning. Resources, Conservation and
+Recycling 171, 105636.
+Zhang, T., McCarthy, Z., Jow, O., Lee, D., Chen, X., Goldberg, K., Abbeel, P., 2018. Deep
+Imitation Learning for Complex Manipulation Tasks from Virtual Reality
+Teleoperation. 2018 IEEE International Conference on Robotics and Automation
+(ICRA). IEEE, pp. 5628–5635.
+Zhang, Y., He, X., Chen, Z., Bai, Q., Nolan, A.M., Roberts, C.A., Banerjee, D.,
+Matsunaga, T., Mo, Y., Ling, C., 2019. Unsupervised discovery of solid-state lithium
+ion conductors. Nat Commun 10, 5260.
+Zhang, Y., Tang, Q., Zhang, Y., Wang, J., Stimming, U., Lee, A.A., 2020a. Identifying
+degradation patterns of lithium ion batteries from impedance spectroscopy using
+machine learning. Nat Commun 11, 1706.
+Zhang, Y., Xiong, R., He, H., Pecht, M., 2018. Long short-term memory recurrent neural
+network for remaining useful life prediction of lithium-ion batteries. IEEE T Veh
+Technol 67 (7), 5695–5705.
+Zhao, Z.Q., Zheng, P., Xu, S.T., Wu, X., 2019. Object Detection with Deep Learning: A
+Review. IEEE T Neur Net Lear 30 (11), 3212–3232.
+Zhou, P., He, Z., Han, T., Li, X., Lai, X., Yan, L., Lv, T., Xie, J., Zheng, Y., 2020a. A rapid
+classification method of the retired LiCoxNiyMn1− x− yO2 batteries for electric
+vehicles. Energy Reports 6, 672–683.
+Zhou, W., Piramuthu, S., 2013. Remanufacturing with RFID item-level information:
+Optimization, waste reduction and quality improvement. Int J Prod Econ 145 (2),
+647–657.
+Zhou, Z., Duan, B., Kang, Y., Shang, Y., Cui, N., Chang, L., Zhang, C., 2020c. An efficient
+screening method for retired lithium-ion batteries based on support vector machine.
+J Clean Prod 267, 121882.
+Zhou, Z., Ran, A., Chen, S., Zhang, X., Wei, G., Li, B., Kang, F., Zhou, X., Sun, H., 2020b.
+A fast screening framework for second-life batteries based on an improved bisecting
+K-means algorithm combined with fast pulse test. Journal of Energy Storage 31,
+101739.

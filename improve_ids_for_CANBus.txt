@@ -1,0 +1,532 @@
+# Relational Modelling for Automotive Cybersecurity: Structural Transition and Graph-Topology-Based CAN Intrusion Detection
+
+## Authors
+
+* Mohammad Khalaf Khreasat
+* Gabriel Villarrubia González
+
+### Affiliation
+
+**Expert Systems and Applications Laboratory (ESALab), Faculty of Science, University of Salamanca, Salamanca, Spain**
+
+**Corresponding Author:** Mohammad Khalaf Khreasat ([idu078144@usal.es](mailto:idu078144@usal.es))
+
+---
+
+## Publication Information
+
+* **Journal:** *Sensors*
+* **Year:** 2026
+* **Volume:** 26
+* **Article Number:** 2964
+* **DOI:** https://doi.org/10.3390/s26102964
+
+### Manuscript Timeline
+
+* Received: 20 March 2026
+* Revised: 29 April 2026
+* Accepted: 3 May 2026
+
+---
+
+## Date Read
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This paper investigates a fundamental question in automotive intrusion detection:
+
+> Which representations of Controller Area Network (CAN) traffic generalize across attacks and vehicle platforms?
+
+Rather than focusing solely on detection accuracy, the authors evaluate the **transferability and robustness** of different CAN traffic representations under realistic conditions.
+
+The proposed framework combines three feature categories:
+
+1. Statistical traffic descriptors
+2. Structural identifier transition features
+3. Graph topology representations
+
+The study demonstrates that:
+
+* Statistical features fail catastrophically under cross-attack transfer.
+* Structural transition features provide consistently high robustness.
+* Graph topology features are sensitive to attack characteristics.
+* Hybrid representations achieve the best operational performance.
+
+The main conclusion is that **feature representation matters more than classifier selection**.
+
+---
+
+# Research Problem
+
+Most CAN intrusion detection systems (IDSs):
+
+* Report high accuracy on fixed datasets.
+* Evaluate only within-dataset performance.
+* Ignore cross-attack generalization.
+* Rarely assess cross-platform transferability.
+
+As a result, many published systems perform well in laboratory settings but fail when deployed in real vehicles.
+
+The authors address this gap by evaluating whether learned representations transfer across:
+
+* Different attack types
+* Different datasets
+* Different vehicle platforms
+
+---
+
+# Research Questions
+
+1. Which CAN traffic representations generalize across attacks?
+2. Which representations transfer across vehicle platforms?
+3. How do graph-based features compare with statistical and structural features?
+4. Are performance gains driven by classifiers or by feature engineering?
+
+---
+
+# Background: CAN Bus Characteristics
+
+The Controller Area Network (CAN) protocol:
+
+* Is a broadcast-only communication bus.
+* Uses periodic ECU transmissions.
+* Lacks authentication and encryption.
+* Has no request–response mechanism.
+
+These properties make CAN vulnerable to attacks such as:
+
+* Denial of Service (DoS)
+* Fuzzy attacks
+* RPM injection attacks
+* Gear injection attacks
+
+Because ECUs transmit identifiers at fixed intervals, temporal transmission patterns become valuable indicators of malicious behavior.
+
+---
+
+# Core Idea
+
+The paper argues that effective intrusion detection should model:
+
+> The temporal scheduling regularity of ECU broadcasts.
+
+Importantly, the proposed graph representations capture:
+
+* Identifier transition patterns
+* Broadcast scheduling structure
+
+They do **not** model direct ECU communication dependencies.
+
+---
+
+# Feature Representations
+
+## 1. Statistical Features
+
+Examples:
+
+* Mean inter-arrival time
+* Standard deviation
+* Message frequency
+* Entropy measures
+
+### Advantages
+
+* Lightweight
+* Easy to compute
+
+### Limitations
+
+* Highly attack-specific
+* Poor transferability
+
+---
+
+## 2. Structural Transition Features
+
+Structural features model transitions between CAN identifiers.
+
+Examples:
+
+* Identifier sequence patterns
+* Transition probabilities
+* Temporal ordering
+
+### Key Insight
+
+These features capture intrinsic ECU scheduling behavior.
+
+### Result
+
+They achieved the strongest cross-attack robustness.
+
+---
+
+## 3. Graph Topology Features
+
+CAN traffic windows are converted into graphs.
+
+### Nodes
+
+* CAN identifiers
+
+### Edges
+
+* Sequential identifier transitions
+
+### Graph Metrics
+
+* Degree centrality
+* Clustering coefficient
+* Path statistics
+* Connectivity measures
+
+### Key Insight
+
+Graph performance depends heavily on attack characteristics.
+
+---
+
+## 4. Hybrid Features
+
+Combination of:
+
+* Statistical features
+* Structural features
+* Graph topology features
+
+Hybrid representations recover weaknesses in individual feature sets.
+
+---
+
+# Datasets
+
+## Primary Dataset
+
+### HCRL Car-Hacking Dataset
+
+Attack categories include:
+
+* DoS
+* Fuzzy
+* RPM injection
+* Gear injection
+
+---
+
+## Cross-Dataset Evaluation
+
+The framework was also evaluated on external CAN intrusion datasets to assess:
+
+* Vehicle independence
+* Platform transferability
+* Generalization capability
+
+---
+
+# Experimental Design
+
+The study evaluates four transfer scenarios:
+
+1. Within-attack evaluation
+2. Cross-attack evaluation
+3. Cross-dataset evaluation
+4. Cross-platform evaluation
+
+This design explicitly stress-tests model robustness.
+
+---
+
+# Classifiers Evaluated
+
+* Logistic Regression
+* Support Vector Machine (SVM)
+* Random Forest
+* Gradient Boosting
+
+A key contribution of the paper is demonstrating that:
+
+> Robustness emerges from feature representations rather than classifier choice.
+
+---
+
+# Window-Based Detection
+
+CAN frames are processed using sliding windows.
+
+### Evaluated Window Sizes
+
+* 50 frames
+* 100 frames
+* 200 frames
+* 300 frames
+* 500 frames
+
+### Selected Configuration
+
+* **200-frame windows**
+
+This configuration balanced:
+
+* Detection performance
+* Structural context
+* Computational efficiency
+
+---
+
+# Key Results
+
+## Cross-Attack Transfer Performance
+
+| Feature Type | Mean ROC-AUC |
+| ------------ | -----------: |
+| Statistical  |      0.01165 |
+| Structural   |      0.99955 |
+| Graph        |      0.71520 |
+| Hybrid       |      0.99880 |
+
+---
+
+## Main Findings
+
+### Statistical Features
+
+* Collapsed under cross-attack transfer.
+* Produced sub-random performance.
+
+Observed ROC-AUC values were as low as:
+
+* **0.0088**
+
+---
+
+### Structural Features
+
+* Maintained ROC-AUC > 0.999.
+* Performed consistently across classifiers.
+* Represented the most transferable feature type.
+
+---
+
+### Graph Features
+
+Performance depended on training scenarios.
+
+Observed behavior:
+
+* Strong robustness in DoS-trained models.
+* Sub-random performance (ROC-AUC 0.43–0.44) in Fuzzy-trained scenarios.
+
+---
+
+### Hybrid Features
+
+Delivered the strongest overall operational performance.
+
+Benefits:
+
+* Compensated for graph weaknesses.
+* Preserved structural robustness.
+* Achieved mean ROC-AUC ≈ 0.999.
+
+---
+
+# Statistical Validation
+
+The authors conducted:
+
+* Ablation studies
+* Statistical significance testing
+
+### Test Used
+
+* Wilcoxon signed-rank test
+
+### Result
+
+* **p < 0.001**
+
+The observed hierarchy of feature effectiveness was statistically significant.
+
+---
+
+# Computational Performance
+
+The framework is designed for embedded deployment.
+
+## Resource Requirements
+
+* Inference latency: **40 µs**
+* Memory footprint: **20 KB**
+
+These characteristics make the approach suitable for:
+
+* Automotive ECUs
+* Gateway devices
+* Resource-constrained environments
+
+---
+
+# Practical Implications
+
+For automotive cybersecurity practitioners:
+
+* Prioritize feature engineering over model complexity.
+* Avoid relying solely on statistical descriptors.
+* Use structural transition modelling for robust deployment.
+* Validate IDS performance using cross-attack evaluation.
+
+---
+
+# Key Insights for Researchers
+
+## Insight 1
+
+High within-dataset accuracy does not imply real-world robustness.
+
+---
+
+## Insight 2
+
+Cross-attack evaluation should become a standard benchmark.
+
+---
+
+## Insight 3
+
+CAN identifier transition patterns are more stable than traffic statistics.
+
+---
+
+## Insight 4
+
+Graph representations require careful attack-aware design.
+
+---
+
+## Insight 5
+
+Hybrid models work because structural features compensate for graph instability.
+
+---
+
+# Limitations
+
+The authors acknowledge several limitations:
+
+* Window-level detection only
+* No frame-level attack localization
+* Limited manufacturer diversity
+* Dependence on existing benchmark datasets
+
+A window containing a single malicious frame is labelled entirely as malicious.
+
+Therefore, the framework acts as:
+
+> An anomaly flagging mechanism rather than a precise localization tool.
+
+---
+
+# Threats to Validity
+
+## Internal Validity
+
+* Window size selection
+* Feature extraction choices
+
+## External Validity
+
+* Limited number of vehicle platforms
+
+## Construct Validity
+
+* Dataset labeling assumptions
+
+## Reproducibility Risks
+
+* Preprocessing differences
+* Identifier parsing inconsistencies
+
+---
+
+# Future Research Directions
+
+The authors recommend:
+
+* Frame-level attack localization
+* Additional manufacturer datasets
+* Open-source implementations
+* Adversarial robustness testing
+* Online learning approaches
+* Signal-level CAN analysis
+* Cross-platform transfer learning
+* Explainable automotive IDS frameworks
+
+---
+
+# Reproducibility Checklist
+
+* Dataset described
+* Feature engineering documented
+* Cross-attack evaluation included
+* Statistical testing reported
+* Computational overhead measured
+
+Missing items:
+
+* Public source code
+* Open feature extraction pipeline
+* Reproducibility container
+* Hyperparameter search details
+
+---
+
+# Key Takeaways
+
+* Structural transition features are the most robust CAN representation.
+* Statistical descriptors fail under realistic transfer conditions.
+* Graph topology features are attack-dependent.
+* Hybrid representations provide the best operational performance.
+* Feature representation is more important than classifier choice.
+* Cross-attack testing is essential for automotive IDS evaluation.
+
+---
+
+# References
+
+The article contains **45 references** spanning:
+
+* Automotive CAN intrusion detection
+* Graph neural networks
+* Adversarial machine learning
+* Transfer learning
+* Explainable AI
+* Benchmark CAN datasets
+
+Key references highlighted by the authors include:
+
+1. Wang, W., Guo, K., Cao, W., Zhu, H., Nan, J., & Yu, L. (2024). *Review of Electrical and Electronic Architectures for Autonomous Vehicles: Topologies, Networking and Simulators*. *Automotive Innovation, 7*, 82–101.
+
+2. Anwar, A. S., Anwar, A., Moukahal, L. J., & Zulkernine, M. (2023). *Security assessment of in-vehicle communication protocols*. *Vehicle Communications, 44*, 100639.
+
+3. Rai, R., Grover, J., Sharma, P., & Pareek, A. (2025). *Securing the CAN bus using deep learning for intrusion detection in vehicles*. *Scientific Reports, 15*, 13820.
+
+4. Tron, A. D. F., Longari, S., Carminati, M., Polino, M., & Zanero, S. (2022). *CANflict*. In *Proceedings of the ACM SIGSAC Conference on Computer and Communications Security* (pp. 711–723).
+
+5. El-Fatyany, A., Wang, X., Li, L., & Ren, K. (2025). *EF-IDS: An efficient intrusion detection system with enriched features for CAN bus in modern vehicles*. *Journal of Systems Architecture, 171*, 103646.
+
+6. Lin, H., Yu, X., Chen, Z., & Cao, Y. (2025). *RAG-HIDS: A multi-relational graph-based hierarchical intrusion detection system for in-vehicle networks*. *Ad Hoc Networks, 183*, 104108.
+
+7. Ye, P., Liang, Y., Bie, Y., Qin, G., Song, J., Wang, Y., & Liu, W. (2025). *GDT-IDS: Graph-based decision tree intrusion detection system for controller area network*. *Journal of Supercomputing, 81*, 591.
+
+8. Shahriar, M. H., Xiao, Y., Moriano, P., Lou, W., & Hou, Y. T. (2023). *CANShield: Deep-Learning-Based Intrusion Detection Framework for Controller Area Networks at the Signal Level*. *IEEE Internet of Things Journal, 10*, 22111–22127.
+
+9. Lampe, B., & Meng, W. (2024). *can-train-and-test: A curated CAN dataset for automotive intrusion detection*. *Computers & Security, 140*, 103777.
+
+10. Verma, M. E., Bridges, R. A., Iannacone, M. D., Hollifield, S. C., Moriano, P., Hespeler, S. C., Kay, B., & Combs, F. L. (2020). *A comprehensive guide to CAN IDS data & introduction of the ROAD dataset*. arXiv:2012.14600.
+
+> **Note:** The uploaded text contains formatting artifacts in the references section due to text extraction from the publisher PDF. For citation management, systematic reviews, or bibliography import, researchers should consult the publisher version of the article to obtain the complete and correctly formatted list of all 45 references.
