@@ -1,0 +1,487 @@
+# Algorithmic Optimization for Accelerated UDS Fuzzing in Cyber–Physical Automotive Networks: The BB-FAST Approach on LIN-Bus
+
+**Authors:** Sungsik Im, Yijoon Jung, Junyoung Park
+**Affiliation:** FESCARO Co., Ltd., Republic of Korea
+**Published:** *Electronics*, March 2026
+**DOI:** 10.3390/electronics15061223
+
+---
+
+## TL;DR
+
+This paper introduces **BB-FAST (Batch-Based Binary-search Fuzzing and Accelerated Security Testing)**, a fuzzing framework designed specifically for **UDS diagnostics over LIN bus**.
+
+The core insight is that traditional fuzzing approaches developed for CAN networks perform poorly on LIN due to:
+
+* Low bandwidth (up to 20 kbps)
+* Master–slave scheduling constraints
+* Mandatory polling for ECU responses
+* High recovery costs after ECU crashes
+
+BB-FAST addresses these limitations using:
+
+1. **Batch transmission of fuzzing inputs**
+2. **Binary search-based error localization**
+
+The framework reduces fuzzing time by:
+
+* **97.7% compared to sequential fuzzing**
+* **64.2% compared to conventional batch fuzzing**
+
+---
+
+# Problem Statement
+
+Modern automotive ECUs increasingly expose **Unified Diagnostic Services (UDS)** over **Local Interconnect Network (LIN)**.
+
+While UDS fuzzing over CAN is well-established, LIN remains underexplored despite its use in:
+
+* HVAC systems
+* Side mirrors
+* Door controllers
+* Battery management systems
+* Sensor networks
+
+LIN introduces unique constraints:
+
+| Property         | CAN          | LIN           |
+| ---------------- | ------------ | ------------- |
+| Bandwidth        | Up to 1 Mbps | Up to 20 kbps |
+| Architecture     | Multi-master | Single master |
+| Communication    | Event-driven | Polling-based |
+| Response Latency | Low          | High          |
+
+Traditional fuzzing frameworks assume fast feedback loops and become impractical on LIN.
+
+---
+
+# Key Idea
+
+The dominant cost in LIN fuzzing is **response verification**, not payload transmission.
+
+Instead of checking ECU status after every fuzzing input, BB-FAST:
+
+1. Sends multiple test cases in a batch.
+2. Verifies ECU health once per batch.
+3. If a failure occurs, uses binary search to locate the offending input.
+
+This transforms error localization complexity from:
+
+```text
+O(m) → O(log m)
+```
+
+Where:
+
+* `m` = batch size
+
+---
+
+# BB-FAST Workflow
+
+```text
+Session Discovery
+        ↓
+Service Discovery
+        ↓
+Risk-Based Service Selection
+        ↓
+Batch Fuzzing
+        ↓
+Session Verification
+        ↓
+Failure?
+   ├── No → Next Batch
+   └── Yes → Binary Search Localization
+```
+
+---
+
+# Phase 1: Session Discovery
+
+The framework first discovers accessible UDS sessions using:
+
+* SID `0x10` (Diagnostic Session Control)
+* Breadth-First Search (BFS)
+
+Starting from the default session:
+
+```text
+0x01 → Extended Session → Programming Session
+```
+
+The framework builds a session transition graph and records valid paths.
+
+## Optimization
+
+Negative responses with:
+
+```text
+NRC 0x12 = Sub-function Not Supported
+```
+
+allow early pruning of inaccessible transitions.
+
+---
+
+# Phase 2: Service Discovery
+
+For each discovered session, the framework scans:
+
+* Service IDs (SIDs)
+* Sub-functions
+
+Example services:
+
+| SID  | Service                  |
+| ---- | ------------------------ |
+| 0x22 | Read Data By Identifier  |
+| 0x27 | Security Access          |
+| 0x2E | Write Data By Identifier |
+| 0x31 | Routine Control          |
+| 0x34 | Request Download         |
+| 0x36 | Transfer Data            |
+| 0x3D | Write Memory By Address  |
+
+## Optimization
+
+If the ECU returns:
+
+```text
+NRC 0x11 = Service Not Supported
+```
+
+all associated sub-function scans are skipped.
+
+This significantly reduces unnecessary traffic.
+
+---
+
+# Risk-Based Target Selection
+
+Instead of fuzzing every service equally, the authors prioritize high-risk attack surfaces.
+
+## Information Disclosure
+
+* Read Data By Identifier (`0x22`)
+* Read Memory By Address (`0x23`)
+
+## Configuration Modification
+
+* Write Data By Identifier (`0x2E`)
+* Write Memory By Address (`0x3D`)
+* Transfer Data (`0x36`)
+
+## Privilege Escalation
+
+* Security Access (`0x27`)
+* Diagnostic Session Control (`0x10`)
+* Routine Control (`0x31`)
+
+---
+
+# Fuzzing Algorithms
+
+## 1. Sequential Discovery Fuzzing (SDF)
+
+Traditional approach:
+
+```text
+Send Input
+↓
+Poll ECU
+↓
+Repeat
+```
+
+Complexity:
+
+```text
+O(N + k)
+```
+
+Where:
+
+* `N` = total test cases
+* `k` = number of failures
+
+### Drawbacks
+
+* Polling overhead dominates execution time.
+* Poor scalability on LIN.
+
+---
+
+## 2. Batch-Based Sequential Fuzzing (BSF)
+
+Inputs are grouped into batches.
+
+```text
+Send Batch
+↓
+Verify ECU
+↓
+Failure?
+    ├── No → Continue
+    └── Yes → Linear Search
+```
+
+Complexity:
+
+```text
+O(N/m + km)
+```
+
+Benefits:
+
+* Reduces polling frequency.
+
+Limitation:
+
+* Error localization remains linear.
+
+---
+
+## 3. BB-FAST
+
+BB-FAST replaces linear localization with binary search.
+
+```text
+Send Batch
+↓
+Verify ECU
+↓
+Failure?
+    ├── No → Continue
+    └── Yes → Binary Search
+```
+
+Complexity:
+
+```text
+O(N/m + k log m)
+```
+
+Advantages:
+
+* Minimal polling overhead
+* Fast recovery from crashes
+* Scales to larger search spaces
+
+---
+
+# Experimental Setup
+
+## Hardware
+
+* Intel Core Ultra 7 laptop
+* PEAK PLIN-USB interface
+* Real automotive LIN ECU
+* External power relay for resets
+
+## Software
+
+* Windows 11
+* Python 3.13
+* PLIN API
+* NumPy
+* Matplotlib
+
+## Test Environment
+
+* Black-box testing
+* LIN speed: 20 kbps
+* ECU reset time: 2 seconds
+
+---
+
+# Experimental Scenarios
+
+## Scenario 1: Generation-Based Service Fuzzing
+
+Target:
+
+```text
+SID 0x22 (Read Data By Identifier)
+```
+
+Search space:
+
+```text
+0x0000–0xFFFF
+```
+
+Total inputs:
+
+```text
+65,536
+```
+
+No ECU failures occurred.
+
+### Results
+
+| Method  | Execution Time |
+| ------- | -------------- |
+| SDF     | 121 min 48 s   |
+| BSF     | 7 min 53 s     |
+| BB-FAST | 7 min 51 s     |
+
+### Key Insight
+
+When no errors occur:
+
+```text
+BSF ≈ BB-FAST
+```
+
+Because binary search is never activated.
+
+---
+
+## Scenario 2: Mutation-Based Frame Fuzzing
+
+Target:
+
+* Raw LIN UDS frames
+
+Configuration:
+
+* Fixed NAD
+* Randomized 7-byte payloads
+
+Total inputs:
+
+```text
+10,000
+```
+
+An ECU crash occurred at approximately 75% progress.
+
+### Results
+
+| Method  | Total Time  |
+| ------- | ----------- |
+| SDF     | 57 min 45 s |
+| BSF     | 3 min 38 s  |
+| BB-FAST | 1 min 18 s  |
+
+### Improvement
+
+Compared to SDF:
+
+```text
+97.7% faster
+```
+
+Compared to BSF:
+
+```text
+64.2% faster
+```
+
+---
+
+# Key Research Insights
+
+## 1. Communication Overhead Dominates LIN Fuzzing
+
+Optimizing protocol interactions yields larger gains than optimizing payload generation.
+
+---
+
+## 2. Batching Is Necessary but Not Sufficient
+
+Batch processing reduces polling costs.
+
+However, recovery efficiency becomes the next bottleneck.
+
+---
+
+## 3. Error Localization Must Be Logarithmic
+
+Binary search converts failure analysis from:
+
+```text
+O(m)
+```
+
+to:
+
+```text
+O(log m)
+```
+
+This becomes increasingly important as batch size grows.
+
+---
+
+## 4. Recovery Time Matters
+
+The advantage of BB-FAST grows when:
+
+* ECU reboot times are high
+* Failures are frequent
+* Search spaces expand
+
+---
+
+## 5. Protocol-Aware Optimization Matters
+
+The framework does not depend on:
+
+* Mutation-based fuzzing
+* Generation-based fuzzing
+* Black-box testing
+* Gray-box testing
+* White-box testing
+
+Instead, it optimizes the communication layer itself.
+
+---
+
+# Limitations
+
+The current implementation focuses on:
+
+* Single-frame LIN diagnostics
+* One ECU platform
+* 2-byte payload spaces
+
+The framework does not yet address:
+
+* Multi-frame LIN transport
+* First Frame / Consecutive Frame sequences
+* Larger search spaces
+* Automotive Ethernet environments
+
+---
+
+# Future Research Directions
+
+Potential extensions include:
+
+* Multi-frame UDS fuzzing on LIN
+* Adaptive batch sizing
+* Dynamic error density estimation
+* AI-assisted payload generation
+* Integration with coverage-guided fuzzers
+* Application to Automotive Ethernet
+* Multi-ECU distributed testing
+
+---
+
+# Practical Takeaways for Researchers
+
+If you fuzz UDS over LIN:
+
+1. Avoid per-request polling.
+2. Batch aggressively.
+3. Separate discovery from localization.
+4. Optimize recovery workflows.
+5. Model communication constraints explicitly.
+6. Treat reset latency as a first-class performance metric.
+
+The main contribution of BB-FAST is demonstrating that:
+
+> For low-bandwidth cyber–physical systems, algorithmic optimization of protocol interactions can be more impactful than improvements in fuzzing payload generation itself.

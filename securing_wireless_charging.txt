@@ -1,0 +1,442 @@
+# Securing Wireless Charging Ecosystems in Intelligent Transport Systems: An OCPP-Based Cybersecurity Impact Analysis
+
+## Authors
+
+* Zacharenia Garofalaki
+* Dimitrios Kallergis
+* Ioannis Voyiatzis
+* Christos Douligeris
+
+## Publication Information
+
+* **Journal:** *Vehicles*
+* **Year:** 2026
+* **Volume:** 8
+* **Article Number:** 120
+* **Published:** 30 May 2026
+* **DOI:** https://doi.org/10.3390/vehicles8060120
+* **License:** Creative Commons Attribution (CC BY 4.0)
+
+---
+
+## Date of Reading
+
+**20 June 2026**
+
+---
+
+# Executive Summary
+
+This paper investigates the cybersecurity implications of integrating **Open Charge Point Protocol (OCPP)-based wireless charging infrastructures** into **Intelligent Transportation Systems (ITS)**.
+
+The authors argue that as wireless power transfer (WPT) evolves toward dynamic charging and autonomous transport ecosystems, cybersecurity vulnerabilities within charging communication layers become critical operational risks.
+
+To quantify these risks, the study introduces a **Stochastic Petri Net (SPN)-based risk assessment framework** that maps vulnerability severity scores directly onto operational service states.
+
+Using the **intelligent Bus on Campus (iBuC)** platform as a case study, the authors evaluate how vulnerabilities in electric vehicle charging networks affect broader transportation services.
+
+The study demonstrates that:
+
+* Wireless charging infrastructure significantly expands the ITS attack surface.
+* OCPP vulnerabilities can propagate into transport service disruptions.
+* Protocol-level attacks may translate into physical-layer failures in wireless charging scenarios.
+* Security assessments must account for both operational states and charging subprocesses.
+
+---
+
+# Research Problem
+
+Existing ITS cybersecurity research often evaluates:
+
+* Vehicle-to-Infrastructure (V2I) security
+* Autonomous vehicle communication
+* Charging infrastructure security
+
+However, limited work examines:
+
+1. How charging vulnerabilities affect overall transport services.
+2. How wireless charging alters exploitation dynamics.
+3. How third-party IoT integrations influence charging security.
+4. How protocol-level weaknesses propagate through cyber-physical systems.
+
+The paper addresses these gaps by linking:
+
+**Vulnerabilities → Operational States → Service Reliability**
+
+---
+
+# Research Objectives
+
+The study aims to:
+
+1. Model OCPP-enabled EV charging within ITS.
+2. Extend existing ITS vulnerability frameworks with charging-related threats.
+3. Quantify the cybersecurity impact of charging infrastructure.
+4. Evaluate how external IoT services alter risk exposure.
+5. Develop a scalable framework for future wireless charging ecosystems.
+
+---
+
+# Core Contributions
+
+The authors claim four main contributions:
+
+1. **Integration of OCPP entities** into the iBuC fleet-management framework.
+2. **Development of an Extended Vulnerability List (EVL)** including charging-related vulnerabilities.
+3. **Security evaluation using Stochastic Petri Nets.**
+4. **Quantification of charging network impact on ITS security metrics.**
+
+Additional methodological innovations include:
+
+* Mapping CVSS metrics onto operational states.
+* Introducing dynamic risk density metrics.
+* Modeling wireless charging-specific authentication processes.
+* Evaluating third-party IoT integration effects.
+
+---
+
+# System Architecture
+
+## Primary Components
+
+The OCPP ecosystem includes:
+
+* Electric Vehicles (EVs)
+* Charging Stations (CS)
+* Electric Vehicle Supply Equipment (EVSE)
+* Charging Station Management Systems (CSMS)
+* Energy Management Systems (EMS)
+* OCPP communication protocol
+
+Within the iBuC framework:
+
+* The CSMS role is integrated into the Control Unit (CU).
+* Communication between charging entities relies exclusively on OCPP.
+
+---
+
+# Case Study Scenarios
+
+## 1. iBuC-PTS (Public Transport Service)
+
+Objectives:
+
+* Optimize passenger waiting times.
+* Improve synchronization with public transportation.
+
+Characteristics:
+
+* Uses real-time public transport data.
+* Activates full-route fleet operations.
+* Contains seven operational states.
+
+---
+
+## 2. iBuC-WFS (Weather Forecasting Service)
+
+Objectives:
+
+* Improve passenger safety.
+* React to severe weather conditions.
+
+Characteristics:
+
+* Integrates weather alerts.
+* Dynamically suspends operations.
+* Contains six operational states.
+
+---
+
+# Methodology
+
+## Stochastic Petri Nets (SPNs)
+
+The authors model ITS behavior using SPNs because they:
+
+* Capture asynchronous events.
+* Represent distributed IoT environments.
+* Model state transitions probabilistically.
+* Support timing analysis.
+
+SPNs enable evaluation of:
+
+* State occupancy probabilities
+* Service life cycles
+* Attack exposure windows
+* Security impacts over time
+
+---
+
+# Operational States
+
+| State | Description                  |
+| ----- | ---------------------------- |
+| P0    | Fleet idle / EV charging     |
+| P1    | EV activated                 |
+| P2    | EV arrives at boarding node  |
+| P3    | Service request placed       |
+| P4    | EV arrives at destination    |
+| P5    | Third-party data received    |
+| P6    | Full-route service triggered |
+
+Critical wireless charging states:
+
+* **P1:** EV activation
+* **P2:** Vehicle positioning and charging initiation
+
+These states require rapid and secure OCPP authentication.
+
+---
+
+# Vulnerability Assessment Framework
+
+The paper constructs an **Extended Vulnerability List (EVL)** by augmenting the original ITS vulnerability database with charging-specific threats.
+
+Selection criteria:
+
+1. Relevance to operational states.
+2. CVSS severity.
+3. Exploitability.
+4. Temporal impact.
+
+---
+
+# Key OCPP-Related Vulnerabilities
+
+| CVE            | Description                               | CVSS Base |
+| -------------- | ----------------------------------------- | --------- |
+| CVE-2018-7800  | Hard-coded credentials                    | 9.8       |
+| CVE-2018-7801  | Code injection                            | 8.8       |
+| CVE-2018-7802  | SQL injection                             | 8.8       |
+| CVE-2020-27813 | Resource exhaustion via JSON manipulation | 7.5       |
+| CVE-2021-22706 | Cross-site scripting                      | 6.1       |
+| CVE-2021-22729 | Hard-coded password                       | 9.8       |
+| CVE-2021-22730 | Hard-coded credentials                    | 9.8       |
+| CVE-2018-16669 | Credential exposure in XML                | 9.8       |
+
+---
+
+# Security Metric Formulation
+
+The framework computes:
+
+* Frequency of occurrence (Rg)
+* Severity (Wg)
+* Risk allocation (Pg)
+
+These are aggregated into:
+
+* **SMVL(0):** Baseline risk metric
+* **SMVL(t):** Mitigated risk metric
+
+Interpretation:
+
+* Higher values indicate greater risk density.
+* Lower values indicate more resilient state distributions.
+
+Importantly:
+
+The metric represents **relative risk density**, not absolute attack count.
+
+---
+
+# Key Results
+
+## Baseline Security Metrics
+
+| Scenario | SMVL(0) |
+| -------- | ------- |
+| iBuC-PTS | 9.14    |
+| iBuC-WFS | 9.09    |
+
+## Mitigated Metrics
+
+| Scenario | SMVL(t) |
+| -------- | ------- |
+| iBuC-PTS | 8.15    |
+| iBuC-WFS | 8.09    |
+
+---
+
+## After Adding Charging Vulnerabilities (EVL)
+
+| Scenario | SMEVL(0) | SMEVL(t) |
+| -------- | -------- | -------- |
+| iBuC-PTS | 8.93     | 7.99     |
+| iBuC-WFS | 8.87     | 7.94     |
+
+Observed reductions:
+
+* Baseline reduction: 0.21–0.22
+* Mitigated reduction: 0.15–0.16
+
+---
+
+# Important Interpretation
+
+A lower SMEVL score **does not necessarily mean lower overall threat exposure**.
+
+Instead, it indicates:
+
+* Reduced risk concentration per state.
+* Wider distribution of vulnerabilities across the system.
+
+Researchers should therefore evaluate:
+
+1. Risk density metrics.
+2. Total vulnerability count.
+3. State occupancy probabilities.
+
+Together.
+
+---
+
+# Wireless Charging-Specific Insights
+
+The paper highlights a critical distinction:
+
+Traditional plug-in charging tolerates communication delays.
+
+Wireless charging does not.
+
+Dynamic wireless charging requires:
+
+* Microsecond-scale authentication
+* Real-time synchronization
+* Continuous OCPP communication
+
+Consequently:
+
+Protocol attacks can directly cause physical disruptions.
+
+Examples include:
+
+* Authentication delays
+* Resource exhaustion attacks
+* Signal jamming
+* Foreign Object Detection (FOD) spoofing
+* Electromagnetic interference
+
+These attacks can terminate inductive power transfer and trigger Denial-of-Service conditions.
+
+---
+
+# Key Exposure Findings
+
+PEV vulnerabilities affect:
+
+* **43%** of operational states in iBuC-PTS.
+* **33%** of operational states in iBuC-WFS.
+
+The charging process therefore influences nearly half of the service lifecycle.
+
+---
+
+# Notable Example
+
+The probability of remaining in the charging-related state increases:
+
+* From **0.35** in the public transport scenario
+* To **0.50** in the weather integration scenario
+
+Implication:
+
+Third-party IoT integrations can unintentionally increase charging attack exposure windows.
+
+---
+
+# Practical Implications for Researchers
+
+The framework enables researchers to:
+
+* Prioritize vulnerabilities by operational relevance.
+* Evaluate charging security at design time.
+* Compare security across ITS architectures.
+* Quantify cyber-physical attack surfaces.
+* Model dynamic charging environments.
+
+Potential applications:
+
+* Autonomous fleets
+* Smart cities
+* Dynamic wireless charging lanes
+* Vehicle-to-grid ecosystems
+* Energy management platforms
+
+---
+
+# Design Recommendations
+
+The study recommends:
+
+* Migrating to OCPP 2.0.1 security profiles.
+* Enforcing TLS-based communication.
+* Using certificate-based authentication.
+* Securing firmware update channels.
+* Implementing high-speed authentication.
+* Monitoring charging state occupancy.
+* Integrating physical-layer security mechanisms.
+* Combining OCPP protections with wireless pad authentication.
+
+---
+
+# Limitations
+
+The authors acknowledge that:
+
+* OCPP vulnerabilities are still emerging.
+* Legacy deployments remain widespread.
+* Historical CVEs may not fully represent future threats.
+* Dynamic charging environments require further study.
+
+Additionally:
+
+The framework evaluates relative risk rather than absolute exploit probability.
+
+---
+
+# Future Research Directions
+
+Suggested extensions include:
+
+* Dynamic charging-while-driving scenarios.
+* Reinforcement learning for adaptive security.
+* AI-assisted vulnerability prioritization.
+* Physical-layer authentication methods.
+* Wireless charging signal integrity monitoring.
+* Cross-layer cyber-physical defense mechanisms.
+
+---
+
+# Key Takeaways
+
+* Wireless charging transforms protocol weaknesses into physical disruptions.
+* OCPP security is now a safety-critical requirement.
+* Charging infrastructure must be evaluated as part of ITS cybersecurity.
+* Third-party IoT integrations expand attack surfaces.
+* State-aware risk models outperform static vulnerability scoring.
+* Future autonomous transport systems require integrated cyber-physical security frameworks.
+
+---
+
+# References
+
+## Primary Article
+
+Garofalaki, Z., Kallergis, D., Voyiatzis, I., & Douligeris, C. (2026). **Securing Wireless Charging Ecosystems in Intelligent Transport Systems: An OCPP-Based Cybersecurity Impact Analysis**. *Vehicles*, 8, 120. https://doi.org/10.3390/vehicles8060120
+
+## Key Standards and Frameworks Referenced
+
+* International Electrotechnical Commission (IEC). (2024). **IEC 63584:2024 – Electric Vehicle Supply Equipment: Open Charge Point Protocol (OCPP)**.
+
+* Open Charge Alliance (OCA). **Open Charge Point Protocol (OCPP) 2.0.1 Specification**.
+
+* National Institute of Standards and Technology (NIST). **National Vulnerability Database (NVD)**.
+
+* MITRE Corporation. **Common Weakness Enumeration (CWE)**.
+
+* FIRST.org. **Common Vulnerability Scoring System (CVSS)**.
+
+* SAE International. **SAE J2954 – Wireless Power Transfer for Light-Duty Plug-In/Electric Vehicles and Alignment Methodology**.
+
+* European Union. (2023). **Regulation (EU) 2023/1804 on the deployment of alternative fuels infrastructure (AFIR)**.
