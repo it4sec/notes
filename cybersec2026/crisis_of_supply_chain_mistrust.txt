@@ -1,0 +1,350 @@
+# Presentation Summary: **“Deconstructing the Crisis of Supply Chain Distrust: Digital Trust and Forensic Challenges Behind ‘Israel in Taiwan’”**
+
+**Source file:** *AIShield.pdf* 
+
+## Presentation Metadata
+
+| Field                  | Details                                                                                                                                    |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Title**              | *Deconstructing the Crisis of Supply Chain Distrust: Digital Trust and Forensic Challenges Behind "Israel in Taiwan"*                      |
+| **Subtitle**           | *Forensic AI SOC: The Automated Blue Team for Security Operations*                                                                         |
+| **Author / Speaker**   | **Patrick Chen**                                                                                                                           |
+| **Position**           | **Director of SecOps**                                                                                                                     |
+| **Company / Employer** | **AIShield**                                                                                                                               |
+| **Event**              | **CYBERSEC Taiwan 2026**                                                                                                                   |
+| **Date**               | **May 6, 2026**                                                                                                                            |
+| **Location**           | Nangang Exhibition Center Hall 2, Booth P208                                                                                               |
+| **Topic Area**         | AI-driven SOC automation, digital trust, security operations, incident response, memory forensics, supply chain security, cyber resilience |
+
+---
+
+## Quick Summary
+
+The presentation argues that modern Security Operations Centers (SOCs) are failing because they rely on fragmented tools, siloed teams, and human-intensive investigation processes that cannot keep pace with AI-enhanced threats.
+
+Traditional SOC, MDR, EDR, and XDR solutions generate overwhelming numbers of alerts, forcing organizations to disable features, lower detection sensitivity, and ignore low-priority signals. This creates dangerous blind spots that sophisticated attackers exploit.
+
+AIShield proposes a **Forensic AI SOC** model based on **Agentic AI**—an autonomous AI system that not only analyzes alerts but also performs investigations, gathers evidence, conducts memory forensics, correlates intelligence, and delivers actionable conclusions.
+
+The core objective is to protect the organization's **"golden response time"** by automating deep forensic analysis and reducing the burden on human analysts. 
+
+---
+
+## Goal of the Presentation
+
+The presentation seeks to:
+
+* Expose structural weaknesses in current SOC and MDR operating models.
+* Demonstrate the limitations of rule-based alert triage.
+* Highlight the operational risks created by alert overload.
+* Advocate for forensic-driven security operations.
+* Introduce Agentic AI as the next evolution of SOC automation.
+* Improve digital trust across supply chains and external ecosystems.
+* Strengthen cyber resilience through faster detection, investigation, and response.
+
+---
+
+## Key Ideas
+
+### 1. Multiple Security "Brains" Create Fragmentation
+
+The presentation argues that modern enterprises operate multiple disconnected security systems:
+
+* SOC
+* MDR
+* EDR
+* XDR
+* SIEM
+* Cloud security platforms
+
+Each solution generates separate alerts and workflows, creating:
+
+* Responsibility gaps
+* SLA failures
+* Communication breakdowns
+* Vendor finger-pointing
+
+The speaker refers to this as the **"stacking myth"**—adding more tools does not necessarily improve security outcomes. 
+
+---
+
+### 2. Alert Fatigue Forces Organizations to Accept Risk
+
+According to the presentation:
+
+* Organizations receive over **10,000 alerts per day**.
+* Analysts review less than **5%** of alerts.
+* Many organizations enable only around **50%** of purchased security capabilities.
+* Fewer than **10%** of generated alerts receive meaningful investigation.
+
+As a result, organizations:
+
+* Lower detection sensitivity
+* Disable security modules
+* Ignore informational alerts
+* Miss early indicators of compromise
+
+This creates hidden attack paths for advanced adversaries. 
+
+---
+
+### 3. Vendors Deliver Verdicts, Not Forensics
+
+Most security providers focus on:
+
+* Classifying threats
+* Closing tickets
+* Sending notifications
+
+However, defenders actually need:
+
+* Attack timelines
+* Kill chain reconstruction
+* Attribution analysis
+* Lateral movement tracking
+* Persistence detection
+
+The presentation argues that **deep forensics—not alert triage—is the true bottleneck in security operations.** 
+
+---
+
+### 4. AI Assistants Are Not Enough
+
+The speaker distinguishes between two AI approaches:
+
+| AI Assistant             | Agentic AI                      |
+| ------------------------ | ------------------------------- |
+| Answers questions        | Executes investigations         |
+| Provides recommendations | Collects evidence automatically |
+| Requires manual actions  | Operates across systems         |
+| Generates tasks          | Produces conclusions            |
+
+The presentation emphasizes that organizations need AI systems with both:
+
+* Intelligence ("brain")
+* Execution capabilities ("hands")
+
+This enables autonomous evidence collection and analysis. 
+
+---
+
+### 5. Forensic AI SOC Principles
+
+The proposed model is based on five principles:
+
+1. **Single team, single responsibility model**
+2. **100% investigation coverage**
+3. **Full utilization of security tools**
+4. **Delivery of conclusions instead of task lists**
+5. **True automation without manual playbooks**
+
+The guiding philosophy is:
+
+> One Brain · One Team · One Outcome. 
+
+---
+
+### 6. Investigation Is the Real Time Sink
+
+The presentation highlights that:
+
+* Detection is relatively fast.
+* Response can be automated.
+* Investigation remains slow and labor-intensive.
+
+The speaker argues that the security industry focuses too heavily on detection technologies while underinvesting in automated forensic investigation capabilities. 
+
+---
+
+## Case Studies and Practical Examples
+
+### Case 1: Early Warning Signals
+
+Machine-learning-based behavioral baselines identified attack indicators days before high-priority alerts were generated.
+
+However, analysts often ignore these signals because of excessive false positives and limited resources. 
+
+---
+
+### Case 2: Low-Risk Alerts Concealing APT Activity
+
+An alert classified as informational involved:
+
+* `MicrosoftEdgeUpdate.exe`
+* Legitimate-looking process chains
+* No malicious file hash indicators
+
+Memory forensics later revealed:
+
+* Fileless malware execution
+* Cobalt Strike activity
+* Attribution to APT41
+
+This demonstrates why low-priority alerts require deeper investigation. 
+
+---
+
+### Case 3: Long-Term Intrusion Discovery
+
+During a LockBit ransomware investigation, analysts uncovered evidence of a separate intrusion that had persisted since 2022.
+
+Key findings:
+
+* APT41 persistence mechanisms
+* Dustpan malware components
+* Cobalt Strike implants
+* 42 months of dwell time
+
+The case illustrates the value of retrospective forensic analysis. 
+
+---
+
+### Case 4: Impossible Travel Detection
+
+Traditional validation required approximately:
+
+* 30 minutes per alert
+* Multiple manual workflows
+* User outreach
+* Log analysis
+
+Agentic AI reduced investigation time to:
+
+* Approximately 30 seconds per alert
+
+The system automatically:
+
+* Correlated login records
+* Evaluated device context
+* Assessed MFA status
+* Generated final recommendations
+
+This demonstrates substantial gains in response speed. 
+
+---
+
+## How This Presentation Is Relevant to Cybersecurity
+
+### Security Operations Modernization
+
+The presentation addresses critical SOC challenges:
+
+* Alert fatigue
+* Tool fragmentation
+* Workforce shortages
+* Investigation bottlenecks
+
+### Threat Detection Engineering
+
+It highlights limitations of:
+
+* Static rules
+* IOC matching
+* Risk-score filtering
+
+### Incident Response
+
+The proposed model improves:
+
+* Triage speed
+* Investigation depth
+* Evidence collection
+* Decision-making
+
+### Digital Trust and Supply Chain Security
+
+The presentation frames cybersecurity as a trust problem across interconnected ecosystems rather than a purely technical challenge.
+
+### Identity Security
+
+The impossible travel use case emphasizes:
+
+* Identity-based attacks
+* Credential abuse
+* Behavioral analytics
+
+---
+
+## Relevance to Resilience
+
+The concept of **"golden response time"** is central to organizational resilience.
+
+The presentation supports resilience by enabling:
+
+* Earlier threat detection
+* Faster investigations
+* Reduced attacker dwell time
+* Improved incident containment
+* Continuous operations during cyber events
+
+The shift is from:
+
+* Reactive investigation → Autonomous investigation
+* Manual workflows → Continuous response
+* Tool-centric operations → Outcome-centric operations
+
+This approach aligns closely with:
+
+* National Institute of Standards and Technology Cybersecurity Framework 2.0
+* MITRE Corporation ATT&CK
+* International Organization for Standardization ISO 27001
+* International Organization for Standardization ISO 22301
+* European Union Agency for Cybersecurity resilience guidance
+
+---
+
+## Relevance to Safety
+
+The presentation contributes to organizational safety through:
+
+* Faster identification of active threats
+* Reduced dependence on individual analysts
+* Standardized investigation processes
+* Continuous forensic visibility
+* Lower risk of overlooked alerts
+* Better coordination between security teams and providers
+
+The ultimate objective is to prevent cyber incidents from escalating into:
+
+* Ransomware outbreaks
+* Supply chain disruptions
+* Business interruptions
+* Data breaches
+* Regulatory violations
+
+---
+
+## Presentation Structure
+
+| Section   | Focus                                   |
+| --------- | --------------------------------------- |
+| Chapter 1 | SOC and MDR fragmentation               |
+| Chapter 2 | Alert overload and operational failures |
+| Chapter 3 | Forensic AI SOC framework               |
+| Chapter 4 | Real-world case studies                 |
+| Chapter 5 | Agentic AI architecture                 |
+
+---
+
+## Links
+
+No external websites, URLs, QR codes, or embedded hyperlinks were identified in the presentation. 
+
+---
+
+## Key Takeaways
+
+1. Fragmented security operations create organizational risk.
+2. Alert fatigue forces defenders to ignore important signals.
+3. Investigation—not detection—is the primary SOC bottleneck.
+4. AI must move beyond recommendations to autonomous action.
+5. Deep forensics determines the quality of security decisions.
+6. Protecting the "golden response time" is essential for cyber resilience.
+
+### Final Message
+
+The presentation's central thesis is:
+
+> Organizations do not need more alerts—they need faster, deeper, and more autonomous investigations.
+
+By combining forensic techniques with Agentic AI, security teams can move from manual alert processing to scalable, evidence-driven cyber defense.

@@ -1,0 +1,371 @@
+# Lessons from Two Wars: How Ukraine and Iran Rewrote the Electronic Warfare Playbook for Unmanned Systems
+
+**Author / Speaker:** Matteo Merialdo
+**Affiliation:** Director, Cyber Security Technology & Innovation, Nexova
+**Event:** CYSAT Paris 2026
+**Video publication date:** 15 June 2026
+**Date of read:** 20 June 2026
+**Source type:** Conference presentation transcript
+**Topic:** Drone warfare, electronic warfare, space cybersecurity, GNSS denial, satellite communications, unmanned systems security
+
+---
+
+## Executive Summary
+
+This presentation argues that modern unmanned-system warfare is now inseparable from space systems. UAVs, UGVs, USVs, and other unmanned platforms increasingly depend on satellite services for positioning, navigation, timing, command-and-control, telemetry, targeting, weather, and intelligence-surveillance-reconnaissance.
+
+The speaker uses the wars in Ukraine and Iran / the Middle East as practical case studies showing that electronic warfare has shifted from being a supporting capability to a central battlefield function. GNSS jamming and spoofing, satellite communications disruption, link contestation, and targeting of operators have become routine parts of unmanned-system operations.
+
+A major research contribution of the talk is the call for a multi-dimensional TTP framework for unmanned systems. Existing adversary models often focus separately on radio-frequency attacks, kinetic attacks, space-system threats, or classical IT/OT cyber threats. Merialdo argues that unmanned systems require a combined model covering GNSS, SATCOM, command-and-control links, onboard autonomy, AI model compromise, human factors, supply chain, ground-segment cyber risk, and kinetic effects.
+
+The talk also highlights the speed of wartime engineering. In Ukraine, battlefield feedback can reportedly lead to platform redesigns within about a week. This tempo challenges traditional European defence development cycles, which often rely on multi-year requirements, design, review, and procurement processes.
+
+---
+
+## What Is New
+
+The presentation’s main “new” contribution is not a single technical invention. Its novelty is the synthesis of battlefield lessons into a space-cybersecurity research agenda for unmanned systems.
+
+Key new points include:
+
+1. **Drone electronic warfare is framed as a space-security problem.**
+   The presentation argues that attacks on drones are often attacks on space-enabled services: GNSS, SATCOM, timing, targeting, and ISR.
+
+2. **The battlefield is treated as a live source of adversary-model data.**
+   Ukraine and Iran are presented as real-world laboratories producing large amounts of evidence about GNSS denial, C2 disruption, SATCOM dependence, and rapid countermeasure cycles.
+
+3. **The talk connects unmanned systems, space systems, AI, and cyber supply chain risk.**
+   Instead of treating drones as only radio-controlled or kinetic platforms, the speaker treats them as cyber-physical-space systems.
+
+4. **AI autonomy becomes part of the attack surface.**
+   Increasing onboard autonomy is described as operationally useful but also risky because AI models used in drones may become targets for poisoning, manipulation, or supply-chain compromise.
+
+5. **A multi-dimensional TTP framework is proposed.**
+   The speaker identifies a gap between existing cyber frameworks, space threat frameworks, RF-focused models, and kinetic models. The proposed direction is a unified TTP model for UXV systems.
+
+6. **Engineering tempo is identified as a strategic capability.**
+   The ability to redesign and redeploy unmanned systems quickly is treated as a core lesson from Ukraine and a weakness in slower European defence processes.
+
+---
+
+## Core Thesis
+
+Modern drone warfare is no longer just about drones. It is about the full dependency chain that allows drones to operate: satellites, GNSS, command links, telemetry, ground control, onboard AI, operators, supply chains, and data-fusion systems.
+
+The central claim is:
+
+> Unmanned-system security must be understood as a multi-domain problem that combines space cybersecurity, electronic warfare, AI security, supply-chain resilience, and battlefield engineering speed.
+
+---
+
+## Key Insights for Researchers
+
+### 1. UAVs and UXVs are space-dependent systems
+
+The speaker emphasizes that modern unmanned systems use space services for:
+
+* Positioning, navigation, and timing
+* Command-and-control
+* Telemetry
+* Satellite communications
+* Targeting
+* ISR and battlefield situational awareness
+* Weather and timing support
+
+This means that a drone can be attacked indirectly by attacking its space-service dependencies.
+
+**Research implication:**
+Drone security research should model satellite dependencies explicitly. A UAV threat model that ignores GNSS, SATCOM, and space-enabled ISR is incomplete.
+
+---
+
+### 2. GNSS denial has become a normal battlefield condition
+
+A major Ukraine lesson is that GNSS services may be unavailable across significant frontline areas because of jamming, spoofing, and other electronic warfare effects.
+
+This changes the engineering assumptions behind drone design. Systems can no longer assume that satellite navigation will always be available.
+
+**Research implication:**
+Researchers should study navigation resilience under degraded or denied GNSS conditions. Relevant areas include multi-sensor navigation, fallback autonomy, inertial navigation, vision-based navigation, cooperative localization, and mission logic for degraded environments.
+
+---
+
+### 3. Link contestation is as important as navigation denial
+
+The presentation distinguishes between attacks on navigation and attacks on the command-and-control link. Even when a drone can navigate, it may become useless if the operator loses the video downlink or C2 channel.
+
+The speaker highlights several affected links:
+
+* C2 uplink
+* Video downlink
+* Telemetry
+* SATCOM backhaul
+* Operator-to-platform control chain
+
+**Research implication:**
+Future UXV security models should treat communications resilience as a separate but connected problem from navigation resilience.
+
+---
+
+### 4. Starlink illustrates both resilience and dependency
+
+The presentation treats Starlink as a major example of battlefield satellite communications dependence. It is described as resilient at the constellation level, but vulnerable at the terminal and operator level.
+
+The speaker also stresses the strategic problem of relying on a private foreign provider for wartime communications.
+
+**Research implication:**
+Researchers should distinguish between constellation resilience, terminal vulnerability, policy dependency, and operator targeting risk. Technical resilience does not remove geopolitical or supply-chain dependency.
+
+---
+
+### 5. Iran shows constellation migration and geopolitical technology convergence
+
+The presentation states that Iran adapted by shifting some navigation reliance toward China’s BeiDou after GPS became unusable or unavailable in parts of the conflict environment. It also describes signs of Russian, Iranian, and Chinese technology convergence around drone navigation and anti-jamming capabilities.
+
+**Research implication:**
+Future studies should examine constellation choice as a strategic variable. GNSS resilience is not only technical; it is also geopolitical.
+
+---
+
+### 6. Commercial drones are now part of military systems
+
+The speaker notes that modern conflicts use not only military-grade drones but also commercial drones repurposed for dual-use or military operations.
+
+This creates a mismatch between military needs and commercial security defaults. For example, commercial drones may lack robust anti-spoofing or authenticated GNSS support.
+
+**Research implication:**
+Researchers should study the security gap between commercial drone ecosystems and military operating environments.
+
+---
+
+### 7. AI autonomy increases resilience but expands the attack surface
+
+The presentation suggests that drones are becoming more autonomous through predefined mission playbooks and AI-supported onboard decision-making.
+
+This may help drones continue missions during communication loss, but it also creates new risks:
+
+* AI model poisoning
+* Compromised training data
+* Vulnerable autonomy logic
+* Supply-chain compromise of AI components
+* Difficulty validating rapidly updated models
+
+**Research implication:**
+Drone autonomy should be studied as a cyber-physical AI security problem, not only as a robotics problem.
+
+---
+
+### 8. Existing threat frameworks are fragmented
+
+The speaker argues that current adversary models do not adequately combine all relevant domains. Some focus on RF threats, others on kinetic attacks, others on IT/OT cyber, and others on space systems.
+
+The missing piece is a unified framework for unmanned systems that includes:
+
+* GNSS attacks
+* SATCOM attacks
+* C2 disruption
+* Video-link disruption
+* Ground-segment compromise
+* Supply-chain compromise
+* Human factors
+* AI model attacks
+* Kinetic effects
+* Space-system dependencies
+
+**Research implication:**
+A useful research direction is the development of a combined UXV-space-cyber TTP matrix that links unmanned-system vulnerabilities with frameworks such as MITRE ATT&CK, MITRE ATT&CK for ICS, and space-sector threat frameworks.
+
+---
+
+## Useful Examples from the Presentation
+
+### Example 1: GNSS-denied frontlines in Ukraine
+
+The speaker describes areas of the Ukrainian frontline where GNSS services are effectively unavailable because of electronic warfare.
+
+**Why it matters:**
+This provides a real-world example of degraded-space-service operations. It is useful for researchers studying navigation resilience, mission assurance, and autonomy under denial conditions.
+
+---
+
+### Example 2: Fiber-optic-controlled drones
+
+The presentation mentions fiber-optic-connected drones as a battlefield adaptation to radio-link jamming.
+
+**Why it matters:**
+This shows that countermeasures may move away from wireless links entirely when the RF environment becomes too contested. It also shows the trade-off between resilience and physical operational constraints.
+
+---
+
+### Example 3: Hardened radio links
+
+The speaker notes a movement toward more robust radio antennas and radio systems to improve resistance against jamming and spoofing.
+
+**Why it matters:**
+This shows that adaptation is not only about replacing links, but also about hardening existing communication paths.
+
+---
+
+### Example 4: SATCOM terminal targeting
+
+The talk highlights that satellite terminals can be detected, which can expose operators to targeting.
+
+**Why it matters:**
+This shifts the focus from drone survival to operator survivability and emission discipline. In UXV security, the human operator and ground terminal are part of the attack surface.
+
+---
+
+### Example 5: Iran’s reported shift toward BeiDou
+
+The speaker describes Iran moving from GPS reliance toward BeiDou in response to GPS disruption.
+
+**Why it matters:**
+This is an example of constellation migration as a battlefield adaptation. It is useful for researchers studying GNSS geopolitics, multi-constellation resilience, and contested PNT.
+
+---
+
+### Example 6: Strait of Hormuz GNSS spoofing effects
+
+The presentation mentions ships reporting false positions, including locations far from their true position.
+
+**Why it matters:**
+This shows that military GNSS disruption can spill over into civilian navigation and global trade systems.
+
+---
+
+### Example 7: Ukrainian counter-drone experience informing Europe
+
+The speaker notes that Ukrainian counter-drone experience is increasingly influencing European and US thinking, including interest in lower-cost drone-interceptor systems.
+
+**Why it matters:**
+This illustrates how wartime innovation diffuses into allied defence planning.
+
+---
+
+## Proposed Research Questions
+
+1. How should unmanned-system threat models integrate space, cyber, RF, kinetic, AI, and human factors?
+2. What minimum satellite-service assumptions should be included in UAV security testing?
+3. How can drones safely operate when GNSS is degraded, spoofed, or unavailable?
+4. How can C2 and video links be made resilient without increasing operator detectability?
+5. What are the best methods for validating AI-enabled autonomy under rapid wartime update cycles?
+6. How should commercial drone security standards change if commercial systems are routinely repurposed for military or civil-defence use?
+7. How can European defence procurement adapt to a battlefield engineering cycle measured in weeks rather than years?
+8. How can Europe reduce dependency on non-European satellite communications while preserving interoperability?
+9. What evidence should be collected from active battlefields to update adversary TTP models responsibly?
+10. How can GNSS authentication systems, such as Galileo OSNMA, be adopted more widely in commercial and dual-use systems?
+
+---
+
+## Suggested Structure for a UXV Threat Model
+
+A useful research model based on the talk would include the following layers:
+
+### 1. Space-service dependency layer
+
+* GNSS
+* SATCOM
+* Timing
+* Earth observation
+* Weather services
+* Targeting data
+
+### 2. Communication layer
+
+* C2 uplink
+* Telemetry
+* Video downlink
+* SATCOM backhaul
+* Ground-control network
+
+### 3. Platform layer
+
+* Flight controller
+* Onboard computer
+* Sensors
+* Payload
+* Navigation unit
+* Power system
+
+### 4. Autonomy and AI layer
+
+* Mission playbooks
+* AI perception models
+* Target-recognition models
+* Navigation autonomy
+* Failover logic
+
+### 5. Ground segment
+
+* Operator station
+* Mission planning systems
+* Data-fusion systems
+* Maintenance systems
+* Update pipelines
+
+### 6. Supply chain
+
+* Hardware components
+* Firmware
+* Software libraries
+* AI models
+* Commercial drone platforms
+* Satellite-service providers
+
+### 7. Human and organizational layer
+
+* Operator fatigue
+* Training
+* Emission discipline
+* Rules of engagement
+* Procurement speed
+* Feedback loops from battlefield to engineering teams
+
+---
+
+## Main Takeaways
+
+* Drone warfare is now deeply dependent on space infrastructure.
+* Electronic warfare against drones often means disruption of space-enabled services.
+* GNSS denial and C2 disruption are central features of modern battlefield conditions.
+* SATCOM improves resilience but introduces strategic dependency and terminal-detection risks.
+* Commercial and military drone ecosystems are converging under battlefield pressure.
+* AI-enabled autonomy may help drones survive contested links but creates new attack surfaces.
+* Existing threat frameworks are too fragmented for modern UXV systems.
+* A dedicated multi-dimensional TTP framework for UXVs is needed.
+* The speed of engineering adaptation is itself a military advantage.
+* Europe has relevant technologies and policies, but its development tempo may be too slow for the current threat environment.
+
+---
+
+## Limitations and Cautions
+
+This summary is based primarily on a conference transcript, not a peer-reviewed paper. Several battlefield claims are presented as the speaker’s analysis and should be independently verified before being used as factual evidence in academic or policy work.
+
+The transcript also appears to contain automatic-transcription errors, including inconsistent spellings of names and technical terms. Examples include likely errors in terms such as “Genesis,” which appears to refer to GNSS, and “Cichu,” which likely refers to C2.
+
+No formal bibliography or references section was included in the provided transcript.
+
+---
+
+## References
+
+### Paper / Presentation References
+
+No formal “References” section was included in the provided transcript, and no public paper or slide deck with a full bibliography was identified from the available materials checked during this read.
+
+Therefore, the full References section of the paper cannot be reproduced here.
+
+### Source Materials Used for This Summary
+
+1. Uploaded transcript: “Lessons from Two Wars: How Ukraine and Iran Rewrote the Electronic Warfare Playbook for Unmanned Systems.”
+2. User-provided video metadata: 33 views, published 15 June 2026, hashtags SpaceTech, Cybersecurity, CYSAT.
+3. Nexova event page confirming Matteo Merialdo’s CYSAT Europe 2026 talk title and affiliation.
+4. CYSAT Paris 2026 event/program context.
+5. THE SIGN.MEDIA article on CYSAT Paris 2026 and European space security doctrine, including discussion of Matteo Merialdo’s intervention.
+
+---
+
+## Suggested Citation
+
+Merialdo, Matteo. “Lessons from Two Wars: How Ukraine and Iran Rewrote the Electronic Warfare Playbook for Unmanned Systems.” Presentation at CYSAT Paris 2026. Transcript read 20 June 2026.

@@ -1,0 +1,276 @@
+# Presentation Summary: **“Cybersecurity Victory in the AI Era: Transforming from Technical Defense to Organizational Collective Strength”**
+
+**Source file:** *ACSI Cyber Security Academy.pdf* 
+
+## Presentation Metadata
+
+| Field                       | Details                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Title**                   | *Cybersecurity Victory in the AI Era: Transforming from Technical Defense to Organizational Collective Strength*    |
+| **Author / Speaker**        | **Piner Liu (劉孟昌)**                                                                                                 |
+| **Organization / Employer** | **ACSI Cyber Security Academy (安碁學苑 / ACAD)**                                                                       |
+| **Event**                   | **CYBERSEC 2026 Summer Conference**                                                                                 |
+| **Language**                | Traditional Chinese                                                                                                 |
+| **Topic Area**              | Cybersecurity strategy, organizational resilience, AI-driven threats, supply chain security, operational resilience |
+| **Presentation Type**       | Executive keynote / strategic framework                                                                             |
+
+## Quick Summary
+
+The presentation argues that cybersecurity has evolved beyond a purely technical discipline. In the AI era, attackers exploit not only technology vulnerabilities but also weaknesses across people, processes, supply chains, and external ecosystems.
+
+Traditional security models—focused primarily on security teams and technical controls—are no longer sufficient. Organizations must transition toward an integrated, organization-wide approach that combines cybersecurity, risk management, business operations, and executive decision-making.
+
+The speaker proposes a **three-layer collaboration model** that strengthens internal capabilities, integrates supply-chain resilience, and builds external partnerships to improve operational resilience and collective defense.
+
+---
+
+## Goal of the Presentation
+
+The main goal is to persuade organizations to:
+
+* Shift cybersecurity from a technical function to a business-wide responsibility.
+* Build cyber resilience rather than relying solely on prevention.
+* Establish cross-functional collaboration across departments and external stakeholders.
+* Prepare organizations for AI-enabled threats that operate across complex ecosystems.
+* Enhance long-term operational continuity and competitive advantage through coordinated defense.
+
+---
+
+## Key Ideas
+
+### 1. The Threat Landscape Has Fundamentally Changed
+
+Organizations now face systemic risks spanning:
+
+* Employees and insiders
+* Business processes
+* Data and infrastructure
+* Suppliers and third parties
+* Customers and partners
+* Geopolitical instability
+
+The presentation emphasizes that cyberattacks are increasingly interconnected and no longer limited to technical exploitation. 
+
+### 2. AI Amplifies Cyber Threats
+
+AI enables attackers to scale operations through:
+
+* Automated attacks
+* Advanced social engineering
+* Deepfakes and synthetic identities
+* Personalized phishing campaigns
+* Rapid malware development
+
+AI reduces the cost and complexity of attacks while increasing their speed and precision. 
+
+### 3. Traditional Security Thinking Is Obsolete
+
+The presentation challenges several outdated assumptions:
+
+* "Hiring security experts is enough."
+* "Policies and compliance alone provide protection."
+* "Cybersecurity is only the responsibility of the security department."
+
+Modern incidents often originate through:
+
+* Human error
+* Supply-chain dependencies
+* Cross-department coordination failures
+* Slow decision-making processes
+
+Operational resilience requires organization-wide participation. 
+
+### 4. Cybersecurity Must Become an Organizational Capability
+
+The proposed model integrates:
+
+* Technology
+* Risk management
+* Business operations
+* Leadership decision-making
+
+The objective is to create a resilient organization capable of anticipating, absorbing, responding to, and recovering from cyber incidents. 
+
+### 5. Three Layers of Collective Defense
+
+The speaker proposes a three-tier framework:
+
+#### Layer 1: Internal Organizational Capability
+
+Focus areas include:
+
+* Security culture
+* Workforce skills
+* Cross-functional collaboration
+* Internal governance
+
+#### Layer 2: Supply Chain Integration
+
+Focus areas include:
+
+* Vendor risk management
+* Shared security requirements
+* Third-party assessments
+
+#### Layer 3: External Collaboration
+
+Focus areas include:
+
+* Industry alliances
+* Government partnerships
+* Threat intelligence sharing
+* National and international cooperation
+
+Together, these layers support:
+
+* Risk prediction
+* Rapid collaboration
+* Coordinated incident response
+
+---
+
+## Recommended First Steps
+
+The presentation suggests beginning transformation through three practical initiatives:
+
+### 1. Redefine Talent Requirements
+
+Develop personnel with:
+
+* Technical expertise
+* Cross-functional communication skills
+* Coordination capabilities
+
+### 2. Reevaluate Suppliers
+
+Assess vendors based on:
+
+* Business criticality
+* Connectivity and dependencies
+* Incident response maturity
+
+### 3. Strengthen External Connections
+
+Build relationships for:
+
+* Early warning and threat intelligence
+* Information sharing
+* Coordinated response support
+
+These actions create a foundation for stronger resilience. 
+
+---
+
+## Relevance to Cybersecurity
+
+This presentation aligns with several modern cybersecurity priorities:
+
+### Security Governance
+
+It emphasizes executive ownership and enterprise-wide accountability rather than isolated security operations.
+
+### Third-Party Risk Management
+
+The framework recognizes that suppliers and partners are critical components of an organization's attack surface.
+
+### Threat Intelligence
+
+The presentation highlights the importance of external information sharing and collaborative defense mechanisms.
+
+### Human-Centered Security
+
+People, culture, and communication are treated as core security controls.
+
+### AI Security
+
+The discussion reflects emerging concerns about AI-enhanced attack capabilities.
+
+### Security Operations
+
+The emphasis shifts from prevention alone to:
+
+* Detection
+* Response
+* Recovery
+* Continuous adaptation
+
+---
+
+## Relevance to Resilience
+
+Operational resilience is a central theme throughout the presentation.
+
+Key resilience concepts include:
+
+* Business continuity
+* Crisis management
+* Supply chain resilience
+* Cross-functional coordination
+* Rapid decision-making
+* Recovery capabilities
+
+The presentation advocates moving:
+
+* From **protection** to **resilience**
+* From **isolated controls** to **integrated ecosystems**
+* From **reactive response** to **proactive collaboration**
+
+This approach closely aligns with frameworks such as:
+
+* National Institute of Standards and Technology Cybersecurity Framework 2.0
+* International Organization for Standardization ISO 27001
+* International Organization for Standardization ISO 22301 (Business Continuity Management)
+* Digital Operational Resilience Act DORA principles
+
+---
+
+## Relevance to Safety
+
+From a safety perspective, the presentation promotes:
+
+* Shared accountability
+* Reduced single points of failure
+* Stronger communication channels
+* Faster incident coordination
+* Improved organizational awareness
+* Better preparedness for systemic disruptions
+
+The framework supports organizational safety by reducing the likelihood that a cyber incident escalates into:
+
+* Operational outages
+* Financial losses
+* Regulatory violations
+* Reputational damage
+* Supply chain disruptions
+
+---
+
+## Presentation Structure
+
+| Page | Main Topic                                  |
+| ---- | ------------------------------------------- |
+| 1    | Introduction and presentation thesis        |
+| 2    | Conference disclaimer                       |
+| 3    | Evolution of cyber threats in the AI era    |
+| 4    | Why traditional cybersecurity models fail   |
+| 5    | Three-layer collective defense framework    |
+| 6    | Recommended first actions                   |
+| 7    | Organizational collaboration and resilience |
+| 8    | Event exhibition map                        |
+| 9    | Closing message                             |
+
+---
+
+## Links
+
+No external websites, URLs, QR codes, or reference links were identified in the presentation. 
+
+---
+
+## Key Takeaway
+
+The core message of the presentation is:
+
+> Cybersecurity is no longer a technical problem to be solved by security teams alone; it is an organizational capability that determines business resilience.
+
+Organizations that successfully integrate people, processes, suppliers, and external partners into a unified defense ecosystem will be better positioned to withstand AI-enabled cyber threats and maintain long-term operational continuity.
