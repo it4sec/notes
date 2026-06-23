@@ -1,0 +1,38 @@
+AI models are a major cyber threat right now: a new report from the Intelligence Alliance sheds light on the future of OT and mission-critical cybersecurity.
+
+AI is a major and immediate cyber threat, according to the Five Eyes intelligence alliance (US, UK, Canada, Australia, and New Zealand), which officially stated this yesterday, June 22, 2026. Now it's official—not just rumors or tech pessimism.
+
+Indeed, in the last few months, major public companies demonstrated quite groundbreaking capabilities of their new models: code generation, vulnerability research and successful exploitation, complex orchestration of activities, and the ability to act independently during all stages of the kill chain. Combined with the speed of AI, the picture becomes very clear: humans and existing tooling can barely stop these models effectively today, and will be obsolete in the near future.
+
+Authors of the report recommend the following five action items:
+"
+1. Reduce your attack surface: Limit unnecessary system access and external connectivity.
+Challenge whether systems need to be exposed at all and isolate those that do not.
+2. Accelerate patching processes: AI is shortening the time between vulnerability discovery and
+exploitation. Delays in patching increase risk, especially for operational systems with long
+update cycles. Prioritise security updates accordingly to manage risks.
+3. Address legacy systems: Unsupported systems are easy targets. They are not just technical
+debt, they are strategic liabilities.
+4. Review and strengthen identity and access controls: Limit who can access critical systems.
+Enforce strong authentication and regularly review permissions.
+5. Prepare for incidents before they happen: Test response plans, train and prepare teams, and
+assume breaches will occur. Focus on fast containment and recovery.
+"
+
+For the OT and mission-critical industry, it means that the storm is just around the corner: and while most companies have security personnel and tooling at headquarters, the people in the field—in factories, shop floors, power plants, and industrial sites—are often on their own.
+
+Big4 Security provides a unique set of products and services to do exactly that:
+
+* Control and reduce the attack surface by applying GridHound and Device Heritage services to existing infrastructure.
+* SecBox [our new product!] performs timely evaluation of all incoming threats (internal reports, external threats, CVEs and NVD, and proprietary sources by Big4 Security), evaluates the practical impact, and prioritizes the next steps—all based on the site's topology and risks.
+* Both legacy and modern systems are covered in SecBox's day-to-day decision-making and analysis process—it acts as an OT cybersecurity autopilot. No big screens or complicated grids of data—just 3–5 action items every morning.
+* Identity and access control systems are already in place, but it's humans behind them. SecBox provides them with guidance for decision-making regarding resilience, visibility, and cyber risks.
+
+We work 24/7 on solutions and ideas to prevent future incidents, not prepare for past misses. Yes, our solutions utilize AI and edge computing technologies, but they do not rely on the cloud or internet-based AI. All the resources, knowledge, and expertise are available directly at your facility, connected to your systems and not connected to the internet. And even if tomorrow all internet-based AI stops, SecBox will continue to run.
+
+"We must act now," the authors of the Five Eyes report say. Act now - reach out and ask us for details.
+
+More details:
+
+Five Eyes cyber security agencies statement 22.06.2026 [PDF]: https://www.ncsc.gov.uk/sites/default/files/2026-06/Five-Eyes-cyber-security-agencies-statement-ai-shift.pdf
+"Five Eyes" intelligence alliance warns that new AI models pose urgent cyber risk [News]: https://www.reuters.com/world/asia-pacific/five-eyes-intelligence-alliance-warns-that-new-ai-models-pose-urgent-cyber-risk-2026-06-22/
