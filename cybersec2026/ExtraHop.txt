@@ -1,0 +1,94 @@
+# Summary of ExtraHop Presentation: From Automation to Agentic AI NDR Era
+
+---
+
+## Title
+**EXTRAHOP REVEALS: From Automation to Autonomous Agentic AI NDR Era**  
+（EXTRAHOP揭示：從自動化邁向自主化Agentic AI NDR時代）
+
+---
+
+## Authors/Presenters
+- Sam Lin (林孟忠), ExtraHop North Asia Sr. Sales Engineer  
+- Daniel Chu, VP of Systems Engineering & Customer Success, ExtraHop  
+
+---
+
+## Key Points
+
+### 1. AI-Driven Disruption in Cybersecurity
+- AI advancements are significantly transforming cybersecurity, particularly in vulnerability discovery and exploitation.
+- Anthropic's new AI model has made notable progress in discovering software vulnerabilities, although it's not widely released yet and only available within Project Glasswing (including Microsoft, Apple, Google, Cisco, AWS, Linux Foundation).
+- Vulnerability research is becoming industrialized, enabling attackers to leverage AI for faster, scalable, and more sophisticated attacks.
+  
+### 2. Accelerated Threat Landscape via AI
+- The speed of vulnerability exploitation surpasses defenders’ reaction capabilities.
+- The window between vulnerability discovery and weaponization has shrunk to zero or even negative days.
+- Attack techniques and weaponized code are rapidly shared and reused among threat actors.
+- AI compresses the entire attack lifecycle (Discovery → Weaponization → Exploitation).
+  
+### 3. AI as Operator vs. AI as Assistant
+- Human intervention now primarily occurs only at critical decision points.
+- AI automates the tedious tasks like reconnaissance and log analysis.
+- Attacks can simultaneously target multiple objectives (30+), increasing scale and complexity.
+
+### 4. Proliferation of EDR Evasion Techniques
+- AI contributes to the rise of endpoint detection and response (EDR) evasion tools, making out-of-band telemetry essential.
+- EDR evasion techniques have evolved over five years from kernel and driver attacks to OS function abuse and subscription-based evasion services.
+
+### 5. Democratization of Nation-State Attack Capabilities
+- AI lowers the barrier for threat actors to access advanced, nation-state-level cyberattack capabilities (example: PLA Unit 61398).
+
+### 6. Rise of Autonomous Agentic Cybersecurity Workforce
+- Autonomous agentic workflows (AI-driven agents) are becoming crucial for cybersecurity operations.
+- Example: Customer support chatbots demonstrate simple agentic workflows.
+  
+### 7. Foundations for Secure AI in Autonomous Enterprises
+- Complete transparency and visibility into AI activity are mandatory.
+- Asset inventories and attack surface maps for AI components must be maintained.
+- Real-time anomaly detection of AI behavior and communications is required.
+- Network observability is key to uncovering AI-generated blind spots and risks.
+
+### 8. Future of Network Security Operations (SOC)
+- Current SOC workflows relying heavily on L3 analysts are insufficient for fast-evolving AI-driven threats.
+- Transition from linear, human-centered investigations to parallel, dynamic agentic reasoning and AI-assisted triage, investigation, and response.
+- Contextual intelligence and organizational memory improve accuracy and automation in threat detection and response.
+
+### 9. ExtraHop’s Agentic Strategy
+- Development of an agent-ready NDR platform offering comprehensive network data and expert reasoning capabilities.
+- Empowerment of AI assistants (SOC agents) and embedded AI agents to enhance detection, investigation, response, and threat hunting.
+- Platform supports multiple layers including physical, virtual, cloud, containers, and SASE networks combined with REST API, CLI, and proprietary query language interface.
+
+### 10. Demonstration of Autonomous NDR Classification Agent
+- Uses reasoning models (like QWEN2.5) and ExtraHop APIs for contextualized alert triage.
+- Performs assessment based on domain/IP reputation, investigation status, MITRE attack framework, device roles, and software legitimacy.
+- Enriches alert data with historical traffic records for accurate classification and response.
+
+---
+
+## Important Conclusions and Insights
+- AI's role in cybersecurity is both an enabler of advanced threats and a critical tool for defense.
+- AI-driven autonomous agents offer a necessary evolution in detection and response efficiency amid increasing threat sophistication.
+- Visibility into AI activities and their network interactions is vital to manage emerging risks.
+- Future SOC operations must embrace agentic workflows that integrate AI and human expertise to keep pace.
+- ExtraHop positions itself with a state-of-the-art, agent-ready NDR platform built for the demands of agentic AI cybersecurity.
+
+---
+
+## Problems Emphasized in the Presentation
+
+### Technical and Operational Challenges:
+- **Rapid Exploitation**: The vastly compressed time windows between vulnerability disclosure and exploitation challenge existing defense mechanisms.
+- **EDR Evasion**: Increasingly sophisticated, commercialized, and widely accessible EDR evasion tools undermine endpoint security.
+- **Data Overload & Alert Fatigue**: Linear workflows and massive alert filtering risk missing critical events and delay responses in SOC environments.
+- **AI Black Box Visibility**: AI agents generating vast data and taking autonomous actions introduce blind spots and risk due to lack of transparency.
+- **Integration Complexity**: Combining diverse telemetry sources, AI agents, and human analysts requires advanced platform capabilities.
+  
+### Security Risks:
+- Unauthorized and shadow AI usage creates new attack surfaces.
+- Cross-platform and subscription-based attack tools signify an expanding and evolving threat ecosystem.
+- AI-powered attackers can automate reconnaissance, weaponization, and exploitation, increasing attack sophistication and scale.
+
+---
+
+This summary encapsulates the core content, insights, and challenges of the ExtraHop presentation on the transition from automation to autonomous agentic AI in network detection and response.

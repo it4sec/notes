@@ -1,0 +1,105 @@
+# Summary of Presentation on Cloud Service Data Security Practices
+
+---
+
+## Title
+Practical Strategies for Data Security in Cloud Services  
+(在雲端服務中 保護資料安全的實務探討)
+
+## Author/Presenter
+Dr. Yi-Chen Lin (林逸塵 博士)  
+Department of Information Management, National Chengchi University  
+
+Date: May 5, 2025  
+Time: 16:15 – 16:45  
+
+---
+
+## Key Points
+
+### 1. Overview of Cloud Computing
+- Defined as on-demand network access to shared configurable computing resources (NIST SP 800-145).
+- Historical timeline: Sun Microsystems "Network is the computer" (1982), Compaq mentioning "cloud computing" internally (1996), AWS launched elastic cloud computing services (2006).
+- Service models: SaaS, PaaS, IaaS.
+- Deployment models: Private, Community, Public, Hybrid Clouds.
+- Characteristics include self-service, broad network access, resource pooling, rapid elasticity, and measured service.
+
+### 2. Cloud Service Level Indicators
+- Detailed metrics for IaaS, PaaS, and SaaS such as resource provisioning time, availability, fault resolution, backups, data security, and customer support.
+- Focus on security and privacy requirements for storage, transmission, and use of data.
+
+### 3. Top Cloud Security Mitigation Strategies (NSA, 2024)
+- Shared responsibility.
+- Strong identity and access management, including MFA and least privilege.
+- Cloud key management including client-side encryption.
+- Network segmentation and encryption within cloud environments.
+- Data protection by backups, encryption, and policy enforcement.
+- CI/CD security practices.
+- Infrastructure as Code (IaC) to automate and secure deployments.
+- Management of hybrid/multi-cloud environments.
+- Risk management for Managed Service Providers (MSPs).
+- Cloud log management using SIEM, AI, and ML for anomaly detection.
+
+### 4. Top Cloud Security Threats (CSA, 2024)
+- Misconfiguration and inadequate change control.
+- Identity and access management weaknesses.
+- Insecure interfaces and APIs.
+- Poor cloud security strategy implementation.
+- Insecure third-party resources.
+- Insecure software development.
+- Accidental cloud data disclosures.
+- System vulnerabilities.
+- Limited cloud visibility.
+- Unauthorized resource sharing.
+- Advanced persistent threats (APTs).
+
+### 5. Cloud Shared Security Responsibility Model (SSRM)
+- Categorizes responsibilities between Cloud Service Provider (CSP) and Cloud Service Customer (CSC):
+  - CSP-Owned: Provider responsible for all controls.
+  - CSC-Owned: Customer responsible for all controls.
+  - Shared-Independent: Both parties independently implement controls.
+  - Shared-Dependent: Responsibilities are interdependent.
+- Role definitions per RACI (Responsible, Accountable, Consulted, Informed).
+
+### 6. Data Security & Lifecycle Management
+- Establish and regularly update security/privacy policies aligned with regulations such as GDPR and industry standards.
+- Maintain up-to-date data inventories and data flow documentation for sensitive data.
+- Implement data classification and labeling by sensitivity and impact (CIA triad).
+- Enforce security by design and privacy by design principles during software and service development.
+- Secure data retention, archiving, and disposal according to standards like NIST 800-88, including cryptographic erasure.
+- Recommendations include automated updating mechanisms, collaboration between CSP and CSC, and use of CASB solutions.
+
+### 7. Practical Implementation Recommendations
+- Annual policy review and risk assessment.
+- Document ownership and management responsibility for sensitive data.
+- Restrict data usage in non-production environments.
+- Define authorized data access, transfer, and deletion procedures compliant with legal rights.
+- Establish communication channels for regulatory and law enforcement disclosures.
+- Prescribe data location transparency for processing and backup.
+
+### 8. Conclusion and Summary Insights
+- Most security responsibilities and defenses still lie with CSCs despite cloud adoption; requiring investment in training and resources.
+- CSPs can ease compliance and certain audit burdens but do not absolve customers of liability.
+- Cross-team collaboration across legal, risk, compliance, and IT is critical.
+- Incident handling should not assume CSP bears all responsibility—customers remain accountable and must maintain records for legal protection.
+- Legal liabilities typically remain with data owners (CSC) in multi-jurisdictional cloud deployments.
+
+---
+
+## Technical and Other Problems Emphasized in the Presentation
+
+- **Complexity of cloud systems**: Multi-tenant, shared environments and internet exposure increase attack surfaces.
+- **Misconfiguration risks**: One of the leading causes of cloud breaches needing robust change control.
+- **Identity and access management challenges**: Including improper permissions and lack of multi-factor authentication.
+- **Insecure APIs and interfaces**: Leading to exploitation risk.
+- **Handling third-party risks**: MSPs and subcontractors increase data leakage and compliance risk.
+- **Securing CI/CD and IaC pipelines**: Manual deployment poses human error and security risks.
+- **Limited cloud visibility**: Difficulties in monitoring and logging cloud resources impede threat detection.
+- **Data lifecycle risks**: Inadequate data classification, data flow tracking, and secure disposal methods could expose sensitive information.
+- **Regulatory compliance**: Keeping pace with varying global data privacy laws (e.g., GDPR) and industry standards.
+- **Trust and accountability ambiguities**: Shared responsibility may lead to assumption gaps and conflict in incident response.
+- **Legal and forensic challenges**: Proper evidence collection, incident response coordination, and disclosure procedures between CSP and CSC.
+
+---
+
+This presentation provides a thorough overview of cloud data security considerations from policy, technical controls, operational best practices, to legal/compliance aspects, emphasizing the continued critical responsibility of cloud customers even in modern shared responsibility models.

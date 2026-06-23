@@ -1,0 +1,86 @@
+# Summary of Presentation: "Mental Jailbreak: Scaling Law ≠ Human Reasoning"
+
+---
+
+## Title
+**Mental Jailbreak: Scaling Law ≠ Human Reasoning  
+開源從頭打造越獄防護**
+
+## Author/Presenter
+Shenghao Ma  
+Team Lead, Cyber Threat & Product Defense Center, TXOne Networks Inc.  
+Speaker at CYBERSEC'26 (Taiwan Cybersecurity Conference)  
+Author of *Windows APT Warfare: The Definitive Guide for Malware Researchers*
+
+---
+
+## Key Points
+
+### Background and Context
+- The presentation focuses on jailbreaking AI language models (LMs), particularly on vulnerabilities related to prompt injection and adversarial attacks.
+- Jailbreak techniques threaten the safety and reliability of large language models by circumventing their internal safeguards.
+  
+### AI Reasoning and Human Reasoning Differences
+- AI reasoning based on scaling laws and probability distributions is fundamentally different from human reasoning.
+- Human reasoning involves mental models, formal logic, and Bayesian inference, which include mental representations of possible worlds and truth conditions, unlike LMs which rely on statistical modeling of text patterns.
+- Human working memory limitations and cognitive biases make reasoning fragile and prone to errors when handling multiple mental models or ambiguous content.
+
+### Challenges with AI Reasoning via Scaling Laws
+- Large language models operate as probabilistic language models using learned distributions, which do not equate to human-like reasoning or understanding.
+- Research reveals that LMs are roughly “injective,” meaning different inputs rarely produce identical outputs, but attackers can exploit semantic similarity to create adversarial prompts for jailbreaks.
+- RLHF (Reinforcement Learning from Human Feedback) can tweak outputs but does not fundamentally change internal semantic capabilities.
+
+### Adversarial Machine Learning & Mitigation
+- The NIST 2024 taxonomy categorizes adversarial attacks such as prefix injection, refusal suppression, style injection, and role-play.
+- Mitigations include training for alignment, prompt formatting, detection techniques, input validation, output filtering, and using NLP-based intent analysis.
+- Existing defenses are not fully immune; commercial products are beginning to provide prompt injection detection and control.
+
+### Ambiguity as an Attack Vector
+- Attackers leverage semantic ambiguity to confuse LLMs and evade detection through cleverly crafted prompts.
+- Example: Jailbreaks created by introducing ambiguous or contradictory instructions bypass rigid content filters.
+
+### Insights from Cognitive Science and Linguistics
+- Human rationality relies on formal logical structures, mental modeling, and Bayesian updating but is inherently limited.
+- LLMs fail to truly model ambiguity or formal reasoning as humans do and tend to mimic surface-level language patterns instead.
+- Studies suggest LLMs' capabilities emerge mainly from vast dataset training rather than grounded reasoning frameworks.
+
+---
+
+## Important Conclusions and Insights
+- The core limitation of LLM reasoning is its reliance on statistical language models rather than human-like symbolic reasoning frameworks.
+- Human reasoning and cognitive science provide insights into why LLMs struggle with complex inference, ambiguity, and error correction.
+- Defenses against jailbreaks must consider the fundamental differences in AI and human reasoning to build robust safeguards.
+- Semantic ambiguity is a major vulnerability in current LLMs, challenging their reliability in safety-critical applications.
+- Effective mitigation requires a multi-layered approach including prompt validation, detection, alignment training, and output moderation.
+
+---
+
+## Technical and Other Problems Highlighted
+
+- **Jailbreak Vulnerabilities:**  
+  AI models are susceptible to prompt injection methods that can override system instructions, leading to harmful or unintended outputs.
+
+- **Scaling Laws vs. Human Reasoning:**  
+  The reliance on scaling laws for AI development doesn't replicate human cognitive processes, causing reasoning flaws.
+
+- **Limited Working Memory in Humans:**  
+  Human reasoning is constrained by working memory capacity, which impacts mental models and inference, a challenge LLMs also improvise differently.
+
+- **Ambiguity and Disambiguation:**  
+  LLMs lack deep semantic understanding and fail to model multiple meaning interpretations adequately, leading to mistakes in logic and fact verification.
+
+- **Adversarial Attacks Classification:**  
+  Existing attack vectors exploit mismatches in model training distribution, linguistic structure, and system prompt/user prompt boundaries.
+
+- **Detection and Mitigation Limits:**  
+  Although there are emerging tools to detect prompt injection, no solution is fully foolproof, and attackers adapt to bypass defenses.
+
+- **RLHF Can Only Control Outputs Partially:**  
+  Reinforcement Learning with human feedback can moderate outputs but doesn’t change the underlying probabilistic representation of knowledge.
+
+- **Semantic Similarity Exploited by Attackers:**  
+  Attackers don’t need exact collisions in input-output mappings but rely on semantic proximity to generate harmful outputs.
+
+---
+
+This presentation delivers a comprehensive view on the limitations of current AI reasoning through language models, emphasizing the need to understand human cognition and the inherent flaws in scale-based AI reasoning models to effectively handle AI jailbreak risks.

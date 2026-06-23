@@ -1,0 +1,96 @@
+# Summary of Presentation
+
+---
+
+## Title
+"Keep the Operation Running: Creating Digital Twins with Nano-GPT Modeling Technology to Protect Cyber-Physical Integrated System Continuous Operation"
+
+## Authors/Presenters
+Yenting Lee, Sr. Threat Researcher  
+Cyber Threat & Product Defense Center, TXOne Networks Inc.  
+Presented at CYBERSEC 2026, May 7, 2026
+
+---
+
+## Key Points
+
+- **OT/ICS Autonomy**:  
+  - Emphasis on achieving autonomy in operational technology (OT) and industrial control systems (ICS) to run tasks without human intervention.  
+  - Digital twins play a crucial role with capabilities like self-decision, self-response, and self-healing.
+
+- **Cybersecurity Challenges in OT/ICS**:  
+  - Threat actors use multiple penetration methods to infiltrate OT environments.  
+  - There is a shortage of cybersecurity professionals specialized in OT, hampering 24/7 monitoring of large volumes of AV/EDR logs.  
+  - Most OT solutions provide only detection but lack confidence or capability to actively block attacks.
+
+- **Attack Vectors and Examples**:  
+  - Vulnerability exploitation, unauthorized access, ransomware deployment, and data theft exemplified by cases such as Qilin threat on Japanese factories.  
+  - OT penetration techniques shared openly by hacker groups like “Z-Pentest Alliance,” with the communication and attack process posted on Telegram, increasing imitation by other attackers.
+
+- **Manufacturing Process Modeled as Natural Language**:  
+  - Manufacturing equipment operates under stable, limited-variation processes similar to structured language with grammar.  
+  - The context of commands influences their meaning, analogous to words in sentences.  
+  - By modeling production line behavior as sequences (like natural language), meaningful action semantics can be learned.
+
+- **Multiple ICS Protocols**:  
+  - ICS deployments include various protocols (Modbus, DNP, Ethernet/IP).  
+  - The GPT architecture can be leveraged to generate protocol-aware models without manually coding protocol parsers using a universal ICS GPT model.
+
+- **Nano-GPT Architecture**:  
+  - Uses self-attention to understand token relationships and long-range dependencies in sequences of commands and actions.  
+  - Offers context awareness to detect potentially dangerous actions within certain states.  
+  - Sequence prediction models allow anticipating reasonable next steps in operations.
+
+- **Digital Twin Integration**:  
+  - Nano-GPT digital twin models are trained on factory command sequences to understand normal manufacturing flows.  
+  - Digital twins detect syntax violations signaling attacks or anomalies.  
+  - They enable continued operation by automatically taking over when operators cannot promptly respond.
+
+- **Dataset and Training**:  
+  - CIC Modbus dataset (2023) used for extracting commands and training digit twin models.  
+  - Real-world factory commands compared against model predictions to detect anomalies during attacks.
+
+- **Anomaly Detection & Self-Healing**:  
+  - The system flags anomalies and triggers self-healing mechanisms to maintain operational stability during cyber incidents.
+
+---
+
+## Important Conclusions and Insights
+
+- Effective OT cybersecurity demands real-time, cooperative defense strategies tailored specifically for manufacturing environments.  
+- Leveraging Nano-GPT for understanding and modeling manufacturing processes provides a powerful tool for early anomaly detection without the overhead of writing detailed ICS protocol parsers.  
+- Digital twins empowered by GPT models can autonomously maintain operations during cyberattacks by intercepting and correcting malicious or erroneous commands.  
+- This approach addresses the critical shortage of OT cybersecurity experts by augmenting human operators with automated systems capable of decision making, response, and recovery.  
+- The combination of AV/EDR with digital twins creates a layered, autonomous defense model for OT/ICS ecosystems.  
+
+---
+
+## Technical and Cybersecurity Problems Emphasized
+
+- **Attack Diversity & Complexity**:  
+  Multiple penetration methods are used by threat actors to compromise OT networks, including vulnerability exploits, credential theft, ransomware, and data exfiltration.
+
+- **Human Resource Shortage**:  
+  There is insufficient specialization in OT cybersecurity staff to manage and analyze large-scale data continuously, increasing risk exposure.
+
+- **Detection vs. Prevention**:  
+  Existing OT defenses often focus on detection without sufficient confidence or automation to block attacks proactively, delaying responses.
+
+- **Protocol Handling Complexity**:  
+  OT environments use many heterogeneous ICS protocols, complicating traditional parsing and anomaly detection methods.
+
+- **Contextual Understanding of Actions**:  
+  In industrial settings, actions may be safe or dangerous depending on context, requiring intelligent sequence modeling beyond signature-based detection.
+
+- **Need for Autonomous Operation**:  
+  During attacks, human operators may not react timely; hence autonomous systems (digital twins) must take over to ensure continuous operations.
+
+- **Real-Time Anomaly Detection**:  
+  Detecting syntax-violating or abnormal sequences of commands promptly to mitigate potential damage.
+
+- **Integration and Collaboration**:  
+  The challenge to design seamless systems that collaborate with existing endpoint detection tools (AV/EDR) for a robust defense mechanism.
+
+---
+
+This presentation provides a novel approach combining advanced modeling (Nano-GPT) with digital twin technology to advance the autonomy and resilience of OT/ICS security operations.

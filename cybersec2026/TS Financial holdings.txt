@@ -1,0 +1,105 @@
+# Summary of Presentation
+
+## Title
+How to Manage Vulnerabilities in the Financial Industry?  
+From Compliance to Risk-Oriented Strategy
+
+## Author/Presenter
+Chen Jiechang  
+Chief Information Security Officer  
+TS Holdings / Taishin Bank
+
+---
+
+## Key Points
+
+- **Definitions:**
+  - Bug (Error): Coding mistakes causing functional or reliability issues, not necessarily security-related.
+  - Flaw: Logical errors in system design leading to inherent risks, not coding mistakes.
+  - Weakness: Potential security gaps in hardware, software, networks, or systems due to design, implementation, or management deficiencies.
+  - Vulnerability: Exploitable security weaknesses allowing unauthorized access, control, or service disruption.
+
+- **Vulnerability Management as a Branch of Risk Management:**
+  - Vulnerability management should follow risk management policies.
+  - It involves identifying, assessing, prioritizing, and remediating vulnerabilities.
+  - Compliance requirements, business continuity, and risk management principles guide vulnerability management.
+  - Industry statistics show increasing CVE counts, emphasizing the need for prioritization.
+
+- **Building a Vulnerability Management System:**
+  - Use PDCA (Plan-Do-Check-Act) for continuous improvement.
+  - Follow frameworks and standards like OWASP OVMG, ISO 29147/30111, NIST SP800-40/216.
+  - Employ security models such as PDRR (Protect, Detect, Respond, Recover) and Information Security Continuous Monitoring (ISCM).
+
+- **Core Concepts:**
+  - Governance: Define roles, responsibilities, and accountability (Top-Down approach).
+  - Strategy: Set objectives based on regulation, standards, business needs, and practices.
+  - Life Cycle: Manage vulnerabilities throughout their entire lifecycle.
+  
+- **Organizational Governance Model (R&R):**
+  - Security Committee: Governance and major decisions.
+  - CIO & CISO: Oversight and implementation assurance.
+  - Operational teams responsible for scanning, patching, and remediation.
+
+- **Compliance and Business Requirements:**
+  - Various financial regulations mandate periodic vulnerability scanning, penetration testing, and source code analysis.
+  - Requirements include timely patching of critical and important vulnerabilities.
+
+- **Vulnerability Management Life Cycle:**
+  - Asset inventory and policy setup.
+  - Vulnerability discovery using scanning and threat intelligence.
+  - Risk-based vulnerability assessment using frameworks such as CVSS, KEV, EPSS, VISS, and SSVC.
+  - Remediation via patches or mitigations.
+  - Re-scanning to confirm fixes and detailed documentation.
+  - Continuous improvement by evaluating metrics and addressing root causes.
+
+- **SSVC (Stakeholder-Specific Vulnerability Categorization):**
+  - Prioritization method to guide patching decisions:
+    1. Exploitation status
+    2. Automatable mitigation possibility
+    3. Technical impact
+    4. Mission criticality
+    5. Public well-being impact
+  - Actions range from “Track” (defer) to “Act” (immediate patching).
+  
+- **Maturity Model:**
+  - Based on SANS Vulnerability Management Maturity Model (VMMM):
+    - Levels: Initial, Defined, Quantified, Optimized.
+    - Progression from informal to automated and predictive patch management.
+
+- **Maturity Assessment for Continuous Improvement:**
+  - Assess across five dimensions:
+    1. Strategy and organization
+    2. Identification and discovery
+    3. Analysis and evaluation
+    4. Remediation and management
+    5. Metrics and improvement
+
+- **Conclusion:**
+  - Through continuous, dynamic, and detailed risk management processes, limited resources can be focused precisely on vulnerabilities that are both highly exploitable and highly threatening.
+
+---
+
+## Important Conclusions and Insights
+
+- Vulnerability management in financial services needs to evolve from merely compliance-driven to risk-driven to effectively reduce security risks.
+- A well-structured governance framework with clear roles at all levels improves accountability and results.
+- Using quantitative risk assessment models such as SSVC allows prioritizing vulnerability remediation efforts based on business impact.
+- Continuous improvement and maturity assessments ensure that vulnerability management adapts to emerging threats and organizational changes.
+- Integration of automated tools, external threat intelligence, and metrics provides a comprehensive approach to managing the vulnerability life cycle.
+
+---
+
+## Problems Emphasized in the Presentation
+
+- Increasing volume and complexity of vulnerabilities (CVE counts rising dramatically by 2025).
+- Legacy or flawed designs introduce logical errors that cannot be fixed by simple code patches.
+- Many vulnerabilities remain unpatched due to lack of risk-based prioritization or organizational oversight.
+- Challenges in coordinating cross-departmental remediation efforts.
+- Insufficient or informal vulnerability management policies and governance.
+- Lack of mature processes for vulnerability identification, prioritization, remediation, and ongoing evaluation.
+- Difficulty balancing compliance deadlines and risk-driven priorities.
+- Limited resources require precise targeting of vulnerability remediation efforts, focusing on "most likely exploited" and "highest threat" vulnerabilities to maximize security efficacy.
+
+---
+
+This presentation provides a full risk-oriented approach and framework for financial institutions to manage vulnerabilities effectively while aligning with regulatory requirements and business continuity needs.

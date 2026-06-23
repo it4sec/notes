@@ -1,0 +1,62 @@
+# Summary of Presentation
+
+## Title
+**AttackGPT: It Can Talk the Kill Chain — But Can It Afford To Walk It?**
+
+## Authors/Presenters
+- Jan Michael Alcantara  
+  Threat Researcher, Netskope Threat Labs  
+  Presented at Attacking AI Forum, CYBERSEC 2026
+
+## Key Points
+- **Research Focus:** Evaluating the ability of Large Language Models (LLMs) to generate and deploy malware in real-time using prompt-based code synthesis.
+- **Malware Use Cases Tested:** Infostealer and MedusaLocker ransomware.
+- **LLM Models Tested:**
+  - Commercial: Opus 4.5, GPT-5.0, Gemini 3.0
+  - Open-weight: Qwen2.5-coder:7b, DeepSeek-r1:70b, Llama3:8b
+- **Research Objectives:**
+  1. Technical Effectiveness: Can LLMs generate functional malware payloads on demand?
+  2. Operational Reliability: Can LLMs deliver payloads that maintain the attack chain without human intervention?
+  3. Economic Feasibility: Is AI-driven malware synthesis cost-effective?
+- **Prompt Methodology:** Use of role-based personas, consistent prompting across LLMs, modular prompts targeting PowerShell scripts as outputs.
+  
+## Important Conclusions and Insights
+- **Infostealer Malware:**
+  - LLMs can effectively generate infostealer payloads on demand (Effectiveness up to 95% for Opus 4.5).
+  - Almost all LLMs show 100% operational reliability for deploying infostealers directly to victims.
+  - Economically viable to synthesize infostealers using AI, with payloads per $1 USD ranging up to 930 (Llama3.1).
+- **MedusaLocker Ransomware:**
+  - LLMs currently cannot fully generate an effective ransomware payload on demand (Best effectiveness at 54% for GPT-5).
+  - Deployment is operationally reliable, especially with open-weight LLM models scoring perfect operational scores.
+  - Economic feasibility for ransomware synthesis is mixed and "depends" on the model used—payloads per $1 USD vary widely (3 to 243).
+- **General Findings:**
+  - Malware containing only prompts is currently feasible for common malware like infostealers but not for complex malware such as ransomware.
+  - Gemini 3.0 has the strongest guardrails limiting malicious code generation.
+  - Using open-weight models with sample code prompts improves results.
+  - Newer LLM versions do not necessarily produce better malicious code; effectiveness depends on the use case.
+  
+---
+
+# Technical and Other Problems Highlighted by the Presentation
+
+- **Malware Complexity:**  
+  While infostealers are relatively straightforward for LLMs to generate, complex malware like targeted ransomware remains a challenge in terms of generation effectiveness.
+
+- **Dependence on LLM Model and Configuration:**  
+  Effectiveness and operational reliability vary significantly by model, with commercial and open-weight models showing different strengths and weaknesses.
+
+- **Guardrails and Content Moderation:**  
+  Strong guardrails in models like Gemini 3.0 can limit the synthesis of explicitly malicious code, requiring attackers to switch models or prompt strategies.
+
+- **Operational Reliability Challenges:**  
+  Some generated malware scripts may require human intervention or fixing to maintain continuity in the attack chain.
+
+- **Economic Viability:**  
+  While infostealer synthesis is generally economically viable, ransomware synthesis viability depends heavily on the LLM used and the complexity of tasks.
+
+- **Attribution Difficulties:**  
+  Just-in-time malware generation through prompts creates bespoke, polymorphic code without malicious files on disk, making attribution and detection difficult for traditional static indicators of compromise (IOCs).
+
+---
+
+This presentation provides a thorough exploration of the current capabilities and limitations of LLMs in generating and operationalizing different types of malware, emphasizing the practical challenges for attackers and defenders alike.

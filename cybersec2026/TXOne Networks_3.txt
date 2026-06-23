@@ -1,0 +1,103 @@
+# Summary of PDF Presentation
+
+## Title
+From Visibility to Protection: Reconstructing the Practical Path of OT Cybersecurity  
+從可視化到可防護：重構OT資安的實踐路徑
+
+## Authors/Presenters
+- Dr. Terence Liu (劉榮太博士)  
+- CEO, TXOne Networks (睿控網安 執行長)
+
+---
+
+## Key Points
+
+### Why OT Security Doesn't Move Fast
+- OT security progress is slow due to:
+  - Multiple stakeholders involved
+  - Conflicting constraints
+  - Limited shared language between teams
+  - High cost of errors  
+- Result: Delay becomes the default approach.
+
+### The "Safe" First Step: Visibility
+- Visibility is non-intrusive and does not disrupt operations.
+- Easy to justify internally.
+- Demonstrates early progress with visible wins for stakeholders.
+- However, visibility optimizes for comfort, not actual risk reduction.
+
+### Where Visibility Gets Stuck
+- Endless asset discovery leads to never feeling “done.”
+- Network-based visibility misses blind spots and lower-level assets.
+- Costs increase as coverage improves, but returns diminish.
+- Vulnerability backlogs grow faster than remediation efforts.
+- Insight accumulates but risk does not decrease.
+
+### From Visibility to Prioritized Action
+- Sufficient visibility, not total visibility, is adequate to start acting.
+- Focus must be on what matters most - critical assets and risks.
+- Actions should be safe and cause no disruption.
+
+### Practical Path Forward (6-12 Months)
+- Establish baseline visibility focusing on key assets and communication patterns.
+- Prioritize actionable risks and critical assets.
+- Deploy protection incrementally using:
+  - Lightweight endpoint controls
+  - Virtual patching
+  - Network segmentation
+  - Inspection of inbound devices  
+- Protection enhances visibility, not vice versa.
+
+### How to Move Forward
+- Execution depends on people, speed, and shared experience.
+- Form a focused squad (3-5 people) across IT, OT, operations for alignment.
+- Use experienced OT deployment partners for fast, low-disruption rollout.
+- Learn from industry peers and reuse proven OT security practices.
+- Leverage AI-assisted scaling to:
+  - Capture best practices
+  - Support prioritization and deployment
+  - Reduce reliance on scarce expertise  
+- Models work best in combination.
+
+### Industry-specific Approaches
+- **Semiconductor Industry:**  
+  - Continuous-process environments cannot afford downtime or patching.
+  - Start protection through segmentation and virtual patching.
+  - Gradually improve vulnerability management and supply chain security.
+- **Automotive Industry:**  
+  - Central OT security team bridges IT policy and plant reality.
+  - Partner with capable OT providers for standardized deployment.
+  - Local plant-level ownership ensures ongoing management and improvement.
+
+### What Leaders Should Do Next
+- Stop waiting for complete visibility.
+- Prioritize where protection matters most.
+- Choose a suitable execution model and start now.
+
+---
+
+## Important Conclusions and Insights
+- OT cybersecurity initiatives face systemic delays due to complexity and high risks.
+- Pure visibility efforts can stall progress by accumulating insights without lowering risk.
+- Actual risk reduction requires prioritizing protection actions over perfect visibility.
+- Incremental deployments focused on critical assets and safe operations are the practical way forward.
+- Collaborative, cross-functional teams and external partners accelerate execution.
+- AI tools can help scale expertise and improve prioritization.
+- Industry-specific constraints necessitate tailored approaches.
+- Leadership must act decisively to break inertia and implement protection promptly.
+
+---
+
+## Technical and Other Problems Emphasized
+- Visibility tools have blind spots, missing lower-level OT assets.
+- Visibility improvement is costly, time-consuming, and has diminishing returns.
+- Growing vulnerability backlogs outpace remediation in OT environments.
+- OT environments often cannot tolerate downtime or intrusive security measures.
+- There exists a gap in shared language and alignment between IT, OT, and operational teams.
+- Scarcity of OT security expertise hampers broad deployment.
+- Delays due to fear of operational disruption or errors cause risk to grow unchecked.
+- Traditional patch management is often infeasible, especially in continuous-process industries like semiconductor manufacturing.
+
+---
+
+This presentation from TXOne Networks highlights the challenges of OT cybersecurity and charts a practical, risk-focused, and incremental approach to move from visibility to effective protection while maintaining operational continuity.

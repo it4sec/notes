@@ -1,0 +1,104 @@
+# Summary of Presentation
+
+## Title
+AI-Driven New Defense Line for Semiconductor Cybersecurity: From Analysis to Control  
+(Original: AI驅動的半導體資安新防線：從分析走向控制)  
+*Through Micro-segmentation Isolation and Automated Modeling to Implement Zero Trust and SEMI E187 Standards*
+
+## Authors/Presenters
+- Dr. Chuan-Yu Chew (卓傳育 博士)  
+  - Co-Leader, SEMI Taiwan Fab & Equipment Security TF  
+  - WG1 Leader, SEMI Taiwan Cyber Security Committee  
+  - Special Researcher, Industrial Technology Research Institute  
+  - CEO, Janus-Cyber / 一安智能股份有限公司
+
+## Key Points
+
+- **Traditional vs Zero Trust Network Defense**  
+  Traditional network defense assumes internal networks are fully trusted, which is unrealistic in an era where everything is interconnected and vulnerable. Zero Trust advocates no trust within any region and implements continuous verification.
+
+- **Limitations of Network Traffic Analysis**  
+  - Centralized control limits the ability to deeply manage endpoint communications.  
+  - Alert fatigue undermines effective response due to overwhelming abnormal alerts but lack of immediate automated blocking.  
+  - Deadly time gap from anomaly detection to manual rule-setting allows malware execution.
+
+- **Semiconductor Line Security Challenges**  
+  Legacy equipment cannot be directly touched for security updates, resulting in significant risk.  
+  Traditional agent-based asset management is resource-heavy, costly, and infeasible for legacy and resource-constrained IoT/OT devices.
+
+- **Janus Micro-Segmentation Solution (Agentless)**  
+  - Zero impact on device operation and performance.  
+  - Full coverage including legacy OS and IoT/OT devices.  
+  - Low cost with seamless network-layer scanning and API integration.
+
+- **From Perimeter to Edge with Zero Trust**  
+  Janus pushes zero trust boundary control to the edge devices, ensuring strict communication control in a closed and minimal exposure environment.
+
+- **Containment of Lateral Movement ("Blast Radius")**  
+  Multiple layers of defense isolate infected devices at the edge to prevent malware spreading through internal networks, aiming to “lock the disaster at the source".
+
+- **AI-Driven Intelligent Lockdown Mechanism**  
+  - Phase 1: Data capture on device communication.  
+  - Phase 2: AI builds normal communication models.  
+  - Phase 3: Automated flow control with allow/block/waiting lists, reducing human error and manual configuration.
+
+- **Visualization and Automated Risk Management**  
+  - Device risk scores visualized for intuitive understanding of IoT/OT device health.  
+  - Real-time anomaly alerts empower admins with active policy control rather than passive alert notifications.
+
+- **Built-in Compliance with SEMI E187 Standard**  
+  Janus solution integrates key requirements：  
+  - Encrypted transmission only (E187.00-RQ-00003)  
+  - Enhanced network topology controls (E187.00-RQ-00004)  
+  - Access control with least privilege principle (E187.00-RQ-00009 & 00010)
+
+- **Cybersecurity as an Enabler**  
+  - Protects legacy equipment by lowering dependency on vendor updates while securing unsupported OS versions (XP/7).  
+  - Speeds up market readiness by reducing audit and certification cycles.  
+  - Enables seamless integration with enterprise SOC and SIEM for comprehensive monitoring and defense coordination.
+
+- **Strategic Shift: From Passive Monitoring to Active Control Layer**  
+  Rather than just passive detection, the security strategy emphasizes active constraints directly implemented at the network control layer without touching endpoint devices, ensuring an unbreachable defense.
+
+- **Practical Deployment**  
+  Janus demonstrates ease of deployment with no agent installation, minimal disruption, supporting 1-48 devices per group, suitable for modern and old equipment alike.
+
+## Important Conclusions and Insights
+
+- Effective semiconductor cybersecurity must evolve from passive analysis to active control to truly prevent incidents.  
+- Zero trust principles extended to edge devices provide the strongest defense against internal lateral movement attacks.  
+- AI-based automation dramatically reduces manual effort and error, making cybersecurity management scalable.  
+- Compliance with SEMI E187 networking standards embedded in the solution facilitates industry-wide adoption and compliance.  
+- A seamless SOC integration framework completes the defense loop from endpoint to enterprise monitoring.
+
+---
+
+## Technical Problems and Challenges Highlighted
+
+- **Traditional Network Security Shortcomings**  
+  Boundaries based on perimeter defense fail to stop lateral attacks once inside the network.
+
+- **Alert Fatigue and Manual Configuration Lag**  
+  Security teams overwhelmed by volume of alerts with insufficient automated response cause delayed protection.
+
+- **Legacy Equipment Limitations**  
+  Older machinery often cannot be patched or run agents, creating vulnerabilities difficult to manage.
+
+- **Resource Constraints on IoT/OT Devices**  
+  Limited computing resources prevent installation of traditional security agents.
+
+- **Complexity and Inefficiency in Asset Management**  
+  Agent-based solutions increase deployment cost and maintenance difficulty.
+
+- **Lack of Real-time Automated Policy Enforcement**  
+  Manual intervention needed between detection and blocking causes exploitable gaps.
+
+- **Inadequate Compliance with Semiconductor Industry Standards**  
+  Failure to meet SEMI E187 risks regulatory non-conformance and increased security risk.
+
+- **Network Complexity and Scaling Challenges**  
+  Enhancing security without disrupting existing network topology or communication paths requires seamless integration at the network layer.
+
+---
+
+*This summary distills the core messages and technical details from the presented material, emphasizing the innovative AI-driven approach toward semiconductor cybersecurity transitioning from traditional analysis to autonomous control.*

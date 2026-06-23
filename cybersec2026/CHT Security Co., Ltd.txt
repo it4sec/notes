@@ -1,0 +1,95 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+Cloud Resilience: Practical Strengthening of Cloud Security from Supply Chain Incident Analysis  
+(Chinese: 雲端韌性：從供應鏈事件看雲端資安強化實務)
+
+## Authors/Presenter
+- Qiu Yongxing (邱永興)  
+  SOC Services Deputy General Manager  
+  CHT Security Co., Ltd.
+
+---
+
+## Key Points
+
+### 1. Statistical Analysis of Security Incidents  
+- Analyzed data for 2024 and 2025 showed consistency in cyberattack trends.  
+- Major malware types: Loader (23%), Payload (19%), Backdoor (15%).  
+- Top initial attack vectors: Exploitation of Public-Facing Applications, Valid Accounts misuse, Spearphishing Links.  
+- Newly observed threat intelligence on Hash, Domain, IP increased significantly in 2025.
+
+### 2. Security Risk Trends in 2025
+- Publicly facing software and services remain big targets.  
+- Legitimate account abuse emphasizes the importance of identity and access management.  
+- Spearphishing attacks are increasingly sophisticated targeting individuals and enterprises.  
+- Supply chain risks pose significant attack entry points through subsidiaries or partners.  
+- Critical infrastructure, especially network devices and remote access, are under increasing attack.
+
+### 3. Incident Trend by Industry  
+- Growing incident response (IR) cases from manufacturing, healthcare, and government sectors.  
+- Cloud environments and network communication equipment show a rising trend in attacks from 2018 to 2025.
+
+### 4. Case Studies on Cloud Supply Chain Security Incidents  
+- Case 1: Ransomware attack on core operational system in a hybrid cloud environment involving lateral movement facilitated by poor RDP controls and system vulnerabilities.  
+- Case 2: A cloud supply chain upstream provider was compromised, resulting in multiple client tenants being impacted through effective use of valid credentials and exploitation of partner relationships (GDAP abuse).
+
+### 5. Identified Blind Spots in Taiwanese Traditional Industries Using Cloud  
+- Loss of administrative control and management accounts.  
+- Long-term neglect in system maintenance and patching.  
+- Failures in remote access control, improper privilege management, lack of backup and cross-site backup.
+
+### 6. Proposed Remediation for Incidents  
+- Thorough removal of malware and related files.  
+- Patch vulnerabilities and revise firewall/network architecture.  
+- Deploy cybersecurity defenses and verify effectiveness.  
+- Proactive monitoring and pre-launch system checks.  
+- Implementation of Multi-factor Authentication (MFA), Cloud Security Posture Management (CSPM), Endpoint Detection and Response (EDR/MDR).
+
+### 7. Hacker Attack Kill Chain and Modern Challenges  
+- Traditional defenses fail at initial step as attackers use legitimate credentials.  
+- Living off the Land (LOL) tactics to evade detection by abusing built-in tools.  
+- Use of vulnerable drivers ("Bring Your Own Vulnerable Driver") for privilege escalation.  
+- Final destructive phase: backup destruction and full encryption (ransomware).
+
+### 8. Building Cybersecurity Immunity System  
+- 24/7 SOC and MDR monitoring and incident response.  
+- Active exposure and threat management through red team exercises and darknet intelligence.  
+- Expert consulting on zero trust architecture and incident response capability enhancement.
+
+### 9. Company Profile: CHT Security Co., Ltd.  
+- Founded in ROC Year 106 (2017), publicly listed in 2025, Taiwan’s first publicly listed cybersecurity service company.  
+- Over 370 employees across northern, central, and southern Taiwan with strong academic backgrounds.  
+- Holds 5 international certifications including ISO 27001, ISO 27701, ISO 20000, ISO 17025, IEC 62443.  
+- Numerous recent accolades and awards validating professional capability and service quality.
+
+---
+
+## Important Conclusions and Insights
+
+- Cloud supply chain attacks continue to escalate in sophistication and reach, threatening multiple industries.  
+- Longstanding security blind spots in traditional industries amplify risk, especially in cloud integration.  
+- Identity and access management, alongside continuous threat exposure management, are critical defensive pillars.  
+- Multi-layered security strategies with proactive threat detection and incident response are imperative to build resilience.  
+- Collaboration with experienced cybersecurity service providers and certified teams significantly enhances defense and recovery capabilities.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Exploitation of Public-Facing Applications:** The primary entry vector remains unpatched or vulnerable internet-facing applications.  
+- **Legitimate Account Abuse:** Attackers rely heavily on valid credentials to bypass traditional security measures.  
+- **Weak Remote Access Control:** Poor management and lack of access source control, especially for RDP, amplify attack surface.  
+- **Supply Chain Vulnerabilities:** Insecure upstream cloud vendors or partners can lead to cascading effects on clients.  
+- **Lack of Maintenance and Patch Management:** Long-term neglect increases vulnerability to exploitation.  
+- **Insufficient Backup Strategy:** Missing offsite or diversified backups increases risk against ransomware.  
+- **Living off the Land (LOL) Tools:** Use of built-in system tools for attacks complicates detection.  
+- **Emerging Threats Using BYOVD:** Vulnerable drivers exploited for privilege escalation bypass many security defenses.  
+- **Traditional Defenses Ineffectual:** Conventional perimeter defenses fail as attackers increasingly use legitimate access paths.  
+- **Necessity for Continuous Monitoring:** 24x7 SOC/MDR and proactive exposure management are critical to early attack detection.
+
+---
+
+This report highlights the evolving cloud supply chain threat landscape and illustrates practical mitigation measures, emphasizing the urgency for enterprises to adopt comprehensive security frameworks to improve their cyber resilience.

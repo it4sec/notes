@@ -1,0 +1,77 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+**OT Security — what’s ahead of us?**
+
+## Author/Presenter
+S. Felix Wu (吳士駿)  
+National Cheng Kung University  
+Email: sfelixwu@gs.ncku.edu.tw
+
+---
+
+## Key Points
+
+1. **Three+ Core Messages**  
+   - Proposes a computational approach to understanding complex systems, including both software and hardware.  
+   - Systems are continuously evolving.  
+   - Emphasizes security-centric [Inter-]Agentic, Physical, and Cyber AI.  
+   - Highlights the spectrum between open-sourced AI models and adaptive open standards.  
+   - Computational ethics and human issues are acknowledged but not covered in detail due to time constraints.
+
+2. **System Complexity**  
+   - Modern systems, such as those built by Intel and Nvidia, are significantly complex.  
+   - Example: NVIDIA Vera Rubin NVL72, a supercomputer integrating multiple CPUs, GPUs, DPUs, and high-speed networking technologies.  
+   - OpenBMC as an example of platform management using object-oriented programming and thinking, with protocols like PLDM (Platform Level Data Model) and Redfish.
+
+3. **AI Challenges for Systems**  
+   - AI vs AI competition inevitable, with LLMs (Large Language Models) still insufficient for system-level understanding.  
+   - Transformers designed for sequential NLP tasks, but interaction between system components may require concurrent, structural handling of data (e.g., JSONs, graphs).  
+   - Concept of LEM (Large Executable/Explainable Model) introduced as a next step beyond LLMs.
+
+4. **Inter-Agent Understanding**  
+   - Systems or components should ideally understand each other computationally.  
+   - Increasing agentic AI capabilities require APIs to either share intentions or conceal them.  
+   - This mutual understanding enhances trustworthiness and could address OT (Operational Technology) security challenges.
+
+5. **Open vs Closed Models**  
+   - Recognizes the impracticality of full open-sourcing in complex systems.  
+   - Necessity to manage a balance between open standards and proprietary models.  
+   - Proposes semi-stable APIs (like PLDM, Redfish, Omniverse) for gradual update cycles.  
+   - Envisions more advanced “negotiating” APIs enabling dynamic agent interactions.
+
+6. **Future Security Landscape**  
+   - Anticipates numerous new security challenges emerging from the interaction of evolving AI, system complexity, and open/closed model dynamics.  
+   - Mentions CYBERSEC 2036 as a speculative timeframe for advanced cybersecurity evolution.
+
+7. **Practical Use Case**  
+   - Showcases a smart campus lighting system using SecureML AI DevOps Platform integrating PQC (post-quantum cryptography), backdoor defense, and secure communication.  
+   - Highlights programmable APIs, AI transparency, user privacy, and “Internet-less” IoT to strengthen trustworthy AI.
+
+---
+
+## Important Conclusions and Insights
+
+- The complexity of modern cyber-physical systems demands computational methods that go beyond traditional software and hardware boundaries.  
+- Trustworthy AI in OT security situations depends on better agentic AI collaboration and mutual understandability.  
+- The evolution from LLM to LEM signals a transition towards executable and explainable models that interact intelligently with system components.  
+- A mixed ecosystem balancing open-source and proprietary models combined with adaptable, negotiable APIs is critical.  
+- Future work in OT security needs to focus on agentic AI negotiation, adaptive executable models, and addressing emergent security risks anticipated through 2036 and beyond.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **System Understanding and Complexity**: Difficulty in fully grasping internally coordinated but fragmented subsystems (e.g., OpenClaw issue).  
+- **LLM Limitations**: LLMs are not sufficient for system-level reasoning; designed primarily for natural language processing, not deep system interactions.  
+- **Token Probability and Model Transparency**: Challenges in verifying model output consistency and understanding internal decision-making mechanisms.  
+- **Component Awareness**: Uncertainty if components should know operational contexts (e.g., virtualization environments, firewall rule changes).  
+- **API Stability vs Negotiation**: Need to balance semi-stable APIs with the requirement for dynamic negotiation and adaptation between agents.  
+- **Security Risks from New Technologies**: Growing surface area for attacks with emerging AI capabilities and increasingly complex hardware/software ecosystems.  
+- **Trust, Privacy, and Ethics**: Though ethics and human issues are not extensively covered, the presentation acknowledges the importance and complexity of these challenges in security and AI.
+
+---
+
+This summary encapsulates the presentation’s vital elements on OT security challenges, AI’s role in evolving systems, and the path forward for trustworthy, adaptive, and secure cyber-physical systems.

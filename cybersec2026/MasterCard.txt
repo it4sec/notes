@@ -1,0 +1,93 @@
+# Summary of CYBERSEC 資安大會 2026 Keynote
+
+---
+
+### Title:
+CYBERSEC 資安大會 2026 Keynote - Taipei, May 5
+
+---
+
+### Authors/Presenters:
+- **Danny Chan**  
+  Chief Information Security Officer, Asia Pacific  
+  Mastercard
+
+---
+
+### Key Points:
+
+1. **Current Cybersecurity Landscape (2026)**
+    - Significant cyber incidents in early 2026 including:
+      - Ten petabytes data leak from a Chinese state supercomputer.
+      - Widespread wipes on Stryker’s systems across 79 countries.
+      - Theft of 375 TB data from Lockheed Martin.
+      - The FBI Director’s personal inbox leaked and FBI’s wiretap network breached.
+      - Rockstar Games hacked via lesser-known SaaS analytics provider.
+      - Cisco’s private GitHub repository cloned.
+      - Oracle's legacy cloud systems completely compromised.
+
+2. **Cybercrime Trends (2025-2026)**
+    - Cybercrime is increasingly fragmented, modular, and resilient.
+    - Artificial Intelligence reduces barriers to entry and amplifies impact.
+    - Social engineering and credential theft dominate attack vectors.
+    - Law enforcement impacts attacker behavior but does not reduce cyber risk.
+    - Geopolitical fragmentation escalates cyber conflicts.
+    - Increased Russian APT attacks against the US and Canada compared to 2024.
+    - Influence operators and hacktivists amplify conflict narratives.
+    - 33% increase in new ransomware variants in 2026.
+    - Emergence of three new malicious large language models tailored for cyber operations.
+
+3. **Cyber Risk Quantification & Resilience**
+    - Importance of quantifying organizational cyber maturity using benchmarks.
+    - Scenario-based modeling aligned with DORA & MAS regulations.
+    - Board-level decision reports prioritizing investments based on risk reduction effectiveness.
+    - Emphasis on regulatory environments transitioning from suggestions to binding mandates.
+
+4. **Third-Party Risk Management (TPRM)**
+    - Third-party risk is now a board-level priority.
+    - Notable incidents: MOVEit zero-day affecting 2,700+ organizations; Snowflake customer breaches using stolen credentials.
+    - Fourth-party risks (vendor’s vendor) represent serious vulnerabilities.
+    - Identity control weaknesses and shared responsibility models are key concerns.
+    - Use of external attack surface monitoring aligned with NIS2 supply chain regulations.
+    - Support for vendor tiering, continuous oversight, and remediation tracking.
+    - Zero integration solution providing insights from day one.
+
+5. **Third-Party Risk Management in Taiwan**
+    - Governed by financial supervision regulations, PDPA, and national cybersecurity policies.
+    - Organizations bear ultimate accountability for third-party failures.
+    - Continuous oversight is prioritized over one-time due diligence.
+    - Legal obligations require prompt breach reporting within specified timelines.
+
+6. **Recommended Next Steps**
+    - Immediate alignment with regulatory principles to reduce compliance debt.
+    - Prioritize TPRM execution: vendor tiering, ongoing monitoring, and remediation SLAs.
+    - Institutionalize resilience testing measured by trackable metrics.
+    - Utilize lightweight tools to accelerate cybersecurity maturity and demonstrate ROI.
+
+---
+
+### Important Conclusions and Insights:
+
+- The global cyber threat landscape is evolving rapidly with high-profile breaches involving state-level actors and major corporations.
+- Fragmentation of international order intensifies cyber conflict and crime.
+- Cybercriminal adaptability and the use of advanced AI-driven tools complicate defense efforts.
+- Third-party risk is a critical vulnerability requiring sustained board-level attention and strategic mitigation.
+- Effective cyber risk quantification and resilience are essential for prioritizing investments and meeting increasingly stringent regulatory requirements.
+- Continuous monitoring and governance of third-party vendors, including their supply chains, is non-negotiable.
+- Compliance with local regulations (e.g., Taiwan's PDPA) and international mandates (e.g., NIS2) must be integrated into cybersecurity practices.
+
+---
+
+### Technical and Other Problems Emphasized:
+
+- **Massive Data Breaches**: Large scale data exfiltrations (up to petabytes), affecting sensitive government and corporate environments.
+- **Zero-Day Exploits**: Critical zero-day vulnerabilities discovered in widely used software (MOVEit) enhancing the attack surface exposure.
+- **Supply Chain Vulnerabilities**: Incidents where the attacker compromises a vendor or even the vendor’s vendor, highlighting complexity and risk of extended supply chains.
+- **Identity and Credential Theft**: Persistent challenge with stolen credentials being a primary method of breach, emphasizing gaps in identity management controls.
+- **Evolving Cybercrime Techniques**: Use of AI and modular tactics making cybercriminal efforts more pervasive and difficult to detect.
+- **Regulatory Compliance Challenges**: Transition from advisory requirements to enforced compliance mandates posing organizational challenges.
+- **Integration and Insight Gaps**: Need for external monitoring tools that require little or no integration but provide actionable intelligence from day one.
+
+---
+
+This summary captures the critical themes and actionable insights presented during the CYBERSEC 2026 keynote by Danny Chan from Mastercard, reflecting the pressing challenges and evolving responses in cybersecurity for 2026.

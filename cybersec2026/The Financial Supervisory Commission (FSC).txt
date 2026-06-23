@@ -1,0 +1,107 @@
+# Summary of the PDF Presentation
+
+---
+
+## Title  
+**Financial Operational Resilience on Cybersecurity Ecosystem Blueprint (FORCE-B)**  
+金融資安韌性發展藍圖  
+Date: May 7, 2025
+
+---
+
+## Authors / Presenters  
+- Financial Supervisory Commission, R.O.C. (Taiwan)  
+- Collaboration with Financial Information Sharing and Analysis Center and Taiwan Institute of Economic Research  
+
+---
+
+## Key Points  
+
+### 1. Background & Policy Progress  
+- Overview of Taiwan's financial cybersecurity policy timeline:  
+  - 2020.08: Financial Cybersecurity Action Plan 1.0  
+  - 2022.12: Financial Cybersecurity Action Plan 2.0  
+  - 2024.07: Introduction of Zero Trust Architecture guidelines for financial sector  
+  - 2025.12: Launching of Financial Cyber Resilience Development Blueprint with 4 major components and 10 priority actions  
+
+### 2. National Security and Cybersecurity Strategic Alignment  
+- "Cybersecurity is national security" (2025 Vision)  
+- Emphasis on:  
+  - Zero Trust Architecture (ZTA)  
+  - Post-Quantum Cryptography (PQC) development and migration  
+  - AI security and trustworthiness  
+  - Supply chain visibility and safety  
+  - Critical infrastructure resilience and third-party cybersecurity exercises  
+
+### 3. Global Trends in Cybersecurity Regulation  
+- Enhancing senior leadership accountability and maturity  
+- Shifting cybersecurity left (early integration) and managing software components  
+- AI cybersecurity governance and PQC preparedness  
+- Strengthening supply chain management and operational resilience  
+
+### 4. Four-Axis Resilience Governance Framework  
+- A. Governance with clear accountability  
+- B. Comprehensive protection from design to technical resilience  
+- C. Cross-domain ecosystem defense and intelligent intelligence sharing  
+- D. Solid resilience ensuring continuity and rapid recovery  
+
+### 5. Ten Key Priority Actions  
+- Strengthen executive governance and responsibility  
+- Enhance talent cultivation and cross-institution knowledge exchange  
+- Integrate cybersecurity early into software design  
+- Promote Zero Trust Architecture deployment  
+- Improve cybersecurity monitoring, detection, and response effectiveness  
+- Forward-looking technology deployment (AI, PQC)  
+- Supply chain risk management and ecosystem strengthening  
+- Intelligence sharing and cooperative defense  
+- Cyberattack simulations and incident response exercises  
+- Multi-level backup and redundancy for critical financial services  
+
+### 6. Technical Enhancements and Tools  
+- Adoption of Software Bill of Materials (SBOM) and vulnerability tracking  
+- API security baseline development  
+- Cloud security monitoring standards for AWS, Azure, and GCP platforms  
+- Container security monitoring frameworks  
+- Deployment of advanced AI-driven cybersecurity defense and automation tools  
+- Use of MITRE ATT&CK and MITRE Engage frameworks for attack simulation and defense  
+
+### 7. Emerging Technology Focus  
+- AI security threat landscape and defense mechanisms based on MITRE ATLAS  
+- PQC migration strategy addressing encryption agility and risk prioritization  
+- Collaborative approach between industry and regulators for quantum threat mitigation  
+- Encourage proactive vulnerability disclosure and supplier risk grading  
+
+### 8. Organizational Culture and Ecosystem  
+- Embed cybersecurity into corporate governance and ESG principles  
+- Frequent cybersecurity exercises involving simulation and real-world attack techniques  
+- Foster cyber tactical defense mindset via training and scenario-based drills  
+- Ecosystem-level coordination through information sharing and incident response collaboration  
+
+---
+
+## Important Conclusions and Insights  
+- Cybersecurity must evolve from simple prevention to resilient, rapid response and recovery.  
+- Embracing new technologies (AI, PQC, Zero Trust) is crucial for future-proof defense.  
+- Cross-domain and ecosystem-level collaboration are essential to combat increasingly sophisticated threats.  
+- Continuous refinement based on empirical attack simulations underpins a mature cybersecurity posture.  
+- Strong executive governance and clear accountability accelerate organizational resilience.  
+- Supply chain security and transparency (including SBOM) directly impact overall financial ecosystem security.  
+- AI introduces both opportunities for enhanced defense and new, complex attack surfaces requiring dedicated governance.  
+
+---
+
+## Technical and Other Challenges Highlighted  
+- **Active Directory Security Risks**: Large percentage of enterprises have insecure AD CS configurations enabling attackers to gain domain admin rights within minutes.  
+- **Post-Quantum Cryptography Transition**: Complexity in PQC migration requiring multi-faceted strategy covering technical readiness, risk assessment, resource planning, and international coordination.  
+- **Supply Chain Risk Management**: Need for tiered supplier security assessments and collaborative information sharing to counter emerging supply chain threats.  
+- **AI-driven Attack Vectors**: Emerging risks from AI and generative AI agents that can automatically craft exploits or social engineering attacks at machine speed.  
+- **Cybersecurity Monitoring Gaps**: Continuous updates needed for detection rules to cover evolving attacker tactics, techniques, and procedures (TTPs).  
+- **Zero Trust Implementation Complexities**: Policy, technical integration, and cultural shifts required to fully implement ZTA across diverse identity, device, network, application, and data domains.  
+- **Incident Response and Resilience Testing**: Sophisticated scenario-driven exercises are necessary to validate preparedness and improve response workflows.  
+- **Cloud and Container Security**: Expanding cloud-based security monitoring to cover hybrid environments, container platforms, and SaaS security poses operational challenges.  
+- **Data Protection & Access Control**: Enforcing least privilege, dynamic attribute-based access, and encrypted data storage with real-time monitoring is critical but complex.  
+- **Organizational and Talent Gaps**: There is a pressing need to upgrade security personnel capabilities and cross-domain collaboration frameworks to address fast-moving threats.  
+
+---
+
+# End of Summary

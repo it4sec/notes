@@ -1,0 +1,95 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+**Building a Practical and Compliant LLM Security Chain Using Open Technologies**
+
+## Author/Presenter
+- Hua-Rong Qu  
+  Senior Researcher, Chunghwa Telecom Research Institute  
+
+## Key Points
+1. **Overview of AI Security and Compliance Progress**
+   - Prompt injection attacks remain a leading security risk for Large Language Models (LLMs).
+   - Important references: OWASP Top 1 for LLM, classical Chinese jailbreak prompt optimization research (ICLR 2026).
+
+2. **Safety Guard Technology**
+   - Introduction of system safeguard layers that impose extra security policies on model inputs and outputs to cover risks not fully mitigated by the LLM itself.
+
+3. **Evolution of Security Guard Models**
+   - Timeline of LLM-based safety models development:
+     - Meta: Llama Guard (Dec 2023)
+     - Google: ShieldGemma (Jul 2024)
+     - OpenAI: gpt-oss-safeguard (Aug 2025)
+     - Alibaba: Qwen3Guard (Sep 2025)
+     - MediaTek: Research Breeze Guard (Mar 2026)
+     - Chunghwa Telecom: TWGuard (Apr 2026)
+
+4. **Complete Security Compliance Chain**
+   - Integration of AI architecture/frameworks, RAG (Retrieval Augmented Generation), agentic workflows, and ongoing data governance processes.
+   - Key functions include embedding unstructured data, vector databases for private knowledge storage, reranking relevant content, task planning/execution, external API/tool usage, and continuous self-reflection and evaluation.
+
+5. **Security Risk Cases**
+   - Risk 1: Secrets Leakage – accidental exposure of credentials such as passwords, API keys.
+   - Risk 2: PII (Personally Identifiable Information) Protection – shielding sensitive personal data from model providers and unauthorized visibility.
+   - Risk 3: Hallucination in Agentic Workflows – preventing LLMs from generating inaccurate or fabricated responses that can impact business decisions.
+
+6. **Mitigation Tools and Techniques**
+   - Secrets Leakage:
+     - Yelp Detect-Secrets: secret scanning, redaction, extensibility for various secret types and configs.
+   - PII Protection:
+     - Microsoft Presidio: Named Entity Recognition (NER) based PII anonymization compliant with GDPR, HIPAA.
+     - OpenAI Privacy Filter: combined model masking PII and secrets with high precision.
+   - Hallucination Risk:
+     - IBM Granite Guardian: model evaluating context relevance, groundedness, and answer relevance to detect hallucinated claims.
+
+7. **Additional Notes**
+   - Discussion on Autonomous AI Agents (e.g., OpenClaw) and associated security risks.
+   - Methods for agent threat detection: Rule-based (Agent-Threat-Rules) and LLM-driven pattern analysis by SlowMist.
+   - Emphasis on technology-neutral, open-source solutions for constructing compliance and risk mitigation chains in AI systems.
+
+## Important Conclusions and Insights
+- Effective AI risk mitigation requires comprehensive protection beyond the model itself, encompassing the entire AI system architecture.
+- Open and neutral technical approaches can connect and enhance protective measures across different application domains of AI.
+- Balancing AI value delivery and risk control is achievable through systematic implementation of detection, redaction, and grounding mechanisms.
+- Early identification and structured defense against prompt injection, secrets leakage, PII exposure, and hallucinations are critical to secure AI deployment.
+- Compliance with global and regional privacy regulations (e.g., GDPR, HIPAA) is integrally supported by current anonymization and detection technologies.
+
+---
+
+## Technical and Other Problems Described in the Presentation
+
+1. **Prompt Injection Attacks**
+   - Attackers manipulate prompt inputs to bypass safety rules, causing generation of dangerous or unauthorized content.
+   - Recognized as a top security issue for LLMs.
+
+2. **Secrets Leakage**
+   - RAG retrieval may expose sensitive fields (passwords, API keys, credentials) due to lack of filtering in massive enterprise data lakes.
+   - High cost and operational difficulty in data cleansing and enforcing granular access control.
+   - Accidental leakage paths need automated detection and redaction.
+
+3. **PII Exposure**
+   - Customer input containing sensitive personal info (IDs, credit card numbers, phone numbers) may be stored in logs or passed to external parties (e.g., annotation vendors).
+   - Risks arise when PII is accessible to unauthorized personnel during model training and data pipeline processes.
+  
+4. **Hallucinations in Agentic Workflows**
+   - LLMs may fabricate non-existent product specs or facts when generating outputs.
+   - This is dangerous in business-critical contexts like ERP procurement and can cause costly errors.
+   - Reliable grounding mechanisms to cross-check responses with source documents are essential.
+
+5. **Performance and Trade-offs**
+   - Transformer-based privacy and secret detection models, while accurate, bring higher latency and computational demands.
+   - A balance is needed between speed, precision, and scalability for enterprise deployment.
+
+6. **Autonomous AI Agent Risks**
+   - OpenClaw-like personal AI assistants with broad system permissions present new threat vectors.
+   - Security must consider potential malicious skill execution, prompt injections, and unauthorized data access.
+
+7. **Rule-Based and LLM-Driven Detection Gaps**
+   - Rule sets require continuous updates mapped to known CVEs and threat patterns.
+   - LLM approaches must handle false positives and confirm actual intent and context of detected threats.
+  
+---
+
+This presentation advocates building comprehensive, layered, and open AI security and compliance systems that manage evolving risks across data, models, workflows, and deployment environments.

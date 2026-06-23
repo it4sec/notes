@@ -1,0 +1,81 @@
+# Summary of Presentation
+
+---
+
+## Title
+**Farewell to Firewall Thinking: Building Data-Centric Cloud Security with File DLP**
+
+---
+
+## Authors/Presenters
+- Vivian Hsieh (謝沐宸)
+- Engineering Manager & Technical Product Manager at HENNGE K.K.
+
+---
+
+## Key Points
+
+1. **Challenge of Cloud Data Security**
+   - Traditional security relies on drawing boundaries or fences (firewalls, domain restrictions, folder access, group permissions).
+   - When data moves to the cloud, these boundaries become less effective in protecting sensitive information.
+
+2. **The Fences We Drew**
+   - Companies create file-sharing policies as boundaries based on:
+     - Organization/domain
+     - Folder/location
+     - Group/audience
+   - Boundaries become more complex over time, incorporating factors like path, file type, destination, shared date, and owner to draw more precise fences.
+
+3. **Exceptions Create Holes**
+   - Business realities require exceptions to policies, leading to holes in the fences (e.g., allowing partner domains, exceptions for public folders).
+   - These exceptions reflect the need for safe collaboration beyond rigid boundaries.
+
+4. **Fences Don’t Scale**
+   - Static boundaries and manual policy changes cannot keep up with dynamic business needs.
+   - Over-reliance on manual governance creates bottlenecks and administrative burdens.
+   - Two prevalent patterns in Japanese enterprises:
+     - Human Gatekeeper approach (manual approval workflows)
+     - Platform Separation (using separate platforms for internal vs external sharing)
+
+5. **Beyond the Firewall**
+   - Exceptions are not noise but traces that reveal actual business workflows and collaboration patterns.
+   - Security policy should evolve from rigid boundaries into adaptive workflows.
+
+6. **Adaptive Security with DSPM + DLP + Organization-Shaped Security**
+   - DSPM (Data Security Posture Management) discovers and visualizes actual data sharing patterns.
+   - DLP (Data Loss Prevention) acts automatically to remediate policy violations.
+   - An organizational approach allows continuous learning and shaping of safe collaboration paths by the entire team.
+   - This combination creates scalable, dynamic cloud data security.
+
+7. **The Future Vision**
+   - Integration of DSPM, DLP, and organizational collaborative security leads to liberation and secure file collaboration.
+   - The cycle of discovery, surfacing, response, and supervision reduces admin workload while adapting to real usage patterns.
+   - File DLP enables effortless, confident, and secure collaboration in cloud environments.
+
+---
+
+## Important Conclusions & Insights
+
+- Traditional firewall and boundary-based security are increasingly ineffective for cloud environments.
+- Exceptions in policies highlight gaps that must be acknowledged and integrated into security workflows.
+- Manual gatekeeping processes create bottlenecks that slow down business and increase risk.
+- Combining discovery and enforcement tools with organizational collaboration enables flexible yet secure data sharing.
+- Security policies should evolve from static fences to adaptive, trace-driven workflows.
+- Modern cloud security depends on continuous learning from real data usage rather than strict prohibitive rules.
+- Empowering users and teams while supervising by admins creates a sustainable security environment.
+  
+---
+
+## Technical/Organizational Problems Highlighted
+
+- **Static Boundaries are Limiting:** Policies based on domains, folders, groups, etc., fail to capture all legitimate business exceptions and evolve slowly.
+- **Manual Governance Bottlenecks:** Human gatekeeping adds friction and delays in business operations.
+- **Scalability Issues:** Managing exceptions through more complex rules becomes unsustainable.
+- **Lack of Visibility:** Without DSPM-like tools, organizations cannot accurately see how data is shared or used.
+- **Policy Gaps:** Business realities lead to exceptions that undermine security fences.
+- **Excessive Burden on Admins:** Continuous manual decision-making leads to fatigue and potential errors.
+- **Need for Integration:** Effective data protection requires combining automated enforcement (DLP), discovery/visibility (DSPM), and organizational collaboration approaches.
+
+---
+
+This presentation advocates for moving beyond traditional "firewall thinking" to embrace adaptive, data-centric cloud security with File DLP technology integrated with DSPM and organizational collaboration for scalable and effective protection in modern cloud environments.

@@ -1,0 +1,100 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+
+**EU Cyber Resilience Act (CRA): Introduction to Cybersecurity Regulations and Product Compliance Requirements**
+
+---
+
+## Authors/Presenters
+
+- **David Hsueh (薛正)**  
+  Bureau Veritas, Cybersecurity Testing Department, Deputy Manager
+
+- **Joseph Chan (詹燿州)**  
+  Business Development Manager - Cybersecurity, Bureau Veritas
+
+---
+
+## Key Points
+
+1. **Overview of EU Regulation Landscape for CE Marking**  
+   - EU directives provide basic but non-binding guidelines (e.g., Radio Equipment Directive - RED 2014/53/EU).  
+   - EU regulations are more specific, enforceable law at member state level (e.g., Cyber Resilience Act (CRA) Regulation (EU) 2024/2847).  
+   - European standards (EN standards) support directives/regulations and are mostly voluntary but preferred for market access.  
+   - Some national deviations exist but the trend is towards European harmonization.
+
+2. **Shift in CE Marking Philosophy**  
+   - The old paradigm focused on one-time hardware testing and static compliance.  
+   - The new paradigm (CRA, AI Act, ESPR) emphasizes mandatory risk-based design, continuous lifecycle monitoring (5 to 10 years), and legally binding dynamic compliance, including strict vulnerability reporting to ENISA.
+
+3. **Repeal of Delegated Regulation under RED**  
+   - Once CRA fully applies (Dec 11, 2027), existing cybersecurity regulations supplementing RED will be repealed to avoid overlapping legal requirements.
+
+4. **Scope of CRA (EU 2024/2847)**  
+   - Applies to products with digital elements that connect logically or physically to devices or networks.  
+   - Includes software and hardware products, as well as their remote data processing solutions.  
+   - Affects manufacturers, distributors, and importers offering products in the EU market.
+
+5. **Product Classifications**  
+   - Four product groups: Default Class, Important Class I, Important Class II, and Critical Products.  
+   - Horizontal standards (topics 1-15) and vertical standards align compliance requirements.  
+   - Examples of Important Class I: routers, modems, smart home security products, and internet-connected toys.  
+   - Important Class II includes hypervisors, firewalls, tamper-resistant microprocessors, etc.  
+   - Critical products include hardware with security boxes, smart meters, smartcards, and secure elements.
+
+6. **Compliance Deadlines and Penalties**  
+   - Reporting obligations for actively exploited vulnerabilities and severe incidents start from Sept 11, 2026.  
+   - Full CRA application (Annex I requirements) begins Dec 11, 2027.  
+   - Non-compliance fines up to €15 million or 2.5% of global annual turnover (whichever is greater).  
+   - Other violations carry fines of €10 million to €5 million depending on severity.
+
+7. **Manufacturer Responsibilities**  
+   - Risk assessment, secure-by-design implementation, documented technical files, third party component due diligence (e.g., SBOM and CVE tracking).  
+   - Coordinated vulnerability disclosure (CVD) policies to handle security flaws with researchers and users.  
+   - Continuous product support with security updates and lifecycle conformity maintenance.  
+   - Mandatory reporting of actively exploited vulnerabilities and severe incidents to ENISA and national CSIRTs within tight timelines (from 24 hours to 1 month).
+
+8. **Focus on Vulnerabilities and SBOM**  
+   - Vulnerabilities are widespread and easier to exploit than before.  
+   - CRA demands machine-readable SBOMs (e.g., SPDX, CycloneDX) to allow automated vulnerability monitoring.  
+   - CRA connects to the EU Vulnerability Database (EUVD) via API to facilitate real-time vulnerability checks and faster response.  
+   - This automation capability reduces reporting timeframes dramatically, making compliance feasible.
+
+---
+
+## Important Conclusions and Insights
+
+- The Cyber Resilience Act marks a significant evolution in EU product cybersecurity regulations, shifting from one-time certification to continuous, risk-based security management.  
+- Manufacturers and economic operators must adopt a proactive, ongoing vulnerability management approach that includes extensive documentation, rapid incident reporting, and lifecycle security support.  
+- Failure to comply with CRA provisions results in severe financial penalties and could lead to product recalls or bans in the single European market.  
+- The requirement for machine-readable SBOMs and integration with EU vulnerability databases heralds a new era of automated cybersecurity compliance workflows.  
+- Companies should plan production and legacy product management carefully to align with CRA’s phased implementation deadlines starting in 2026.
+
+---
+
+## Technical or Other Problems Emphasized
+
+- **Challenge of Rapid Vulnerability Reporting:**  
+  Developers and manufacturers must report actively exploited vulnerabilities within very short timeframes (as short as 24 hours), which demands sophisticated monitoring and response capabilities.
+
+- **SBOM Machine-Readability Requirement:**  
+  Unlike past regulations, CRA mandates SBOM to be machine-readable (SPDX, CycloneDX), requiring technical adaptation and integration with vulnerability databases (EUVD).
+
+- **Integration with EUVD API:**  
+  Automated synchronization between SBOMs and EUVD exposed a technological need—organizations must develop or adopt monitoring software to compare product components continuously against known vulnerabilities.
+
+- **Sustained Security Support:**  
+  Continuous lifecycle monitoring with support periods of 5 to 10 years adds complexity to maintenance and update processes, requiring long-term investment in security management resources.
+
+- **Compliance and Market Access Impact:**   
+  Legacy products or those manufactured before CRA’s full effect may need reevaluation to prevent market access denial or enforcement actions.
+
+- **Coordination Between Economic Operators:**  
+  Manufacturers, importers, and distributors each have distinct obligations under CRA, and synchronization among multiple stakeholders is essential for legal compliance.
+
+---
+
+If you wish to explore the Cyber Resilience Act (CRA) in more detail or understand your organizational impact, contacting experts like David Hsueh or Joseph Chan at Bureau Veritas is recommended.

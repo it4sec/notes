@@ -1,0 +1,66 @@
+# Summary of Presentation
+
+---
+
+## Title
+AIOT and Satellite Communications in Situational Awareness and Unmanned Systems Applications  
+(AIOT與衛星通訊在態勢感知與無人系統中的應用)
+
+## Authors/Presenters
+- Sun Ruihong (孫瑞鴻), General Manager  
+- Company: KingHold Technology (全濠科技股份有限公司)  
+- Collaboration with ADLINK
+
+## Key Points
+
+### Leading Edge AI Computing by ADLINK
+- ADLINK provides rugged AI computing solutions designed for mission-critical applications.
+- Systems are vertically certified (MIL-STD-810 and EN50155 compliant).
+- Key features include ruggedness (shock, vibration, wide temperature stability), long lifecycle (up to 10 years), and customizable chassis/backplanes.
+- ADLINK emphasizes real-time and secure intelligence for edge AI agents.
+
+### Satellite Communications: Market Context and Trends
+- Low Earth Orbit (LEO) satellites are rapidly growing, with projections to reach a $780 billion market by 2035 (7.97% CAGR).
+- IoT market linked to satellite connectivity estimated at $15.77 billion with 24.1% CAGR.
+- Satellite population is growing crowded, dominated by players like SpaceX Starlink (77% of active satellites) and OneWeb.
+- Increased satellite activity is driven by the need to connect the unconnected: 6.1 billion mobile connections covered by satellites/non-terrestrial networks (NTNs).
+- Connectivity covers remote, mobile, and secure environments.
+
+### Technological Evolutions in Satellite and IoT Networks
+- IoT universe expected to reach ~2.5 billion devices within satellite addressable area.
+- Key sectors: automotive, utilities, agriculture, manufacturing, oil and gas.
+- Advancements include 5G non-terrestrial networks (NTN), software-defined, scalable, and open AI network automation, and enhanced encryption mechanisms.
+
+### Satellite Security and Resilience Platform
+- Multi-orbit (GEO, MEO, LEO), ubiquitous quantum-resistant connectivity.
+- Network management includes zero-trust architecture (ZTA), IoT management, network gateways, PQC (post-quantum cryptography) secure tunnels.
+- Physical AI supports secure edge operations.
+
+### Edge AI Automation and Unmanned Vehicle Collaboration
+- Integration of high-precision control, real-time data processing, and edge AI allows autonomous missions in complex or extreme environments.
+- Stable and wide-area connectivity achieved by combining 5G with satellite communications.
+- Security ensured by zero-trust architecture (ZTA) and PQC.
+- Systems designed for continuous operation under network disconnections or high-risk environments.
+- Key unmanned vehicle security elements: GPS/GNSS, Camera/LiDAR, core IPC, display, battery power, encrypted communications, secure bootloader, and hardware security modules (HSM).
+
+## Important Conclusions and Insights
+- The convergence of AIOT with satellite communications offers reliable, secure, and resilient solutions for situational awareness and autonomous unmanned systems.
+- Rugged AI computing platforms are essential for mission-critical success in harsh environments.
+- The explosive growth of satellite infrastructure, especially in LEO, supports the expansion and scalability of IoT and mobile connectivity worldwide.
+- Security at both the network and edge-device levels, such as PQC and zero trust, is fundamental for operational reliability.
+- Autonomous systems leveraging these technologies can provide enhanced efficiency, safety, and operational continuity in remote and adverse environments.
+
+---
+
+## Technical and Other Problems Highlighted
+- The space environment is becoming increasingly crowded with satellites, which may pose challenges for managing orbital debris and interference.
+- Ensuring secure, resilient satellite IoT communication requires addressing cybersecurity threats, including protecting against quantum computing-enabled attacks.
+- Maintaining reliable wide-area connectivity in remote or harsh environments is difficult but critical to enabling autonomous vehicle functionality.
+- The challenge of integrating multi-orbit satellite systems (GEO, MEO, LEO) for seamless service and network management.
+- The requirement for long lifecycle and ruggedness of edge AI computing hardware to withstand extreme physical conditions.
+- Need for zero-trust architecture and advanced encryption to counteract vulnerabilities in complex edge and network systems.
+- Handling disconnections or failures in communication infrastructure while maintaining operational continuity for unmanned systems.
+
+---
+
+This summarizes the core content and technical emphasis of the presentation "AIOT and Satellite Communications in Situational Awareness and Unmanned Systems Applications."

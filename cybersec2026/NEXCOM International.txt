@@ -1,0 +1,98 @@
+# Summary of the Presentation
+
+---
+
+## Title
+Subjective Logic for Dynamic Trust Scoring: Practical Algorithms for Zero Trust Architecture
+
+---
+
+## Authors/Presenters
+- Baily Lo (羅堅誌)
+- Jason Chuang (莊子政)
+
+---
+
+## Key Points
+
+- **Zero Trust Concept**
+  - Zero Trust means no user or device is trusted by default.
+  - Every access request is dynamically verified based on identity, device, location, behavior, and context.
+  - Enforces continuous verification and least privilege approach.
+
+- **Zero Trust Architecture (ZTA)**
+  - Implements Zero Trust principles through system design.
+  - Components include Policy Decision Point (PDP), Policy Enforcement Point (PEP), Policy Administrator (PA), and Policy Information Points (PIP).
+  - Risk elevation results in trust tightening and increased access control.
+
+- **NIST Standards**
+  - NIST SP 800-207 defines core Zero Trust architecture principles.
+  - NIST SP 1800-35 offers practical reference implementation guidance.
+
+- **Shift in Protection Model**
+  - Protection shifts from network perimeter to resources themselves.
+  - Dynamic verification replaces trust based on network location.
+
+- **Zero Trust is Not New or Easy**
+  - It builds on existing security basics rather than being a standalone solution.
+  - Requires high cybersecurity maturity: asset inventory, identity management, centralized logging, and security visibility.
+
+- **Implementation Strategy**
+  - Zero Trust cannot be implemented all at once; phased rollout with a focus on identity strengthening, key resource protection, and high-risk access is recommended.
+
+- **OpenZiti Overview**
+  - Open source platform for implementing Zero Trust from the application layer.
+  - Uses identity instead of IP for trust basis.
+  - Provides components such as Controller, Edge Router, SDK, Tunnel, Admin Console, and Identity management.
+  - Supports identity-based, service-centric policies with dynamic session path establishment.
+
+- **Trust Scoring with Subjective Logic**
+  - Challenges with incomplete or uncertain security evidence.
+  - PIP data can be delayed, incomplete, or inconsistent.
+  - Subjective Logic integrates belief, disbelief, and uncertainty for nuanced trust evaluation.
+  - Trust scores adapt with time decay and sliding windows to reflect recent behavior.
+
+- **Dynamic Access Enforcement**
+  - Continual trust evaluation allows adjusting access dynamically, not just at login.
+  - Combines evidence-based, identity-based, and dynamic enforcement approaches.
+  
+---
+
+## Important Conclusions and Insights
+
+- Zero Trust requires continuous, evidence-based identity and device verification—not one-time authentication.
+- Practical Zero Trust deployment involves integrated asset, identity, and behavior analysis systems.
+- Subjective Logic is crucial for managing uncertainty in real-time trust decisions.
+- OpenZiti enables deep integration of Zero Trust policies at the application layer without traditional VPN dependencies.
+- A phased approach to Zero Trust adoption minimizes operational impact and enhances security posture over time.
+- Dynamic trust scores allow systems to respond effectively to evolving risk conditions in network sessions.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Evidence Incompleteness and Delays**
+  - Security data sources often provide partial, delayed, or inconsistent information.
+  - Scans and logs may not be real-time or comprehensive.
+
+- **Heterogeneous Data and Format**
+  - Different logs, alerts, and event formats complicate security risk interpretation.
+
+- **Risk of False Negative Observations**
+  - Absence of detected anomalies does not equal absence of risk.
+
+- **Complexity in Zero Trust Implementation**
+  - Zero Trust requires robust foundational security capabilities like centralized logging, identity governance, and asset management.
+  - Complete zero trust implementation on day one is unrealistic and risky.
+
+- **Operational Challenges**
+  - Transitioning to Zero Trust demands changes in network architecture, workflows, and user behavior.
+  - Without phased introduction, can adversely affect stability and user experience.
+
+- **Dynamic and Subjective Trust Assessment**
+  - Trust decision points must handle uncertainty and incomplete evidence.
+  - Subjective Logic modeling is necessary for practical risk-based trust evaluation.
+
+---
+
+If you would like, I can also provide a more technical deep-dive or explanations of specific sections.

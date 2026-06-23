@@ -1,0 +1,89 @@
+# Summary of Presentation: Ghost in Your Network: How Earth Kurma Stays Hidden and Their Long-term Strategies
+
+---
+
+### Title:
+**Ghost in Your Network: How Earth Kurma Stays Hidden and Their Long-term Strategies**  
+內網中的幽靈：Earth Kurma 的隱身手法與長期的攻擊策略
+
+### Authors/Presenters:
+- Nick Dai, Senior Threat Researcher
+- Sunny W Lu, Senior Threat Researcher
+
+---
+
+### Key Points:
+
+- **Earth Kurma Overview:**
+  - Highly targeted Advanced Persistent Threat (APT) group active since November 2020.
+  - Focus on Southeast Asia with high interest in data exfiltration.
+  - Uses sophisticated defense evasion techniques.
+  - Weakly linked to other known APT groups: ToddyCat, Lancefly, Operation TunnelSnake, Sharp Dragon (Sharp Panda).
+
+- **Targeted Industries:**
+  - Government
+  - Telecommunications (government-related)
+
+- **Victimology:**
+  Includes Philippines, Vietnam, Brunei, Malaysia, Thailand, and Indonesia.
+
+- **Infection Chain Components:**
+  - **Arrival Vector:** Compromise through web vulnerabilities and deployment of malicious tools on vulnerable servers.
+  - **Lateral Movement Tools:** NBTSCAN, LADON, WMIHACKER, FRPC, ICMPINGER, KMLOG.
+  - **Persistence Mechanisms:**
+    - Rootkits: KRNRAT, MORIYA, MMLOAD.
+    - Loaders & Backdoors: DUNLOADER, TESDAT, DMLOADER, DOWNBEGIN.
+  - **Exfiltration Tools:** ODRIZ, PowerShell, SIMPOBOXSPY, SIMPOWEBEXSPY.
+
+- **Technique Highlights:**
+  - Customized toolsets for individual victims.
+  - Use of multi-stage and reflective-loading rootkits.
+  - Abuse of legitimate cloud services (OneDrive, Dropbox, Cisco Webex) for command and control and data exfiltration.
+  - Exploitation of Distributed File System Replication (DFSR) for malware deployment and exfiltration.
+
+- **Detailed Analysis of Persistence Mechanisms:**
+  - **KRNRAT:** Rootkit backdoor with abilities like manipulating processes, hiding files/networks, injecting shellcode, and C&C communication.
+  - **MORIYA:** Traffic interceptor hiding malicious payloads inside TCP traffic with shellcode injection.
+  - **MMLOAD:** Multi-stage reflective-loading backdoor that bypasses Driver Signature Enforcement, hides artifacts, protects processes, injects payloads, and steals RDP credentials.
+  - **Loaders:** DUNLOADER and TESDAT loaders execute Cobalt Strike payloads.
+  - **DMLOADER:** Loader embedding VIKTURI, an HTTP backdoor also used by Sharp Panda but with slight variations.
+  - **DOWNBEGIN:** Novel backdoor (since Nov 2024) with variants working over raw TCP or Cisco Webex meeting rooms as C&C channels.
+
+- **Exfiltration Techniques:**
+  - Use of PowerShell scripts and cloud services like OneDrive (ODRIZ), Dropbox (SIMPOBOXSPY), and Cisco Webex (SIMPOWEBEXSPY).
+  - SIMPOWEBEXSPY collects various document formats, archives them, and uploads to a dedicated Webex meeting room.
+
+---
+
+### Important Conclusions and Insights:
+
+- Earth Kurma adapts effectively to the victim’s environment by leveraging native platform features and trusted cloud services to hide their operations and data exfiltration activities.
+- Sophisticated multi-layered persistence and lateral movement tactics allow Earth Kurma to maintain long-term access and stealth.
+- Use of legitimate corporate services like OneDrive, Dropbox, and Cisco Webex as C&C and exfiltration channels greatly complicates detection.
+- Novel backdoor communication methods including use of Cisco Webex meeting rooms highlight the evolving threat landscape where trusted services are abused.
+  
+---
+
+### Recommendations for Mitigation:
+
+- Monitor connections to legitimate cloud platforms initiated by unknown or unauthorized applications.
+- Analyze unusual intranet connections with high traffic volumes for potential lateral movement.
+- Enforce group policies preventing installation of untrusted drivers to combat rootkit persistence.
+  
+---
+
+### Technical and Other Problems Highlighted by the Presentation:
+
+- Difficulty in detecting the malware due to:
+  - Use of multi-stage, reflective loaders that operate mostly in memory.
+  - Abuse of legitimate cloud services (OneDrive, Dropbox, Cisco Webex) for stealthy C&C and data exfiltration, bypassing traditional detection mechanisms.
+  - Deployment of kernel-mode rootkits bypassing Windows Driver Signature Enforcement (DSE).
+  - Sophisticated payload injection into system processes and protection against scanning and disabling.
+  - Use of trusted internal communication mechanisms such as DFSR for malware deployment and exfiltration.
+- The use of new and unknown backdoor variants (e.g., DOWNBEGIN) that leverage modern collaboration tools for command and control, posing novel security challenges.
+- Theft of credentials like RDP tokens, increasing the risk of further lateral movement inside the network.
+- The attacker’s capability to customize and adapt malware arsenals depending on the victim environment makes static defense ineffective.
+
+---
+
+This presentation underscores the increasing complexity of APT operations, emphasizing the need for continuous monitoring, behavioral analysis, and strict endpoint and network security policies to defend against advanced threats like Earth Kurma.

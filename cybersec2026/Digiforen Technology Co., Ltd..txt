@@ -1,0 +1,82 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+**You Have How Many in Your Pocket?**  
+*From Chip Cards to Game Consoles: A Technical Account of Side-Channel and Fault Injection Attacks Breaking the Black Market*
+
+---
+
+## Author/Presenter
+**Gary Lin (林高裕)**  
+Chief Operating Officer (COO) at Digiforen Technology  
+- Ph.D. in Information Engineering, National Taiwan University of Science and Technology (NTUST)  
+- Professional certifications include CEH, SCA/FI Essential, Common Criteria Evaluator, ISO/IEC 17025 Laboratory Supervisor, PMP, ITIL Foundation, MCSE, MCP, OCP, OCA, CCNA  
+- Research fields: product security evaluation and certification, security framework construction, network threat intelligence analysis, AI resilience and robustness  
+
+---
+
+## Key Points
+
+### 1. Overview of Chip Security Attacks  
+- Side-Channel Attacks (SCA) and Fault Injection Attacks (FIA) are powerful physical attack vectors on semiconductor devices.  
+- SCAs exploit physical information leakage (e.g., power consumption, electromagnetic radiation, timing differences, acoustic signals) to extract cryptographic keys without breaking the mathematical algorithms.  
+- FIAs actively induce faults by manipulating power, clock, electromagnetic fields, or lasers to cause chips to malfunction and bypass security controls.  
+
+### 2. Evolution of Chip Security  
+- Security started with early smart cards in the 1980s, evolving through side-channel attack research in the 1990s, and moving towards standardized certification frameworks in the 2000s such as Common Criteria and FIPS.  
+- Recent challenges include Meltdown/Spectre microarchitecture bugs, hardware trojans, and mass IoT deployment vulnerabilities. Rising trends also involve AI-assisted analysis and quantum-resistant hardware security.  
+- General-purpose chips like MCUs, FPGAs, and ASICs now incorporate high-level security protections originally pioneered in smart cards.  
+
+### 3. Game Console Hacking and Modding  
+- Three main forms of modification: Software Mod (e.g., firmware hacks, remotely patchable), Interposer/Dongle Mod (injecting signals at interface ports), and Hardware Mod (soldered modchips bypassing Boot ROM protections, unpatchable).  
+- Detailed case study on the Xbox One “Bliss” attack that breaks the unpatchable Boot ROM via a dual voltage glitch method, enabling full control and unauthorized code execution.  
+- A thriving ecosystem supports hacking from research, automation tools, manufacturing of modchips, to black-market trade for game console circumvention.  
+
+### 4. Implications for the Industry and Society  
+- Physical attacks on chips threaten a wide range of sectors, including transportation (e.g., fare card forgery), access control, IoT device security, hardware 2FA keys, game consoles, critical infrastructure, defense, and government agencies.  
+- The hardware security model must adopt comprehensive certification (e.g., SESIP, PSA, CC) and lab testing to prevent catastrophic exploits.
+
+### 5. Defensive Strategies  
+- Hardware-level countermeasures include masking random noise in computations, timing randomization, dual-rail logic to equalize power consumption, and hardware obfuscation to complicate reverse engineering.  
+- Defenses must be designed proactively into chips as software patches cannot fix physical design vulnerabilities.  
+- Taiwan has active collaborative efforts involving certification bodies and labs to promote chip security certifications under international standards.  
+
+---
+
+## Important Conclusions and Insights  
+- Even the most secure cryptographic algorithms (like AES-256) can be rapidly compromised by side-channel and fault injection attacks if the physical chip lacks proper protections.  
+- Once hardware flaws are exploited, attacks can be silent, undetectable, and unpatchable (especially when targeting Boot ROM and silicon-layer protections).  
+- The economics of attacks shift drastically: research and tooling might be costly upfront, but once vulnerabilities are found, exploits can be replicated cheaply and widely.  
+- AI technologies accelerate side-channel data analysis and fault injection tuning, raising the urgency for robust defensive countermeasures.  
+- Security is not absolute; the goal is to raise attack costs so high that attackers are discouraged. Every implemented masking, voltage sensor, and security assessment elevates this cost barrier.  
+- The collaboration between industry players, certification bodies, and testing labs is critical to establishing verifiable and resilient hardware security ecosystems.
+
+---
+
+## Technical and Other Problems Emphasized in the Presentation
+
+1. **Physical Attack Risks**  
+   - Side-channel leakages such as power consumption, electromagnetic emissions, timing variations, and acoustic signals provide attackers with exploitable information.  
+   - Fault injection methods, like voltage glitching and laser fault induction, can induce targeted faults bypassing cryptographic checks and boot protections.  
+   - These attacks are challenging to detect and impossible to patch via software once silicon is fabricated.
+
+2. **Unpatchable Hardware Vulnerabilities**  
+   - Vulnerabilities in Boot ROM and silicon hardware layers lead to permanent exploitation risks, as those parts cannot be updated post-manufacture.
+
+3. **Low Barrier for Attack Replication**  
+   - Despite high initial research costs and equipment needs, the mass replication cost for exploits is extremely low, facilitating widespread black-market hardware hacking (e.g., modchips for game consoles).
+
+4. **Security Certification Limitations**  
+   - Common certifications like FIPS 140-2/3 focus on algorithm correctness, key management, and firmware integrity but do not cover physical side-channel or fault injection attack countermeasures comprehensively.
+
+5. **IoT and Embedded Device Insecurity**  
+   - Many IoT chips and embedded MCUs have weak or no hardware security protections, leading to high risks of key extraction and device compromise.
+
+6. **Supply Chain Risks and Hardware Trojans**  
+   - Malicious implants and faults introduced during hardware manufacturing or supply chain processes can cause failures or spying, with no software-level detection possible.
+
+---
+
+*This summary captures the detailed technical depth and practical impact scenarios discussed in Gary Lin's presentation at CYBERSEC 2026 Taiwan Cybersecurity Conference.*

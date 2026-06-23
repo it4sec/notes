@@ -1,0 +1,100 @@
+# Summary of the Presentation
+
+---
+
+## Title
+
+Containment, Zero Trust and the Security Graph - the path to Anti-Fragility
+
+---
+
+## Authors/Presenters
+
+- Maj. General (Ret.) Viet Luong, Vietnamese Refugee, USC Graduate, 173rd Airborne, 82nd Airborne, 101st Airborne, Deputy Commanding General Eighth Army US Forces Korea, Commander US Army Japan, Entrepreneur and Veterans Advocate.
+- Source reference to Forrester report by John Kindervag on Zero Trust Model of Information Security.
+
+---
+
+## Key Points
+
+### Zero Trust Overview
+
+- Zero Trust is a strategy designed to stop data breaches and prevent cyber-attacks by eliminating trust from digital systems.
+- Emphasizes knowing: 
+  1. Who the President (critical asset) is,
+  2. Where the President is,
+  3. Who should have access to the President.
+- Shifts from perimeter-based protection to micro-perimeters and protect surfaces with controls and monitoring.
+
+### Technical Foundations
+
+- Euler Graph Theory (Seven Bridges of Königsberg Problem) is referenced as an analogy for non-linear relationships in security.
+- The "First Hit Rule Policy" in traditional firewalls is highlighted as inefficient.
+- AI Security Graph offers security observability by creating non-linear rules and mapping dedicated resources (nodes), traffic flow (edges), with properties (labels).
+
+### Rule Writing and Policy Creation
+
+- Introduces "Kipling Method of Zero Trust Rule Writing," focusing on Who, What, When, Where, Why, and How.
+- Example rule based on identity, application validation, timing, workload location, etc.
+- Emphasis on simplicity and focusing on the main point rather than overcomplicated defenses (quote from Frederick the Great).
+
+### Military Analogies & Insights from Maj. General Viet Luong
+
+- Use of military concepts like terrain, influence terrain, impact terrain, high ground, and bounded areas.
+- Gen. Luong's favorite weapon and historic military maps emphasize strategic defense in depth and controlling blast radius.
+
+### Zero Trust Deployment Methodology (5 Steps)
+
+1. Define the protect surface
+2. Map the transaction flows
+3. Architect a Zero Trust environment
+4. Create Zero Trust policy
+5. Monitor and maintain
+
+- Tailored, "antifragile" approach.
+
+### Antifragility Concept
+
+- Inspired by Nassim Nicholas Taleb: 
+  - Beyond resilience or robustness,
+  - Resilience resists shocks, antifragile improves from them.
+- General Adaptation Syndrome analogy showing growth stronger after stress.
+
+### Containing Blast Radius & Segmentation
+
+- Segmentation rationale and enforcement emphasized.
+- Highlights that all breaches or bad things occur inside "ALLOW" rules.
+- Protection through micro-perimeters, segmentation gateways, and command and control.
+
+### Zero Trust Learning Curve
+
+- Protect surface sensitivity/criticality increases with time on the Zero Trust journey.
+- Identified tiers from Learning to Crown Jewels to Tertiary assets.
+
+---
+
+## Important Conclusions and Insights
+
+- Zero Trust represents a paradigm shift from traditional perimeter security to treating every asset as potentially vulnerable and removing implicit trust.
+- Security Graphs and AI-driven dynamic mapping allow improved observability and enforcement.
+- The military and graph theory analogies provide intuitive ways to understand network segmentation, control, and antifragility.
+- Antifragility as a security goal drives continuous improvement and adaptation after attacks or stress.
+- Proper segmentation and limiting blast radius inside an environment are critical to prevent lateral movement of threats.
+- Effective Zero Trust requires continuous learning, policy adaptation, and tailored deployment to organizational priorities.
+
+---
+
+## Technical or Other Problems Emphasized
+
+- Traditional firewall rules operate by "First Match Wins" which can cause security gaps.
+- Cybersecurity perimeter defenses alone no longer suffice; attackers breach perimeters easily.
+- "Soft chewy centers" in network architectures provide vulnerabilities exploited by attackers.
+- Segmentation enforcement is complex and often weak, yet critical as all attacks happen inside "ALLOW" rules.
+- Learning curve challenges organizations face to identify and protect their most critical assets ("crown jewels").
+- Difficulty in creating non-linear, context-aware rules that adapt dynamically instead of static policies.
+- Need for new tools like the AI Security Graph to understand and control resource relationships effectively.
+- Maintaining and monitoring Zero Trust environments require continuous effort and adaptation.
+
+---
+
+This presentation strongly advocates for adopting Zero Trust architectures grounded in advanced AI-driven graph models, supported by military strategic thinking and adopting antifragility principles to improve cybersecurity postures in the modern threat landscape.

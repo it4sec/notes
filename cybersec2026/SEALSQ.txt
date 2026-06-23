@@ -1,0 +1,81 @@
+# Summary of Presentation: "Accelerating into the Quantum Era"
+
+### Title
+Accelerating into the Quantum Era: Quantum Era Risks to AI, IoT, and Cryptocurrencies & Trust Rebuilding with SEALSQ
+
+### Authors/Presenters
+SK Chen  
+Sales Director, Taiwan/China  
+Presentation Date: May 7, 2026  
+
+---
+
+### Key Points
+
+- **Quantum Fundamentals: From Concept to Reality**  
+  - Three major quantum properties: Superposition, Entanglement, and Measurement  
+  - Quantum computers are based on quantum physics phenomena, not simply “faster supercomputers”  
+  - Quantum computing applications include drug discovery, materials simulation, financial modeling  
+  - Computing units are Qubits, operating in extreme low temperature environments  
+  - Leading quantum processors in 2026: Google Willow (105 Qubits, superconducting), IBM Heron/Condor (156/1121 Qubits, tunable superconducting), Microsoft Majorana 1 (8 Qubits, topological)  
+  - Breakthroughs in quantum chip manufacturing and packaging methods  
+
+- **PQC (Post-Quantum Cryptography): Crypto Revolution in the Quantum Era**  
+  - PQC is designed to resist attacks from quantum computers  
+  - Shor’s algorithm threatens traditional asymmetric cryptography (RSA, ECC, etc.)  
+  - Grover’s algorithm threatens symmetric encryption (AES, SHA) by reducing effective key length  
+  - NIST standardized PQC algorithms (Kyber and Dilithium specifically highlighted)  
+  - Comparison of hardware PQC vs. software PQC in terms of security, performance, key management, attack resistance, cost, and application scenarios  
+
+- **Quantum Threats to AI, IoT, and Cryptocurrencies**  
+  - Accelerated hacking attacks using AI (Anthropic Claude AI) employing role-playing to bypass security at low cost  
+  - Autonomous AI attacking and exploiting quantum-era vulnerabilities (AI Myhtos example)  
+  - Risks posed by quantum-enabled exploitation of cryptographic methods in blockchain, DeFi, and secure transactions  
+  - US regulatory efforts such as Stablecoin Act promote global compliance for financial security based on stablecoins  
+  - Blockchain market projected growth and associated risks due to quantum computing advances shortening security life cycles  
+
+- **Global and Taiwan Strategic Responses**  
+  - Major countries’ action timelines for PQC adoption; U.S., China, Japan, and Europe actively preparing governmental and industry standards by 2030-2035  
+  - Taiwan’s strategy includes national PQC roadmap, R&D strengthening, regulatory framework, talent investment, and establishing testing capabilities  
+  - Emphasis on transitioning from centralized to distributed trust structures for IoT security leveraging PQC  
+
+---
+
+### Important Conclusions and Insights
+
+- Quantum computing presents a profound challenge to existing cryptographic infrastructures, necessitating immediate transition to PQC to maintain security in AI, IoT, and blockchain ecosystems.  
+- AI-powered attacks involving advanced conversational AI agents are already emerging, creating high-risk security scenarios that combine quantum computing threats with AI sophistication.  
+- Hardware-based PQC solutions offer substantial advantages over software solutions in terms of security, performance, and cost-efficiency in high-risk environments such as AI computing, 5G CPE, IoT devices, and autonomous vehicles.  
+- Global coordination and rapid implementation of PQC standards are critical, making early adoption and preparedness a decisive factor in national cybersecurity readiness. Taiwan aims to take proactive steps through legislation, industry collaboration, and education.  
+- Continuous simulation, red team exercises, and integration of quantum-safe hardware will be key methods to ensure infrastructures remain secure amid evolving threats.  
+
+---
+
+### Technical and Other Problems Highlighted
+
+- **AI-Driven Attacks Accelerated by Quantum and Role-Playing Techniques**  
+  - Use of AI agents for reconnaissance and exploitation with high automation (80-90% AI autonomous attack completion) drastically reduces human labor and scaling attack feasibility.  
+  - Role-playing deception methods undermine traditional identification and classification of threat actors.  
+
+- **Quantum Computational Limitations in Current Cryptosystems**  
+  - Shor’s algorithm effectively breaks RSA, ECC, Diffie-Hellman keys jeopardizing secure web, banking transactions, and digital signatures.  
+  - Grover’s algorithm weakens symmetric encryption key strengths requiring doubled key sizes to maintain security.  
+
+- **Challenges in Hardware PQC Implementation**  
+  - Need for physically secure environments to prevent side-channel attacks and key extraction even at hardware level.  
+  - Difficulties in kernel/driver/library vulnerabilities needed to be resolved for comprehensive protection.  
+
+- **Risk of Early Exposure and Transition Delay**  
+  - Financial sectors face "Q-Day" risk — major collapse due to quantum decryption of cryptographic secrets if transition to PQC is delayed.  
+  - Existing traditional cryptographic protections cannot withstand quantum attacks, requiring swift migration to seamless, flexible encryption frameworks.  
+
+- **IoT Security Risks**  
+  - IoT’s extensive, long lifecycle devices are vulnerable to quantum-enabled breaches due to their inability to be easily updated or replaced.  
+  - Identity authentication, device integrity, and decentralized trust need quantum-resistant solutions to avoid botnet formation and widespread compromise.  
+
+- **Global Regulatory and Policy Challenges**  
+  - Need for clear, enforceable standards and global cooperation in PQC adoption and infrastructure upgrades involving governments, enterprises, and technology providers.  
+
+---
+
+This presentation emphasizes how the combination of quantum computing and AI advances creates both immense opportunities and unprecedented cybersecurity threats. Proactive adoption of PQC, hardware-based security, and global strategic collaboration are essential to secure the digital future.

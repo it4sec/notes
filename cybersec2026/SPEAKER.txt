@@ -1,0 +1,102 @@
+# Summary of Presentation on Post-Quantum Cryptography (PQC)
+
+---
+
+## Title
+**Post-Quantum Cryptography: The Digital Shield Protecting Future Information Security**
+
+## Authors/Presenters
+- Presented by 林邦曄 (Lin Bang-Ye), Chunghwa Telecom
+
+## Key Points
+
+1. **Introduction to Post-Quantum Cryptography (PQC)**
+   - Traditional cryptography is vulnerable to quantum computer attacks.
+   - Quantum computers can explore all paths simultaneously, breaking current encryption like RSA and ECC.
+   - PQC develops new algorithms resistant to quantum computing threats.
+
+2. **Q-Day: The Arrival of Quantum Decryption**
+   - Quantum computing capabilities are progressing quickly; Google researchers estimate breaking RSA 2048 could require as low as 1 million qubits around 2025.
+   - Urges the need to find replacement algorithms and upgrade systems before quantum computers mature.
+
+3. **Why Act Now?**
+   - Hackers may currently steal and store encrypted data, to decrypt once quantum technology matures.
+   - Existing systems take years to transition; for example, transitioning from SHA-1 to SHA-2 took 10 years.
+   - Legacy systems and IoT devices pose upgrade challenges.
+   - Early action is necessary to avoid irreversible security breaches.
+
+4. **Types of PQC Algorithms**
+   - Lattice-based cryptography: main choice, fast and moderate key sizes.
+   - Hash-based cryptography: mature and secure, but slower signatures and longer signatures.
+   - Code-based cryptography: oldest, very high security, but very large public keys.
+   - Multivariate cryptography: very short signatures but some algorithms have weaknesses.
+   - NIST started selecting PQC algorithms in 2016, with several recommended in 2022.
+
+5. **NIST PQC Standards Published**
+   - August 2024: Released initial standards for lattice-based encryption and signature algorithms and hash-based backup.
+   - Ongoing competitions for short signature algorithms suitable for bandwidth-limited environments.
+   - HQC introduced as a backup encryption method.
+
+6. **Challenges in PQC Migration**
+   - PQC signatures and keys are larger, causing bandwidth and latency problems.
+   - Legacy systems are limited by older programming languages and environments.
+   - PQC hardware security components are not yet widespread.
+   - PQC standards are still evolving; premature hardware implementation may pose risks.
+
+7. **Case Study 1: Vehicular Networks (V2X)**
+   - V2X packets have strict size limits (~1400 bytes).
+   - PQC certificates and signatures tend to exceed these limits.
+   - Hybrid approaches using PQC-signed credentials but traditional ECDSA signatures on packets are used.
+   - Shortened certificate validity periods mitigate risks from weaker legacy algorithms.
+   - Efforts to increase packet size limits (from 1400 to 4200 bytes) underway.
+   - Chunghwa Telecom implemented hybrid PQC/ECDSA in vehicular client electronics.
+
+8. **Case Study 2: TLS Certificates**
+   - TLS protocols are starting to support PQC algorithms (e.g., Chrome browser).
+   - PQC causes significant data size increases in certificates and handshake data.
+   - Merkle Tree Certificates (MTC) introduced to reduce the overhead by signing certificate trees rather than individual certificates.
+   - Google and Cloudflare are testing and deploying PQC with MTC from 2023 to 2027.
+   - Challenges such as synchronization delays, compatibility, and fragmented standards are addressed through automation and industry collaboration.
+
+## Important Conclusions and Insights
+
+- Migration to PQC is a marathon, not a sprint.
+- A layered and hybrid approach to upgrade cryptographic infrastructure is required.
+- Systems should prioritize upgrading long-term credentials first while shortening lifespans of short-term signatures.
+- Structural improvements such as MTC can offset PQC data size inflation.
+- Adjustments at the transport layer and protocols (e.g., packet size limit increase) are needed.
+- Ongoing collaboration among industry groups and standard bodies is critical for smooth migration.
+- Early preparation is essential given the complexity, scale, and security stakes.
+
+---
+
+## Technical and Other Challenges Highlighted
+
+- **Performance Bottlenecks:**
+  - Larger key and signature sizes of PQC algorithms impact bandwidth and processing times.
+  - Especially problematic in bandwidth-constrained environments like IoT and vehicular networks.
+
+- **Legacy System Compatibility:**
+  - Older systems and programming environments complicate the deployment of new PQC algorithms.
+  - Hardware support and security elements are currently scarce.
+
+- **Standards Evolution:**
+  - NIST and other bodies are still finalizing and vetting PQC standards.
+  - Premature commitment to hardware implementations may risk future changes.
+
+- **Vehicular Network Constraints:**
+  - Packet size restrictions limit the possibility of using full PQC for signatures.
+  - Hybrid models are a practical short- to medium-term solution.
+
+- **TLS and Certificate Size Inflation:**
+  - PQC dramatically increases certificate sizes and handshake data.
+  - Merkle Tree Certificates (MTC) mitigate this but introduce complexity in synchronization and support.
+  - Legacy hardware incompatibility and inconsistent browser support present challenges.
+
+- **Security Risks During Transition:**
+  - Hybrid modes carry risks related to coexistence with vulnerable classical algorithms.
+  - Shortening certificate lifetimes and frequent renewals are mitigation tactics.
+
+---
+
+This presentation offers a comprehensive view on the urgent need to adopt post-quantum cryptographic techniques, outlining the current NIST standards, practical migration examples, and technical hurdles, particularly focusing on vehicular network and TLS certificate ecosystems. It stresses early and layered migration strategies, structural optimizations, and collaboration to ensure secure and efficient transitions to quantum-resilient security.

@@ -1,0 +1,112 @@
+# Summary of "The 24h Challenge"
+
+## Title
+The 24h Challenge: Focus on CRA & Introduce Runtime Protection
+
+## Authors/Presenters
+Lief Tang (唐稚筌) - Lead Solutions Engineer, Exein | APAC
+
+---
+
+## Key Points
+
+- **Cyber Resilience Act (CRA) Overview**:
+  - First horizontal EU cybersecurity regulation addressing all products with digital elements.
+  - Effective from 10 December 2024.
+  - Applies to manufacturers, importers, and distributors of digital element products in the EU market.
+  - Penalties include up to EUR 15 million or 2.5% of worldwide annual turnover.
+  
+- **Compliance Milestones**:
+  - 10 Dec 2024: CRA came into force.
+  - 11 Jun 2026: Conformity assessment body notification due.
+  - 11 Sep 2026: Reporting obligations under Article 14 begin, applying to ALL existing products on the EU market.
+  - 11 Dec 2027: Full CRA compliance mandatory.
+
+- **Product Classification**:
+  - Categories range from Default (~90%) to Critical.
+  - Compliance assessment requirements vary: self-assessment, third-party assessment, or notified body depending on risk level.
+
+- **Manufacturer Obligations (Article 13 + Annex I)**:
+  - Identify and document vulnerabilities and component dependencies (including SBOM).
+  - Coordinate vulnerability disclosure policy.
+  - Provide timely remediation and secure update distribution.
+  - Publicly disclose fixed vulnerabilities.
+  - Support products with updates for at least 5 years.
+  
+- **Challenges in 24h Reporting**:
+  - Requirement to report exploited vulnerabilities within 24 hours (Article 14).
+  - Challenges include lack of accurate SBOMs, fragmented device fleets, manual reporting bottlenecks, blind spots in third-party components, and absence of runtime visibility.
+  - Manual triage of CVEs takes days, not meeting the 24h requirement.
+
+- **Runtime Security as a Solution**:
+  - Essential for detecting active exploits on deployed devices in real time.
+  - Automates alert triage and reporting workflows.
+  - Provides evidence and allows virtual patching within minutes.
+  - Supports continuous compliance, not just periodic audits.
+
+- **Exein Solutions**:
+  - **Exein Analyzer**: For pre-market compliance, generates SBOMs, scans CVEs, analyzes vulnerability reachability without needing source code.
+  - **Exein Runtime**: On-device monitoring, behavioral anomaly detection, policy enforcement, continuous security assessment, and evidence generation.
+  - Combo facilitates full lifecycle CRA compliance from firmware analysis to runtime protection.
+
+- **Automated 24h Workflow**:
+  - Detect → Triage → Mitigate → Report within 24 hours using combined Analyzer and Runtime data.
+  - Example scenario: CVE published at 2AM; full reporting completed with 17 hours to spare.
+
+- **Compliance Evidence Documentation**:
+  - SBOMs, CVE scan reports, incident logs, timestamped submission records, and continuous monitoring reports.
+  - Compliance requires ongoing evidence, not a one-time certification.
+
+- **Cost and Risks of Non-Compliance**:
+  - Market access risk (withdrawal from EU market, corrective actions).
+  - Financial penalties up to €15 million or 2.5% annual turnover.
+  - CRA compliance as a competitive advantage, especially for APAC manufacturers targeting Europe.
+
+- **Practical Advice**:
+  - Reporting obligations start in 4 months (Sep 2026).
+  - Must automate workflows; manual triage reporting is insufficient.
+  - Start with what you have (SBOM + runtime monitoring).
+  - Runtime monitoring is required for compliance and zero-day detection.
+  - Utilize platforms that ship with SBOMs validated by tools like Exein Analyzer.
+
+---
+
+## Important Conclusions and Insights
+
+- The CRA represents a groundbreaking shift in EU cybersecurity regulation by mandating swift vulnerability reporting and continuous security evidence maintenance.
+- Manual methods for vulnerability triage and reporting cannot meet the demanding 24-hour window, especially with complex embedded/IOT device ecosystems.
+- Runtime security solutions paired with modern firmware analysis tools are essential to achieve compliance and maintain security post-market.
+- The CRA enforcement will intensify starting September 2026, affecting all products currently on the EU market.
+- There is significant risk in non-compliance including financial penalties, product withdrawal, and brand damage.
+- Early adoption and automation of CRA-required security workflows offer a market opportunity to differentiate and secure enterprise customers.
+
+---
+
+## Problems Emphasized in the Presentation
+
+- **Complexity in Vulnerability Management**:
+  - Difficulty in tracking hundreds of open-source components within embedded firmware.
+  - Gaps in Software Bill of Materials (SBOM) completeness and accuracy.
+  - Deep transitive dependencies of third-party components that manufacturers must monitor.
+
+- **Fragmented Device Fleets**:
+  - Multiple firmware versions across thousands of deployed devices complicate impact assessment and remediation.
+
+- **Manual Processes and Lack of Automation**:
+  - Vulnerability reporting is often slow and bureaucratic.
+  - Lack of automated workflows compromises the ability to meet the 24-hour reporting obligation.
+
+- **Lack of Runtime Visibility**:
+  - No real-time detection of exploitation attempts on devices leads to reliance on external sources for vulnerability awareness.
+  - Without runtime monitoring, recognition of exploitation events is reactive, not proactive, which is non-compliant.
+
+- **Insufficient Evidence for Compliance**:
+  - Compliance requires continuous evidence, which traditional periodic audits cannot provide.
+  - Incident and vulnerability evidence must be automatically generated and documented.
+
+- **Liability on Integrators for Third-Party Components**:
+  - Manufacturers must exercise due diligence on third-party software components, including verifying security and reporting upstream vulnerabilities.
+
+---
+
+This presentation strongly advocates for combining static firmware analysis with real-time runtime protection to meet the Cyber Resilience Act obligations efficiently and effectively.

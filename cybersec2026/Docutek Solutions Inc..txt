@@ -1,0 +1,97 @@
+# Summary of Presentation PDF
+
+---
+
+## Title  
+**Using AI to Counter AI: Understanding Code Context and Reducing Risks of AI-Generated Code**  
+(CYBERSEC 2026 / Application Security)
+
+---
+
+## Authors/Presenters  
+- Lambert Lin (林皇興)  
+- Vice President / CISSP at Docutek Solutions, Inc. (達友科技)  
+
+---
+
+## Key Points
+
+- **Use of AI and LLMs in Software Development**  
+  AI and large language models (LLMs) are increasingly employed to assist software development, including code generation and source code scanning.
+
+- **Security and Compliance Requirements**  
+  Ensuring AI-generated code is secure and meets compliance is crucial, including immediate code analysis to detect vulnerabilities and avoid open-source license violations.
+
+- **Challenges with AI/LLM Scanning**  
+  AI models introduce uncertainty and inconsistency when scanning the same code multiple times, leading to potential confusion for security teams and auditors.
+
+- **Strengths and Limitations of AI in Vulnerability Detection**  
+  AI can help detect common vulnerabilities such as CWE-787 (Out of Bounds Write), CWE-79 (Cross Site Scripting), CWE-416 (Use After Free), and others, but struggles with complex vulnerabilities.
+
+- **Risks of AI-Generated Code**  
+  - AI models often train on open-source code with known vulnerabilities, raising risks of producing flawed or insecure code.  
+  - AI "hallucinations" can generate inaccurate or misleading outputs.  
+  - Risk of inadvertently including code snippets that violate open-source software (OSS) licenses, posing intellectual property (IP) compliance risk.
+
+- **Open Source Software Compliance**  
+  - OSS is not always free; it comes with license requirements.  
+  - LLMs are trained on millions of OSS repositories with various licenses, increasing the risk of license violations in generated code.  
+  - Tools like Black Duck SCA Snippet Analysis can detect and flag source code snippets potentially violating OSS license terms.
+
+- **AI-Assisted Vulnerability Remediation**  
+  - AI combined with Static Application Security Testing (SAST) can explain found vulnerabilities and suggest copy-paste code patches, helping developers reduce time and ease fixing issues.  
+  - Visualized explanations show vulnerability root cause and data flow for better understanding.
+
+- **Risks in Integrating LLMs and AI Models in Applications**  
+  - OWASP LLM Top 10 risks (2025) include sensitivity disclosures, prompt injections, supply chain and data poisoning, improper output handling, misinformation, excessive consumption, and more.  
+  - Specific mitigations include classifying LLM trust levels, validating and sanitizing LLM outputs akin to user inputs, and ensuring proper vulnerability management for LLMs.
+
+- **Supply Chain and Integrity of AI/ML Models**  
+  - Ensure AI models come from trusted sources and haven’t been tampered with.  
+  - Monitor third-party component and Software Bill of Materials (SBOM) for threat intelligence on AI/ML models.  
+  - Alerts for major changes in AI model datasets help maintain trustworthiness.
+
+- **Black Duck Signal Tool**  
+  - A newly introduced, AI-powered application security tool specialized for AI-enabled software development.  
+  - Features agentic workflows using LLMs and AI agents for code analysis, issue triage, fix suggestions, and validation without language dependency or pre-built rule sets.  
+  - Uses natural language interaction, deep cross-file data flow analysis, and mimics human-like thinking to find issues traditional SAST misses.
+
+---
+
+## Important Conclusions and Insights
+
+- AI and LLMs provide promising potential to speed up secure software development, automate vulnerability detection, and assist remediation but are still insufficient to fully handle complex vulnerabilities without human oversight.
+
+- AI-generated code carries inherent risks from model training data, possible license violations, and hallucinations that must be actively managed through compliance and security tooling.
+
+- Proper integration and handling of LLM outputs within applications is essential to prevent vulnerabilities caused by improper output processing.
+
+- Supply chain security must extend to AI/ML components, requiring provenance verification, change monitoring, and trustworthy data sources.
+
+- Commercial tools combining static analysis, AI-driven explanations, and multi-agent workflows represent the next evolution in application security tailored for AI-augmented environments.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Inconsistent Scanning Results**: LLMs can produce different vulnerability scan outcomes for the same source code across multiple runs, complicating tracking and auditing.
+
+- **Hallucinations by AI**: Generative models may fabricate unfounded code suggestions or explanations, risking the introduction of vulnerabilities or misinformation.
+
+- **Complex Vulnerability Detection Limits**: AI models can detect straightforward vulnerabilities but struggle with more sophisticated patterns.
+
+- **Open Source License Violations**: AI-generated code may inadvertently incorporate OSS code snippets with specific licenses, potentially breaching intellectual property terms.
+
+- **Sensitive Data Exposure**: LLMs might unintentionally disclose confidential or proprietary information via generated outputs.
+
+- **Prompt Injection Attacks**: Manipulating user input prompts can result in undesired or malicious model behavior.
+
+- **Supply Chain Attacks on AI Models**: Risks from tampering or poisoning of AI training data and models can degrade security and trustworthiness.
+
+- **Improper Output Handling**: Insufficient validation/sanitization of LLM output before use can lead to web attacks like XSS, CSRF, SSRF, remote code execution, and privilege escalation.
+
+- **Excessive Resource Consumption**: Uncontrolled use of LLMs can cause denial of service and economic impacts on cloud infrastructure.
+
+---
+
+This comprehensive overview provides actionable understanding for software developers, security professionals, and decision-makers aiming to safely leverage AI and LLM technology in secure application development.

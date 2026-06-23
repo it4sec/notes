@@ -1,0 +1,86 @@
+# CYBERSEC 2026: RED × BLUE × AI Security
+
+### Presenter:
+- Cheng-Lin Yang, PhD  
+  Director of Data Science · CyCraft Technology
+
+---
+
+## Key Points
+
+### 1. The Illusion of AI Security
+- Passing simple tests or installing traditional filters **does not equal** true AI security.
+- Overconfidence from static or superficial testing methods creates a false sense of safety.
+- Attackers use multi-turn, novel, and context-aware attack strategies that bypass basic defenses.
+
+### 2. Red Team Perspective: Overlooked Attack Surfaces
+- AI adoption is booming, but attack surfaces are expanding visibly and dangerously.
+- 73% of enterprises faced at least one AI security incident recently.
+- Common attack vectors include prompt injections, with the banking sector especially targeted.
+- Four primary security weaknesses in Large Language Model (LLM) deployments:
+  - Multilingual security gaps: safety tuning often focuses on English, leaving other languages vulnerable.
+  - Multi-turn dialogue attacks: multi-turn jailbreaks succeed up to 70% compared to ~7% for single-turn.
+  - RAG (Retrieval-Augmented Generation) vulnerabilities: Poisoned documents in knowledge bases can yield >90% attack success.
+  - Reasoning traps: More advanced reasoning models can be exploited to bypass safeguards.
+
+### 3. Traditional Testing is Ineffective
+- Compliance checklists and static questionnaires are outdated, focusing on fixed "archived" questions.
+- Attackers use automated, adaptive, multi-round testing techniques that outpace defenders.
+- Red teaming must evolve to dynamic, context-aware, multilingual, and continuous evaluation.
+
+### 4. Blue Team Perspective: Reconstructing AI Defense
+- Traditional keyword or blacklist filters fail against semantic, context-aware AI attacks.
+- Next-gen defenses must understand system prompts and the application's semantic context.
+- Defense should be multilingual and support customizable policies.
+- Defense strategies include layered guardrails focusing on input filtering, output filtering, and tool call monitoring (agentic behavior).
+
+### 5. Shadow AI Governance
+- Enterprises often fail to detect internally deployed unauthorized AI agents ("Shadow AI").
+- Continuous discovery, detection, and disruption processes are necessary to manage hidden AI assets.
+
+### 6. Benchmarking Defense Solutions
+- State-of-the-art context-aware guardrails scored ~90 on defense effectiveness in tests.
+- Many commercial and open-source guards scored poorly, especially in non-English scenarios.
+- Prompt extraction and multilingual capabilities remain weak points broadly.
+
+### 7. Lifecycle Approach to AI Security
+- AI security must be embedded across the entire lifecycle:
+  - **Build:** Prompt design and management.
+  - **Test:** Automated, multilingual red team testing.
+  - **Run:** Real-time layered guardrails and agent monitoring.
+  - **Audit:** Continuous compliance and risk tracing with explainable forensics.
+
+### 8. Integrating Red Team, Blue Team, and Audit
+- A triad framework drives continuous adversarial testing, contextual defense, and auditing.
+- This approach ensures security evolves alongside attackers instead of relying on static one-time compliance.
+
+---
+
+## Important Conclusions and Insights
+
+- **Testing alone is not defense** — adversaries are dynamic, adaptive, and exploit overlooked gaps.
+- Security requires understanding **context, semantics, and multi-language factors** rather than merely filtering keywords.
+- Enterprises must adopt **continuous red-teaming paired with sophisticated blue team guardrails** and comprehensive audit trails.
+- The threat landscape is rapidly evolving with sophisticated AI-enabled attackers. Organizations need to evolve into **adaptive, lifecycle-integrated security operations**.
+- Ignoring "Shadow AI" and internal unauthorized usage introduces substantial unseen risks.
+- **Multilingual and multi-turn attack scenarios** represent critical blind spots in most enterprise AI security postures.
+- Open source and commercial guardrail solutions vary significantly in efficacy.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Static, single-turn, English-centric testing frameworks** are ineffective against real-world, multi-turn, multilingual attacks.
+- Reliance on **keyword-based content filtering** cannot defend against semantic, contextual, or role-play-based prompt injections.
+- **Retrieval-Augmented Generation (RAG)** architectures introduce new attack vectors through poisoned document insertion.
+- Advanced reasoning models can be **manipulated via chaining logic** to evade safeguards.
+- Many existing AI guardrails show **poor performance in prompt extraction** leading to easy leakage of system prompts and sensitive information.
+- **Lack of contextual, multilingual alignment** leads to large security disparities, especially in East Asian languages and low-resource languages.
+- Enterprises are frequently unaware of the **number and behavior of internal AI agents (Shadow AI)**, creating hidden vulnerabilities.
+- The AI security industry needs more **automated, adaptive testing tools** capable of simulating attacker strategies dynamically.
+- The **defense must integrate input/output inspection with agentic tool call control** to cover all attack surfaces.
+- There is an urgent need for continuous audit and traceability mechanisms to enable accountability and compliance.
+
+---
+
+This presentation advocates for a holistic, multi-faceted approach to AI security that moves beyond outdated compliance checklists and simplistic filters, embracing dynamic adversarial testing, sophisticated semantic guardrails, and lifecycle-integrated risk management to effectively counter the evolving AI threat landscape.

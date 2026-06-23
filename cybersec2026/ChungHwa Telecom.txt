@@ -1,0 +1,92 @@
+# Summary of Presentation
+
+## Title
+How to Become a Cybersecurity Personnel Who Is Not Disliked – A Guide for Workers to Protect Themselves Well
+
+## Author/Presenter
+Artsun Hsieh  
+Senior Engineer at ChungHwa Telecom  
+
+## Key Points
+
+- **Introduction & Disclaimer**  
+  The presentation shares personal opinions unrelated to the presenter's company’s actual business operations.
+
+- **About the Topic**  
+  How can cybersecurity personnel avoid being disliked? How to become a cybersecurity professional who is respected and not a burden within their organization?
+
+- **The Dilemma of Workers in Cybersecurity**  
+  Cybersecurity personnel are often caught in the middle between IT and organizational demands, facing continuous conflicts.
+
+- **The Biggest Risk in Cybersecurity is People**  
+  According to a diagram, personnel behavior accounts for 90% of the risk, while security governance, zero trust, devices, red/blue teams, penetration testing, vulnerability management, AI, etc., only account for 10%.
+
+- **The Softest Part of Cybersecurity**  
+  Cybersecurity workers often receive blame and carry “black pots” (unjust burdens) for issues.
+
+- **Facing Unrealistic Demands**  
+  Example demands like “upgrade devices before the end of the workday without service impact” expose challenges of inadequate resources (money, time, staff).
+
+- **How Workers Should Protect Themselves**  
+  Reasons for upgrades: reduce breach chances and comply with ISMS & ISO 27001 certification requirements. Risk identification and management must be documented.
+
+- **Avoiding Taking the Fall ("Back-Burning")**  
+  Risk assessments should confirm whether action is necessary, and risk treatment plans must be approved by relevant supervisors. Proper resource allocation is essential.
+
+- **The Ideal Worker (“Strongest Worker”)**  
+  A worker should be justifiable (meet their obligation to inform), reasonable (request resources accordingly), compliant (pass audits/certifications), and agreed upon (shift risk responsibilities appropriately).
+
+- **When Risk Inventory Is Not Just Homework**  
+  Risk inventory should align with actual operations and be realistic, evaluating assets, processes, and risks in a balanced way.
+
+- **Conflict Originates from Communication Gaps**  
+  Cybersecurity personnel issue regulation commands, while those “subject to cybersecurity” share responsibilities via risk management, highlighting the need for improved communication.
+
+- **Governance Should Be Like the Wind and Grass**  
+  The metaphor implies governance should be strong yet adaptable; steady like an unmoving tree and compliant like moss that listens to the wind.
+
+- **Dedication of the Presentation**  
+  To workers stressed by cybersecurity demands and cybersecurity staff who work hard but are not appreciated, hoping improved risk management makes cybersecurity more collaborative and less one-sided.
+
+- **Takeaway**  
+  When facing risks: workers should confront, identify, and manage risks; managers should accept residual risk.
+
+- **Contact Information**  
+  Provided for further questions.
+
+## Important Conclusions and Insights
+
+- The human element is the largest risk factor in cybersecurity management.
+- Cybersecurity personnel often bear unfair blame, requiring careful risk communication and shared responsibility.
+- Proper risk assessment and collaborative risk handling involving supervisors and stakeholders are crucial to prevent workers from being scapegoated or pressured unrealistically.
+- Resources must be granted adequately to manage cybersecurity risks effectively.
+- Governance should be resilient and adaptive rather than rigid and punitive.
+- Effective communication bridges the gap between cybersecurity mandates and operational realities.
+- Documentation and compliance to ISO 27001 and ISMS standards underpin responsible cybersecurity practices.
+
+---
+
+## Problems and Challenges Highlighted in the Presentation
+
+- **Misalignment of Expectations**  
+  Cybersecurity teams often face impossible deadlines and demands without sufficient resources, leading to conflicts and stress.
+
+- **Communication Breakdown**  
+  Insufficient communication between cybersecurity personnel and other employees results in misunderstandings and disputes over responsibilities.
+
+- **Blame and Accountability Issues**  
+  Cybersecurity professionals, especially frontline workers, frequently become the scapegoats for breaches or failures that are often systemic.
+
+- **Risk Inventory and Management Gaps**  
+  Risk assessments are sometimes treated as mere formalities ("homework") rather than practical, reality-based exercises.
+
+- **Resource Constraints**  
+  Lack of budget, time, and human resources limits effective security management and upgrades.
+
+- **One-way Security Enforcement**  
+  Cybersecurity is sometimes perceived as a unidirectional imposition rather than a cooperative process involving multiple stakeholders.
+
+- **Need for Better Governance Models**  
+  Organizations lack flexible, resilient approaches to cybersecurity governance that can adapt to challenges rather than relying on rigid rules.
+
+These problems highlight the need for balanced risk management, adequate resource allocation, improved communication, and shared responsibility to protect both cybersecurity interests and workers’ well-being.

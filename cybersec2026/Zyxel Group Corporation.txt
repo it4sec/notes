@@ -1,0 +1,77 @@
+# Summary of Presentation on CRA Compliance by Zyxel Group
+
+---
+
+## Title
+**CRA Compliance Immediate Capability (CRA合規即戰力)**  
+Product safety is becoming a global market trust threshold
+
+---
+
+## Authors/Presenters
+- Edward Yu (遊政卿), Head of Information Security, Capital Investment Holdings
+
+---
+
+## Key Points
+
+### 1. Overview of CRA and Market Importance (Slides 3-8)
+
+- **CRA** (Cyber Resilience Act) is a new European Union market regulation focusing on products with digital elements, including hardware, software, firmware, digital components, and remote maintenance/support capabilities.
+- Product safety can no longer rely on post-incident remedies; it must begin with design and lifecycle governance.
+- Compliance with CRA is a market entry requirement in 2026, emphasizing brand trust, global market access, and supply chain competitiveness.
+- Taiwan manufacturers should not treat CRA as a European-only regulation but recognize its importance in global business qualifications.
+- The true risks go beyond fines to include product delisting, recalls, channel disruptions, and customer order shifts.
+
+### 2. Core Abilities Required for 2026-2027 EU Market Stability (Slide 4)
+
+Three key capabilities define success:
+
+1. **Quick judgment and reporting** (2026 immediate capability) — PSIRT, reporting, SBOM (Software Bill of Materials)
+2. **Ability to scale compliance processes** (2027 scaling capability) — processes, evidence, supply chain
+3. **Sustained customer trust** — product portfolio, brand, long-term maintenance.
+
+### 3. CRA Governance and Compliance Roadmap (Slides 9-19)
+
+- Prioritize product governance by high risk and EU market impact.
+- Classification of products determines evaluation paths and depth.
+- CRA demands cross-department product governance processes involving roles such as product line management, R&D, PSIRT, QA/testing, procurement/supply chain, legal/compliance, and customer service.
+- Speed of vulnerability notification (24/72 hours) is critical, requiring adequate preparation.
+- SBOM must be accurate, maintainable, and queryable to serve as a real-time decision support database.
+- CRA requires governance from product design, release, and ongoing maintenance phases, not just pre-shipment checks.
+- Compliance documents (TCF, DoC, CE marking) constitute an evidence chain proving continuous product safety.
+- Supply chain security is vital; trusted components are essential for trusted products.
+- Start compliance efforts with a single product line and build scalable, repeatable templates.
+- Blueprint for 2026-2027 compliance:
+  - 2026: Build immediate capability (PSIRT, SBOM, vulnerability judgment, reporting).
+  - 2027: Scale and institutionalize processes (Documentation, CE marking, lifecycle governance).
+  - Beyond 2027: Cultivate global customer trust linked to product safety value chain.
+
+---
+
+## Important Conclusions and Insights
+
+- Compliance is **not a cost**, but a **license to compete** in the global market.
+- Product safety has evolved from a cybersecurity demand into a core **commercial qualification**.
+- Failure to comply threatens not only financial penalties but also the **loss of market access and customer trust**.
+- A disciplined, cross-functional, lifecycle-oriented approach to product safety is essential.
+- Maintaining accurate, detailed, and timely SBOM data is crucial for managing risk and compliance.
+- Establishing a repeatable compliance model starting with one product line mitigates risk and accelerates scaling.
+- Trust cultivated through compliance becomes a market advantage beyond mere regulatory adherence.
+
+---
+
+## Technical or Other Problems Described or Emphasized in Presentation
+
+- **Scaling vulnerability risk:** Single device weaknesses, once exploited at scale (as seen in the Mirai botnet case), can cause global market shocks.
+- **Need for proactive design security:** Product safety requires front-loaded effort in design and development to avoid exploitable weaknesses.
+- **Cross-departmental coordination challenges:** CRA demands that governance and remedial action span organizational boundaries and roles.
+- **Difficulty ensuring SBOM quality:** Producing an SBOM is not enough; it must be precise, up-to-date, verifiable, and accessible as a decision tool.
+- **Rapid reporting pressure:** Firms must develop the ability to accurately assess and report security incidents within narrow time windows (24-72 hours).
+- **Supply chain transparency:** Trust in final products hinges on trusted components and supplier communications, requiring robust tracking and disclosure of third-party parts.
+- **Complex classification and compliance pathways:** The diversity of product types (general, class I/II important, critical products) complicates compliance routes and documentation standards.
+- **Managing long product lifecycles:** Safety obligations extend beyond launch to include sustained monitoring, updating, patching, and verification.
+
+---
+
+This presentation serves as an educational roadmap emphasizing the urgent and strategic importance of CRA compliance for global competitiveness and market trust, highlighting associated technical and organizational challenges.

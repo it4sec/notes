@@ -1,0 +1,102 @@
+# Summary of Presentation: Cyber Innovation – Reshaping Network and Endpoint Threat Hunting Defense
+
+### Title
+**Cyber Innovation: Reshaping Network and Endpoint Threat Hunting Defense**  
+Presented at CYBERSEC 2026 Taiwan Cybersecurity Conference
+
+### Author/Presenter
+- Ruei Liu (劉叡), Director, Cyber Innovation  
+- CHT Security (中華資安國際), subsidiary of Chunghwa Telecom Group
+
+---
+
+### Key Points
+
+- **Rapid Lateral Movement Threat (2025 Forecast):**  
+  The fastest global hacker lateral movement is expected to take only 27 seconds to move from one endpoint to another, reflecting a rapidly shrinking window for effective detection and response.
+
+- **Company Overview:**  
+  CHT Security, Taiwan's first publicly listed cybersecurity company (listed Sept 8, 2025), has decades of expertise and a large skilled workforce (>370 employees, 98% with bachelor or higher education). It provides end-to-end cybersecurity services including prevention, detection, response, and forensic recovery.
+
+- **Awards & Credentials:**  
+  The company has received continuous 7 years of top grades (all "A") in government cybersecurity vendor evaluations, achieved international certifications (ISO 27001, 27701, 20000, 17025, IEC 62443), and won multiple industry awards.
+
+- **Current Cyber Threat Landscape:**  
+  - Average hacker dwell time globally has worsened (from 11 days in 2024 to 14 days in 2025).  
+  - Lateral movement time average is shrinking drastically, with a record of 27 seconds reported.  
+  - 82% of breaches involve "malware-free" attacks using legitimate tools and credentials (Living off the Land - LoTL).  
+  - Average global breach costs are declining but remain high (US$4.44M, with US enterprises at US$10.22M).  
+  - Taiwanese enterprises face daily cyber attacks with major threats being loaders, payloads, backdoors, and spearphishing.
+
+- **Five Major Local Security Risk Trends in Taiwan:**
+  1. Public-facing application exploits  
+  2. Abuse of valid accounts highlighting identity access management (IAM) needs  
+  3. Spearphishing campaigns boosted by AI-generated phishing emails  
+  4. Supply chain risks involving subsidiaries and partners  
+  5. Critical infrastructure risks with a surge in cloud and network devices being targeted (+500% and +550%)
+
+- **Failures of Traditional Perimeter Defense:**  
+  - Assumption that "perimeter = security" is obsolete due to cloud, VPN, SaaS, and modern identity models.  
+  - Malware-based detection is ineffective against 82% of attacks with no malicious files.  
+  - Single-layer tools cannot provide full attack visibility, leading to incomplete detection.
+
+- **Two Real-World Infrared Incident Response (IR) Cases:**
+  1. **Critical Network Device Intrusion:**  
+     Long-term stealthy compromise of a router module with disabled audit logging and hidden backdoors, allowing attackers full control bypassing endpoint detection visibility.  
+  2. **Strategic Network Pre-Positioning in Critical Infrastructure:**  
+     Use of Living off the Land (LoTL) techniques with solely Windows built-in tools, stealthily extracting credentials (NTDS.dit) to establish persistent footholds for future attacks.
+
+- **Integrated Defense Approach: "Network + Endpoint + SOC" Triad:**  
+  - SecuTex NP (Network Packet) for full packet capture and east-west traffic monitoring with local threat intelligence.  
+  - SecuTex ED (Endpoint Detection) focusing on lightweight, rapid full endpoint scans (15-25 minutes), YARA rule-based detection to fill sandbox blind spots, and compliance monitoring.  
+  - SOC platform integrating network and endpoint data with automation, playbooks, and cross-layer correlation enabling detection accuracy above 99%.
+
+- **Quantified Defense Improvements Post-Implementation:**  
+  - Mean Time to Detect (MTTD) reduced from 11 days to 2 hours (-99%)  
+  - Mean Time to Respond (MTTR) reduced from 73 days to under 24 hours (-98%)  
+  - False positive rates decreased by 70%  
+  - SOC labor effort reduced by 55%  
+  - Potential breach cost savings over $1.9M USD
+
+- **Recommendations for CISOs:**  
+  - Conduct Red Team exercises to assess ATT&CK framework coverage.  
+  - Address east-west blind spots with Network Detection and Response (NDR) solutions.  
+  - Integrate MTTD/MTTR as board-level KPIs for security resilience.
+
+- **Closing Summary:**  
+  Network and endpoint combined threat detection is more effective than either alone (1+1=99). Passive SOC operations increase risk of prolonged undetected attacks. Proactive threat hunting is crucial.
+
+---
+
+### Important Conclusions and Insights
+
+- Traditional detection technologies focused on perimeter and malware signatures are failing dramatically against modern, fast-moving, credential-based, malware-free attacks.  
+- Holistic, multi-layered defense with network and endpoint visibility correlated through an intelligent SOC is essential to reduce detection and response times to viable levels.  
+- In Taiwan specifically, critical infrastructure, manufacturing, and medical sectors are under exponentially rising cyberattack pressures, demanding specialized focus in these areas.  
+- Living off the Land (LoTL) tactics mean that defenders must detect complex behavioral and timing anomalies rather than rely on signature-based detection alone.  
+- Investment in automation, threat intelligence correlation, and playbooks dramatically reduces SOC workload and increases SOC efficiency and accuracy.
+
+---
+
+### Technical and Other Problems Emphasized in the Presentation
+
+- **Challenges in Visibility:**  
+  Lack of east-west network visibility and reliance on endpoint-only monitoring leaves large blind spots for threat actors.  
+- **Speed of Adversarial Actions:**  
+  Lateral movement measured in seconds impacts defenders' ability to contain attacks before severe damage.  
+- **Malware-Free Attacks:**  
+  Attacks executed solely via legitimate system tools bypass conventional antivirus and EDR solutions.  
+- **Persistence in Network Devices:**  
+  Attackers compromise trusted network infrastructure elements that evade endpoint-centric defenses.  
+- **Detection Blind Spots:**  
+  Sandboxes misclassify dangerous files as low risk; without tailored YARA rules based on reverse engineering, critical threats remain undetected.  
+- **SOC Operational Inefficiencies:**  
+  Manual or uncorrelated alert handling increases false positives and prolongs incident response times.  
+- **Supply Chain and Third-Party Risks:**  
+  Attack vectors extending through partners and subsidiaries complicate perimeter and identity security efforts.  
+- **Increasing Costs and Impact:**  
+  Despite some cost reduction trends, data breaches remain extremely costly and damaging, especially to larger enterprises.
+
+---
+
+This presentation strongly advocates for a paradigm shift towards integrated, behaviorally aware, cross-layered defense systems backed by local threat intelligence and automated SOC workflows to effectively combat the evolution of cyber threats in the coming years.

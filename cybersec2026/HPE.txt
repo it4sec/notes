@@ -1,0 +1,97 @@
+# Summary of Presentation: AI-Powered Zero Trust Networking
+
+---
+
+## Title:
+AI-Powered Zero Trust Networking
+
+## Authors/Presenters:
+Gordon Tan  
+Consulting Systems Engineer Manager  
+South-East Asia, Taiwan & Hong Kong/Macau
+
+---
+
+## Key Points:
+
+- **Changing Security Landscape:**
+  - Traditional "Fortress Mentality" security strategies are outdated due to modern challenges like mobility, cloud adoption, BYOD, IoT, and vanishing perimeters.
+  - Network and security functions must act as one seamless unit.
+
+- **NIST Cyber Security Framework (Network Perspective):**
+  - Emphasis on five core functions: Identify, Protect, Detect, Respond, and Recover.
+  - Role-based access control, visibility & authentication, conditional monitoring, enforcement & response, and rapid recovery are critical.
+
+- **Step 1: Identify**
+  - Importance of visibility: "You cannot secure what you cannot see."
+  - AI-driven device identification and dynamic fingerprinting automatically cluster and classify devices based on telemetry from various locations.
+  - Integration with Aruba ClearPass for seamless policy enforcement.
+  - Enhanced endpoint visibility includes vulnerabilities and risk scoring.
+  - AI analyzes behavioral patterns, especially in IoT devices (e.g., Zebra Android scanners) and non-IoT clients.
+
+- **Step 2: Protect**
+  - Campus Security Segmentation through dynamic segmentation improves traffic separation and security posture.
+  - Centralized management with automated processes reduces misconfigurations.
+  - Role-based segmentation across different device/user types.
+  - WAN – SASE model utilizing HPE Aruba Networking EdgeConnect SD-WAN and SSE for zero-trust access to applications, internet, SaaS, and digital experiences.
+  - Datacenter security segmentation enabled by the 4th Generation datacenter with advanced firewall, encryption, visibility, and NAT capabilities.
+
+- **Step 3: Detect**
+  - Use of Network Detection and Response (NDR) for identifying anomalous behaviors like abnormal data downloads or uploads to suspicious locations.
+  - Fastest 1U firewall (SRX4700) with high security efficacy (99.8% - 99.16%) in tests over 5 years.
+  - Transition from physical to cloud-native firewall architectures with unified policies and improved visibility.
+
+- **Step 4: Response**
+  - The 360 Security Exchange ecosystem supports continuous monitoring, enriched by partner integrations (Fortinet, Microsoft Intune, Okta, Zscaler, Splunk, etc.).
+  - Leveraging contextual, bidirectional data sharing for adaptive policy enforcement and threat defense.
+  - Granular traffic visibility and real-time device data controls to enhance perimeter defense.
+
+- **Step 5: Recovery**
+  - HPE Zerto software for disaster recovery focuses on minimizing downtime and data loss.
+  - Continuous data protection, ransomware resilience, and multi-cloud mobility support.
+  - Zerto offers granular, point-in-time recovery using a dynamic journal to rewind systems to clean states seconds before disruptions.
+  - Recovery Point Objective (RPO) as low as 10 seconds and Recovery Time Objective (RTO) as low as 10 minutes significantly reduce financial impact of downtime.
+
+- **AI-Predictive Threat Prevention**
+  - Combines flow-based antivirus signature detection with machine learning-based threat detection to predict and block both known and zero-day malware.
+  - Dynamic signature updates fed by files submitted to ATP Cloud for continual improvement.
+
+- **HPE Networking Threat Labs**
+  - Ongoing threat research, product development, and threat operations ensure responsiveness and efficacy.
+  - Collaboration with third parties and sharing threat intelligence.
+
+---
+
+## Important Conclusions and Insights:
+
+- Zero Trust Networking powered by AI and machine learning is critical in addressing modern cybersecurity threats amid the evolving IT landscape.
+- Integrated cybersecurity approach combining identity, visibility, behavioral analytics, and AI-driven automation improves security posture while simplifying management.
+- Continuous monitoring and rapid response capabilities reduce risk and enable preemptive mitigation before incidents escalate.
+- Disaster recovery planning that incorporates fast, granular recovery reduces organizational vulnerability and financial damage.
+- Partner ecosystems and interoperability are fundamental in enabling holistic, connected security frameworks.
+
+---
+
+## Problems and Challenges Emphasized in the Presentation:
+
+- **Invisible Devices and Blind Spots:**  
+  Inability to see and identify all network devices presents a significant security risk; AI-driven device fingerprinting and telemetry are required to eliminate blind spots.
+
+- **Complex Security Landscapes:**  
+  The influx of IoT devices, mobile devices, cloud services, and remote workforces complicate perimeter defense and require dynamic, context-aware security segmentation.
+
+- **Advanced Persistent Threats and Zero-Day Malware:**  
+  Traditional signature-based antivirus methods are insufficient; AI and machine learning must predict and prevent complex, evolving threats.
+
+- **Data Center Evolution and Segmentation:**  
+  Modern data center infrastructures demand scalable and automated security solutions that can handle diverse traffic patterns while maintaining performance.
+
+- **Downtime and Data Loss Costs:**  
+  Downtime penalties and data loss costs are substantial; rapid recovery mechanisms and ransomware resilience are vital.
+
+- **Policy and Security Enforcement Complexity:**  
+  Managing fragmented policies across physical, virtual, containerized, and cloud environments complicates unified protection; integrated frameworks are needed.
+
+---
+
+This presentation clearly advocates adopting AI-powered Zero Trust Networking that integrates visibility, protection, detection, response, and recovery into a cohesive security strategy that meets the complexities of modern digital environments.

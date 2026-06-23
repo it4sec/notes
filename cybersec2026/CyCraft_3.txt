@@ -1,0 +1,83 @@
+# Summary of Presentation on macOS Security in Enterprises
+
+---
+
+### Title
+**"Close Windows, The Battle Just Begins! The Rise and Challenges of macOS Security in Enterprises"**
+
+### Author/Presenter
+- Kazma Ye  
+  - Cybersecurity Researcher @ Cycraft  
+  - Leader @ CTF Team B33F50UP  
+  - Founder of Taiwan Security Club & NCKUCTF  
+  - Awarded in national and international CTF competitions  
+  - Speaker at TROOPERS25, DEF CON 33, RomHack  
+
+---
+
+### Key Points
+
+1. **macOS Enterprise Adoption**
+   - macOS is no longer a niche OS for designers; it has become an integral part of enterprise infrastructure.
+   - It supports enterprise login, Single Sign-On (SSO), Multi-factor Authentication (MFA), and SaaS/cloud access.
+   - Increasing preference due to security, privacy, user preference, and hardware performance.
+   
+2. **Different Threat Model Compared to Windows**
+   - Windows attacks focus on endpoint execution, privilege escalation, and lateral movement within Active Directory environments.
+   - macOS attacks revolve more around exploiting user trust, app notarization, and permissions authorization.
+   - Target is often corporate identities accessed through browsers, keychain, and cloud credentials rather than domain controllers.
+   
+3. **Trust & Authorization Boundaries in macOS Security**
+   - There are four trust layers for apps in macOS:
+     - **L1:** App identity and integrity (code signing with Team ID)
+     - **L2:** Notarization and malware scanning
+     - **L3:** Execution trust checks (Gatekeeper, XProtect)
+     - **L4:** Resource access controls (TCC, Sandbox, PPPC profiles)
+   - TCC.db is critical for managing app permissions.
+   - Team ID validates app identity and is immutable, Bundle ID is mutable.
+   
+4. **Real-world Attack Case**
+   - Fake GitHub repositories leading users to install malicious macOS stealers disguised as legitimate apps (e.g. ClickFix).
+   - These stealers exfiltrate sensitive data like browser info, keychain credentials, and developer secrets.
+
+5. **Governance as Defense: Making User Trust Controllable**
+   - Governance includes device management (Apple Business/MDM), privilege restrictions, and permission controls.
+   - Enforce non-admin default users with temporary just-in-time admin privileges.
+   - Use PPPC profiles to grant only necessary permissions to apps.
+   - Restrict unknown app sources and monitor high-risk permissions.
+   - Managed Apple Accounts and app license management are essential for controlling app distribution and revocation.
+   - Detect and monitor sensitive identity materials including SSH keys, API keys, cloud credentials, and suspicious execution or persistence mechanisms.
+
+6. **Pre-MDM Risk Mitigation Actions**
+   - Inventory macOS devices and identify high-risk users.
+   - Check macOS versions and local admin status.
+   - Identify devices with exposed secrets and audit TCC permissions.
+   - Establish a whitelist of official app sources (official websites, GitHub organizations, Apple Business / Mac App Store).
+   - Prohibit web-based command line installs.
+
+---
+
+### Important Conclusions and Insights
+
+- macOS has become a strategic touchpoint for enterprise access, making its security essential.
+- Cyberattack narratives and defenses for Windows do not directly translate to macOS due to architectural and ecosystem differences.
+- The core focus for macOS security should be governance around trust boundaries, administrative privileges, access controls, and malicious behavior monitoring.
+- Enterprises don't have to wait for full MDM deployment to start mitigating risks — interim measures such as asset inventory, permission audits, and app source control can substantially reduce exposure.
+- Attackers increasingly use macOS native tools (zsh, osascript, curl) for stealthy persistence and data exfiltration.
+- Real attacks are already exploiting trusting user behavior and macOS' app notarization model, applying social engineering via fake but seemingly legitimate software distribution channels.
+
+---
+
+### Technical or Other Problems Emphasized
+
+- **Lack of full visibility and controls over macOS devices** in many enterprises, including outdated OS versions and excessive local admin rights.
+- **User trust exploitation via legitimate notarization and signature mechanisms**, making initial malware delivery believable.
+- **Difficulty in detecting stealthy attackers using native macOS tools and scripting for execution, persistence, and exfiltration.**
+- **Challenges in managing high-risk permissions controlled by TCC, particularly around full disk access, accessibility, screen recording, and automation.**
+- **Weak enforcement and governance over app sources, identity credentials, and sensitive keys or tokens stored locally.**
+- **Potential for unauthorized removal of management profiles by administrators, increasing risk of unmanaged devices.**
+- **Necessity to transition from reactive detection to proactive governance focusing on access and permission boundaries.**
+
+---
+
+This presentation provides a comprehensive overview of the current state, challenges, and governance-oriented defense strategies for securing macOS devices in enterprise environments, emphasizing that closing Windows machines does not end security threats — macOS security requires dedicated focus due to its unique ecosystem and threat landscape.

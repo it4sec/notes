@@ -1,0 +1,85 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+**AI-Driven Cybersecurity Defense: How to Build an Enterprise 'Self-Healing' Defense Line through MDR and Automation**  
+_Collaborative Effort of ESET, Atera, and Scalefusion_  
+
+---
+
+## Authors/Presenters
+- **Kenneth Lo (盧惠光)**  
+Senior Product Manager, Version 2 Taiwan  
+
+---
+
+## Key Points
+
+### 2026 Cybersecurity Landscape in Asia-Pacific and Taiwan
+- **Generative AI Attacks:** Deepfake/AI scams in Asia-Pacific increased by 1530%, with AI-generated phishing and deepfake attacks growing by 40%.
+- **Taiwan's Pain Points:** Supply Chain attacks remain the top threat; 70% of Taiwanese enterprises’ CISOs report significant cybersecurity workforce shortages.
+- **MTTR Crisis:** Traditional cybersecurity takes 15-20 days on average to detect and remediate intrusions, which is too slow in the AI era.
+
+### Dual Challenges for Taiwanese Enterprises
+- Normalized high-volume cyberattacks (2.63 million daily intrusion attempts with 6% annual growth).
+- Supply chain attack vulnerabilities impact 90% of factories; huge talent gap with an 80,000-person shortage in cybersecurity talent.
+- Existing teams are insufficient to handle growing sophisticated threats.
+
+### Collapse of Traditional Defense - AI Era MTTR Crisis
+- Incident repair times stagnate at 15-20 days without automation.
+- Alert fatigue: over 50% of alerts unhandled due to overwhelming volume.
+- Increasing average ransomware ransom demands exceeding $1.25 million.
+
+### Emerging Threats
+- Rapid attack speeds reduced from days to minutes.
+- Mobile and remote work devices introduce significant security vulnerabilities.
+- IT teams face alert fatigue with thousands of prioritized messages daily leading to missed critical alerts.
+
+### Solution Vision: Transition from Manual Defense to “Self-Healing” Joint Defense
+- **Detection:** Rely on ESET MDR’s AI-driven behavioral analysis and 24/7 expert monitoring beyond signature-based detection.
+- **Operations:** Automate response using Atera AI-driven patch and script management.
+- **Control:** Ensure endpoint compliance and physical isolation with Scalefusion MDM.
+
+### The "Golden Triangle" of Self-Healing Defense
+- **ESET MDR:** 24/7 multi-layered EDR telemetry and expert threat hunting.
+- **Atera:** AI-generated automation scripts for patching and system health.
+- **Scalefusion:** Conditional access, kiosk lockdowns, and endpoint compliance enforcement.
+
+### Case Study: 5-Minute Closed-Loop Incident Response
+- Detection of abnormal external IP access.
+- Expert confirmation and endpoint network isolation.
+- Automated patch deployment across vulnerable devices.
+- Scalefusion enforced compliance lockdown until remediation is verified.
+
+### Impact Comparison: Traditional vs. Self-Healing Defense
+- Traditional method took 48 hours involving manual notification, onsite checking, logs inspection, and system reinstall.
+- Self-healing approach cuts this to under 15 minutes via automated detection, isolation, and AI-driven remediation.
+
+### 2026 Enterprise Cybersecurity Recommendations
+- Use outsourced professional MDR monitoring instead of in-house overburden.
+- Embrace AI automation to reduce manual operational delays.
+- Enforce comprehensive endpoint controls ensuring no blind spots in mobile or IoT device management.
+
+---
+
+## Important Conclusions and Insights
+- The traditional cybersecurity defensive paradigm is no longer sufficient for the AI-empowered threat landscape, which operates on minutes rather than days.
+- There is an urgent need to adopt AI-powered MDR, automated operational tools, and stringent endpoint controls to build a resilient, self-healing cybersecurity posture.
+- Workforce shortage demands reducing dependency on human analysts by leveraging AI-driven detection and automated patch management.
+- Enterprises must embrace a fully integrated self-healing system combining real-time detection, automated remediation, and endpoint compliance enforcement to prevent damage escalation.
+
+---
+
+## Technical or Strategic Problems Highlighted
+- **MTTR Delays:** Average time to detect and remediate threats remains painfully long (15-20 days), making organizations vulnerable.
+- **Alert Fatigue:** Excessive false and low-risk alerts overwhelm IT staff, leading to missed critical warnings.
+- **Rapid Attack Evolution:** Zero-day exploits and polymorphic malware generated using AI shorten attack windows to under 10 minutes.
+- **Boundary Disappearance:** Remote work and mobile device proliferation create unmonitored attack vectors (shadow IT, lack of MDM).
+- **Security Talent Shortage:** Taiwanese cybersecurity workforce gap of 80,000 severely limits threat response capabilities.
+- **Traditional Patching Delays:** Over 30% of attacks originate from unpatched vulnerabilities, emphasizing the need for automated, zero-touch patching.
+- **Compliance Gaps:** Without continuous device monitoring and conditional access enforcement, endpoints become vulnerable gateways.
+
+---
+
+This presentation stresses the transformation required from reactive security to proactive, AI-enabled, and automated defensive operations to combat evolving cybersecurity threats effectively.

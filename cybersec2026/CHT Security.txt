@@ -1,0 +1,86 @@
+# Summary of Presentation: Cyber Innovation - Reshaping the Cyber Threat Hunting Defense Line
+
+## Title
+**Cyber Innovation: Reshaping the Cyber Threat Hunting Defense Line**
+
+## Author/Presenter
+- Ruei Liu, Director, Cyber Innovation  
+- CHT Security International & Chunghwa Telecom Group
+
+## Key Points
+
+### Introduction
+- The 2025 record for fastest lateral movement by hackers globally is 27 seconds from the first endpoint compromise to the second.
+- Single-layer defense strategies are obsolete.
+- Effective defense requires combined network, endpoint, and interactive threat hunting to reduce Mean Time To Detect (MTTD) from days to hours and intercept attackers preemptively.
+
+### Company Background (CHT Security International)
+- Established in 2017, publicly listed in 2025; Taiwan’s first publicly listed cybersecurity service company.
+- Over 370 employees, with 98% holding bachelor’s degrees or higher.
+- Serves over 100 clients annually, providing end-to-end cyber defense services (prevention, monitoring, incident response, and recovery).
+- Holds multiple international certifications (ISO 27001, ISO 27701, ISO 20000, ISO 17025, IEC 62443).
+- Unique position with continuous top-grade governmental cyber service evaluations and extensive vulnerability disclosures (140+ CVEs).
+
+### Industry and Threat Landscape (2025)
+- Attackers are faster, stealthier, and more cost-effective; defenders lag behind.
+- Median hacker dwell time globally is rising (14 days in 2025).
+- Lateral movement averages 29 minutes globally, with record speeds as fast as 27 seconds.
+- 82% of intrusions involve no malware, relying on legitimate tools and credential misuse (Living off the Land - LoTL).
+- Average data breach cost in 2025 is $4.44 million globally, with US enterprises at $10.22 million.
+- Major attack vectors: public-facing vulnerabilities, abuse of valid accounts, and spear phishing.
+- Taiwanese data reflects daily attacks, peaking at 37 incidents in July 2025.
+- Top targeted sectors include technology manufacturing (+357% attacks), healthcare (+129% attacks), cloud environments (+500%), and communication equipment (+550%).
+
+### Why Traditional Perimeter Defense Fails
+- Assumptions such as "network boundaries equal security," "malicious files define attacks," and "single-point tools suffice" are invalid.
+- Overreliance on signatures and endpoint-only monitoring leaves blind spots.
+- Lack of cross-layered visibility fails to reveal complete attack chains.
+
+### Case Studies of Actual Incidents
+- **Case 1:** Multi-year stealthy hacker infiltration of key network devices via router firmware replacement and backdoors; undetected due to lack of east-west network visibility.
+- **Case 2:** Strategic, long-term pre-positioning in critical infrastructure leveraging LoTL tactics, using only built-in Windows tools to harvest credentials and build persistent access for future attacks.
+
+### Defense Solution - SecuTex Dual-Layer Protection
+- **SecuTex NP (Network Packet):** Network-wide, full-packet capture with east-west visibility.
+- **SecuTex ED (Endpoint Detection):** Lightweight, fast endpoint scans augmented with YARA rules from internal IR insights, filling gaps left by sandbox evasion.
+- **SOC Platform:** Correlates and automates alerts across network and endpoint layers to deliver comprehensive attack visibility and rapid, cross-layer incident response.
+
+### Results & Recommendations
+- Post-implementation improvements for clients:
+  - MTTD reduced from 11 days to 2 hours.
+  - MTTR reduced from 73 days to less than 24 hours.
+  - False positive rates dropped by 70%.
+  - SOC workloads reduced by 55%.
+  - Estimated cost savings of $1.9 million from reduced breach impacts.
+- Recommendations for CISOs:
+  - Conduct regular Red Team exercises to benchmark ATT&CK framework coverage.
+  - Prioritize deployment of NDR to fill east-west visibility gaps.
+  - Include cybersecurity detection & response KPIs in board-level reporting.
+
+## Important Conclusions and Insights
+- The cyber battlefield is evolving rapidly, with attackers moving at seconds-level speeds.
+- Single layered defense models cannot cope with today's multi-vector, stealthy threats.
+- Successful detection depends on integrated, cross-layer visibility combining network and endpoint intelligence.
+- Living off the Land (LoTL) attacks defeat conventional signature-based EDR tools by mimicking legitimate IT operations.
+- Strategic, persistent attacks on critical infrastructure emphasize the need for early detection well before destructive phases.
+- Real-world incident data and tailored threat intelligence are essential for effective detection rule development.
+- Automation and threat intelligence correlation help security teams reduce detection and response times drastically.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Fast Lateral Movement:** Modern attacks can propagate across endpoints in as little as 27 seconds, making timely detection extremely challenging.
+- **Malware-Free Intrusions:** 82% of attacks rely solely on legitimate tools and stolen credentials, bypassing signature-based tools like traditional EDR.
+- **Blind Spots in East-West Traffic:** Without full east-west network visibility and NDR capabilities, lateral movements within the network can go unnoticed.
+- **Invisibility of Network Device Attacks:** Attacks on trusted network infrastructure devices bypass endpoint-centric monitoring.
+- **Privilege Abuse and Credential Theft:** Attackers frequently use leaked or stolen credentials to gain and escalate privileges stealthily.
+- **Supply Chain and Third-Party Risks:** Emerging focus on risks stemming from partners and subsidiaries as attack entry points.
+- **Complexity in Detection:** Single-point tools see less than 70% of attacks; integrated triad solutions can achieve above 99% detection rates.
+- **High Operational Workload:** High false positives, long detection and response times, and the volume of alerts overwhelm cybersecurity teams.
+- **Insider Threat and Sophisticated Phishing:** Increased use of AI-generated phishing emails raises success rates of social engineering attacks.
+- **Strategic Pre-Positioning:** Attackers embed long-term access points, waiting for strategic moments to launch destructive attacks on critical infrastructure.
+
+---
+
+This analysis highlights the importance of adopting a multi-layered, intelligence-driven cyber defense posture with integrated network and endpoint visibility, automation, and advanced threat hunting capabilities to combat advanced persistent threats in 2025 and beyond.

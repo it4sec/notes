@@ -1,0 +1,100 @@
+# Summary of Presentation on AI Security & Safety
+
+## Title
+**The First Security Issue for Enterprises Introducing AI: How to Balance Innovation and Data Protection**
+
+## Author/Presenter
+Ray Pai  
+Forcepoint  
+Asia-Pacific Technical Consultant (Taiwan, Korea, Japan)
+
+## Key Points
+
+- **AI Tool Explosion:**  
+  Over 18,000 AI products available on G2 platform with rapid growth, making manual tracking impossible. It would take 17 years to test all tools at a rate of trying three per day.
+
+- **Current Market Data and Risks:**  
+  - 69% of enterprises detected employees using banned GenAI tools.  
+  - Gartner predicts 40% of enterprises will face Shadow AI (unapproved AI tool usage) security or compliance incidents by 2030.  
+  - IBM estimates an additional $650k loss per data breach caused by Shadow AI.  
+
+- **Real Enterprise Case Studies:**  
+  - Microsoft Copilot used by over 6,599 employees at broad organizational scale.  
+  - Engineers renting GPUs for AI workloads without IT knowledge (RunPod).  
+  - High-risk external AI tools like PDF.ai and openclaw.ai processing sensitive data outside the company.
+
+- **Visibility and Control:**  
+  Enterprises lack full visibility and control on five key AI data transmission channels:  
+  1. Web Browser  
+  2. Endpoint AI applications  
+  3. M365 / Copilot platform  
+  4. Enterprise internal GenAI APIs  
+  5. Direct third-party AI APIs
+
+- **False Choices: Blocking vs. Full Access:**  
+  - Full access delays governance and exposes data to third parties, lacks audit trails, and responsibility cannot be outsourced.  
+  - Total blocking provides an illusion of security, cannot keep pace with AI tool growth, and drives usage underground beyond corporate control.
+
+- **Recommended Approach: The Third Way:**  
+  Implement governance at data flow points through:  
+  - Visibility: Real-time detection of AI tool usage, actors, and data content.  
+  - Policy enforcement: Granular, risk-based controls rather than blanket bans, allowing approved tools with conditions and intercepting risky actions immediately.  
+  - Auditability: Full event records and data provenance to reconstruct data flows and responsibilities during incidents.
+
+- **Governance Must be Sustainable:**  
+  Policy frameworks should keep pace with AI innovation using continuous updates and behavior-based dynamic adjustments, allowing general use without disruption and tightening controls on risky behavior.
+
+- **Actionable Recommendations:**  
+  1. Conduct an AI app discovery to identify all AI tools in use (including unauthorized Shadow AI).  
+  2. Identify largest uncovered risk channels and prioritize coverage (e.g., Web Browser, M365 Copilot).  
+  3. Extend existing security frameworks such as DLP and web policy to include AI governance.
+
+- **Business Impact:**  
+  Investing in AI security governance reduces compliance risks, shortens incident response times, preserves company reputation, and enhances employee productivity. AI governance will become a procurement evaluation standard by 2026.
+
+## Important Conclusions and Insights
+
+- AI security governance is not about cost but enabling trustworthy and productive AI adoption.  
+- Enterprises must avoid extremes of full blocking or unfettered access and focus on balancing innovation with data protection.  
+- Real-time visibility, policy enforcement, and auditability form the cornerstone of an effective AI governance framework.  
+- Shadow AI represents a significant, ongoing risk that cannot be ignored.  
+- Governance must be integrated across all AI data transmission channels to be effective.  
+- Preparedness today will reduce costly compliance incidents and reputational damage tomorrow.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Rapid AI Tool Emergence:**  
+  AI tools evolve faster than IT teams can block or evaluate them, leading to blind spots.
+
+- **Shadow AI:**  
+  Unauthorized use of AI tools leads to uncontrolled data exposure and risk of compliance breaches.
+
+- **Insufficient Visibility:**  
+  Existing security tools often lack adequate coverage over endpoints, APIs, and cloud applications.
+
+- **Over-Privileged Access:**  
+  Employees often have broader access to AI tools and data than necessary, increasing lateral risk.
+
+- **Data Boundary Ambiguities:**  
+  AI capabilities can access unclassified sensitive documents, exposing confidential information inadvertently.
+
+- **Lack of Audit Trails:**  
+  Security incidents are difficult to analyze post-facto due to missing data provenance or usage logs.
+
+- **Governance Gaps:**  
+  Current policies often lag behind tool deployment speed, leaving compliance and control gaps.
+
+- **Cross-Channel Policy Enforcement Complexity:**  
+  Coordinated policies across browsers, endpoints, and cloud platforms are mandatory but complex to implement.
+
+- **Employee Behavior:**  
+  Employees circumventing controls (e.g., using personal devices or accounts) undermine IT governance efforts.
+
+- **Data Leakage to Third Parties:**  
+  Sensitive business and customer data may enter free public AI models without control or recourse.
+
+---
+
+This presentation underscores the urgent need for enterprises to adopt proactive, integrated AI governance frameworks that provide real-time visibility, conditional controls, and audit evidence to manage AI-related risks effectively — making AI innovation both safe and compliant.

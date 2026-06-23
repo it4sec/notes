@@ -1,0 +1,108 @@
+# Summary of Presentation
+
+## Title
+**OPNsense Suricata SmartNIC: High-Performance Network Protection in Practice**
+
+## Author / Presenter
+* 鄭明彰 (Ming-Chang Cheng)  
+  Nantou County Education Network Center  
+  System Team / Non-traditional career / Elementary School Teacher  
+
+## Key Points
+- **Core Values of the Architecture:**
+  - Controllability: Focus on mastering the protection logic, not just purchasing equipment.
+  - Scalability: Relying on hardware stacking alone is insufficient for high-speed traffic handling.
+  - Observability: Data forms the basis for future defense through advanced analysis, tracking, and feedback.
+  - Evolvability: Use controllable technologies to build long-term evolving defense capabilities rather than one-time products.
+  
+- **Educational Network Environment Challenges:**
+  - Distributed equipment across multiple schools.
+  - High usage by staff and students.
+  - Complex management due to dual-layer architecture (central + school ends).
+  - Budget and manpower limitations.
+  - Various security challenges like malware, IoT devices, NAT, DNS over HTTPS (DoH), QUIC protocol reducing visibility, ad blocking policies, and a lack of threat intelligence sharing.
+
+- **Traffic Growth and System Pressure:**
+  - Network backbone capacity growing from 2G to over 100G.
+  - Firewall (FW), Intrusion Detection/Prevention Systems (IDS/IPS) CPU load continuously rising.
+  - Performance limits of traditional software firewalls under increasing DPI costs.
+
+- **System Architecture and Layered Defense:**
+  - Backbone end handles FW, IPS, Network Packet Broker (NPB), Bypass.
+  - School end handles FW, DNS, IDS, Micro-Sensor.
+  - Use Layer 3/4 control for most traffic, leave Layer 7 (application layer) for critical flows.
+  - Use flow steering and data for cost reduction and improved observability.
+  - Indicators of Compromise (IOCs) feed back to firewall policies (IP/domain blocking).
+
+- **Use of OPNsense and Suricata:**
+  - OPNsense: Open source FreeBSD-based firewall platform.
+  - Suricata: Multi-core DPI engine for deep packet inspection and threat detection.
+  - ET (Emerging Threats) ruleset use for optimized detection.
+  - Performance tuning essential for firewall throughput.
+
+- **SmartNIC Integration:**
+  - Offload high-speed packet capture, flow classification, and steering to hardware.
+  - Reduce CPU burden by implementing blocking decisions in SmartNIC hardware (wDrop).
+  - Support for 10G, 25G, 40G, 100G speeds for sustainable scaling.
+
+- **Management and Monitoring:**
+  - API-driven centralized management for configuration, firmware updates, backups, and alert integration.
+  - Use Graylog, Vector, OpenSearch for security log aggregation, analysis, and real-time alerting.
+  - IOC dashboards for visualization and operational decision-making.
+  - Incorporate threat intelligence (CTI) and blocklists for proactive defense.
+
+- **False Positive Handling and Operational Stability:**
+  - Passlists and rule set simplifications reduce false alarms.
+  - Immediate log analysis to understand blocking reasons and enable quick exceptions.
+  - Maintain operational control to confidently block malicious traffic.
+
+- **Future Directions:**
+  - Lightweight Network Detection and Response (NDR).
+  - Data-driven Security Operations Center (SOC) expansion.
+  - Micro-Sensor enlargement for internal anomaly visibility.
+  - Increased cross-unit CTI sharing and automated defense foundations.
+
+## Important Conclusions and Insights
+- This is not a one-time deployment but a sustainable, evolving architecture balancing performance, cost, and maintenance.
+- Resiliency arises not from individual devices but from data-driven continuous operation, monitoring, and feedback.
+- Extracting IOCs and feeding them back to defense equipment are crucial.
+- Without data, there is no Artificial Intelligence-based SOC.
+- The architecture lays the foundation for future threat intelligence sharing and automated protection.
+
+---
+
+## Technical and Other Problems Highlighted
+- **Increasing Traffic Volume and System Load:**
+  - School networks and backbone traffic are rapidly growing (up to 100G+), creating performance bottlenecks.
+  - Traditional firewall and DPI solutions face CPU overload and throughput degradation.
+
+- **Visibility Challenges:**
+  - Use of DoH and QUIC protocols reduces the ability to inspect traffic at Layer 7.
+  - Distributed, heterogeneous school environments complicate centralized management and observability.
+
+- **Budget and Manpower Constraints:**
+  - Many schools have limited budgets and staffing for comprehensive security deployment.
+  - Managing multiple dispersed devices is complex.
+
+- **False Positives and Detection Accuracy:**
+  - High false positive rates require careful rule tuning and whitelist management.
+  - Operational confidence requires understanding and controlling blocking decisions.
+
+- **Legacy Network Architectures:**
+  - Traditional architectures cannot scale efficiently to handle current and future traffic speeds.
+  - DPI is costly in terms of CPU cycles, limiting inline full-traffic inspection.
+
+- **Lack of Threat Intelligence Sharing:**
+  - Incidents are reported but threat intelligence sharing mechanisms are lacking, reducing overall situational awareness.
+
+- **Need for New Processing Approaches:**
+  - High-speed inspection demands offloading and acceleration technologies like SmartNICs.
+  - Suricata and OPNsense alone cannot handle all traffic at ultra-high speeds efficiently.
+
+- **Internal Anomaly Detection:**
+  - Backbone monitoring misses internal network anomalies.
+  - Micro-Sensors at school level are proposed to cover these blind spots.
+
+---
+
+This summary encapsulates the main ideas, technical solutions, and challenges discussed in 鄭明彰's presentation on advancing network protection using OPNsense, Suricata, and SmartNIC technologies in education networks.

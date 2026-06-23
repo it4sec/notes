@@ -1,0 +1,124 @@
+# Summary of Presentation: From Threat Detection to Proactive Defense: Real-time Security Protection for AI Applications
+
+## Title
+**從威脅偵測到主動防禦：AI 應用的即時安全防護**  
+(From Threat Detection to Proactive Defense: Real-time Security Protection for AI Applications)
+
+## Authors/Presenters
+- 何光永 (Director, Solution Engineering Sentinelone)
+
+---
+
+## Key Points
+
+### AI Security Challenges and Risks
+- The average financial cost associated with AI-related security breaches has soared to $7.42 million.
+- The adoption speed of AI surpasses the speed in protecting its data.
+- 90% corporate AI adoption rate, but unmanaged organizational risks persist.
+- Shadow AI use is rising, with 58% of frontline employees actively using unauthorized general AI tools during workflows.
+- Threat actors leveraging large language models (LLMs) have caused a 30% increase in cyberattacks year-on-year.
+
+### AI Application Layer Vulnerabilities and Attacks
+- Types of attacks targeting AI:
+  - Prompt Injection: Manipulating user input to bypass core system instructions.
+  - Data and Model Poisoning: Corrupting training data or fine-tuning processes.
+  - System Prompt Leakage: Exposing hidden instructions through adversarial queries.
+  - Improper Output Handling: Executing untrusted outputs containing malicious code.
+
+### Limitations of Traditional Signature-Based Security
+- Traditional security tools rely on predefined rules, static logs, and known signatures, which are ineffective against dynamic and probabilistic AI threats.
+- AI-generated attacks mimic legitimate user behavior, making firewalls and legacy SIEM tools blind to these threats.
+- Results include alert fatigue, significant blind spots, and delayed defensive responses.
+
+### Transition to AI-Driven Proactive Defense
+- Shift from reactive log storage to real-time, proactive, predictive automation.
+- A full lifecycle AI-driven platform from data ingestion to investigation and automated remediation.
+- AI usage security layer prevents prompt injections, data leaks, and model poisoning specific to AI application threats.
+- Core advantages: eliminates detection blind spots, enables second-level automated responses, and reduces operational fatigue.
+
+### Four Major Channels of Enterprise AI Usage
+1. Browser AI (Public SaaS tools like ChatGPT/Claude) with data leakage and shadow AI risks.
+2. Customized Generative AI (RAG) connecting vector databases and cloud/on-premises models with prompt injection risks.
+3. AI Developer Tools (IDEs, Copilot, Cursor) posing risks with code generation and credential exposure.
+4. Agentic AI (MCP) autonomously operating with API abuse and infinite loop risks.
+
+### Dual Protection: DLP and LLM Security Guards
+- Data Leakage Protection (DLP):
+  - Sensitive data detection (PII, PCI, corporate secrets).
+  - Real-time interception to prevent training data pollution.
+  - Compliance with GDPR, HIPAA, etc.
+- LLM-Based Semantic Protection:
+  - Prompt injection prevention.
+  - Intent and toxicity detection.
+  - Hallucination suppression via retrieval augmented generation and logic validation.
+
+### AI SIEM: Proactive Defense with Integrated Prompt Security
+- Prompts as a new attack surface require monitoring and auditing like critical security logs.
+- Full data ingestion and correlation analysis linking prompt security with endpoint, network, and cloud logs to detect complex AI threats.
+- AI capabilities include automated triage, intelligent correlation, and automated remediation with security playbooks.
+
+### AI SIEM and Autonomous SOC Core
+- Evolution of SOC automation levels:
+  - Level 0: Manual detection and response.
+  - Level 1: Rule-based multi-source correlation and SOAR-driven investigations.
+  - Level 2: AI-assisted machine learning optimizations.
+  - Level 3: Partial autonomy using LLMs for attack prediction and agentic methods.
+  - Level 4: Highly autonomous SOC processes with system-led guidance and minimal human intervention.
+
+### AI Analyst: Always-on, Responsive Security Analysis
+- Real-time alert triage.
+- Automation of investigations across multiple domains.
+- Natural language query for simplified complex data searches.
+- Autonomous execution of predefined response playbooks.
+- Continuous threat hunting with behavior baselines and threat intelligence.
+- Explainable AI decisions with confidence scores to maintain analyst control and auditability.
+
+### Future Outlook: Leading Autonomous SOC Transformation
+- Core defense focuses on prompt security for new threat boundaries.
+- AI analysts operate 24/7 converting natural language into complex queries.
+- SentintelOne’s hyper-automation results:
+  - 10-50x faster query speeds.
+  - Up to 50% operational cost savings compared to existing SIEMs.
+  - 80% reduction in investigation times.
+  - PB-level massive parallel processing and data retention up to 7 years.
+
+---
+
+## Important Conclusions and Insights
+- The cybersecurity landscape is being drastically reshaped by AI adoption, opening new threat vectors that traditional security models cannot handle effectively.
+- Proactive, AI-driven security frameworks including AI SIEM platforms and dual-layered defenses (DLP + LLM semantic protections) are critical in mitigating emerging AI-specific threats.
+- Automation and AI-assisted SOC operations improve threat detection accuracy, reduce analyst fatigue, and speed up remediation, dramatically enhancing enterprise security posture in the AI era.
+- Enterprises must evolve security operations from passive reactive defense models to AI-enabled proactive defense and autonomous SOC to stay resilient against sophisticated AI-powered attacks.
+
+---
+
+## Technical and Other Problems Emphasized in the Presentation
+
+### Security Gaps in AI Adoption
+- Rapid AI adoption outpaces current data protection measures, creating unaddressed security exposures.
+- Shadow AI usage in organizations introduces unauthorized and unmonitored AI tools, raising data leakage and compliance risks.
+
+### AI Application Layer Vulnerabilities
+- Attackers manipulate AI application inputs (prompt injection) to bypass controls.
+- Poisoning of training data and models weakens AI trustworthiness and integrity.
+- Exposure of hidden system prompts and executing malicious output on downstream systems.
+
+### Limitations of Traditional Security Tools
+- Signature-based detection cannot capture dynamic, probabilistic AI threats.
+- AI-generated threats mimic normal user behavior, evading firewalls and SIEM detections.
+- Resultant alert fatigue and delayed response increase risk exposure.
+
+### Challenges in SOC and SIEM Evolution
+- Manual or partially automated SOC processes are too slow and error-prone to handle AI-era threats.
+- Existing SIEMs lack the capability to integrate prompt security and AI threat intelligence effectively.
+- Need for explainable AI decisions to maintain compliance and analyst trust.
+
+### Risk in Enterprise AI Usage Channels
+- Public SaaS AI tools expose data leakage risk.
+- Custom AI applications vulnerable to prompt injections.
+- Developer AI tools risk leaking secrets.
+- Autonomous AI agents potential for API abuse and feedback loop failures.
+
+---
+
+This presentation provides a comprehensive overview of the challenges AI introduces to cybersecurity and proposes an advanced AI-driven platform approach as a strategic solution to protect enterprises in the evolving threat landscape.

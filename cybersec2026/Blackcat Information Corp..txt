@@ -1,0 +1,78 @@
+# Summary of Presentation
+
+---
+
+## Title
+Goodbye Ineffective Alerts: Leveraging AI to Rescue the SecOps Frontline  
+(AI 驅動告警升級事件，一站式接軌國際合規檢測)
+
+## Authors/Presenters
+- Taylor Kao (高翔)  
+- BLACK CAT Information (黑貓資訊)
+
+## Key Points
+
+- **Cybercrime as a Service (CaaS) Industry**:  
+  The presentation highlights the industrialization of hacking with over 115 active ransomware groups targeting financial institutions and supply chains. Attackers have integrated AI tools, necessitating an upgrade from traditional defense mindsets.
+
+- **Three Major Pain Points in Modern SecOps**:  
+  1. Alert Fatigue: Traditional systems generate too many false alerts, wasting 80% of analysts’ time on noise.  
+  2. Ineffective IOC Deployment: Intelligence often fails to respond in real time, resulting in only 5% effectiveness.  
+  3. Domain Risks: 84.8% of enterprises have asset exposure or improper permissions.
+
+- **Core Strategy: GenAI + SOAR Integration**  
+  Transitioned from alert-driven (handling isolated noisy alerts) to incident-driven (handling entire attack chains) operations enhanced by AI-powered virtual assistants to automate and prioritize incident responses.
+
+- **Explainable AI (XAI) Use**:  
+  Greatly reduces false positives and improves efficiency by correlating entities, translating malicious scripts (e.g., PowerShell), and providing visualized attack chains for quicker analyst interpretation.
+
+- **LOLBAS (Living Off the Land Binaries, Scripts, and Libraries)**:  
+  Attackers leverage legitimate Windows utilities (e.g., PowerShell, mshta, bitsadmin) to execute malicious commands without dropping files, complicating detection.
+
+- **Base64 Encoding Detection and Usage**:  
+  Attackers embed malicious PowerShell commands encoded in Base64 to evade detection. The presentation provides references to online decoder/encoder tools.
+
+- **Case Studies: Multi-Stage Fileless Attack Detection**:  
+  Demonstrates detection of advanced persistent threats using a big data and GenAI-powered EDR platform that consolidates multiple alerts into cohesive incidents and performs real-time script intent translation.
+
+- **Attack Surface Management (EASM) and Domain Security Assessment**:  
+  Discusses a 6-step model for external asset discovery and mitigation, emphasizing that larger digital footprints increase the risk of exploitation.  
+  Outlines maturity levels of Active Directory security, from basic vulnerability management to fully automated and zero-trust frameworks.
+
+- **Comprehensive Security Covering External Exposure and Internal Core**:  
+  Highlights integration of external attack surface management, AD domain health checks, and endpoint detection & response (EDR) for deep behavioral monitoring and quick attack disruption.
+
+- **ISO/IEC 17025 Accredited Security Testing Laboratory**:  
+  BLACK CAT Information boasts internationally accredited testing facilities complying with NIST and ETSI IoT security standards.
+
+- **Zero Compromise Security: One-stop Product Security Testing**:  
+  Covers security aspects from supply chain and open-source risk assessments, software vulnerability scanning, network protocol analysis, to penetration testing ensuring no hidden risks or critical vulnerabilities.
+
+- **Human-Machine Collaboration**:  
+  Combining GenAI denoising and real-time correlation with domain and product security capabilities to enable effective SecOps defense.
+
+## Important Conclusions and Insights
+- Traditional SecOps alert-driven approaches are ineffective due to overwhelming false positives.  
+- Integrating Generative AI with SOAR platforms enables incident-driven detection at attack chain level, operationalizing security responses.  
+- AI-powered explainability greatly enhances threat analysis speed and precision, transforming script-based attacks visibility.  
+- Attackers increasingly exploit legitimate OS tools and encoding schemes to evade detection, demanding advanced analytic methods.  
+- Comprehensive security strategies must span external internet-facing assets, internal domain security, and endpoint monitoring.  
+- Industry-grade accredited security labs and zero compromise testing frameworks are critical for trust and thorough risk mitigation.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Alert Fatigue**: High volume of false alerts overwhelms security teams, making it difficult to focus on real threats.  
+- **Poor IOC Deployment**: Intelligence feeds often fail to align with live environments, reducing actionable threat detection.  
+- **Excessive Asset Exposure**: Many organizations have significant external and internal risk due to poor permission management and unknown assets.  
+- **Use of Legitimate Tools in Attacks (LOLBAS)**: Attackers’ use of native tools bypasses conventional malware detection methods.  
+- **Encoded Malicious Payloads**: Use of Base64 encoding to hide commands complicates signature-based detection.  
+- **Complex Multi-stage Fileless Attacks**: They require sophisticated detection correlating scripts, network, and behavioral data.  
+- **Security Maturity Gaps**: Many enterprises have immature AD and network security postures, leaving gaps exploitable by attackers.  
+- **Need for AI Explainability**: Without transparent AI, analysts struggle to understand alerts and investigate efficiently.  
+- **Integration Challenges**: Coordinating external and internal security tools, processes, and compliance requirements is complex but necessary.  
+
+---
+
+This presentation advocates for AI-driven, explainable, and integrated SecOps solutions to address the modern cyber threat landscape effectively.

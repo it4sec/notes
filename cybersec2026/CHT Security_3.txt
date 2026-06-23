@@ -1,0 +1,62 @@
+# Summary of Presentation
+
+---
+
+## Title
+**Ecological Joint Defense: Cross-Agency Intelligence Sharing and Collaborative Defense**
+
+---
+
+## Author/Presenter
+Chen Jiechang  
+Chief Information Security Officer  
+Taishin Shin Kong Financial Holdings / Taishin Bank
+
+---
+
+## Key Points
+
+- Traditional cybersecurity methods such as "castle-style defense" are no longer sufficient alone.
+- Cyber threats have evolved from targeting single organizations to ecosystems, emphasizing the need for collective defense strategies.
+- Cyberattacks increasingly exploit shared suppliers, highlighted by cases such as SolarWinds and Korean Leaks, showing supply chain vulnerabilities.
+- The AI era introduces more complex threats, necessitating collaboration between large banks and regulators internationally.
+- Effective ecological joint defense requires trust and mutual benefit among participants, including:
+  - Establishing supplier security corridors with risk-based segmentation.
+  - Demanding Software Bill of Materials (SBOM) to quickly locate risks.
+  - Revising contractual terms for security responsibilities and data protection.
+  - Cross-border and cross-organizational joint scenario exercises.
+  - Integrating international frameworks such as NIST CSF and FIRST for standardized cooperation.
+  - Enhancing SOC (Security Operations Center) maturity and leveraging SOAR (Security Orchestration, Automation, and Response) to automate high-frequency, low-risk alerts.
+  - Sharing threat intelligence and managing vulnerabilities collaboratively.
+- Transitioning from competition to cooperation is emphasized to reduce blind spots in defense.
+- Challenges in cross-agency cooperation often lie in "willingness" and "standards," not just technical issues.
+- Promoting standardization of languages like STIX/TAXII ensures timely and automated machine-to-machine sharing of threat intelligence.
+- De-identification and privacy techniques are crucial to overcoming the reluctance to share sensitive internal incident information ("keeping family shame inside").
+- Emphasizing automation (SOAR workflows) to rapidly respond to threats; manual transfer of intelligence (e.g., Excel sheets) is insufficient.
+
+---
+
+## Important Conclusions and Insights
+
+- Cybersecurity defenses must evolve from isolated organizational silos toward an interconnected ecosystem defense.
+- Trust, transparency, and accountability underpin effective collaborative cyber defense.
+- International cooperation and adherence to global standards significantly enhance response speed and coverage.
+- Automation and integration of threat intelligence are essential in coping with the speed and scale of modern cyber threats.
+- The biggest hurdles to collaborative security are organizational and cultural rather than purely technological.
+- Sharing of anonymized threat intelligence can build collective resilience without exposing sensitive internal issues.
+
+---
+
+## Technical/Other Problems Highlighted
+
+- Supply chain attacks exploiting vulnerabilities in common suppliers (e.g., SolarWinds hack and Korean Leaks operations).
+- Challenges in information sharing across agencies due to lack of common standards and reluctance to share sensitive data.
+- Need for standardized, machine-readable formats for threat intelligence exchange (e.g., STIX/TAXII).
+- Low maturity and automation levels in many SOCs leading to inefficiency in high-volume alerts.
+- Difficulty in rapid identification and tracing of attack chains without integrated intelligence systems.
+- Psychological barriers in disclosing internal security incidents ("family shame") that limit transparency.
+- Manual threat intelligence sharing methods that hinder timely and effective responses.
+
+---
+
+This presentation stresses the criticality of a joint defense ecosystem fueled by trust, automated intelligence sharing, supply chain vigilance, and international collaboration to tackle the increasingly sophisticated cyber threats in the AI era and beyond.

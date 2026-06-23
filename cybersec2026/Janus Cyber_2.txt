@@ -1,0 +1,86 @@
+# Summary of Presentation: Safer OT with Less Effort - Control Layer Automated Protection Architecture
+
+## Title
+**Safer OT with Less Effort**  
+控制層自動化防護架構 (Control Layer Automated Protection Architecture)
+
+## Authors/Presenters
+- 卓傳育 博士 (Dr. Chuan-Yu Zhuo)  
+  Co-Leader, SEMI Taiwan Fab & Equipment Security TF  
+  Distinguished Researcher, Industrial Technology Research Institute  
+  CEO, Janus-Cyber 一安智能股份有限公司
+
+## Key Points
+
+### Challenges in OT Security
+- OT environments face critical security challenges due to:
+  - Legacy systems that cannot be updated
+  - IoT devices with extremely limited computing resources
+  - Increasing connectivity ("Everything is connected"), eliminating real physical isolation and expanding attack surfaces
+  - Production uptime (yield) is critical; any security measures impacting device efficiency are often rejected.
+  
+### Traditional IT Security Model Limitations
+- Traditional perimeter defense with a trust assumption is flawed
+- Once breached, threats spread laterally (Lateral Movement) causing widespread damage in a flat, trusted OT network.
+
+### Agent-based vs Agentless Security
+| Aspect          | Traditional IT (Agent-based)                  | Modern OT (Agentless)                          |
+|-----------------|----------------------------------------------|-----------------------------------------------|
+| Performance Impact | High; may cause old devices to malfunction or lose warranty | Zero impact; does not affect device operation or performance |
+| Applicability   | Limited to specific OS PCs or servers        | Covers all IoT and legacy machines without agent installation |
+| Deployment Effort | Very high; each device requires individual downtime for installation | Very low; network-layer traffic analysis, plug and play |
+
+### Strategic Shift: Control Layer Defense
+- Move protection from passive monitoring to active constraint at the network control layer
+- Zero trust micro-segmentation principles:
+  1. No trust by default; require strict identity verification for every request
+  2. Enforce least privilege access with strictly closed communication to only necessary resources
+  3. Independently verify and continuously monitor traffic per IP to confine threats to single devices
+  
+### Micro-segmentation and Automation Challenges
+- Manual maintenance of Access Control Lists (ACLs) across thousands of devices is resource-intensive and error-prone
+- Automation through AI:
+  - Intelligent behavioral analysis
+  - Automated policy generation
+  - Compliance verification
+
+### Janus Control Layer Solution
+- Pure agentless platform requiring no program installs on endpoints
+- Transparent bridging with no changes to network architecture or IP config
+- Supports diverse legacy IT, Windows, and specialized IoT devices seamlessly
+- Deployment close to devices via integration with edge network switches and routers, providing a "net" for detection and blocking
+- Efficient group protection managing 1-48 endpoints per protection node reduces deployment cost
+
+### Key Benefits
+- Minimizes reliance on system patches; protects even vulnerable or EOL (end-of-life) devices
+- Extends lifespan of costly legacy production equipment in a secure state
+- Complies with international standards like SEMI E187 for supply chain security
+- Provides complete logs for security event auditing and SOC integration
+- Provides granular control and automatic isolation of unnecessary services and ports
+
+### Visualized Risk and Centralized Control
+- Real-time risk scoring and distribution of device lists for clear visibility
+- Log export for integration with existing enterprise SOC/SIEM for unified defense coordination
+
+## Important Conclusions and Insights
+- OT environments require modernized, zero-trust, micro-segmentation architectures to effectively contain advanced persistent threats (APTs).
+- Traditional perimeter and agent-based security are largely inadequate or infeasible in OT due to performance and legacy system constraints.
+- Automation and AI-driven policy generation are essential to overcome the enormous complexity and scale of OT networks.
+- Control layer network protection offers a pragmatic and scalable method to maintain continuous operation with high security.
+- Comprehensive network-level defense, including micro-segmentation and zero trust, greatly reduces risk without compromising production uptime.
+- Implementing international standards such as SEMI E187 within the solution expedites compliance and market readiness.
+
+---
+
+## Technical and Other Problems Highlighted
+- Legacy OT systems frequently run outdated, unpatchable software, making traditional endpoint security ineffective.
+- IoT devices have limited compute resources preventing installation of security agents.
+- Manual ACL management across thousands of endpoints is unrealistic and error-prone.
+- The flat and trusted OT network architecture facilitates rapid lateral threat movement after perimeter breach.
+- Security solutions that degrade equipment performance or require downtime directly impact production uptime, which is unacceptable in OT.
+- Lack of real-time visibility and integration with enterprise security operations hinders effective cyber defense.
+- Over-reliance on patching leaves OT vulnerable as many devices reach EOL or don't support updates.
+
+---
+
+This presentation thoroughly explores the challenges in operational technology (OT) cybersecurity and advocates an advanced, agentless, zero trust micro-segmentation approach implemented at the network control layer, emphasizing automation and AI intelligence to secure legacy and diverse OT environments with minimal operational disruption.

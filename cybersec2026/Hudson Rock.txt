@@ -1,0 +1,91 @@
+# Summary of "The Cybercrime Factory: Infostealers Annual Intelligence Brief"
+
+---
+
+## Title
+**The Cybercrime Factory: Infostealers Annual Intelligence Brief**
+
+## Author/Presenter
+Leonid Rozenberg  
+Cybercrime & Threat Intelligence Researcher  
+Email: leonid@hudsonrock.com
+
+---
+
+## Key Points
+
+- **Infostealer Landscape Update**  
+  Overview of the latest trends and developments in the infostealer cybercrime world.
+
+- **Evolution of the ClickFix**  
+  A detailed look at the emergence and spread of the ClickFix scam, which exploits users into performing keyboard shortcuts that compromise systems.
+
+- **New Cybercrime Tools**  
+  Review of recent cybercrime-as-a-service tools, including advanced infostealers, encryption tools for malware delivery, and monetization services offered in criminal underground markets.  
+  Notable mentions include services like AURA Stealer, Atlas macOS Suite, and Trickbox crypt services, alongside exploitation tools such as Daytona-UI scanner.
+
+- **Tips for Staying Safe**  
+  Practical advice for users to avoid falling victim to common scams, such as ignoring prompts offering to "fix your something," verification checks, activating Windows via shortcuts, remote support scams, and deleting nonexistent viruses.
+
+- **Predictions for 2026**  
+  Insights into expected developments in infostealer malware capabilities and cybercriminal tactics, based on ongoing trends and threat actor discussions in underground forums.
+
+- **Statistics & Impact**  
+  - Over 14 million compromised domains worldwide.  
+  - 5 million+ compromised employees affected.  
+  - Over 500 million compromised passwords exposed.  
+  - Dramatic growth in compromised machines, with a 30,000% increase measured by Hudson Rock from 2018 to 2025.  
+
+- **Ecosystem of Cybercrime as a Service**  
+  Framework showing how infostealer malware aligns with encryption techniques, delivery mechanisms, and monetization strategies used by cybercriminal groups.
+
+- **From Infostealer to Ransomware**  
+  Evidence that some ransomware groups, like BlackBasta, are integrating or planning to integrate infostealers as component tools to enhance their operations.
+
+- **Law Enforcement Actions**  
+  Recent arrest of Meduza Stealer operators by Russian authorities, showcasing ongoing efforts to disrupt infostealer operations.
+
+---
+
+## Important Conclusions and Insights
+
+1. **Infostealers remain a dominant threat** in cybercrime, steadily growing in scale and sophistication tied to a professionalized cybercrime marketplace.
+
+2. **ClickFix scam growth illustrates the shift** to highly social-engineered attack vectors forcing users to inadvertently compromise themselves through keyboard shortcut tricks.
+
+3. **Subscription-based ‘Cybercrime-as-a-Service’ models** are lowering technical barriers, enabling more criminals to deploy infostealers broadly and manage stolen data with sophisticated control panels and filtering options.
+
+4. **Modular malware architecture is on the rise,** with infostealers being combined with keyloggers and ransomware, indicating a trend toward multifaceted cybercrime toolkits to maximize monetization.
+
+5. **User awareness and caution** about unsolicited prompts, unexpected system messages, and requested keyboard shortcuts are critical to mitigate infection vectors.
+
+6. **Law enforcement is active but challenged** given the global and fragmented nature of cybercrime services, prompting the need for continuous threat intelligence sharing and collaboration.
+
+---
+
+## Technical and Other Problems Emphasized
+
+- **Browser Credential Theft**:  
+  Vulnerability in how browsers store and manage saved passwords and session tokens that infostealers exploit.
+
+- **Massive Scale of Credential and Domain Compromise**:  
+  Huge volumes—tens of millions of domains and employees—are compromised, showing the extensiveness of the threat.
+
+- **ClickFix Scam**:  
+  Newly evolving method where victims are tricked into running specific keyboard commands (e.g., Windows Key + R followed by paste and enter commands) that execute malware or expose data.
+
+- **Proliferation of Low-Cost to High-End Crimeware Tools**:  
+  Malicious services range from basic stealers costing a few hundred dollars per month to advanced SaaS modules priced at thousands, highlighting a tiered ecosystem accessible to many criminals.
+
+- **Integration of Infostealers with Ransomware**:  
+  Challenges increase as stealer data aids ransomware operators for more damaging attacks, such as data leaks and targeted extortion.
+
+- **End-User Scam Vulnerabilities**:  
+  Persistent effectiveness of scams encouraging users to perform risky verification steps, activate fake keys, or seek bogus remote support.
+
+- **International Law Enforcement Coordination**:  
+  Though arrests occur, cybercriminal operations adapt rapidly, and multinational cooperation is essential to combat the threat effectively.
+
+---
+
+This intelligence brief offers a comprehensive overview of the infostealer threat landscape, revealing a cybercrime environment that is increasingly commoditized, user-targeted through social engineering, and technologically integrated with other cyber threats like ransomware. It underscores the imperative for heightened cybersecurity awareness, proactive threat intelligence, and continued global enforcement efforts.

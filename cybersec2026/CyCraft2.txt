@@ -1,0 +1,80 @@
+# Summary of Presentation: "Original Sin of Active Directory - Long Live with NTLM Relay"
+
+### Title
+Original Sin of Active Directory  
+Long Live with NTLM Relay  
+
+### Authors/Presenters
+- Jimmy Su (dog lover / gamer / researcher; X: @jimmysured)  
+- Presented May 5th, 2026, at CYBERSEC 2026, Taiwan Security Conference
+
+### Key Points
+- **Overview of NTLM**: NTLM (New Technology LAN Manager) is an authentication protocol Microsoft introduced in 1993 replacing LAN Manager (LM). It was designed to mitigate replay attacks using challenge-response mechanisms.
+
+- **NTLM Relay Fundamentals**:  
+  - Relay is a man-in-the-middle (MITM) attack on authentication where attackers do not need to decrypt credentials but forward authentication messages to another target.  
+  - Relay attacks can bypass protections like Signing, MIC (Message Integrity Code), EPA (Extended Protection for Authentication), and Channel Binding (CB).
+
+- **Historical Context**:  
+  - Before NTLM Relay became popular, attacks like Pass-the-Hash required direct access to NT hashes. Relay removed the need for hashes upfront.  
+  - NTLM Relay attackers exploit protocol transition by forwarding NTLMSSP messages across different protocols (e.g., SMB to LDAP or HTTP).
+
+- **Challenges in Mitigating NTLM Relay**:  
+  - Signing and MIC protect message integrity within individual protocols but do not prevent cross-protocol relay attacks.  
+  - EPA/Channel Binding aims to ensure the authentication channel matches the intended service to prevent protocol confusion but is often misconfigured or unsupported by third-party apps.  
+  - NTLM is still widely used due to legacy systems, third-party software, printers, scanners, and silent fallbacks when Kerberos fails.
+
+- **Kerberos Relay Possibility**: Contrary to common belief, Kerberos authentication can also be relayed or reflected due to flaws and misconfigurations, notably related to SPN (Service Principal Name) and DNS manipulation.
+
+- **Attack Techniques and Combinations**:  
+  - NTLM Relay techniques combined with coercion attacks (PrinterBug, PetitPotam, ShadowCoerce) enhance attack capabilities.  
+  - Attackers can perform dangerous actions such as LDAP write (DCSync), enrolling fake certificates, SMB share access, and executing remote commands.
+
+- **Defenses and Countermeasures**:  
+  - Enable protocol signing on SMB and LDAP (especially requiring signing on server-side).  
+  - Enable EPA and strict Channel Binding (set LDAP CBT to "Always").  
+  - Disable NTLMv1 and migrate NTLM traffic toward Kerberos.  
+  - Disable or restrict unused services like Print Spooler on Domain Controllers and WebClient.  
+  - Continuous monitoring using auditing logs for NTLM usage and abnormal certificate issuance events.  
+  - Regular use of attack simulation tools for defensive testing.
+
+### Important Conclusions and Insights  
+- NTLM Relay remains a critical and hard-to-fix vulnerability in Active Directory environments due to its foundational design and legacy dependencies.  
+- Simply disabling NTLM is not trivial because of widespread legacy system dependencies and fallback behaviors.  
+- Defenses must be multi-faceted involving server-side enforcement of signing, EPA, channel binding, and close monitoring.  
+- Kerberos was once seen as safe from relay attacks but is now proven vulnerable, requiring similar mitigations.  
+- Practical defense requires audit enablement, attack surface reduction, and defensive testing with known attack tools.  
+- Ongoing vigilance and timely deployment of fixes and policy enforcement are essential to combat relay-based attacks.
+
+---
+
+## Technical and Other Problems Emphasized in the Presentation
+
+- **Legacy Dependence on NTLM**:  
+  - Many third-party software products, old devices (printers, scanners), and legacy shares and SDKs depend on NTLM and cannot easily be replaced.  
+  - Silent fallback from Kerberos to NTLM complicates efforts to fully disable NTLM.
+
+- **Protocol Signing Limitations**:  
+  - SMB signing only protects SMB traffic; LDAP and other protocols require separate signing enforcement.  
+  - Many servers do not enforce signing by default (improvements start with Server 2025 version).
+
+- **Cross-Protocol Relay Problem**:  
+  - Signing and MIC do not prevent attackers from forwarding packets across different protocols, leading to relay attacks.  
+  - Channel Binding and EPA are designed to fix this but require client and server support, often missing in legacy or third-party apps.
+
+- **Message Integrity Code (MIC) Removal Attacks**:  
+  - CVE-2019-1040 demonstrated how MIC can be dropped from authentication messages and still accepted, allowing manipulation of negotiate flags.  
+  - Proper deployment requires simultaneously enabling MIC and session signing.
+
+- **Kerberos Relay Reality**:  
+  - Assumed secure, Kerberos can be relayed or reflected due to weaknesses in SPN handling and DNS.  
+  - CVEs such as 2025-33073 and 2026-24294 highlight these issues.
+
+- **Coercion Attacks “Combo”**:  
+  - Attacks using coercion to force victims to authenticate (such as PetitPotam) combined with relay attacks greatly increase exploitation reach.
+
+- **Monitoring & Visibility Gaps**:  
+  - Difficulties in identifying who is still using NTLM or misconfigured channels.  
+  - Need for enhanced logging, event collection, and analysis (e.g., NTLM events, unsigned LDAP bind events, AD CS abnormal events).
+
+By understanding and addressing the above systemic, protocol, and operational challenges, organizations can better protect Active Directory environments from the persistent threat posed by NTLM and Kerberos relay attacks.

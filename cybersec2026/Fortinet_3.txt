@@ -1,0 +1,95 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+**AI 新賽局：在合規與創新中取得平衡**  
+(*New AI Playing Field: Balancing Compliance and Innovation*)
+
+---
+
+## Authors/Presenters
+- 李鵬 Paul Li  
+- Fortinet 技術顧問 (Fortinet Technical Consultant)
+
+---
+
+## Key Points
+
+### 1. Global AI Regulation Landscape
+- Major regions (USA, EU, China, Japan) have different approaches to AI governance ranging from risk-based regulation (EU), innovation-first (USA), flexible self-regulation (Japan), to state-led control (China).
+- Taiwan aims to "catch up or surpass" global AI regulation, recognizing it must enact national-level AI legislation.
+
+### 2. Taiwan AI Strategy
+- Dual engines: Promote innovation and implement ethical governance.
+- Establish a legal framework ("AI Basic Law") that balances encouraging technological advancement with protecting rights, managing risks, and ensuring system security.
+- The National Science and Technology Council (國科會) will be the lead agency, emphasizing development over pure regulation.
+
+### 3. AI Basic Law Overview
+- Acts as a constitutional, high-level framework guiding Taiwan’s AI policies.
+- Sets out principles such as human-centric AI, accountability, transparency, privacy protection, digital equality, security, and fairness.
+- Future detailed implementing laws ("effect laws") to follow over the next two years.
+- Emphasizes AI trustworthiness and responsible innovation.
+
+### 4. Core Ethical Principles (Seven Guiding Principles)
+- Sustainable development and welfare.
+- Human autonomy.
+- Fairness and non-discrimination.
+- Accountability.
+- Transparency and explainability.
+- Information security and system robustness.
+- Privacy protection and data governance.
+
+### 5. Security and Compliance Requirements for AI Systems
+- Secure AI lifecycle to prevent threats.
+- Privacy by design to protect personal data and promote minimal use.
+- Transparency to communicate and mark AI-generated content appropriately.
+- Clear responsibility and traceability with logs and audit trails.
+
+### 6. Security Challenges of AI Applications
+- New attack surfaces emerge with AI agents such as chatbots, creating hidden attack vectors that bypass traditional defenses.
+- Example: SQL Injection attacks through AI-chat interfaces, bypassing WAF protections by leveraging natural language inputs.
+- Data leakage risks from employees uploading sensitive data to external AI services (e.g., ChatGPT).
+
+### 7. Fortinet’s Security Fabric Solution
+- Advocates a holistic, integrated security framework covering networking, cloud services, endpoints, and AI applications.
+- Products include FortiAI (Assist, Protect, Secure AI), FortiWeb, FortiGate, FortiDLP, FortiAnalyzer, FortiSIEM, and FortiSOAR.
+- Solutions provide automated detection, prevention, audit, and compliance evidence generation.
+- Emphasizes proactive, comprehensive AI risk governance rather than reactive patching.
+
+### 8. AI Security Roadmap
+- Three phased approach recommended:
+    1. Boundary defense: Protect exposed AI APIs.
+    2. Internal monitoring: Secure internal AI training environments with zero trust.
+    3. Compliance automation: Automate AI incident responses and generate compliance reports.
+
+---
+
+## Important Conclusions and Insights
+- Taiwan’s AI Basic Law sets a timely and balanced framework merging innovation and ethical governance, essential for global competitiveness.
+- AI security extends beyond traditional perimeter defenses to cover AI-specific attack vectors and data governance issues.
+- AI projects’ success depends heavily on cybersecurity capabilities; security teams become key players.
+- Legal and technical compliance must be deeply integrated.
+- Fortinet’s Security Fabric aims to translate legal AI principles into actionable technology solutions providing visibility, control, and auditability.
+- Trust is positioned as the core asset for sustainable AI-driven business value.
+
+---
+
+## Technical and Other Problems Emphasized in the Presentation
+
+### Technical Problems:
+- **AI “Black Box” Transparency:** Deep learning models’ decisions are difficult to explain, posing a challenge for legal and ethical compliance.
+- **New Attack Surfaces via AI Agents:** AI chatbots and APIs introduce hidden, natural language input attack vectors allowing injection or command manipulation undetected by traditional WAFs.
+- **Data Leakage Risk:** Employees inadvertently leaking sensitive company or customer data to external AI services, creating irreversible data exposure.
+- **Comprehensive Governance Complexity:** Need for integrated monitoring, logging, and automated response across diverse AI security controls, data governance, and regulatory compliance.
+- **Zero Trust in High-Throughput AI Training Environments:** Managing secure, low-latency AI model training with strict access control.
+
+### Other Challenges:
+- **Balancing Innovation and Regulation:** Avoid stifling innovation with excessive regulatory burdens while managing ethical, privacy, and security risks.
+- **Legislative Uncertainty:** Basic law provides framework but detailed "effect laws" defining operational compliance measures are forthcoming.
+- **Need for Interdisciplinary Coordination:** Collaboration across legal, technical, and operational teams to translate principles into practice.
+- **Proactive vs Reactive Security Posture:** Emphasizes shifting from patching known vulnerabilities to building a proactive AI risk governance framework.
+
+---
+
+This comprehensive presentation sheds light on Taiwan’s strategic approach to AI lawmaking and underscores the critical role cybersecurity plays in enabling responsible AI innovation. Fortinet positions itself as a key enabler for organizations to navigate this complex landscape.

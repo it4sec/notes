@@ -1,0 +1,94 @@
+# Summary of PDF Presentation
+
+---
+
+## Title
+They Say I Am a Useless Young Person  
+(他們說我是沒有用的年輕人)
+
+## Author/Presenter
+PD Lee  
+Freelancer, Cybersecurity Vagabond (自由工作者, 資安流浪漢)
+
+## Key Points
+
+- **Agenda**  
+  - Useless Young Person  
+  - Catching Up with the Tail Lights  
+  - Domain Expansion  
+
+- **Personal Background and Career Path**  
+  - Graduated from a management department  
+  - Worked as a computer lab assistant and data center technician  
+  - BBS campus site administrator and founding manager of management department site  
+  - Difficulty finding engineering jobs at first  
+  - After one year, still struggled to find work  
+  - Eventually found contract work, then full-time work after two years  
+  - Continuous learning and sharing of research progress  
+  - Over 10 years later, remained humble, discovered APT events  
+  - Became keynote speaker at APT symposium, honored as model employee but received minimum raise  
+  - Moved overseas for language learning, self-exile, and migrant worker experience  
+  - Returned after 10+ years, re-encountered a vicious cycle and started own business  
+
+- **Self-Assessment and Strategies for Progress**  
+  - Recognize disadvantage at starting point; catch up by making greater progress and leveraging different advantages  
+  - Find correct learning channels:  
+    - Passive learning: complete formal education, attend professional training courses  
+    - Active learning: identify personal learning styles and focus on topics of interest  
+  - Use of non-IT related AI courses to gain fresh perspectives and inspiration  
+  - Recommended to fill educational gaps to avoid job discrimination and have solid foundational training  
+  - Choose reputable training classes and instructors  
+
+- **Learning Approaches and Practical Experience**  
+  - Attend lectures, teach others, engage in practical battles  
+  - Practice on oneself and attack hackers  
+  - Improve hacking techniques  
+  - Shared examples of phishing and hacking improvements with video demonstrations (YouTube reference)  
+
+- **Domain Expansion and Interdisciplinary Integration**  
+  - Combine original strengths with newly learned technical skills  
+  - Bridge romanticism from liberal arts with practicality and technical ability from IT  
+  - Leverage business thinking  
+  - Address AI's influence responsibly—avoid AI FOMO, focus on complementary strengths rather than repetitive tasks  
+
+- **Case Study and Examples**  
+  - A demo case illustrating the combination of skills across domains  
+  - Discussion of business impact through IDOR vulnerability in e-commerce  
+  - Emphasis on competitor advantage when accessing future discount information, not consumers' access  
+
+- **AI Influence**  
+  - Rapid technical changes but slower societal changes  
+  - Emphasize mutual benefit between human expertise and AI capabilities  
+  - Visual example of personalized hair analysis consultant report displaying different styles and recommendations  
+
+- **Closing Thoughts**  
+  - Recommend filling educational credentials when possible  
+  - Travel when facing life hurdles for broader perspectives and inspiration  
+
+---
+
+## Important Conclusions and Insights
+
+- Starting without IT background is challenging and involves fighting inherent disadvantages  
+- Continuous, diversified learning targeting one’s own style is crucial to keeping up and progressing  
+- Cross-domain skills (liberal arts + technical + business) enhance problem-solving and adaptability  
+- AI should be embraced wisely as a complementary tool, not a source of fear or redundancy  
+- Practical, hands-on learning including hacking/debugging habits profoundly benefits cybersecurity professionals  
+- Travel and life experience can unlock new insights and growth opportunities  
+
+---
+
+## Technical or Other Problems Highlighted
+
+- Difficulty securing engineering or cybersecurity jobs with a non-IT academic background  
+- Job market discrimination based on education background and credentials  
+- Challenges of career stagnation despite contributions (low raises, underappreciation)  
+- The vicious cycle of returning overseas-experience professionals facing similar systemic issues upon return  
+- Need to keep pace with rapidly changing technical landscapes in cybersecurity and AI  
+- Risk of falling into AI FOMO or replicating repetitive tasks that do not add unique value  
+- Real-world vulnerabilities such as IDOR in e-commerce systems impacting business competitiveness  
+- Importance of robust practical skills for defending against phishing and sophisticated hacking threats  
+
+---
+
+This presentation advocates perseverance, continuous upskilling tailored to oneself, an interdisciplinary mindset, and wise AI use to transform perceived "uselessness" into valuable cyber talent.

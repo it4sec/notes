@@ -1,0 +1,69 @@
+# Summary of Presentation: "超越合規: IEC 62443 到 EU CRA 的AIoT 資安實踐"  
+**Title:** Beyond Compliance: AIoT Cybersecurity Practices from IEC 62443 to EU CRA  
+**Authors/Presenters:**  
+謝斗文 (Hsieh Tou-Wen)  
+東擎科技股份有限公司 (ASRock Industrial)  
+Vice General Manager  
+
+---
+
+## Key Points
+
+### 1. Introduction  
+- Cybersecurity (資安) is now a fundamental requirement for enterprises to enter the market, especially for IoT and edge computing devices across manufacturing, retail, energy, logistics, and smart zones.  
+- Cybersecurity is both a market-entry threshold ("入場門檻") and operational imperative ("關鍵保障") to ensure device long-term operation stability.  
+- Secure products require balancing security and efficiency costs.
+
+### 2. IEC 62443 Journey  
+- Initial cybersecurity evaluations involved extensive, multi-dimensional questionnaires without clear standards or answers. This posed challenges to sustaining cybersecurity capability.  
+- Companies often lack scalable cybersecurity capabilities and improperly rely on expert-driven or manual responses, hindering long-term product and market support.  
+- IEC 62443 dual certification (IEC 62443-4-1 for secure development lifecycle & IEC 62443-4-2 for secure product) is identified as the most direct and rigorous method to embed security as a core competency.  
+- Achieving cybersecurity involves threat modeling, vulnerability mitigation, rigorous testing, and audits to build true operational capability—not just conformance.
+
+### 3. EU Cyber Resilience Act (CRA) Challenges  
+- EU CRA represents a new phase, requiring continuous security responsibility beyond initial certification and shipment; certification is only the beginning.  
+- Enterprises must maintain product cybersecurity throughout product lifecycle—including monitoring, vulnerability reporting, patching, and incident response within regulatory timeframes.  
+- Legacy manual, document-heavy approaches are inadequate to meet CRA requirements. Automation and digitization are necessary.  
+- CRA also demands detailed SBOM (Software Bill of Materials) management and dynamic vulnerability tracking across software stack layers (Apps, Drivers, OS, BIOS).  
+- Automated vulnerability comparison and alerting systems are critical to shift from passive to proactive risk management.
+
+### 4. Deep Defense Cybersecurity Platform  
+- Security must extend beyond system-level to field deployment, covering the entire product lifecycle: deployment, runtime, maintenance.  
+- ASRock Industrial’s platform includes:  
+  - AiFDO for zero-touch secure deployment reducing operational risk from human error.  
+  - AiSafeGuard for AI-based endpoint protection that enforces "zero trust" through proactive interception, not just reactive scanning.  
+  - AiSMA for remote management, scalable to large device fleets with secure OOB (out-of-band) management protocols (e.g., Redfish).  
+- This layered approach covers prevention, rapid vulnerability detection, incident response, and lifecycle security management.
+
+### 5. Strategic Conclusions  
+- Cybersecurity is evolving from a checkbox to a growth enabler and competitive advantage.  
+- Enterprises must integrate security by default into product development and lifecycle operations.  
+- Automation, AI assistance, and continuous risk monitoring form the foundation of scalable cybersecurity engineering for compliance and resilience.  
+
+---
+
+## Important Conclusions and Insights  
+- Achieving IEC 62443 dual certification is necessary but no longer sufficient; the EU CRA requires ongoing cybersecurity responsibility.  
+- Manual approaches are obsolete under CRA mandates, mandating automated workflows for compliance, vulnerability management, and incident handling.  
+- SBOM management must become dynamic and automated, going beyond static inventory to actively support vulnerability correlation and patch prioritization.  
+- AI and automation are critical to reduce manual effort and operational risks, enabling zero-touch deployment, real-time endpoint protection, and efficient large-scale remote management.  
+- Deep defense platforms that integrate lifecycle security functions—deployment, runtime protection, and maintenance—are essential to mitigate real-world risks to edge computing devices.  
+- Security should be viewed as an enabler of stable operations and market access, rather than a cost or barrier.
+
+---
+
+## Problems and Challenges Highlighted in Presentation
+
+- **Lack of Standardized Answers:** Traditional customer cybersecurity questionnaires have no standard answers, creating uncertainty about capability.  
+- **Manual, Document-Heavy Processes:** CRA compliance is hindered by reliance on offline documentation and manual workflows—error-prone and not scalable.  
+- **Insufficient Operational Capability:** Many companies lack continuous security capability to operate through the product lifecycle under CRA expectations.  
+- **Ineffective Vulnerability Management:** Traditional SBOM systems rely on manual lookup, leading to slow, inefficient vulnerability responses.  
+- **Human-Dependent Deployment Risks:** Manual setup and configuration in field deployment introduce high time, labor costs, and increase security risk.  
+- **Insufficient Runtime Protection:** Conventional endpoint defenses are reactive, leading to delayed virus/malware detection after attacks occur.  
+- **Device Management Complexity:** Rapid growth in device fleets makes manual maintenance impossible, increasing cost and reducing resilience.  
+- **Physical Security Gaps:** Physical access to devices remains a major risk often overlooked by network-centric defenses.  
+- **Need for New Core Systems:** CRA demands new core cybersecurity systems (e.g., SBOM management, CRA lifecycle management) beyond legacy development-focused tools.  
+
+---
+
+This summary synthesizes the content and messages from the presentation slides at CYBERSEC 2026 by ASRock Industrial’s Vice General Manager. It highlights the journey from IEC 62443 certification towards satisfying the evolving EU CRA regulatory framework with AI-driven, scalable cybersecurity practices for AIoT edge devices.

@@ -1,0 +1,56 @@
+# Summary of Presentation
+
+---
+
+## Title
+
+From Prompt to Shell - Weaponizing AI Agents with the Model Context Protocol
+
+## Authors/Presenters
+
+Jie @ iThome CYBERSEC2026
+
+## Key Points
+
+- The presenter, Jie, emphasizes that this talk is given as an individual and the employer is not involved.
+- The presentation discusses the evolution and capabilities of Large Language Models (LLMs), focusing on their limitations in performing direct actions.
+- Introduces AI Agents as the solution for enabling LLMs to interact with external systems and perform tasks.
+- Highlights the Model Context Protocol (MCP), an open-source standard introduced by Anthropic, designed to connect AI applications to databases, file systems, and security tools in a standardized way.
+- Before MCP, different APIs were fragmented; MCP offers a unified API for seamless interaction between LLMs and external tools.
+- MCP consists of MCP servers (which expose data from various applications to AI) and MCP clients (AI Agents that connect to these servers).
+- Relevant MCP implementations in offensive security include MCP-Kali-Server and Hexstrike-AI:
+  - **MCP-Kali-Server** exposes an API that allows executing commands on a Kali Linux machine, enabling AI-driven offensive security testing.
+  - **Hexstrike-AI** is an AI-powered penetration testing framework with 150+ security tools and multiple autonomous AI agents, allowing extensive use in web and network penetration testing.
+- The presentation references real-world concerns where these AI-powered tools can be misused by malicious actors, especially for zero-day exploitation.
+- Benchmarking different LLMs for security applications is shown, with comparative success rates in exploit detection or penetration testing scenarios.
+- Highlights the importance of responsible use and legal considerations when leveraging AI for penetration testing.
+- Provides example prompts and code snippets illustrating how AI agents can interact with security tools.
+- Encourages red teams, security analysts, OSINT experts, and exploit developers to leverage AI agents in their workflows as next-gen defensive and offensive tools.
+- Ends with a call to practice "Ask, Fix, and Apply" with AI agents for effective and ethical penetration testing.
+
+## Important Conclusions and Insights
+
+- AI Agents, combined with the Model Context Protocol, significantly enhance the capabilities of LLMs by enabling action execution beyond text generation.
+- Integration of AI with offensive security tools can speed up penetration testing and improve automation, but also raises risks of misuse by adversaries.
+- Open-source MCP servers and AI agent frameworks like MCP-Kali-Server and Hexstrike-AI are practical realizations that demonstrate the potential and risks of AI in cybersecurity.
+- Security teams should stay informed and prepared for the changes AI Agents will bring, including evolving threat landscapes.
+- Ethical and responsible usage guidelines must be strictly followed when applying AI in cybersecurity contexts to avoid legal and ethical violations.
+- Continuous benchmarking and evaluation of LLMs in security tasks are vital to identify their strengths, weaknesses, and suitability for specific use cases.
+
+---
+
+## Technical or Other Problems Described or Emphasized in the Presentation
+
+- **Limitations of LLMs**: Traditional LLMs are limited to text generation and cannot perform system actions or interact with external environments on their own.
+- **Fragmented Tool APIs**: Before MCP, integrating AI with various APIs (such as Slack, Google Drive, GitHub) was disjointed and inefficient.
+- **Security Risks of MCP**: Introduction of MCP has made it easier to connect AI to security tools, which might be weaponized for offensive or malicious purposes.
+- **Ethics and Legal Concerns**: The AI-driven penetration testing techniques require explicit authorization; misuse could lead to illegal activities or ethical breaches.
+- **Complexity of Automating Penetration Testing**: AI agents must be carefully designed with resilience, error handling, and safe operation in pen-testing environments.
+- **Potential for Abuse**: Tools like Hexstrike-AI, while powerful for defenders, can be exploited by malicious actors to launch zero-day attacks rapidly.
+- **Accuracy and Safety of AI Agents**: AI models can make mistakes; double-checking AI-generated outputs is critical in security operations.
+- **Detection Challenges**: AI-generated attacks might evade traditional detection, requiring the development of new defensive strategies.
+- **Need for Continuous Assessment**: Security benchmarking is necessary to keep track of capabilities and risks associated with evolving LLMs and AI agents.
+
+---
+
+This summary captures the main ideas, conclusions, and the technical challenges presented in the "From Prompt to Shell - Weaponizing AI Agents with the Model Context Protocol" talk by Jie at iThome CYBERSEC2026.

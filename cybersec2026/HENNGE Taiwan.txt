@@ -1,0 +1,74 @@
+# Summary of Presentation: "From Japanese Baseball to Enterprise Cybersecurity: Why 'Not Giving Up Runs' is More Important than 'Home Runs'"
+
+---
+
+## Title
+From Japanese Baseball to Enterprise Cybersecurity: Why "Not Giving Up Runs" is More Important than "Home Runs"?
+
+## Authors / Presenters
+Kevin Chang  
+HENNGE Taiwan 惠頂益
+
+---
+
+## Key Points
+
+1. **Cybersecurity Analogy to Baseball**:  
+   Using the metaphor of a baseball game, the presentation compares cybersecurity to defense strategies in baseball, emphasizing the importance of preventing breaches ("not giving up runs") rather than relying only on big wins ("hitting home runs").
+
+2. **Japanese Enterprise Experience**:  
+   Insights are drawn from the cybersecurity practices of Japanese companies, highlighting a practical sequence in deploying cloud security controls.
+
+3. **Step-by-Step Order for Implementing Cloud Security**:
+   - Strengthen Identity Access Control  
+   - Enhance Data Leakage Protection  
+   - Conduct Employee Cybersecurity Awareness Training  
+   - Advance Threat Detection
+
+4. **Implementation Blueprint and Metrics**:
+   - **Strengthen Identity Access Control**:  
+     Goals include ensuring that even if an attacker obtains a password, access is blocked. Metrics include Single Sign-On (SSO) coverage rate and Multi-Factor Authentication (MFA) enablement rate.  
+     Actions: Inventory software/services, prioritize sensitive tool integration into SSO, enforce MFA on all accounts, deactivate accounts of departed employees within 24 hours.
+
+   - **Enhance Data Leakage Protection**:  
+     Aims to prevent accidental data leaks by employees. Metrics include trend analysis of external sharing links and email misdelivery rates.  
+     Actions: Audit cloud drive sharing settings, implement recipient verification (especially external), attach data classification labels, establish alerts for abnormal cloud access behavior.
+
+   - **Employee Cybersecurity Awareness Training**:  
+     Objective is to shift employee response to phishing attempts from uncertainty to proactive reporting. Metrics include phishing drill click rate trends and suspicious email report volume.  
+     Actions: Conduct quarterly social engineering drills, provide immediate feedback post-exercise, have simple suspicious email reporting mechanisms, track trends rather than single drill results.
+
+5. **Three Immediate Action Recommendations**:
+   - Inventory current tools and login methods to enable MFA/SSO when possible.  
+   - Review sharing settings in cloud storage to ensure links are controlled.  
+   - Arrange social engineering drills regularly.
+
+6. **About HENNGE**:
+   - Offers comprehensive cloud security services, including identity verification and data leakage prevention, under the platform "HENNGE One".  
+   - Company has over 30 years of history, established a Taiwan subsidiary in 2016, publicly listed on the Tokyo Stock Exchange in 2019, and plans to establish a U.S. joint venture by 2025.  
+   - Vision is "Liberation of Technology" — ensuring equitable access to the benefits technology provides.
+
+---
+
+## Important Conclusions and Insights
+
+- In enterprise cybersecurity, preventing breaches ("not giving up runs") is more critical than sensational successes ("hitting home runs").  
+- There is an effective, prioritized order in adopting cybersecurity measures in the cloud to build a robust defensive posture.  
+- Identity access control is foundational and should be the first priority in securing cloud environments.  
+- Enhancing data protection and employee training further strengthens security.  
+- Measuring progress with clear KPIs ensures continuous improvement and responsiveness to threats.  
+- Practical, immediate steps are available and recommended to improve overall security posture without delay.
+
+---
+
+## Problems and Challenges Highlighted
+
+- Persistent threat of attackers compromising passwords, emphasizing the need for strong identity controls including SSO and MFA.  
+- Risks posed by accidental data leaks by employees, especially due to misconfigured cloud sharing and email errors.  
+- Human factor vulnerabilities, including susceptibility to phishing and social engineering attacks, requiring ongoing training and awareness programs.  
+- Timeliness issues in deactivating accounts of employees who leave, which can pose security risks.  
+- The challenge in establishing comprehensive and consistent monitoring systems that alert abnormal cloud data access or behavior.
+
+---
+
+This presentation effectively combines cultural analogy with practical cybersecurity guidance tailored for enterprises transitioning to and safeguarding cloud environments.

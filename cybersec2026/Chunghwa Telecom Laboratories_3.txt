@@ -1,0 +1,55 @@
+# Summary of Presentation
+
+## Title
+Deterministic Random Bit Generator based on Ascon and Its Application in Embedded Systems
+
+## Author/Presenter
+Abel C. H. Chen, Senior Researcher, Institute of Information and Communication Security, Chunghwa Telecom Laboratories
+
+## Key Points
+
+- **Introduction to Random Bit Generators (RBG):**
+  - Categories include Pseudo Random Number Generators (PRNG), True Random Bit Generators (TRBG) including Quantum Random Number Generators (QRNG), and Deterministic Random Bit Generators (DRBG).
+  - Pseudo-random number generation often uses Linear Congruential Generators (LCG) and is vulnerable to attacks.
+  - Quantum Random Number Generators utilize quantum states and gates (Hadamard, SX, RX, RY) to generate true randomness.
+
+- **Deterministic Random Bit Generators (DRBG):**
+  - Approved/Agreed Cryptographic Mechanisms (ACM) include hash functions like SHA2, SHA3, SHAKE, and Ascon series plus symmetric encryption AES and Ascon-AEAD128.
+  - Hash-based DRBG, HMAC-based DRBG, and Counter-mode (CTR) DRBG are presented with algorithmic details from NIST SP 800-90A Rev. 1.
+  - Ascon lightweight cryptographic algorithms were standardized by NIST in 2025 (SP 800-232) targeting IoT, embedded systems, and sensors.
+
+- **Ascon-based DRBG:**
+  - Adapted standard DRBG algorithms to utilize Ascon hash functions (Ascon-Hash256) and Ascon HMAC for generating random bits.
+  - Ascon CTR DRBG uses Ascon-AEAD128 encryption as the block cipher primitive.
+  - Algorithms align with NIST SP 800-90A Rev. 1 recommendations but replace SHA/AES with Ascon components.
+
+- **Performance Evaluation:**
+  - Testing carried out on Raspberry Pi 4 with JDK 18 and Bouncy Castle 1.81.
+  - Ascon-based DRBGs demonstrated lower memory usage compared to their SHA or AES counterparts and comparable computation time.
+
+## Important Conclusions and Insights
+
+- The Ascon family of lightweight cryptography has been recognized by NIST and adopted as a standard for constrained devices.
+- Integrating Ascon into DRBG mechanisms is feasible and can provide efficient performance for embedded and IoT systems.
+- Ascon-based DRBGs offer a promising alternative to traditional hash and block cipher-based DRBGs especially for resource-constrained environments.
+- Future directions include refining Ascon-based derivation functions, HMAC, and counter mode encryption to further improve DRBG design.
+
+---
+
+## Technical and Other Problems Addressed
+
+- **Security Vulnerabilities of Pseudo-random Generators:**
+  - Linear Congruential Generators (LCGs) are prone to reverse engineering and attacks due to their mathematical predictability.
+  
+- **Requirement for Post-Quantum Secure Cryptographic Mechanisms:**
+  - Traditional cryptographic mechanisms like SHA-224 have been deprecated due to security strength concerns.
+  - Quantum computing threats demand stronger security parameters; Ascon and its variants meet these updated requirements.
+
+- **Efficiency and Resource Constraints:**
+  - Embedded and IoT systems often operate under strict computational and memory limits.
+  - Ascon-based DRBGs reduce memory consumption while maintaining similar computation speed, addressing this efficiency challenge.
+
+- **Adaptation of Cryptographic Standards:**
+  - Incorporation of new cryptographic algorithms in standards like NIST SP 800-90A and SP 800-232 requires thorough adaptation and verification for DRBG use.
+  
+This presentation thus emphasizes the importance of lightweight, secure, and quantum-resistant DRBGs suitable for modern embedded systems and provides concrete design and implementation approaches using the Ascon cryptographic suite.

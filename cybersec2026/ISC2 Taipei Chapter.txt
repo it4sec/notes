@@ -1,0 +1,95 @@
+# Summary of Presentation: "Work Does Not Disappear, Only Transforms: Survival Rules for Cybersecurity Talent in the AI Era"
+
+---
+
+## Title
+**Work Does Not Disappear, Only Transforms: Survival Rules for Cybersecurity Talent in the AI Era**
+
+---
+
+## Authors/Presenters
+- **Vincent Tang (唐任威)**  
+  ISC2 Taipei Chapter President  
+  Senior Instructor, Systex Evertrust Education and Training Center
+
+---
+
+## Key Points
+
+- **AI and Job Evolution**  
+  The nature of cybersecurity work is rapidly changing rather than disappearing. The real challenge is recognizing how your job is transforming in the AI era.
+
+- **Right vs Wrong Anxiety**  
+  - **Wrong Anxiety:** Worrying about job loss or title disappearance.  
+  - **Right Anxiety:** Being alert to how the nature of work is changing and focusing on core job functions.
+
+- **What AI Truly Replaces**  
+  AI can replace tasks that are *clearly defined* and rule-based (e.g., compliance scanning, standardized penetration test reports, known vulnerabilities analysis, and log audits). These are common daily tasks, not low-level work.
+
+- **Do Things Right vs. Do The Right Thing**  
+  - AI excels at *doing things right* (execution speed and accuracy).  
+  - AI cannot do *the right thing* — make judgments on what threats to prioritize or decisions under uncertainty, nor can it bear responsibility for wrong decisions.
+
+- **Transformation of Certifications**  
+  - Past: Certifications indicated monopolized knowledge (rare expertise).  
+  - Present: AI can easily pass exams, reducing the exclusivity of knowledge.  
+  - Future: Certifications become *navigation maps* to guide, communicate with, and validate AI outputs rather than rote memorization.
+
+- **Certifications as AI Collaboration Protocols**  
+  Framework knowledge (e.g., CISSP, CCSP, CSSLP) allows precise communication, guidance, and verification of AI’s work — becoming critical skills to lead AI rather than just learn facts.
+
+- **Cybersecurity Talent Quadrants**  
+  Talent is assessed by technical skill and business/risk understanding:  
+  - Best position: Technical + risk understanding (e.g., SOC Analyst, decision-makers)  
+  - Opportunity: Business knowledge but weak technically (e.g., compliance/GRC personnel who can learn to drive AI)  
+  - Danger: Technical-only roles without business context or repetitive checklist executioners who face the highest displacement risk.
+
+- **Irreplaceable Core: Experience and Accountability**  
+  Only humans who have *lived real failures*, *borne real consequences*, and *calibrated their judgments* can fulfill this role. AI lacks this "skin-in-the-game" learning and accountability.
+
+- **Why Cybersecurity’s Big Picture Perspective is Vital**  
+  Using the Rumsfeld Matrix to explain knowns and unknowns in security threats:  
+  - AI handles *known knowns* swiftly.  
+  - Human decision-makers needed for *known unknowns* and *unknown knowns*.  
+  - Humans are indispensable for *unknown unknowns* (zero-days and advanced persistent threats) where AI is powerless.
+
+- **Three Survival Transformations for Cybersecurity Talent**  
+  1. From executor to decision-maker — take responsibility for results.  
+  2. From memorizing knowledge to driving AI — using certification frameworks to guide and verify AI.  
+  3. From accumulating certificates to accumulating judgment — real incident experience is the ultimate teacher.
+
+- **Final Insight: Not Elimination but Discovery**  
+  This era is not about eliminating cybersecurity professionals but uncovering *true* talents who can judge threats, make critical decisions, and take responsibility—roles AI cannot fulfill.
+
+---
+
+## Important Conclusions and Insights
+
+- AI automates many rule-based cybersecurity tasks but is inherently unable to replace human judgment, responsibility, and decision-making under uncertainty.
+- Cybersecurity certifications are evolving from proof of memorized knowledge to frameworks for effective AI collaboration.
+- Professionals must evolve by deepening risk understanding, cultivating judgement through real-world experience, and learning to manage AI tools.
+- Roles lacking judgment or business context are at highest risk of displacement.
+- The industry must shift its focus toward finding and nurturing cybersecurity professionals who can navigate complexity, unknown threats, and real consequences.
+
+---
+
+## Technical and Other Problems Emphasized in Presentation
+
+- **AI Limitations:**  
+  AI cannot understand or prioritize threats that are ambiguous, novel, or not yet recognized (Unknown Unknowns). This creates vulnerabilities if over-reliance on AI occurs.
+
+- **Job Displacement Risks:**  
+  Tasks defined by checklists and repeatability are most vulnerable to automation via AI, posing risks to low-context jobs and pure execution roles without broader business or risk insight.
+
+- **Knowledge Monopoly Collapse:**  
+  Traditional credentialing systems reliant on knowledge memorization face challenges as AI can easily pass exams, reducing their value as certifications.
+
+- **Human Judgment Deficit Risks:**  
+  Without practical experience handling incidents and assuming accountability, cybersecurity professionals may struggle to retain their unique value.
+
+- **Need for AI Collaboration Skills:**  
+  Cybersecurity professionals must develop the ability to precisely describe problems, guide AI frameworks, and critically evaluate AI outputs—a new skill set distinct from traditional technical expertise.
+
+---
+
+This presentation compellingly argues that cybersecurity professionals who embrace AI as a tool rather than a competitor, and who develop judgment and accountability through real experience, will thrive in the AI-driven future.

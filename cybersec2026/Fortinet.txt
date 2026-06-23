@@ -1,0 +1,98 @@
+# Summary of Presentation: FortiGate as the "All-round Protector" in the AI Era
+
+---
+
+## Title
+**Guarding the Present, Foreseeing the Future: FortiGate as the "All-round Protector" in the AI Era**
+
+## Authors/Presenters
+- Lucas Yu (Fortinet Technical Consultant)
+
+---
+
+## Key Points
+
+### Accelerating Cybersecurity Pressures
+- **Three main cyber pressures:**
+  - Application explosion leading to complexity.
+  - AI versus AI in attack-defense dynamics.
+  - Quantum threats with uncertainty around Q-day arrival.
+- Enterprises have limited time to prepare for emerging quantum threats.
+
+### Challenges in Hybrid Environments
+- Distributed services and complex devices create difficult management environments.
+- Challenges include inconsistent security policies, fragmented visibility, and poor connectivity experience.
+
+### FortiGate as the Core AI Protector
+- Features a centralized command center for strategy and coordination.
+- Real-time defense execution with rapid response and integrated security across all boundaries.
+
+### Hybrid Mesh Firewall (HMF)
+- Fortinet's solution for modern dispersed networks.
+- Single platform for on-premises and cloud firewalls.
+- Unified management and risk analysis with AI-driven intelligent threat protection.
+- Supports a broad range of virtual firewalls across cloud providers (AWS, Azure, Oracle, GCP, private cloud).
+
+### Proprietary ASIC Technology
+- Combines network processor (NP7), security processor (SP5), and content processor (CP9) for unmatched performance.
+- ASIC boosts throughput and reduces power consumption in key areas such as IPS, AV, firewall encryption, and SD-WAN.
+
+### FortiOS 8 Enhancements
+- Expanded AI application governance and data protection.
+- Integrates OCR with DLP for enhanced data leakage prevention.
+- Introduces AI-assisted management for future-proofing against encryption evolution and quantum threats.
+
+### FortiGuard AI-Driven Security Services
+- Massive detection scope spanning millions of firewalls, endpoints, emails, and sandbox files.
+- Active detection, rapid response, and comprehensive protection across Fortinet’s security fabric.
+- AI/ML engines improve detection of evasive malware (e.g., Cobalt Strike), phishing, and sophisticated threats.
+- Control and monitoring of Generative AI (GenAI) application usage for compliance and risk mitigation.
+
+### FortiAI Operational Assistant
+- Accelerates understanding of products and processes using natural language.
+- Enables simplified and faster firewall configuration via graphical inputs.
+- Supports rapid security operations center (SOC) event analysis and automated rule creation via natural language interaction.
+
+### Quantum-Resistant Security
+- Addresses impending quantum computing risks: asymmetric cryptography cracking and information harvest-and-decrypt threats.
+- Implements CNSA 2.0 compliance roadmap with:
+  - Quantum Key Distribution (QKD).
+  - Post-Quantum Cryptography (PQC) algorithms such as Crystals Kyber, ML-KEM, BIKE, HQC, Frodo, etc.
+  - Hybrid cryptography modes and algorithm stacking for resilience.
+- Timeline includes mandatory adoption phases between 2027-2035.
+
+### Industry Recognition
+- Fortinet recognized as a leader in the Gartner Magic Quadrant for Hybrid Mesh Firewalls.
+- Received endorsements in multiple Gartner Magic Quadrants in 2024-2025.
+- Holds the most independent third-party validations.
+
+### Upcoming Events
+- Fortinet Accelerate 26 APAC – Kaohsiung Edition scheduled for May 28, 2026.
+
+---
+
+## Important Conclusions and Insights
+- The cybersecurity landscape is evolving rapidly with AI-based attacks and emerging quantum computing threats.
+- FortiGate’s AI-centric approach enables unified, scalable, and adaptive threat protection across cloud, on-premises, and hybrid environments.
+- Proprietary ASICs ensure high-performance security operations with energy efficiency gains.
+- AI-enhanced tools like FortiAI streamline security operations and reduce complexity.
+- Embracing quantum-resistant technologies and compliance frameworks is critical for long-term security posture.
+- Industry validations affirm Fortinet’s leadership and comprehensive security platform capabilities.
+
+---
+
+## Technical and Other Problems Emphasized in the Presentation
+
+### Problems Highlighted
+- The explosive growth of applications complicates security management due to heterogeneity and volume.
+- AI-driven attackers require defenders to leverage AI for threat detection, analysis, and response.
+- The quantum computing era threatens the foundation of current encryption algorithms, creating urgency for migration to quantum-resistant technologies.
+- Fragmented management in hybrid environments results in inconsistent policies, reduced visibility, and operational inefficiencies.
+- Shadow AI (unauthorized AI usage by employees) presents new risks in data security and compliance.
+- Handling zero-day threats demands continued advances in AI-driven sandboxing and inline malware defenses.
+- Complexity and scale of modern networks make manual firewall configuration and security analysis slow and error-prone.
+- Meeting emerging compliance mandates like CNSA 2.0 requires cryptographic agility and system upgrades ahead of deadlines.
+
+---
+
+This presentation provides a comprehensive overview of FortiGate’s AI-driven security innovations designed to meet the challenges in the AI and quantum era, emphasizing integrated management, advanced ASIC-powered defense, intelligent automation, and future-proof cryptography compliance.

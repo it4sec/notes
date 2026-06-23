@@ -1,0 +1,47 @@
+# Summary of Presentation
+
+## Title
+When AI Can Take Any Role: Facing New Challenges in Product and Supply Chain Security (當AI能轉生成任何角色 面對產品與供應鏈安全新挑戰)
+
+## Authors/Presenters
+- Fiona Cheng, Senior R&D Manager at WebComm
+
+## Key Points
+- In 2026, AI can play various roles in product engineering including customer support, product/project management, software engineering (junior to mid-level), and vulnerability research.
+- Large Language Models (LLMs) are already capable vulnerability researchers, finding issues in Firefox and the Linux Kernel without complex design or special training.
+- AI-powered vulnerability research enables automatic identification of software weaknesses but may suffer from high false-positive rates and inconsistent report quality.
+- There is a significant shift in the balance of offense and defense in cybersecurity; attackers can rapidly weaponize vulnerabilities while defenders face longer and more complex remediation workflows.
+- Security must evolve with AI’s adoption by controlling risks, managing resources effectively, and improving decision-making including “using magic against magic” (i.e., employing AI to combat AI-driven attacks).
+- Four strategic entry points for handling AI challenges in security:
+  1. Strategy - defining risk tolerance and AI adoption levels with human oversight to minimize fatigue.
+  2. Consensus - establishing shared security definitions, internal verification, and external agreements (contracts/SLA).
+  3. Execution - accelerating and improving patch accuracy using AI for vulnerability prioritization, automated testing, and verification.
+  4. Prevention - supply chain management and security-by-design principles, enhanced with AI-assisted threat modeling and real-time risk monitoring.
+- AI security introduces new attack surfaces requiring control of shadow AI, identity and permission governance, and traceable AI behavior.
+- Emphasizes acting pragmatically rather than spreading fear; offers a stepwise action plan to assess risk tolerance, inventory critical open source dependencies, map vulnerability-to-patch timelines, and explore suitable acceleration/improvement methods for security posture.
+
+## Important Conclusions and Insights
+- AI will permeate the entire software supply chain, introducing risks spanning from open source dependencies to product delivery.
+- The core challenge is not the volume of issues but prioritizing resources on the right problems.
+- Vulnerability discovery is becoming easier but more noisy, increasing remediation costs and necessitating novel defense strategies.
+- Attackers gain speed via AI-enabled weaponization, making the defense process—dependent on human decisions and coordination—relatively slower and more difficult.
+- Establishing a comprehensive AI adoption and risk management strategy is critical to maintaining security in an era of rapid AI advancement.
+- Collaboration within and outside organizations, combined with AI-enabled automation balanced by human oversight, is key to effective vulnerability management.
+- Proactive prevention and a shift-left mindset (fixing issues early in development) are essential for reducing cyber risk.
+  
+---
+
+## Technical or Other Problems Emphasized
+- **AI-driven vulnerability discovery leads to higher false positives:** Increased noise can overwhelm security teams, requiring better triaging and prioritization mechanisms.
+- **Skewed offense-defense balance:** AI accelerates attackers’ ability to exploit bugs, while defenders must navigate a complex, multi-stage patching and validation process that is slower and human-intensive.
+- **Quality of vulnerability reports:** Early AI-generated reports, especially for critical bugs like SSRF, may lack quality or require high privileges to exploit, posing difficulties in rapid and accurate risk assessment.
+- **Resource management:** Controlling costs and risk appetite becomes challenging as AI scales the number of identified security issues.
+- **Security model changes:** Open ecosystems can no longer guarantee safety without new controls as AI shifts the threat landscape.
+- **Shadow AI and AI governance:** Ensuring responsible AI use requires mechanisms for managing unauthorized AI tools, controlling AI identity and permissions, and enabling traceability and rollback for AI actions.
+- **Human fatigue and oversight necessity:** Continuous human validation is necessary to prevent errors, but fatigue must be minimized to sustain effective workflows.
+- **Dependence on open source and critical infrastructure:** Organizations face difficulties controlling external risks and must carefully monitor and manage third-party dependencies.
+- **Need for advanced AI-assisted tooling:** Growing complexity demands AI support in producing SBOM/VEX data, vulnerability analysis, automated testing, and patch prioritization.
+
+---
+
+This presentation provides a holistic view of how AI transforms cybersecurity in product engineering and supply chains and urges proactive, balanced approaches combining human judgment and AI automation to address emerging risks effectively.

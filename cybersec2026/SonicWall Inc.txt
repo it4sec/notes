@@ -1,0 +1,105 @@
+# Summary of SonicWall AI-Driven Zero Trust Cybersecurity Transformation
+
+---
+
+## Title
+**AI-driven Zero Trust Cybersecurity Transformation**  
+Empowering Small and Medium Enterprises (SMEs) and Midmarket  
+Presented at Taiwan Cybersecurity Conference 2026
+
+## Authors/Presenters
+Chandrodaya Prasad – Global Product Leader, SonicWall
+
+---
+
+## Key Points
+
+### Agenda Overview  
+- Challenges facing SMEs and midmarket due to enterprise-grade threats vs limited defensive resources  
+- Shift for partners from hardware transactions to strategic platform collaborations  
+- Introduction of SonicPlatform combining AI with zero trust security on a unified, cloud-managed architecture  
+- How AI enhances zero trust with adaptive policies, segmentation, risk assessment, and automated incident response  
+- Economic model for partners focusing on zero-touch deployment, recurring revenue, and deep customer retention  
+- Vision and roadmap toward profitable growth and expansion in 2026 and beyond  
+
+### Cybersecurity Landscape Challenges  
+- Attack surfaces now borderless due to cloud expansion, remote work, and generative AI  
+- AI-driven attacks expected to increase by 300% from 2024-2025  
+- 83% of data breaches involve cloud or hybrid environments  
+- Average data breach cost is $4.9 million  
+- 43% of cyberattacks target SMEs, the fastest-growing and weakest defense segment  
+- 60% of hacked SMEs shut down within 6 months  
+- Over 4 million global cybersecurity job vacancies highlight talent shortage  
+- Partners need a platform-based approach rather than recruiting  
+
+### The Urgency of Now  
+- Exploitation of vulnerabilities will shrink to under 24 hours in 2025, and under 60 seconds by 2026  
+- Four converging pressures on customers: compliance demands, talent scarcity, AI-powered attacks, and proliferation of hacker tools  
+
+### Internal AI Risks  
+- Rapid spread of AI tools inside enterprises increases risks, especially unauthorized AI tools  
+- Legacy cybersecurity does not address AI-native threats such as prompt injection, shadow AI, data poisoning, and AI supply chain vulnerabilities  
+
+### Partner Business Model Transformation  
+- Old model: hardware sales with limited stickiness and no recurring revenue  
+- New model: strategic platform partnerships with unified SonicPlatform for multi-services, predictable MRR growth, and decade-long customer relationships  
+
+### Zero Trust Fundamentals  
+- Zero Trust means "never trust, always verify" with continuous authentication  
+- Transition from old perimeter defense to identity as the new perimeter  
+- Core principles: verify identity, assess posture, least privilege, micro-segmentation, continuous verification  
+- Simplification across采购 (procurement), deployment, and ongoing management is key for scalability  
+
+### SonicPlatform Architecture  
+- Unified cloud management with AI-driven analytics  
+- Key components: Firewall, SSE/SASE, ZTNA, Endpoint Detection, Unified Analytics, AI-Driven Security Operations Center (SOC), and multi-tenant cloud console  
+- Supports zero-touch deployment and lifecycle automation resulting in easier scaling with less operational overhead  
+
+### AI Capabilities on the Platform  
+- Autonomous policy optimization removing shadow permissions  
+- Predictive insights spotlight vulnerabilities for proactive engagement  
+- Real-time compliance monitoring for frameworks like PDPA, NIS2, ISO 27001, CIS  
+- Automated threat detection, containment, and forensic-enabled incident recovery  
+
+### Roadmap to AI-Enhanced Zero Trust  
+1. Assess identity, devices, and network posture; prioritize short-term wins  
+2. Consolidate tools under SonicPlatform, centralizing control  
+3. Deploy zero-touch policies based on least privilege and micro-segmentation  
+4. Automate policy tuning and risk scoring within configured guardrails  
+5. Expand coverage quarterly leveraging predictive insights and driving ARR growth  
+
+---
+
+## Important Conclusions and Insights
+- Zero Trust is no longer an aspirational ideal but a baseline security expectation for SMEs and midmarkets  
+- AI is essential to realize scale and adaptability in Zero Trust without increasing headcount  
+- SonicPlatform’s single-policy framework integrating endpoint, network, and cloud defense creates efficiency and control  
+- Partners who embrace platform-driven, AI-augmented cybersecurity delivery will achieve longer customer relationships and recurring revenue  
+- 2026 is pivotal for customers to move from piecemeal solutions to secure scalable digital expansion  
+
+---
+
+## Technical and Other Problems Highlighted
+
+### Cybersecurity Challenges  
+- Threat landscape has zero margins due to cloud, remote work, and AI enhancements for attackers  
+- Shortening exploitation windows require faster detection and response  
+- AI tools inside enterprises pose insider risks, especially unauthorized or shadow AI deployment  
+- Existing firewall and DLP tools do not comprehend or protect AI-driven data flows, creating blind spots  
+
+### Business Challenges for Partners  
+- Talent shortage severely limits traditional hiring to address growing threats  
+- Previous transactional hardware sales models lack sticky recurring revenue and meaningful customer engagement  
+- Complexity in deploying and managing multiple disconnected security tools hinders operational efficiency  
+
+### Complexity vs Simplicity  
+- Complexity is identified as the enemy, with simplification of procurement, deployment, and management as a central guiding principle  
+
+### AI Governance and Risk Controls  
+- AI actions are confined within partner-defined policy guardrails  
+- High-risk changes require explicit partner or customer approval  
+- Explainability and audit trails are critical for trust and compliance  
+
+---
+
+This presentation emphasizes the critical role of AI-driven Zero Trust security to transform SME and midmarket cybersecurity. It advocates a unified, simplified, and scalable platform approach for partners to sustainably address evolving threats and business realities in 2026 and beyond.

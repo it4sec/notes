@@ -1,0 +1,78 @@
+# Summary of PDF Presentation
+
+---
+
+## Title  
+**The End of Manual Trust**  
+自動化、PQC 部署與 AI 信任，重塑 2026 數位信任架構  
+*Why Automation, Quantum Readiness, and AI Integrity Will Define Security in 2026*
+
+---
+
+## Authors/Presenters  
+- **James Cook** – Group Vice President, Sales APJ (English)  
+- **Lackern Xu** – Manager, Solutions Engineering (華語)
+
+---
+
+## Key Points  
+
+### Digital Trust and Cryptography  
+- Digital trust depends fundamentally on **Public Key Infrastructure (PKI)**, which enables two parties to trust each other based on mutual trust of a common authority.  
+- Certificates are increasingly important in securing organizations, making effective management of digital trust imperative.
+
+### Current Trends and Industry Challenges  
+- Certificate validity periods are shrinking.  
+- The rise of AI agents/models and quantum computers are creating new challenges for PKI.  
+- Expired certificates cause outages; more certificates and validations will significantly increase operational costs and outages.  
+- There is an *urgent need for PKI Modernization and Automation*.
+
+### Quantum Threat  
+- Quantum computing, using Shor’s Algorithm, can break currently used RSA-2048 and ECC-256 encryption within seconds, while classical computers would take trillions of years.  
+- Taiwan plans to achieve a quantum-ready, automation-driven, and cryptographically agile national cryptographic ecosystem by 2030, with phased migration from 2026.
+
+### Crypto-Agility  
+- Systems should be designed to update cryptographic algorithms and standards without replacing surrounding infrastructure.
+
+### From Digital Trust to Intelligent Trust  
+- Intelligent trust involves cryptographically verifiable trust applied not only to traditional users, devices, and servers but also to AI agents, models, and content.  
+
+### Challenges with AI Trust  
+- CISOs cannot answer key questions relating to the use and control of AI agents, data flows, credentials ownership, rogue agent mitigation, and auditing capability.  
+- AI breaks traditional trust models because agents can act without clear identity or control, AI models introduce new attack surfaces, and content cannot be trusted at face value.
+
+### New Trust Architecture for AI  
+A **3-layer defense architecture** is proposed:  
+
+1. **Network Edge (Layer 3)**: DNS-based agent trust using UltraDNS  
+   - DNS enforcement filters allowlist/blocklist, monitors calls, and triggers kill switch on unauthorized activity.  
+2. **Agent Identity (Layer 2)**: Passports and policy using NIST WIF, SPIFFE/SPIRE for built agents, and OPA policy  
+3. **Execution Core (Layer 1)**: Secure, confidential execution environment leveraging Intel TDX and trusted execution environments (TEEs). Protects AI model workloads with tamper detection and policy enforcement.
+
+### Content Provenance  
+- Use of **C2PA** (Coalition for Content Provenance and Authenticity) to cryptographically sign content for provenance, ensuring tamper evidence and full lifecycle traceability.  
+- Verifiable content provenance builds audience trust.
+
+---
+
+## Important Conclusions and Insights  
+- Manual trust management is increasingly impractical due to shorter certificate lifetimes, AI complexities, and emerging quantum threats.  
+- Automation in trust management is mandatory to maintain control and security in digital ecosystems.  
+- Preparing for quantum threats via crypto-agility and migration plans is critical by 2030, with steps to start as early as 2026.  
+- AI trust requires a multi-layered, cryptographically-based architecture that can verify agent identities, monitor DNS traffic, and secure AI model execution environments.  
+- Provenance and integrity of content must be cryptographically verifiable to maintain audience trust in a world of AI-generated material.
+
+---
+
+## Technical and Other Problems Emphasized  
+
+- **Operational Costs and Outages**: Increasing numbers of certificates with shorter lifetimes are causing operational complexity, outages, and cost increases. Existing manual management approaches cannot scale effectively.  
+- **Quantum Computing Risks**: Quantum computers will break current asymmetric encryption quickly, necessitating urgent migration to quantum-resistant cryptography.  
+- **AI Trust Challenges**: Lack of clear identities for AI agents, uncertainty about data flows and credential ownership, inability to stop rogue agents, and difficulty auditing AI behavior are major issues for security teams.  
+- **Trust Model Breakdown**: Traditional trust mechanisms are inadequate for AI-driven environments where content, agents, and models present new attack surfaces and risks.  
+- **Need for Automation**: Without trust automation, organizations will lose control over their digital trust, increasing vulnerability to security incidents.  
+- **Content Authenticity**: With increased AI-generated content, maintaining provenance and authenticity through cryptographic means is essential but remains a challenge without broad adoption of standards like C2PA.
+
+---
+
+This presentation offers a strategic vision emphasizing modernization, automation, and architectural innovation to adapt digital trust frameworks to the realities of 2026 and beyond.

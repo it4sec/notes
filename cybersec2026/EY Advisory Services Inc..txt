@@ -1,0 +1,81 @@
+# Summary of Presentation: "從合規檢核到活下來的能力 - 資安韌性時代" (From Compliance Audit to Survival Capability - The Era of Cybersecurity Resilience)
+
+---
+
+### Title  
+從合規檢核到活下來的能力 - 資安韌性時代  
+(From Compliance Audit to Survival Capability - The Era of Cybersecurity Resilience)
+
+---
+
+### Author/Presenter  
+- **Name:** 陳志明 (Jemmy CM Chen)  
+- **Position:** Executive Vice President, Ernst & Young Advisory Services Co., Ltd.  
+- **Contact:** Jemmy.CM.Chen@tw.ey.com  
+- **Qualifications:** CISSP, CISA, ISO 42001 LA, ISO 27001 LA, ISO 27701 LA  
+- **Background:** Over 15 years of experience in cybersecurity risk management across finance, high-tech, and telecommunications, including ISO 27001 and privacy certification advisory, and various risk governance and technical assessments.
+
+---
+
+### Key Points
+
+1. **Current Landscape of Cybersecurity in Taiwan's Public Companies**  
+   - Most companies with capital above NT$10 billion disclose cybersecurity measures in their annual reports (approx. 115 companies).  
+   - Cybersecurity disclosures are increasing in depth and breadth, with an average of 2.4 pages dedicated to cyber efforts in reports as of 2024.  
+   - Common disclosed cybersecurity practices include appointing Chief Information Security Officers (CISO), establishing dedicated security teams, and achieving ISO 27001 certification.  
+   - Gaps remain in adoption of advanced defense measures such as zero trust, business continuity management, XDR/MDR threat detection, and cybersecurity insurance.
+
+2. **Shift from Compliance to Resilience**  
+   - Regulatory frameworks are evolving from compliance-driven approaches (audit and check) to resilience-driven models emphasizing sustained operational continuity and rapid recovery post-attacks.  
+   - Critical performance indicators like MTTD (Mean Time to Detect), MTTR (Mean Time to Respond), RTO (Recovery Time Objective), and RPO (Recovery Point Objective) become key metrics.  
+   - AI integration is viewed as a necessary strategic element due to its dual role as both a threat vector and a defense tool.
+
+3. **AI and Cybersecurity**  
+   - AI is not merely a tech trend but a strategic cybersecurity issue: used increasingly by attackers (e.g., >80% of phishing attacks employ AI), introducing new vulnerabilities through AI-generated code, and requiring AI governance policies.  
+   - Anthropic’s Claude Mythos Preview exemplifies AI’s advanced role in automatic vulnerability discovery and exploitation, calling for a new paradigm in cybersecurity talent and operations leveraging AI for defensive purposes.
+
+4. **Regulatory Environment and Trends**  
+   - Taiwan’s cybersecurity laws and security management practices are rapidly evolving with a focus on mandatory disclosures, incident reporting timing, and supply chain risks.  
+   - Influential regulations parallel global trends including NIS 2, DORA, and SEC Item 106 emphasizing board accountability, resilience testing, supply chain inclusion in security management, and strict incident reporting timelines.  
+   - The Financial Supervisory Commission (FSC) in Taiwan is enforcing stronger regulations with doubled inspection rates and expanding criticality definitions for incident reporting.
+
+5. **Incident Response and Loss Management**  
+   - Companies are advised to build capabilities in crisis response through rehearsals, to understand and calculate losses (financial, operational, reputational), and apply legal frameworks on ransomware payments and reporting.  
+   - Collaboration with government cybersecurity investigation units and industry alliances is stressed for rapid reaction and mitigation.
+
+6. **Use of Incentives and Tools**  
+   - Taiwan’s Industrial Innovation Act allows tax deductions for investments in cybersecurity products and services, encouraging companies to modernize and enhance defenses financially.  
+   - Companies should leverage this incentive alongside increased internal preparedness and proactive threat hunting.
+
+7. **Recommendations and Best Practices**  
+   - Compliance is the baseline, not the goal. Resilience requires ongoing capabilities and measurable outcomes validated through board-level governance and continual testing.  
+   - AI must be integrated into cybersecurity policies as a core element, with dedicated governance and reaction mechanisms starting 2026 for all public companies.  
+   - Organizations should collectively upgrade defenses through industry-wide cooperation, shared learning, and joint investment in advanced capabilities.
+
+---
+
+### Important Conclusions and Insights
+
+- **Cybersecurity disclosure is increasingly detailed but still lags in advanced threat detection and supply chain security.**  
+- **Resilience is replacing compliance as the dominant paradigm, demanding fast detection, response, and recovery capabilities rather than just paperwork.**  
+- **AI is a transformative game-changer in cybersecurity, representing both an elevated threat and essential defensive asset.**  
+- **Regulators globally and in Taiwan emphasize governance at the board level, standardized incident reporting deadlines, and including supply chain in oversight.**  
+- **Collaboration, rehearsals, and incentives are necessary to elevate cybersecurity posture and reduce ransomware impact.**  
+- **Taiwan’s cybersecurity regulation is not static but rapidly evolving with major updates expected by 2025 focusing on resilience and strict enforcement.**  
+
+---
+
+### Problems and Challenges Highlighted by the Presentation
+
+- **Governance gaps:** Board participation in cybersecurity remains insufficient despite regulatory emphasis.  
+- **Technical gaps:** Many companies lack adoption of critical technologies like zero trust architecture, advanced detection (XDR/MDR), and continuous monitoring.  
+- **Incident reporting and transparency:** Disclosures often lack detailed insight into incident impact and losses, while reporting thresholds are still evolving.  
+- **Supply chain security:** Oversight of subsidiaries and third-party providers remains weak, posing systemic risk.  
+- **Cybersecurity workforce and culture:** While education and phishing exercises are widespread, advanced offensive/defensive exercises (red/blue/purple teams) and certifications lag.  
+- **Ransomware response dilemmas:** Difficulties in balancing payment decisions with incident recovery, regulatory compliance, and disclosure requirements.  
+- **AI integration challenges:** Managing AI-generated vulnerabilities, governance, and the dual-use nature of AI in attacks and defense add complexity not yet fully addressed.  
+- **Regulatory complexity and pace:** Companies face challenges keeping abreast of the rapidly shifting regulatory environment and harmonizing it with operational practices.
+
+---
+
+This summary encapsulates the detailed analysis presented by 陳志明 (Jemmy CM Chen) at CYBERSEC 2026 Taiwan Cybersecurity Conference regarding the evolution of cybersecurity from compliance to resilience in Taiwanese public companies, with a strong focus on AI as a strategic multiplier and evolving regulatory landscapes.

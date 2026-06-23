@@ -1,0 +1,83 @@
+# Summary of Presentation
+
+## Title
+When AI Becomes Core to Applications: The Next Battlefield in Enterprise Security Governance  
+(當 AI 成為應用核心：企業安全治理的下一個戰場)
+
+## Authors/Presenters
+Le0 Jiang  
+F5 Senior Technical Consultant (F5 資深技術顧問)
+
+---
+
+## Key Points
+
+- **AI Industrialization and Security Challenges**  
+  - 78% of enterprises have executed AI inference.  
+  - 88% are facing AI-related security challenges.  
+  - 98% are preparing for Agentic AI threats.
+
+- **AI Application Attacks and Abuse Examples**  
+  - Highlighted real-world incidents such as AI systems being tricked into deleting data or leaking sensitive information.
+
+- **System Prompt Vulnerabilities**  
+  - System prompts (a.k.a system messages) define AI's role, rules, tone, and boundaries but are soft constraints.  
+  - Large Language Models (LLMs) attempt to follow these but cannot guarantee absolute adherence, and system prompts cannot replace firewalls.
+
+- **Why Traditional Security Is Insufficient for AI**  
+  - Traditional security separates data from commands and uses signatures and rules to filter malicious content.  
+  - AI workloads combine natural language, context, roles, documents, and tool calls in a single stream, introducing semantic and intent-based attacks.  
+  - Prompt injection is a new form of attack manipulating meaning and intent rather than just code vulnerabilities.
+
+- **Specialized AI Security Requirements**  
+  - The real attack surface is the AI infrastructure (GPUs, TPUs, drivers, firmware, edge devices).  
+  - Conventional security tools do not translate well to AI workloads, creating blind spots.  
+  - Security depends on securing talent and infrastructure supply chains.  
+  - AI itself can be harnessed defensively to analyze patterns and protect AI systems.
+
+- **Next-Generation Dedicated AI Security Defense**  
+  - AI Guardrails: Establish clear usage boundaries and lower risks during runtime across the AI lifecycle from model selection to active defense.  
+  - F5 AI Red Team: Multi-agent AI simulates attacks to identify explicit and implicit threats, continuously evolving defenses.  
+  - F5 AI Remediate: Automates creating and deploying custom guardrails for fixing critical vulnerabilities based on Red Team discoveries.
+
+- **Industry-First Independent Testing**  
+  - F5 AI Defense demonstrated 98.36% overall security efficacy across 20,000 attack tests.  
+  - Specifically:  
+    - 99.3% effective at defending direct prompt injection attacks  
+    - 98.7% effective at preventing excessive AI agency risks  
+    - 99.0% effective at preventing sensitive data leaks
+
+- **Deployment and Integration**  
+  - AI Guardrails and Red Team solutions require GPU computation and can be deployed inline or out-of-band.  
+  - Deployment models include SaaS cloud and on-premise Kubernetes clusters.  
+  - Integration with enterprise SIEM/SOAR systems supports observability and incident response.
+
+- **Layered Protection Architecture (F5 ADSP)**  
+  - Protects AI black boxes through layered controls: WAF, API security, bot defense, DDoS mitigation, client-side defense, telemetry, and AI-specific protections like Guardrails and Red Team.
+
+---
+
+## Important Conclusions and Insights
+
+- AI security challenges represent a paradigm shift: traditional signature or rule-based defenses are inadequate against semantic and agentic attacks exploiting AI's context awareness and dynamic behavior.  
+- The AI attack surface centers around AI infrastructure, requiring new security tools designed to understand and secure AI workloads at runtime.  
+- Effective AI security needs continuous, lifecycle-spanning defenses combining guardrails (runtime policy enforcement), adversarial Red Team testing, and automated remediation chaining together security tasks with development workflows.  
+- AI can be both a threat vector and a powerful defensive tool, enabling intelligent threat hunting, pattern recognition, and adaptive defenses.  
+- Enterprises must adopt specialized AI security technologies integrated into existing security operations and compliance processes to manage risks effectively.  
+- Independent testing validates that dedicated AI security (F5 AI Guardrails and Red Team) can deliver industry-leading protection against sophisticated and evolving AI threats.
+
+---
+
+## Problems and Challenges Highlighted
+
+- **Soft Constraints of System Prompts:** AI system prompts cannot act as effective firewalls since models may partially or fully ignore them.  
+- **Semantic and Intent-Based Attacks:** Attackers manipulate meaning and context inside AI inputs rather than just code content, evading traditional detection.  
+- **Hidden AI Infrastructure Vulnerabilities:** GPUs, drivers, and firmware layers are the real attack surfaces, poorly covered by conventional controls.  
+- **Insufficient Traditional Security Tools:** Conventional tools designed for deterministic workloads do not adapt well to AI's complex, data-driven workloads, causing blind spots.  
+- **Talent and Supply Chain Fragility:** AI security requires blended expertise in cybersecurity and AI, with challenges in sourcing specialized talent and securing AI infrastructure supply chains.  
+- **Need for Runtime, Lifecycle Security:** Challenges exist across model selection, development, deployment, and runtime requiring continuous testing and enforcement strategies.  
+- **Computational Requirements:** AI Security tools like F5 AI Guardrails and Red Team require significant GPU resources, impacting deployment and operational complexity.
+
+---
+
+This presentation delivers a comprehensive overview of evolving AI security risks and proposes a next-gen approach combining runtime guardrails, adversarial testing, and automated remediation—anchored in AI infrastructure protection and continuous observability to combat sophisticated AI-driven threats.

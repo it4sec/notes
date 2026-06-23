@@ -1,0 +1,84 @@
+# Summary of Presentation
+
+---
+
+## Title
+When "Carelessness" Becomes the Biggest Cybersecurity Debt: How to Deal with "Unintentional Insider Threats"
+
+---
+
+## Authors/Presenters
+- Seisho Jo (徐 聖翔)
+- HENNGE K.K.
+- HENNGE One Product Manager
+
+---
+
+## Key Points
+
+### 1. What is "Unintentional Insider Threat"?
+- Defined as threats caused by organizational insiders (employees, contractors, partners) without malicious intent, due to mistakes, negligence, or misjudgments.
+- Main forms include:
+  - Lack of proper awareness: For example, uploading company confidential data to AI systems or personal cloud storages, ignoring phishing links.
+  - Operational errors: Sending emails to incorrect recipients, wrong file transmission.
+
+### 2. Why Does "Carelessness" Become the Biggest Cybersecurity Debt?
+- The largest factor is humans; scale of threat = number of people × number of operations.
+- Under pressure, employees tend to take shortcuts.
+- Convenience features can inadvertently create security loopholes.
+- Over-trust in internal systems or IT teams leads to low vigilance, which hackers exploit.
+- Three major contributing elements:
+  - Pressure
+  - Convenience loopholes
+  - Low awareness
+
+### 3. Market Alerts and Cyber Insurance Trends
+- Regulatory bodies encourage companies to evaluate cybersecurity risks and consider cyber insurance.
+- Cyber insurance market demand has grown drastically (6x increase in 5 years in Taiwan, global market expected to reach $29 billion by 2027).
+- Common requirements for insurance:
+  - Multi-factor authentication
+  - Endpoint detection and response
+  - Email security
+  - Immutable, isolated backups
+  - Incident response plan
+  - Employee security training
+  - Privileged access management
+  - Patch management
+
+### 4. How HENNGE Helps Prevent Damage from "Carelessness"
+- HENNGE One provides comprehensive cloud security covering identity verification and data leakage prevention.
+- Protection workflow includes:
+  - Detecting and blocking phishing and malicious attacks.
+  - Social engineering training and simulation.
+  - Identity and credential protection.
+  - Data Leakage Protection (DLP) across email and cloud file sharing.
+- Specific features:
+  - Email DLP: Detects and pauses suspicious emails, allows recall before files/downloads are accessed.
+  - File DLP: Monitors and controls cloud file-sharing permissions to prevent excessive external sharing.
+  - Social engineering training platform (Tadrill): Simulates phishing attacks, collects incident reports, and provides educational courses to raise employee awareness.
+
+---
+
+## Important Conclusions and Insights
+- Humans are a major asset but also the largest cybersecurity vulnerability.
+- The scale of unintentional insider threats grows with the number of employees and daily operations.
+- Pressure, system convenience, and low vigilance compound the risk of accidental data breaches.
+- Cyber insurance now requires employee security training as a mandatory condition.
+- Combining data leakage protection and social engineering simulations significantly reduces risks from internal mistakes.
+- Preventive measures focus on a holistic approach addressing technology, human behavior, and education.
+
+---
+
+## Technical or Other Problems Highlighted by the Presentation
+
+- **Unintentional Data Leakage:** Employees inadvertently expose confidential data by misusing AI platforms (e.g., uploading to ChatGPT), misconfiguring email recipients, or sharing cloud files externally without proper controls.
+- **Insufficient Awareness and Training:** Lack of clear policies and employee understanding causes risky behaviors.
+- **Security Loopholes from Convenience Features:** Auto-complete functions, easy file sharing, and low-friction email sending increase the chance of mistakes.
+- **Pressure-Induced Shortcuts:** Work pressures lead to bypassing security protocols.
+- **Low Employee Vigilance/Over-Trust:** Employees tend to trust internal systems and IT, making them susceptible to social engineering.
+- **Lack of Visibility and Control:** Without robust monitoring tools, organizations struggle to detect and remediate data leaks promptly.
+- **Growing Demand for Cyber Insurance:** Organizations face challenges meeting insurer requirements that demand comprehensive security controls, training, and incident preparedness. Failure to comply raises insurance denial risks.
+
+---
+
+This presentation underscores the critical necessity of addressing "unintentional insider threats" through a combination of technology solutions, employee training, and thoughtful policy to manage cybersecurity risks effectively in modern enterprises.
