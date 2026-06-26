@@ -1,0 +1,272 @@
+
+---
+
+# Technical Summary
+
+## Title
+
+**Real-World Evaluation of Protocol-Compliant Denial-of-Service Attacks on C-V2X-based Forward Collision Warning Systems**
+
+---
+
+## Authors, Credentials, Affiliations and Contacts
+
+**Jean Michel Tine** *(Corresponding Author)*
+
+* Ph.D. Student
+* Glenn Department of Civil Engineering
+* Clemson University, Clemson, SC 29634, USA
+* Email: **[jtine@clemson.edu](mailto:jtine@clemson.edu)**
+
+**Mohammed Aldeen**
+
+* Ph.D. Student
+* School of Computing
+* Clemson University, Clemson, SC 29634, USA
+* Email: **[mshujaa@clemson.edu](mailto:mshujaa@clemson.edu)**
+
+**Abyad Enan**
+
+* Ph.D. Student
+* Glenn Department of Civil Engineering
+* Clemson University, Clemson, SC 29634, USA
+* Email: **[aenan@clemson.edu](mailto:aenan@clemson.edu)**
+
+**M Sabbir Salek, Ph.D.**
+
+* Senior Engineer
+* USDOT National Center for Transportation Cybersecurity and Resiliency (TraCR)
+* 414A One Research Dr, Greenville, SC 29607, USA
+* Email: **[msalek@clemson.edu](mailto:msalek@clemson.edu)**
+
+**Long Cheng, Ph.D.**
+
+* Associate Professor
+* School of Computing
+* Clemson University, Clemson, SC 29634, USA
+* Email: **[lcheng2@clemson.edu](mailto:lcheng2@clemson.edu)**
+
+**Mashrur Chowdhury, Ph.D., P.E.**
+
+* Eugene Douglas Mays Chair of Transportation
+* Glenn Department of Civil Engineering
+* Clemson University, Clemson, SC 29634, USA
+* Email: **[mac@clemson.edu](mailto:mac@clemson.edu)**
+
+---
+
+# Technical Innovation
+
+The paper investigates a previously underexplored cybersecurity vulnerability in **Cellular Vehicle-to-Everything (C-V2X)** communications. Rather than relying on traditional attacks such as spoofing, jamming, or protocol violations, the authors demonstrate that an attacker can remain **fully compliant with existing communication standards** while still causing severe degradation of safety-critical applications.
+
+The central innovation is the experimental demonstration that **standards-compliant traffic alone can constitute a highly effective Denial-of-Service (DoS) attack** against Forward Collision Warning (FCW) systems.
+
+Unlike previous studies that mainly relied on simulation, the authors validate these attacks on a **real-world connected vehicle testbed** using commercial C-V2X hardware.
+
+---
+
+# Research Problem
+
+Current C-V2X security mechanisms (IEEE 1609, 3GPP Release 14, SAE J2735) focus on:
+
+* authentication,
+* message integrity,
+* protocol correctness,
+* radio-layer security.
+
+However, they do **not** adequately prevent:
+
+* resource exhaustion,
+* receiver overload,
+* application-layer congestion,
+
+when all transmitted packets are syntactically and semantically valid.
+
+The paper demonstrates this security gap experimentally.
+
+---
+
+# Authors' Technical Contributions
+
+The paper makes three principal technical contributions.
+
+### 1. Real-world protocol-compliant UDP flooding attack
+
+The authors design a transport-layer DoS attack based entirely on legitimate UDP traffic.
+
+Characteristics:
+
+* valid UDP packets
+* no malformed packets
+* no spoofing
+* no protocol violations
+* transmission over standard PC5 sidelink
+
+The attack overwhelms receiver buffers purely by transmission rate.
+
+---
+
+### 2. Oversized Basic Safety Message (BSM) flooding attack
+
+The second contribution targets the application layer.
+
+Instead of corrupting messages, the attacker transmits:
+
+* legitimate SAE J2735 Basic Safety Messages,
+* valid optional fields,
+* unusually large payloads,
+* extremely high transmission frequencies.
+
+Although each message is standards-compliant, receiver parsing and processing become overloaded.
+
+This introduces a new class of **application-layer compliant flooding attacks**.
+
+---
+
+### 3. Cross-layer protocol-compliant DoS attack
+
+The most significant innovation is combining:
+
+* transport-layer UDP flooding
+* application-layer oversized BSM flooding
+
+into one coordinated attack.
+
+The paper demonstrates that combining the two attack vectors produces much more severe degradation than either individually.
+
+---
+
+# Experimental Platform
+
+Unlike simulation-based studies, experiments were performed on:
+
+* commercial Cohda MK6C Evaluation Kit (EVK) On-Board Units
+* 3GPP Release 14 firmware
+* real C-V2X PC5 sidelink communication
+* moving vehicles
+* operational Forward Collision Warning application
+
+This provides practical validation of the attacks under realistic deployment conditions.
+
+---
+
+# Technical Methodology
+
+The authors first establish baseline FCW performance:
+
+* BSM broadcast rate: 10 Hz
+* latency ≈35 ms
+* Packet Delivery Ratio (PDR) ≈99%
+
+They then progressively execute:
+
+1. UDP flooding
+2. 500 Hz oversized BSM flooding
+3. 1000 Hz oversized BSM flooding
+4. Combined UDP + BSM flooding
+
+Performance metrics include:
+
+* Packet Delivery Ratio (PDR)
+* end-to-end latency
+* FCW trigger timing
+* final successfully received BSM
+* FCW alert generation
+
+The paper also introduces analytical queueing equations describing how excessive arrival rates and increased message processing times cause receiver queue growth and degraded dispatch rates. 
+
+---
+
+# Main Experimental Findings
+
+## Baseline
+
+* PDR: **99.2%**
+* Latency: **35 ms**
+* FCW warnings generated correctly.
+
+---
+
+## UDP Flood
+
+Two-minute flood:
+
+* latency increased to **156 ms**
+* PDR reduced to **89%**
+* delayed collision warnings
+
+Five-minute flood:
+
+* latency reached **400 ms**
+* PDR fell to **12.4%**
+* FCW warning completely suppressed.
+
+---
+
+## Oversized BSM Flood
+
+500 Hz:
+
+* PDR: **67.3%**
+* latency: **105 ms**
+* FCW significantly delayed
+
+1000 Hz:
+
+* PDR: **41.5%**
+* latency: **180 ms**
+* no FCW warning generated.
+
+---
+
+## Combined Attack
+
+UDP + 500 Hz BSM:
+
+* latency: **250 ms**
+* PDR: **28.7%**
+* FCW disabled
+
+UDP + 1000 Hz BSM:
+
+* latency exceeded **420 ms**
+* PDR only **10.2%**
+* complete communication collapse
+* FCW entirely disabled
+
+---
+
+# Authors' Conclusions
+
+The study concludes that:
+
+* protocol compliance does **not** imply operational safety;
+* current IEEE 1609 and 3GPP security mechanisms leave transport and application layers vulnerable to resource exhaustion;
+* authenticated and standards-compliant traffic alone can disable safety applications;
+* FCW systems are particularly sensitive because they depend on timely delivery of BSMs.
+
+The authors recommend future work on transport-layer and application-layer resilience, intrusion detection for compliant flooding, protocol enhancements, and large-scale field validation. 
+
+---
+
+# Key Technical Ideas
+
+1. **Protocol-compliant attacks are practical:** Legitimate C-V2X devices can launch effective DoS attacks without violating standards.
+
+2. **Security standards focus on authenticity, not resource usage:** IEEE 1609 and SAE J2735 verify message validity but do not limit excessive compliant traffic.
+
+3. **Receiver processing is the critical bottleneck:** Oversized yet valid BSMs consume CPU and memory resources, reducing effective message throughput.
+
+4. **Cross-layer attacks are substantially more damaging:** Simultaneous transport- and application-layer flooding creates cascading failures that neither layer alone produces.
+
+5. **Real-world validation is essential:** The work demonstrates these vulnerabilities using commercial hardware rather than simulations, strengthening the practical significance of the findings.
+
+6. **Application-layer resilience requires additional mechanisms:** Future C-V2X deployments should include rate limiting, adaptive congestion control, processing-aware scheduling, and detection of abnormal but standards-compliant traffic patterns.
+
+---
+
+# References
+
+
+
+Link: https://arxiv.org/abs/2508.02805
