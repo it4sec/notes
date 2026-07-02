@@ -1,0 +1,83 @@
+## Title
+
+**BlackAlps 2025: “Ransomware Up Close: Exploring A Crisis From Inside”**
+
+## Author / Presenter
+
+**Stefan Dydak**
+
+**Credentials / role stated in the uploaded transcript:**
+The transcript identifies Stefan Dydak as the presenter/keynote speaker but does **not** provide a formal job title, employer, academic credentials, certification list, or biography. It shows that he presented an anonymized real-world ransomware crisis case and had direct access to the involved CISO’s account of the incident.
+
+**Contacts:**
+No email address, social profile, website, phone number, or other contact detail is included in the uploaded transcript. During Q&A, Dydak says he could arrange follow-up through exchanged contacts, but the transcript does not provide those contacts.
+
+---
+
+## Technical Summary
+
+Stefan Dydak’s presentation analyzes a real, anonymized ransomware crisis inside a large Swiss company with subsidiaries sharing a common IT infrastructure. The talk is less about malware reverse engineering and more about the **technical, operational, and organizational mechanics of surviving a ransomware event** once attackers have already achieved domain-level compromise.
+
+The attack began through a compromised **third-party account** belonging to a software engineering supplier. The contract for that supplier had already ended, so the account should have been decommissioned, but it remained active. The account also lacked MFA. This allowed the attackers to gain an initial foothold, likely after phishing credentials. From there, they moved laterally, used tools such as **Cobalt Strike** and **Mimikatz**, harvested domain credentials, took over domain controllers, and spent roughly **three weeks** deploying across the infrastructure before ransomware detonation.
+
+One of the talk’s main technical ideas is that ransomware incidents are often lost before encryption begins. In this case, the organization’s SOC saw some alerts and disabled some accounts, but the available signals were not strong enough, or not correlated well enough, to trigger a full incident declaration. Dydak emphasizes the classic SOC problem of **signal-to-noise ratio**: collecting logs is not enough if use cases, log-source tuning, severity handling, and customer-specific context are weak.
+
+The crisis escalated quickly. On a Friday morning, users still had access to email and applications, while the crisis cell had already assembled elsewhere. Within hours, encryption spread and “everything” went down. Domain controllers were unavailable, backups were attacked, and some subsidiaries could no longer work. The organization had updated its incident response playbook only two weeks earlier, which became critical because the right people could be assembled quickly and decisions could be made under pressure.
+
+A central technical recovery concept in the talk is the separation between a contaminated **“red zone”** and a clean **“green zone.”** The red zone represented the damaged, partially functioning, untrusted infrastructure. The green zone was a newly built environment created in parallel from scratch. The company chose not to trust or reuse the compromised infrastructure because it did not know how deep the attacker presence was. Instead, it rebuilt critical systems, created new domain controllers, rotated credentials, and moved toward a minimal viable operating environment.
+
+The failover happened around Easter weekend, roughly two weeks after the ransomware event. The company succeeded in moving to the newly built environment, but Dydak stresses that this was only the start of the “cyber restore marathon.” Full recovery took much longer than the first technical failover, because systems had to be rebuilt, synchronized, validated, secured, and returned to normal functionality.
+
+The talk also examines the data-extortion dimension. At first, the company believed only about **5 GB** of encrypted data had been exfiltrated and decided not to negotiate or pay. Later, the actual exposure turned out to be around **500 GB of highly sensitive employee data**, including medical information. Because the company did not engage with the attackers, the ransomware group eventually published the data on the darknet. Dydak uses this to show how decision-making under uncertainty is one of the hardest parts of ransomware crisis management.
+
+Dydak’s broader technical recommendations include MFA, account lifecycle management, patching, tested backup restoration, disaster recovery planning, business continuity preparation, infrastructure-as-code, automated configuration management, compliance monitoring, better SOC use cases, and structured communication. He repeatedly argues that “people, processes, and technology” matter in that order, especially during a crisis.
+
+---
+
+## Key Technical Ideas
+
+1. **Ransomware is a crisis of uncertainty, not just encryption**
+   The defenders did not know the original entry point, the true scope of compromise, whether the attackers still had access, or how much data had been stolen until later forensic work.
+
+2. **Third-party identity is a major attack path**
+   The initial access came through a supplier account that should have been disabled. The technical lesson is that identity lifecycle management is a core security control, not an administrative detail.
+
+3. **MFA failure enabled the initial foothold**
+   The compromised third-party account lacked MFA, allowing stolen credentials to become operational access.
+
+4. **Pre-encryption dwell time is decisive**
+   The attackers spent about three weeks moving laterally and preparing the environment before detonating ransomware. This shows that detection opportunities exist before the visible crisis.
+
+5. **SOC alerts need business-specific correlation**
+   Some alerts existed, but they were not enough to declare an incident. Dydak argues that SOC effectiveness depends on tuned use cases, meaningful log sources, and understanding what matters in the specific company.
+
+6. **Domain controller compromise changes the recovery model**
+   Once domain controllers are lost or untrusted, ordinary cleanup is insufficient. The company had to rebuild identity infrastructure rather than merely restore affected machines.
+
+7. **Red-zone / green-zone recovery is a practical crisis pattern**
+   The company treated the old environment as untrusted and built a clean green-zone infrastructure from scratch, then failed over critical operations.
+
+8. **Backups must be offline, immutable, and restore-tested**
+   Attackers encrypted backups first. Some offline backups helped, but Dydak stresses that backup existence is not enough; restore processes must be tested.
+
+9. **Incident response plans must be current and exercised**
+   The company’s plan had been updated two weeks earlier, which helped assemble the crisis cell and define decision paths. An outdated plan with stale contacts would have failed.
+
+10. **Infrastructure-as-code and automation improve recovery**
+    Dydak recommends automation, configuration management, compliance monitoring, API-based monitoring, Terraform/Ansible-like approaches, and infrastructure-as-code to rebuild and manage complex hybrid environments.
+
+11. **Communication is part of technical crisis control**
+    Internal communication reduced panic and helped coordinate who should remain active. External communication helped prevent the press or attackers from controlling the narrative.
+
+12. **Nonpayment does not end the crisis**
+    The company chose not to pay or negotiate. The attackers later dumped the data, shifting the crisis from encryption recovery to privacy, employee trust, legal, and reputational damage.
+
+---
+
+## Author’s Main Innovation / Contribution
+
+Dydak’s main contribution is a **practical crisis model for ransomware response from inside the organization**, rather than a purely technical malware analysis. The presentation shows how ransomware response requires simultaneous management of identity compromise, infrastructure trust, SOC failure modes, backup resilience, executive decision-making, law-enforcement coordination, human burnout, internal communication, and public narrative.
+
+The strongest technical idea is the **red-zone / green-zone recovery strategy**. Instead of trying to clean the compromised infrastructure immediately, the company built a clean parallel environment, rotated credentials, restored selected data from trusted backups, and failed over to a minimal viable infrastructure. This is a useful model for severe ransomware incidents where defenders cannot confidently determine which systems remain trustworthy.
+
+The talk’s deeper message is that ransomware resilience is not built during the incident. It depends on controls that must already exist: MFA, account decommissioning, segmentation, tested restore processes, accurate asset management, prepared incident playbooks, tuned SOC monitoring, and executive-level support.

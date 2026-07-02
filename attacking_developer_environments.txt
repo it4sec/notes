@@ -1,0 +1,72 @@
+## Title
+
+**BlackAlps 2025: “Plugins Gone Rogue: Attacking Developer Environments”**
+
+## Author / Presenter
+
+**Raphael Silva**
+**Credential / affiliation stated in the talk:** Security researcher at **Checkmarx**.
+**Experience stated:** About **5 years in security**, with a primary focus on **web security**, and around **1.5 years focused on software supply chain security**. 
+**Contacts:** The talk mentions that “some links” were shown on the slide, but the uploaded transcript does not include the actual URLs, handles, email address, or contact details. 
+
+---
+
+## Technical Summary
+
+Raphael Silva’s talk examines how **developer environments**, especially **Visual Studio Code**, have become attractive attack surfaces for software supply chain compromise. The core argument is that compromising a developer’s IDE plugin can be as valuable as compromising a production system, because developers often have access to source code, credentials, deployment tools, cloud secrets, internal repositories, and privileged workflows. 
+
+The talk focuses on **malicious VS Code extensions** and argues that the VS Code extension ecosystem has weak trust boundaries. Extensions are easy to publish, are written as ordinary JavaScript projects, run with the same privileges as the user’s IDE process, and are not meaningfully sandboxed in the way browser extensions usually are. This gives a malicious plugin broad access to the developer’s local files, credentials, environment variables, editor context, and network access. 
+
+A major technical observation is that VS Code extensions are packaged as `.vsix` files, essentially zip archives containing JavaScript code and a `package.json` manifest. That manifest defines activation events, dependencies, extension packs, metadata, and repository links. Silva emphasizes that these fields can be abused: attackers can trigger code early using permissive activation events, hide malicious functionality in dependencies, spoof repository metadata, and present misleading marketplace trust signals. 
+
+The talk demonstrates several proof-of-concept attack paths. One plugin hid a malicious payload using Base64-encoded JavaScript embedded inside an image file, then decoded and executed it at runtime. Another placed the malicious behavior in a dependency extension, so that uninstalling the visible extension did not remove the malicious dependency. A third test used unobfuscated malicious JavaScript directly inside the extension and still passed marketplace publication checks. These experiments were used to show that Microsoft’s malware scanning and dynamic detection controls were either insufficient or too weak to block simple malicious behaviors. 
+
+Silva also highlights **typosquatting and trust spoofing** as practical attack techniques. He created a CMake-themed typosquat extension and showed that the marketplace allowed metadata that pointed to the real extension’s GitHub repository, issue count, pull requests, version-like details, and other signals, even though the extension was not actually the legitimate one. The talk argues that marketplace users can be misled by familiar names, repository links, publisher names, install counts, and “verified publisher” indicators, because these signals do not necessarily prove code authenticity or organizational trust. 
+
+A particularly important idea is the persistence risk from **extension dependencies and extension packs**. When a user installs an extension that pulls in other extensions, those dependencies may remain installed even after the original extension is removed. This creates an opportunity for attackers to use a benign-looking wrapper extension as a delivery mechanism for a hidden malicious extension. The user may believe they removed the suspicious extension while the actual malicious component remains active. 
+
+The talk also discusses malicious extensions found in the wild, including ransomware-style extensions, information stealers, credential exfiltration plugins, clipboard or editor-content stealers, downloaders, and remote-code-execution-style behavior. According to the transcript, Checkmarx reported around **17 unique malicious extensions** across the VS Code Marketplace and Open VSX over roughly four months, including extensions that exfiltrated data through Discord webhooks and other endpoints. 
+
+Silva’s defensive conclusion is blunt: user judgment and marketplace trust signals are not enough. His primary recommendation is to enforce an **organization-wide extension allowlist**. He also suggests monitoring extension installation behavior, watching for removed or flagged extensions, detecting suspicious network behavior after extension installation, and creating detection rules for unusual outbound traffic such as Discord webhooks, pastebin-like endpoints, or unexpected remote downloads. 
+
+---
+
+## Key Technical Ideas
+
+1. **Developer IDEs are supply chain attack surfaces**
+   The talk reframes VS Code not just as a local editor, but as a high-value execution environment attached to source code, credentials, build systems, and internal infrastructure.
+
+2. **VS Code extensions run with excessive trust**
+   Extensions are JavaScript projects that execute with the user’s IDE privileges and are not strongly sandboxed, giving attackers a powerful execution primitive.
+
+3. **Marketplace publication barriers are weak**
+   Silva’s proof-of-concept extensions passed publication even when they contained malicious behavior, including an info-stealer-style callback and later even unobfuscated malicious logic.
+
+4. **Activation events enable stealthy or immediate execution**
+   Extension manifest fields such as `onStartupFinished`, `onLanguage`, or broad activation triggers can cause malicious code to run automatically when VS Code opens or when a relevant file type is used.
+
+5. **Dependencies and extension packs can hide payloads**
+   A visible extension can pull in a malicious dependency, and uninstalling the original extension may not remove the dependency, creating persistence and user confusion.
+
+6. **Marketplace metadata can be spoofed**
+   Repository links, issue counts, pull request references, Q&A links, and project metadata can be made to look legitimate even when the uploaded extension is unrelated to the real project.
+
+7. **Typosquatting remains effective**
+   Slightly altered names for popular tools, such as a CMake-themed typosquat, can attract accidental installs from users searching quickly inside the marketplace.
+
+8. **Verified publisher indicators are weak trust signals**
+   In the talk’s view, verification mainly proves domain ownership, not code safety, organizational legitimacy, or extension authenticity.
+
+9. **Exfiltration patterns are often simple**
+   Many malicious extensions use hard-coded HTTP endpoints, Discord webhooks, Telegram, paste services, or other commodity channels to leak tokens, files, editor content, or environment information.
+
+10. **Allowlisting is the strongest practical defense**
+    The author argues that defenders should restrict which extensions developers can install, rather than relying on reviews, ratings, publisher names, or marketplace scanning.
+
+---
+
+## Author’s Main Innovation / Contribution
+
+The strongest contribution of the talk is not the discovery that malicious plugins can exist, but the **systematic demonstration of how low-friction and reliable the attack path is** in modern developer tooling. Silva combines marketplace abuse, typosquatting, dependency persistence, weak metadata validation, insufficient malware detection, and real-world malicious extension patterns into one coherent attack model.
+
+The technical innovation is the framing of IDE plugins as a **developer-environment supply chain compromise vector**: instead of attacking production directly, an attacker can compromise the human and technical bridge to production by targeting the developer’s editor. This is especially powerful because extensions inherit user privileges, update automatically, and sit inside a workflow developers already trust.
