@@ -1,0 +1,255 @@
+## Title
+
+**Title:** Not stated in the supplied transcript. Based on the content, the talk concerns **detecting and securing unsanctioned AI-generated applications built with prompt-to-app platforms**.
+
+**Source type:** The uploaded material appears to be a transcript of a conference presentation rather than a conventional academic paper. It includes spoken remarks, audience questions, and timestamps. 
+
+## Author / Presenter
+
+**Name:** Not recoverable from the supplied transcript.
+
+**Credentials and professional background stated by the presenter:**
+
+* Approximately **15 years of experience in cybersecurity**.
+* Approximately **three years working on or studying AI security**.
+* Currently employed by a company whose name is transcribed as **“Cras”**; the presenter describes it as an organization building high-performance AI chips and compute systems.
+* Previously worked at an organization transcribed as **“Coac City,”** developing large data stores.
+* Previously worked for **Juniper Networks**, securing networking products including firewalls, switches, routers, and core routers.
+* In several roles, was an early or first security hire and built security programs from the ground up.
+* Has presented at security and application-security conferences, including an event transcribed as **Snowfrog 2023**, OWASP-related events, and other application-security conferences. 
+
+**Contacts:** The presenter mentions a LinkedIn profile and a GitHub repository containing the slides, but the actual LinkedIn URL, GitHub URL, email address, phone number, and other contact details are not present in the text supplied. They therefore cannot be reproduced reliably.
+
+**License:** The user identifies the work as published under a Creative Commons license. The transcript itself does not specify the exact license variant, such as CC BY, CC BY-SA, or CC BY-NC.
+
+---
+
+# Technical Summary
+
+The presentation examines a new enterprise-security problem created by **AI app builders that allow non-developers to generate and publish complete web applications directly from natural-language prompts**. Unlike AI coding assistants used inside a conventional software-development lifecycle, these platforms may combine code generation, hosting, databases, identity, certificates, and production deployment into a single workflow.
+
+The central argument is that this workflow removes the organizational controls that traditionally sit between application creation and public deployment. In a mature development environment, generated code normally passes through source control, security testing, quality checks, compliance review, deployment approval, monitoring, and patch management. Prompt-to-app platforms can bypass this entire pipeline: a user describes an application, presses “publish,” and creates an internet-facing service within minutes. 
+
+This creates a class of applications that may be:
+
+* Unknown to security and IT teams.
+* Unconnected to enterprise source-control systems.
+* Hosted on unapproved infrastructure.
+* Built from unreviewed dependencies.
+* Deployed without vulnerability testing.
+* Connected to external databases or identity providers.
+* Difficult or impossible to patch because the organization may not possess the source code.
+* Forgotten after a short-lived marketing, finance, or business campaign.
+
+The presenter motivates the problem through incidents in which internet-facing applications were vulnerable, yet responders could not locate the original code or even immediately determine who had deployed the application. The key operational lesson is that vulnerability management fails when an organization has no durable ownership, inventory, or source-code record for a deployed service. 
+
+## Enterprise Risk Model
+
+The author groups the risks into several related categories.
+
+**Data and secret exposure:** Generated applications may leak credentials, personally identifiable information, configuration values, API keys, or database contents.
+
+**Application-security risk:** Applications may contain vulnerabilities at deployment time or become vulnerable months later as frameworks and packages age.
+
+**Brand risk:** Because the applications can appear under an enterprise domain, insecure or low-quality services may be interpreted as official company products.
+
+**Compliance and data-residency risk:** Data may be stored in databases operated by the builder platform or its infrastructure partners, potentially outside approved regions and environments.
+
+**Software-supply-chain risk:** Packages, templates, generated components, and transitive dependencies may not be reviewed or maintained.
+
+**Identity risk:** Authentication may use platform-specific identity, social login, GitHub, or other OpenID Connect providers instead of the enterprise identity provider.
+
+**Asset-management risk:** Security teams may not know that an application exists, who owns it, or where its code and data are located. 
+
+---
+
+# Technical Innovation and Authors’ Main Ideas
+
+The most original contribution is not a new vulnerability scanner or a single detection signature. It is a **multi-signal discovery and governance framework for identifying AI-generated “shadow applications” through external infrastructure evidence**.
+
+The presenter argues that traditional SaaS Security Posture Management can detect some employee sign-ups for app-building services, but it cannot provide complete visibility. Users may register through personal accounts, GitHub identities, or external identity providers that are not monitored by the organization. New app-building vendors also appear too quickly for product-specific SaaS discovery to remain complete. 
+
+The proposed alternative is to detect the deployed application itself by combining signals from:
+
+1. DNS records.
+2. Certificate Transparency data.
+3. TLS certificate properties.
+4. Hosting-provider and HTTP fingerprints.
+5. Organizational baselines and anomaly detection.
+6. Identity and SaaS-discovery telemetry.
+
+No individual signal is considered reliable enough on its own. The innovation lies in **correlating weak indicators into a high-confidence classification**.
+
+## DNS-Based Discovery
+
+DNS is presented as the natural starting point because an application publicly associated with the enterprise will normally require a company-controlled domain or subdomain.
+
+The suggested process is to retrieve DNS records regularly through provider APIs, such as those offered by Cloudflare or Amazon Route 53, and identify:
+
+* Newly created subdomains.
+* CNAME records resolving to app-builder or third-party hosting domains.
+* Destinations outside the organization’s approved CDN and hosting providers.
+* Multi-stage CNAME chains that eventually terminate at an app-builder platform.
+* Unusually short DNS time-to-live values.
+* Subdomain names containing campaign, demo, marketing, finance, or other non-product terminology.
+* The account or employee responsible for creating the DNS record.
+
+The author notes that resolution must be followed recursively. A company subdomain may point first to a CDN, then another hosting layer, and only later to the underlying app-builder service. Stopping at the first CNAME can therefore conceal the actual platform. 
+
+Short TTL values are proposed as a supporting signal. Large app-building platforms may optimize their DNS for automated migration and fleet management, whereas conventional enterprise applications may use longer-lived DNS records for stability and performance. The presenter treats TTL as a probabilistic feature, not definitive proof.
+
+## Certificate Transparency and TLS Analysis
+
+The second major detection channel is Certificate Transparency monitoring. Public services such as `crt.sh` can reveal certificates issued for corporate domains and subdomains.
+
+Potential indicators include:
+
+* Unexpected certificates for new subdomains.
+* Certificates issued by authorities not normally used by the enterprise.
+* Domain-validated certificates where the organization generally requires organization-validated or extended-validation certificates.
+* Ninety-day certificate lifetimes associated with automated certificate services.
+* Subject Alternative Name lists containing domains from numerous unrelated customers.
+* Bursts of several certificate renewals occurring within a short interval, suggesting automated fleet renewal by a hosting platform.
+* Certificates issued through common automated authorities such as Let’s Encrypt, Google Trust Services, or ZeroSSL when those authorities are not part of the organization’s approved architecture.
+
+The author correctly warns that many of these properties are now common in legitimate cloud environments. They should therefore be used as features in a combined detection model rather than as standalone evidence. 
+
+## HTTP and Hosting Fingerprints
+
+Once a suspicious domain is identified, the application can be fingerprinted through externally observable web behavior.
+
+The proposed features include:
+
+* Hosting-specific HTTP response headers.
+* Standard 404 pages.
+* Repeated CSS classes or page structures.
+* Default routing behavior.
+* Predictable static-asset paths.
+* Responses on well-known paths.
+* Special behavior associated with ACME certificate-validation routes.
+* Error-page text or templates characteristic of a particular platform.
+
+These fingerprints can help distinguish applications hosted on platforms such as Vercel, Netlify, or app-builder-specific infrastructure. The presenter emphasizes that exact signatures will vary by platform and may generate false positives as these services become part of legitimate enterprise development. 
+
+## Signal Correlation and Anomaly Detection
+
+A key technical idea is to treat discovery as a **correlation problem**.
+
+For example, a single domain-validated certificate is weak evidence. A single CNAME to an external CDN may also be legitimate. Confidence rises when the system observes several features together:
+
+* A newly created marketing-themed subdomain.
+* A CNAME chain terminating at an unapproved app-builder host.
+* A 90-day certificate from an unexpected certificate authority.
+* A platform-specific response header.
+* A default app-builder 404 page.
+* No corresponding source-code repository or approved application record.
+
+The presenter also proposes using LLM-assisted or automated anomaly analysis against the organization’s normal infrastructure. If nearly all sanctioned applications use Cloudflare and one new service resolves to an unfamiliar platform, that deviation is a stronger signal than a generic vendor signature. 
+
+---
+
+# Key Technical Ideas
+
+## 1. Detect Deployed AI Applications Through Infrastructure, Not Only User Activity
+
+Monitoring employee sign-ups is insufficient because users can authenticate through personal identities, GitHub, or external OpenID Connect providers. The deployed service leaves more durable evidence in DNS, certificates, and HTTP behavior.
+
+## 2. Build a Multi-Signal Classifier
+
+Detection should combine:
+
+* DNS destination and CNAME-chain analysis.
+* DNS TTL and naming characteristics.
+* Certificate issuer, validity, SAN structure, and issuance timing.
+* Hosting and HTTP fingerprints.
+* SaaS and identity telemetry.
+* Deviation from approved infrastructure baselines.
+
+This is the central technical architecture of the presentation.
+
+## 3. Recursively Resolve Hosting Dependencies
+
+A domain may traverse several CDN and hosting layers. Detection logic should follow the complete DNS chain rather than classify only the first provider encountered.
+
+## 4. Use Certificate-Issuance Patterns as Behavioral Telemetry
+
+The author goes beyond merely checking whether a certificate exists. Renewal bursts, validity periods, issuer selection, validation type, and SAN composition are treated as indicators of automated platform behavior.
+
+## 5. Treat Platform Fingerprints as Probabilistic Features
+
+Headers, error pages, and static paths can identify hosting platforms, but they should not automatically trigger enforcement because sanctioned applications may use the same infrastructure.
+
+## 6. Detect Early, Before Incident Response
+
+The framework prioritizes continuous monitoring of DNS changes and certificate issuance. Discovering an application only after exploitation is described as an operational failure because the organization may then lack ownership, source code, and a patching path.
+
+## 7. Prevent Deployment by Controlling DNS and Certificate Issuance
+
+The author recommends restricting who can create DNS records and continuously auditing those changes. The talk also proposes publishing **CAA records** to specify which certificate authorities may issue certificates for the organization’s domains. This can prevent an app-builder platform from automatically obtaining a certificate through an unauthorized authority. 
+
+## 8. Restrict Identity and OAuth Integrations
+
+Enterprise identity controls should prevent or review OAuth and OpenID Connect grants to unapproved app-building services. Controls should account for GitHub and other identities, not merely corporate email sign-ups.
+
+## 9. Provide a Sanctioned Fast Path
+
+Pure prohibition is unlikely to work because users choose these platforms for speed. The author recommends approving one or a small number of builders and creating a governed workflow that preserves the benefits of rapid generation.
+
+The sanctioned workflow should require:
+
+* Source code to be exported and stored in an enterprise repository.
+* Deployment through approved DNS and hosting.
+* Certificates issued through organizational processes.
+* Approved identity integration.
+* Predefined security templates.
+* Clear application ownership.
+* A rapid security escalation path.
+
+## 10. Use Security Prompt Packs for Non-Developers
+
+One of the more distinctive proposals is a collection of reusable prompts that embed enterprise security requirements into the application-generation process.
+
+A prompt pack could instruct the builder to:
+
+* Analyze requirements before generating code.
+* Identify missing authentication or authorization requirements.
+* Reject or flag uses outside the organization’s risk appetite.
+* Escalate sensitive requirements to security.
+* Apply approved architecture and data-handling patterns.
+* Generate the project into a source-controlled repository.
+
+This converts part of the security review into a self-service interaction inside the natural-language workflow. 
+
+---
+
+# Recommended Operating Model
+
+The presentation proposes a three-part program.
+
+### Discover
+
+Continuously monitor DNS, Certificate Transparency logs, certificates, hosting fingerprints, SaaS registrations, and identity-provider grants.
+
+### Constrain
+
+Limit DNS privileges, publish restrictive CAA records, control OAuth grants, and prevent unauthorized platforms from obtaining enterprise-branded domains and certificates.
+
+### Enable
+
+Offer a sanctioned app-building platform, approved templates, prompt packs, fast DNS and certificate services, source-control integration, and short onboarding for non-developers.
+
+When an application is discovered, the response should be risk-based. A critically vulnerable or data-exposing application may need to be taken down immediately. A lower-risk application can be scanned, assigned an owner, migrated into the approved process, and remediated over time. DNS audit history may help identify the person or team that created it. 
+
+---
+
+# Overall Assessment
+
+The work’s strongest contribution is its recognition that prompt-generated applications form a distinct category of shadow IT: they are not merely unauthorized SaaS accounts, and they are not ordinary code repositories. They are **complete, externally deployed systems created outside the software-development lifecycle**.
+
+The proposed technical response is practical because it relies largely on data many enterprises already possess—DNS records, certificate alerts, identity logs, and HTTP responses. The novelty comes from analyzing these sources together for the specific purpose of identifying AI app-builder deployments.
+
+The framework is still preliminary. The presenter acknowledges that the detection work is more developed than the guardrail implementation and that some recommendations remain partially tested. No quantitative evaluation, benchmark dataset, precision/recall analysis, or controlled comparison of detection features is included in the transcript. 
+
+Consequently, the presentation should be read as an emerging security architecture and operational proposal rather than a validated detection system. Its most valuable ideas are the multi-signal discovery model, recursive DNS attribution, certificate-behavior analysis, and the use of security prompt packs to give non-developers a governed path to rapid application creation.
+
+Link: https://www.youtube.com/watch?v=CmQMusaraY0
