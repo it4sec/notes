@@ -1,0 +1,994 @@
+ABOUT
+================================================================================
+Title: Putting the E in P.A.C.E.: When Satcom Is Not Enough at #CriticalEffect
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=B6P2gWqhU-A
+Video ID: B6P2gWqhU-A
+Published: 2026-07-28
+Duration: 31:45
+Views: 2
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: Putting the E in P.A.C.E.: When Satcom Is Not Enough
+Track 3: Tactical Mastery
+Thursday, June 18, 2026
+
+What happens to your situational awareness when both the grid and your networks go down and stay down for weeks? MITRE’s Critical Infrastructure Risk-Informed Decision Analysis Platform (CIRIDAP) is designed to fill the current gap: there is no national Common Operating Picture (COP) for critical infrastructure in prolonged “dark sky” conditions, when power and IP-based, cellular, satellite, and landline communications are largely unavailable. In this talk, Mark Bristow (Director, Cyber-Physical Systems, MITRE) covers how the system works, what was learned in a live demo about improving ICS resilience and decision-making during extended outages, and options for scaling CIRIDAP into an operational capability for long-duration, large-scale disruptions. 
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media to facilitate actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Putting the E in P.A.C.E.: When Satcom Is Not Enough at #CriticalEffect
+
+## Source and presenter
+
+- **Title:** *Putting the E in P.A.C.E.: When Satcom Is Not Enough*
+- **Author/Channel:** Institute for Security and Technology (IST)
+- **Presenter:** **Mark Bristow**  
+  - **Credential/role provided:** Director, Cyber-Physical Systems, MITRE  
+  - **Additional background stated in the transcript:** Bristow said he previously worked at CISA and MPBD. The transcript also describes MITRE’s work supporting the Department of War’s re-engineering of the nuclear command-and-control system.
+- **Other individuals mentioned:** The introduction refers to “Dave,” and the transcript mentions Charlotte, Don, and other exercise participants, but does not provide their full names, credentials, or contact details.
+- **Affiliations:** Mark Bristow is identified as being with MITRE. The recording was distributed by IST and presented as part of Critical Effect DC, presented by ICS Village in partnership with IST’s UnDisruptable27 project and Akin Gump.
+- **Contact details:** No personal email address, telephone number, postal address, or other direct contact information for Mark Bristow or the authors/channel was provided.
+- **Available links:**
+  - IST channel: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+  - Video: https://www.youtube.com/watch?v=B6P2gWqhU-A
+  - Critical Effect 2026: https://securityandtechnology.org/event/critical-effect-2026/
+  - ICS Village: https://icsvillage.com/
+  - UnDisruptable27: https://securityandtechnology.org/undisruptable27/
+
+## Summary
+
+The talk presents **Flare**, a MITRE research-and-development project intended to preserve basic critical-infrastructure status reporting and coordination during prolonged, large-scale communications and power outages. The project addresses a gap exposed by a MITRE exercise: there is currently no national Common Operating Picture (COP) for critical infrastructure when conventional communications—including IP-based networks, cellular, satellite, and landline systems—are unavailable for extended periods.
+
+The motivating problem is not merely loss of voice or data communications. According to Bristow, when organizations cannot communicate, they cannot coordinate restoration activities, prioritize scarce resources, or maintain a shared understanding of infrastructure conditions. This can prevent recovery of mutually dependent systems, such as the power grid and communications infrastructure, creating what he describes as interlocking dependencies that can cause cascading failure.
+
+Flare was developed in response to findings from a late-2024 classified exercise involving approximately 70 asset owners and operators. The exercise modeled a Taiwan Strait conflict scenario and continued through 45 days after the start of hostilities. It examined not only initial disruption but also the neglected recovery phase. Participants encountered localized decision-making, conflicting operational directives, inadequate long-duration continuity plans, uncertainty over infrastructure status, and difficulty restoring the power system without reliable communications.
+
+The proposed solution is a **low-cost, multimodal communications and status-reporting system**. Flare devices provide simple operational states—such as whether a node is alive, dead, partially functional, or missing a resource needed for recovery—and transmit those states over resilient communications paths. The system is designed to function with minimal infrastructure and limited bandwidth rather than to replace ordinary high-bandwidth communications.
+
+The presentation reports that a later MITRE simulation, conducted with participation from PJM, used Flare-generated information to support simulated systemic power restoration. The exercise supplied generation, transmission, and load status information sufficient to identify black-start cranking paths and restore the simulated power system. Bristow presents this as evidence that relatively limited status information can support consequential restoration decisions.
+
+Flare was still at the prototype stage at the time of the talk. Ten devices existed, with prototypes targeting a price of approximately **$500 per unit**. MITRE was working with private-sector companies to productize the design and was preparing field tests with a utility.
+
+## Technical innovation and authors’ ideas
+
+The authors’ central technical idea is to design communications for the **emergency phase of the P.A.C.E. framework**, where primary, alternate, and contingency systems have failed or become untrustworthy. Instead of assuming that satellite or internet connectivity will remain available, Flare is designed around independent, low-bandwidth, infrastructure-light communication.
+
+A second major idea is to reverse the information-flow model used in nuclear command and control. Bristow explains that nuclear command and control emphasizes the delivery of commands from a central authority. Flare instead emphasizes the collection and aggregation of many infrastructure-status reports so that decision-makers can make coordinated restoration decisions.
+
+The system combines:
+
+- **Low-bandwidth operational status messages** rather than voice, video, or large data transfers.
+- **Multimodal communications**, using the internet when available, and RF or satellite communications when appropriate.
+- **RF as a foundational mode**, because it can operate without dependence on the conventional communications core.
+- **Mesh networking**, allowing devices to discover available communication paths and route messages around local interference or outages.
+- **LoRa for localized communication**, described as supporting distances of approximately six miles.
+- **HF for longer-distance links**, including mechanisms for operating with a limited number of long-haul connections.
+- **Solar and battery power**, with a stated battery life of at least 30 days and the possibility of substantially longer operation with solar support.
+- **Local and hierarchical aggregation**, allowing status information to move from infrastructure nodes to local control centers and, where desired, to state, local, and federal decision-makers.
+- **Tiered cryptography**, intended to allow organizations to control how much information is shared with higher-level authorities.
+- **A Common Operating Picture**, presented through a laptop-based interface and intended eventually to use ArcGIS through collaboration with Esri.
+
+## Key technical ideas
+
+1. **Design for communications collapse, not just degradation**  
+   Flare targets conditions in which internet, cellular, satellite, and other conventional systems may be unavailable for weeks or may require complete reconstruction.
+
+2. **Minimal status information can enable major decisions**  
+   Messages such as “alive,” “dead,” “partially operational,” or “requires resource X” may be sufficient to support infrastructure prioritization and power-system restoration.
+
+3. **Resilient coordination requires a network of nodes**  
+   The system uses distributed devices, mesh networking, and local aggregation instead of relying on one centralized communications path.
+
+4. **RF independence is a core resilience mechanism**  
+   RF is used because it can operate without the conventional telecommunications core and can be powered by batteries or solar panels.
+
+5. **Multimodal communications provide graceful fallback**  
+   Flare can use the internet when available, but can switch to RF or satellite where those options remain viable. The design does not assume that any single communications technology will always work.
+
+6. **Long-range coordination requires HF and constrained-link management**  
+   For geographically distributed restoration, the system combines local links with HF long-haul paths and attempts to manage limited bandwidth by restricting traffic to essential information.
+
+7. **The COP is both a technical and organizational capability**  
+   The system is intended to allow infrastructure owners and government authorities to build a shared status picture while preserving different levels of information access.
+
+8. **Recovery must be planned as a distinct operational phase**  
+   The authors emphasize that exercises often stop when the crisis peaks. Flare is motivated by the need to coordinate recovery over weeks or months after the initial disruption.
+
+9. **The system is intended for operational scale**  
+   Initial estimates expanded from perhaps 1,000–2,000 devices to requirements of roughly 5,000 for PJM and approximately 10,000 for one large utility, motivating private-sector manufacturing and product development.
+
+10. **Prototype validation is moving toward field testing**  
+    The project had completed bench testing and a Massachusetts-to-Washington test, with a utility field test planned. Full nationwide testing had not yet been completed.
+
+## Overall assessment based on the source
+
+The talk’s innovation lies less in creating a high-capacity communications system than in combining **simple infrastructure telemetry, resilient low-bandwidth networking, distributed status aggregation, and hierarchical decision support** for a prolonged “dark sky” scenario. The authors argue that restoration may depend on knowing a small number of critical facts across many infrastructure nodes, even when normal communications and centralized coordination are unavailable.
+
+The supplied material does not provide a formal paper citation, a complete list of authors, detailed biographies, individual contact information, or a full technical specification of the Flare hardware and protocols.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+It is my opportunity to uh introduce Mr.
+Mark Bersoe who I've worked with for
+many years. He's had a number of
+different roles in the government
+helping keep this great nation secure.
+He's going to talk today about putting
+the E and pace in helping us communicate
+when satellite goes down. So, please
+join me in welcoming Mr. Mark Bristo.
+>> Thanks, Dave.
+Okay. Okay, I was like I didn't hear
+myself talk so I was confused. All
+right, so good morning everybody. Uh
+thanks for for joining this talk. Um so
+uh again I'm Mark Bristo. Uh I'm going
+to talk about a research and development
+project that we've been putting together
+at MITER uh that we are actually just
+about to do our first pilot deployment
+on and I'll get into that in a little
+bit that really solves a challenge that
+uh came out of an exercise that we ran
+uh that actually talked about here on a
+panel for the first time publicly with
+Charlotte um where uh we talked about an
+exercise that that MITER ran to
+basically kind of simulate the end of
+the world. One of the big challenges we
+had from that was that no one could
+communicate. And because we couldn't
+communicate, we couldn't actually like
+restore operations. We couldn't get the
+power system back online. A whole bunch
+of bad things happened. And so one of
+the things that we did at MITRE was like
+look for a way to actually solve that
+problem. So that's what uh put this this
+talk for. If you don't know what PACE
+stands for, by the way, I I've realized
+that that is actually not commonly
+understood. It's primary alternate
+contingency emergency. It's a military
+planning framework about how you
+communicate in different types of
+circumstances. And so um you know this
+this talk is really about how do we
+actually deal with that like truly
+exigent circumstances case. Uh so that's
+the the e in pace and so we built this
+technology called uh called flare.
+So if you don't know who MITER is beyond
+miter attack because I feel like
+everyone knows us for miter attack but
+they don't know us for anything else. So
+we actually operate six different what
+are called FFRC's fally funded research
+and development centers for the United
+States government. um looking at a wide
+variety of things uh from national
+security uh all the way through we do
+the homeland security FFRDC healthcare
+FFRDC etc. So we have actually a pretty
+wide remmit. Um, this is important
+because one of the things that MITER is
+doing right now is helping the
+Department of War re-engineer the
+nuclear command and control system. And
+we actually took some of our insights
+from our work with nuclear command and
+control and built them into this because
+as you can imagine uh you know our
+strategic uh uh weapons uh have to be
+very very reliable when it comes to
+communications because if the president
+makes a decision to launch uh we need to
+make sure that that decision actually
+happens, right? Well, there's a lot of
+work that goes into actually making that
+occur and MITER is sort of in the middle
+of how to support that. And we were
+like, hey, maybe there's lessons learned
+from that that we could actually
+integrate into uh a solution that might
+work for critical infrastructure in a
+very very different uh set of
+circumstances.
+So, as I mentioned, uh this is actually
+born out of an exercise that we talked
+about here uh at critical effect last
+year for the for the first time where we
+simulated the end of the world. And so
+this was an exercise ran in late 2024
+where we invited a whole bunch of asset
+owner operators predominantly to MITER
+to run a classified exercise where we
+basically ran through the tactics
+techniques and procedures that an
+adversary uh specifically China would
+potentially use during a Taiwan Strait
+scenario. And so it was awful. And I'll
+talk a little bit more about like what
+the exercise actually like uh showed and
+did. But uh we came up with a lot of
+different findings and and you know I I
+can get more into the exercise if anyone
+is is actually super interested. But
+some of the the the challenges that we
+really came up with were uh in that
+phase 4. So the exercise ran we started
+in in pre-conlict right so this was
+Dminus30 where we had basically
+misgreant level attacks going on. We did
+things like overrotorized natural gas uh
+city gates and then caused leak
+detection alarms to go off causing panic
+across entire cities uh that had no idea
+how to actually deal with that. Uh we uh
+slowed trains down causing a public
+health disaster because we couldn't get
+trash out of cities. We had all kinds of
+kind of crazy stuff happening at the
+nuisance level um in in phase one during
+the exercise. Then we actually got into
+phase two. Phase two was where like the
+shooting war actually started. And so uh
+during phase two we actually have you
+know actual conflicts. We start to see
+uh dis intentional disruption of uh
+various critical infrastructure uh
+capacities. Um we start to see outages.
+We started messing with things like
+automated generation control uh by using
+basically salt typhoon type positioning
+in the communications infrastructure.
+Turns out that if you can interrupt the
+um the AGC messages, people start to get
+confused. We start to lose coherence. So
+we get grid oscillations and that kind
+of stuff. So we had some of that happen
+during phase two. Um we also uh made it
+so that the communications
+infrastructure went down like the the
+common one. So for example like the
+first thing we did was like take out
+teams and take out uh Zoom. And it turns
+out that the only people with like good
+procedures on how to actually deal with
+that type of scenario is the
+communications industry. Like they're
+the only ones who are aware of how
+brittle their infrastructure actually
+is. And so um when we got into phase two
+uh everything sort of got hyper
+localized. We brought in emergency
+managers which was a key component of
+this exercise because ultimately those
+local emergency managers start to take
+command and control of their local
+regions. Um we moved into phase three
+where we start to have destructive
+destructive cyber effects where we
+actually start to you know have
+intentional denial degrade uh
+interrupting of communications. we lose
+our ability to to do cohesive
+consequence management. Uh we started
+sending uh uh operational orders in
+different directions. So we had like the
+defense production act telling electric
+power utility to do one thing. We then
+had DOE using their fast act authorities
+to actually tell them to do something
+completely different that were
+antithetical. And uh we caused the state
+of Colorado to secede from the union uh
+because they just they literally just
+gave up. They're like never mind. We're
+going to deal with Colorado, right?
+We're not going to uh we're not even
+going to try and like deal with you at
+the national level, people. Uh because
+at the end of the day, um you know, we
+have people dying here in Colorado. We
+don't have natural gas. It happened in
+the middle middle of winter with
+bombogenesis, so it's cold and like
+people are dying and so we don't care
+about these national level concerns,
+which is like super understandable for
+Colorado to have that perspective. But
+like there's a lot of like if we're
+trying to like win a war against China,
+there's like a lot of important like
+military assets that either are in
+Colorado or need Colorado to be working
+in order to be effective. And so while I
+get it from like a Colorado emergency
+management perspective, that might not
+be the best answer for the country. And
+so but one of the challenges was is that
+communications were really spotty. We
+couldn't actually coordinate effective
+collective action. So everything kind of
+anyone a trained emergency manager in
+the room besides me?
+No. So you should all go out and get
+emergency management training. You're
+you've taken the classes. You got your
+ICS 300.
+just muted it I think by accident by the
+way. Uh yeah, so most of our emergency
+management paradigms are based around
+natural disasters, right? And so we're
+very very used to like hey if a
+hurricane's coming through Florida,
+right? Um, and I'm a a power utility in
+California. I have no problem sending my
+bucket trucks to Florida because I'm not
+at risk, right? Well, one of the
+challenges here is that when the
+hurricane is everywhere, everyone's
+under equal risk. Even if you have those
+assets and you can figure out that
+somebody else needs them, you are more
+hesitant to actually release those
+assets to somebody else because you have
+that same that that same problem. And so
+our inability to communicate, coordinate
+really caused a lot of a lot of
+frustration in the entire system. Um,
+importantly though, I I hate it when the
+I, you know, I used to work at CISA. Uh,
+I uh and MPBD back in the day and um
+I've been through more governmentr run
+exercises than I ever care to remember.
+And uh, you know, that's sort of where
+the movie always ends in these exercises
+is like the world ended.
+Okay, everyone go home, right? Well,
+there's a really important phase here
+that we always forget and that's
+actually how do we like get back to
+normal, right? Like how do we actually
+restore because there's dealing with the
+crisis and then there's the coordination
+necessary to actually recover your
+environment, right? And so we ran the
+exercise to D plus 45. So 45 days after
+the shooting started is when the
+exercise ended. We picked D plus 45 um
+sort of arbitrarily for two key reasons.
+Number one, personally Mark's personal
+opinion because at the time there was no
+way to actually model this. I suspect it
+will take us way longer than 45 days to
+do systemic restoration of critical uh
+infrastructure resources across the
+country. Like it might come up in
+pockets. We might have islands. We may
+have resiliency zones if we can actually
+make those a thing, right? Uh but at the
+end of the day, uh recovery is going to
+be inconsistent and it will take
+probably months on end in order to get
+systemic restoration, right? So, that
+was one of the things we were trying to
+push gets. The other thing is that most
+most organizations had no plan. Their
+their continuity plan is like they're
+looking for a three-day type exercise.
+If they had one, it was 30 days, right?
+And so, we wanted to push past that
+30-day time horizon to kind of stress
+the system of like, no, like, you know,
+the the the electric power system is not
+going to be fully restored in 30 days in
+this type of scenario. Like, we when you
+have we've never had a complete grid
+collapse in the United States. And so
+like we actually don't really know what
+it would take to get that back online. I
+know we have blackart like plans, but
+people are too afraid to actually
+exercise those plans because they're not
+sure that the grid will actually come
+back up. The other issue that we had was
+communications. In the communications
+domain, basically the comm's people that
+participate in the exercise, and we're
+talking the AT&Ts, the Verizons, the
+Lumens, like you know the the big uh
+communications carriers told us that
+they are not certain they could ever get
+it back.
+that literally and if you have salt
+typhoon level positioning in our core
+infrastructure and the the Chinese
+decide to basically torch that
+infrastructure so much of the core
+infrastructure is bespokly created
+artisally crafted routing infrastructure
+that they're not confident they will
+ever get the system back they will have
+to basically rebuild the system from
+scratch so if you think your comms are
+coming back up in you know 10 or 15 days
+I got another like the people who run
+these systems are like absolutely not
+right that is not what we are going to
+experience right and so when it comes to
+the recovery phase of this if you can't
+communicate you can't coordinate you
+can't coordinate you're not going to get
+things back up we are unable to restart
+the power grid you can't restart a power
+grid without you know basically
+widescale load and generation balancing
+and having the right transmission
+equipment in between uh that requires a
+lot of coordination over distance we had
+no way to do any of that because there
+was no comps and so what the exercise
+was trying to push on was like where do
+we have these self-licking ice cream
+cones of doom where I've got a
+codependency on another infrastructure
+sector that's also codependent on me and
+neither of us can start without each
+other and so we just spiral into the
+ground.
+So that was fun uh to do. Um so we we I
+already kind of walked through a couple
+of these uh these observations but um
+you know a few things to just kind of
+put and I think actually uh downstairs
+uh was a good conversation uh a lot of
+headnodding uh about where the threat
+is. I think one of the important things
+about the exercise we ran was we did not
+have cyber people in the exercise. I
+mean, we had some, right? But like we
+had like one of the pipeline operators
+brought a pipel a natural gas shift
+supervisor to the exercise, right?
+Couldn't spell cyber if you spotted in
+the C and the Y. Actually, it was a
+really great guy. Being a little pedanic
+here, but like he didn't he didn't
+believe that this could happen. He
+didn't believe that this could happen,
+right? He walked out of the exercise and
+was just like lord he actually went home
+and changed some of his uh
+communications procedures on the flight
+home because of what he saw like was a
+risk that they just weren't considerate
+right so but like the mass like John Q
+public and this community is is not John
+Q public in a sense has not hit the I
+believe button that this is a problem
+still despite and I I was responsible
+for some of this in government partners
+here in the room but like the government
+feels like they're shouting this from
+the roof rooftops as loud as it possibly
+can, but you know the people in Pikipsy
+don't still don't care, right? So that's
+one one of the big issues. Uh we also
+found out that like without this
+coordination mechanism like you can't
+actually uh and we we've never really
+operated in a resource constrained
+environment like we all expect our
+Amazon packages to arrive in two days
+and when they arrive in three days we
+are in an uproar and trying to find out
+a phone number to call at Amazon which
+if you ever find it give it to me. I
+won't share with anybody else. I don't
+know how to actually talk to Amazon, but
+like we don't have we we've never
+actually had to deal with scarcity. And
+when you have scarcity, you have to
+start to prioritize, right? Turns out no
+one's got prioritization scheme in this.
+Turns out that there's really important
+Department of War facilities that they
+need to fight a war against China that
+they haven't told their electric power
+providers exist. It just looks like an
+office building. Well, if you are
+presenting a shift supervisor the choice
+of powering an office building, they
+don't understand why it's important or
+powering a hospital, they're going to
+pick the hospital every single time,
+right? We haven't actually planned for
+these widescale issues because again,
+all of our dress rehearsals are
+hurricanes and tornadoes, which are
+awful, and flooding, which is awful,
+right? But purposeful disruption is just
+requires a different uh uh a different
+uh uh perspective. Um the last thing
+I'll touch on that's a sort of an
+exercise outcome is is the last one
+which is workforce preparedness. Uh so
+it turns out most organizations didn't
+have a contingency plan. Some of them
+did have a contingency plan that lasted
+30 days. Only one asset owner operator
+out of the entire 70 organizations that
+we worked with had a contingency plan
+that included workforce uh relocation
+for them and their families plus food,
+water, safety, security. one out of
+seven. If you are a new parent and you
+have a screaming baby at home and it's
+been 3 weeks since that baby has been
+fed well, you are probably not going to
+come to work. And if you do show up to
+work, you are probably going to be
+distracted about your newborn, your the
+the care and feeding of your newborn.
+Right? This is something that we don't
+like to talk about because it's like
+kind of uncomfortable, but this is what
+the reality looks like. Right? my wife,
+it drives her crazy because I I like I
+love watching like disaster TV shows and
+that kind of stuff, right? And it's like
+this is actually where the problem is,
+right? Is that even if we believe that
+we have the technical capacity to do a
+recovery, which we don't, we probably
+don't have the human capital necessary
+in order to do it, right? Unless we have
+a plan for that workforce, right? And
+so, uh, that is another kind of piece
+that really no one except for one
+company, but it was a 30-day plan. So, I
+gave them like half three/arters credit.
+They had a plan. They basically bought a
+whole bunch of excess FEMA trailers and
+like parked them in the middle of
+nowhere and put them in a big gated area
+and stockpiled MREs and that was their
+their way of uh solving that problem
+which actually better than literally
+everybody else. All right. So if you
+want to read more about any of this
+we've released a couple of papers about
+this uh the high level like what do we
+find all that kind of fun stuff. These
+are all publicly available on the MITER
+website. Uh the slides will come out I
+think I I believe. Uh so uh if not you
+know take a quick picture of the of of
+the links which is not a very effective
+way of sharing links but I don't believe
+in QR codes. So uh I know too many
+people who play too many games with the
+QR codes. Uh so those are the links out
+to the to the different things you can
+read up on uh because this talk isn't
+really about the the exercise. It's
+about what we did last year to do
+something about it. So as part of this
+exercise we communications ended up
+being like a absolutely critical
+underpinning problem right and when you
+have the core telecommunications
+infrastructure completely fail on you
+like what do you do right it turns out
+and this is again from the the uh uh the
+telos uh if uh so if Don and I were
+sitting in the same room we're like what
+like 8 feet from each otherish right if
+Don's got Verizon and I got a Verizon
+phone turns out on 4G G, we could
+complete a call without the core
+infrastructure working because like the
+tower does all the work. But on 5G and
+God knows what will happen with 6G
+completely AI integrated nonsense. Uh
+you can't we can't actually complete
+this call without a data center that's
+doing that has a call broker in order to
+make that work even though we're both
+sitting on the same cell tower, right?
+This is not communications resiliency.
+It's more efficient, but it doesn't
+actually give us the comms we need,
+right? And so we're in a coms
+constrained environment.
+We're host. What do we do? How do we
+communicate? How do we coordinate?
+Right? Also turns out that today, right
+now, we do not have a common operating
+picture about what critical
+infrastructure looks like. We I I we
+work with uh so MITER does most of our
+work with with uh the government, but we
+also work with some private utilities
+and like some of the multinational
+conglomerates that we work with on a
+day-to-day basis can't tell me quickly
+what the status of of all of their
+generation facilities, transmission
+facilities, pipelines, etc. On any given
+day, they have no idea. They'd have to
+make 50 phone calls to figure that out.
+And that's on a blue sky day. So when
+things are really in trouble and you
+need to lock in a blockar cranking path
+in order to get the power grid back
+online, you have no idea if you don't
+have those comps, right? And so we
+needed to solve a problem that would not
+only help solve a blue sky problem, but
+give us the ability to actually
+communicate and coordinate during a
+disaster. So that brings us to Flare. Uh
+so Flare is a device and sort of a
+network. I'll get into that in a second.
+um that MITER has been de developing
+with a couple of different partners.
+That's a lowcost uh multimodal device uh
+that gives basic status information of
+critical infrastructure nodes. So it's
+it's lizard brain. Hey, I'm alive. Hey,
+I'm dead. Hey, I could be alive, but I
+don't have X. Give me X and I can come
+back online or I can only come back up
+to 20%. Right? This is the type of
+information you need to do decision-m
+when it comes to actually doing
+widescale restoration of of services.
+Um, it is designed again using our
+nuclear command and control humans that
+do this for the military. We basically
+just turn nuclear command controlled
+upside down. Nuclear command control is
+like one command goes out and then we
+don't really care about that anymore.
+Now we actually care more about lots of
+statuses coming into control nodes that
+we can then you know make collective
+decisions on right and so flare is
+designed to solve that particular
+problem set using some of those
+resilient communications technologies
+and it actually doesn't use one tech
+it's actually multimodal but we use RF
+as our base tech because RF doesn't
+require anything else to work and I can
+run RF on you know solar panels if I
+have to right and So, uh, that's what
+Flare is sort of designed to do. So, we
+actually realized before we actually did
+the exercise that this was going to be a
+problem. I mean, we ran the exercise and
+it was more horrific than we
+anticipated, but at the end of the day,
+like we knew during the planning that
+like this was going to be a key
+underpinninging challenge. Um, and so,
+uh, we actually started ideulating on
+Flare before the exercise actually ran.
+Last year, uh, was a rough year to be in
+a government adjacent, uh, position. uh
+you know the government made a lot of
+changes or in government as well
+government made a lot of changes in
+priorities and you know like MITER we
+lost like 25% of our workforce it wasn't
+the best year uh at MITER but we still
+invested in this technology last year
+you know I I I talked to our new CEO
+about it and he's like no this is
+important because this is something that
+can actually ultimately save lives at
+the end of the day and like we need to
+keep pushing this forward so even in a
+rough year we still were pushing forward
+uh this technology so that we could
+actually develop the protocols and that
+kind of stuff to make it work. At the
+tail end of last year, we ran a smaller
+exercise where we just, uh, basically
+played out on the east coast just trying
+to restore the power grid. So, uh, one
+of our great partners for the exercise
+was PJM. They run, uh, part of the
+Eastern Interconnect. Uh, they actually
+sent one of their BlackArt people to our
+exercise and they were like in charge of
+the Blackart and said, could I restore
+power systemically? Could I get the
+power market back online using nothing
+but the communications that we had built
+into the Flare devices? And the answer
+was yes. We were ultimately able to get
+the necessary generation status,
+transmission status, uh, load status to
+actually lock in Blackstar cranking pass
+and actually get systemic restoration
+using nothing but this lizard blade
+level of communications. So, not only is
+does it work technically, it can
+actually accomplish a task. Now, it's
+useful in lots of other contexts, but
+like one task we wanted to do. So we
+were able to actually kind of run what
+we call a SIMX at MITER where we
+emulated a whole bunch of nodes and
+actually uh made that happen.
+So what's the device actually do? Right?
+Again, it's just an RF device. It has a
+giant battery. In fact, uh we So we're
+working with MITER doesn't make
+products. That's like not what MITER
+does. We do R&D. And so we are actually
+working with two different um uh uh
+companies that might take this uh device
+and turn it into a real product that you
+could buy someday. the prototypes were
+like targeting like a $500 price point.
+So, these things are like not all that
+expensive and quite frankly, most of
+it's battery uh in cost, right? But what
+these devices can do is they've got a
+little uh e- in screen on it like your
+Kindle has. It's got a little keyboard
+on it. So, you can like type in status
+messages and be like, "Hey, I'm alive."
+Or, "Hey, I'm dead." And send that out
+over RF and it'll last for like at least
+30 days of battery with just the
+battery, right? you add solar in and
+this thing can basically last forever,
+right? Um there's other devices that
+that we now have red, white, and blue,
+you know, American 250. Um but we have
+red nodes which are command and control
+nodes which like aggregate all of that
+data together. So we can do uh uh
+collective decision- making and what we
+where the real magic was actually of
+flare is actually in the way that it
+does communications, right? So
+multimodal if the internet is on it'll
+use the internet. If the internet is not
+trustworthy, it'll use RF or it'll use
+saccom to the extent that saccom will
+still exist in this scenario which is
+dicey, right? Hence the name of the
+talk, right? But it gives you a a a
+basic ability to give just a little bit
+of status. I'll tell you when we first
+talked to PJM about this, they're like,
+"Yeah, we want to do like a when
+whenever they have a an emergency, they
+do an all call over their private
+network. They're like, could we like do
+replicate that phone call?" No, we are
+not at cat video bandwidth here people.
+We are at a couple of K. We can send
+flat files, right? But like we're not
+talking cat videos, but just that status
+information can be enough, right? We
+also we're talking about industrial
+facilities, right, with RF interference,
+right? So these things build their own
+mesh networks and they figure out who
+they can talk to and then they figure
+out how they can get the messages out.
+They can broadcast to everyone. They can
+focus it down to a particular uh
+particular unit. But the way that we had
+designed this is basically you put some
+of these flare devices on something high
+and then maybe you have a couple of
+sensor nodes throughout your power plant
+that give you the basic status of how
+your your generator is is functioning,
+your turbines going okay and then you
+can send that off to your local control
+center and then ultimately eventually
+bubble it up to like state and local
+government uh facilities. So this gives
+you day-to-day awareness on systems that
+you might not have normally. But in that
+contingency scenario, now you have an
+ability to say like, hey, is that line
+safe, right? And um you know, as I
+mentioned, we were actually able to run
+it through a scenario where we actually
+used it to start the to restart or
+simulated restart the power system and
+get enough information to actually get
+that get that done.
+The second piece of flare is in the red
+nodes. We have the common operating
+picture. Um, so uh one of the big things
+from this is uh we vibecoded this common
+operating picture. Uh it's not really uh
+production ready software. We just
+needed a user interface for people to
+use it. Um we're actually already
+working with Ezri to like get this as
+ARGIS because everyone wanted Ezri to to
+be their uh to be the UI. But with
+basically a Flare device and a laptop
+which both can be run on pretty low
+power, you can do command and control of
+your entire fleet. in these types of
+exit and comms out scenarios.
+It also has the ability for rollup,
+right? So if you have this at critical
+nodes, it basically builds a network.
+State and local government can make
+decisions at their level. You can get
+that up to the the federal level. Um and
+so it has the ability to kind of uh
+provide that status information all the
+way up the chain um if you desire to. So
+we use tiered cryptography in order to
+make it so you don't have to share
+everything with the feds all the time if
+you're not interested. Uh but it does
+give the ability to kind of run that
+that nodal network. Wow, that looks
+really weird. Um so so what's happening
+next? So uh as I mentioned this is a
+there are prototype there are 10 in
+existence today. Okay so it's not like
+you can't go buy flare yet. We are
+working to get it productized, but we're
+about to start rolling out some field
+tests because we've done a lot of bench
+tests on Flare to actually see how it
+behaves out in the real in the real
+world uh and make sure that we can
+actually execute these types of critical
+infrastructure status messaging tests
+and collective decision-m uh using the
+devices. So, we're hoping to do we're
+we're working with a utility. We're
+going to do that probably in the next
+two months uh and then uh hopefully be
+able to start rolling it out to critical
+infrastructure providers.
+That's it. Any questions?
+>> Uh, hey Mark. I um you know Flair is a
+better name than Certap, but it is a
+worse name than Dumba. So you got to
+work on that. But
+>> yeah.
+>> Um so curious from the when you were
+talking to like PJM like the ISOs and
+RTO's, how many of these did they want
+or think they needed?
+>> So PJM at at the exercise was like I
+want at least 5,000.
+>> Yeah. um just for our black star path
+stuff. And actually that was a problem
+for us because when we originally
+envisioned Flare, we thought of it as
+only a black sky scenario. And um we
+thought maybe there would be a thousand
+or two in existence ever. And in talking
+to other asset owner operators, they're
+on similar scale like 10,000 for one
+large utility, right? And so hence why
+we MITER went out to the private sector
+to say like, hey, who wants to build
+these made in America, please? uh so
+that uh like this is a product that
+people could could actually purchase at
+a scale that's you know something that
+MITER's never going to approach.
+>> Is it is it still Raspberry Pi and the
+>> the prototypes are yeah but the the
+final designs are going to are
+engineered uh uh hardware.
+>> Okay. I was going to say you know I take
+a made in the UK Raspberry Pi did they
+give you a uh like a a cost measure for
+like how many of these things you need
+to build to make it cost effective? So
+if you did want to build like 5,000 like
+is that enough for the product
+manufacturer to go yeah sure.
+>> So we are still we haven't like inked
+the deal with them yet. Uh so we're like
+we're still in so they are starting to
+evaluate that. I will say I'm not going
+to name the partner. Um but uh they're
+uh they're a patriotic company like
+they're they don't want to lose money
+but they also are sort of okay within
+margins on this type of stuff because
+they they've kind of bought into the
+need for this technology to to exist. Um
+they're one that we're talking to. We
+are looking for other people to like
+kind of help build their business case
+uh so that you know we can accelerate
+the development of this.
+>> Yeah. Like a shared order.
+>> Yeah. Exactly.
+>> I'm going to harass you offline too Mark
+but one quick. So hardware supply chain
+or whatever one issue. The other issue
+on the comm's supply chain side of
+things like okay satcom gone cellular
+gone internet gone RF. Yes. However, for
+the scale distance-wise and everything,
+I mean, we're probably talking HF at
+this point, which no one really does
+anymore if you're trying to coordinate
+this across any sort of large scale. No
+one
+>> that
+>> uh not no one. We are very intimately
+familiar with some HF networks that will
+uh go that part of the infrastructure
+side as well because between antennas,
+receivers and stuff like a lot of that
+is commercially just gone away. So,
+that's also building into Okay, just
+just curious.
+>> Yeah. Yeah. So I again multimodal right.
+So uh there there's the core design uses
+uh lauran as its it's it it's localized
+communication which is up to six
+milesish uh and then HF for the long
+shots. Uh and actually part of the magic
+is our comm's people basically uh
+figuring out how to like declutter the
+network when you have limited HF uh long
+links. Um but we've designed the system
+at you know there's no infrastructure.
+It's all mesh, you know, it it all
+meshes itself out, but it it's designed
+so that it can run on just a few long
+haul links or those uh hop skipping a
+jump paths. And so part of the challenge
+is is that like if you dropped a if you
+dropped one of these every couple of
+miles, right? You know, how long would
+it take to make that chain? You can do
+that both ways with long shot and with
+the the more short range communications
+modalities. But we've we've thought of
+this exact problem already. And the
+smart comms guys, and I'm not a smart
+comms guy, have already figured all this
+out.
+We haven't actually tested it all the
+way across the country yet. We're doing
+that this Oh, yeah. Yeah, we tested it
+from uh from Massachusetts to DC. That's
+true.
+>> There. Well, there we go.
+>> All right.

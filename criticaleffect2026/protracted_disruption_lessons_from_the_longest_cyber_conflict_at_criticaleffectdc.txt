@@ -1,0 +1,889 @@
+ABOUT
+================================================================================
+Title: Protracted Disruption: Lessons from the Longest Cyber Conflict at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=Z_z3pQ0-7YM
+Video ID: Z_z3pQ0-7YM
+Published: 2026-07-28
+Duration: 34:23
+Views: 8
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: Protracted Disruption: Lessons from the Longest Cyber Conflict 
+Track 3: Tactical Mastery
+Wednesday, June 17, 2026
+
+While policymakers and media warn of a single, catastrophic attack on critical infrastructure, in this presentation Oleg Shakirov (Doctoral Student, John Hopkins School of Advanced International Studies) makes the case that the Russia–Ukraine war shows a less spectacular threat: smaller, opportunistic incidents that still cause real damage.
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media to facilitate actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Protracted Disruption: Lessons from the Longest Cyber Conflict at #CriticalEffectDC
+
+## Author and presenter information
+
+- **Presenter/author:** Oleg Shakirov  
+- **Credential:** Doctoral Student, John Hopkins School of Advanced International Studies  
+- **Affiliation:** Not otherwise specified in the supplied material.  
+- **Author contact information:** Not provided.  
+- **Publisher/channel:** Institute for Security and Technology (IST)  
+- **Channel URL:** https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw  
+- **Video URL:** https://www.youtube.com/watch?v=Z_z3pQ0-7YM  
+- **Event:** Critical Effect DC 2026, Track 3: Tactical Mastery  
+- **Presentation date:** June 17, 2026  
+- **Publication date listed for the video:** July 28, 2026  
+
+## Summary
+
+Oleg Shakirov argues that cyber-conflict analysis is too often dominated by catastrophic scenarios: a single, strategically timed attack that disables critical infrastructure, undermines military operations, or produces effects comparable to a “cyber Pearl Harbor.” Without dismissing the possibility of such events, he proposes shifting attention toward **“protracted disruption”**—the cumulative effects of numerous smaller, opportunistic, and sometimes geographically dispersed cyber incidents during a long-running conflict.
+
+The Russia–Ukraine war is presented as a particularly useful case for examining this phenomenon. Shakirov characterizes it as the longest known cyber conflict, lasting more than four years—or more than twelve years depending on the selected starting point. He describes Russia and Ukraine as highly capable cyber powers with substantial expertise, and as relatively peer competitors in cyberspace. The conflict also involves non-state groups aligned with or tolerated by the states, increasing the volume and intensity of cyber activity.
+
+According to the presentation, several highly anticipated catastrophic scenarios did not occur at the scale or concentration often predicted. The Viasat attack at the beginning of the war disrupted Ukrainian military communications, but did not eliminate them completely. Attacks on energy infrastructure were generally isolated to particular cities or regions and did not persist for long periods. However, the absence of a single catastrophic event did not mean that the cyber conflict lacked serious consequences. Instead, disruption appeared through repeated attacks against telecommunications, transportation, government systems, and supply chains.
+
+Shakirov distinguishes the two forms of disruption:
+
+- **Catastrophic disruption** is generally expected to occur at the onset of conflict, using access obtained and malware prepositioned in advance. It targets systems of high military or strategic importance and seeks to produce concentrated effects that create an immediate strategic advantage.
+- **Protracted disruption** occurs throughout an extended conflict. Attackers continually probe systems, discover weaknesses, and exploit a broad range of targets. The objective is less about decisive advantage at one moment and more about attrition, imposing costs, and damaging the opponent over time. Its effects are diffuse, cumulative, and distributed across many organizations and individuals.
+
+The presentation illustrates this model with examples. The 2023 attack on Ukrainian telecommunications provider Kyivstar disrupted voice and data services for customers across the country. The consequences extended beyond individual connectivity: ATMs, payment terminals, businesses, and some emergency services depended on the provider. In Russia, an attack on Orion Telecom disrupted internet access in four regions and took up to two weeks to resolve; the provider also served several closed military towns in Siberia.
+
+Transportation incidents demonstrate how civilian systems can become strategically and socially important. A cyberattack on Ukrainian railways forced a shift from online sales to paper tickets, although trains reportedly continued operating. An attack on Russia’s Aeroflot caused approximately half of its flights to be cancelled on the day of the incident, although the airline restored its main flight operations the following day and used other airlines to transfer passengers.
+
+Government platforms can serve as bottlenecks. Shakirov discusses attacks involving Ukraine’s ProZorro electronic procurement system and Russia’s Roseltorg procurement platform. The latter required roughly a week to restore core functionality and caused delays across multiple regions, including reported delays in medicine supplies. He also highlights systems whose effects extend across broader economic processes: an attack on a Russian alcohol-tracking system forced several beer factories to suspend operations because they could not ship products, while an attack on Russian customs systems forced border crossings to process declarations manually. Ukrainian state registers were also unavailable for weeks after a December 2024 attack, disrupting services that depended on them and imposing costs on the wider economy.
+
+The supply-chain examples reinforce the argument that attackers do not need to destroy physical equipment directly. Disrupting one organization within a larger chain can delay production, transportation, or distribution elsewhere. Examples include an attack on Ukrainian agricultural company MHP that hindered product shipments, broader attacks affecting Ukraine’s agricultural and grain sector, and a ransomware attack on a relatively obscure Russian factory that supplied Rosatom and could potentially have caused delays across the wider supply chain.
+
+Shakirov concludes that modern societies depend on densely interconnected systems with many potential points of disruption. During a prolonged conflict, the high volume of cyber activity makes some disruptive incidents almost inevitable, even if many attacks affect only individual organizations. Because the resulting damage is distributed, it is difficult to measure and may not attract the same attention as a spectacular outage. Nevertheless, the aggregate burden can be substantial.
+
+The main resilience lesson is that defense cannot focus only on preventing compromise. Organizations must also be able to recover rapidly, maintain redundant ways of operating, and assist other organizations that depend on them. Shakirov recommends cross-sector coordination and information sharing, as no individual organization can be expected to defend itself successfully against every attack during a conflict. He also argues that avoiding or shortening cyber conflict, where possible, is preferable, since states that initiate conflict may also find themselves exposed to sustained retaliatory activity.
+
+In response to a question, Shakirov acknowledges that cyber operations are an integrated part of modern warfare and that the examples can have serious effects, including consequences for public safety and critical services. For the United States, he warns that a future conflict involving China would almost inevitably have cyber implications extending beyond the most strategically important systems. He emphasizes that organizations may be less prepared than planners assume, making mitigation and recovery planning especially important.
+
+## Key technical ideas
+
+1. **Protracted disruption as a distinct analytical category**  
+   The central innovation is the proposed distinction between catastrophic disruption and protracted disruption. The latter captures repeated, lower-scale incidents whose cumulative effects produce economic and social damage over an extended conflict.
+
+2. **Shift from decisive effects to attritional effects**  
+   Catastrophic operations seek a concentrated strategic advantage at a particular moment. Protracted disruption instead aims to impose continuing costs, consume recovery capacity, and weaken an adversary through attrition.
+
+3. **Continuous access acquisition and opportunistic targeting**  
+   Rather than relying exclusively on prepositioned malware in preselected strategic systems, attackers in a prolonged conflict may continually probe a broad range of systems, identify weaknesses, and exploit targets opportunistically.
+
+4. **Diffuse and cumulative impact**  
+   Damage may be spread across many organizations, regions, and individuals. This makes the aggregate effect difficult to assess, even when individual incidents appear limited.
+
+5. **Civilian systems as sources of strategic and societal disruption**  
+   Telecommunications, civilian transportation, payment infrastructure, emergency services, government platforms, and commercial supply chains can be as consequential to societal resilience as explicitly military systems.
+
+6. **Dependency and bottleneck analysis**  
+   A system does not need to be physically destructive or directly connected to critical infrastructure to have broad effects. Centralized procurement systems, customs platforms, product-tracking systems, and state registers can act as bottlenecks within larger economic and administrative processes.
+
+7. **Indirect disruption through interdependent systems**  
+   Attackers can cause disruption by targeting a dependency within a supply chain rather than the final production facility or physical equipment. The effects can propagate through logistics, distribution, procurement, and service delivery.
+
+8. **Resilience as recovery capability, not only prevention**  
+   In a high-volume cyber conflict, successful prevention of every attack is unrealistic. Resilience therefore depends on restoration speed, operational continuity, redundancy, and the ability to revert to manual or alternative processes.
+
+9. **Redundancy and practiced fallback operations**  
+   Examples such as paper-based railway ticketing and manual customs processing demonstrate the value of alternate procedures. Shakirov’s recommendation is to establish and practice these fallback mechanisms before disruption occurs.
+
+10. **Collective defense across organizational boundaries**  
+    Because interconnected systems transmit effects across organizations, resilience requires coordination, information sharing, and recovery planning that extends beyond an individual organization’s own network perimeter.
+
+11. **Strategic planning under conditions of limited preparedness**  
+    Policymakers should not assume that organizations will be fully prepared for wartime cyber activity. Planning should address how to mitigate and recover when attacks succeed, rather than relying solely on preventive controls.
+
+## Overall assessment
+
+The presentation’s main technical and conceptual contribution is a reframing of cyber-conflict risk. Instead of treating disruption primarily as a single catastrophic event against a high-value target, it presents cyber conflict as a potentially sustained process of probing, exploitation, service interruption, and cumulative economic and social damage. The framework directs defensive attention toward dependencies, bottlenecks, fallback operations, recovery speed, and cross-organizational resilience.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Thank you very much Shakiraov.
+Thank you so much.
+Okay. So, I don't know if I will sound
+mildly provocative or just common sense,
+but bear with me. I'm going to talk
+about what I call protracted disruption.
+This is a little bit different from what
+people talk about in this conference but
+maybe not that different. Okay, let's
+begin.
+Uh so in this town there is a very
+specific way how people imagine cyber
+conflicts. Maybe not everyone but
+million people imagine some kind of a
+catastrophic scenario where the United
+States will get involved in a uh war or
+some military conflict with China and
+China will be able to use its cyber
+capabilities to
+to cause some
+uh to get an upper hand in this very
+important strategic movement even by
+disrupting uh US um military operation
+or uh just causing uh wrecking havoc on
+US um critical infrastructure
+and mention of publications to that
+effect.
+Another aspect of this is that uh
+presumably China already has imported
+some uh malicious code into US critical
+confrs.
+Uh so this idea is not really that new.
+Uh since the 1990s, people have been
+talking about or speculating about the
+possibility of cyber Pearl Harbor. Then
+since the um Alcada attacks uh on New
+York and uh DC, uh people speculated
+about uh the possibility of cyber 911,
+etc. So there are multiple versions of
+these uh catastrophic scenarios and I
+think they're very prevalent because
+they capture our imagination and they uh
+help explain uh these very intricate
+ideas about cyber security to to
+everyone.
+Um I will probably not have you against
+uh the possibility of such a scenario
+happening. Uh but I would like to uh
+refocus your attention and uh make you
+think about some of the possibilities of
+how a disruption could happen and uh for
+that uh purpose I would like to look at
+the Russian Ukraine war and specifically
+at the cyber conflict that is of Russian
+Ukraine war. uh some people might say
+that it's not very relevant because it's
+a very different conflict to which I
+would partially agree because every
+conflict is different. Uh but I would
+argue that this is very relevant for
+several reasons. Uh so first of all it's
+the longest uh cyber conflict that we
+know. Uh it uh it has been going on for
+more than four years or even more than
+12 years depending on where you take
+your starting point.
+Uh second, both uh Russia and Ukraine
+are very capable cyber powers with a lot
+of talent, a lot of expertise. Uh people
+in this room might be more familiar with
+Russia as a cyber actor, but Ukraine has
+has its own uh capabilities. It it is
+also experiences it benefited from
+cooperation with the west. Most Russia
+is a bigger country. So it has a bigger
+attack surface. So I would argue that in
+cyerspace not in every domain but in
+cyerspace Russia and Ukraine are uh peer
+competitors or or if there isn't a
+symmetry it's not that great uh
+this even further exacerbated by the
+fact that countries they essentially
+adopted SFA approach to non-state groups
+and uh together this
+um increases the intensity of cyber
+attacks. So both Russia and Ukraine are
+being attacked all the times. There are
+a lot of uh incidents and for um so it's
+it's obviously very tragic development
+for for Russia and for Ukraine. But for
+scholars of cyber security and cyber
+conflict this is something that uh you
+should probably look for because it
+offers a lot of insights.
+Obviously during the war uh during the
+war there are also very uh virtually no
+uh limitations on what what each country
+does. Uh when you have missiles and
+drones flying uh in both sides uh it's
+it's very hard to argue that uh hackers
+and cyber uh actors need to adopt some
+some kind of restraint. So to put it
+simple, if uh Ukraine wanted to do
+something to Russia in cyerspace or
+Russia wanted to do some something to
+Ukraine in cyerspace, they would
+probably not hold back during the
+conflict which is very different uh for
+peace time.
+Finally uh before the war there were
+very specific predictions about uh these
+catastrophic catastrophic attacks that
+uh Russia would launch catastrophic
+attacks on Ukraine and even broader on
+on the west.
+So these catastrophic scenarios did not
+really play out. Uh
+there was there they were uh
+descriptions of uh maybe not the same as
+people talk about China and the United
+States but uh some u some people said
+that Russia would also disrupt uh
+energy, water systems, etc.
+uh all across the west again to gain
+advantage in this very specific point of
+time when the when the conflict starts.
+Uh second there was several uh
+disruptive attacks that uh resemble very
+closely uh this most anticipated
+incidents that to be associated with the
+catastrophic cyber scenario. Uh but
+their impact was not that uh damaging.
+It was much more uh isolated. So the
+famous uh viceet hack which was launched
+uh at the onset of the conflict and was
+aimed at disrupting Ukrainian military
+communications. It did so but it did not
+deny uh Ukraine communications
+completely. There were several attacks
+on energy infrastructure but they were
+usually isolated within uh individual
+cities or regions and they did not last
+long.
+Um but that doesn't mean that there were
+no disruptions. In fact, the war is
+still ongoing. We still see a lot of
+cyber attacks and there are a lot of
+disruptions, but these are disruptions
+of different nature. I would say these
+are not the catastrophic disruptions
+that uh proponents of this catastrophic
+scenario expect.
+uh so I suggest that we
+uh rethink disruptions or maybe we
+broaden our perspective and uh my
+suggestion is that we distinguish
+between the kind of catastrophic
+disruption and protracted disruption.
+Again this is like simple metaphor
+because it's a protracted conflict. We
+see protracted disruption that happens
+all the time. uh they are similar in
+some aspects but there are several
+characteristics that make uh these two
+types of disruption different. So as I
+already described in these multiple
+scenarios of catastrophic disruption it
+usually happens uh and is coordinated
+with the onset of the conflict.
+uh the attacker usually gains access to
+I mean I mean it is presumed that the
+attacker would gain access to uh
+targeted systems in advance and it would
+preposition malware in these systems.
+These targets would be of military
+significance for example military
+command communication systems energy
+infrastructure military logistics
+defense industrial base etc. And the
+impact will be concentrated
+uh concentrated enough to uh to allow
+the the attacker to gain strategic
+advantage in this very specific point in
+time.
+Protractic disruption is a bit
+different. So assume that the work
+continues for some time. There is no end
+inside.
+The goal of disruption becomes very
+different. It's not to gain uh gain an
+advantage in one specific point in time.
+It's about inflicting uh more damage on
+your opponent about um
+uh kind of attrition in some way and
+imposing more costs on on the other
+side. So it's ongoing throughout the
+whole uh the conflict. Uh access is
+gained not in advance. I mean maybe some
+access can be gained in advance but
+access is gained throughout the conflict
+again and sometimes it's it's a bit uh
+arbitrary. So uh threat actors would
+probe all kinds of systems. They would
+find weak spots and they would exploit
+these systems. They would not
+necessarily know uh that they need to go
+only after specific uh high value
+strategically significant targets. they
+would go after more uh after broader uh
+spectrums of systems
+uh and the disruption could be caused
+when they target systems that underpin
+the economy or society in general. I
+will talk about this more in detail
+later.
+And uh the impact of this kind of
+disruption it's not the same as
+catastrophic disruption. It's not like
+one single catastrophe that uh the
+victim cannot recover from. It just
+multiple disruptions with diffuse
+effects, cumulative costs that are
+shared by multiple organizations and
+multiple individuals.
+Uh so there are there are some uh
+reasons to think about catastrophic
+disruptions about worst case scenarios.
+It helps us focus attention, mobilize
+resources. It helps convey this image of
+something bad happening and uh
+mobilizing you to to respond to this. Uh
+but there are it comes with a cost.
+There are several disadvantages. Uh the
+first of them is that you're actually
+telling people to prepare for the least
+likely scenario which could come at a
+cost of not being prepared for the most
+likely incidents and uh in a protracted
+especially in a protracted cyber
+conflict organizations will face a lot
+of incidents and most of them will not
+be as catastrophic and as disruptive as
+proponents of cy of catastrophic
+scenario would say.
+uh this catastrophic narrative also
+instills fear could could instill fear
+which is not really helpful for uh clear
+strategic thinking. So I again I would
+not uh I would not tell you not to think
+about worst case scenarios. It is it is
+useful. It is how a lot of people
+especially in defense and intelligence
+uh approach things. That's how they
+work. uh but I would like you to think
+about these two different types of
+disruption and uh the protracted
+disruption can be more likely if it's a
+protracted conflict.
+Okay. So enough with this kind of
+introduction and theory let's talk about
+like what can be disrupted what what can
+become the source of protracted
+disruption. Uh in the following slides I
+will uh focus on several examples uh
+taken both from Russia and from Ukraine.
+Uh I will probably have more examples
+from Russia, but this does not suggest
+that there are more incidents like that
+in Russia. This is just my personal bias
+as a researcher. I have been focusing
+more on what's happening in Russia, how
+Russia responds to these attacks, but
+I'm trying to expand my perspective.
+Okay, first of course it's
+telecommunications.
+Uh when people think about some
+catastrophic scenarios, they of course
+think about communications but in a very
+specific way. they think about military
+communications, right? But civilian
+communications are no less important.
+Um, it's hard to overstate how much
+modern businesses depend on internet
+connectivity and also it can have the
+disruption of internet connectivity can
+have a lot of cascading effects that are
+hard to predict. Uh, you can see on the
+slide there are two specific examples.
+One is probably better known to everyone
+here. In December 2023, uh the the
+largest Ukrainian telecom provider,
+Keestar, was uh attacked by Viper uh uh
+malware. Uh
+a couple of dozen uh clients of this
+telecom provider across the whole
+country uh lost access to both voice and
+data services. And it took several days
+uh first to restore uh phone uh services
+like uh voice services but then several
+more days to restore um internet
+services.
+Um and uh it had a lot of uh impact not
+only on individuals but also on
+businesses. Uh for example uh many ATMs
+and payment terminals were dependent on
+KeStar services and even some emergency
+uh services too.
+uh last year in Russia last year one of
+the biggest uh incidents in Russia also
+affected u an internet provider it's
+called uh Orion Telecom it's a much
+smaller organization uh based in Siberia
+uh but it's it's crucial for that region
+and when this organization was attacked
+uh clients of this uh provider in four
+regions in Russia uh lost access to
+internet also the company was much
+slower to respond. It took them for u up
+to two weeks to restore uh connectivity.
+Also, interestingly enough, uh it it is
+one of the main providers of uh the
+internet to several closed military
+towns in Siberia and they also lost
+connections and they they did not have
+many options for u uh internet services.
+So, second kind of more or less obvious
+sector is transportation. Again, when
+people think about militarily
+significant disruption, uh it's about
+military logistics, about uh what can be
+how how troops can be delivered to to
+the uh theater etc. Uh but civilian
+transportation is also uh very important
+and it affects a lot of people in a very
+obvious way. Uh last year there were two
+major incidents uh both in Ukraine and
+in Russia affecting
+Oh, sorry. I think it's something
+maybe not. Oh, it's right. Uh there were
+two incidents in Russia and Ukraine uh
+affecting uh railways in Ukraine and uh
+major airline in Russia. So uh Ukraine
+doesn't uh because of the war Ukraine uh
+has no airline services and railways are
+one of the most important means of
+transportation. Uh so when the Ukrainian
+railways were uh hit by the cyber attack
+uh they had to stop some of the online
+uh sales and switch to pen and paper
+tickets. Uh so they they had some
+redundancy right so they were they were
+able to carry out their services and uh
+as far as I know no trains were
+cancelled.
+Um quite similar situation happened to
+the Russian airline company. It was more
+serious in a way that uh Aeroflot, which
+is the biggest Russian airline company,
+had to cancel uh half of their flights
+on the day of the attack. Uh but the
+next day they already restored all all
+of the flights. It probably took them
+longer to uh recover completely, but
+they were able to uh restore this main
+function that they were able to carry
+out flights. They also relied on several
+other uh airlines uh by transferring
+passengers to other uh planes that were
+not cancelled.
+Okay, let's talk briefly about
+government systems. There are all types
+of government systems but one of the uh
+natural uh potential natural uh points
+of failure is centralized procurement
+systems. uh they make uh procurement
+more transparent
+uh easier uh to trace and easier for
+everyone involved. Uh but if compromised
+this can uh become bottleneck and this
+can cause delays across multiple
+contracts. Uh there were two uh
+incidents that I know of. one was not
+very successful in in Ukraine, but maybe
+it could have been more uh damaging if
+the attackers achieved their goal. So in
+January 2022 uh before the war uh there
+was a
+there was a large scale attack on
+several Ukrainian government websites
+and a few days later there was a
+specific attack on this one system. It's
+uh it's called Praoro. It's a electronic
+procurement system. Uh however un unlike
+with other government systems it was not
+uh wiped clean. It was only defaced. So
+the system itself was not affected and
+uh everything went smoothly. Uh but it
+could have gone much worse uh which
+happened in Russia in 2025 3 years
+later. uh one of the biggest government
+procurement uh platforms uh Rosel Torque
+which translates as Russian electronic
+trade uh was u attacked in early in
+early January and uh it had to recover
+uh its main functionality
+uh within about a week and it continued
+to recover later in the month. uh but
+ultimately uh it caused a lot of delays
+uh across uh many regions in Russia. uh
+for instance in one example uh a
+regional government reported that it had
+delays in supplies of medicines because
+of the uh uh disruption of that
+particular system.
+So this is just one type of government
+systems but there are of course many
+more uh government systems and uh they
+enable all kinds of services uh I mean
+uh you can have a you can have a
+government system that is only being
+used by by the government and no one
+cares about it but sometimes governments
+introduce themselves into these uh long
+uh let's say supply chains of uh
+processes or procedures and uh the
+sabotage of these systems can uh have
+ripple effects across industries. is
+several examples here. One of my
+earliest uh um and uh one of the
+earliest examples that I found out was
+the DAS attack on the system in Russia
+that is used to track and trace alcohol
+u products.
+So it's not it sounds like it sounds
+very not uh big of a deal. uh but if you
+produce alcohol beer or uh vodka because
+it's Russia or I don't know maybe some
+medicines so anything with alcohol you
+cannot do anything without using this
+system so even a simple well not that
+simple but a protracted dedas attack on
+that system made it inoperable and so a
+lot of organizations couldn't use it for
+all kinds of uh operations so several
+major beer factories in Russia had to
+hold uh operations not because they had
+their equipment sabotaged but because
+They had a lot of boxes of uh beer and
+they could not ship them. So they had to
+just stop operations and wait before
+this system came back online.
+Uh in 2023, Russian customs service uh
+suffered uh I think it was a wiper
+attack but uh it was never publicly
+disclosed. uh uh it affected one of the
+systems that it's used for electronic
+declarations for when you cross the
+border and for a couple of days maybe
+maybe longer but we know certainly for
+like two and a half days uh Russian
+border crossings all across Russian
+border were uh had to uh process uh
+these declaration requests with pen and
+paper. It became much slower. Here you
+can see the line
+from I think it's a border between
+Russia and Estonia.
+Again, this was maybe not uh your
+classical disruption that you expect
+like something um like water leaking or
+something exploding. Uh but the damage
+was uh quite big. It was just not uh
+concentrated in one single uh place. It
+was spread ac across many people who
+were uh carrying products uh inside
+Russia or exporting something. many
+people who had to uh come uh from from
+abroad etc. Uh and maybe the biggest uh
+the biggest example that we know of was
+happened in Ukraine in in December 2024.
+Um the
+so Ukrainian state registers were uh
+again were attacked and uh so the these
+are registers that are used in all kinds
+of government services. Uh so for
+example if you if you want to uh like to
+build a house or if you want to
+sorry I cannot uh I did not look up for
+specific examples. Uh but but uh these
+these other government services they
+rely on these government registers and
+uh they uh these government services
+were not themselves disrupted but
+because the system that uh they rely on
+was not available uh for a couple of uh
+weeks maybe nearly for a month some
+services were not were not available
+again this was not like catastrophic but
+it was very disruptive and it u imposed
+a lot of cost on Ukrainian economy.
+So finally let's briefly talk about
+supply chain. Supply chain there are
+many um versions of how you can talk
+about supply chains. But I I would just
+like to emphasize the simple idea that
+the attackers do not necessarily have to
+sabotage equipment uh to cause uh some
+disruptions. It can they can actually
+target any part of uh supply chain. Uh
+for example, last year in Ukraine there
+was a uh in January there was an attack
+on one of the biggest uh agricultural
+companies called uh uh MHP
+and uh it couldn't uh it it inhibited uh
+their uh capacity to ship uh products.
+Uh later uh that year uh is reported
+that there were more uh cyber attacks on
+Ukraine's uh agricultural and grain
+sector and uh they uh said that it could
+be pl uh plausibly explained by the fact
+that the attacker wanted to uh weaken
+the country's economy because Ukraine uh
+depends on grain exports.
+Uh another example this year in March a
+ransomware attack hit a very little
+known factory that even in Russia I
+don't know how to properly pronounce its
+name. Um and no one knows much about
+this. This is a factory in the south of
+Russia. But what's important is that
+it's one of the major uh suppliers of
+Rosatam Russian uh nuclear uh power
+energy uh company. Uh so of course we
+it's hard to know what are the
+consequences but it's easy to imagine
+that uh it could cause a lot of delays
+across the whole chain.
+Okay,
+I think I'm uh actually on time. Uh so
+let's let's talk about uh some lessons
+known from this protracted conflict or
+protracted disruption. And actually I
+would like to to give credit to
+Christopher Cruz who spoke here before
+because I think some of my observations
+from the outside uh rhyme with a lot of
+what he said.
+Uh so in general there are a lot of
+interconnected systems that our
+societies rely uh on and there are so
+many ways to disrupt them that uh go far
+beyond what people imagine when they
+think about kind of direct disruption
+power power outages or uh internet uh uh
+disconnections etc.
+uh conflict uh especially protracted
+conflict generates a lot of uh cyber
+activity
+and uh a lot of these attacks are not
+disruptive. They can be isolated to one
+specific uh organization and others can
+might not feel any consequences but
+because of sheer volume some of these
+attacks will almost inevitably be
+disruptive.
+Uh I think this is one of the most
+important points. It was also mentioned
+here uh by several speakers. I think
+it's unrealistic to expect that during a
+conflict many organizations will be
+prepared to repel every attack. Uh it's
+a I mean it's a simple idea. Uh you can
+you can be expected to put a lock on
+your door and uh dissuade a burglar from
+stealing something from you, but you
+cannot uh uh reasonably be expected to
+be able to defend against mercenaries or
+uh guerillas during a conflict.
+Uh so the damage caused I already
+mentioned that the impact is diffused
+and the damage caused by this protracted
+disruption uh it's also diffused it's
+spread across many organizations uh
+which makes it very difficult to assess
+uh but we should not neglect it uh
+because it it is it is burden that is uh
+uh borne by a lot of uh organizations.
+So for example go back to this example
+of Russian customs service uh you can
+probably
+organize a commission that will try to
+estimate the impact and no one will will
+do this uh right now but many
+individuals who exploit or import stuff
+they can tell you a lot of examples
+where they suffered the consequences.
+Uh finally again the idea that resonates
+with what was said here is that
+resilience depends not only on
+prevention of the attacks but on the
+recovery. So if during the protracted
+conflict you are almost guaranteed to be
+attacked and uh successfully it's not
+it's not only about how effectively you
+can prevent such attacks. It's also
+about how fast you can come back online
+and they have several maybe non-nonsense
+recommendations.
+Uh first it's build resilience. There
+are a lot of ways to do it. If you look
+at what uh uh how Ukrainian
+organizations or Russian organizations
+to respond uh they always uh rely on um
+um some redundancy measures just they
+have to switch to old ways usually uh
+and it's easier if you can already do it
+if you have prepared for it. Uh you can
+also practice recovery and you can
+practice recovery not within your own
+perimeter but uh looking beyond your own
+perimeter. So if if you suffer an
+attack, a disruption, uh how fast can
+you recover? How fast can you help
+others who depend on you recover? Uh
+second, it's important to defend
+together. Uh because these disruptions
+happen because of attacks that target
+these systems and systems are connect a
+lot of organizations together. So it's
+uh again it's unrealistic to expect uh
+each individual organization to be
+capable of successfully defending by
+itself. So there needs to be more uh
+coordination across sectors, more
+information sharing etc. Obvious things.
+Uh finally again simple recommendation
+avoid cy uh protracted cyber conflict if
+possible. Uh this is not uh
+unfortunately this is not a universally
+applicable uh recommendation. Uh if you
+suffer uh an attack you cannot avoid it.
+Uh but if you willfully start a
+conflict, you can think that you'll
+probably also not be able to defend
+yourself. Russia was very illprepared
+for this uh cyber conflict. Uh and it
+still pays the cost even though it uh
+probably thought that it could be uh
+much more capable and defendable country
+than Ukraine. Uh but right now as I said
+in the beginning, I think uh both
+countries uh inflict a lot of damage on
+each other.
+And hopefully this will end sooner,
+better sooner than later. Thank you so
+much.
+Thank you so much. We've got uh we have
+time for one question. One question.
+Who's got here? We got a question up
+here.
+>> Thank you for this amazing uh
+presentation. First of all, I want to a
+little bit add that uh We need to
+remember that not Ukraine invade to
+Russia and Russia invade to Ukraine and
+it's not a conflict right now in the
+cyber is a real war. I can explain why.
+When Russians try to suppress crit
+object or critical infrastructure in
+Ukraine in the cyborg and in in case if
+they failed they launch rocket uh to
+this object of critical infrastructure
+and this cyber war indeed started in
+2014 when Russians uh penetrated
+Ukrainian election system and
+you put in in
+in your examples
+absolutely not comparable. Uh I can I
+also can explain why. Uh first of all uh
+cyber attack on
+uh telecom systems uh in Ukraine in
+Russia Federation in Ukraine K stars uh
+when was uh penetrated uh more than two
+million of people of Ukraine stay
+without internet connection and without
+GSM connection. uh more than two two
+million people in eastern part of
+Ukraine close to border of Russia
+Federation and the people uh depend on
+uh internet because uh air alarm system
+uh was dependent on internet and in
+those uh during one week people stay
+without possibility to go to shelter
+when uh rockets was launched. Orion
+telecom operators somewhere in Siberia.
+Nobody knows where is it about the uh
+attack on transportation system. Uh you
+mentioned that Ukraine right now uh
+absolutely depended on railway. It's
+absolutely true because all support all
+assistance from the Europe come to
+Ukraine by the railway and when it was
+disrupted railway station uh railway
+system it also was a huge impact uh on
+our critical infrastructure in Ukraine
+and what happened when was uh attacked
+on air flood
+just people don't have possibility to go
+to for holiday to somewhere and also uh
+your last example about the uh
+transportation system about uh M MHP
+it's not only the uh production that uh
+deliver products somewhere in Europe is
+a really huge production of products of
+foods in Ukraine and also people in
+Ukraine depend on this uh production on
+this production.
+Uh and
+my question is what do you think we need
+to do in the case just to
+prevent and to stop uh this uh negative
+activity in cyber and what's the lesson
+learned could be for the United States
+from this war? Thank you.
+>> Thanks. Thank you for for uh
+clarifications. I mean it's a it's a
+short presentation so I I didn't include
+all the details but you're right. Uh so
+about the prevention I think it's uh the
+main takeaway is that it's inevit in
+inevitable that cyber uh conflict is
+part of any any conflict any war right
+now and it's really difficult to prevent
+it. If we look at how we can uh uh
+reduce this activity, I think it also
+it's very much connected to to how long
+the conflict uh goes on, the war goes
+on. So uh I was I was fantasizing about
+whether there could be a separate cyber
+ceasefire or not. I think it's uh it's
+not it's impossible to think about it
+separately from uh from the war in g in
+general. So if there is an end to the
+war there could be end to the kind of
+cyber dimension of the war. If not then
+not lessons for the United States. I
+mean uh if if there is a US China uh
+conflict or war or some kind of uh uh
+trouble almost inevitable there will be
+cyber implications of that and I think
+people sometimes uh they under uh
+estimate how how much damage it can it
+can cause not only to these most
+strategically important systems but to
+uh everyone and also I think people
+overestimate how much you and prepare
+for it. Uh today I think we heard a lot
+of examples of organization being
+illprepared and I think you have to I
+mean it's not it's I don't want to say
+that you should not prepare but I think
+it's uh it's it's better to to expect
+that these organizations will not be
+prepared if something happens. And so
+how do you deal with it? That's maybe
+the most important uh takeaway. So you
+have to think about uh we we enter a
+conflict where no one is prepared like
+how do you how do you mitigate it?
+Please join me in thanking Oleg
+Shakiraov.

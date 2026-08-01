@@ -1,0 +1,730 @@
+ABOUT
+================================================================================
+Title: Strengthening Cybersecurity in Water Utilities: What’s Actually Working at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=0gnGCfm9etQ
+Video ID: 0gnGCfm9etQ
+Published: 2026-07-28
+Duration: 21:29
+Views: 9
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: Strengthening Cybersecurity in Water Utilities: What’s Actually Working 
+Track 2: Strategic Effect
+Wednesday, June 17, 2026
+
+Water utilities face rising cyber risk, but adoption lags. Lessie Skiba (Deputy Managing Director, Cyber Readiness Institute) walks through how coaching, trust, and public-private collaboration are scaling real-world cyber readiness in critical infrastructure.
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media, facilitating actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Strengthening Cybersecurity in Water Utilities: What’s Actually Working at #CriticalEffectDC
+
+## Authors, affiliations, credentials, and contacts
+
+- **Author/channel:** Institute for Security and Technology (IST)  
+  - **Channel:** https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw  
+  - **Video:** https://www.youtube.com/watch?v=0gnGCfm9etQ  
+  - **Video ID:** 0gnGCfm9etQ
+
+- **Presenter:** The source identifies the presenter inconsistently as **Lessie Skiba**, **Lessie Schieva**, and **Leslie**. The About section lists **Lessie Skiba**; the transcript introduces her as “Lessie Schieva” and later refers to her as “Leslie.”  
+  - **Credential/role:** Deputy Managing Director, Cyber Readiness Institute  
+  - **Additional role:** Chief of Staff, NetRise  
+  - **Personal contact details:** Not provided.
+
+- **Cyber Readiness Institute:**  
+  - Website mentioned in the transcript: https://cyberreadinessinstitute.org  
+  - The transcript states that CRI is a nonprofit founded in 2017 and currently funded by Microsoft and MasterCard, with support from other organizations including Apple and T-Mobile.
+
+- **Event:** Critical Effect DC, presented by ICS Village in partnership with IST’s UnDisruptable27 project and Akin Gump.  
+  - Event information: https://securityandtechnology.org/event/critical-effect-2026/  
+  - ICS Village: https://icsvillage.com/  
+  - UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+  - Mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+- **Other organizations referenced:** WaterISAC, the American Water Works Association—referred to in the transcript as AWWA—and the National Rural Water Association (NRWA). Individual contact details were not provided.
+
+## Summary
+
+This presentation describes the Cyber Readiness Institute’s approach to improving cybersecurity among small and medium-sized water utilities. The central argument is that practical cybersecurity adoption depends less on deploying sophisticated technology and more on helping organizations establish basic policies, assign responsibility, train employees, and receive trusted, hands-on guidance.
+
+CRI’s program focuses on four foundational areas:
+
+1. **Passwords**
+2. **Software updates**
+3. **Phishing**
+4. **Secure storage and file sharing**
+
+The program also requires organizations to prepare an incident-response plan and understand what to do when an incident occurs. The approach is based on the interaction of **people, processes, and technology**. The presenter emphasizes that technology alone cannot compensate for weak policies, untrained personnel, or unsafe user behavior.
+
+The water-utility initiative began as a pilot in 2023, sponsored by Microsoft and supported by the Foundation for Defense of Democracies. According to the presentation, 89 utilities expressed interest, 59 started the program, and 35 completed it. The relatively low completion rate is presented as evidence that the primary barrier is not necessarily the absence of free resources, but a lack of trust, time, expertise, and confidence about where to begin.
+
+The main intervention that distinguished this initiative from conventional online training was the addition of **Cyber Coaches**. Coaches complete CRI’s readiness and coaching programs and then help utilities interpret the material, prioritize actions, develop policies, and maintain accountability. They do not perform the work for the utility, but provide structure and guidance similar to a personal trainer.
+
+The presenter argues that this coaching model made the program more usable and scalable than manuals or standalone online resources. Trusted partnerships with WaterISAC, AWWA, and NRWA helped CRI reach utilities that might otherwise have been reluctant to participate in a free external program.
+
+A case study involving the **East Rio Hondo Water Supply Corporation** illustrates the intended impact. Before participating, the organization had some basic cybersecurity measures but lacked sufficient documentation and clarity regarding responsibilities, outsourced IT services, and incident handling. After completing the program, its administrator described the organization as moving from approximately 30% to 90% cyber readiness. The presentation stresses that this figure does not represent elimination of risk; rather, it reflects stronger preparedness and improved ability to recognize, prevent, and respond to threats.
+
+CRI’s certification process requires:
+
+- Policies aligned with CRI’s requirements
+- Completion of a prioritization tool
+- Completion of a software-update and asset-inventory tool
+- An incident-response plan
+- Training of employees
+- Signed attestation by both the cyber leader and senior organizational leadership
+
+CRI supplies templates and a playbook to reduce the burden on small organizations. The playbook is intended to remain a “living” document that is updated when personnel, systems, or technologies change. Because water utilities have operational-technology concerns that differ from those of ordinary small businesses, CRI also developed a water-utility-specific OT addendum with assistance from OT specialists.
+
+The program is presented as a practical entry point rather than a complete cybersecurity framework. CRI positions it as a stepping stone toward more advanced standards and certifications, including NIST and ISO 27000, as well as a way to help organizations meet procurement requirements when working with larger partners.
+
+## Key technical ideas
+
+### 1. Cybersecurity readiness as an organizational system
+
+The program treats cybersecurity as a combination of:
+
+- **People:** Everyone understands their cybersecurity responsibilities.
+- **Processes:** Policies, procedures, inventories, and response plans are documented and practiced.
+- **Technology:** Technical controls support and enforce organizational policies.
+
+This avoids treating technology procurement as a substitute for governance and user behavior.
+
+### 2. Four-control baseline
+
+CRI uses a deliberately limited baseline of four operational issues:
+
+- Password security and, where possible, multifactor authentication
+- Software updates and management of legacy systems
+- Phishing awareness and prevention
+- Secure storage and file sharing
+
+The innovation is not the novelty of these controls individually, but their packaging into a manageable starting point for under-resourced utilities.
+
+### 3. Compensating controls for legacy technology
+
+When systems cannot be updated, the presentation recommends considering measures such as:
+
+- Air-gapping
+- Additional security controls
+- Other safeguards that allow continued operation despite update limitations
+
+The transcript does not specify particular products or configurations.
+
+### 4. Coaching rather than self-service training
+
+The Cyber Coach model adds human guidance to online materials. Coaches help utilities:
+
+- Determine where to start
+- Prioritize tasks
+- Interpret requirements
+- Develop policies and response plans
+- Maintain progress and accountability
+
+The presentation identifies trusted delivery and ongoing support as critical adoption mechanisms.
+
+### 5. Verification of implementation
+
+CRI’s verification process is intended to distinguish between merely claiming to have policies and actually implementing them. Verification includes confirmation that:
+
+- Required policies exist
+- Employees have been trained
+- An incident-response plan is in place
+- Leadership has formally attested to completion
+
+### 6. Asset and software inventory as a readiness foundation
+
+The prioritization and software-update tools require utilities to understand what they possess, including devices, laptops, servers, and software. This inventory supports decisions about updates, prioritization, and risk management.
+
+### 7. Water-utility-specific OT adaptation
+
+The program applies a general small-business cybersecurity model to water utilities while recognizing that operational technology creates additional requirements. The OT addendum is the mechanism used to adapt the playbook to water-sector conditions.
+
+### 8. Incident response as part of basic readiness
+
+The goal is not only to prevent attacks but also to ensure that utilities know how to respond and recover. Incident-response planning is therefore a required component of certification rather than an optional advanced capability.
+
+### 9. Trust as a technical-adoption enabler
+
+The presentation treats institutional trust as an important prerequisite for cybersecurity implementation. Partnerships with sector organizations helped establish that CRI’s free program and coaching did not conceal a commercial “hook.” This trusted distribution model increased access to smaller and rural utilities.
+
+### 10. Foundations before advanced automation
+
+One case illustrates a sequencing principle: organizations should establish basic policies, processes, and employee practices before pursuing advanced capabilities such as AI automation. The presenter’s position is that sophisticated tools are less useful when foundational controls remain undeveloped.
+
+## Overall assessment
+
+The presentation’s main technical contribution is an implementation model for cybersecurity readiness rather than a new security technology. It combines a small baseline of controls, structured templates and playbooks, leadership attestation, asset inventory, incident-response planning, and free human coaching. The authors’ central idea is that cybersecurity improvements in small water utilities are most likely to scale when they are practical, trusted, low-cost, and supported by a coach who helps organizations turn general guidance into completed operational actions.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+I know we just
+Okay, sounds good.
+Okay, I might just take it down cuz I'm
+short.
+Hi everyone, nice to meet you. I'm
+Lessie Schieva and I am the Deputy
+Managing Director at the Cyber Readiness
+Institute and I'll give you a little
+background about the Cyber Readiness
+Institute. I also wear a couple other
+hats so if you see my name popping
+around as well, I am Chief of Staff for
+a company called NetRise.
+Uh so I stay quite busy with the
+nonprofit and with NetRise. So just a
+little bit of background about CRI, we
+are a nonprofit organization. We were
+founded in 2017
+under the Obama administration where
+there was a private public commission
+that was meant to address cybersecurity
+gaps within the United States. One of
+those gaps that was addressed was the
+lack of resources for small and
+medium-sized businesses. So some of the
+large industry partners that were at
+that commission decided to address this
+gap and found the Cyber Readiness
+Institute. So some of our founding
+members were Exxon Mobil, Principal
+Financial, MasterCard and Microsoft. We
+are still funded by Microsoft and
+MasterCard today and supported by a
+number of other organizations including
+Apple and T-Mobile.
+Um they are uh supportive of our mission
+but no longer technically funding us.
+Um but our whole goal is to provide free
+and accessible resources for small and
+medium-sized businesses by focusing on
+what they can actually do and actions
+that they can take
+without spending a significant amount of
+money on
+technology and other things that
+yes, they could be great but a lot of
+times small and medium-size businesses
+don't even know where to start. They
+don't have it configured properly. It
+doesn't even matter if they're spending
+hundreds of thousands of dollars on that
+technology if they don't have their
+policies and procedures in place. So,
+our whole goal is to
+take practical steps to prevent cyber
+attacks by focusing on four core issues,
+which I'll talk about in a moment, and
+knowing what to do if and when an
+incident occurs.
+And this is We'll get into water
+utilities in a moment, but in general,
+we focus on the people, making sure
+everyone within an organization
+understands their role as it relates to
+cybersecurity,
+and focus on that triangle of people,
+process, and technology. Enforce
+policies with technology, and obviously
+people are generally the weakest link,
+and they're the
+no matter how much technology you have
+in place, if someone is still clicking
+on things that they shouldn't be
+clicking on, answering the phone, and
+sending it out sending out financial
+information, it's going to be a problem.
+So, our goal is to embed cyber readiness
+into how every person does their job,
+develop good cyber habits, and again,
+create that culture of cyber readiness.
+So, just a brief overview of what our
+program is. We have our flagship online
+program called the Cyber Readiness
+Program that's focused on those core
+four issues.
+And we have a separate certification
+called the Cyber Leader Certification
+that dives a little bit deeper into
+change management and some and ways to
+handle some pushback from leadership and
+potentially difficult employees.
+From there, we also have our Cyber Coach
+Certification, which is going to be
+quite important because that is really
+what has made a difference in the water
+utility program we ran. But, that is a
+certification that the coach goes
+through the Cyber Readiness Program.
+They don't necessarily have to be a
+cybersecurity expert, but they go
+through the cyber readiness program, go
+through our coaching program, and then
+can go out and work with companies.
+So, we, in addition to our online
+flagship cyber readiness program, we
+also have a verification. So, that is
+essentially us saying, "Yes, these
+companies have met these minimum
+requirements of the core four issues.
+Yes, they have an incident response
+plan." And I'll talk a bit more about
+our playbook later, but that we have
+confirmed that they don't just say that
+they have it, but they've actually
+implemented and trained all of their
+employees on these policies and
+procedures.
+So, the core four issues that we have
+are passwords, software updates,
+phishing, and secure storage and file
+sharing.
+These are obviously very simple. Most
+people in this room
+would think that this is something that
+most businesses would already have
+buttoned up, but you would be quite
+surprised, uh, that a lot of times
+people still have those eight character
+passwords and no multi-factor
+authentication, or they have legacy
+systems that don't support that. So, but
+they have no technology to back that up.
+Uh, software updates. I do a lot of work
+internationally.
+There's often problems with, uh, not
+using licensed software, or potentially,
+again, that legacy system that can't be
+updated to the most recent version. Uh,
+so, that's something else that we talk
+about throughout the program. If for
+some reason you can't do these software
+updates, how are you air gapping or or
+putting things in security controls in
+place to help your business still
+operate. Um, obviously, phishing. We all
+know it's getting better with AI. I'm
+not going to dive into that. Um, and
+then secure storage and file sharing.
+Most of us don't use USBs anymore,
+especially in the US,
+but there are still a lot of small
+businesses when they're
+like transferring large files, financial
+information, you name it, uh with water
+utilities.
+I know that I'll I'll talk about a case
+study in a moment, but they used USBs
+often just for updating software and
+other things like that, which feels like
+you're taking a step back into the Stone
+Age, but it still is very relevant. But
+in general, we try to discourage the use
+of it and only in specific cases.
+So, what are we doing with water
+utilities?
+We did a pilot that started in 2023 that
+was sponsored by Micro- Microsoft and
+supported by FDD, the Federal Defense of
+Democracies. Mike Uh Mark Montgomery I
+believe is speaking later. He was a huge
+supporter of this pilot.
+And we found that
+um
+we A had a little bit of
+trouble getting
+utilities to sign up for this because
+there is a trust factor here. And I'll
+talk more about how we got around that
+and how we actually ended up getting
+utilities to sign up for this in a
+moment, but this pilot also was included
+in the White House National
+Cybersecurity Workforce Strategy, which
+is very exciting. And we still are
+partnering with the White House on
+certain initiatives related to critical
+infrastructure and water utility
+specifically.
+And again, we are We built this all
+around our core four issues, and the
+huge differentiator was that we didn't
+just provide this online program for
+utilities. There's so many online
+resources out there.
+Similar to other nonprofits that are out
+there,
+we decided, "Hey, we need to provide a
+coach for these." And that's really
+where we saw the difference. And I'll
+talk specifically about what made that
+difference in a minute.
+So, some of the results from this pilot
+program that wrapped up, and if you're
+interested in taking a deeper dive, you
+can find the research report on our
+website, uh cyberreadinessinstitute.org,
+but we had 89 utilities that expressed
+interest,
+and 50 that
+59 that started the program.
+We only had 35 utilities
+completely go through the program, which
+is crazy. People are always saying, "Oh,
+we need more resources. We need more
+uh free things that are accessible."
+We give a free thing,
+a free program, and we still don't get
+sign-ups, right? And we had the support
+of Water ISAC, we had the support of
+NRWA, we had the support of uh
+AWWA. They were all letting people know
+that this program was free and available
+to use.
+And it comes down to a trust issue,
+which is where the coach piece came into
+play significantly. Having someone that
+uh utility could go to and ask questions
+about
+"Where do I even start?" right? That
+made a huge difference. I like to talk
+about it like having a personal trainer
+in the gym. They'll hold you
+accountable.
+They're not going to do the work for
+you,
+so you still have to put in the effort,
+you still have to go and create those
+policies and train your employees, but
+having the coach there to bounce ideas
+off of and give you a structure around
+how to move through your cyber readiness
+journey is really what we saw making a
+huge difference in this.
+Since we closed the pilot, we are we did
+turn it into an ongoing program, so if
+there are any water utilities in here,
+or you work with
+uh either a city, state, municipality,
+you name it, that has a water utility
+that's small, and maybe doesn't
+necessarily, or you might not know how
+their cyber readiness is, um feel free
+to go visit our website and sign up for
+the program or pass it along to anyone
+that you might know that would be
+interested. And because
+Microsoft is still funding this, we do
+provide coaches for free as well.
+So, what actually worked?
+Empowerment over complexity. We talk a
+lot about adding technology into things.
+AI is such a buzzword. In the case study
+I'll I'll talk about in a moment.
+The woman that was the cyber leader was
+told by her upper leadership that she
+needed to start figuring out some AI
+automations.
+She took a step back and she was like,
+we don't even have software update
+policies in place. All right.
+So, why would I start enabling AI
+automations when we don't have
+the fundamentals done? So, going through
+the program, she's now working on that
+AI automation piece now that she's got
+the people side and the policy side in
+place,
+which I think will be great. Hopefully,
+will free up some more of her time.
+Additionally,
+coaches
+scale much better than manuals. I
+mentioned before, there's so many
+resources out there for small utilities,
+small businesses, you name it.
+But, people don't actually know where to
+start. They don't want to go just read a
+PDF. Right? They don't want to just go
+through an online program. They want
+someone to tell them what they need to
+do and to work with them and be that
+partner and hold them accountable as
+they're going through it. They might not
+necessarily want that, but it is
+effective.
+And cyber leaders are a universal role.
+One of the questions we had going into
+this pilot was
+will the cyber readiness program still
+be applicable to small and medium-sized
+water utilities? The answer was yes,
+because they have
+very similar and a lot of the same
+problems that any small and medium-sized
+business would have. Lack of resources,
+lack of expertise, lack of time.
+So many people are wearing multiple
+different hats
+that they can't just focus on their job.
+They're also having to
+have multiple different types of jobs
+that go under that umbrella.
+And then free tools require trusted
+delivery.
+I mentioned that we were supported by
+WaterISAC,
+AWWA, and NRWA, which AWWA is the
+American Water Waste
+Water and Wastewater Association.
+Water Yes, thank you. And NRWA, the
+National Rural Water Association.
+And
+part of the reason we were able to get
+in front of people was because they were
+encouraging some of the businesses that
+had come to them asking
+for resources that we were a trusted
+entity. Because I a lot of people come
+and try to provide a free service and
+then
+there's some catch to it. Our service is
+truly free, the coach is free, the
+program's free.
+Now, if you need to go add technology on
+top of that, that is where obviously a
+cost would come in, but since we don't
+provide the technology, we don't provide
+technology recommendations outside of
+maybe a password manager and other
+things like that,
+um we are happy to say that it is what
+it is at face value, you get what you
+get. Um so that was something that we
+kind of struggled with, especially given
+that there have been other programs that
+these smaller utilities had experienced
+and they just didn't want to deal with
+that hook at the end. So
+now that we've gotten in the door and
+our partnership with WaterISAC is public
+as of about a month ago, we've started
+having multiple different uh
+rural water associations reach out to us
+directly to provide training, to provide
+coaching, to provide provide just
+webinars on
+awareness
+to these smaller utilities that
+sometimes are also operated under the
+city and they don't necessarily have
+their own office. It might just be the
+mayor that's also running the water
+utility, which that is
+something that I had no idea about
+before we started this. But these
+utilities
+they don't know what they don't know and
+we need to tell them how they can at
+least cover their fundamentals.
+And so now we'll talk a brief bit about
+our East Rio Hondo Water Supply
+Corporation case study.
+Uh we did a panel discussion at RSA with
+the um administrator of the East Rio
+Hondo Water Supply
+along with Microsoft
+to talk about some of the lessons
+learned, some of her experience going
+through the program. And I would say one
+of the biggest takeaways and it was
+really interesting to hear her talk
+about it because we do this program, I
+have run
+cybersecurity trainings for quite a
+while now.
+But understanding that truly the issues
+that our small businesses are facing are
+the same as water utilities was just so
+apparent when talking to Amanda Sanchez.
+And before starting this program, they
+had basic cybersecurity in place but not
+anything that was actually documented.
+They had an outsourced IT team that they
+just expected to do everything. They
+didn't actually take a step back and ask
+well, what are you actually providing
+for me?
+Who's responsible in the event of an
+incident? Am I going to be at fault if
+this happens? None of those questions
+were really asked prior to her going
+through this program. And in addition to
+our program, we also have guides talking
+about third-party risk and things like
+that. So, identifying how to
+work with vendors and safely work with
+vendors. So, she found all of those
+resources quite useful.
+Um and I guess one of my favorite quotes
+in this was
+she said she went from a 30% of cyber
+readiness to a 90%.
+Your risk is never zero and I'm really
+glad she didn't say 100% because that
+would have been
+completely unrealistic. Um and then I
+also liked that she said this program
+isn't about turning you into a
+cybersecurity expert. It's about giving
+you and your staff the tools to
+recognize and prevent threats before
+they become incidents. And I think
+that's really what the
+the idea is with these water utilities
+is we know that there are threats out
+there. We know that there are countries,
+bad actors that are probably there
+lurking. I think the last presentation
+was talking quite about that or quite a
+bit about that. We know they're there.
+How are we going to mitigate risks and
+mitigate incidents once they actually
+happen? How do we get back up on our
+feet and move forward? So, that's one of
+the big things with the cyber readiness
+program is having that incident response
+plan that you know what to do if and
+when that incident occurs.
+So, I'll just briefly talk through what
+it looks like for a utility to become a
+cyber ready certification cyber ready
+certified organization.
+So, the policies must match our
+requirements.
+They must complete our prioritization
+tool and software update tool, which is
+essentially an inventory tool so people
+know what they have and how much of a
+device or how many laptops they have,
+how many servers they have, what
+software they're using.
+Additionally, they must have an incident
+response plan. And this all sounds
+pretty intimidating for small and
+medium-sized utilities, but we provide
+the templates and we hold their hand as
+they're developing these.
+And then, we also require an attestation
+that is signed by not only the cyber
+leader that is going through this
+program, but the upper leadership,
+whether it's CEO or whatever president
+of the organization, must also sign to
+ensure that yes, the training did
+happen.
+And here is just a little playbook guide
+that goes along with the playbook that
+walks through how to complete the
+playbook. So, for individuals or
+utilities that are going through the
+program that didn't necessarily want or
+know that they had the option to have a
+coach, this is something that can
+function similar to that.
+And we try to encourage anybody that's
+going through the program to
+keep that playbook as a living,
+breathing document.
+And so, anytime that there's people that
+change or
+technology that changes, that they
+update this playbook.
+So, one thing to note about the playbook
+and one of the results of the pilot as
+well, is where we do have water
+utilities or we know that water
+utilities have some of the same issues
+that small businesses have, there
+obviously are some differences,
+especially with OT. So, we worked with a
+couple of different OT specialists to
+develop an addendum to our playbook that
+is focused specifically on water
+utilities. So, that is also available
+for anyone that is in the industry and
+interested in checking that out. And if
+you have feedback on any of these
+materials, we are constantly updating
+them and revising them, so
+the more information we have as a
+nonprofit, the better. We're looking for
+experts on a regular basis to lean on
+and and help give us feedback.
+And lastly, Cyber Readiness Institute is
+not the end-all be-all. We know that it
+is a stepping stone to some of those
+more sophisticated certifications
+and frameworks like NIST, ISO 2700.
+Oftentimes, if we're talking about
+companies that are looking to partner
+with other larger organizations, this is
+a great stepping stone to those uh
+procurement requirements as well.
+And I will end on
+this is not something that CRI can do
+alone.
+Uh we need both governments and
+businesses to collaborate to make sure
+that utilities are aware of this,
+there's incentive to protect themselves,
+and that they
+know that they really have a duty to
+protect their organization to help
+protect the the uh economy and people
+and everyone as a whole.
+So, if you're interested in signing up,
+here's the QR code. It'll send you
+directly to our water utility specific
+page,
+and I will take any questions if there
+are any. Thank you.
+>> Any questions?
+Question here.
+>> [clears throat]
+>> Uh first of all, let's see something Let
+me say thank you. I I'm uh co-chair of
+the Water ISAC Cybersecurity Committee.
+So, uh I really appreciate the outreach
+uh that CRI is doing for the community.
+It's good to see that uh we're through
+the pilot phase and ready to go um into
+the next phase of things. And
+uh I will I will say that Water ISAC
+stands ready to help in in any way that
+we can to put this out there and uh
+uh push the ball forward. So, I just
+want to make that statement. So, thank
+you.
+>> Thank you. You and Jennifer Walker have
+been fantastic partners.
+>> Any questions?
+>> I'm okay with that.
+Well, thank you.
+>> Okay, well, great. Thank you very much,
+Leslie.

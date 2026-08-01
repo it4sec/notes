@@ -1,0 +1,969 @@
+ABOUT
+================================================================================
+Title: Your Nurses Are Hiding Infusion Pumps in Cabinets at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=HM_B1VMx_jo
+Video ID: HM_B1VMx_jo
+Published: 2026-07-28
+Duration: 30:05
+Views: 3
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: Your Nurses Are Hiding Infusion Pumps in Cabinets: What 300 Clinicians Won’t Tell Your CISO
+Track 3: Tactical Mastery
+Wednesday, June 17, 2026
+
+Security controls aren't built for clinical reality. Ron Thompson (Software Development Engineer, Philips) asked 300+ clinicians what actually happens at the bedside when systems fail, and presents his findings. 
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media to facilitate actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**Your Nurses Are Hiding Infusion Pumps in Cabinets at #CriticalEffectDC**  
+The presentation is also described as **“Your Nurses Are Hiding Infusion Pumps in Cabinets: What 300 Clinicians Won’t Tell Your CISO.”** A separate title for the underlying paper was not provided.
+
+## Author, speaker, and credentials
+
+- **Ron Thompson, PhD**
+  - PhD in computer security, with a focus on medical devices.
+  - Completed the reported research while finishing his PhD at **Tufts**.
+  - Currently works at **Philips** as a security engineer focused on patient monitoring.
+  - The About section identifies him as a **Software Development Engineer at Philips**.
+  - The transcript states that he is **not a medical doctor**.
+  - Other members of the research team were mentioned, but their names and credentials were not provided.
+
+## Organizations and support acknowledged
+
+- **Philips** — Thompson’s current employer.
+- **Tufts** — affiliation during completion of the research.
+- **MedCrypt** — identified as a cybersecurity vendor that supported the work.
+- **National Science Foundation (NSF)** — acknowledged as a funder.
+- **ARPA-H**, through the **UPGRADE program** — acknowledged as a funder.
+
+The presentation was delivered at **Critical Effect DC 2026**, presented by **ICS Village**, in partnership with the **Institute for Security and Technology’s UnDisruptable27 project** and **Akin Gump**.
+
+## Contacts and links
+
+No personal email address, telephone number, or direct contact information for Ron Thompson or the research team was provided.
+
+Available organizational links:
+
+- Institute for Security and Technology channel:  
+  https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+- Video:  
+  https://www.youtube.com/watch?v=HM_B1VMx_jo
+- Critical Effect 2026:  
+  https://securityandtechnology.org/event/critical-effect-2026/
+- ICS Village:  
+  https://icsvillage.com/
+- UnDisruptable27:  
+  https://securityandtechnology.org/undisruptable27/
+- UnDisruptable27 mailing list:  
+  https://mailchi.mp/securityandtechnology/undisruptable27
+
+## Technical summary
+
+Thompson argues that cybersecurity controls designed for conventional IT and industrial control environments cannot simply be transferred into clinical settings. Clinical systems have different safety priorities: while availability matters, **integrity—the correctness and trustworthiness of clinical information—may create the greatest potential for catastrophic harm**. Availability failures are dangerous primarily because they delay care, and the consequences depend heavily on the device and clinical unit involved.
+
+The presentation combines a detailed ransomware case study with findings from a study involving more than 300 clinicians. The study used interviews and surveys because hospital environments are too complex and institution-specific to simulate effectively. The research examines how cyber incidents affect patient care and how security controls interact with clinical workflows.
+
+The case study concerns a 2019 ransomware incident at a hospital in Mobile, Alabama. The hospital shut down its network according to its business-continuity plan. Electronic health records were unavailable, and staff reverted to paper charting. In the labor-and-delivery unit, centralized fetal monitoring was also unavailable. Nurses were placed in patient rooms, but bedside alarms had previously been disabled to reduce alarm fatigue. Staff did not realize that these alarms needed to be re-enabled when the central monitoring system failed.
+
+A patient undergoing an induction subsequently experienced fetal heart-rate decelerations that were visible on the physical monitoring trace but were not effectively communicated to the care team. The infant was delivered unresponsive and later died. Thompson presents this as a case in which ransomware was definitively linked to a patient death, while noting that litigation was ongoing.
+
+The central lesson is that many safeguards functioned as intended: the hospital protected its electronic health records, the IT team followed its continuity plan, the fetal monitor continued to produce a trace, and a nurse was assigned to the room. However, the overall clinical process still failed because the system depended on unavailable communication and alarm functions, and because the cybersecurity incident was not adequately communicated to clinicians.
+
+Thompson identifies several systemic weaknesses:
+
+- Cybersecurity incidents were treated primarily as IT and data-protection events rather than patient-safety events.
+- There was no effective communication channel between security personnel, clinical engineering, and frontline clinicians.
+- The assumed duration of downtime was too short for the actual incident.
+- Dependence on centralized monitoring was not understood until after the failure.
+- Clinicians were not given meaningful information or choice about receiving care in a hospital experiencing ransomware.
+- Business-continuity procedures did not fully account for clinical workflows and human behavior.
+
+The study’s findings indicate that clinicians understand the need for cybersecurity and authentication, but they reject controls that obstruct urgent care. They prefer rapid mechanisms such as badge access and biometrics, particularly when working in protective equipment or under time pressure. The problem is therefore not simply clinician resistance to security; it is a mismatch between the design of controls and the conditions under which care is delivered.
+
+The presentation gives several examples. Two-factor authentication at MRI workstations can be impractical because MRI rooms operate within Faraday cages. In one reported workaround, personnel authenticated outside the room and used tape to keep a mouse clicking. Endpoint security software can also create safety risks: the CrowdStrike outage reportedly caused medical devices to display failure screens or become unusable, requiring reboot procedures, manufacturer involvement, or replacement.
+
+The infusion-pump example illustrates the same design failure from an operational perspective. A unit required one pump per bed, while biomedical engineering periodically collected unused pumps for patching. Because frontline staff lacked clear communication about the process, nurses hid pumps in cabinets to ensure that their unit would not violate its bed-to-pump policy. Thompson uses this behavior as evidence that clinicians will create workarounds when security or maintenance procedures conflict with operational requirements.
+
+The authors’ broader proposal is to develop security controls around actual clinical processes rather than impose generic IT controls. Controls must preserve security while minimizing disruption to care, and security teams must work directly with clinicians, biomedical engineers, and device manufacturers. Thompson also proposes using the medical morbidity-and-mortality framework to analyze ransomware incidents, making cyber-related failures more transparent and connecting them to established patient-safety practices.
+
+# Key technical ideas
+
+1. **Treat cybersecurity as patient safety**  
+   Cyber incidents should be evaluated by their effects on diagnosis, monitoring, treatment, and delays in care—not only by data loss or regulatory reporting.
+
+2. **Prioritize integrity according to clinical risk**  
+   The study suggests that manipulation of clinical information can create more severe harm than simple loss of availability. Clinicians may detect obvious anomalies through clinical judgment, but subtle or AI-assisted manipulation may be harder to recognize.
+
+3. **Model availability failures as care-delivery delays**  
+   Loss of availability is harmful because it removes information, alarms, or device functionality needed to make timely decisions. The impact varies by device type and clinical context.
+
+4. **Design controls for real clinical environments**  
+   Authentication and endpoint controls must account for conditions such as:
+   - Full contact precautions and gloved hands.
+   - Time-critical medication and treatment decisions.
+   - MRI Faraday cages.
+   - Long-lived medical devices running outdated operating systems.
+   - The need for rapid access to patient information.
+
+5. **Avoid blindly copying IT or ICS controls into healthcare**  
+   Controls such as mandatory two-factor authentication or generic endpoint agents may be unsafe or unusable if they do not account for clinical workflows and device constraints.
+
+6. **Recognize workarounds as design feedback**  
+   Hiding infusion pumps or taping a mouse are not merely examples of poor security behavior. They indicate that the control or process conflicts with operational needs. Workarounds should reveal where security design must be changed.
+
+7. **Integrate security, clinical engineering, and frontline communication**  
+   A technically correct maintenance or incident-response process can fail if clinicians do not know what is happening or how their procedures must change during an outage.
+
+8. **Use compensating controls for legacy devices**  
+   Because medical devices have long product life cycles and may run obsolete operating systems, manufacturers and hospitals may need layered or compensating protections while upgrades are developed.
+
+9. **Use empirical clinician research rather than unrealistic simulation**  
+   The study relies on clinician interviews and surveys because hospital configurations and workflows are highly complex and difficult to reproduce in a laboratory or test environment.
+
+10. **Apply morbidity-and-mortality analysis to cyber incidents**  
+    The authors suggest adapting a clinical framework for examining adverse outcomes so that ransomware-related failures can be investigated with greater transparency and connected directly to patient-care consequences.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Right, it's working. So, I want to be
+able to move us on
+so we can get everybody out of here for
+their lunch on time. So, I want to dive
+right in. So, our next talk is going to
+be
+um Dr. Ron Thompson, and he wanted to
+specifically let everybody know where
+there he is.
+Not a medical doctor. He's a PhD in
+computer security and medical devices
+and a big fan of the World Cup as many
+of you probably are following. So, I'm
+going to let him dive right in. He's
+going to be speaking about um nurses are
+hiding infusion pumps in cabinets what
+300
+uh clinicians won't tell your CISO.
+Thank you, Ron.
+>> Perfect. Thank you so much.
+Um
+So, uh thank you all um for having me
+today. Um so, um
+as Stephanie mentioned, uh I am a uh PhD
+in computer security where I focused on
+medical devices. So, why would I show up
+at an industrial control conference to
+to speak? Well, there's a lot of
+different reasons as Josh was alluding
+to.
+Um
+The way that industrial controls affects
+the medical device world is a huge issue
+potentially. And also on top of that is
+that what we actually see that is an
+important thing to recognize is that a
+lot of the recommendations and
+regulations that we are starting to roll
+out from CISA around the cyber security
+performance goals for instance and all
+of those things
+have been carbon copied from your world
+into mine.
+And we are different a little bit, and
+I'm going to show you that today why we
+are a bit different because availability
+is not always number one.
+Integrity is also incredibly important.
+So, with that, um you know, just a quick
+background is as I said, I I focus on
+medical device cyber security. Um I am
+currently now at Philips um where I am a
+security um engineer focusing on patient
+monitoring. Um
+This will be important because I will be
+talking about patient monitoring.
+Um
+And what we want to understand is how
+people and process work and how do we
+improve security around those things.
+So,
+with that, I want to first start off
+with this uh picture. This is a painting
+from the 1800s.
+It shows a doctor looking at a sick
+child trying to evaluate and understand
+what is going on.
+And that is fundamentally what medical
+care is about. It is about a provider
+and a patient, and how do we enable that
+conversation in order to improve their
+care.
+Now, how that actually looks today is
+very different, but that fundamental
+principle still applies, right? So,
+right here you have an interventional uh
+radiology system. Um I've actually had
+surgery on one of these. They're
+incredibly cool.
+It's very amazing what they can do with
+this stuff.
+But,
+we've seen that this technology can
+improve care, but it also means that we
+have now a much larger attack surface in
+the hospital.
+And we saw this play out in the medical
+device world a few months ago, right?
+Stryker
+ended up being a target of Iranian
+hackers. Nation states have said, "Okay,
+we're going to start attacking these
+companies for various different reasons,
+right?"
+But, not just medical device
+manufacturers are getting attacked.
+Hospitals constantly undergoing attacks.
+And what we're seeing, right? These are
+just a few of the events in the last 5 6
+years.
+These are incredibly impactful events
+because when these ransomware events
+hit, patients die.
+So, Josh actually was one of the first
+people to really start to pinpoint this
+when he did some work with the
+University of Vermont Health System,
+um where they looked at excess mortality
+during ransomware events. And this is
+kind of our only proximity to really
+actually understand how ransomware
+affects patients because it's almost
+rarely that a cyber attack is going to
+directly kill someone, but instead it's
+about delaying the care that they need
+to get.
+So, Senator Mark Warner, I put out this
+cyber white paper a few years ago saying
+that cybersecurity is patient safety.
+It's not a question of if or when, but
+how often and how catastrophic.
+So, I want to talk to you and make you
+understand what the catastrophe can
+actually be. We are going to focus
+quickly on a specific case study
+um looking at this. So, this is one
+hospital in rural Alabama, Mobile.
+But before we get into that, I want to
+give some background on some of the
+devices we're going to talk about.
+So first, fetal monitors.
+When a laboring uh woman comes in to uh
+deliver,
+they're going to put a band around the
+belly, and this is meant to actually
+pick up the vital signs of the fetus to
+allow them to understand how labor is
+progressing.
+And so, you can see on the right what
+that actual fetal trace looks like.
+And what they're doing is they're
+actually looking to see
+does this go outside of certain bounds?
+If it does, we are going to change how
+the care is actually performed. We might
+go for an emergency C-section. Keep this
+in your heads.
+So, what does a labor and delivery unit
+actually look like, right? A lot of
+these medical units can be a football
+field in length.
+Nurses are going to be assigned to
+different rooms across that entire
+thing. It's not necessarily depending on
+having people next to each other. It's a
+lot of other functions of how that's
+determined.
+But within each of these rooms,
+there is a patient monitor, this fetal
+monitor, that is talking over the
+network
+to a central nursing station.
+Now, that central nursing station, you
+can see kind of like what the screens
+will look like a little bit on the
+right. Um
+this is going to pick up all that
+information. It provides alerts to the
+clinicians, so that someone can sit
+there and they don't have to actually
+audibly hear the alarms going off in
+each of the patient rooms, which could
+be on the other side of that unit.
+So, instead it's all pushed to the
+central monitoring. A lot of actual
+applications we see now,
+for instance, the device that I work on,
+we have a mobile app that is actually
+given to people as well that alerts
+there as well.
+So, this allows those alarms to not have
+to go off in the patient room and
+causing more distress potentially to the
+patient. Again, keep this in your mind.
+So, now let's dive into the specific
+case. So,
+we're going back to 2019
+in July in Mobile
+and on the 8th, the ransomware strikes.
+What happens? The IT team follows their
+business continuity plan and shuts down
+the network, right? That's what most
+people are taught to do. You shut down
+the network, you just prevent the spread
+of the ransomware because a lot of the
+times what this is doing is it's
+targeting mainly network infrastructure
+at this point. It's not targeting
+endpoints necessarily as much and it's
+definitely not really targeting medical
+devices. They might get caught up in
+this
+when it targets the the network
+infrastructure. So,
+as the nurses come in on a shift change,
+they find that there are sticky notes on
+the
+actual workstations saying the
+electronic health records are down
+and you can have to go back to what's
+called paper charting. If anybody saw
+The Pit this season yet, okay, saw some
+nods,
+you saw what that looks like. It's
+absolute chaos.
+These people are trained in this
+technically, but it is a whole different
+thing to experience that reality.
+So, the next day the hospital issues a
+statement, very generic thing saying
+don't worry about it.
+We're all good. There's just some
+network IT things. It's an IT problem.
+Two days later, they have the quarterly
+obstetrics meeting.
+Want to focus on that word quarterly cuz
+this is a planned meeting. This isn't an
+emergency meeting that they're getting
+together. This happens just to coincide
+during this event.
+You can see all the people who are here,
+but who you can't see are who is not
+there.
+There were no physicians from the
+largest group that actually delivers at
+that unit at that hospital,
+and there was no one from IT. So,
+there's no one actually communicating in
+a technical fashion what's actually
+going on. It's more hearsay.
+And it's more of hey, this isn't working
+correctly. We don't really know what's
+going on. What does that mean for what's
+what's happening?
+So, the central monitoring is actually
+now down for
+the labor and delivery unit. So, that
+central monitor is no longer providing
+alarm functionality.
+So, the hospital
+decides, okay, we're actually going to
+put nurses in each patient room. That's
+a smart idea, right? They're going to
+try to actually monitor the patient and
+see what's going on.
+But nurses are busy. They've got a lot
+to do.
+So, they're not constantly watching that
+trace and seeing what's going on. And
+most notably, as I said, they actually
+had turned off the alarm functionality
+at the bedside because they didn't want
+to have alarm fatigue.
+This is a huge issue in medicine because
+if a patient moves all of a sudden on
+the bed, the bed alarm goes off. If the
+patient all of a sudden takes their um
+SPO2 monitoring, their oxygen off, goes
+alarm. There's all these false alarms
+that happen.
+And that's incredibly hard as a patient
+if you're hearing alarms constantly
+going off. So, what do they do? They
+turn them off in the room.
+But that meant that the nurses didn't
+know that they had to turn them back on
+when
+this system went down.
+So, what does the hospital do? On the
+16th, they issue a new statement. They
+provide a bit more information.
+And they say first and foremost that
+they are going to protect all the data.
+Then they get a little bit into that
+this continues to provide the quality of
+care that they expect and there's no
+impact on patient safety.
+But that first thing is about data
+because that's what we regulate.
+We don't regulate about patient safety
+from a cybersecurity perspective for
+hospitals. We are trying to do this in
+the medical device space, but it's not
+necessarily how we actually think about
+the hospitals themselves.
+So the same day a patient comes in,
+she's been given a diagnosis of what's
+called gestational hypertension, meaning
+that she has high blood pressure due to
+the pregnancy and needs to have an
+induction to actually have
+the birth. But this is a scheduled
+induction, meaning that it can happen
+anywhere.
+Doesn't have to happen at this specific
+hospital. There are other hospitals in
+Mobile. It's just that that's where her
+OB is.
+So she is admitted
+and the her OB is one of those
+physicians who wasn't actually at that
+meeting.
+So she didn't really know what was going
+on. The patient never actually gave
+consent to I am going into a hospital
+with ransomware.
+I want to have my baby here.
+So at the next morning, Pitocin is
+given, which basically is a drug that
+induces labor. It's a very normal thing.
+I want to stress like these are very
+normal operations that's going on.
+At 9:30 though, we start to see what are
+called decelerations. So that's where
+that trace starts to act a bit weird.
+And normally, if that's seen,
+the care team would get together and
+start having conversation about do we
+want to change the course of care?
+Do we want to allow this labor to
+progress naturally or do we want to
+scrub in and go into an OR?
+Pitocin is then discontinued at 10:10.
+Now, that's a normal amount of time to
+actually
+give Pitocin and discontinue it.
+And from everything we've seen,
+the medical staff had no idea what was
+going on. When we We at the
+communication between the nurse and the
+OB
+providing a text message 2 minutes after
+the pitocin was um
+given, it was just saying she's
+progressing well.
+So, they didn't really actually know
+what was going on. They didn't see that
+potential issue.
+So,
+11:23, the infant is then delivered
+unresponsive and sent to a nearby NICU.
+The next day
+the nurse, the nurse manager, and the OB
+decide to debrief. It's a normal thing.
+This went horribly wrong. What can we
+do?
+And so, they said, "Okay.
+Well, let's look at the physical trace."
+So, they went and they pulled the paper
+out of the cabinet and looked at it and
+they saw these decelerations. When the
+nurse manager alerted the OB, she said,
+"I would have C-sectioned her if I'd
+known this."
+So, this is our only evidence
+that ransomware caused this issue.
+And sadly, nearly a year later, that
+infant died.
+And this is our first case of a patient
+death
+that has actually been definitively
+linked to ransomware. It is still
+ongoing in the courts. There's
+litigation out the wazoo about this.
+But this is our really specific case
+that we can see the care that was
+supposed to be given wasn't because of
+the ransomware event.
+And so, why is this important to look
+at? Because a lot of things worked.
+And this is important for us to
+understand even in the broader context
+outside of just the medical space.
+Because the the EHRs, the electronic
+health records, where the medical
+records are kept, which is where again
+HIPAA regulates,
+that was never breached. This does not
+show up in the Office of Civil Rights
+HIPAA Breach Database.
+Medical records were kept safe. The IT
+team followed their business continuity
+plan to the T.
+And the actual devices themselves
+fetal trace still technically worked.
+And a nurse was actually placed in the
+room to observe what was going on.
+But what didn't work?
+Well, this assume that there was to be a
+short downtime event. It wasn't going to
+be multiple weeks.
+That the communication channel to
+actually talk about cybersecurity
+incident didn't occur, didn't exist,
+sorry. There was a Facebook group with
+the nurses talking about this. How do we
+deal with this situation? They weren't
+sure.
+And you know, this this alarm dependency
+was unknown until the network was lost
+and a retrospective had to be done.
+Before that, no one knew that this
+wasn't going to work.
+And the patient was never given a choice
+about receiving care in a ransomed
+hospital.
+So fundamentally, this came down to
+human error.
+And that is what medicine looks to work
+with and what medical device
+manufacturers, what we are trying to
+help with is to say,
+we want to help reduce human errors. We
+want to provide more inputs.
+But when those inputs are all taken
+away,
+the chance of us having those errors
+increases.
+So, as I said, this is one of many cases
+that exist. Lots of them, we just have a
+lot more information because of the
+lawsuits that are going on with this.
+So, one of the things that's important
+why
+we want to think about this case and
+think about the research around this is
+actually to say, hey, this is anecdotal
+evidence. Let's actually start to think
+about this at a systematic level and
+what does this mean for security in
+hospitals?
+So, I have a paper that's coming out at
+USENIX Security, which is later this
+summer in Baltimore.
+Luckily, it used to be coinciding with
+DEF CON. It is not anymore, thankfully.
+The organizers woke up to change that.
+But we are going to be talking about the
+study that we did, actually interviewing
+and surveying clinicians to understand
+how harm can affect patient care and
+what this means because we can't
+effectively simulate this, right? We
+have to actually work with people to
+understand what's going on because
+simulating these incredibly complex
+hospital environments is is near
+impossible. And on top of that, you're
+never going to get a hospital to agree
+to allow you to
+work with their configurations
+because
+they don't know how that stuff is
+configured. The same thing that I'm sure
+everybody that deals with water deals
+with as well or electricity and all
+these other areas.
+So, the study itself kind of here's the
+two research questions that we were
+asking and thinking about. Um I'm going
+to quickly talk through
+the first part around the impacts, but
+then I want to talk a little bit about
+controls cuz I think it's an interesting
+piece of this around how we need to
+think about controls implementation as
+we are developing security solutions.
+It's not as simple as
+let's do what IT does.
+Cuz it's a lot harder in our spaces,
+right?
+So, when we actually look at the effects
+of potential harm based on the types of
+attacks that can occur,
+we actually find that integrity has
+the most potential harm. It is seen to
+cause catastrophic harm if an integrity
+attack occurs.
+Availability is still bad.
+But the reason that that is bad is
+because of the delay of care.
+And it really is going to depend on the
+type of medical device, the type of unit
+that you're looking at, which makes this
+problem all that much harder.
+Because we have to design solutions that
+meet those clinicians wherever they are.
+But what's interesting, right, is the
+likelihood of these things. People think
+integrity attacks are never going to
+happen or I'll catch that.
+Cuz they use this idea called clinical
+gestalt to kind of say, "Okay, I
+understand medicine. This looks weird.
+No one can have a heartbeat of
+500.
+I can catch that." What about these
+more, you know, clever, manipulative
+attacks that we can start to see
+actually occurring with AI-driven
+um attacks. And and we saw actually some
+radiologists um were able to fool other
+radiologists with very coherent-looking
+imaging that was manipulated.
+So, that's why integrity seemed to be
+lower. Confidentiality seemed to be the
+highest because this constantly occurs.
+They leave a computer open. They leave
+notes. They speak to a patient about
+something and someone else overhears.
+That's how they're thinking about
+confidentiality. So, that's why that's
+so much higher. And availability is
+because medical devices fail often,
+unfortunately.
+I wish I could say we are really good at
+what we do, but they do fail.
+And what that means is that they can't
+then give the care that they need to
+give.
+And as I said, kind of like when we
+actually dive in to what that means for
+the specific types of devices, we can
+see the interventions. So, that's your
+infusion pumps, your surgical systems,
+all of those types of things. If those
+go down,
+that is going to cause more harm.
+And interestingly, monitoring is seen as
+the second most harm.
+Because if I don't know what's going on
+with my patient,
+I can't give them the care they need.
+So, how do we secure the clinical
+environment, right?
+We find that actually traditional
+controls that are being suggested by
+HIPAA, for instance, and other areas
+might not necessarily work.
+So, this one clinician told us about
+rolling out 2FA in their hospital,
+including in the MRI endpoints
+workstations.
+Now, an MRI sits in a Faraday cage.
+So, that means that when you're trying
+to sit there and and authenticate off
+the phone, it's not going to work. So,
+what do they do? They have someone go
+outside, authenticate, they put a piece
+of tape on the mouse so that's
+constantly clicking when no one's not
+using it.
+People are smart. They will get around
+these things if we don't design them
+well to understand what their
+environment is. We can't just blanket
+say do this thing.
+Then also this idea of agents, right? We
+hear a lot about okay, I want to deploy
+a rapid 7 IDR. I want to deploy a
+CrowdStrike antivirus. I want to do all
+these different things.
+We get asked this all the time. We're
+constantly having to look at will this
+work on our system.
+What happened to the CrowdStrike blue
+screen of death?
+Right? This bricks medical devices.
+So much so at Mass Gen Brigham,
+they actually in their ICU, their
+monitors, patient monitors, defaulted to
+a screen that showed a
+martini glass and a car
+because it was part of a drunk driving
+awareness campaign that was rolled out
+years and years ago and that was just
+the screen that happened to come on
+when the machine was no longer working.
+So people were like, is this a
+ransomware? What's going on?
+And they had instead go through this
+entire process to reboot these medical
+systems. Many of them were bricked and
+they had to go back to the
+manufacturers, work out how they were
+going to get new devices. And so again,
+just deploying these normal agents
+doesn't always work very effectively.
+Now here's where the the the parts of
+the the the headline of my talk is
+around is what actually happens with
+infosec. How do they communicate to
+clinicians?
+Well, we had one uh critical care APPs,
+uh advanced practice provider, talking
+about how they found out about a
+cybersecurity incident from a patient
+because they worked in IT.
+Oops.
+Didn't tell people about that. Instead
+it just goes around the rumor mill about
+what went on. Can we trust this thing? I
+don't know. No one's told me anything
+about it. Hey, my patient was an IT guy.
+He said it was fine. But like who's
+going to believe that necessarily,
+right?
+We had another uh nurse who talked about
+how she received information but didn't
+actually know what was going on. They
+didn't get any further communication,
+just something happened.
+And most importantly,
+we had a nurse who talked about how
+biomedical engineering who comes and
+does the routine patching and updates
+for infusion pumps,
+how they work. What happens is they come
+around, they grab infusion pumps,
+and they say if it's not being used, we
+grab it, we need to patch it. It's not
+being used.
+But this unit that this nurse works on
+actually has a policy where they say,
+"One bed, one infusion pump,
+no matter what.
+Bed doesn't have to be occupied.
+Infusion pump doesn't need to be in use.
+We will always have an infusion pump."
+So they're getting yelled at by their
+nurse manager cuz they don't have
+infusion pumps. So what do they do? They
+see biomedical engineering coming
+around, they get on the phone, text or
+texting each other, "Hide the pumps."
+They're putting the pumps in the
+cabinets to get around this specific
+issue because there is a lack of
+communication between the IT, clinical
+engineering, and the actual front-line
+clinicians. And I know this is something
+that does affect a lot of the OT space
+as well is not everybody speaks the same
+language. We are trying to learn how to
+speak the same language, but from the
+security side, it's incredibly important
+for us to say, "We need to come meet
+you."
+Cuz we're the ones getting in the way,
+and we need to figure out how we can
+design our controls, design our
+processes to not interrupt your care
+because we know you're going to find a
+way to get around this, whether it's
+hiding your infusion pumps
+in cabinets or it's putting tape on a
+mouse.
+So what's interesting though is some
+people might say,
+"Clinicians, they don't get security.
+They think it's stupid."
+Well, they actually get why it's needed.
+And we see this because in our the
+results of our work, we found that
+actually they said that if there was no
+authentication,
+that would be really bad for care.
+They understand that authentication is
+an important mechanism to have care.
+How do we do that authentication though
+is where they disagree with us.
+They want what's called badge access.
+Again, if you've seen the pit, you will
+see them tapping badges constantly to
+access the electronic health record.
+And what they actually want is to have
+that ability that doesn't interrupt
+their workflows.
+Right? This biometric, I can use my
+finger, I can quickly get into the
+system. That's how they get into a lot
+of medication cabinets through biometric
+authentication.
+But most importantly, the proposed HIPAA
+updates
+will say, "We mandate 2FA is required on
+all systems."
+And it means that badge access will go
+away unless we redesign badge
+authentication to become a two-factor
+form of authentication.
+So, that is up to us in the security
+community to come up with novel security
+controls that meet these regulations,
+but also do not interrupt workflows. And
+it's important for us to then speak to
+regulators and say, "Hey, we can't roll
+this out quite yet. We don't have the
+things in place."
+Because if you take away badge access,
+you're going to have a huge riot on your
+hands.
+And you know,
+we need to understand how these clinical
+environments work, right? We've talked a
+little bit through this of the different
+ways in which they might get around
+things. But again, logging in on a
+keyboard,
+that's pretty easy for us, right?
+Just type in things. It's easy.
+Well, what happens if you're in full
+contact precautions? You've got a gown
+on, gloves, potentially double gloved.
+You've got a mask, you've got a um eye
+coverings.
+You are trying to type on potentially a
+small keyboard
+a a
+that's 16 characters long. And by the
+way you're told to change it 3 months
+ago.
+You're constantly dealing with these
+types of things so they find workarounds
+to it.
+You know, we we see that speed is huge
+part of how they deal with codes and if
+all of a sudden you're fumbling to get
+access to the patient's medical record,
+you might not know that you actually
+could be giving the patient a drug that
+they are allergic to.
+So, with that
+um
+you can see up there. Uh
+big shoutout to the rest of my research
+team. Um so this work was done while I
+was finishing my PhD at Tufts. Um so
+that's why the affiliation's there. Um
+but thank you to MedCrypt as well who's
+a cybersecurity vendor, the NSF and
+ARPA-H through the upgrade program. Um
+so with that I could take hopefully a
+couple of minutes questions.
+Yeah.
+Yeah.
+>> Yeah, so
+the specific device that that I work on,
+we actually use
+a world Windows-based system,
+but I do know a lot of work for instance
+UCSD
+is doing some great work around creating
+embedded new embedded OS that actually
+has secure by design principles built
+into it. So there is a lot of work done
+being done there.
+For the medical device manufacturers, a
+lot of that comes down to threat
+modeling and these other exercises that
+are not necessarily as like technical
+hands-on keyboard pieces that at least
+allow us to give insight into what can
+go wrong and how do we build controls
+around that because as you said MRIs are
+expensive. These things are like the
+stuff that we see
+you know, it's it's running Windows NT
+potentially. It's running, you know,
+Windows 7. These things that are
+completely outdated
+and we do push people to say, "Hey, we
+can update the patches. We have those
+available." Not everybody's able to do
+that for lots of different reasons. So
+it's up to the medical device
+manufacturers come up with what we call
+compensating controls to actually say,
+"Hey, let's put this around to help
+design that." But a lot of work as you
+said needs to be done around this space.
+And unfortunately as you said both for
+ICS and medical
+these are long product life cycles and
+so like how do we actually maybe to
+Josh's whole idea is take those things a
+bit more offline
+while we kind of work towards upgrading
+the security themselves.
+100% agree. And like one of the things
+that we were we've been pushing for is
+to actually use what's called the
+morbidity mortality framework, which is
+used by medicine to actually talk about
+what goes wrong with a patient when a
+patient dies to talk about these
+ransomware events because we have no
+clue of what's going on at all. And so
+if you're interested, let's chat more
+cuz I'm working with a couple docs out
+of San Diego to to think about how this
+might be done
+because it is an incredibly important
+issue to get the information out there
+to be much more transparent. I like to
+think I'm trying to be a bit of an
+insider threat to push my company to be
+more transparent,
+but it's a long process. It's hard
+for an industry that has traditionally
+closed itself off to that.

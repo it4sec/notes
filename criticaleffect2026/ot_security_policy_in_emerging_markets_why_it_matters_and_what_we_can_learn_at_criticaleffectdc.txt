@@ -1,0 +1,1100 @@
+ABOUT
+================================================================================
+Title: OT Security Policy in Emerging Markets: Why It Matters and What We Can Learn at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=G6avEk60jl0
+Video ID: G6avEk60jl0
+Published: 2026-07-28
+Duration: 32:31
+Views: 4
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: OT Security Policy in Emerging Markets: Why It Matters and What We Can Learn
+Track 2: Strategic Effect
+Thursday, June 18, 2026
+
+Emerging market OT security policy is active, distinctive, and consequential for US competitiveness and security. Sheila Casserly (Director of Digital Policy, Americas, Schneider Electric) presents a framework for practitioners and policymakers to use to engage and learn.
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media, facilitating actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# OT Security Policy in Emerging Markets: Why It Matters and What We Can Learn at #CriticalEffectDC
+
+## Authors, credentials, and contacts
+
+- **Presenter/author:** Sheila Casserly  
+  - **Role:** Director of Digital Policy, Americas, Schneider Electric  
+  - **Prior experience:** Worked at the United Nations Development Programme in Istanbul, Turkey, focusing on private-sector development and public-private partnerships in emerging and developing economies.  
+  - **Research focus:** Emerging-market cybersecurity policy, with particular attention to operational technology (OT) security and the electricity sector.  
+  - **Contact details:** No personal email address, telephone number, professional profile, or other direct contact information was provided.
+
+- **Author/channel listed in the About section:** Institute for Security and Technology (IST)  
+  - **Channel:** https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw  
+  - **Video:** https://www.youtube.com/watch?v=G6avEk60jl0  
+  - **IST event information:** https://securityandtechnology.org/event/critical-effect-2026/  
+  - **UnDisruptable27:** https://securityandtechnology.org/undisruptable27/  
+  - **Mailing-list link:** https://mailchi.mp/securityandtechnology/undisruptable27  
+  - **ICS Village:** https://icsvillage.com/
+
+The supplied material does not identify additional co-authors, editors, institutional affiliations beyond those listed above, or direct contact details for Sheila Casserly or IST.
+
+## Summary
+
+The presentation examines how emerging markets are developing OT cybersecurity policies and why these approaches matter to technology providers, infrastructure operators, policymakers, and US competitiveness and security.
+
+Casserly argues that emerging markets face many of the same OT cybersecurity pressures as advanced economies, but that the **scale, pace, and structure** of these pressures are often different. Emerging markets frequently experience rapid infrastructure growth, a larger proportion of greenfield projects, substantial urbanization, expanding digital energy systems, and constrained cybersecurity budgets and skills. These conditions can create both serious risks and opportunities to incorporate security into new infrastructure rather than retrofit legacy systems.
+
+The presentation identifies several forces shaping OT security policy:
+
+- **Supply-chain diversification:** Countries such as India, Vietnam, and Mexico are receiving significant manufacturing and supply-chain investment.
+- **Urbanization and smart-city development:** Governments are deploying digital infrastructure to support urban growth. Examples include Dubai’s replacement of conventional water meters with smart meters and India’s objective of replacing 250 million conventional electricity meters with smart meters.
+- **Energy expansion and grid modernization:** Emerging markets are adding software-defined energy infrastructure, renewable generation, and distributed energy resources. India is presented as a major example, with rapidly increasing electricity consumption and substantial planned non-fossil generation.
+- **AI and data-center investment:** India, Thailand, Malaysia, and Brazil were identified as major recipients of data-center investment.
+- **Resource constraints:** OT cybersecurity skills and budgets are limited, especially where cybersecurity competes with other development priorities.
+- **Geopolitical and sovereignty concerns:** Emerging markets often seek cooperation with multiple major powers while preserving national sovereignty. These concerns influence technology procurement and policymaking.
+
+## Analytical framework
+
+Casserly proposes a four-part framework for evaluating OT cybersecurity policy in emerging markets:
+
+1. **Ease of compliance**
+   - Whether a regulatory framework exists.
+   - How prescriptive it is.
+   - How seriously it is enforced.
+   - The time, effort, and cost needed to comply.
+
+2. **Standards acceptance**
+   - The degree to which policies align with internationally accepted technical standards.
+   - Particular attention is given to the ISA/IEC 62443 family of standards for industrial automation and control-system cybersecurity.
+
+3. **Accessibility to regulators**
+   - Whether companies and other stakeholders can reach relevant authorities and participate in policymaking.
+
+4. **Engagement style**
+   - How regulators communicate, interpret requirements, and involve private-sector participants.
+
+The framework therefore evaluates policy not only as a compliance burden, but also as an environment in which companies and policymakers can shape future requirements.
+
+## Country case studies
+
+### Brazil
+
+Brazil is characterized as having a **low compliance burden and high dialogue value**.
+
+The presentation emphasizes Brazil’s preference for open, transparent policymaking and public-private partnerships. A draft national cybersecurity law reportedly calls for the celebration of public-private partnerships, reflecting the country’s intended approach to cyber governance.
+
+Brazil’s developing digital relationship with the European Union is also highlighted. A data-adequacy agreement and a digital partnership agreement may increase the possibility that elements associated with the EU Cyber Resilience Act will influence future Brazilian regulations. Casserly presents this as an issue for practitioners to monitor and engage with, rather than as an established outcome.
+
+A distinctive feature of Brazil and Latin America more broadly is the role of **development banks**. These institutions are important participants in cybersecurity policy discussions and can serve as channels of influence and engagement that are less prominent in advanced-market policy processes.
+
+Brazil is described as representative of a broader Latin American environment in which OT cybersecurity policy remains relatively **nascent**, creating an opportunity for early engagement.
+
+The presentation also briefly discusses Chile, which adopted a national critical-infrastructure cybersecurity framework in 2024 and selected NERC CIP as a model for electricity-sector cybersecurity. Casserly questions whether that model is well suited to newer distributed and software-defined energy systems.
+
+### Saudi Arabia
+
+Saudi Arabia is presented as having one of the most comprehensive OT cybersecurity regulatory structures among the markets discussed.
+
+Its approach is linked to **Vision 2030**, the country’s plan to diversify and modernize its economy beyond oil. Cybersecurity and domestic cyber capacity are treated as strategic enablers of this transformation. At the same time, the policy environment is highly centralized under the National Cybersecurity Authority.
+
+The regulatory model begins with broadly applicable essential cybersecurity controls, supplemented by additional control sets for areas such as:
+
+- Cloud cybersecurity
+- Data cybersecurity
+- Critical systems
+- Operational technology
+
+ISA/IEC 62443 is described as covering much of the technical distance toward compliance with Saudi OT controls for vendors, system integrators, and asset owners/operators. However, additional requirements extend beyond the technical standard, including requirements related to the employment of Saudi nationals in cybersecurity roles.
+
+The managed-service-provider regime illustrates Saudi Arabia’s emphasis on national control. Licensing requirements reportedly include localization of:
+
+- Data
+- Ownership and headquarters
+- Workforce
+- Security operations center personnel
+
+Licensed providers must also give the Saudi government continuous access to their security operations center. The presentation describes these requirements as highly restrictive, with only four providers having obtained the relevant license at the time discussed.
+
+Saudi Aramco is identified as another important policy actor because of its economic significance. In addition to national requirements, it applies its own controls to vendors, system integrators, components, and systems. These controls are described as largely aligned with ISA/IEC 62443.
+
+### India
+
+India is characterized by **fragmented authorities, complex compliance, and relationship-dependent engagement**.
+
+Unlike Saudi Arabia’s centralized and prescriptive model, India’s cybersecurity responsibilities are distributed across multiple agencies and regulatory bodies. This creates uncertainty about:
+
+- Which requirements are mandatory
+- How different guidelines and regulations interact
+- Which authority should be approached
+- How individual agencies interpret particular terms
+
+Casserly presents direct relationships with officials and agencies as particularly important for understanding the practical meaning of requirements.
+
+A central technical example is India’s pending power-sector cyber regulation, developed by the Central Electricity Authority. The proposal is described as addressing the cybersecurity challenges of a more distributed and software-defined energy system. It includes obligations for OT vendors, system integrators, and asset owners/operators.
+
+The proposal also contains notable **bill-of-materials requirements and guidance**, extending beyond conventional software bills of materials. The material discussed includes:
+
+- Software bills of materials
+- Hardware bills of materials
+- Cryptographic- and quantum-readiness bills of materials
+- AI bills of materials
+
+Casserly does not present these provisions as fully mature or necessarily workable. Instead, she identifies them as useful material for examining how future asset, component, software, AI, and cryptographic dependencies might be represented in cybersecurity governance.
+
+### Indonesia
+
+Indonesia is characterized as **ambiguous**.
+
+The country has critical-infrastructure cybersecurity requirements that reportedly mandate minimum security controls for operators and 24-hour incident reporting to sector-specific computer emergency response teams. However, the presentation states that there was no evidence that the required minimum controls or sector-specific teams had actually been published or established. Consequently, operators and suppliers may have difficulty determining what compliance requires in practice.
+
+Indonesia’s pending cybersecurity and resilience legislation is technically significant because it introduces obligations for manufacturers of products with digital elements. Casserly identifies this as a direct example of language and concepts associated with the EU Cyber Resilience Act appearing in proposed legislation outside Europe.
+
+She describes Indonesia as the only case studied where she observed a relatively literal copy of EU Cyber Resilience Act language. This is contrasted with Brazil, where possible European influence appears more likely to result from ongoing cooperation and a shared interest in product security than from direct copying.
+
+Indonesia’s geography, linguistic diversity, and capacity constraints also make consistent enforcement difficult.
+
+## Technical innovation and authors’ ideas
+
+The main contribution is not a new security protocol or detection technology. Instead, the presentation offers a **policy-analysis method for understanding OT security in emerging markets** and draws attention to technical and governance mechanisms that may become increasingly important.
+
+Its most important ideas are:
+
+1. **Treat emerging markets as distinct policy environments**
+   - The authors reject a one-size-fits-all compliance or engagement strategy.
+   - Emerging markets should not be assumed to be copying US or European approaches in the same way or for the same reasons.
+
+2. **Use ISA/IEC 62443 as a cross-market technical baseline**
+   - The standard is presented as relevant across vendors, system integrators, and asset owners/operators.
+   - Its role varies by country: it is closely related to Saudi requirements, useful in India, and potentially relevant to emerging product-security regimes in Brazil and Indonesia.
+
+3. **Evaluate policy through both compliance and influence**
+   - A framework can be technically sound but difficult to interpret or engage with.
+   - Accessibility to regulators and engagement style are therefore treated as important policy dimensions alongside formal requirements.
+
+4. **Recognize the security implications of greenfield infrastructure**
+   - Rapid deployment of new energy, smart-city, manufacturing, data-center, and AI infrastructure creates an opportunity to build in OT security early.
+   - This differs from approaches focused primarily on securing legacy infrastructure.
+
+5. **Expand bills of materials beyond software**
+   - India’s proposed approach is notable for considering hardware, cryptographic and quantum readiness, and AI-related information.
+   - Even if parts of the guidance are difficult to implement, it provides a basis for thinking about broader system dependencies and future security requirements.
+
+6. **Link product security to infrastructure security**
+   - Brazil and Indonesia illustrate the emergence of requirements for products with digital elements.
+   - The presentation connects the security of products and components to the resilience of the infrastructure in which they are deployed.
+
+7. **Include non-state and non-national actors in the policy analysis**
+   - Large companies such as Saudi Aramco and multilateral development banks can influence OT security requirements and investment decisions.
+   - National regulators are therefore not the only relevant policy actors.
+
+8. **Use commercial diplomacy and development finance as security levers**
+   - The presentation recommends incorporating OT security into US trade, commercial diplomacy, procurement, capacity-building, and development-bank activities.
+   - This is especially relevant to new AI and energy infrastructure, where OT systems provide the underlying operational foundation.
+
+## Key technical ideas
+
+- **ISA/IEC 62443 as a portable baseline:** A common technical reference can support engagement across diverse national regimes, although local legal, workforce, localization, and sovereignty requirements may extend beyond it.
+- **Security for software-defined and distributed energy:** Emerging energy systems require governance models that account for distributed energy resources, renewable generation, software-defined control, and changing ownership structures.
+- **Broader bills of materials:** Security inventories may need to cover software, hardware, cryptographic posture, quantum readiness, and AI components or dependencies.
+- **Product security for digitally enabled devices:** Requirements for manufacturers of products with digital elements can connect supplier obligations to infrastructure cybersecurity.
+- **Compliance interpretability as a technical-operational issue:** Ambiguous or fragmented regulations can make it difficult for operators and suppliers to determine which controls, reporting duties, and assurance activities are actually required.
+- **Localization as part of OT security governance:** In Saudi Arabia, data location, ownership, workforce composition, and government access to security operations are integrated into the cybersecurity regime.
+- **Greenfield security opportunities:** New infrastructure investment offers opportunities to embed OT security requirements during design, procurement, and deployment rather than relying only on retrofitted controls.
+- **Multi-actor governance:** Development banks, major infrastructure companies, system integrators, vendors, and national regulators all influence the practical security baseline.
+
+## Overall assessment
+
+The presentation’s central technical-policy insight is that OT security in emerging markets cannot be understood solely through the presence or absence of national regulations. Effective analysis must also consider infrastructure growth patterns, standards alignment, institutional fragmentation, enforcement capacity, regulator accessibility, development finance, corporate influence, and national sovereignty objectives.
+
+Casserly’s recommended approach is to engage early, use ISA/IEC 62443 where applicable as a common technical foundation, examine emerging approaches such as expanded bills of materials, and tailor compliance and policy-engagement strategies to each market rather than exporting a single US or European model.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+All right, hello and good morning
+everyone. Thank you for being here. I
+realize I'm the final presentation uh
+final solo presentation of the day, so I
+aim and aspire to keep this nice and
+bright and energetic and
+forward-looking, thought-provoking.
+Uh that is my aspiration.
+So, we're going to step outside of the
+US and we're also going to step outside
+some of the main
+countries and regions that we usually
+talk about when we're talking about
+cybersecurity policy, OT security
+regulations outside of the
+uh the countries that we see co-sealing
+guidance that Matt spends his time
+working on.
+Uh and we're going to look at emerging
+markets and explore what kind of OT
+cyber governance frameworks and policies
+emerging markets have in place to the
+extent they have them in place. Uh
+By way of brief background on me, I'm
+Sheila Castorline. I'm the director of
+digital policy for the Americas at
+Schneider Electric. Before I joined
+Schneider Electric almost 4 years ago, I
+was working at the United Nations
+Development Program in Istanbul, Turkey.
+Um I was focused on private sector
+development and public-private
+partnerships.
+Um so, working in a lot of emerging and
+developing economies.
+Uh and as I got into kind of the Latin
+American part of my portfolio at
+Schneider Electric as Brazil especial
+especially started to take off in cyber
+policy making, uh I noticed that the way
+people are talking about and framing
+cyber policy um that I had, you know,
+learned about from working in DC
+um was very different once I went to
+Brazil and it took me back to my
+international development background.
+And that's kind of what started this
+stream of um
+research on emerging market security
+policy.
+So, with that, um you know, I'm going to
+do a bit of country country
+country-by-country analysis of four
+emerging market case studies. And uh Uh,
+I want to set the context for emerging
+markets by just briefly exploring a
+couple trends that um are driving OT
+security policy, risk, and investment in
+emerging markets.
+Uh, so
+you will notice that many of these
+trends um
+that are are driving risk and investment
+in OT security in emerging markets are
+also trends driving risk and security
+investment in the United States and in
+other advanced economies. Uh, so the
+thing to think about in the emerging
+market context is a
+uh
+you know, a difference in scale, pace,
+and often a much um
+uh higher share of greenfield projects,
+especially in the infrastructure trends.
+Um, yes, there's legacy infrastructure
+also in emerging markets, but in many
+cases there's a lot higher share of net
+new infrastructure
+that we're that we're talking about.
+Oh, not there yet. Um, just a yeah, a
+few statistics to to to run through
+these and and illustrate these trends in
+emerging markets. Um,
+so supply chain diversification is
+having a really outsized impact on
+emerging markets. So, countries like
+India, Vietnam, Mexico are really um,
+you know, experiencing the the the boom
+of of manufacturing and and um supply
+chain diversification investment.
+Um
+we also have a big trend of urbanization
+and smart cities in emerging markets.
+Populations are uh
+moving to the city for economic
+opportunity and governments of emerging
+markets are
+um, you know, they want to facilitate
+sustainable urban growth through the use
+and deployment of digital technologies.
+Um, we have a couple examples, like
+Dubai has already completed its 100% um
+revamp of its smart water of water
+metering, replacing them with smart
+water meters. India also has uh a goal
+that it's pursuing to um replace 250
+million electric conventional
+electricity meters with smart
+electricity meters over the coming years
+in in cities across India.
+Energy infrastructure expansion and grid
+modernization
+the the last presentation set that up
+well those trends toward more software
+defined energy infrastructure
+distributed energy resource
+are
+yeah, they're happening all over the
+world but really really high share of
+renewables and distributed energy
+resources in emerging markets.
+Um
+Yeah, I I mean India is another great
+example of that. India alone is on track
+to add 570 terawatt hours of electricity
+consumption annually in the next 5 years
+and that is happening in parallel with a
+goal that India has
+building I think 200 what was 270
+or sorry 500 500 gigawatts of non-fossil
+fuel generated
+electricity.
+Uh
+in the next in the next 5 years. It's
+already well on its way to doing that
+but just to show you know that huge
+growth in electricity consumption
+alongside a real prioritization of
+distributed energy resources
+particularly coming from solar and wind
+in India.
+Uh that also feeds into AI
+emerging markets are no different in
+wanting to reap the benefits of of AI
+and they're seeking the the compute and
+data centers to do so.
+Last year India, Thailand, Malaysia and
+Brazil especially Brazil
+were all among the top 10 recipients of
+data center investment.
+Um so yeah, we see that trend really
+playing out there as well.
+Um
+resource constraints this is both in
+terms of OT cyber skills as well as
+budgets. Um, OT cyber skills shortages,
+you know, plague everyone. We have the
+same skill shortage here in the US, but
+again, just the uh
+it's an especially pronounced problem in
+in emerging markets, and that also goes
+for budget constraints. We have, you
+know, some few lucky exceptions in in
+high-income emerging economies like uh
+Saudi Arabia and UAE, but generally, um
+these are of course markets that have
+really constrained budgets at that are
+spread across lots of different
+development priorities. Um, putting a
+further damper
+uh on um on OT security capacity.
+And then lastly, uh geopolitics, of
+course, as as uh security practitioners
+and policy makers, um geopolitics is top
+of mind for for everyone, but it they
+kind of manifest in a unique way in
+emerging markets.
+Uh you'll sometimes hear the term global
+swing states applied to emerging
+markets, you know, reflecting how
+emerging markets do not want to be
+beholden
+to great power competition, and they
+want to uh again reap reap the benefits
+of cooperation with everyone in a way
+that um advances their own unique
+development and sovereignty goals. And
+sovereignty is another thing that is
+alive and well, and I kind of bucket
+within geopolitics. We hear it a lot
+coming from the European context, but it
+is uh
+yes, again, alive and well in emerging
+markets, Indo-Pacific, Latin America,
+growing theme.
+And that of course impacts um what these
+governments are what technology they're
+willing to buy, um which stakeholders
+they're listening to as they're
+developing policy.
+So, uh I I have when I started my uh the
+the lighting
+um
+turned out a little oddly here, but uh I
+in order to to dig into
+uh how a few different case study
+markets are um
+approaching OT cybersecurity policy, I I
+use this kind of simple four-part
+framework. Um, I first started with ease
+of compliance when I looked at uh, my my
+case study emerging markets, I asked
+first, "Okay, is there a uh, is there a
+regulatory framework in place at all?"
+Um, if so, how difficult is it to comply
+with? How uh, serious is enforcement?
+Uh, how much time, effort, money is
+required to comply?
+I also looked at standards acceptance,
+um, to what extent does their policy or
+regulatory framework align with
+internationally uh, or international
+consensus-based technical standards? And
+because of the importance of the ISA IEC
+62443 suite of standards to the OT
+cybersecurity community, uh, I I gave a
+kind of particular um, lens on on that
+standard just for anyone who might not
+be aware that is a
+uh,
+a
+a [clears throat] standard cybersecurity
+standard for a a suite of standards for
+uh, cybersecurity of industrial and
+automation control systems.
+Uh, there are subcomponents that cover
+everything from um, you know,
+requirements with standards for for
+manufacturers like Schneider Electric,
+um,
+as well as substandards for system
+integrators and for asset owner
+operators themselves.
+Uh, and then I I got into these last two
+metrics uh, of accessibility to
+regulators and engagement style cuz um,
+beyond compliance we also want to be
+able to shape and influence policy and
+regulations even if it's already in
+place, especially if it's not in place.
+Uh,
+we want to be able to participate in the
+policymaking process and offer our
+perspective. So, I also added these two
+dimensions
+in my assessment of uh, emerging market
+policy. So, let's get into four
+different case studies of uh,
+yeah, OT security policy in a few
+markets. We're going to look at Brazil,
+Saudi Arabia, India, and Indonesia. I
+chose these markets cuz they represent
+geographic diversity, regional influence
+in their own right. Um, they're all
+economically significant places where
+multinationals are certainly doing
+business and probably have large
+operations and manufacturing.
+Um, and they also represent a range of
+approaches to OT cyber policy making.
+So, presented an interesting, um,
+array of possibilities.
+So, firstly, Brazil. I uh, I won't cover
+every single detail. You can read
+through the slides later and happy to
+talk through any of them, but there are
+a few things for each of the countries
+that I want to hone in on. Um, for
+Brazil, it is, yes, it's characterized
+by a low burden and a high dialogue
+value. I think it's captured really
+well, uh, by a single phrase in, uh,
+in a in the draft, uh, national
+cybersecurity
+legislation that's currently working its
+way through the Brazilian Senate.
+The the statutory draft text, uh, calls
+directly for a celebration of
+public-private partnerships.
+Uh, and I think that captures absolutely
+the Brazilian spirit and it also
+captures truly what they want to do with
+cyber policy making. They want to
+develop this,
+um, openly, transparently, in, uh, deep
+partnership with everyone. And, uh, that
+is they also, you know, aspire to having
+a
+regulatory framework that is easy to
+comply with. Um,
+and and, uh, yes, open open for
+dialogue. Um,
+the thing I want to point out about that
+new, uh, legal framework that's again
+still in draft right now, um,
+is that, uh,
+yeah, kind of put it against the
+backdrop of some emerging and developing
+cooperation between EU and Brazil,
+especially or even just this year EU and
+Brazil
+penned a
+data adequacy agreement and then just
+within the last week, within the last
+few days,
+they also signed a digital partnership
+agreement. So, leveling up their their
+cooperation on digital to a much more
+strategic level. Um, and I I really
+would not be surprised to see elements
+of
+maybe many elements of the European
+Union's cyber resilience act appear in
+the follow-on regulations that that come
+out of Brazil's
+regulatory framework. So, one thing to
+pay attention to and certainly to get
+engaged with if that worries you at all.
+Um,
+the other thing I want to point out for
+Brazil is the importance of development
+banks. That applies not only to Well,
+that you know, it applies broadly to to
+emerging and developing economies.
+But, Brazil is When you go to any, you
+know, cyber policy conversation in
+Brazil
+and in Latin America broadly, you will
+always find many people from development
+banks there.
+That is a kind of
+particularly for emerging markets, a
+source of influence and engagement.
+I think the battery's
+low on that.
+Source of influence and Is it working?
+Okay, it's working.
+Um,
+a source of influence and
+an engagement that you Yeah, of course,
+don't really work with or engage with
+when you're talking about advanced
+markets.
+Um,
+and then and then lastly, just So, I
+chose Brazil as a representative example
+of of Latin America.
+Nascent is the the name of the the game
+in Latin America, Latin American cyber
+policy and certainly OT cyber policy.
+So, it's a really great time to go get
+engaged in Latin America. Um there is
+one exception that is Chile. Chile
+passed a national cyber framework law
+for critical infrastructure in 2024 and
+I think the the main thing I'd like to
+point out about the Chilean framework is
+they have for their electricity sector
+uh chosen to adopt NERC CIP as their
+model for electricity sector
+cybersecurity in Chile.
+I don't know for reasons that we saw in
+the last presentation, um that that's a
+a model that we
+necessarily, I mean certainly as
+practitioners, but in general want to
+see uh proliferate in its current form
+considering the new energy um technology
+landscape. Uh but just as a yeah, I I
+give that as an interesting illustration
+of um yeah,
+which models companies or countries are
+are looking to when they're developing
+their OT cyber frameworks.
+Let's move on to
+a much different picture. That is Saudi
+Arabia.
+I think Saudi Arabia is
+uh a very interesting model to study in
+depth. It is not only one of the most
+comprehensive OT security uh it not only
+has one of the most comprehensive OT
+regulatory stacks
+uh of of any of these markets that we're
+looking at today, but but really in
+general in the world. Um I
+for Saudi Arabia, I think it's important
+to to put it in perspective of what's
+driving that. Um Saudi Arabia has this
+Vision 2030, which is very it's very
+ambitious plan to modernize and
+diversify its economy off of oil and
+develop sectors like technology,
+tourism, and renewable energy. And Saudi
+Arabia sees cybersecurity and domestic
+cybersecurity capacity as central
+strategic enablers of achieving that
+vision
+while maintaining centralized control
+and that is another
+critical feature of
+uh of Saudi Arabia and Saudi Arabian
+cyber policy and OT cyber policy. It is
+centralized under the National
+Cybersecurity Authority NCA. Everything
+related to cybersecurity uh regulation
+and enforcement stems from
+uh NCA.
+The the regulatory stack starts with the
+essential controls. Everyone operating
+in in Saudi Arabia is required to comply
+with these and then kind of depending on
+uh what type of service or product
+you're offering, you have additional uh
+lists of of security controls that you
+layer on top of these essential
+cybersecurity controls. So, there's
+cloud cybersecurity controls, data
+cybersecurity controls, uh critical
+systems uh security controls like
+national security systems, and then
+there's OT cybersecurity controls. The
+OT cybersecurity controls uh when I when
+I apply the standards acceptance
+assessment, um
+it's
+a it goes for 62443 takes you quite a
+bit of the distance toward compliance
+with uh
+with the operational technology cyber
+controls in Saudi Arabia, but there are
+some unique considerations that uh
+are beyond the technical controls that
+62443 um will will provide. So, there
+are some kind of uh yeah, cultural uh
+controls like having a minimum number of
+Saudi nationals in cyber roles in Saudi
+Arabia.
+Um
+yeah, so but still for the most part
+62443 does does help you get quite a bit
+of the distance both as an OT vendor uh
+OT system integrator and OT owner
+operator.
+Um
+one other thing in in Saudi that's
+interesting to look at is this
+regulatory framework for uh managed
+service providers. Uh
+and this is where you see, you know,
+related to that centralized control and
+and Saudi's vision of cybersecurity as a
+strategic enabler.
+Um,
+there is a uh, there's a licensing
+requirement for managed service
+providers that requires
+localization of pretty much everything.
+You have to localize data, localize
+ownership and headquarters, localize
+your workforce.
+Uh, there are some Saudization rules
+that require or mandate a specific
+number of Saudi nationals work as
+analysts in your SOC. And then on top of
+that, there is a requirement that the
+Saudi government has 24/7 access to your
+SOC. So, these are pretty much, you
+know, by design prohibitive rules that
+Saudi has in place that really only
+allow for a very, you know, select
+handful of Saudi managed service
+providers to operate. And indeed, there
+are only four that have uh, achieved
+this or, you know,
+received this license. And two that
+really uh, yeah, are are are, you know,
+taking the the lion's share of uh,
+managed security services work in Saudi
+Arabia. One of them is essentially the
+commercial arm of the National
+Cybersecurity Authority uh, in uh, in
+Saudi Arabia. And the other one is
+Cyberani, which is the
+uh, managed service provider arm of
+Saudi Aramco.
+And Saudi Aramco also makes the list
+here, although it's of course a uh,
+company. It makes the list of national
+regulations just by nature of its sheer
+size and importance to the Saudi
+economy. It accounts for about 40% of
+Saudi Arabia's GDP. And it has its own
+set of standards on in addition to the
+national standards uh, required by Saudi
+Arabia, there are uh, Saudi Aramco has
+its own additional set of controls. And
+there you do find in their controls for
+uh, system integrators and for vendors
+and for the components and systems that
+they're actually uh, procuring. They do
+a lot They do align largely to 62443.
+So, we from the from the Saudi Aramco
+perspective, we see it kind of higher
+I'd give it a higher level of standards
+acceptance.
+All right, let's move on to
+our next market. And please give me a
+time check if I'm
+5 minutes, okay, great.
+Uh
+so, India's fascinating. I had the
+opportunity to spend 5 weeks in India on
+a research fellowship this spring
+uh researching Indian cyber policy,
+particularly for the electricity sector.
+And my honest takeaway was that after 5
+weeks I
+was more confused about cyber policy in
+India than when I arrived. And I think
+that is an absolutely apt learning and
+takeaway. That is the reality of
+well, India in so many ways in Indian
+cyber policy, certainly. One of the
+things that makes ease of compliance low
+in India, it's not like Saudi Arabia
+where, you know, it's comprehensive
+regime that's highly prescriptive. Said
+authorities are so fragmented across
+different uh agencies and regulatory
+bodies. Um it can be very hard to just
+keep up with all of them and understand,
+you know, which one, you know, are
+guidelines mandatory even though they're
+guidelines and they're referred to in
+another regulation by another regulator.
+Um there's sometimes interlinkages,
+sometimes not at all. Uh and knowing who
+to address, who to talk to to understand
+these things can be difficult, which is
+an important feature of engagement style
+in India. Having an individual
+relationship is
+uh pretty much necessary to understand,
+you know, what a word means when it's
+said by that individual in that agency.
+Uh
+two interesting cases specific to the
+regulations in India,
+um also great background in the last
+presentation on that. The
+um Indian Central Electricity Authority
+uh the electricity sector regulator in
+India has drafted a power sector cyber
+regulation, still pending.
+Um
+but it addresses a lot of the problems
+that the last presentation
+uh raised about uh
+how like NERC CIP as an example or how
+the authorities we have in the US are
+are um
+it's it's difficult with how things are
+set up and with the new distributed
+nature or software-defined nature of
+energy technology
+to uh
+to to have a governance framework for
+the cybersecurity of that technology.
+Not saying this is, you know, a perfect
+rule, but it does address a modern
+energy landscape getting down to much
+more digital software-defined energy uh
+technology. It calls for
+uh S-BOMs in yeah, there are obligations
+for both energy uh OT vendors as well as
+for asset owner-operators and system
+integrators. Um the the S-BOM guidance
+that and that, you know, S-BOMs that are
+mandated by the cyber rule and the the
+accompanying corresponding guidelines, I
+think, are pretty interesting to look at
+as well. Um cuz it is not only a
+software bill of materials that uh that
+India has has published guidelines on,
+uh but their guidelines go further to
+address hardware bill of materials,
+crypto and quantum readiness bill of
+materials, and AI bill of materials. And
+I just, you know, I know there was the
+uh update to the minimum elements of an
+S-BOM here in the US late last year um
+that, you know, had a had a short
+paragraph addressing the fact that maybe
+in future iterations of that guidance um
+we'll want to look at AI and and maybe
+some fields
+uh that are going to be necessary to
+address um you know, AI in a BOM.
+Not endorsing this as great guidance and
+in some ways I from for what I hear
+about people who uh from people who, you
+know, are are greater at bomb experts
+than myself certainly.
+Um a lot of it can be unworkable, but
+the fact that they went forward with it
+and put something out there, I think
+still provides good food for thought at
+anyone who's interested in the bomb
+space.
+I I I think it is worth looking at and
+as seeing if there are some things that
+we can take away um and just think about
+in a in a different way.
+I'll close on my last country market or
+my last country case study
+uh that is Indonesia. And I think the
+the key things that I want to say about
+Indonesia are
+um firstly that it is
+it can be characterized in one word and
+that is ambiguous.
+Uh it has
+critical infrastructure cybersecurity
+regulations in place.
+Um it it mandates minimum security
+controls for owner-operators of critical
+infrastructure and requires 24-hour
+incident reporting to sector-specific
+CERTs. But uh
+to date, there's no evidence that these
+minimum security controls have been
+published or exist or that their
+corresponding sector-specific CERTs
+exist. Uh so, you know, what is actually
+expected of owner-operators
+um and their suppliers to comply is is
+very unclear.
+Uh
+the other part of this lot I want to
+point out is a pending cybersecurity and
+resilience bill in Indonesia.
+And this is interesting because
+uh it introduces obligations for
+manufacturers of
+products with digital elements. So, for
+students of the EU cyber resilience act,
+you'll know that products with digital
+elements is the the foundation of that
+very impactful, consequential law. So,
+um we see now the second case that we
+haven't seen it concretely in Brazil, um
+but again, it looks like it's
+potentially going in that direction. And
+here it is very concretely
+um in in Indonesia pulling from inspired
+by EU CCRA.
+Uh
+given the again ambiguous landscape in
+Indonesia
+uh and just general capacity
+constraints, geographic constraints, you
+know, it's a nation of
+thousands of islands and 700 plus
+languages. Um so enforcement is
+difficult uh by any one standard of of
+any one standards and even for the most
+mature cyber agencies and enforcement
+authorities.
+Uh
+but just to to see that kind of
+appearing um is something to pay
+attention to.
+So I will close here after our
+exploration of different regimes with uh
+just a few reminders and
+recommendations. These pertain to both
+practitioners and policy makers and um
+yeah, I will flush these policy
+recommendations out certainly into uh
+more detail, but these are just some
+high-level things to think about. We saw
+that um in emerging market single
+emerging market compliance and
+engagement uh
+influence strategy is not necessarily
+going to be effective.
+These are are all uh countries with
+different priorities and motivations and
+of course authorities.
+Uh
+so, you know, looking at them as um you
+know, disparate uh markets which they
+are not necessarily just uh copying from
+US or EU is important. And you know, I
+gave a few examples too is there
+something here in the US that we could
+could you know, take a look at when we
+look elsewhere. Looking at the bomb
+guidance of Saudi Arabia's
+um you know, efforts to to build its
+domestic uh cyber security industry just
+in studying these different frameworks.
+I I think um again, it's just
+thought-provoking for what might be
+effective uh or not here in the US.
+Looking beyond national regular national
+regulations and regulators uh we saw
+examples of you know, large companies
+like Aramco and a multinational
+multilateral development banks,
+multilateral institutions having an
+impact. That's something from the US
+perspective. These last recommendations
+really get more into kind of foreign
+policy and diplomacy recommendations,
+but
+you know, influencing our leveraging US
+influence in multilateral development
+banks
+to drive OT security controls in in
+procurement and policy and capacity
+building in the countries where we are
+giving money. Lastly or well, the second
+to last one on 62443, we saw that it you
+know, it it means something in Saudi
+Arabia.
+It does mean something in the power
+sector rules in India, which I didn't
+address, but
+and then also for you know, Brazil and
+Indonesia that are going in the
+direction of CRA 62443 is quite aligned
+with CRA or it's also moving in that
+direction in the standardization. So,
+this is still a strong baseline and
+something that for US we can can
+resource engagement around
+when engaging abroad and that's related
+to the last and final point.
+Although there are some regulatory
+frameworks already in place
+in a couple of the example markets I
+mentioned, there's still a window to
+shape frameworks across much of the
+emerging and certainly developing world.
+So, a good opportunity for for
+practitioners and and you know, policy
+teams to get involved and for the US
+itself to we're in an era of commercial
+diplomacy especially prioritizing AI
+infrastructure build out. OT and the
+underlying infrastructure of course will
+enable
+you know, a sustainable resilient AI
+infrastructure system where we want to
+sell it and also supports our goal of
+being trusted technology partners. So,
+incorporating OT security into that
+trade and commercial diplomacy tools is
+going to be to our benefit. So, final
+point is go get engaged.
+>> All right.
+Thank you very much. Any questions? Any
+questions? All right.
+>> Hey Shira, great talk as always.
+>> Thank you.
+>> I'm I'm curious, you know, you mentioned
+Indonesia, they were using the CRA
+language in there. As you were looking
+at all these other case studies, was
+there any sign that like
+it felt like people were copying and
+pasting CRA and tweaking, trying to
+intentionally align with Europe to kind
+of get the market benefit, or did it
+feel like people are kind of maybe
+naturally landing on the same
+conclusions or copying here, but really
+adding a bunch? Right? How does that
+relationship work with the big players
+in the emerging markets?
+>> Yeah, so Indonesia was the only
+case study that I have seen, and I have
+explored others beyond these markets
+that I highlighted here. But it's the
+only market that I've seen where it puts
+in that literal quite a literal, you
+know, copy-paste
+of of CRA into some of its own proposed
+legislation and and regulation. Uh
+in in the case of Indonesia, it's like
+hey,
+that's an advanced market doing
+something about this, and we will copy
+that because that is that that's that's
+what an advanced market is doing,
+honestly. For Brazil,
+while they haven't
+you know, explicitly called out CRA
+anywhere CRA anywhere, just again
+looking at that kind of the there's been
+a long-standing trend of EU-Brazil
+cooperation and growing trend. And I
+just I can I can see that leading to
+CRA.
+And for Brazil,
+I I think it's it's in a more it's not
+necessarily
+Yeah, that from a a copy-paste
+perspective, but rather really trying to
+get it right and seeing product security
+as critical to
+cyber security of infrastructure.
+So not necessarily copy pasting it, but
+I think especially after the
+standardization is complete
+and seeing how things shake out.
+Yeah, Brazil still a few years away from
+actually instituting anything. I think
+they're really watching they're watching
+CRA closely because they see it as you
+know,
+achieving this some of the same outcomes
+they want to achieve, but it's not
+necessarily just because they're copying
+it copy paste. Exactly. Exactly. Yeah.
+>> Any other questions?
+I have one for you. So
+are those the right case studies to
+consider or should like Taiwan or maybe
+even Philippines given given the threat
+actor of concern
+is Taiwan or the Philippines or somebody
+who's actually actively being targeted
+by China?
+>> Sure.
+>> A better case study.
+>> I appreciate that question. I
+Philippines I don't know I have not
+looked at the Filipino case study or
+what they're doing in terms of OT
+security. So I will.
+>> Taiwan clearly is.
+>> Taiwan I guess the reason I yeah,
+I'm happy nobody asked this question I
+also purposely didn't like define
+emerging markets, but I
+I was trying to keep this on on um
+more of a
+development kind of from a development
+social and economic development
+level and lens what is happening with OT
+security in that respect as opposed to
+development of
+the OT security and security frameworks
+themselves. So I guess like Taiwan I
+didn't address cuz I don't necessarily
+bucket it as an emerging market. Um, but
+all of this is fluid and flexible and to
+some extent, but I like the Philippines
+case study. So I'll look at that.
+>> Any

@@ -1,0 +1,1061 @@
+ABOUT
+================================================================================
+Title: When YOU are your worst nightmare: Thinking Like an Adversary in an OT Environment #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=F_s4l09Mt18
+Video ID: F_s4l09Mt18
+Published: 2026-07-27
+Duration: 32:41
+Views: 5
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: When YOU are your worst nightmare: Thinking Like an Adversary in an OT Environment
+Track 2: Strategic Effect
+Wednesday, June 17, 2026
+
+Andrew Krapf (Director of Cybersecurity, Loudoun Water) challenges his audience to apply their knowledge of OT systems to realize what could happen when adequate Prevention, Detection, Isolation, and Recovery abilities are not present. Although fictitious in nature, the conversation will highlight the need to engage in a consequence-driven, risk-based thought exercise and how they would respond. The goal is to show that a knowledgeable adversary is not just an abstract concept. 
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media, facilitating actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**When YOU are your worst nightmare: Thinking Like an Adversary in an OT Environment #CriticalEffectDC**
+
+## Author and credentials
+The presentation is delivered by **Andrew Krapf**. The supplied material identifies him as:
+
+- **Director of Cybersecurity, Loudoun Water**
+- Former **Director of OT at Loudoun Water**, a position he held until approximately three weeks before the presentation
+- Responsible for cybersecurity at a water and wastewater utility serving approximately **350,000 people**
+- Works for a utility that supplies water to data centers in the area described as “data center alley,” characterized in the transcript as the world’s largest concentration of data centers
+- Current **co-chair of the Water ISAC Cybersecurity Advisory Committee**
+- Approximately **25 years of involvement in the OT community**
+- Previously spent roughly **two and a half decades growing Loudoun Water’s OT program**
+
+The About section identifies the channel or presenting organization as the **Institute for Security and Technology (IST)**.
+
+## Affiliations and contacts provided
+No personal email address, telephone number, personal website, or direct contact information for Andrew Krapf was provided.
+
+The following organizational and media links were supplied:
+
+- **Institute for Security and Technology channel:**  
+  https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+- **Video:**  
+  https://www.youtube.com/watch?v=F_s4l09Mt18
+- **Critical Effect 2026 event:**  
+  https://securityandtechnology.org/event/critical-effect-2026/
+- **ICS Village:**  
+  https://icsvillage.com/
+- **UnDisruptable27:**  
+  https://securityandtechnology.org/undisruptable27/
+- **UnDisruptable27 mailing list:**  
+  https://mailchi.mp/securityandtechnology/undisruptable27
+
+## Overview
+
+Krapf presents a consequence-driven way of analyzing operational technology security: defenders should ask what would happen if an adversary understood their OT environment as well as—or better than—their own process engineers, PLC and SCADA programmers, and OT systems administrators.
+
+The presentation uses a fictitious scenario to make the threat concrete. Rather than focusing primarily on conventional defensive controls, Krapf asks the audience to adopt an adversary’s perspective:
+
+- Could a knowledgeable attacker remain undetected?
+- Could defenders distinguish malicious activity from normal OT operations?
+- Could the attacker manipulate physical processes without immediately disrupting the network?
+- Would existing Prevention, Detection, Isolation, and Recovery capabilities limit the consequences?
+
+The central argument is that **visibility is necessary but not sufficient**. Visibility should be treated as a gateway to security operations, not as a complete solution. Organizations may become complacent after deploying monitoring tools, assuming that the ability to see systems means they can understand, detect, and stop sophisticated activity.
+
+Krapf connects attacker behavior to the knowledge held by OT personnel. Process engineers understand dependencies, interlocks, and operational tolerances; PLC and SCADA programmers understand control logic and configurations; and OT administrators understand networks, communications, servers, workstations, and firewalls. A capable adversary seeks to acquire the same knowledge through long-term reconnaissance, credential theft, supply-chain access, and “living off the land.”
+
+The presentation emphasizes that OT attacks should be evaluated by their potential **physical and operational consequences**, not merely by whether an attacker can penetrate a network. Possible consequences discussed include mechanical damage, pressure or thermal events, chemical-process disruption, manipulation of safety systems, and gradual degradation that may not trigger conventional code-change detection.
+
+Krapf concludes with a defense strategy based on understanding critical processes, controlling access by people and devices, detecting abnormal behavior, limiting third-party exposure, and applying cyber-informed engineering to reduce the physical effects of cyber manipulation.
+
+# Key technical ideas
+
+## 1. Think like an adversary with equivalent OT knowledge
+
+The core analytical exercise is to assume that an adversary has detailed knowledge of the environment, including:
+
+- Process dependencies and interlocks
+- PLC and SCADA configurations
+- Operator workflows
+- Network and communications architecture
+- Safety thresholds and tolerances
+- Remote-access paths
+- Critical equipment and process bottlenecks
+
+This reframes security from “Can we detect an intrusion?” to “What could a knowledgeable intruder do while appearing to operate normally?”
+
+## 2. Visibility is a gateway, not a solution
+
+Krapf challenges the assumption that monitoring and asset visibility automatically resolve OT security problems. Visibility must be followed by:
+
+- Interpretation of expected behavior
+- Detection of abnormal access and device interactions
+- Investigation of process anomalies
+- Isolation and response capabilities
+- Recovery planning
+
+A system can provide visibility while still failing to identify a skilled attacker who uses legitimate tools, valid credentials, and normal administrative paths.
+
+## 3. Adversary comprehension and prepositioning
+
+Attackers may remain in an environment for extended periods to learn:
+
+- How the facility operates
+- Which safeguards exist
+- Where set points can be changed
+- What operational tolerances are acceptable
+- Which systems are most consequential
+- How to manipulate processes gradually without attracting attention
+
+The purpose may be prepositioning: acquiring the knowledge and access needed to cause disruption later, even if no immediate destructive action occurs.
+
+## 4. “Collapsing bag” approach to cyber-physical disruption
+
+Krapf describes an adversary strategy that prioritizes physical end processes rather than immediately attacking network infrastructure. The attacker could:
+
+1. Manipulate downstream physical processes.
+2. Create increasing operational chaos.
+3. Preserve the initial access path while manipulation continues.
+4. Sever or remove the point of entry only at the last moment.
+
+This approach seeks maximum kinetic impact while avoiding premature loss of control over the environment.
+
+## 5. Physical consequences of OT manipulation
+
+The presentation identifies several ways that control-system manipulation could damage equipment or disrupt operations:
+
+- Repeatedly starting and stopping large motors or pumps, causing heat buildup and possible equipment failure
+- Creating thermal or pressure spikes
+- Producing water hammer through abrupt flow changes
+- Altering chemical dosing in drinking-water or wastewater processes
+- Manipulating generator behavior, as illustrated by the Aurora testing example
+- Disrupting complex wastewater processes that depend on precise chemical control
+
+The technical point is that cyber actions can be selected specifically for their mechanical, chemical, or process consequences.
+
+## 6. Safety instrumented systems as high-consequence targets
+
+Safety Instrumented Systems (SIS) are intended to protect sensitive processes when the primary control process fails. Krapf highlights the danger of compromising both:
+
+- The main process-control system, and
+- The SIS that should provide protection
+
+An attacker who changes thresholds or bypasses safety logic may prevent the SIS from activating when required. The transcript cites the TRISIS malware as an example of targeting SIS environments.
+
+## 7. Manipulating closed-loop control
+
+Krapf discusses the risk of modifying closed-loop control behavior, including PID-based processes. An attacker might alter:
+
+- Set points
+- Feedback behavior
+- Control parameters
+- Sensor inputs
+
+Such manipulation could cause a process to oscillate, drift, or behave abnormally without necessarily producing an obvious PLC-code change.
+
+## 8. Sensor manipulation and data poisoning
+
+Sensor integrity is presented as a distinct security issue. An attacker may manipulate sensor values or introduce gradual sensor drift so that the PLC receives misleading information.
+
+This is important because:
+
+- The PLC may execute its programmed logic correctly based on false inputs.
+- Monitoring focused only on code changes may not detect the manipulation.
+- Poor calibration practices can make it difficult to distinguish attack activity from ordinary sensor degradation.
+- Verification of incoming data is therefore part of OT security, not merely maintenance.
+
+## 9. Humans, contractors, and integrators as attack paths
+
+The presentation identifies people and third parties as major risk factors:
+
+- Shared credentials can enable unauthorized access.
+- Contractors may retain unnecessary accounts or privileges.
+- Systems integrators may connect to multiple utilities, creating concentrated supply-chain risk.
+- A compromised integrator could expose several client utilities.
+- Removable media and contractor equipment can undermine network separation.
+
+Krapf describes Loudoun Water’s practice of not permitting integrators to connect their own equipment directly to its systems. Instead, the utility controls the equipment and observes the work performed on site.
+
+## 10. Configuration remnants and temporary code
+
+Temporary engineering changes can become persistent vulnerabilities. Examples include:
+
+- PLC “forces” left in place after testing
+- Temporary code that is not removed
+- Forgotten configuration changes
+- Unreviewed commissioning modifications
+
+These remnants may be used by insiders or external attackers to produce unexpected process behavior, especially where OT monitoring is weak.
+
+## 11. Publicly exposed engineering information
+
+Krapf warns that publicly available technical documents can help adversaries understand a facility. Potentially useful information includes:
+
+- Piping and instrumentation diagrams
+- Asset schematics
+- Engineering drawings
+- Equipment specifications
+- PLC and network requirements in public procurement documents
+
+He recommends limiting access to such information through nondisclosure agreements or qualified-bidder processes rather than publishing detailed configurations openly.
+
+## 12. Behavioral detection for people and devices
+
+The proposed detection model extends beyond user behavior. Organizations should also understand device behavior, such as:
+
+- Why a laptop begins communicating with a PLC for the first time
+- Why a credential accesses a machine at an unusual hour
+- Why a device communicates with systems outside its normal role
+- Whether an account or device is performing actions inconsistent with its historical behavior
+
+This is particularly important against “living off the land,” in which attackers attempt to resemble legitimate administrators and engineers.
+
+## 13. AI as an attack accelerant
+
+Krapf characterizes AI not necessarily as creating a fundamentally new vulnerability, but as making existing attack methods faster and more scalable. The transcript describes an incident involving jailbroken AI use, stolen credentials, and prompting techniques that reportedly compressed activity that might otherwise take days, weeks, or months into hours or minutes.
+
+The resulting concern is a more “porous” attack surface: basic weaknesses such as exposed systems and unchanged default passwords become more dangerous because AI can accelerate reconnaissance and exploitation.
+
+## 14. Crown-jewel analysis must include operations and supply chains
+
+Krapf recommends analyzing crown jewels in two complementary ways:
+
+1. **Critical operational processes:**  
+   Determine the minimum processes required to continue operating, such as the minimum wastewater treatment functions needed to remain operational.
+
+2. **Critical customers and suppliers:**  
+   Identify important customers, chemical suppliers, and other dependencies whose loss could affect operations.
+
+He stresses that this analysis cannot be limited to technical staff. It should include:
+
+- Operations
+- Logistics
+- Maintenance
+- Engineering
+- Other personnel who understand process and supply dependencies
+
+## 15. Layered controls and cyber-informed engineering
+
+The defensive measures discussed include:
+
+- Removing default passwords
+- Removing systems from direct Internet exposure
+- Micro-segmentation
+- Deny-by-default access policies
+- Zero-trust principles
+- Data diodes where appropriate
+- Next-generation firewalls
+- Privilege cleansing
+- Contractor-access management
+- Vendor and equipment audits
+- Out-of-band audits
+- Penetration testing where feasible
+- Sandboxing
+- Behavioral analysis
+- Cyber-informed engineering
+
+Cyber-informed engineering is presented as a way to introduce physical or electromechanical controls that reduce the consequences of cyber manipulation. These measures may not eliminate every effect, but they can limit the severity of cyber-physical incidents, particularly for smaller utilities with limited cybersecurity resources.
+
+## Overall contribution
+
+The presentation’s main technical contribution is a **practical adversary-oriented model for OT risk analysis**. It links attacker knowledge directly to the expertise already present in OT organizations and then traces how that knowledge could be used to cause physical consequences while evading conventional detection.
+
+Its most important ideas are:
+
+- Treat visibility as an enabling capability rather than a completed defense.
+- Analyze OT security through consequences and process tolerances.
+- Monitor behavior involving people, credentials, and devices.
+- Consider sensors, safety logic, temporary configurations, and supply chains as separate attack surfaces.
+- Protect critical engineering information.
+- Combine cybersecurity controls with physical and electromechanical safeguards.
+- Use crown-jewel analysis to prioritize both essential processes and external dependencies.
+- Support under-resourced utilities through mentorship, mutual aid, and practical assistance.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Good afternoon. Uh, I get the dubious
+honor of trying to keep you all awake
+after um the lunch. So hopefully I'll be
+able to do a good job. Full disclosure
+up front, I probably have too many
+slides. So I'm going to try to run
+through these um questions. I'll try to
+make
+>> full disclosure. I'll keep you on time.
+>> I I'll try to make sure that I leave a
+little bit of time for questions um on
+the other end as well. So, um, yes, a
+provocative, uh, title to start out
+with. Um, and I think when we get into
+this, you'll understand why I titled
+this it this way. Um, and the goal of
+the presentation here in the
+conversation is really to think about
+things not from a defenders standpoint,
+but thinking about it from an adversary
+standpoint. And and really the premise
+here is as an OT professional, whether
+you're an asset owner like me or whether
+you are a managed service provider,
+what if your adversary knew as much
+about your systems as you do?
+Could you find them? Could you identify
+them? Could you stop them? Right? a
+knowledgeable adversary, think bolt
+typhoon, lurking in your system, living
+off the land. How would you detect that?
+Do your systems,
+are they sophisticated enough or have
+enough visibility to do that? So, that's
+where we're going today.
+And hopefully the presenter works.
+There we go. So, I'm not going to dwell
+on this. Andy Craft. I am the director
+of cyber security for Loud and Water
+Utility about 25 miles west of here just
+north of Dallasos airport service about
+350,000 folks. So we're considered a
+large utility both water and wastewater.
+We provide water to um data center alley
+the world's largest concentration of uh
+data centers. They're our customers. Um
+I am also the current co-chair of the
+water ISAC cyber security advisory
+committee and for the last 25 years I
+have been heavily involved in the OT
+community. Um my previous position up
+until about three weeks ago was director
+of OT for Loud and Water where I grew
+our program over the last two and a half
+decades.
+So really the question today becomes
+what if right what if an attacker knew
+as much about your system as you do or
+more than you do in the case of an
+underresourced or under uh
+a utility that has um maybe no IT
+department or no OT department. Right?
+This also applies to insider threats,
+right? So, the idea of you've got a
+really knowledgeable person like me,
+right? Let's say one day I wake up and
+it's like, you know what, I could care
+less anymore and I go into work and I do
+something really bad because I know my
+systems inside and out. How would you
+know that that was going on? Right?
+That's the premise here.
+So to start out with from an asset
+owner's perspective and that's where I'm
+coming at this from over the last 10 12
+years we have been told as asset owners
+that visibility is our solution right
+we've been told by all the cyber
+security vendors and I know a lot of
+them I love the products that they have
+they're really good foundations I'm not
+knocking any one of them but we've been
+told
+that visibility is the key, right?
+That's the bill of goods that we've been
+sold.
+But
+a lot of utilities, if you have
+visibility, they get complacent. Oh, I
+can see everything. My problem is
+solved.
+That is not the case anymore. Visibility
+is a gateway. It is not a solution. And
+I think a lot of the small utilities,
+especially in the water sector, think if
+they have visibility, they are all set.
+They're good to go. they've checked the
+compliance box and uh they've met most
+of the things that they need to do
+and I'm here to tell you you're wrong.
+So knowledge is power, right? So when we
+think about it from an asset owner
+standpoint, there's three things that
+are really critical, right? OT process
+engineers, these are the the folks that
+know how all the processes come
+together, whether it's large or small,
+right? critical indepth knowledge of how
+things tie together, where do things
+function, what are the interlocks, what
+things are dependent upon other things.
+This is going to become really important
+when we get to the next slide.
+SCADA programmers, PLC programmers,
+these are the folks that are
+implementing what the process engineers
+are telling us, right? So, not only do
+they have in-depth knowledge because
+they're learning from the process
+engineers, but they're also the
+custodians of the OT space, right? They
+know how to program their PLC's, how to
+configure their SCADA systems. They work
+with operations. They become a bridge
+between the operational folks and the
+engineering folks. Sometimes they are
+the engineering folks depending upon the
+utility that you work for.
+And then on the other side of it, we
+have our OT systems admin. So these are
+the folks that are taking care of
+networks, communications, servers,
+workstations, firewalls, all the other
+things that are really critical. In a
+lot of cases, it's also encompasses
+cyber. Right? So these are our three
+critical pieces that come into play when
+we're talking about our OT space. So
+this is where as an asset owner, our
+knowledge lies.
+The parallel to this when we think about
+it from a a uh adversarial standpoint,
+we think about things like Sandworm and
+AP41, right? Uh Voltyoon, PRC, you know,
+all the things that are coming at us as
+asset owners, they are looking to
+have as much knowledge or more than
+those categories of folks that I just
+mentioned, right? Their idea is to lurk
+within our systems to gather information
+to go unnoticed to effectively look like
+anything else that's happening on our
+environment to do a couple of things.
+They want to really learn about what's
+out there. So in the prepositioning
+world that they can then decide what to
+do should they be asked to do so. Right.
+So
+Sandworm, you know, you're thinking
+about things like the Ukraine outages,
+physical effects that happened, right?
+They're really uh experts uh when it
+came to protocol manipulation. It's very
+uh very strategic process that they went
+through for the Ukrainian outages. um
+AP41,
+these these are the folks that were
+working to get into things like systems
+integrator u supply chains, right? To to
+really get into things and uh and
+harvest information when it came to, you
+know, asset schematics, device
+configurations, things of that nature.
+Again, learning the environment. And
+when you see that, you're you're
+starting to think about things like
+SCADA programmers, right? and PLC
+programmers, they're mimicking that
+knowledge base.
+The Vol Typhoon folks we know are really
+adepted to living off the land and and
+creek positioning techniques, right? And
+they're looking to learn as much as they
+can about critical infrastructure. So,
+not only the the engineering aspect of
+it, but also the operational aspect of
+it. How do you how would you go into a
+facility and disrupt that utility to to
+maximize the effects? Right? So, there's
+a parallel between what your APS are
+trying to accomplish and what your folks
+that you may have on staff or contracted
+with that level of knowledge, right? One
+is trying to seek to to have that level
+of knowledge that the other that the
+asset owners already have.
+So there's two things in my mind that
+they're trying to accomplish. One of
+them is comprehension, right? This goes
+back to living off the land, right? It's
+that long-term lurking. I need to learn
+as much as I can about that system,
+right? How does it function?
+What are the safeties that are involved?
+Where do I manipulate set points from?
+From an operator standpoint, how do I
+get into this? How could I
+potentially
+modify things in such a way that they go
+unnoticed? Right? We've heard that uh
+concept floated earlier today, right?
+They want to learn and understand the
+tolerances of your systems more so than
+perhaps the operational staff does,
+especially when you're not, you know, in
+small utilities, they're not staffed 247
+around the clock, right? They close up,
+they go home at night and rely on
+automation for monitoring purposes.
+there's an opportunity for unsupervised
+manipulation in a very subtle way that
+takes place over time. The other side of
+this instead of comprehension is
+effectively solving chaos. Right? Cyber
+physical systems have a kinetic function
+on the other side.
+So how can an adversary manipulate a
+system to cause maximum damage? Right? I
+think of it as kind of a collapsing bag
+situation. If I'm an adversary, I'm not
+going after my network infrastructure
+because as soon as I do that, I lose
+everything and I can't manipulate the
+physical process. I'm going after those
+end processes first. Do as much chaos as
+I can there and then fold back until I
+get back to my point of entry and then I
+sever that at the last moment. I don't
+want to sever my point of entry because
+then I can't do anything else
+afterwards. So we start to think like
+our our adversaries do and how could we
+cause maximum damage
+and how much kinetic problem we can
+introduce into our systems.
+This becomes really really important
+right that that chaos factor and if you
+can introduce enough of that in a
+utility of sufficient size or across
+multiple utilities simultaneously
+you've really got a recipe for disaster.
+So
+some uh vectors of damage, they're
+pretty obvious, right? Mechanical
+integrity attacks, right? So if you know
+how to do these things, it's very easy
+to manipulate a pump or a motor, right?
+Motors don't like a lot of stops and
+starts, especially large ones, you can
+build up heat in the motor and then you
+can destroy it, right? So, if you have a
+pump system that's out there that's only
+designed to start two or three times an
+hour and you force it to start 10 times
+in five minutes,
+there's a good chance you're going to
+melt that pump down, right? So, learning
+those systems as an adversary and how to
+manipulate what's in the environment is
+a great way to be able to do that. Um,
+years ago, there was the Aurora tests
+that were done at INL when they blew up
+the generator through cyber uh
+manipulation. It's kind of the same
+thing, right? Being able to do uh cyber
+entry to affect the programming to then
+cause physical problems. It's exactly
+the same thing. So, in a water system,
+thermal spikes, pressure spikes, we've
+got things that require very specific
+temperatures. Um Josh Corbin talked a
+little bit about water hammer. That is a
+thing. Although there are some
+engineering tools um or practices that
+are put in place to to minimize that,
+but they still do happen and we still
+see them. Slam a hydrant off, you induce
+a pressure wave across your system. It's
+a very easy thing to do. And then there
+was conversation about chemical process
+alteration, right? That happens on the
+drinking water and the wastewater side,
+right? Wastewater is a very complex
+process. It can be and it is highly
+reliant on a variety of chemicals. So if
+you get that chemical dosage out of
+whack, especially some of the more
+volatile chemicals, you can cause a lot
+of problems. Now to counter all this,
+Ginger will be happy that I bring this
+up. Cyberinformed engineering, right,
+physical engineering controls can
+minimize the impacts,
+may not reduce them completely, but it
+can minimize the impacts of some of
+these cyber physical vectors that are
+out there. So there's definitely a lot
+of things that we can do. Um depending
+on the scale, it might take a while to
+get there, but for certainly for smaller
+utilities, it's a great path to go down.
+All right. One of the other things that
+we worry about for systems that are out
+there that have SIS, right, safety
+instrumentation systems,
+if those get compromised, especially for
+really sensitive processes, which is
+where they are, bad things can happen
+very quickly, right? They're there as a
+safeguard when the main process goes
+down, right? So, if the SIS is
+compromised and then the main process
+system gets compromised,
+bad things happen very very quickly. and
+and the the the Tris um malware that was
+out years ago was was a great example of
+targeting your SIS systems, right? So,
+the idea here is that your attackers are
+bypassing logic to change your
+thresholds so your SIS doesn't take
+effect and then all of a sudden now they
+can manipulate the process and and
+really cause havoc um across the uh the
+process control system. And it's not
+just limited to water. Obviously, power
+is a is a is a really susceptible one to
+this where they've got a lot of SIS
+systems that are out there.
+It can cause a lot of mechanical
+problems, believe me. Um,
+you know, manipulating closed loop
+feedback systems. This is another one
+that is this gets more into the
+subtleness of things, right? So, a lot
+of our process controls are based on,
+not to get too nerdy here, but what's
+what's called a Pnid loop, which is
+basically we tell it to do something,
+there's feedback from it, we take that
+feedback, we adjust, and we send back a
+control that modulates that process ever
+so slightly. If you can get into a
+system and manipulate those set points
+or how that closed loop feedback system
+operates, you can make it do things that
+it is not supposed to do. you can you
+can start it to oscillate and and just
+do weird things from a PLC side of it.
+So
+it's really incumbent upon understanding
+that process uh to be able to prevent
+those kinds of things from happening. It
+is also really based on sensor inputs,
+right? So if you have sensors,
+especially online sensors that can be
+manipulated, right? So Purdue level zero
+kind of processes
+um it's really hard to do because a lot
+of them are are just hardwired but there
+are some that areworked up that are
+susceptible. If you can manipulate those
+sensors and and effectively do data
+poisoning you can throw off your
+process. It is um for utilities that
+don't have a calibration program. this
+becomes a problem because if you're not
+verifying your data that's coming in,
+your PLC's are going to do things that
+you don't want them to do. And it may be
+gradual. You may just get sensor drift
+over time. But it's it's something that
+the utility has to be aware of to have
+confidence in what is happening within
+their control system. And if you're an
+adversary and you can get to those,
+it's a very subtle thing that may not
+even show up because you're not
+modifying a PLC code. So if you have
+systems that detect code changes,
+modifying a sensor is not going to find
+that.
+So again, it it depends on understanding
+your system and having as much
+knowledge. And if I were able to go in
+and do that, knowing my system,
+could my tool stop me from doing that or
+at least detect that I'm doing that?
+Probably not.
+It's it's something that we have to
+address through policy and programs and
+other things that are out there.
+So
+the threat vector is real, right? Um and
+we know from fishing campaigns that the
+humans are the weakest factor, right?
+And that holds true even in the OT
+environment, right? We do things
+sometimes that we should not do like
+share credentials. um they show up an
+awful lot in utilities. Um contractors,
+right? We allow contractors to come in
+and do things because we don't have
+enough time for people to do things. So
+oftentimes utilities will contract,
+especially in a region, the same vendor
+that is comfortable in the water
+utility. They might have 10 clients in
+the area that they work with. So their
+risk now becomes the risk of 10
+utilities, right? If that SI gets hacked
+for some reason, now all those 10
+utilities that are their clients also
+have risk. So contractor management and
+um making sure that they only have
+access when they need to. Hopefully
+their remote access if they have it is
+managed certainly is important. Um
+oftent times especially during
+commissioning we tend to uh bypass parts
+of code. I have done it uh in the
+interest of configuration. For those of
+you are PLC PLC programmers putting
+forces in your code is a great way to
+prove things. Please don't forget to
+take those forces out. Um and if you're
+jumbling code, take the take the
+temporary stuff out. Code relics are a
+problem.
+Um,
+we have to be, you know, we have to make
+sure that we take those out. Again, this
+is a tactic or a tool that an adversary
+could use. They could go in and throw
+forces into a a system and we may or may
+not know it if we don't have an OT
+monitoring system that's out there or
+someone who's familiar with that. They
+throw a force in, all of a sudden a
+process doesn't work or a sensor looks
+like it's always on or always off.
+And all these things hold true for
+insiders as well, right? If I'm a
+disgruntled insider, right, as OT
+systems manager, let's say, and I know
+where all the all the bodies are buried,
+if you will, I can go and I can cause
+some real havoc. I know if I go unplug
+this one cable just enough, I can shut
+my plant down or whatever it might be.
+So people are our risks, right? Whether
+they're insiders or whether they're our
+adversaries, right? So limiting how they
+get in and what they can do and then
+having detection capabilities
+um to know what's going on is our
+challenge.
+So I touched on this, right? Integrators
+risks are our risks as asset owners,
+right? Work with your systems
+integrators.
+They could be a vector for
+uh an attack, right? Um, I have had
+vendors that have been compromised that
+fortunately have reached out to us and
+said, "Hey, we've been compromised.
+Check your, you know, check your things
+that we that we've worked with." Um,
+don't trust your integrators. Not that
+you don't like them, but don't trust
+them, right? Put policies and procedures
+in place. I can tell you we don't allow
+integrators onto our system. Period.
+I've been called a lite for that. And
+that's okay. They use our equipment.
+They come on site. We watch them. We own
+everything that gets done and they leave
+site.
+It's just how we do business. It's just
+good hygiene from our perspective. Um
+we again, we don't let them use their
+own equipment. They put they put their
+equipment on my network. We flag it. We
+tell them to get it off our our systems.
+Um, don't forget about um things like
+OBSAC um schematics, Pnid drawings,
+engineering drawings, specifications.
+How much of that is out in the open?
+Right? How much does your adversary
+learn about your systems because you put
+out an advertisement for a plant upgrade
+that says, "Thou shalt use this PLC,
+this network equipment in this
+configuration."
+We do it all the time as an industry.
+We need to get better. Do it under NDA.
+Do it under some form of secondary level
+for qualified biders. Doesn't matter how
+you do it. Hide it somehow. Make it so
+it's not publicly available.
+And do audits, right? Audit your
+vendors. Audit your equipment. Make sure
+you're doing that. So, if there are
+rogue configurations that happen that
+you're unaware of, make sure you're you
+know what's going on and if corrections
+have to be made, you put them in place.
+Um, I think we all know what living off
+the land is. I'm I think I'm preaching
+to the choir here. I included this just
+in case. Um,
+yeah, my uh my big thing about living
+off the land, quite honestly, and again,
+I'm not going to dwell on this because I
+want to make sure we leave enough time
+for for questions on the other end, is
+really my where's Waldo
+analogy here.
+That's what they're trying to do.
+They're trying to blend in, right? We've
+all all of us with kids, right? We've
+all se we've all played with the where's
+Waldo books. But the idea is they want
+to hide in plain sight.
+They want to be able to go through our
+system. You know, if they have stolen
+credentials because there's insecured uh
+remote access, they've done their social
+engineering, right? They want to look
+like our systems admins. They want to
+look like our OT engineers. They want to
+be able to walk through our systems, to
+learn our protocols, to learn what our
+weak points are, to find our crown
+jewels,
+and maybe know what our crown jewels are
+better than we do.
+um
+little research I did um I don't know if
+I completely believe this but um public
+edge vulnerabilities right things that
+are exposed to the internet big vector
+right probably the most critical that's
+out there because if you can't see it
+you can't hack it right if you can't
+find it even if you had not that I'm
+advocating for it but if you had default
+passwords or or lousy segmentation fine
+if it's not exposed was the internet
+doesn't matter.
+Um, we all know fishing, whaling,
+corporate spear fishing, huge vector for
+systems that are connected between it
+and OT. Um, in some form or fashion,
+that seems to be the vector that a lot
+of the attacks are coming through. Um, I
+in my last 10 years of of doing things
+in the cyber space, I've asked the
+question, how many people think they
+really have an air gap? And I've had a
+few people that have raised their hands
+and I have pushed back and challenged
+them a little bit and and uh uh I will
+say that even if you're using USB to
+move things in and out of your network,
+you are no longer airgapped. So it is a
+vector.
+Again, systems integrators, removable
+media, right? Those are all really
+important things that we have to worry
+about. And now as you have heard AI is
+in the mix, right? So, how many of you
+guys are familiar with the AI attack
+that happened on the uh the city of
+Monterey, Mexico?
+Couple folks. So, if you haven't seen
+this, there is a great white paper that
+uh Gambit Security put out. Drago also
+has a white paper on it. It is nerdly
+fascinating.
+It is super scary. If you read the
+technical details, it is very, very
+scary because basically what they ended
+up doing is they jailbroke Claude.
+They made it do things that it wasn't
+supposed to do.
+And it's not that they found a new
+vulnerability, but they used it as an
+accelerant. So what would have taken
+days, weeks, months to do, they did it
+in hours, minutes.
+And and it's again it's not that they've
+really found anything new. They use
+stolen credentials and and the prompting
+which this paper gets into. It's really
+get uh shows how they're breaking into
+systems uh using this is very specific
+and it just goes to the point that as
+defenders we now have it's not that we
+have an expanded uh attack surface. We
+have a much more porous attack surface
+because of this accelerant
+and this is the new frontier for us
+right now.
+But if you do your basics, this has less
+effect, right? Change your default
+passwords,
+get your stuff off the internet. This
+wouldn't have happened.
+So key points of defense, this is some
+old hat. Everybody knows this.
+um crown jewel analysis. If you have not
+done a crown jewel analysis,
+please do it. This is done in two parts.
+One is what are my key processes in my
+plant in my facility to maintain to
+allow the minimal amount of processing
+to keep me up and running. So in a
+wastewater plant, what's the minimum I
+have to do to keep processing because
+there's some things I can shut down.
+Also from a crown jewel side, who are my
+key customers? What are my key uh supply
+chain pieces? That's part of your crown
+jewel analysis also because if a
+chemical vendor is hacked and I can no
+longer get chemicals to treat my water
+and oh by the way, it's the same
+supplier that does all the surrounding
+utilities because they all use the same
+chemical, we're all out of luck. I can't
+just borrow from other utilities because
+they're in the same boat that I am. So
+that has to be part of your crown jewel
+analysis. That involves not just the
+technical people, but it involves
+operations. It involves uh logistics,
+it involves maintenance folks. It is not
+just a technical solution.
+Um second one is controlling entities.
+And notice I didn't say people. So
+entities are people, credentials,
+devices. Understanding device behavior
+is just as important as it is
+understanding people behavior, right?
+Why did this laptop all of a sudden
+start talking to this PLC? It's never
+done it before. Why is it doing it now?
+Right? Knowing that that is abnormal
+is really important to understanding
+that if or understanding if you have an
+adversary in your environment or not.
+Privilege cleansing is another thing we
+should regularly do. Do I have
+privileges that don't belong that should
+have been removed? You know,
+contractors, maybe they had a an account
+in our system. They're long gone. Let's
+make sure we remove them.
+Um, not too much I'm going to spend on
+this because I'm sure everybody knows
+this, but micro segmentation is a good
+thing. Segment, segment, segment. Um,
+deny by default, zero trust, call it
+what you will. Um,
+if it doesn't belong on your network,
+there's no reason to have it. Data
+dodes, next generation firewalls, always
+a good thing. Um,
+and make sure you're doing, you know,
+audits again, outofband audits, I will
+throw in there, uh, pen testing where
+you can, sandboxing where you can,
+all those things are important in the
+water sector. We have OEA, which we have
+to do every five years anyways. So,
+there are things that that we do to make
+sure that we're in compliance, but all
+those things apply across the board.
+um behavioral um behavioral analysis,
+behavioral indicators. Again, I touched
+on this real quick. Understanding
+behavior is kind of where we're heading,
+right? Because living off the land
+techniques are there. They're mimicking
+what we're what's supposed to be
+happening anyways from an adversarial
+standpoint. So now we've really got to
+start looking at why do things talk the
+way they do? Why are certain credentials
+accessing certain machines at weird
+hours, right? Those are the things that
+we need to worry about. So,
+understanding behavior super important,
+especially in the age of AI.
+Uh time to dwell, it's again, I'm not
+going to dwell on this too much. We're
+getting longer and longer and longer,
+right? Bad actors are in our system. Um
+honestly, I this was this is probably a
+little bit AI slop. I pulled this off
+the off the internet. I don't know if I
+believe the times or not but full
+transparency
+I took a little lazy way out there. Um
+and then the last thing again um I will
+emphasize there are things that we can
+do to u mitigate a lot of this stuff. So
+INL cyberinformed engineering is a great
+place to start mechanical
+electromechanical controls to minimize
+cyber security disruptions. um super
+important and I would encourage you guys
+to reach out to folks like Ginger Wright
+and Andy Orort um and the rest of the
+team at INL and Wes Yos to uh really dig
+into this. There's some really good
+stuff that's out there. So, I know I
+buzz through a lot of stuff real quick
+and
+one time for a question.
+One I'll ask you a question. Did I keep
+you awake?
+Okay,
+no questions.
+Ginger,
+>> easy question. If there's one thing that
+folks could do, um, I've said this at
+other conferences and I will say it now.
+the water sector is very
+uh resourced
+and I would say if you have the ability
+if you're not in the space uh if you're
+just in the cyber security space reach
+out to your local water utility
+and find out what they need offer offer
+some help to them a lot of times and I
+talk to utilities all the time um they
+don't know where to start they don't
+know a lot of them don't know what to do
+because they are either below the cyber
+p poverty line. They're immature when it
+comes to their their programs. A lot of
+times they just want to know how to get
+started. More often than not, their IT
+guys get this thing called OT shoved in
+their lap and they don't know what to do
+with it. That is the single biggest
+thing I hear and they just need to know
+how to get started. and mentorship and
+mutual aid is a is a really important
+thing and I think that uh all of us can
+do a better job at uh reaching out to
+those utilities.
+Thank you.
+>> Thanks very much Andy. Let's give him a
+round of applause.

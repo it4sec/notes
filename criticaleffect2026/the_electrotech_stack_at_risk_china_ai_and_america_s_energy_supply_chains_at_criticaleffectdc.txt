@@ -1,0 +1,913 @@
+ABOUT
+================================================================================
+Title: The Electrotech Stack at Risk: China, AI, and America’s Energy Supply Chains at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=LD_fWE1NTmM
+Video ID: LD_fWE1NTmM
+Published: 2026-07-27
+Duration: 26:54
+Views: 7
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: The Electrotech Stack at Risk: China, AI, and America’s Energy Supply Chains
+Track 2: Strategic Effect
+Thursday, June 18, 2026
+
+The United States is entering a generational energy buildout, but as billions go towards modernizing our electrical infrastructure, our systems remain dependent on China for the underlying "electrotech stack." A new paper by the Carnegie Mellon Institute for Strategy and Technology examines how this reliance creates severe supply chain vulnerabilities and threatens the security advantages a modernized grid is supposed to deliver. This session led by Phoebe Benich (Non-Resident Fellow, Carnegie Mellon Institute for Strategy and Technology) and Emma Stewart (Director, Center for Securing Digital Energy Technology) draws from that research to explore how the U.S. can secure its energy future and achieve maximum strategic return.
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media, facilitating actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# The Electrotech Stack at Risk: China, AI, and America’s Energy Supply Chains at #CriticalEffectDC
+
+## Authors/presenters and credentials
+
+The supplied material identifies the session as being led by:
+
+- **Phoebe Benich**
+  - **Credential/role:** Non-Resident Fellow, Carnegie Mellon Institute for Strategy and Technology, according to the event description.
+  - **Additional experience:** The transcript says she most recently served at the **White House Office of the National Cyber Director**.
+  - **Contact details:** No personal email, phone number, or direct professional contact information was provided.
+
+- **Emma Stewart**
+  - **Credential/role:** Director, **Center for Securing Digital Energy Technology**, according to the event description.
+  - **Additional affiliation:** The transcript identifies her as being from **Idaho National Laboratory** and as a non-resident fellow with the relevant Carnegie Mellon institute, although the transcript’s wording is unclear.
+  - **Contact details:** No personal email, phone number, or direct professional contact information was provided.
+
+The presentation describes the underlying paper as **“Electrotech Moneyball,”** characterized as an industrial strategy for ranking risk and opportunity in energy and AI supply chains. The supplied material does not provide a separate list of paper authors beyond the presenters, nor does it provide author biographies, institutional addresses, or direct contact information.
+
+### Supplied organizational and media links
+
+- **Institute for Security and Technology YouTube channel:**  
+  https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+- **Video:**  
+  https://www.youtube.com/watch?v=LD_fWE1NTmM
+- **Critical Effect 2026 event:**  
+  https://securityandtechnology.org/event/critical-effect-2026/
+- **ICS Village:**  
+  https://icsvillage.com/
+- **UnDisruptable27:**  
+  https://securityandtechnology.org/undisruptable27/
+
+These are organizational or event links, not direct author contacts.
+
+## Summary
+
+The presentation argues that the United States is entering an unusually rapid period of energy-infrastructure construction driven by AI data centers, electrification, new transmission, distributed energy resources, and digitally controlled grid equipment. This expansion creates both a security opportunity and a supply-chain vulnerability.
+
+The authors use the term **“electrotech stack”** to describe the interconnected technologies that increasingly determine how electricity is generated, stored, controlled, distributed, and integrated with software. The stack includes relatively passive physical elements—such as battery materials and solar-panel components—as well as increasingly intelligent control layers, including inverters, battery-management systems, firmware, cloud integration, fleet-orchestration software, and advanced distribution-management systems.
+
+Their central argument is that policymakers should not evaluate energy technologies only as complete products. Instead, they should decompose them into their underlying components and distinguish between:
+
+- Physical or relatively passive components;
+- Local control hardware;
+- Firmware and software;
+- Cloud-connected systems;
+- Remote-update and fleet-orchestration capabilities.
+
+This distinction is important because different parts of the same product present very different levels of strategic and cybersecurity risk. A battery’s electrochemical material, for example, does not pose the same immediate cyber risk as the software or cloud systems that manage a fleet of batteries.
+
+The presentation identifies China’s major role in the electrotech supply chain as a source of several distinct risks. The authors emphasize that these risks should not be collapsed into a single category called “supply-chain security.” They distinguish:
+
+1. **Economic dependency risk:** A disruption in trade could impair future deployments and replacement capacity, even if already-installed equipment continues operating.
+2. **Immediate cybersecurity risk:** Compromise of connected control systems or fleet-orchestration software could affect grid balancing and operations.
+3. **Firmware dependency risk:** Foreign vendors may retain access to deployed equipment through diagnostics, firmware updates, and maintenance channels, creating a potential avenue for later misuse.
+
+The authors criticize blanket bans and broad “rip-and-replace” policies when they are applied without component-level analysis. In their view, such policies can fail to secure the most important control layers while slowing the infrastructure buildout and imposing replacement costs that governments, utilities, or consumers may not be able to fund. They use the Huawei and inverter examples to illustrate how restrictions may produce effects different from those intended.
+
+Instead of a broad prohibition strategy, the presentation proposes the **“Moneyball” framework**, which ranks components according to urgency, technical risk, and strategic opportunity. The resulting tiers are intended to guide procurement, investment, restrictions, and domestic or allied production decisions.
+
+The authors recommend that governments act quickly on the most consequential control layers while using the additional time to build domestic and allied capacity for other components. They also argue that industry—particularly hyperscale data-center operators—can help create market demand for secure components through procurement requirements and voluntary commitments, even where formal standards processes are too slow.
+
+## Key technical ideas
+
+### 1. Component-level analysis of the electrotech stack
+
+The main technical innovation is the move from product-level evaluation to **subproduct and component-level analysis**. The authors argue that a product such as a battery, solar installation, or inverter should not be treated as a single undifferentiated security object.
+
+The relevant question is instead:
+
+> Which internal component or control layer creates the actual operational, cyber, or strategic risk?
+
+This approach allows passive materials, local control systems, firmware, and cloud-connected orchestration systems to receive different treatment.
+
+### 2. The “smart-to-dumb” spectrum
+
+The authors describe components along a **smart-to-dumb spectrum**:
+
+- **“Dumb” or passive layers:** Physical battery electrolyte, basic materials, and other components that primarily perform an electrochemical or physical function.
+- **Intermediate layers:** Local hardware and control systems that may not communicate externally.
+- **“Smart” layers:** Firmware, cloud integration, remote-update mechanisms, fleet orchestration, grid-management systems, and advanced distribution-management systems.
+
+The farther a component sits toward the connected, software-controlled end of the spectrum, the greater its potential operational “blast radius” if compromised.
+
+### 3. Three-way risk and opportunity assessment
+
+The Moneyball framework evaluates each component using three questions:
+
+1. **Deployment urgency:** How urgently is the component needed for AI infrastructure, grid modernization, or broader electrification?
+2. **Technical risk and blast radius:** Where does the component sit in the smart-to-dumb hierarchy, and how much damage could compromise cause?
+3. **Industrial opportunity:** Would U.S. or allied leadership in the component produce advantages beyond the energy sector, including benefits for defense, transportation, or communications?
+
+The framework therefore treats industrial strategy as more than a risk-reduction exercise. It also asks where investment could generate broader national advantages.
+
+### 4. Three sourcing and control tiers
+
+The framework produces three broad procurement categories:
+
+- **Tier 1 — Close domestic control and sourcing:** Components requiring the strongest domestic control because of their technical importance and potential consequences.
+- **Tier 2 — Trusted allies and partners:** Components that can be sourced through coordinated allied supply chains.
+- **Tier 3 — Managed global procurement:** Components for which greater sourcing flexibility is acceptable, provided that transparency and testing requirements are applied.
+
+This tiered structure is intended to replace uniform restrictions with more selective controls.
+
+### 5. Control layers as a cybersecurity “fire break”
+
+A key systems idea is to use critical control layers as a **fire break** between lower-risk physical components and the operational systems that manage the grid.
+
+The authors suggest that security policy should focus on ensuring that the most sensitive firmware, software, communications, and control functions are:
+
+- Designed securely;
+- Subject to appropriate sourcing requirements;
+- Protected from unauthorized remote access;
+- Governed by suitable testing and transparency mechanisms.
+
+They also emphasize that geographic origin alone is insufficient: a component can remain insecure even if manufactured domestically if it is insecure by design.
+
+### 6. Distinguishing economic disruption from cyber compromise
+
+The presentation stresses that different risks have different timelines and consequences:
+
+- A trade cutoff may mainly affect **future deployment and replacement**.
+- A cyber compromise could have an **immediate operational effect**.
+- Firmware access represents a continuing risk because vendor connectivity may persist long after equipment is sold and installed.
+
+This distinction is intended to prevent policymakers from using a single remedy for fundamentally different problems.
+
+### 7. Governance gaps for distributed and behind-the-meter devices
+
+The authors argue that much of the new infrastructure is increasingly software-native, distributed, and connected behind the meter. Existing governance mechanisms—particularly the cited NERC CIP framework—were not designed for all of these newer device types and deployment models.
+
+They recommend updating guidance so that distributed energy resources and behind-the-meter devices receive governance appropriate to their connectivity and control capabilities.
+
+### 8. Hardware bills of materials
+
+In response to a question, the presenters endorse the use of an **explainable hardware bill of materials**. They specify that it should go beyond the product’s commercial name and identify components at least several levels down.
+
+This would support the Moneyball framework by allowing policymakers and operators to determine:
+
+- What a product actually contains;
+- Which components provide control functionality;
+- Where foreign dependencies exist;
+- Which layers require greater scrutiny.
+
+### 9. Policy sequencing and industrial strategy
+
+The authors recommend a staged approach:
+
+- Secure the most urgent and consequential distributed energy resources now;
+- Recalibrate foreign-entity and procurement rules around component-level tiers;
+- Use targeted restrictions for specific high-risk use cases rather than broad product bans;
+- Coordinate domestic and allied industrial strategies over the longer term.
+
+The objective is to buy time: protect the most important control layers immediately while developing alternative sources for other parts of the supply chain.
+
+### 10. Industry as a market signal
+
+Because formal standards development may move more slowly than current infrastructure procurement, the authors propose that hyperscalers and other large buyers use procurement requirements to create demand for secure electrotech.
+
+They point to voluntary commitments and power-purchase agreements as potential mechanisms for requiring greater scrutiny of critical control layers and encouraging adoption of agreed-upon security practices.
+
+## Overall assessment
+
+The presentation’s central contribution is a **selective, component-aware industrial-security framework**. Rather than treating every Chinese-made or foreign-supplied product as equally dangerous, the authors propose prioritizing components according to urgency, technical control, potential impact, and strategic value.
+
+Their approach combines:
+
+- Supply-chain risk analysis;
+- Cybersecurity architecture;
+- Industrial policy;
+- Allied coordination;
+- Procurement strategy;
+- Hardware and software transparency.
+
+The intended result is a more precise alternative to blanket bans: secure the control layers that can affect grid operations, preserve access to less sensitive commodities and components needed for rapid deployment, and invest strategically in technologies that provide advantages across energy, defense, transportation, and communications.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Okay. Hi everyone. Uh my name is
+Phoenic. I'm a fellow with Carnegie
+Melon's Institute for Strategy and
+Technology. Um most recently served at
+the White House Office of National Cyber
+Director and I'm here with my uh Semist
+colleague Emma.
+>> Hi, I'm Emma Stur from both Idaho
+National Lab and a non-resident fellow
+with Semist also.
+Great. So today we're going to be
+talking about our recent paper
+electrotech Moneyball which we describe
+as an industrial strategy for ranking
+risk and opportunity in energy and AI
+supply chains.
+So first we're going to walk through the
+baseline talk about what electrote is
+why it's so important in this moment
+then we'll walk through the unique risks
+facing our electrotte supply chain. um
+the framework that we built to help
+policymakers assess that risk and
+prioritize which components uh to give
+special attention, investment,
+protection and then next steps for
+government and industry.
+Great.
+Okay. So to tell a little story, a lot
+of this work was born not just at
+Carnegie Melon, but in work that we were
+doing together at um Office of National
+Cyber Director as well back a few years
+ago. Um we all met and had a discussion
+about batteries. I think at the time
+batteries were on this sort of big focus
+list and there's a number of uh
+discussions of hey we're going to ban
+all these companies. the first thing
+most of us said, "Hey, by the way, you
+know, that's the biggest battery
+supplier in the world and we actually
+need those for supplying the electric
+grid." And so there was a a sort of long
+discussion of what the batteries
+actually meant to the grid and how they
+were connected and what really mattered
+for the cyber side of that as well. Um
+Harry, who isn't here, but Harry, I
+think he coined the term the electrolyte
+goo that we've now adopted. So we
+started to explain the difference
+between electrolyte things that are not
+really active control components and
+control control components and what
+those meant from a cyber security
+perspective. So that's really how we
+started to get to here of how we come up
+with um more what's the word? Sorry, I'm
+running out of words again today. How we
+come up with a scalpel rather than a
+hammer to work out um what are the
+pieces we should be manufacturing here?
+What are the pieces we should be
+manufacturing elsewhere? Where do we
+rely on that? And how do we actually
+come up with a more cohesive framework
+rather than sort of the banhammer being
+used um all the time? So the electrotte
+stack um was the the coin the coin
+phrase for this which is really we're
+under this sort of fundamental shift. I
+think you've probably heard people talk
+about it already um but a fundamental
+shift in how we deliver power and what
+sort of power we're actually trying to
+deliver. Um where essentially everyone's
+heard about the data center boom where
+essentially our load is changing and
+much much faster than it has ever
+changed before. I've been in this
+industry about 23 years, not to show my
+age, but 23 years. And in that time,
+it's gone from a we'll talk about one
+thing for 20 years and not necessarily
+adopt it to a point of the last three
+years where we've got new transmission
+lines, new data centers, new loads, new
+types of control. So, that's really that
+stack that we're talking about is all of
+these brand new components. That stack
+is also um an opportunity if we're going
+to install lots of brand new things
+probably one time in our generation. Um
+if you've ever worked with sort of
+utilities in the electric sector in
+particular, they do move fast but not as
+fast as you might imagine to install
+things. So, if we're going to install
+brand new things all over the place and
+really upgrade our electric system to to
+have these brand new loads, how do we
+help people make the right decisions in
+those purchases so that 20 years from
+now when I am hopefully not here talking
+about this? We will have put the right
+things in place and I will not be
+worrying about it anymore. But the time
+is now because whatever we install now
+is going to be there for a long time. I
+think there's an impression that we
+might, you know, in a few years be able
+to rip and replace it. it's not really
+viable. So, we will be seeing these
+components for much longer than um much
+longer than you can imagine at this
+point. So, that's the stack and why it
+really matters to us because it will
+control how we deliver power for a very
+long time. And I would just add too that
+um just to underline um that not only
+are these technology these aren't just
+energy technologies the electrotech
+stack uh the important uh characteristic
+of it is that it uh builds the
+ingredients for um defense tech
+transportation comms etc. So this is um
+as you can see from this fun graphic um
+the components that we're talking about
+which are highly relevant for energy
+technologies are also crucial to other
+sectors.
+>> Yes. So I mentioned like how big this
+actually is and so this is some examples
+of sort of the volume of components
+we're seeing. Um I gave a talk at Bides
+last year that was about uh Bides Vegas
+last year about data centers in
+particular and sort of the size that
+they are in comparison to our electric
+grid. Um, I coined the term Scotland.
+There sizes of Scotland being installed.
+Everyone's met the Scottish soccer fans
+recently, so you know, I can talk about
+it, but the size of a country is being
+installed in Virginia in the next two to
+three years. That's that's not small.
+That's an enormous flow growth that
+we've not really seen happen before um
+in this sort of revolution that we're
+going through. So, I think latest
+numbers which change daily um are things
+like 5,400 data centers being installed
+with like 3,000 different sites
+currently under construction. Some of
+these numbers are actually imaginary um
+because people put things onto a queue
+also. And you'll say, "Oh, but we didn't
+install 5,000. We installed 3,000." Yes,
+but that's still a giant number. Um also
+with about 12% of our electricity share
+by 2028 will come from these sort of
+large loads and this GR grid buildout as
+well which is enormous. But the
+bottleneck is real for this. Everyone is
+looking for components to actually get
+the these installations to happen.
+Transformer shortages have been talked
+about for probably about 5 to 10 years
+at this point of we can't get
+transformers now. They take three years
+to build. Um how are we going to do
+this? That's still there. That problem
+is still here. We're just coming up with
+novel ways to actually deal with that.
+So
+>> great. Um I'll just use this uh right so
+the we're facing this uh unprecedented
+uh infrastructure buildout um driven by
+AI and this buildout is uh largely a
+digitization of our energy
+infrastructure. Um, increasingly, uh,
+we're seeing these behindthe-ter
+devices, these distributed devices, um,
+that are extremely, um, software native
+and, um,orked by design, which makes
+them more secure, um, but also, um, puts
+them outside of the traditional
+governance mechanisms that we have for a
+lot of our, uh, typical uh, energy
+distribution and, uh, sector
+organizations. Um, we think, you know,
+we talk about how, you know, Nerk SIP,
+for example, um, wasn't designed for the
+types of, uh, technologies that we're
+seeing deployed, um, across the grid,
+uh, all the time. So, um, the governance
+needed for these new uh, components,
+these new electrotte components is
+lagging behind the buildout that we're
+currently seeing at the pace that Emma
+described.
+Great. Um, this is Yeah. Okay. Great.
+So, um, a lot to dig into here then. So,
+we we talk about how we have this great
+opportunity um, electrotech can
+potentially make our grid more secure,
+but if um, sourced without scrutiny or
+governed without standards, our uh, more
+digital grid can potentially open up new
+attack vectors. Um, and we think it's
+really important to be precise about the
+specific types of threat that we're
+talking about because all too often
+people will throw around the term supply
+chain security and policy will collapse
+into one solution that actually
+addresses none of the problems uh
+correctly. So we talk about three
+different types of threats and how we
+want to distinguish between those in our
+policym. First is the economic uh
+dependency risk with China controlling
+massive swaths of our electrotte stack.
+Um the consequences of this kind of risk
+though are longer term. If we, you know,
+see trade with China ceases or we um
+they start sinking our cargo ships, the
+solar panels and the batteries that
+we've already deployed in the United
+States will continue to function and
+generate electricity. But it'll be a
+crisis of future deployment in terms of
+the new shipments that were um cut off
+from. On the other hand, a cyber
+security risk. this could be um an
+immediate uh consequence for our grid.
+So hijacking fleet orchestration
+software can immediately destabilize
+grid balancing. Um we think we think
+though in the paper it's important to
+point out that like these kinds of bolt
+salt typhoon actors um uh are real but
+maybe the worst case scenario. A more
+realistic and third threat that we talk
+about is that of firmware dependency. So
+with China controlling massive swats of
+our electrotte stack, the products that
+we have deployed come with firmware
+which gives vendors, Chinese vendors
+access to these products years after the
+sale, often for routine diagnostics and
+updates, but still with that potential
+access to be leveraged for malicious
+purposes. And so when we're talking
+about uh risk in our supply chains, it's
+important to be clear whether we're
+talking about that economic dependency
+supply chain cutoff versus um cyber
+access that could be deployed
+immediately. Um and as we say the on
+this slide, the wrong answer is to treat
+everything as equally risky. We think
+the most strategically underweighted
+risk to our electro tech stack doesn't
+necessarily come from China, but from
+our own self-inflicted paralysis. If
+we're using blanket restrictions and
+treating every Chinese component or
+technology as equally dangerous, we both
+um fail to secure the technologies that
+actually matter, those control layers,
+and also throttle our own buildout by
+failing to uh access the commodities
+that we need for this infrastructure. So
+this is sort of the conundrum that
+frames our our thinking with the
+moneyball framework which I'll get to
+now. Oh, but Emma has go ahead
+>> to add one point on the bans and uh rip
+and replace type approaches. A number of
+years ago as a story everyone heard
+about Huawei. We were banning Huawei.
+We're going to rip and replace them.
+That was the grand plan. Um for
+understandable reasons. There was good
+reason for that to happen. So don't let
+me take away from why that happened. But
+we get to a few years ago, probably last
+year in fact, um when we actually had
+been doing some of this work, and
+there's a couple things popped up in the
+media about um essentially the Pentagon
+was asking for an exemption from the rip
+and replace because they'd not yet been
+able to source better or new components
+to replace that or fund the replacement
+of these at multiple locations. At one
+point when this ban happened and the rip
+and replace, there was a request for
+budget to do that across the country. I
+think the estimate that came in was
+somewhere on the we need four I think4
+billion dollars to actually do this
+replacement. They put one towards it
+essentially and when we get to this
+point there is no money left to do that
+replacement. Asking the consumers to
+take on that cost is significant. So,
+how do we actually get to the point of
+making a more sort of strategic ban on
+these things or strategic replacement
+over time rather than looking at doing
+this kind of we're going to straight up
+do this and then not achieve it approach
+as well. The other part of the sort of
+Huawei ban that was interesting that's
+relevant to this, we talk about
+inverters a lot here. So, the control
+layer for these components, um,
+inverters themselves, Huawei is the
+number one global supplier of inverters
+in the world. um they still are, but
+after that ban happened, they were
+actually number two in the world, they
+got they were they got banned um in the
+US and became number one in the world
+for supplying inverters. So, there's
+kind of a strange like approach there.
+Again, I'm not saying they necessarily
+were doing anything good, but that
+banning them didn't have the effect we
+thought it would have strategically.
+Most of Europe can still buy all these
+components. It didn't really change the
+approach. So, but broad bands or broad
+rip and replace don't tend to have the
+actual impact we think they do over
+time.
+>> Great. So, uh we developed this
+moneyball framework. Um we pose through
+we focused a lot in our discussion on
+the risks. Um but actually the
+assessment of risk is only onethird of
+the initial assessment. We think it's
+important not only to be making our uh
+supply chain decisions based on where
+risk lies but also opportunity. So the
+first question we ask is how urgent is
+the deployment of this component? Um is
+this something that we need immediately
+for our AI buildout or other uh
+electrification of society? Um or is
+this something that we can take time in
+investing in? Um second um where does
+that technical risk lie and what's the
+blast radius if that component were to
+become compromised? This is um really
+looking at where does this component
+live on the smart to dumb spectrum. Um,
+are we talking about the battery
+management systems, the firmware, the uh
+fleet orchestration software or are we
+talking about, as Emma described, that
+electrolyte goo inside the battery? Um,
+very different levels of risk and um
+potential uh damage to the rest of the
+system. Um, and third, this is the
+opportunity side. This is um does
+industrial or allied uh excuse me, does
+US or allied leadership in this
+component confer industrial advantage?
+So is this a component or a industry
+which we would want to investing be
+investing in such that it benefits not
+only our energy sector but we could
+utilize this across defense um
+transportation etc or is this more
+uniquely um beneficial to uh one sector
+and so based on this assessment um we
+have three tiers for ranking electrotech
+components. first where we want to
+maintain close uh domestic control of
+and sourcing. Those are our most um
+tightly uh controlled uh layers that we
+care most about. Second, uh where we can
+start incorporating trusted allies and
+partners into our sourcing decisions and
+coordinate supply chains uh together.
+And then third, where we um we can
+accept a little bit more risk into that
+sourcing. This is uh managed global
+procurement where with um transparency
+and testing requirements we can start
+incorporating these components from
+potentially volatile uh suppliers.
+So the case study we use again there are
+lots of components in this list. We've
+just been using batteries, solar and
+inverters because we have a lot of data
+on that just now. But there's a number
+of the the components on this list is
+extensive. It's not just these
+components. Um when we talk about these
+two case studies, this was really
+talking about what is smart and what is
+dumb. Um so essentially if you look at
+the battery, we have the dumb physical
+battery. It's the actual electrolyte.
+It's what generates um the DC, but it's
+the electrolyte that sits within the
+particular system. There's the smartish
+control layers that the local hardware
+controls that don't necessarily um talk
+outwards. And then there's the actual
+smartest layer which is where we've got
+the bigger consequence. Um where this
+cloud integration I think Jinger
+actually talked about a lot of this in
+her talk which is excellent. Um the
+cloud integration the grid management
+the advanced distribution management
+systems and the sort of remote update
+capability that comes through and
+connects those all together is where the
+sort of larger consequence and attention
+can be given to the firmware software
+hardware to that's that's being built
+on. But when you look at the sort of
+passive components, um there was
+actually a huge focus on building solar
+panels in the US over the past 10 years,
+it's actually there's been a decent
+amount of movement towards that. But
+again, that was also just essentially a
+layer of uh silicon that was being sold
+and the China had dominated that market
+about 15 years ago, imported exceptional
+amounts of quite honestly not well-made
+solar panels, which over the years
+actually improved, but they were not
+wellmade at the time. I'd worked in the
+solar industry. They were just coming in
+broken. Um, and you would because they
+were cheap, you could replace them. That
+being said, they weren't incredibly
+smart components. Um, with the smart
+layer on top of that, that's really the
+inverters and PCs. So, we can treat
+these all slightly differently from the
+sort of goo type components. Those are
+really sort of in the economic risk
+perspective where we get the materials
+there. Um, that's important
+economically, not necessarily that
+important from the technical control
+layer component wise. Then up to the
+sort of things that we do care about on
+the very smart level with the firmware,
+the the sort of things that we can use
+to block any other risk. That's where we
+really care.
+>> Yeah. And I think that these images
+really highlight the important point I
+think that we'll just continue to
+reiterate which is like getting into the
+policy uh next steps which is um we
+can't be governing at the product level.
+Um we must be breaking this down into
+the subproduct component level. um
+policy that restricts along the product
+lines has that same um lose-lose that I
+offered earlier, which is that it both
+fails to actually secure the layers that
+matter and actually throttles a buildout
+we need.
+One of the last outcomes we were going
+to talk about was that using this
+control layers as a fire break between
+what we care about and what we don't
+effectively. Um, one other challenge
+with sort of the control layer is if if
+doesn't really matter if it's built here
+or built in China if it is insecure by
+design. Anyway, so one of the parts is
+how do we make sure we come up with this
+fire break having secure designs in
+itself while also being built in the
+right places with the the right kinds of
+approaches put into that as well. So
+that's really what we're talking about
+there is how do we create blockers
+between the the challenges as well so
+the system works appropriately but also
+is effectively protected from the worst
+case scenarios also. So engineering
+controls.
+Great. So we talk about how there are um
+we're going to a few different horizons
+of policy that we recommend um because
+of the moneyball framework. the the goal
+is to buy us time so that we're
+controlling the most urgent components
+um but giving us time to then invest in
+the other uh supply chain uh industries
+that matter. So the first layer um
+wanting to secure those um distributed
+resource energy resources now. So that
+means um updating NERK SIP guidance to
+apply that to behind the meter and
+distributed energy resources. um just
+you know nerk zip being designed for
+large load doesn't necessarily provide
+the same nuance to these new devices
+that are coming onto the grid. Um second
+you know re-cal uh aligning our policy
+tools to recalibrate uh foreign entities
+of concern um and other rules to these
+uh more nuance money ball tiers rather
+than that product level category that um
+we've been talking about this whole
+presentation. And uh then third, this is
+the longer term industrial strategy. So
+um working with our allies and partners
+to coordinate on um comparative
+advantages and ensuring that we're um
+aligning on the the tier one and tier 2
+technologies that are important for us
+to be sourcing amongst one another as
+opposed to um all of us just discovering
+we have the same vulnerability within
+the supply chain and uh you know failing
+to build uh infrastructure that is
+secure.
+So um these next few slides are sort of
+just a summary of what is needed uh what
+are next steps for um the framework you
+know applying this sort of tiered matrix
+to policym decisions um perhaps
+leveraging um this kind of approach to
+uh more
+finely tuned um procurement restrictions
+for perhaps like uh the Pentagon
+specifically
+um not necessarily banning outright um
+export uh imports uh from China of
+products that we view as tier one but
+perhaps like within specific use cases
+setting that kind of limited product
+restriction um for DO and then letting
+that serve as an example for um other
+sectors of what is considered um most
+important control layer etc. Um
+yeah, and so we think just pretty
+simply, this framework can be a tool for
+policy makers um as we're muddling
+through the challenges facing our
+electrotte um buildout and can
+potentially serve as a market signal um
+for uh hyperscalers. So not not I think
+important to note that it's not
+necessarily only on government to be
+driving some of these decisions. the as
+we all know the capital S standards
+process can take far longer than the
+industry decisions that are being made
+right now. And so getting together
+similar to how um Google uh decades ago
+decided to pay a green premium to ensure
+that the energy it was supplying was um
+climate friendly. um getting that kind
+of voluntary agreement from hyperscalers
+and their power purchase agreements to
+ensure that you know specific control
+layers are sourced um with scrutiny and
+leveraging the most um uh agreed upon
+standards for those kinds of um
+technologies.
+>> I think that might be us. Thank you. So
+>> okay, any questions?
+Alan,
+>> uh, love this work. Uh, love breaking it
+down. Uh, is this an area where a
+hardware bill of materials would be
+helpful or have I wasted the last year
+of my life? [laughter]
+>> It's a really really deep question. How
+>> those are two separately.
+>> I don't know if we can comment on the
+how you've used your time.
+>> [laughter]
+>> No, the hardware bill of materials is
+where this would be going, but
+explainable hardware bill of materials
+from the people understanding what the
+pieces are at least on the second third
+levels down as opposed to sort of the
+name on the tin that comes in as well.
+So yes, you have not wasted your life
+Alan.
+>> This is slightly niche, but you piqu my
+curiosity with your discussion of the
+data centers. To what extent do you
+think there'll be a recalibration from
+the push toward more computing at the
+edge and processing at the edge and the
+arrival hopefully unless they get bought
+up and killed um the arrival of model
+routing AI tools that seek to more
+efficiently use power. The techn is
+going to change rapidly over the next
+few years. That being said, if we don't
+do the initial build out, then we will
+never get to the point where the
+technology changes over the years, I
+think there is a big risk that we end up
+with things that are lower power
+density, but we've created this massive
+amount of density for it as well. That
+being said, it's going a direction now
+and we're we're going to go with it.
+Like I think they're going to keep going
+with that direction and there's so much
+money pouring into those that I think
+there'll be tiers of computing also that
+come from different power capabilities.
+So I think we we'll get there but it's
+[snorts] you know the speed of things
+are moving that risk is going to have to
+be absorbed by people with a whole lot
+more money than me. So
+>> um on that front about the model writing
+I think one of the things that's going
+to be emerging sooner than later is the
+ability to pack more intelligence into a
+more dense form. It's already happening
+now and with RSI starting to pick up I
+think uh it's entirely possible that
+we'll have a glut of energy uh or data
+centers in the near future as well.
+>> Thanks for the presentation. You have
+presented I think a compelling policy
+framework and props to you for starting
+from some pretty complicated
+niche knowledge and boiling it down to
+something that the policy makers are
+going to be able to take action on. Um,
+could you talk a little bit about where
+you think awareness and uptake on the
+policy front is right now? Are there
+kind of hot spots or states or other
+areas where you think that they're
+starting to get it and starting to do it
+or are we still at the pretty close to
+the beginning?
+>> From the sort of states level, there's a
+number of sort of front leaders in
+really looking at supply chain
+constraints and hardware for this new
+effort as well. Um there's a couple
+folks that are really getting ahead, but
+that being said, that doesn't really
+help us from the how do we nationally
+explain sort of demand signals, how
+people can build, what they should be
+building. Each state doing it
+differently will not really help us
+convene that together. Let me said on
+the national scale there is I mean I I
+think in the original notes I have
+something called it's ban season because
+we're back about once a year this comes
+up that we're going to we're going to
+ban a whole class of components um that
+would disrupt certain types of
+deployment at the moment. Um there's a
+sort of degree of political and
+technical
+sway going on there that's a which which
+risk are we actually looking at? Is it
+just that we don't really like solar
+energy just now or we're just changing
+that? So that is happening and so that's
+really sort of the timing of this is
+around hey we should probably explain
+what all these components are also
+rather than just doing sort of the broad
+broad movements. I do one thing I'm
+fairly proud of from our perspective is
+people actually learned what an inverter
+was and I I can tag Phoebe Harry and
+>> confirm others at risk of jeopardizing
+the credibility of the presentation. I
+did not know what an inverter was before
+I met Emma. So, [laughter]
+>> but then you explained it to all sorts
+of people and lots of people know what
+>> we're
+>> Okay, any other questions?
+>> All right, great. Thanks, baby. Thanks,
+Emma.

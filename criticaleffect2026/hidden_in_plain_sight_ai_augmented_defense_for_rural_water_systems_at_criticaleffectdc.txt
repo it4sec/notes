@@ -1,0 +1,847 @@
+ABOUT
+================================================================================
+Title: Hidden in Plain Sight: AI-Augmented Defense for Rural Water Systems at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=CQqnBBcd3NM
+Video ID: CQqnBBcd3NM
+Published: 2026-07-28
+Duration: 28:53
+Views: 9
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: Hidden in Plain Sight: AI-Augmented Defense for Rural Water Systems
+Track 3: Tactical Mastery
+Wednesday, June 17, 2026
+
+Micro, low-visibility disruptions in under-resourced systems represent one of the fastest paths to disproportionate national-level impact. Adversaries targeting U.S. critical infrastructure increasingly operate below detection thresholds, using automation, legitimate tools, and long dwell times to probe and persist inside industrial control systems. These campaigns do not announce themselves. They blend into normal operations. Rural water and wastewater utilities represent a critical exposure point. When a small wastewater system fails, the impact is not gradual; it is immediate. This session led by Clement Danish (CEO, Blank Slate Solution) and Stacey Myers (AI and Cybersecurity Consultant, Lumenae LLC) focuses on what can be put in place now to prevent small, local disruptions from scaling into 2027-style multi-region cascade events.
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media to facilitate actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Hidden in Plain Sight: AI-Augmented Defense for Rural Water Systems at #CriticalEffectDC
+
+## Authors / presenters and credentials
+
+- **Clement Danish** — **CEO, Blank Slate Solution**. The transcript also describes strategic-planning, operational, critical-infrastructure-dependency, and Department of Defense-related experience, but the exact positions and affiliations are not clearly provided.
+- **Stacey Myers** — **AI and Cybersecurity Consultant, Lumenae LLC**, according to the About section. In the transcript, the name appears as “Stacy Myers,” and she states that she owns **“Illuminae LLC”** and developed **ICS Defend**. The supplied material does not clarify whether “Lumenae” and “Illuminae” are the same organization or whether this reflects a transcription error.
+
+**Author/channel:** Institute for Security and Technology (IST)  
+**Channel URL:** https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw  
+**Video URL:** https://www.youtube.com/watch?v=CQqnBBcd3NM  
+**Video ID:** CQqnBBcd3NM  
+**Published:** July 28, 2026  
+**Duration:** 28:53  
+
+Personal email addresses, telephone numbers, personal websites, and direct contact details for the presenters were **not provided**.
+
+## Summary
+
+The session argues that rural water and wastewater utilities are a strategically important but poorly monitored exposure point in U.S. critical infrastructure. Because these systems are small, geographically distributed, understaffed, and often disconnected from shared security visibility, adversaries can conduct low-visibility, persistent operations without triggering conventional alarms.
+
+The presenters focus on attacks that resemble routine operations rather than dramatic failures. Threat actors may make gradual changes to chemical settings, water pressure, valves, pumps, PLCs, remote-access mechanisms, or other industrial-control-system parameters. Each individual change may appear harmless, but the cumulative effect can produce unsafe water, wastewater-processing failures, hospital disruption, sanitation problems, road closures, and emergency-service impacts.
+
+A central idea is that the danger lies in the **detection delay zone**: the period in which system signals appear normal while consequences are accumulating. Since each rural site may observe only a local anomaly, multiple related incidents across different locations and time periods may never be recognized as one coordinated campaign. The presenters describe this as a progression from distributed small failures to amplified, regional, national, and potentially international cascading effects.
+
+Their proposed answer is an AI-supported, non-enterprise defense capability that works across multiple rural utilities and critical-infrastructure sectors. The system would aggregate data from otherwise separate sites, identify spatial and temporal patterns, detect slow deviations from normal behavior, and translate alerts into practical instructions for operators. The proposed AI is explicitly intended to support—not replace—human decision-making: it would not control operational functions or make decisions on behalf of utility personnel.
+
+The approach combines technical monitoring with operational coordination. It includes asset intelligence, anomaly detection, decoys and honeypots, cross-site correlation, operator guidance, continuity planning, information sharing, and a staged implementation roadmap. The presenters also stress that technology alone is insufficient. Rural utilities need funding, coordination, implementation support, capacity building, shared information, and exercises that expose weaknesses more effectively than assessments alone.
+
+## Technical innovation and authors’ ideas
+
+The principal innovation is the design of a **cross-site AI monitoring and coordination layer** for small, distributed utilities. Rather than treating each water system as an isolated asset, the proposed approach treats rural infrastructure as a connected system of systems. This enables detection of patterns that are invisible at any single site.
+
+The presenters’ ideas include:
+
+1. **AI-based detection of low-and-slow activity**  
+   The proposed system would identify gradual deviations, legitimate-tool usage, persistent access, and “living off the land” behavior that may not produce conventional alerts.
+
+2. **Spatial-temporal correlation across utilities**  
+   Signals from multiple sites would be combined over time and geography. This is intended to reveal coordinated activity when individual utilities see only ordinary-looking local events.
+
+3. **An external aggregation and pattern-recognition layer**  
+   The system would sit outside individual IT environments and consolidate operational signals, helping overcome the lack of shared visibility and common operating pictures among rural utilities.
+
+4. **Human-in-the-loop and human-on-the-loop operation**  
+   The AI would validate and interpret signals but would not make operational decisions or directly manipulate utility functions. Operators remain responsible for action.
+
+5. **Operator-oriented alerting**  
+   Instead of producing technical alerts intended only for cybersecurity specialists, the system would express findings in operational-technology language and convert them into concise “operator cards” with specific, usable actions.
+
+6. **Five-layer defense model**  
+   The proposed architecture is organized around:
+   - **Discover:** Maintain a living asset inventory and map internet exposure.
+   - **Detect:** Apply layered anomaly detection to low-visibility and persistent activity.
+   - **Divert:** Use decoys, breadcrumbs, and honeypots to identify unauthorized probing.
+   - **Coordinate:** Correlate anomalies across sites and share relevant information upward and across utilities.
+   - **Sustain:** Provide operator support, continuity capabilities, and safe response guidance.
+
+7. **Non-enterprise and potentially plug-and-play deployment**  
+   The presenters envision a tool suitable for very small utilities that lack security operations centers, specialized staff, or the ability to implement complex commercial platforms. They identify a gap between free or low-cost tools and the consulting and operational assistance needed to deploy them effectively.
+
+8. **Sector-scalable design**  
+   Although the immediate focus is rural water and wastewater, the proposed capability is described as applicable to other critical-infrastructure sectors, including energy, manufacturing, and agriculture.
+
+9. **Operational roadmap rather than a purely conceptual framework**  
+   The presenters propose a six- to eighteen-month roadmap in which each stage produces a concrete output, such as a baseline, alerts, controls, operator cards, or exercise results. The goal is to provide actions that utilities can begin immediately and develop incrementally.
+
+10. **Exercise-centered validation**  
+    The presenters argue that exercises reveal operational weaknesses more effectively than assessments alone. Exercises are intended to show where procedures, communication channels, and technical controls fail under realistic conditions.
+
+## Key technical ideas
+
+- **Normal-looking behavior can be malicious:** Small changes to ordinary settings may be more difficult to detect than overt attacks.
+- **The unit of analysis should be larger than one utility:** Distributed rural sites must be analyzed collectively across space and time.
+- **Detection must precede the detection delay zone:** Once consequences begin, defenders are reacting rather than preventing the event.
+- **AI should augment operators, not control infrastructure:** The proposed system provides monitoring, correlation, interpretation, and guidance while preserving human authority.
+- **Alerts must be actionable for operators:** Short, people-friendly operator cards are favored over lengthy incident-response documents.
+- **Decoys can expose unauthorized activity:** Honeypots, breadcrumbs, and similar mechanisms can identify users or actors interacting with resources they should not access.
+- **Cybersecurity and continuity are inseparable:** The objective is not security in isolation, but safe and reliable water service.
+- **Technology requires organizational support:** Funding, coordination, capacity, information sharing, and implementation assistance are necessary for rural deployment.
+- **Cascades are both technical and social:** Infrastructure failures can trigger sanitation, healthcare, emergency-response, transportation, public-confidence, and misinformation effects.
+
+## Additional event and organization information
+
+The session was part of **Critical Effect DC**, Track 3: **Tactical Mastery**, held Wednesday, June 17, 2026. The event was presented by **ICS Village**, in partnership with IST’s **UnDisruptable27** project and **Akin Gump**.
+
+Provided organization and event links:
+
+- Critical Effect 2026: https://securityandtechnology.org/event/critical-effect-2026/
+- ICS Village: https://icsvillage.com/
+- UnDisruptable27: https://securityandtechnology.org/undisruptable27/
+- UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+The supplied material does not provide a formal paper publication venue, DOI, institutional affiliations beyond those stated above, or direct contact information for the presenters.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Perfect.
+I'm waiting for our
+ready.
+Good morning. My name is Stacy Myers. I
+own Illuminae LLC, which is a small
+boutique consulting firm because I focus
+on cyber and AI security and data
+systems, which you wouldn't think
+immediately go together, but they do.
+I'm also the developer of ICS defend
+which is based off several MITER
+frameworks which is tailored
+specifically for the critical
+infrastructure sectors especially the
+utilities and it integrates AI threats
+and concerns in there as well because
+there was a gap with what MITER attack
+had and was what MITER defend also
+provided with AI and Gen AI coming into
+play. Yes.
+Okay,
+we can't do that. So
+solution
+just go with that. Um I
+activities director in operations and
+activities over the years and um once I
+lift in the D and the DoD
+and um focus a little on critical
+infrastructure dependencies and how it
+impacts cognitive influence on that and
+Stacy and I came together with her
+technical expertise and what I have from
+strategic planning uh and outlooks and
+uh we put this together and um hopefully
+you'll get something out of it and uh we
+can move forward collectively.
+So just remember super technical stuff
+and references into our our slides and
+so that's why we have to use your notes
+because it was a last minute thing. So
+as you can see within 72 hours of a lack
+of water is a public health crisis.
+Now I don't know if anybody ever played
+the game Oregon Trail, right? You know
+by dysentery where it's threatened to
+chalera when water stops working. That's
+a big deal. Now imagine if you have
+multiple rural sites having these same
+events happen. It's a cascade event. We
+start seeing them here. We have no way
+to track that. There's no way to that
+pattern. Everything looks normal.
+So
+with that question came up of how do we
+make how are we able to improve that and
+how are we able to leverage the existing
+technology without disrupting the safety
+and the functionality of utilities and
+what we did was add AI into it.
+So
+one of the problem and we came up with a
+solution for it. It also touches on so
+many other interdependencies whether it
+be energy or manufacturing or
+agriculture. All of these things come in
+and one of our problems is we don't look
+at systems of systems when it comes to
+critical infrastructure. Water is the
+foundation of a life and it's the
+foundation of all economies.
+So that's the idea. It's hidden in plain
+sight.
+Everything looks like it from a
+defender's perspective. It's not loud.
+There's no noisy attacks. Our threats
+aren't blow big explosions like you
+would see in the movies. They're not
+blowing into the power plants. They're
+changing tiny specific settings. So once
+the chemical imbalances happen, that's
+when your water can't be used. You can't
+drink it if it's poisoned, too much
+chlorine. And then if they change water
+pressure, hospitals can't, you know,
+function. There's, you know, let alone
+wastewater processing. And that gets
+your death bio or working trail. We talk
+about not obvious. So lay of the land is
+it's quiet looks normal. That's the
+cyber security part. Everything's
+normal. Settings look good. They just
+tweak slowly but surely. And they sit.
+They're patient. We want to make sure
+that it looks routine. if you're if
+you're a nation state. They're just
+checking to make sure the normal
+expected reactions happen and
+positioned. So, I'm going to sit there.
+I'm going to look around and I'm going
+to be like, let's see if this happens
+today. Let's see if this happens over
+here. Let's see if anybody notices a
+pattern.
+Hey,
+so those most dangerous disruptions are
+the ones that look normal. When you
+train your systems to expect aberant
+behavior because it's normal, that's
+when you've been owned and you're not
+even going to know it. None of your IT
+systems can check these things. You need
+something that sits outside, pulls it
+all together, and watches and does that
+pattern recognition in a way that humans
+generally can't because rural utilities
+are so understaffed. They barely have
+time for cyber security free tools, let
+alone using the ones that are paid.
+I am reading from those because it's
+definitely more technical for me to
+remember oneoff but I'll say no one
+detection fails why don't we catch this
+we look at distributed targets uh we're
+not talking about one big utility as you
+can see you know with looking at rural
+communities everything is distributed
+all over and sometimes rural communities
+themselves um the infrastructure is
+rural because it hasn't caught up with
+the expansion of of the neighborhoods
+and the manufacturing facilities around
+it. We're talking about dozens,
+sometimes hundreds of small isolated
+water and wastewater systems. Each one
+has two or three operators. Some have no
+sock. None of them shared visibility
+into what's happening at a site 30 miles
+down the road. As we know that, you
+know, it's not a common operating
+picture if you don't have situational
+awareness. Everybody says they create
+common operator pictures you know
+throughout the department of war or
+other places but it's it's not as common
+it's not common across any level. So we
+we definitely have to look at that when
+we look at the targets. Sorry, when we
+look at the distributed targets, the
+uncord awareness, um the soiled
+response,
+you know, we have to take into account
+as I say, you know, from left to right,
+the spatial temporal aspect of how these
+incidences are occurring. Um there's a
+reason behind this. Uh the reason behind
+the spatial temporal aspect of it is our
+adversaries and malicious actors um
+intuitively know that if we focus on one
+concentrated area, you know, things are
+going to be detected. We're going to see
+indications and warnings. We're going to
+start placing our own sensors against
+it. But when we do this at rural
+locations, it it desensit well it
+doesn't even desensitize. There's no
+sensitation to it. So, you know, we look
+over time. So, it's incremental pieces.
+you know, on the a thousand paper cuts,
+you know, you bleed out from that. But
+the uncoordinated awareness, situational
+awareness itself is each jurisdiction
+sees something, okay? But they're not,
+as it was spoken about a few minutes
+ago, they're not forced to talk to each
+other, nor do they have the means, nor
+do they have the understanding of the
+implications of what's happening um from
+there. And then the soil response is the
+functional lanes. What does that impact?
+It impacts, you know, water, health,
+EMS, law enforcement, you know, they all
+operate in parallel a lot of times.
+Standards coverage pieces. I flex here,
+you flex here, I cover here, but they
+don't actually work collectively
+together in in the same way. When we
+started to talk about rural water
+systems, um, these are just a few
+samplings that we pulled. I mean, we've
+talked we've spoken about some that are
+much more current, but the top spatial
+temporal piece over time and space well
+over time top and then space below. And
+if we started to correlate those
+locations with who, where, and what the
+events are around there, it makes much
+more sense. But we don't do that at the
+rural communities because sometimes
+we're just trying to keep the function
+of the plant happening. Um, and that and
+we don't take that into account working
+from the federal down to the the very
+local level. So we're trying to present
+that understanding a little bit more
+into it.
+>> And the difficulty is that it's public
+and private. So we can't enforce
+anything.
+>> Thank you.
+And with that public and private, how do
+you integrate? You know, because
+everybody's worried about being exposed
+and looking like they're failing.
+Everybody has to report. There's
+standard reporting everybody has to do,
+but how do we keep that safe? And we'll
+talk a little bit more about that
+reporting being exploited later.
+Honestly, I feel like this is trying to
+handle a new piece of technology, but
+it's only a microphone, so I don't keep
+hitting the mute button. But, um,
+Stacy's actually, so both of us, I would
+say, grew up looking at patterns,
+indications and warnings, patterns,
+behavioral, mine more cognitive, and
+then hers more technical. And as we look
+at this, we start to look at, you know,
+what are these observed patterns? You
+know, you have the behavioral pattern is
+low visibility, persistent distributed
+presence, living off the land. You know
+what it looks like on a daily. You know,
+your normal admin system activity. If
+you're doing something normal and you
+don't have that benchmark, that
+baseline, then what happens? You don't
+know what you're looking for. And
+sometimes that's not something that's
+present or in the forefront of someone's
+mind as they're working daily within
+system.
+>> So, I look at it from a threat
+perspective. He looks at it from a scops
+perspective. And together we blow things
+up. I say cognitive, she says scops.
+>> What?
+>> I say cognitive, you say scops.
+>> Know it for what it is.
+>> We like to add humor into these because
+they get boring quick when I start
+listing all the numbers.
+>> And also our brains will go down many
+different pathways. So using notes helps
+the structure so we don't
+>> go into things that aren't even part of
+this. Um but but you know the
+misdetection again in the forefront of
+the brain is we'll get into it a little
+bit later but the short is the adversary
+wants us to do these things. They wants
+to maintain a certain condition and of
+this and that leads to you know the
+persistence over a long time. You don't
+see these things approaching because you
+don't have a benchmark or a baseline of
+understanding. It's not presented that
+way at a rural level. um the distributed
+presence as we've shown you know
+multiple small sites in the previous uh
+distributed not only in the space but
+also in time okay so the patterns aren't
+recognized because we spoke earlier
+about the uh
+earlier about the uh
+what I'm saying no well not this
+distributed but the uh common operating
+pictures my bad you know because it's
+not common they don't have collective
+coordinated situational awareness so
+they can't have a common understanding
+of what's actually happening
+And then living off the land, the
+legitimate tools, normal protocols, you
+know, no alerts are triggered. If the
+sensors aren't there, both from a human
+and technical pers
+human and technical perspective, there's
+no reason to raise a red flag. There's
+no reason to take action because it
+hasn't crossed a threshold. So, we
+haven't defined that. And that's
+something again at the very high level
+federal, we build a very strong
+resilient top layer. How do we take that
+same type and move it down into a rural
+infrastructure without overloading them
+both with too much knowledge under
+demand as well as the funding piece? And
+we can get to that a little bit later if
+you're interested.
+>> We definitely get to the funding later.
+>> This is our favorite slide. This is our
+cascade model. So this is what we build
+the entire AI around and it's a
+potential solution for rural utilities
+to be able to have a off network um
+non-enterprise level AI tool that will
+basically address all of these issues
+and it's not specific to water so it can
+scale across multiple utilities and
+critical infrastructure se sectors. So
+that's the goal that we hope to be able
+to build.
+Sorry.
+So, as we walk down, you know, the
+signal to societal impact, you know, you
+have your multi-sight trigger, which
+we've we've discussed site A, B, C, and
+D that we haven't, you know, that
+doesn't have that common operating
+picture piece. You have the ICST signal
+layers, sensors, valves, pumps, remote
+access, you know, the actual items
+themselves, the physical system effect,
+overflow, seeing the results of
+something failing. Then you have the
+detection delay zone. Okay, what appears
+as normal is actually failing. And then
+as you look at what I do on a many uh in
+many exercises, activities, plans, and
+strategies is to look at the community
+impact, you know, the contamination,
+closures, uh sanitation breakdown in the
+24 to 72 hours. Um and then there's the
+cross- sector cascade from there which
+looks at a lot of times your your your
+EMS, hospitals, transport, public
+behavior. Um which leads into confidence
+and fear-based decisions.
+So I'm going to focus on the detection
+delay zone because that's where a lot of
+the magic happens. So and it's where
+most defenses fail. So what we talk
+about here is it's the signal stop and
+consequences start. So that's that shift
+where we're no longer able to defend
+against something. Now we're actually
+reacting
+and it's each site it looks local. So
+individually somewhere in Vermont versus
+somewhere in South Dakota is going to be
+having the same exact things happening.
+They just don't know it. So at what
+point does critical mass happen? When do
+we have so many small events that are
+going to create an regional or national
+level event? And we don't know because
+there's no way to track it because of
+the small rural utilities just not
+having the support to do it. Who are
+they going to tell? Like, you know, hey,
+this is happening. Okay, that's nice. If
+we look at the media now, how do events
+happen? Like, we found out about
+California and Iran. We know nation
+states are there. We they're checking to
+make sure that our security isn't as
+functional as we need it to be.
+Okay.
+So, that goes back to everything looks
+routine. It's normal. We want standard
+troubleshooting. We have our we'll power
+up the PLC's. We'll check the valves.
+We'll make sure that the, you know,
+pressure rates are fine. But they're
+not. They're all drifting. And that's
+the key. It's just normal. It's training
+this the operators and the sensors to
+not notice the escalation. And I'm a big
+aggregation of data person. So that's
+where pattern recognition comes in. How
+do you recognize that there's a shift
+without having that tracking? Okay. Yes.
+No. Go for it.
+I've got the reference architecture and
+I have the outline of it. That's one of
+the things that I want to be able to
+build and long-term have rural utilities
+be able to make available
+because
+my goal and our hope is that they have
+the ability to take some plug-and-play
+tool because Draos and a lot of the you
+know and clarity they have their
+community offerings and they're great
+but you still have to qualify and if
+you're really tiny you can't now you can
+build a Raspberry Pi and run compot off
+of it and what 50ucksucks Right. Okay.
+But that's not enough because somebody
+who's an operator who knows how to
+tailor the water pressure doesn't know
+how to do that. So there's a gap between
+implementation of free tools or lowcost
+tools and that consulting that needs to
+happen. And that's actually something
+that I touch on later in a shark tank to
+be able to say that there's a gap and
+other sectors have addressed it but we
+haven't in water.
+So there's precedent and I'm a big fan
+of precedent. I love a framework. I love
+the building of the frameworks. I love
+the operationalizing of them more. Let's
+make it useful. Yeah.
+I mean,
+no, I need a test case for it. But the
+key for the AI is that it doesn't make
+decisions. I keep it human in the loop
+and human on the loop. So, it doesn't
+touch any of the functions that an
+operator would do. It just validates
+things that look at signals, you know,
+and we'll get through. Sorry, I was
+pointing with the mic. Um, discover,
+detect, divert, coordinate, and sustain.
+And how all of those things are layered
+together to build a functional AI tool,
+which I guess I've gone through the
+delay zone.
+>> Okay. So, we're going to look at what
+water failure doesn't. Now let me
+>> now that we've sidetracked.
+>> Yeah. Show you why water failure doesn't
+stay a water failure. As we look at this
+the water fails,
+sanitation impact sanitation which is
+downstream. Eventually you're going to
+have road closures due to contamination
+cleanups other activities. So you're
+going to have disruption within the
+local communities and uh lines
+communication. It's going to impact your
+emergency medical services both at the
+local rural um local rural and
+potentially even greater uh communities
+and then it's going to impact your
+healthcare. So there's this cascading
+effect in many a ripple effect as we
+look at this. Um
+the communities don't depend on
+systems. They depend on sorry they they
+depend on the connections between them.
+And uh here's what makes it worse is
+what I've spoken about again with the
+influence side of it is the behavioral
+piece of this is how people react when
+those fractures occur, when the
+disruption occurs. as much as we like to
+say it, you know, it's um it's horrible
+to see like in western North Carolina,
+Tennessee, Kentucky, and areas like that
+to see how these actual fractures
+occurred in rural communities. I was
+there like on day two and then these
+exact same things happened as it went
+down the line down the line. So,
+individual communities became isolated.
+They started relying only on themselves.
+Local governance began to fracture and
+then when the federal government stepped
+in, there was this lack of
+understanding. there was a lack of uh I
+wouldn't say compassion, it was how it
+was viewed and then there was resistance
+to both. And as we saw that the
+information sources and the outpouring
+of information, it just this cascading
+effect um uh impacted those communities.
+Our most recent example of that was the
+hurricane in South and North Carolina
+where you had people actively spreading
+misinformation that FEMA wasn't coming
+and then holding up FEMA officers and
+agents when they got there and the
+communities were angry. And so, you
+know, there's this big disconnect
+between the actual support services
+offered and the ones that the community
+can actually receive because of the
+psychological impacts of being abandoned
+or feeling abandoned. You know, emotions
+are a big driver about what happens as a
+result of all of this. And that's one of
+our greatest things that we don't really
+talk about is the human side of
+consequence when you can't depend on all
+of the things that you're used to. You
+know the internet goes out and we live
+in the internet you know capital of the
+world and what are people going to do?
+They don't know how to function anymore
+without these utilities and they assume
+that they are going to be there without
+disruption.
+You're correct.
+>> And you would know better being there.
+I'm just going based off of
+>> Oh, I'm sorry. You're right.
+So the the statement was that you know
+what?
+>> Okay. Um Jonathan Ederan, I'm a
+cyerspace uh defense warrant officer
+with the North Carolina National Guard.
+Um just wanted to make a comment on the
+statement you made with regards to the
+misinformation regarding u the situation
+with Hurricane Helen in North Carolina
+about FEMA not arriving at the remote
+locations. I don't think it was not ne
+it wasn't um necessarily
+um FEMA not arriving at these locations
+at these remote locations. It was the
+speed and the timeliness of which FEMA
+would uh react and actually support the
+local
+>> Absolutely correct. So yes, when I got
+out there it was a again understanding
+the expectations. So the expectation
+management was a messaging piece that
+wasn't put out probably again when you
+don't have something to receive the
+message which again remember utilities
+are out utilities are gone it was very
+difficult for rural communities to get
+that and then when it did arrive in in
+increments everybody that knew was okay
+that there was it it built up with angst
+without again you're not having to come
+what you need on a daily basis but what
+was being pushed and the little bits
+that were getting through was I think
+what caused the expectation
+of being greater. But we also know FEMA
+is not an army. It takes time to
+mobilize. It takes time to move. It
+takes So again, even with
+sorry, even with the the water treatment
+and sorry, the water facilities, how do
+you communicate that to a community
+saying if something goes down, this is
+what it will be. This is what you should
+expect to see. This is what the
+consequences are, and this is how we're
+going to do our best to remediate the
+situation. So,
+oh, but
+>> so this actually really helpfully
+contributes to what we call the typhoon
+moment. And that's our small failures
+becoming distributed that become an
+overwhelming wave of events cas
+cascading across the the nation.
+The idea is distributed becomes
+amplified and amplified becomes regional
+and regional becomes national and
+potentially international because you
+know global cascade is a potential idea
+much like cutting the uh the internet
+cables in the ocean. You know that's
+going to have global effects.
+So, our session that we're running
+behind on focused really on what can be
+put in place to prevent all of this
+and here's where we get to the technical
+things and I'm going to
+we're speeding this up because I know
+we're late. Um, cyber defense has to
+operate across the layers. So, there's
+discover, detect, divert, coordinate,
+and sustain. And the goal of these is
+from an technical perspective because I
+want to make sure that it addresses your
+AI question. Um, discover is asset
+intelligence. It's building and
+maintaining the living uh inventory and
+developing an internet exposure map. So
+that's not on the slides.
+Detect is layered anomaly detection,
+flagging the low and slow, the living
+off the land activity to develop alerts
+that operators can actually use. Not
+cyber security analysts but operators.
+We want to have um divert. Now,
+originally in cyber security, that's
+deceive, but lawyers don't like that and
+utilities get really weirded out. So, we
+went with divert, which is the decoys,
+the lightweight breadcrumbming and the
+honeypotss that you can use because no
+legitimate user operator is going to be
+touching these things if you set them
+up. So, if somebody's going and looking
+at them, you know that they're a threat
+actor.
+And we wanted to be able to track
+tradecraftraft to see what they're doing
+and then have that information available
+to share to other utilities and you know
+upward with Isax
+coordinate is the cross- sight
+correlation as the typhoon detector.
+That's where multiple sites report the
+anomalies and someone gets to see the
+pattern. someone tracks it and then that
+way if it's a vault typhoon we can
+report it up all the way up to the DoD
+where it needs to be. The IC community
+doesn't necessarily touch rural water.
+Why would they? Unless it is impacting
+them on a personal level.
+Sustain is the operator co-pilot and
+continuity. That's a really
+humanoriented part. We want to turn the
+alert into a right and safe action
+because we go back to water has to be
+safe and functioning before it has to be
+secure. It seems weird but security
+actually helps you get there if you do
+it right and it identifies the patterns
+that matter and operators get to stay in
+control. So no AI making decisions. It
+now the benefit of this is that AI
+doesn't sleep. So it can monitor 247. It
+can consolidate these patterns. it can
+spit it out and help somebody understand
+from an operator perspective in their
+language OT based a way to be able to
+react to it. We want to turn it into
+operator cards that actually have action
+so that somebody at 3 in the morning
+goes, "Oh, this looks weird. This is
+what I do with it." As opposed to an
+incident response plan that's like 200
+pages and nobody looks at it because why
+would they? And even if they did, what
+would they do with it? Who would they
+tell?
+And this is individual steps laid out
+in the people friendly language not the
+technology.
+And the next thing we do is we get to a
+road map. Now one of the things we
+wanted to do is establish for rural
+communities this 6 to 18month road map
+that helps you start building your
+security. Helps establish that hey
+there's free tools out there. You can go
+find them but there's still a cost to
+free. It's like a free puppy or a free
+horse. Trust me, they're expensive. And
+what we want is to establish things that
+somebody can do day one, week one,
+starting on Monday. Here's where I
+start. This is what I have. And I know a
+path down the road. And we have a much
+longer version, but we start with a
+baseline. Each step creates a concrete
+output. It's not just a report. You
+leverage all the reporting that you're
+doing, but you get a baseline. You get
+alerts. You get the controls. those
+active cards that somebody can, you
+know, as a threat identify, you know, it
+they can manage it and be able to say at
+the end an exercise. Now, we love an
+assessment. Now, some of got a
+framework, got an assessment to go with
+it, but the exercise will teach you more
+than any assessment ever will. It shows
+you where your stuff breaks, and that
+was edited.
+So
+now this ties into where the gaps are
+that we see with policy and funding.
+There's four pillars and it all lays
+down to one defense and building the
+resiliency. We need money, we need
+coordination, we need to build the
+capacity and we need information
+sharing.
+So
+>> sorry.
+>> No, that's that's perfect. if there's
+and one of the pieces and like wrapping
+up is one of the things that we don't
+talk with and I've spoke with a number
+of small very rural communities is in
+short you have um they don't know how to
+plan for the money aspect of it long
+term and I know that the department of
+war department of defense has different
+parameters frameworks and such and so
+one of our pieces was is how would we
+work with with them to actually plan
+this out for a long term almost using
+like a ppbe planning program budgeting
+execution so that we can hopefully
+migrate their understanding and needs up
+to a state from a state to a federal and
+we can have a systematic approach
+because without that systematic approach
+it's going to remain fractured and
+distributed and vulnerable. So thank you
+very much. Summarize it.
