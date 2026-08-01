@@ -1,0 +1,143 @@
+# Measuring Catastrophe: Why Critical Infrastructure Cannot Survive Without a Disaster Scale
+
+## Presentation and author information
+
+**Author / speaker:** Munish Walther-Puri
+
+**Professional title:** Head of Critical Digital Infrastructure
+
+**Organization:** TPO Group
+
+**Additional credential stated in the source:** Former first Director of Cyber Risk for the City of New York. In the presentation, Walther-Puri notes that he is speaking in a personal capacity and not on behalf of the City of New York.
+**Presentation title:** *Measuring Catastrophe: Why Critical Infrastructure Cannot Survive Without a Disaster Scale*
+**Presentation date:** Wednesday, June 17, 2026
+
+---
+
+## Summary
+
+The work proposes a preliminary **Technology Disaster Scale** for describing and communicating the consequences of cyber and technology failures affecting critical infrastructure. Its central argument is that modern technology incidents increasingly resemble natural disasters: they propagate across interconnected systems, create cascading effects, overwhelm local response capacity, and can threaten essential services and public safety.
+
+The proposal originates from the author’s experience as New York City’s first Director of Cyber Risk. In that role, he found that organizations responsible for emergency management, transportation, finance, real estate, utilities, and municipal services often lacked a common way to describe their dependencies or estimate how much external assistance a severe cyber event would require. Wildfire response provided the motivating analogy: emergency authorities can estimate the likely scale of a fire, the number of engines required, the duration of deployment, and the point at which mutual aid becomes necessary. Cybersecurity lacks an equivalent shared operational language.
+The author therefore treats cyber not as a self-contained noun or specialist category, but as a modifier describing one possible origin of a broader disaster. A cyber-triggered failure of fuel distribution, healthcare, water, transportation, or energy infrastructure should be evaluated primarily as a disaster affecting people and services. The proposed scale deliberately prioritizes **consequence management** over technical root-cause analysis.
+
+A key conceptual innovation is the classification of large technology failures as behaving more like **natural disasters** than conventional human-made disasters. Although technology is designed by humans, its failures can become nonlinear, distributed, and compounding. Once the effects spread through tightly coupled infrastructure, identifying the individual who introduced a defective patch, misconfiguration, or malicious action may be less important for immediate response than understanding the resulting operational disruption.
+
+The scale is designed for audiences beyond cybersecurity specialists, especially journalists, public officials, local governments, and emergency managers. The author argues that response speed depends partly on communication speed and that communication during crises must use simple, widely understandable language. The model intentionally sacrifices some nuance in exchange for rapid comprehension, much as “Category 5” communicates hurricane severity without requiring the public to understand meteorology.
+
+The proposed framework evaluates a technology disaster using three principal dimensions:
+
+1. **Intensity** — the severity of operational disruption.
+2. **Magnitude** — the breadth of the event, especially the number of people or populations affected.
+3. **Duration** — the time required not merely to stop the incident, but to restore normal operations and confidence in the affected systems.
+
+Magnitude is deliberately human-centered. Instead of limiting evaluation to compromised devices, financial losses, or affected organizations, the scale attempts to translate technical impact into population-level consequences. Duration is similarly broader than outage length: it includes technical restoration, re-establishment of automation and control, removal of an adversary where applicable, and recovery of security confidence.
+The author proposes combining these dimensions mathematically. The initial process consists of establishing a base disruption value, applying a risk multiplier, assessing magnitude, estimating duration to operational confidence, multiplying the factors, and converting the result through a logarithmic scale. A logarithmic structure is intended to distinguish moderate incidents from genuinely catastrophic ones without requiring nontechnical audiences to understand the underlying mathematics. The public-facing value would function as an easily recognized disaster level, while specialists could inspect the more detailed methodology behind it.
+The framework intentionally excludes attacker intent from the primary score. A defective software update, a deliberate supply-chain attack, ransomware, and sabotage may have different causes, but responders initially face the same practical questions: Which services are unavailable? How many people are affected? How long will recovery take? What additional resources are required? Root-cause and forensic investigations can proceed in parallel, just as arson investigation proceeds separately from firefighting operations.
+Intent can nevertheless affect the duration component. An accidental outage may be resolved by repairing or replacing systems, whereas a persistent adversary may require extensive investigation, eradication, rebuilding, segmentation, and confidence testing. Thus, strategic intent is represented indirectly through its effect on recovery complexity rather than as an independent moral or attribution variable.
+
+The author tests the scale retrospectively against several major incidents:
+
+* **Colonial Pipeline** receives a score only slightly above level 3. Although it affected critical regional fuel infrastructure and generated substantial public concern, the event did not produce a documented mass life-safety crisis.
+* **Stuxnet** receives approximately 3.3. Despite its historic significance and implications for state-sponsored attacks on nuclear infrastructure, its directly affected population and operational consequences were relatively bounded under this consequence-centered model.
+* **CrowdStrike’s global outage** receives a higher score, approximately 3.58, because it created widespread cross-sector disruption and affected a much larger population, even though the initiating technical fault itself was not unusually destructive.
+
+These examples illustrate one of the framework’s most provocative implications: an incident’s historical, geopolitical, or cybersecurity significance may differ sharply from its disaster-response severity. A technically sophisticated attack can score below an accidental software failure when the latter disrupts more services and affects more people.
+The author presents the system explicitly as a first attempt rather than a finalized standard. He compares it with early earthquake scales, which were imperfect, observation-based, and linear but still essential precursors to later measurement systems. The immediate objective is not perfect precision. It is to establish a common starting point that can be tested, revised, calibrated, and eventually connected to predefined response actions.
+Several unresolved issues emerge in the discussion. The model excludes psychological and economic consequences from the main calculation because the author considers them difficult to estimate reliably during an unfolding event. Critics note that these effects can fundamentally alter public behavior, government investment, and national policy. Another open question is what operational action each score should trigger. A disaster scale becomes institutionally useful only when a given level automatically informs escalation, mutual aid, resource mobilization, public communication, and emergency-management procedures.
+
+The author’s intended contribution is therefore both analytical and institutional. The scale is meant to provide the missing language through which officials can say that a level-three or level-four technology disaster is developing, communicate urgency to nontechnical leaders, and begin coordinating resources before consequences escalate.
+
+---
+
+## Key technical ideas
+
+### 1. Consequence-centered classification
+
+The framework scores incidents according to observable and projected consequences rather than exploit sophistication, attacker identity, malware family, vulnerability severity, or political attribution. This separates the immediate disaster-response problem from later forensic and preventive analysis.
+
+### 2. Three-factor disaster model
+
+The proposed score is built from:
+
+**Intensity × Magnitude × Duration**
+
+* **Intensity** measures operational severity.
+* **Magnitude** measures breadth and population exposure.
+* **Duration** measures time to restored operations and security confidence.
+
+The multiplicative structure reflects the idea that a severe but isolated event, a broad but shallow outage, and a prolonged localized compromise are materially different from an event that is simultaneously severe, widespread, and persistent.
+
+### 3. Population-centered magnitude
+
+The model shifts the unit of analysis from machines and organizations to people dependent on affected services. This is especially important in critical infrastructure, where relatively few compromised systems may disrupt water, electricity, transport, healthcare, or fuel for very large populations.
+
+### 4. Recovery-to-confidence metric
+
+Duration ends not when systems restart, but when operators have sufficient confidence that systems are functional, controllable, secure, and no longer subject to hidden adversary persistence. This introduces security assurance into disaster-recovery measurement.
+
+### 5. Indirect representation of adversary intent
+
+Intent does not receive a separate score. Instead, adversarial persistence influences projected recovery time. A malicious actor who can remain in or repeatedly re-enter an operational-technology environment increases the duration and therefore the final disaster rating.
+
+### 6. Logarithmic severity structure
+
+The scale uses logarithmic conversion so that progressively higher levels represent substantially larger consequences. This allows the framework to accommodate many low-level incidents while reserving upper categories for rare, systemically catastrophic events.
+
+### 7. Separation of response and attribution
+
+Operational response and root-cause investigation are treated as parallel workstreams. The model adopts an emergency-management principle: responders should mobilize based on consequences without waiting for definitive attribution.
+
+### 8. Cross-domain comparability
+
+The framework permits accidental outages, cyberattacks, software defects, supply-chain failures, and operational-technology compromises to be compared through a common consequence model. This creates a shared language across cybersecurity, business continuity, emergency management, infrastructure operations, and government.
+
+### 9. Communication as part of system design
+
+Simplicity is not merely a presentation choice. It is treated as an operational property of the scale. A score must be understandable under crisis conditions by people with reduced time, attention, and technical context.
+
+### 10. Back-testing as an initial calibration method
+
+The author calibrates the draft model against known events such as Colonial Pipeline, Stuxnet, and CrowdStrike. This retrospective testing exposes counterintuitive results and helps identify whether factor definitions and score boundaries need revision.
+
+### 11. Deliberate headroom for future catastrophes
+
+The upper end of the scale is not calibrated only to incidents already experienced. The author deliberately reserves higher levels for hypothetical events involving mass casualties, prolonged infrastructure loss, or geographically extensive systemic failure. This prevents the scale from becoming obsolete after the next major event.
+
+### 12. Connection to resource mobilization
+
+The ultimate technical and institutional goal is to map score levels to specific response requirements, including staffing, mutual aid, incident-response capacity, emergency declarations, public communication, and support for state and local authorities.
+
+---
+
+## Technical significance
+
+The proposal’s main innovation is not a new cyber-risk formula in isolation. It is the attempt to import the institutional function of natural-disaster scales into technology and critical-infrastructure response.
+
+Existing cybersecurity classifications commonly describe vulnerabilities, attacker behavior, technical severity, or organizational risk. The Technology Disaster Scale instead asks a different question:
+
+**How large is the unfolding societal and operational disaster, and what scale of response will be required?**
+
+This reframing could help bridge cybersecurity operations, emergency management, public policy, infrastructure engineering, and crisis communication. Its usefulness will depend on future work defining reproducible measurement criteria, validating estimates across incidents, reducing subjective scoring, establishing category thresholds, and linking each level to concrete response protocols.
+
+---
+
+## Limitations acknowledged or revealed by the work
+
+* Intensity remains difficult to define and quantify consistently.
+* Early estimates of recovery duration may be highly uncertain.
+* Population impact may be difficult to calculate across interconnected services.
+* Economic and psychological consequences are excluded despite their policy importance.
+* The proposed incident scores are preliminary and have not been independently validated.
+* No formal error bounds, uncertainty intervals, or inter-rater reliability procedure are presented.
+* The relationship between score levels and mandatory response actions is not yet specified.
+* The transcript does not provide a complete scoring matrix, mathematical formula, dataset, or reproducible worked calculation.
+* A universal scale may require regional adjustments because infrastructure dependencies and recovery capacity vary between jurisdictions.
+
+---
+
+## Overall assessment
+
+The work offers a compelling early-stage framework for treating severe technology failures as measurable disasters rather than exclusively as cybersecurity incidents. Its strongest ideas are the focus on human and service consequences, the separation of attribution from emergency response, and the use of a simple logarithmic score to accelerate communication across technical and nontechnical institutions.
+
+The proposal is intentionally incomplete. Its present value lies less in numerical precision than in establishing a new design objective: critical-infrastructure incidents should have a shared severity language that supports rapid comparison, escalation, and resource mobilization. Developing the concept into a dependable standard will require formal definitions, transparent scoring rules, uncertainty modeling, broader historical testing, and operational mappings between each score and the actions authorities should take.

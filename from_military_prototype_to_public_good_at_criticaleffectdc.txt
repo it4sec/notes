@@ -1,0 +1,611 @@
+ABOUT
+================================================================================
+Title: From Military Prototype to Public Good at #CriticalEffectDC
+Author/Channel: Institute for Security and Technology (IST)
+Channel URL: https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw
+Video URL: https://www.youtube.com/watch?v=sEGLs4R9IOE
+Video ID: sEGLs4R9IOE
+Published: 2026-07-28
+Duration: 19:45
+Views: 3
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Title: From Military Prototype to Public Good 
+Track 2: Strategic Effect
+Wednesday, June 17, 2026
+
+Johan Chamucero (Senior Cybersecurity Analyst, Infinity Labs) debuts the U.S. Department of the Air Force Cyber Resiliency Office for Control Systems OT Cyber Defender training pipeline. Discover actionable, hands-on training pathways that empower engineers and cyber teams to protect critical infrastructure. Join the mission!
+
+About Critical Effect DC: Presented in 2026 by ICS Village, in partnership with the Institute for Security and Technology’s UnDisruptable27 project and Akin Gump, Critical Effect DC is Washington’s only industrial control systems and cybersecurity conference dedicated to defending national security, public safety, and human life. The annual event provides a platform for leading voices in ICS and cybersecurity to engage with policymakers, think tanks, and the media, facilitating actionable discussion.
+Learn more: https://securityandtechnology.org/event/critical-effect-2026/ 
+
+Learn more about ICS Village: https://icsvillage.com/  
+Learn more about UnDisruptable27: https://securityandtechnology.org/undisruptable27/  
+Sign up for the UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.5
+
+# Summary: “From Military Prototype to Public Good”
+
+## Title, source, authors / presenters, credentials, and contacts
+
+**Title:** *From Military Prototype to Public Good*  
+**Event / track:** Critical Effect DC 2026, Track 2: Strategic Effect  
+**Date in description:** Wednesday, June 17, 2026  
+**Published:** July 28, 2026  
+**Video URL:** https://www.youtube.com/watch?v=sEGLs4R9IOE  
+**Video ID:** sEGLs4R9IOE  
+**Channel / author listed in About section:** Institute for Security and Technology, IST  
+**Channel URL:** https://www.youtube.com/channel/UCIEjnAOHNEBDBTj25oOnXhw  
+
+### Presenter / speaker
+**Johan Chamucero** — listed in the About section as **Senior Cybersecurity Analyst, Infinity Labs**.  
+In the transcript, he introduces himself as **Johan Chamosero** and as the **assessments and mitigations lead for the Department of the Air Force Cyber Resiliency Office for Control Systems**. He also states that he is **a contractor in support of Mr. Daryl Hegley**, who was unable to attend.
+
+### Speaker background / credentials stated in transcript
+The speaker says he:
+- Started by **climbing utility poles**.
+- Was in the **Air Force**.
+- Worked as an **electrician on high-voltage systems**.
+- Gained experience with the physical aspects of **operational technology, OT, systems**.
+- Later became the **ISSM** for industrial control systems.
+- Observed a gap between security personnel and engineers in understanding OT security.
+
+### Other named person
+**Mr. Daryl Hegley / Higgley** — name appears in the transcript with spelling variations. He is described as someone the speaker supports and as someone who has been working on the Cyber Resiliency Office for Control Systems effort for approximately **three to four years**. No further credential, title, affiliation, or contact information was provided in the supplied material.
+
+### Contacts and links provided
+Provided in About section:
+- Critical Effect 2026 event page: https://securityandtechnology.org/event/critical-effect-2026/
+- ICS Village: https://icsvillage.com/
+- UnDisruptable27: https://securityandtechnology.org/undisruptable27/
+- UnDisruptable27 mailing list: https://mailchi.mp/securityandtechnology/undisruptable27
+
+The transcript says the speaker showed “contact information for office” and told attendees to email the office, but the actual email address or office contact details were **not provided in the supplied transcript**.
+
+---
+
+# Technical summary
+
+This talk presents the U.S. Department of the Air Force Cyber Resiliency Office for Control Systems, referred to in the transcript as **Crocs / CROC / CROCS**, and its effort to build an **OT Cyber Defender training pipeline**. The core problem identified by the speaker is that modern military missions depend almost entirely on operational technology: electrical systems, water, gas, pumps, valves, breakers, and other infrastructure. According to the speaker, “about 100%” of missions rely on OT, and adversaries know this, so they are increasingly targeting infrastructure.
+
+The central innovation is a workforce and training framework intended to create hybrid OT-cyber personnel who understand both engineering systems and cybersecurity. The speaker repeatedly describes these personnel as “unicorns”: people who can understand ladder logic, PLCs, RTUs, electrical grids, gas plants, pumps, valves, and physical process behavior, while also recognizing cyber indicators, incidents, and adversary activity.
+
+The training model has two complementary directions:
+
+1. **Teaching engineers cyber defense**
+   - Engineers are treated as frontline defenders because they know the day-to-day behavior of the physical systems.
+   - The goal is to move beyond ordinary annual cybersecurity awareness training and teach engineers to identify cyber incidents and indicators of compromise.
+   - The described training track takes approximately **six to eighteen months**.
+   - Engineers are trained to “engineer down” solutions, meaning to use physical or engineering constraints to reduce the impact of cyber compromise. The example given is a pump or valve that is physically limited so it cannot open beyond 75%, even if an attacker compromises a control system and commands it to open 100%.
+
+2. **Teaching cyber defenders OT and engineering consequences**
+   - Cyber defenders, including cyber protection teams, red teams, blue teams, active duty, guard, and private-sector teams, may be strong in cybersecurity but unfamiliar with PLCs and physical OT systems.
+   - The speaker emphasizes that normal IT security actions can be dangerous in OT environments. For example, an active scan may overwhelm or break PLCs, take devices offline, or interfere with breakers and safety-critical operations.
+   - Cyber defenders must learn how to respond to adversaries without jeopardizing the mission or causing physical consequences.
+
+A key formal mechanism in the framework is **Work Role 462: Control Systems Security Specialist**. The speaker describes it as the flagship work role that CROC/CROCS and Mr. Daryl Hegley have been working to advance. It is not intended to stand alone, but to complement other workforce codes. For example, someone may already be a network specialist, and adding the control systems security specialist role would identify that person as a cyber defender focused on OT.
+
+The speaker states that the team has worked with military stakeholders and industry partners, including the **DoD CIO workforce initiative**, to define what the training should look like and how it should meet Work Role 462. The role is aimed at the civilian and military workforce, and the speaker says they are also working toward including contractors, since contractors operate, maintain, and increasingly secure control systems on bases.
+
+The initiative is intended not only for military use but also as a model for public-sector industry, utilities, and critical infrastructure. The speaker frames the effort as a transition from a military prototype to a broader public-good framework. He emphasizes collaboration with utilities and other critical infrastructure sectors, because defending systems “inside the gate” is insufficient if adversaries can compromise an external substation, pump, or other connected infrastructure.
+
+The talk also mentions the use of **zero trust and AI**. The speaker acknowledges these as buzzwords but says they are relevant because mandates are emerging and adversaries are using AI. However, the transcript does not provide technical details about how zero trust or AI are implemented in the training pipeline.
+
+A specific existing course is mentioned: **CS3300**, described as an introduction to combined OT and cyber training. Students get to interact with a PLC and “hack it,” in the speaker’s informal wording. More advanced courses are reportedly under development in collaboration with other units.
+
+---
+
+# Key technical ideas
+
+## 1. OT cyber defense as a hybrid engineering-cyber discipline
+The main technical idea is that protecting operational technology cannot be handled purely by traditional IT cybersecurity teams or purely by engineers. The authors’ / speaker’s proposed defender must understand:
+- PLCs
+- RTUs
+- ladder logic
+- pumps
+- valves
+- breakers
+- electrical grids
+- gas plants
+- water systems
+- mission impacts
+- cyber indicators and incidents
+- network behavior
+- adversary activity
+
+The innovation is not a single tool, but a structured workforce model that creates personnel capable of operating across both engineering and cyber domains.
+
+## 2. Engineers as frontline cyber sensors
+The speaker argues that engineers know the normal operating behavior of OT systems better than anyone else. Therefore, they should be trained to detect abnormalities that may indicate cyber events. This turns engineers into frontline defenders rather than treating them only as system operators or maintainers.
+
+## 3. Cyber defenders must understand physical consequences
+The talk stresses that standard cyber actions can create real-world safety and mission impacts in OT environments. For example:
+- Quarantining a device could stop a pump.
+- Active scanning could break or knock PLCs offline.
+- A breaker failing to open during a catastrophe could cost lives.
+
+The technical idea is that OT incident response must consider physical process behavior and mission impact, not just digital containment.
+
+## 4. “Engineer down” as a cyber-resilience technique
+A concrete technical concept presented is “engineering down” a solution. This means designing physical or engineering constraints so that a cyber compromise cannot drive equipment beyond safe limits. The example given is limiting a pump or valve to 75% open, so even if an attacker commands 100%, the physical system prevents the unsafe action.
+
+## 5. Training environments modeled on real military base systems
+The speaker says the training symbolizes or reflects systems found on military bases. The intended benefit is that responders do not spend the first 48 hours of an incident trying to understand what they are seeing. They should already know what PLCs, RTUs, and similar components look like and where to search for indicators of compromise.
+
+## 6. Work Role 462: Control Systems Security Specialist
+Work Role 462 is presented as the standardization mechanism for the training and workforce model. It is designed to identify and formalize personnel who specialize in control systems security. The speaker describes recent growth in units claiming Work Role 462 and interprets this as evidence that specialized OT-cyber personnel are needed.
+
+## 7. Cross-training across OT, IT, cybersecurity, and policy
+The proposed framework is multidisciplinary. The speaker says the workforce must know OT, IT, cybersecurity, policy, and other areas. This is presented as necessary for military installations, utilities, and broader critical infrastructure.
+
+## 8. Public-good transition from military to industry and utilities
+Although the framework originates in a Department of the Air Force context, the speaker’s goal is to make the methodology useful to industry, utilities, and public-sector critical infrastructure. The talk emphasizes collaboration, especially because military installations depend on infrastructure outside their own gates.
+
+## 9. Inclusion of contractors in the workforce model
+The speaker notes that many base control-system functions are performed by contractors, not only military or civilian personnel. Therefore, the framework is being expanded to account for contractors who operate, maintain, or secure control systems.
+
+## 10. Zero trust and AI as future-enabling tools
+The talk briefly identifies zero trust and AI as areas being leveraged, motivated by mandates and adversary use. The transcript does not provide implementation details, architectures, models, or technical mechanisms for either.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+So he's going to share some
+perspectives, I guess, to things that
+have transitioned from the military use
+to now civilian use. Is that right?
+>> Yes, sir.
+>> Okay, great. And he even calls me sir,
+even though I don't know if I deserve
+that. All right. Well, thank you very
+much and over to you, Johan.
+>> Thank you.
+>> All right. Good morning, everyone. Um,
+my name is Johan Chamosero. I am the
+assessments and mitigations lead for the
+Department of the Air Force Cyber
+Resiliency Office for Control Systems.
+Uh, I'm a contractor in support of Mr.
+Daryl Hegley uh who wasn't able to make
+it today and so I'm going to be here
+speaking on his behalf and um one of the
+many great things that uh we're working
+towards. A little bit about me, I
+started uh climbing utility poles. Uh I
+was in the air force. I was an
+electrician working high voltage
+systems. From there I was able to
+understand how OT systems their physical
+aspects of it what we don't see out in
+the field. uh one how sensitive they are
+but also how uh resilient they are as
+well. From there I later on became the
+ISSM or these industrial control systems
+and I started noticing a huge shift in
+how security personnels and engineers
+were two completely different um people
+and completely different knowledge. one
+that they didn't understand each other
+and that essentially led us to a
+challenge. How do security personnel
+understand
+this engineering equipment and how does
+the engineers detect um any cyber
+incident or cyber event? So with that
+about 100% of all of our missions are
+reliant on OT and doesn't matter if it's
+electrical, water, gas, without OT,
+without the infrastructure, none of the
+missions are going to happen. Nothing
+nothing will make sense. And so our
+adversaries know that and they're
+attacking it. They're going right after
+the OT is not secure. It's been 25 years
+or maybe even more since it's been
+upgraded
+and not a lot of people are savvy in
+that field. So with that we're going to
+be moving on to Crocs which is
+so enter Crocs. Crocs was we got a
+couple different uh lines of efforts.
+One of them is going to be bridging the
+gap between the engineer and the cyber
+defender. We want to not only
+standardize it, we want to synchronize
+across the department of the Air Force
+and we want to ensure that it's a rapid
+and agile
+uh methodology and framework that not
+only the military can take advantage of
+but also the public sector industry.
+This new defender is is unique. If
+anything, it's more like a unicorn. If
+anything, we want them to be
+knowledgeable in engineering. So ladder
+logic, understanding what a PLC is,
+understanding how an electrical grid
+functions to a a GL gas plant. But at
+the same time, we want them to
+acknowledge those um cyber
+um the the initial effects that a cyber
+attack or cyber inet might be happening.
+So how do they detect that? And so
+there's three main areas that we want to
+focus on here.
+the engineers, we want them to learn
+more cyber, not just click through the
+annual cyber security awareness that we
+all have to sit through. Uh we want them
+to actually identify what each one of
+those incidents and indicators looks
+like. For the cyber operators, we want
+them to understand what might happen if
+they were to quarantine a device. They
+might not know that shutting down a pump
+could adversely
+essentially stop uh the water treatment
+plant from operating. And so
+with the engineers, the first thing is
+they're going to be our frontline
+defenders. They're going to be the ones
+that identify what's going on. They list
+this dayto day. They know what's
+happening in their systems. They're
+familiar with it. And without power,
+without electricity,
+we won't have any functional systems.
+Now, our track is taking about a six to
+18 months to put them through uh cyber
+training and that essentially is going
+to show them how to engineer down a
+solution. Now, what does engineer down
+mean? Essentially, if an attackector
+were to get into the network and they
+were to compromise uh let's say a pump,
+a valve, engineering dynaster
+on that pump to not open more than let's
+say 75%. So it doesn't matter if the
+attacker
+compromised the system and told the
+pump, hey go ahead and open 100%. There
+will be a physical limiter preventing
+that from happening.
+And the biggest thing is getting
+engineers to learn cyber. It's not
+something that they really went through
+uh school for. It's not something that
+they really care for when they were
+going through their education. So making
+them understand and not only that to
+collaborate with the cyber defenders. At
+the end of the day, they all have to
+work together in order to
+in order to protect our systems.
+But then on the flip side of that, we
+got the cyber defenders. Cyber
+defenders, yeah, they're fantastic. We
+have many CPTs, active duty, guard,
+private sectors. They they're great,
+right? We got amazing teams, red teams,
+blue teams. The only thing though is
+that they're not very familiar with how
+PLC's work, how this physical systems
+work, right? And so we need to teach
+them that, hey, um perhaps you can't
+just do an active scan on a network. You
+have a lot of PLC's that just cannot
+handle that type of inquiry. And by
+doing so, you might end up breaking it.
+You might end up um kicking off offline.
+And if so, a breaker may not open in a
+catastrophe which might end up costing
+someone's life, right? And so with that,
+we want to make sure that we're teaching
+them and we're showing them what OT
+systems and how critical they are and a
+way to get after the adversary, but at
+the same way not jeopardize the mission.
+Now, one of the things we pride on is
+that the training that we're uh putting
+them through, it actually uh symbolizes
+a lot of the systems that we have on a
+couple of our military bases. And so
+when they go out to respond to an
+incident or an event, they're already
+familiar with those systems. So they're
+not having to spend the first 48 hours
+just trying to figure out what am I
+looking at, what the network is. they
+already know what a PLC RTU
+is and they can go look for those um
+incidents of compromise.
+Now, how do we essentially work that all
+together with work roll 462 control
+systems uh security specialist? This is
+essentially the flagship work role that
+uh Mr. D Hegley Crocs have been working
+very hard to get out there and it's been
+slow to gain uh track but we're moving
+now uh we're moving faster now and a lot
+of people are taking notice. We've uh
+essentially not only worked with the
+military side to figure out what it
+should look like, we work with industry
+uh partners uh to include the uh DOW uh
+CIO uh workforce initiative
+to essentially dictate what this
+training should look like and how to
+meet work 462. Now, work 462 does not
+stand alone. This would be in addition
+to some of the other um codes. For
+example, a cyber defender might be a
+network specialist, but a cyber defender
+that focuses on OT would be a cyber spe
+a network specialist along with a
+control systems thereby creating more of
+uh these unicorns that I like to call
+them.
+And lastly, we are leveraging zero trust
+and AI. I know it's a buzz word
+nowadays, but there's a lot of mandates
+coming out, the adversaries using it.
+So, we need to leverage it and use it as
+a tool to get us to where we need to get
+to.
+In the past about 18 months or so,
+there's been a huge growth. Uh it's more
+or less quadruple the
+units out there that have claimed work
+462. And that essentially has shown us
+that yes, our units are in fact needing
+specialized
+personnel to get at these problems. In
+the past, they haven't really paid much
+attention to it, but now they're seeing
+that the adversary is going after
+infrastructure, especially at our
+military installations. And so, we need
+to defend them. But in order to defend
+them, we need to identify where our gaps
+are.
+So where does that lead us? Essentially,
+this framework that we're producing not
+only is for the benefit of the military,
+but it's also for the benefit of the
+industry, utilities, is a it's a
+collaborative effort. At the end of the
+day, we all need to make sure that we're
+bringing up our workforce that knows
+both OT, IT, cyber security, policy
+among some others. And the only way
+we're going to do that is by
+collaborating together. Now, work growth
+462 is mainly geared towards the uh
+civilian workforce and the military
+workforce. However, we're also starting
+to um work with the uh um CIO to
+essentially look at contractors, right?
+A lot of the workforce in a base is not
+just your civilians or your contract uh
+sorry um military. It's also your
+contractors. There's a lot of
+contractors that are also looking at
+control systems whether it be operating
+them, maintaining it or now even
+securing them. So, we want to keep track
+of all of that and use all the data to
+not only advocate to continue
+standardizing our training, but also for
+funding for resources for more
+personnel. And so, I hope that this
+framework is something that we can take
+out of here, we can grow, and that it
+can continue to evolve. This is not
+going to be the end of the this path.
+It's going to continue to grow. We just
+got to adapt.
+Last thing that I'll leave you guys with
+is essentially you're not going to be
+able you cannot protect the mission
+without protecting the infrastructure
+and you're going to have to empower your
+people to protect that.
+Here's my uh the contact information for
+office if you have any questions.
+Like to open it up to the floor.
+>> Okay. Any questions?
+I have one which is does does Croc have
+a turbo mode?
+>> Sorry.
+>> Does Crocs have a turbo mode?
+>> Oh, because we need this like soon.
+>> Sport mode. Yes.
+>> Yes.
+>> All right.
+>> Uh so Crox itself was uh officially
+established two years ago. However, uh
+Mr. Daryl Higgley uh has been working on
+it for over three four years.
+You're welcome.
+>> Send it to a couple people who might be
+interested.
+>> Yes. No, definitely.
+>> Hi, thank you for this presentation.
+Would you be willing to put this
+framework online? Like how how much are
+you sharing with the public? Are you
+trying to just push it through existing
+infrastructure first?
+>> Yeah. So, we're initially trying to uh
+consolidate it.
+>> Come closer to mic. Oh yeah, we're
+initially trying to consolidate it, put
+it all together, standardize it. Um, and
+once it's ready, we will be uh hopefully
+publishing it out um as much as we can
+given that some of it is uh government.
+>> Uh so is this where would I go to find
+just do I email you or do I hit a
+website?
+>> Yep. No, this is our the email to our
+office. any questions uh that you have,
+anything that you want to follow up or
+even recommendations on how to take this
+work uh work role forward, we love to
+hear it.
+>> Have you seen any uh non DoD entities
+apply it?
+>> Um not directly, but the methodology,
+yes,
+>> because at the end of the day, the work
+is trying to do is trying to bridge the
+gap between your engineer and your
+defender. Make sure that they each know
+the others uh side of the house. Okay,
+other questions.
+>> Thank you.
+>> Well, we actually have um I should have
+not kick Caleb off so soon because I
+think the other group is still going.
+>> Uh yes.
+>> Anyone know? I can kind of hear.
+>> Um
+>> I know we're pressed for time initially.
+>> You ended early. I'm just curious ho
+how, uh, how did you find out about this
+community and is there something that we
+can do to promote what you're doing to
+people who may need it?
+>> Yeah. So, uh, funny enough, Mr. Daryl
+Higgley is the one that, uh, mentioned
+critical effect and that's how I became
+to know it. Now, what can we do? For me
+and for Crocs, the biggest thing that
+I've seen is that we all talk about the
+problem but not necessarily put a lot of
+the resources or the manning behind it.
+Um it is difficult to sometimes man
+these positions when the industry
+can pay better for example. Um another
+one is we're slow moving in the
+government. uh the industry is normally
+going two three times faster and so when
+you come from the other side you're
+ambitious you're ready to go but then
+there are
+I say this politically there are certain
+guard rails that we have to abide by
+that makes it difficult to sometimes
+progress just uh for this work role we
+needed at least 30 um 30 people to
+advocate for
+It couldn't just be a something that
+we're like, "Hey, we need this. We
+identified it. Let's move on it."
+>> Talking about it, keep spreading the
+word. Okay.
+>> Yes.
+>> Yeah. Sorry. I represent the American
+Petroleum Institute and so we're are
+representing oil and gas companies. Um
+we have a conference every year. Of the
+150 submissions we got for this year's
+conference, I would say 85% were about
+OT and cyber security. Probably about
+70% were AI and OT, cyber security. So
+it is a flash word a bit but certainly
+in the oil and gas industry our member
+companies are starting to do cross
+trainining between OT and IT having
+people um understand how the engineering
+needs to you know that's very much in
+the OT space but but doing the cross
+trainining really helps and they're
+bringing some of those groups together
+within the companies where they've
+always been siloed separately between IT
+and OT there is a combination so so
+we're starting to do that in some
+critical infrastructure spaces.
+>> Yep.
+>> Um and and I'll add on to that. Um I'm
+not sure how long this program has been
+going but um in a previous role I worked
+at electric uh utility company and what
+we were doing was something along these
+lines and really trying to build
+momentum to have that um group where we
+brought in the engineers the cyber
+security people so they could better
+understand the OT security and
+understand the consequences of some of
+the decision. decisions or find
+innovative ways to manage the risk
+without like we heard in the earlier
+discussion CIA but really focusing on
+what really matters for that group of
+systems. So, I bring that up to say I
+don't know to what degree you've talked
+with others in the um electric utility
+industry. As Suzanne was saying, there
+are some other critical infrastructures
+that are working along this path and
+that may be a good opportunity to share
+some knowledge as what's worked well um
+and perhaps help accelerate um some of
+the work that you're doing.
+>> Yes. No. And so I'm here uh representing
+Crocs and to collaborate with everyone
+else, but the other team members that
+are also at other conferences as well to
+essentially spread the word and
+collaborate with some of the others,
+especially with the utilities. Um
+because it doesn't matter at the end how
+much we're protecting inside the gate,
+if you will, if they can get to that
+first substation that's outside that
+first pump, um it doesn't do us well,
+right? So yes, um it is a collaborative
+effort and in the years to come we're
+hoping to um essentially uh expedite
+this not only continue enhancing the
+work role but also assessing mitigating
+and working with uh our partners
+>> any all right uh question on the
+collaboration piece um are you guys uh
+really on the industry side. Uh, do you
+guys hire reserveists? Is there an
+opportunity to do that cross training
+just because they're reserveists?
+>> One more time.
+>> Yeah.
+>> How many reserveists are part of this
+program within the
+>> the war uh work 462 is for all active
+duty guard reserve uh civilians and
+we're going to be including and
+contractors.
+>> Okay.
+>> So, yeah. And it's more of a it's a
+framework. So, there's a couple
+different ways to get at it. Um, we are
+building a couple of different training
+programs. One that already exists is
+CS3300
+and essentially is that intro into OT
+cyber combined. Um, students essentially
+get to play with a PLC and Hackit or uh
+lack of better words. Um, and then we're
+developing more advanced courses uh in
+collaboration with some other units.
+>> Okay. Any other questions?
+All right. If not, thank you very much.
