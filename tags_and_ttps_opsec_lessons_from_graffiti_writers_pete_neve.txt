@@ -1,0 +1,39 @@
+ABOUT
+================================================================================
+Title: Tags, And TTPs: OpSec Lessons From Graffiti Writers - Pete Neve
+Author/Channel: BSIDES LANCASHIRE
+Channel URL: https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew
+Video URL: https://www.youtube.com/watch?v=pLSxGBxxKCE
+Video ID: pLSxGBxxKCE
+Published: 2026-07-06
+Duration: 31:14
+Views: 37
+Likes: 3
+Comments: 1
+
+Description:
+No description provided.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: Not used
+
+[AI processing was not performed because no transcript was available.]
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: Transcript lookup failed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pLSxGBxxKCE! This is most likely caused by:
+
+Subtitles are disabled for this video
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+
+[Transcript unavailable: Transcript lookup failed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pLSxGBxxKCE! This is most likely caused by:
+
+Subtitles are disabled for this video
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!]

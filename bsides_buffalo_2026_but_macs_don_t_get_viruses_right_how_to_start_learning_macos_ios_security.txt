@@ -1,0 +1,1544 @@
+ABOUT
+================================================================================
+Title: BSides Buffalo 2026: But… Macs Don’t Get Viruses, Right? How to Start Learning macOS / iOS Security
+Author/Channel: BSides Buffalo
+Channel URL: https://www.youtube.com/channel/UCcmPr9iGIxAGxxyfbuqEHZQ
+Video URL: https://www.youtube.com/watch?v=RuaEcRl1XT4
+Video ID: RuaEcRl1XT4
+Published: 2026-06-22
+Duration: 50:10
+Views: 28
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Since Macs have become more popular over the past 5+ years, malware targeting macOS has also been on the rise. And for iPhone users, commercial spyware has been becoming a more common headline, both in infosec news sources and the mainstream media.
+
+This talk is geared toward two main target audiences—
+- Rank beginners who want to learn about Apple security, even if you have no background in tech
+- Windows / Linux professionals who need to deal with these devices at work, but aren’t sure where to start
+
+HEADS UP! We will be digging into some technical topics along the way, but only after we cover enough fundamentals to help you stay afloat.
+
+Key Takeaways—
+- An annotated list of resources, broken down by sub-topics in Apple security, to help you weed through the rather long list of past conference talks, books, blog posts, etc.
+- A quick checklist for your less technical friends and family to help them cover their posteriors, ranging from easy sells to heavy-duty options
+- iOS Lockdown Mode explained, including before and after screenshots. How and why even the vast majority of non-technical users could benefit from using it
+
+Plus two brief demos (with videos, in case 🤞) that anyone with an Apple device can try at home—
+- Demo #1: Pulling an iOS Sysdiagnose. What’s inside those logs and database files… and also how much data is Apple collecting onboard our phones?! Plus when to use this feature, and why it matters for everybody… even if it takes some technical knowledge to understand.
+- Demo #2—ESLogger JSON captures on macOS. No malware samples for today—but learning how to follow what your applications are doing under the hood will give you a solid starting point for tackling malware, if you want
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# BSides Buffalo 2026: *But… Macs Don’t Get Viruses, Right? How to Start Learning macOS / iOS Security*
+
+## Authors, credentials, and contacts
+
+- **Author/channel:** BSides Buffalo  
+- **Speaker:** John Langu  
+- **Speaker credentials and experience stated in the transcript:**
+  - Four years teaching iOS accessibility, primarily the screen reader built into iPhone and, to a lesser extent, iPad.
+  - Current work in IT support and repair.
+  - Long-term experience teaching music and playing drums.
+  - Attended the eighth version of the referenced security conference and took J. Bradley’s macOS class.
+  - Reported becoming seriously interested in Apple security in the latter part of the previous year.
+- **Affiliation:** BSides Buffalo is identified as the author/channel. No separate institutional affiliation for John Langu was provided.
+- **Contact information:**
+  - BSides Buffalo channel: https://www.youtube.com/channel/UCcmPr9iGIxAGxxyfbuqEHZQ
+  - Video: https://www.youtube.com/watch?v=RuaEcRl1XT4
+  - John Langu’s LinkedIn and GitHub were mentioned as being linked in the presentation, but their URLs were not provided in the supplied material.
+  - No email address or other direct contact details were provided.
+
+## Publication and video information
+
+- **Published:** 2026-06-22  
+- **Duration:** 50:10  
+- **Video ID:** RuaEcRl1XT4  
+- **Views:** 28  
+- **Likes/comments:** Not provided or unknown.
+
+## Summary
+
+This talk is an introductory but technically grounded roadmap for learning **macOS and iOS security**. It targets both beginners and Windows/Linux professionals who must support Apple devices. Rather than treating Apple platforms as inherently safe, John Langu emphasizes that their security must be understood through concrete artifacts, attack surfaces, hardening features, and system telemetry.
+
+The presentation focuses primarily on two iOS capabilities—**Sysdiagnose** and **Lockdown Mode**—before moving to learning resources, macOS’s **Endpoint Security framework** through ESLogger, and practical guidance for friends and family.
+
+### iOS Sysdiagnose as an accessible forensic and security artifact
+
+The talk presents iOS Sysdiagnose as a built-in diagnostic mechanism available across Apple devices, with the iPhone offering particularly rich logs. Running it collects assorted system logs and diagnostic information, including outputs analogous to process listings, system activity data, crash reports, stack shots, and power-related information.
+
+A central technical point is that Sysdiagnose can reveal substantially more information than ordinary users may expect. The discussion describes examples in which logs can support reconstruction of aspects of a person’s activity, including:
+
+- Application use and foreground activity.
+- Timing and duration of interactions with applications.
+- Power-log information that may contribute to pattern-of-life analysis.
+- Evidence related to application deletion.
+- Indicators relevant to distracted driving investigations.
+- Personally identifiable information that users might inadvertently publish when seeking technical help.
+
+The speaker stresses the importance of collecting Sysdiagnose promptly: many logs may disappear after approximately **three days**. This makes timely acquisition important for incident investigation and troubleshooting.
+
+The talk also highlights the tension between Apple’s intended use of Sysdiagnose—as a technician-facing diagnostic feature—and its usefulness to forensic investigators and security researchers. Because Apple can change log formats between software updates, third-party parsing tools require continual maintenance.
+
+Several analysis approaches are discussed:
+
+- A unified log-parsing system associated with “Mand,” described as Python-based.
+- The Mobile Verification Toolkit.
+- A Sysdiagnose Analysis Framework developed in connection with European Commission work, intended to reduce the amount of personal data needed compared with full backups.
+- Encrypted backups, which may contain additional information such as phone numbers, health data, and other artifacts.
+- An iOS forensic CTF built around Sysdiagnose analysis.
+
+The speaker characterizes Sysdiagnose as especially important for iOS malware analysis because iOS lacks the sort of continuous endpoint telemetry available on macOS through the Endpoint Security framework. Device-management systems, developer mode, and connections to a computer running tools such as Xcode can provide additional visibility, but these approaches are less practical for routine monitoring.
+
+### Lockdown Mode as practical attack-surface reduction
+
+The second major technical topic is **iOS Lockdown Mode**. The talk frames it as a hardening feature that reduces exposure in areas such as iMessage and Safari. The speaker challenges Apple’s presentation of the feature as excessively extreme, arguing that many users—particularly people at elevated risk—could use it despite its limitations.
+
+The speaker’s own experience using Lockdown Mode provides an empirical perspective on usability. Reported effects included:
+
+- Hyperlinks in Messages becoming inconvenient or unusable in ordinary workflows.
+- Contact cards not downloading normally.
+- Some notifications and FaceTime-related alerts behaving inconsistently.
+- Occasional false or confusing notifications.
+- Temporary disabling and re-enabling requiring the device passcode and a reboot.
+- SMS-based authentication codes continuing to work, apparently because Lockdown Mode affects iMessage-related functionality differently from ordinary SMS.
+
+The talk does not present Lockdown Mode as a complete defense. Instead, it treats it as a way to reduce attack surface, especially where iOS offers limited security telemetry. The speaker also mentions complementary measures for particularly concerned users:
+
+- Temporarily disabling FaceTime and iMessage.
+- Rebooting the device regularly, because power cycling may remove some forms of persistence.
+- Keeping in mind that these measures are not reliable against every exploit, especially when an attacker can reuse a zero-day after the device is powered back on.
+
+### macOS visibility through ESLogger and Endpoint Security
+
+For macOS, the talk introduces **ESLogger**, described as a built-in tool that works with the **Endpoint Security framework**. Its purpose is to provide visibility into endpoint-security events and help users observe what applications are doing under the hood.
+
+Although the demonstration was shortened, the intended learning path is clear: before attempting to analyze malware, learners can first practice following normal application behavior. This provides a foundation for understanding suspicious activity without requiring malware samples immediately.
+
+The broader macOS learning material covers:
+
+- Endpoint Security events, including authorization and notification events.
+- The distinction between user space and kernel space.
+- Process trees and the role of `launchd` as process number one.
+- TCC, Apple’s privacy and access-control system.
+- Crash reports and their relevance to security analysis.
+- Incident-response reasoning and attack frameworks for macOS.
+- Malware detection and threat hunting.
+
+### Security education through a structured resource roadmap
+
+A major educational contribution of the talk is its attempt to organize a large and fragmented body of Apple-security material into a progression suitable for learners.
+
+The speaker recommends beginning with accessible introductory material and advancing toward:
+
+1. Apple operating-system fundamentals.
+2. Process and system behavior.
+3. Endpoint Security.
+4. TCC and privacy controls.
+5. Threat hunting and incident response.
+6. Malware analysis and exploit research.
+7. iOS forensics and Sysdiagnose analysis.
+
+The talk references books, conference talks, blogs, tools, malware collections, training materials, and video channels. It also warns that Apple platforms change rapidly: terminology, log formats, security behavior, and system components may change between releases. Older resources can remain conceptually useful, but learners should verify whether technical details still match current operating systems.
+
+### Practical security guidance
+
+The closing section translates the technical material into recommendations for non-specialists:
+
+- Install the latest supported operating-system updates.
+- Replace unsupported hardware when possible.
+- Free storage space if insufficient capacity prevents updating.
+- Remove obsolete or unsupported applications.
+- Enable automatic updates or regularly update applications.
+- Understand that Wi-Fi and Bluetooth may not be fully disabled merely because they appear inactive in Control Center; disabling them completely may require using Settings or a shortcut.
+- Collect Sysdiagnose promptly when suspicious behavior occurs.
+- Consider Lockdown Mode for users who may be targeted.
+- For higher-risk situations, consider disabling FaceTime and iMessage and periodically rebooting the device.
+
+The overall message is that Apple-device security is not based on immunity from malware. It depends on understanding platform protections, recognizing their limitations, obtaining available telemetry, reducing attack surface, and developing an organized investigative workflow.
+
+## Technical innovation and authors’ ideas
+
+The talk’s main innovation is not a new algorithm or software system; it is a **practical methodology for making Apple security observable and learnable**. Its distinctive ideas include:
+
+- **Using built-in diagnostics as a security resource:** Sysdiagnose is repositioned from a support feature into an accessible source of forensic and malware-relevant evidence.
+- **Treating data expiration as an incident-response problem:** Since important logs may disappear after roughly three days, evidence collection must be time-sensitive even on a personal device.
+- **Connecting privacy and forensics:** The same logs that help diagnose attacks may expose highly sensitive personal information, making safe handling and redaction essential.
+- **Addressing iOS telemetry limitations directly:** Because iOS lacks a macOS-like Endpoint Security telemetry layer, Sysdiagnose, backups, device management, and developer-connected workflows become partial substitutes.
+- **Evaluating security controls through real usability:** Lockdown Mode is assessed not only by Apple’s feature list but through observed effects, false positives, notification behavior, and everyday inconveniences.
+- **Learning malware analysis through benign behavior first:** ESLogger enables learners to study normal application activity before working with malware samples.
+- **Building a staged learning roadmap:** The talk combines fundamentals, operating-system internals, privacy controls, endpoint monitoring, forensics, and threat hunting into a progression for non-Apple specialists.
+- **Emphasizing update-driven maintenance:** Changes in Apple’s proprietary log formats and operating-system behavior require tools, parsers, and investigative knowledge to be continuously updated.
+
+## Key technical ideas
+
+1. **Sysdiagnose**
+   - Built-in Apple diagnostic collection mechanism.
+   - Produces logs, text files, crash information, stack shots, process-related data, and other system artifacts.
+   - iPhone collection is described as particularly rich.
+   - Evidence may disappear after approximately three days.
+
+2. **Forensic value of ordinary diagnostic data**
+   - Logs can expose application usage, timing, foreground activity, power behavior, and other pattern-of-life indicators.
+   - Sysdiagnose may support investigations without requiring a full filesystem extraction.
+
+3. **Privacy risks in diagnostic sharing**
+   - Sysdiagnose can contain personally identifiable information.
+   - Users should avoid posting raw diagnostic archives publicly.
+
+4. **iOS malware-visibility gap**
+   - iOS does not provide an equivalent to macOS Endpoint Security telemetry for continuous event aggregation.
+   - Device management, developer mode, Xcode/console connections, backups, and Sysdiagnose provide only partial alternatives.
+
+5. **Sysdiagnose analysis tooling**
+   - Mentioned tools and frameworks include the Mobile Verification Toolkit, a European Commission Sysdiagnose framework, unified-log parsing scripts, and related training/CTF material.
+   - Tool maintenance is complicated by Apple’s changing log formats.
+
+6. **Lockdown Mode**
+   - Reduces attack surface, particularly around iMessage and Safari.
+   - Provides meaningful hardening but introduces usability costs and occasional confusing behavior.
+   - SMS-based authentication codes were reported to continue working.
+
+7. **Persistence and rebooting**
+   - Rebooting may remove some forms of iOS persistence, but it is not a complete defense against targeted exploitation.
+
+8. **macOS Endpoint Security and ESLogger**
+   - ESLogger exposes Endpoint Security events.
+   - Studying application behavior with ESLogger can serve as an entry point to macOS malware analysis.
+
+9. **macOS learning foundations**
+   - Important topics include process trees, `launchd`, user space versus kernel space, authorization and notification events, TCC, crash reports, threat hunting, and incident response.
+
+10. **Operational security basics**
+    - Keep operating systems and applications updated.
+    - Remove unsupported software.
+    - Manage storage so updates remain possible.
+    - Fully disable Wi-Fi/Bluetooth when necessary rather than relying solely on Control Center states.
+    - Acquire diagnostic data quickly after suspicious activity.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Thank you all for coming out. Um, my
+name is John Langu and uh we learn a bit
+about some intro to Apple security uh
+somewhere. Go.
+There we go. All right. Cool. Um, so I
+actually just flipped the order of this
+around, which is why it says in order.
+Uh originally this was going to be
+entirely different and then it just
+worked out way better this way. Um we're
+going to be doing a little bit of iOS
+stuff initially. So we're going to be
+talking about the SIS diagnose and um
+then also getting a bit into lockdown
+mode. From there we're going to be
+talking about just sort of assorted
+resources that are available to us in
+Apple and also kind of how to make a
+little bit of a structured road map
+after that. After that um we're going to
+be talking about ES logger which is
+actually said the endpoint security
+framework, but I couldn't fit it in and
+out of time to rearrange the slide and
+resize some of things. Um, so ES logger
+is a built-in tool on your Mac that
+works with the endpoint security
+framework. Um, so you're able to get
+visibility into those events. Uh, and
+then the fourth item is just things that
+you can hopefully tell friends and
+family who still think that their Macs
+are invincible because of crappy eyes
+that ran 20 years ago. And then at the
+end we'll have a couple of takeaways and
+things like that that are essentially
+just wrapping stuff up and then whatever
+questions. So um cool really quick uh
+how many people own an Apple device?
+That's cool. That was sort of what I was
+thinking but I was also like you never
+know. Are there people who do not and
+are here because at work or your friends
+and family they are Apple sheep or
+whatever. Yes. Okay. It is very
+understandable. Uh I apologize.
+Uh, our CIS operating systems are way
+less customizable and I don't know are
+you are you more Windows or Linux or
+>> I am more Windows. I have to learn how
+to fully support Apple devices in
+>> good luck. Hopefully this will help
+some.
+>> Uh certainly the resource part uh but
+okay cool. So that is good because that
+was not the split I expected. I thought
+that might be more Windows and Linux,
+but um has anybody been following Kerna
+and Dark Sword?
+Okay.
+In some ways, it's better that you're
+not. Um it's this massive iOS exploit.
+We'll get into a little bit in a bit. Um
+that is sort of the first time
+historically that iOS as an operating
+system is sort of seeing these massive
+hacks that Android and various other
+things been seeing forever. But for us,
+these were both released two weeks apart
+in March of this year. Or rather,
+they've been around for longer than
+that, but all the research came out
+around them. So, um, and has any tried
+to download?
+>> Yeah. All right, cool. Uh, are you still
+using it or just like
+just wanted to see what it was,
+understand how it works?
+>> Yeah, cool. Nice. All right. Um, so we
+talked about my channel as well. So, who
+am I really quick? My name is John Lango
+and um I spent four years teaching iOS
+accessibility primarily screened as
+built into the iPhone, a little bit of
+iPad. Um and I do a bit of IT support
+and repair these days to make that more
+of a full-time thing. Um I was able
+fortunate to attend uh the 8th version
+of the conference and I took J Bradley's
+thread on Mac OS class. I uh took more a
+w an unwise percentage of my personal
+savings and just a weird I sort of
+didn't know Apple security existed until
+the tail end of August of last year and
+it just turned out this was that soon
+and I was like well I've got to try this
+because this is something that I've
+already been like interested in anyway
+without knowing that it was like an
+actual thing. Um I've been teaching
+music forever and I drank bubble a
+couple of times playing drums. Uh oh
+lace was pretty awesome. I hope that
+they reopen it. Um, but yeah, so
+regarding OGSV8,
+uh, there were a couple of things that
+are in this talk that came out of that.
+Um, he has a lot of something that we
+talked about a little bit in Jer's class
+and then he also goes more into his
+book. Um, has at
+checking out that will be a good
+resource. both of his books for you
+especially but also kind of portals
+which get too um I mean there's more
+than that but those are the kind of main
+ones but that's also one of the films
+the first day freaking out diagnos and
+then
+lock down a couple of days later um so
+uh this was just to sort of put the
+thing back in order which I forgot we
+didn't need that slide anymore but hey
+so CIS diagnos um this is available on
+all Apple devices um we're going to be
+just talking about it act by the iPhone
+because it's just sort of the one that
+makes the most sense for what we need
+timewise.
+We're hopefully going to fit all of
+these things in. Some are probably going
+to be a little bit longer than others,
+but I'm keeping an eye for the five and
+10 minute warning. This is why I've got
+the timer over here as well. Um, so
+essentially when you run assist
+diagnose, it pulls assorted logs and
+runs a few seconds of
+top. Uh it runs PS logs and other
+classics. Um and then you end up with a
+pile of text files and logs. Um some of
+which are you can just sort of open them
+anywhere and then some of them you do
+need to open either in the Apple the
+Apple console or something else that's
+compatible with reading that stuff. Um,
+one tool that I don't have a slide for
+but want to mention is uh Mand put out
+um the unified blog parsing system. I
+think it's some Python scripts um that
+is a really excellent tool and
+definitely one worth looking into. Some
+of these tools that one of the cis
+diagnos that's coming up in a few slides
+actually uses that on sort of its back
+end to help process things. Um
+but um the talk so I don't forget Sarah
+Edwards our power labs this is the only
+sandsert that is for Apple products sar
+is both the author as well as the
+teacher do you have that
+>> no I was going to ask you is that also
+available in like tvOS and watch OS
+>> sis diagnos she said is available on
+everything and I trust her um and it
+provides slightly different logs on
+everything the phone has the most logs
+by far um but there is a way to pull
+assist diagnose. I think if you've got
+good vision and you press whatever the
+physical buttons are, generally
+speaking, there's a physical button
+combination. Um, we'll we'll not jump
+ahead too many slides because I will be
+all over the place in no time, but yes,
+it is available on those. Um, you
+probably would have to dig around to
+find how you're going to do them, but it
+it should be in some capacity. Um
+the biggest thing that she said when I
+was sort of like oh crap these are like
+a serious thing is that most of the
+lives disappear after 3 days. So if you
+notice anything fishy with your phone in
+particular but any Apple device that
+especially don't maybe have as much
+visibility into pull the documents as
+soon as you can because that is the
+primary source of your lives. Um
+so let's see Saras is mostly focused on
+she is like a forensic expert in the she
+she does research but is more on the
+legal side of things um from what I
+understand and so um she was talking a
+lot about how you can sort of make
+connections in people's data her pattern
+of life examples were um she had a cy
+diagnosed from her phone from the flight
+within like the past the day or
+something like that and there was like
+her sitting on her bed scrolling through
+some social media app and you could
+actually see it has a lot of information
+but you can't see necessarily what
+individual URLs you were looking at but
+you can see like you watch this one for
+5 seconds watch the next one for 3
+seconds and stuff like that. Um this is
+all specifically in the power log which
+is one of many of these logs that are in
+there. Um, and then she also had that
+was now the screen time and foreground
+is just that you can also see when
+you're changing apps and things along
+those lines. Um, it's listed a little
+bit differently for Mac because there is
+actual multitasking is not the right
+word for it, but I think you'll know
+what I mean. Whereas on the phone,
+you've got one thing that you can see at
+any point in time. Um, some bonus talks
+that sort of have things where you might
+want to just be aware of the lives. Alex
+Boni did a really awesome talk that is
+also on YouTube that was in one of the
+ICT Florida chapters. Um, and he does
+exclusively uh criminal investigations
+and also has written some cool tools. I
+believe his called his is called Ivy.
+Um,
+one of the things that's tricky with all
+these tools that I also forgot to put in
+the slides is that because SIS diagnosed
+is a proprietary Apple thing that they
+designed for their technicians to be
+able to check on devices. you go to the
+Apple store and something is wrong,
+that's sort of why this diagnosis exists
+because that way the technicians can
+pull it. They can see that's it just
+sort of happens that it has worked out
+really well for law enforcement and
+other sides of things. Um, but in order
+for him to keep his tool up to date and
+maintained every time a new update comes
+out, uh, 26 25.1 or whatever, um, if
+there are changes in how those logs are
+written and there tend to be a lot of
+random arbitrary changes that Apple
+makes with a lot of these things, not
+just the SIS diagnosed logs, um, then
+his tool needs to be kind of modified to
+adjust for that and so on. Um, he had
+one example about somebody who believed
+in the app got busted like he heard the
+cops knocking on the door, deleted the
+app before he opened the door and then
+famed never having heard of that app and
+when Alex went and pulled vlogs and
+stuff like that, he was like, "Actually,
+it looks like you deleted that one when
+I opened the door." Um, and then also
+the distracted driving one is one that
+like I have a lot of friends and family
+who will text or call when they're
+driving and like your phone knows that
+and if you get in an accident they will
+be able to tell that like really easily.
+This isn't even really like a hard tool
+like self accelerate tools where you are
+pulling the full file system. This is
+like literally just CIS diagnosed that
+like you can pull relatively easily. Um,
+we're not going to talk about this one
+because I'm going on way too long about
+CIS diagnosed. However, this one's
+amazing and um, definitely worth
+checking out. I will have the slides
+posted probably by Monday because as I
+was starting to mention to somebody
+who's in here very early on, a lot of
+the slides in the middle did not like
+they look completely wrong on this and
+they're actually not that much easier to
+see even on the screen, but they're
+better on the screen on the laptop. Um,
+so
+this is we're not actually doing it on a
+Mac, but I just wanted you guys to see
+if you did it without the key
+combination on a Mac and you actually
+run it because we've got a shell and
+everything. Um, you get this massive
+warning that is a wall of text that
+boils down to that part in red, which
+made it a little bit easier to read is
+like all of this stuff that you probably
+don't necessarily want people to
+randomly have. um that second to last
+talk this talk right here um from the
+SANS uh deeper summit um they
+specifically pointed out that people
+don't realize that this PII is floating
+around in consist diagnosis even if it
+is slightly less personal than stuff
+that you can get on a full system and um
+so
+uh just to not post them randomly the
+one of the guys I believe it was boy um
+said that he saw people just randomly
+posting these on forums when they were
+trying to get help with weird Apple
+issues. Um, and he was like, "Please
+don't post these." Um, so okay, when it
+comes to cis diagnos and malware
+detection, which is the thing that I'm
+much more interested in, although this
+is a much more reason interest sort of
+branch of the cis diagnos, uh, another
+talk at OBTS V8, um, OBDS predicted by
+the sea stable conference. I'll probably
+never remember to say it again, but I
+remember to say it this one time, so
+hopefully it'll stick. Um, Matias
+Freudorf is like one of the top
+researchers in malware iOS forensics.
+The main thing is we don't have on the
+iPhone any real telemetry any any sort
+of equivalent of what there is on Mac OS
+with the endpoint security framework or
+um whatever the equivalent is on the
+Windows side but stuff that you would be
+sending into things like that to be able
+to actually aggregate all this data. Um
+there are slight workarounds but they
+don't give you much telemetry. So if you
+have some form of um device management
+system then you're able to get a little
+bit more if you are physically connected
+to your laptop and running in developer
+mode and having to console Xcode or
+something like that. There are like
+extra things that you can do but it's
+like you're not going to walk around
+connected to a laptop just in hopes of
+getting a little bit of extra
+information. Um so for him the cis
+diagnos is sort of like the number one
+thing. Um he does also mention other
+backup artifacts. I don't think that
+this was necessarily in the same talk. I
+have listened to so many of his talks at
+this point that I don't remember. He
+also if you have heard of I verify is
+one of the co-founders of that and VP of
+research. So anytime like with the Kuna
+and um Dark Sword Research that has been
+coming out of I Verify specifically, he
+is not necessarily 100% the author, but
+like one of the major guys behind that.
+I think that they're one of the many
+blogs that does not uh attribute a
+specific author. Um but he certainly has
+put some awesome talks about it. We did
+one Black Hat Asia in addition to OBTS
+5, 6,7, and 8. and the training for sure
+at OBTS 8, maybe 7, and we got one
+coming up at 9 as well. Um,
+so let's see. The encrypted backups have
+more information in them. Most of it is
+then phone numbers, but it can include
+your health data and various other
+things. I don't think that he was saying
+that health data was the specific
+source, but I know that there were bonus
+things in there that you sort of like do
+the encrypted backups if you can. Um
+iTunes obviously doesn't exist anymore
+but it's still called that just a
+historical thing. So it especially
+exists diagnosed. So at those trainings
+that NPS has been doing um he
+specifically is mentioning uh mobile
+verification
+toolkit which is very easy to say uh
+which is ambassy international school
+that they put out a while back and um
+then there's also a sis diagnos specific
+tool developed by the European
+Commission uh David Dvau and Aaron
+Kaplan both gave I believe one of the
+first talks on this possibly it it was
+within the first couple there was one
+Quebec that I found later than this that
+might have been a little earlier, but
+the AC blue uh Luxmbourg conference,
+they released this tool and they did a
+really cool walk through of how you can
+specifically use their tool that they
+released CIS diagnosis framework in
+order to take somebody's CIS diagnose
+sort of parse it using that um
+the not MC
+the one that's owned by Google Mand uh
+parsing it using Mandian
+uls parser and then being able to sort
+of make more sense out of the data that
+way. Uh we've got like a pile of links
+on the bottom. Um the first one is for
+the talk, the second one is for the
+actual tool. It's a GitHub link and then
+um the bottom two are their training
+notes which are super detailed. They
+posted like this very long markdown
+write up of just how they went about it
+and how they trained people at the
+conference a couple of years later. Um,
+really cool. I was going through about
+half of that when I thought, yeah, I'll
+be able to give you guys a demo of using
+SAF and then at some point I was like,
+there just not enough time to actually
+do this. Um, but they also have on there
+um there's a link to I think it's
+hackable. Um, there's an iOS forensic
+CTF using this setup, the CIS diagnosis
+analysis framework. Um, so that is a
+super cool um tool and definitely
+something that I would like to dig into
+more. I don't have slides. I don't have
+any more information about the mobile
+verification toolkit. That one's been
+around for longer. Part of the reason
+that they developed SAF was because uh
+MVT relies on the full backup backup and
+they were trying to find the European
+Commission was trying to find a way to
+not get as much PII in there as
+possible. This is sort of the next best
+thing. Um so brief demo. This is not
+going to be particularly exciting to
+see, but we'll we'll see it anyway. Um,
+so sadly, aside from the fact that
+nobody can see the current thing, it
+doesn't look we don't get any feedback.
+There should be something up there. In
+theory, if you read Apple's, if you read
+through this page, it says something
+that indicates that sometimes you might
+get a little feedback that says, "Cool,
+now we're collecting your analytics." It
+mostly looks like you get a screenshot.
+If you feel like trying it right now,
+it's like, hold it for just under a
+second, hope that it vibrates, and then
+let go. And if it vibrates, then you're
+in luck. And if it doesn't, then there's
+an alternate way that is more of a pain
+that we're not going to go through the
+full thing right now, but it's on this
+page. It's the one underneath the main
+thing. Um, and it's way more reliable
+where essentially you go into um you
+have to set up a workaround using
+accessibility and assist of touch.
+Inside assist of touch, you can actually
+add just like a button says analytics.
+You press that one and it gives you
+actual feedback. at the top of the
+screen gives you like this nice little
+banner and says gathering analytics dot
+dot dot maybe a couple other words
+should I forget it takes somewhere
+between 2 and 10 minutes depending on
+the size of your device how full your
+device is what mood it's in that day um
+for me it seems to be in the 3 to 5
+minute range but Matias has said and
+other people have said in numerous talks
+that it can be easily 10 minutes um so
+once it actually has pulled back and it
+will not give you any other clip
+Sometimes it'll give you feedback and
+it's like, "Cool, we're done collecting
+data now, but for the most part, you
+just have to remember to go dig into uh
+privacy. There's like a bunch of pages
+that I'm not going to remember all of
+them right now." And then there is a
+long list of all these sort of analytic
+files that I don't know if anybody's
+ever dug through before, but there's
+some interesting stuff. And you can
+either do in the search bar, just type
+beginning of CIS diagnose, and it'll
+bring you right to it. Uh or you can
+scroll way down to the bottom and find
+sis diagnose down there. Um that lot
+that p a lot is actually a tar like a
+gzip thing of a million different things
+like I was saying from before but a lot
+of them have a date stamp so it'll be
+year and then month and then date and so
+on. Um there are other ones that don't
+necessarily have that but a lot of them
+do also find like crash reports and
+stack shots and things those lines in
+there. There's also a lot of that stuff
+bundled into the SIS diagnosis as well.
+Um,
+so let's see. At any rate, if you notice
+anything weird with your phone or phones
+that you are in charge of, get assist
+diagnosed as soon as you can because
+again, it's going to the bottom going to
+disappear within 3 days. Um once you
+have once you have the actual file uh
+you can easily airdrop it to something
+else if you've got assorted Apple
+devices or you can connect to USB. I
+have not done it just through finder
+because when I try to sync my phone it's
+way too interested in deleting things
+that I don't want it delete. Um, I
+actually have this nerd app, I amazing,
+that's like for iOS backups that are a
+little bit more customizable and easier
+to handle than just doing standard
+Finderunes backup. Um, and in that, um,
+there is an option where you can see
+what it calls file system, and it's
+closer to a file system when we get in
+the files app, but it's not the full
+file system by any means. But down in
+that one, there is actually a log
+section, and you can sort by date, and
+it's mostly in the correct date order,
+although about 100%. you do have to poke
+around a little bit. Um, but that is
+that's a slide that I'm going to try to
+add when I post these just to kind of
+get an idea of what that thing looks
+like and decide if it's worth spending.
+I think it's 25 bucks for a single
+license or 353 or whatever. Um, it's
+been for a while. It's been a little
+while. Uh, lockown mode. Um, we're going
+to go really fast because we're somehow
+halfway through this already. Uh,
+so lockdown mode on the phone. I'm glad
+that a couple people have experimented
+at least a little bit. Apple makes it
+sound super extreme. One of the many
+things that I'm realizing right now, it
+did not make it into the final cut of
+slides. Um, Runa Sanvic had a blog blog
+post a little while back. I forget her
+company is branded. She does work with
+journalists and it's sort essentially
+like an amnesty international kind of
+thing coming protect journalists etc.
+and um she had a really cool blog post
+that there will be a link for that was
+talking about how Apple's marketing and
+calling it this like extreme thing to do
+is in some way making people think oh
+maybe I shouldn't do that whereas a lot
+of other companies it's like they just
+label it as whatever face protection
+which is not even this but it was she
+was making I felt like pretty good case
+and it's definitely pretty extreme what
+they say um this is another one that's
+available and I wrote all Apple devices.
+It's certainly available on the more
+interactive ones. I don't know if this
+one exists for TV and it should exist
+for visual because that one's more. But
+um at any rate, we're only talking about
+iOS today in part because we don't have
+time, but also just because since we
+don't have the visibility that we get
+with endpoint security and so on on the
+Mac, one of the only options is just
+like try and harden things as much as
+you can. So you're basically like
+cutting off some attack surface. um
+particularly in uh iMessage and um
+Safari um Safari/ Yeah. Um
+so Apple's list is long. There is a
+screenshot of that but it's coming up in
+a little bit. My own experience so far
+because I turned it on the second day of
+OBTS because Jonathan Leven's talk that
+day. Jonathan Leen is also playing up
+because his three books are like well
+more than three but the three the
+trilogy is like the legendary kind of
+stuff. Um just like super excellent
+books. He had a talk where he mentioned
+lockown mode and was basically like if
+you're working in security and paranoid
+about anything just use it. And I
+qualify for at least one of those and uh
+had turned it on and like yes it affects
+messages.
+I kind of don't care, but I'll show you
+how. Um, web browsing, I have noticed it
+like maximum five sites over the past
+seven months. Um, it's maybe I just
+don't go to the fancy websites. I don't
+know. Notifications were actually pretty
+weird in the beginning. Um, and we've
+got some screenshots that are hopefully
+going to be visible for that, but worst
+case they'll be more visible and on one
+day and I'll describe them in the
+meantime. Uh, but that is actually
+noticeably better in the much recent
+past. Um, so notifications. This one I
+is one of the few that I had a chance to
+blow up. Uh, literally a few days after
+I turned it on, a contact, a friend who
+I had not heard from in ages, it claimed
+was trying to contact me and the podcast
+felt that they need to block that. And I
+was like, first of all, that doesn't
+sound terribly likely. And second of
+all, it something about it made me
+wonder like, did she actually text? And
+there were a few friends who I did text
+in this time frame. I didn't get I
+didn't take screenshots every single
+time it happened. It just didn't occur
+to me that I would be keeping records on
+it and it certainly didn't occur to me
+that I would be talking about this. But
+um this one at this point I had talked
+to a couple of friends who were like
+yeah definitely I haven't texted you.
+Sorry. How's it going though? Uh and I
+was like I'm going to I'm going to not
+shoot a text for this particular friend.
+We'll catch up soon enough. Anyway, um
+this one was an interesting one back in
+January and I made it so it's like
+somewhat visible. It it was an unknown
+contact, which is kind of it's trying to
+do its job. Hilariously, it was my
+friend's sister saying, "Hey, we're
+doing a surprise birthday party." Um but
+the thing that I find most interesting
+is it says right here, "We blocked it."
+And then directly underneath that with
+the same exact timestamp, she clearly
+texted me anyway. So like it hadn't
+blocked anything as far as I can tell.
+So like there are definitely some
+glitches. And in October in particular,
+by January, I think I was sort of like
+it had calmed down and I didn't care as
+much. But October, November, I looked it
+up a couple of times and I was like,
+what the heck is going on with this
+thing? Because I'm getting all these
+weird like fake notifications and I'm
+tired of texting people who didn't
+actually text me. Um, so when I was
+poking around for that, it seemed like
+there were many people in the same boat
+and it was just the consensus was Apple
+doesn't have enough people using this to
+care and try to fix it. Um, but I don't
+know, they must have cared at least at
+some point and um, yeah, we've got a
+couple more
+and uh, the the main thing is it's
+definitely toned down quite a bit. Uh
+these ones we're going to skip for right
+now because the next one actually makes
+way more sense. Uh the first one was
+this one has to be fake because that
+person would have never facetimed me.
+That is a parent of a student. We
+literally texted to set up lessons.
+FaceTime just doesn't make any sense. I
+did not remember to ask her, but I also
+know her well enough to know she can
+FaceTime me. Um, the one time out of
+probably 30 false alarms that it said
+about somebody FaceTiming me, this was a
+colleague and we had literally just
+finished saying, "Hey, let's FaceTime in
+a couple minutes." Because we were
+trying to sort something out and I said,
+"Cool, I'll call you." And I think he
+got impatient and called me and all of
+that kind of checks out in many ways.
+Um, so that time I didn't remember to
+ask him either, but I believe it. Okay,
+cool. There was one time out of many
+where it actually did something. Um, and
+I don't know why it wanted to block it
+anyway, especially because he already is
+a contact. Um, this one. So, we don't
+have time to get into all this. Nickname
+was something from last year. Um,
+basically there was a hole in contacts
+slash iMessage again where um the way
+that somebody can have like a custom
+photo or emoji for themselves or
+whatever and also like whatever their
+name is. There's a way that that can
+update sort of behind the scenes and um
+there that was being exploited uh for
+who exactly. Um, and so this sort of
+alert that I got over there is
+interesting because it seems like they
+were trying a year later to be like on
+top of that. And I mean, of course, they
+patched it by that point. Um, this
+though was also like a benign thing. It
+is somebody who I don't specifically
+know, but it's in this massive text and
+it's just a friend who sends out texts
+on holidays and this was some friend of
+his and family was being really
+protective. Um, super cool information
+that we don't have time to get into
+because somehow we're all really late.
+Um,
+so messages, the biggest gripes that I
+have with messages, and it's like again,
+I don't care, but other people might.
+Hyperlinks don't work. So, if it's just
+yet, you saw that. Um, if it's in a wall
+of text, it's a pain. I'll copy it into
+notes. Then when you hit done or the
+check mark or whatever, then you can tap
+the link like normal because notes isn't
+against having parsers. Um, if it's just
+a link by itself without a wall of text
+around it, then you can just copy that
+and dump it into Safari and you're like
+good to go. Um,
+so messages and receive contact is the
+only one that like is an actual pain.
+And the thing is it happens to me less
+than once every two months. Um, but it's
+also good to know if you're really
+considering lockdown mode. Um, contact
+cards basically don't download. So, you
+have to actually turn off lockdown mode
+and go around it. Or you can just say,
+"Hey, can we email that?" Uh, if you're
+going to turn off lockdown mode
+temporarily, this is where we can
+actually see all of the things that were
+like, don't use lockown mode unless
+you're being under you're under a cyber
+attack or whatever, but it's like it's
+not that big of a deal. And yes, we can
+see the full list. We don't have time to
+actually read through it right now. Then
+you get this sort of bonus thing and uh
+you have to put the password in and your
+device will reboot. Same thing when you
+do turn on lock download. If you do, it
+will have you put in your passcode and
+then it will reboot and so on. Um, and
+then once we're on the other side of it
+now, it's like the actual downloadable
+link. It says unable to download items
+to me at least most of the time and then
+it downloads it anyway. So, yet another
+weird little hole. But at any rate, I'm
+still using it and I intend to keep
+using it. I am by no means saying, "Hey,
+you need to use this." But I also want
+there to be alternatives out there. Just
+sort of like 10 plus sources that all
+show the same this is how you turn it on
+and then no actual information about
+what it looks like. Um especially
+because it's not that big of a deal yet.
+It's a little bit of a pain, but like I
+don't know. Um this was stuff that just
+showed up in other like news and social
+media resources. Let's bang through the
+resource list and then we're going to
+try and get through the fastest version
+of ES Logger and the other thing on the
+Facebook. Uh, we're gonna skip 90% of
+the details on this just because the CIS
+diagnosed and lockdown mode I timed less
+than I thought. Um,
+there is obviously less stuff than we
+have for other operating systems, but at
+the same time there is a pile. Both of
+Patrick Morton's books are free.
+taoomm.org.
+I forgot to put that as a link at the
+bottom. That will be in the finisher
+slides that actually get posted. The
+first five chapters of this are like
+even if you are coming from a completely
+non-technical background, they're just
+like really good, easy to digest
+information with a couple of bonus
+terminal commands at the end. Uh the
+second half of the book is a little bit
+more hardcore and useful and using
+assembler and stuff like that. Um but
+it's still they're phenomenal. The
+second book is um I'm not as familiar
+with, but a lot of it is digging into
+the endpoint security framework and uh
+detections for malware and how to how to
+break tools with that. Patrick is
+involved with basically everything. And
+uh just check out he's got like in
+addition to talks at every one of the
+OBDS conferences, he's had multiple
+DevCon at my hat and every other talk
+imaginable. He has an amazing blog and a
+malware collection and so on. Um, this
+is another really awesome sort of
+starting point talk that can just sort
+of get you up and running with how the
+basic stuff works. Um,
+we're not going to be able to describe
+any of these at all right now, which I
+was kind of hoping to get into some help
+with the PS logger thing. Uh this one
+was one of the first ones that got me
+sort of hooked on just understanding how
+things work in general because when well
+they actually got rid of PS3 as a
+command a while back but um launchd is
+uh process number one and when you were
+trying to figure out process trees
+things just point back to that even if
+it doesn't make any sense. Um Jiren's
+also got two books. uh threat hunting is
+one that just came out and two months
+after he released the first one they
+changed the name from Mac OS X OSX to
+Mac OS um and that's one of the things
+to watch out for with all the resources
+in general try and stay to some extent
+towards the newer stuff there are
+definitely older ones that are still
+useful such as the process tree talk
+that I was just talking about but things
+change so rapidly because Apple has full
+control of the software and therefore
+they change stuff kind of when they feel
+like it and they also say replace and
+they just kind of keep moving with life.
+Um so
+um this one is an awesome introduction
+Brendan Dalton for the endpoint security
+framework and just sort of basis how it
+works uh talking about the authorization
+versus notify events uh breaking down
+sort of things in user space versus
+kernel space and um has a cool malware
+detection demo in there. Um, this is an
+amazing one. I was not so familiar with
+how instant response works in general.
+And Shannon sort of talks you through
+the logic of thinking through one of
+those attacks. Uh, and also ties it in
+with some there's cool like stuff if
+you're not as familiar with how
+corporate networks work. Excellent stuff
+in there. And also mentions the lighter
+uh, attack framework for Mac OS
+specifically. This one's awesome for
+starting to get an understanding of TCC,
+which I was really looking to to get
+into a little bit more, but we can't.
+That's like anytime it says, "Hey, do
+you want this app to access your mic,
+whether it's on the phone where it's a
+JSON file or on the Mac where it's a SQL
+8 database, everything is SQL 8
+databases kind of. Um, that's that's
+where that is. And then this is, I would
+say, a really nice uh starting pointish
+talk with Patrick. Most of his talks are
+like a little more hardcore. Um, this
+one is like super hardcore about crash
+reports, but it's really excellent and
+stuff that I'm trying to wrap my head
+around a lot more. Um, and let's see,
+iOS. We're not even going to talk
+because we talked about mit already. Um,
+all amazing. Billy Ellis has a channel
+on YouTube where he goes through iOS
+exploits and infects his phone with
+watching what happens behind the scenes
+and various other things. Um, and then
+there's all kinds of other stuff that we
+don't actually have time to get into. On
+this one right here, there are LLMs and
+AI. We said the word in 2026. Um, and
+then so OSX internals, thread slice,
+star OS internals. Um, there is a free
+one. The first edition is free. Is it
+not on this? Okay, there it is. Uh,
+first edition is free. Um, go to his
+site. There will be an actual proper
+link for that. Uh Chad Fitzell is
+another he's like a more red team kind
+of researcher who's got a lot of awesome
+talks and he's got an excellent blog as
+well. Um and he he mentions the older
+version being useful even though it's a
+little outdated at this point. It still
+just has some great stuff in it. Why are
+we back on that slide again? Who knows?
+Um this one is super cool just in terms
+of career stuff. We're going to skip
+these as though they never happened.
+However, uh any tune is a really cool
+app. If you uh you know what? This is
+because we're supposed to switch over.
+Um
+this doesn't look right anymore. We need
+to stop sharing. Nope. We've got the
+right thing. Uh
+did it do it? It did not.
+I learned how to do the screen sharing
+thing that's works totally different
+from what I'm used to shortly before we
+started and then promptly forgot once we
+actually started and we're still not
+doing the right thing. Um,
+sorry folks.
+>> There we go. And this is horrible.
+>> All right.
+Can we blow it up? Cool. All right. Um,
+so
+what do you want to hear more PS logger
+or uh stuff to try and tell your friends
+and family so that they don't think that
+they're
+>> the second one?
+>> Yes. Lock show hand because otherwise
+I'm going to lose it. You have to log
+your friends and family.
+Uh, okay. That is slightly more people
+who said friends and family. ES logger
+find me at any point later today,
+including like literally 13 minutes
+around the hallway. Um, friends and
+family. All right. Um, please just keep
+your bloody devices updated. Like, it
+has to be the absolute latest version. I
+know a few years back there was this n
+minus one n minus 2 thing that was being
+supported and was officially on an Apple
+page at that time that since been
+pulled. Um
+technically yes they are back patching
+to a certain extent including with iOS
+right now get into preventive dark sword
+um but the other reason that you should
+be on the latest patch um among other
+things but um
+if they're out of space if if their
+device if their hardware is out of date
+and it just doesn't support the most
+recent thing if they can afford it buy a
+new one. if they can't buy use and hope
+that whoever had physical access to it
+is not a hardware hacker did some weird
+um if they're just out of space through
+the phone that app that I mentioned
+that's I want to say 35 or three
+licenses and change the number of
+licenses um I have had two three people
+who were like I can't update and they
+amazing they plugged it in and it's like
+you can not just back it up the same way
+you could through iTunes but you can
+actually like go through your photos you
+can go through your text and stuff like
+that, you can delete more selectively
+and you also can see your real backups
+instead of just being kind of like in
+some secretive Apple database somewhere.
+Um, for the Mac, if they're out of space
+on the Mac, then carbon copy gives you a
+nice alternative time machine where you
+can also make like a nice file system
+copy. Uh, and then just sort of like got
+20 GB or whatever you need to get the
+recent update. Um, liquid glass. If
+they're still gloing out about that, but
+their device supports it, I'm sorry.
+They have to just kind of do it. And
+honestly, I hate it too, but it's like
+you start, you don't notice it after a
+little while. Um,
+and also just like Apple's going to
+change the UI and it's going to keep
+sucking. Like they broke the camera,
+they broke photos, they broke the sort
+of things. Um, but like it's that or get
+hacked, I guess. Um, apps are basically
+attack service. probably not news. Um,
+either leave your automatic updates on
+or
+get rid of apps, especially if they're
+like ancient outdated apps that are no
+longer supported. Um, Wi-Fi and
+Bluetooth. I wish I had a visual for
+this. This will be included in the
+actual slides. If you go into your
+control center and your Wi-Fi is that
+kind of white color, it's not actually
+off. It's still like low power on. I
+think that it doesn't theoretically
+broadcast when it's in the white thing,
+but the thing is it's like they're
+broadcasting the trusted networks and
+like that is just you're exposing
+yourself. So like you either need to go
+all the way into settings and turn it
+off or make a shortcut that turns them
+off. That's something that I'm hoping to
+have on GitHub at some point in like 30
+seconds. Um
+if they notice something weird, pull
+this diagnosed, get it off the computer,
+get it to you. Hopefully you've learned
+how to use SAF by then. uh if they're
+weird enough, ask them to consider
+lockown mode. And then if you guys have
+checked out, what the hell is it called?
+Three buddy problem. They've done some
+awesome stuff, especially with the
+recent Karina and Dark Sword and stuff.
+Austin Rayu, who is one of the
+researchers players who previously
+worked with Spursuit, uh had a tweet
+that I found from a while back, um that
+said in addition to lock down mode,
+disable FaceTime and disable iMessage
+for a time. uh and then also power down
+and actually reboot every day because
+power cycling on iOS technically gets
+rid of persistence. However, the thing
+is when they've got a reliability zero
+day and they actually care about you
+turn it back on and they so like it's
+not perfect but it's better than
+nothing. Thank you.
+Yeah, obviously like your next thing.
+But if there are questions, you have I
+think you have like 10 more. I do, but I
+was supposed to stop for questions,
+right?
+>> Oh, if you want
+>> I was I think he had said that the five
+or 10 minutes was question.
+>> If there are questions.
+>> Yeah. So when when you showed me we're
+show that something was there message
+any of those things does it allow you to
+create an exception in
+>> so
+I did not see that as an option
+it's not impossible do you mean for that
+specific contact or something
+>> right for single it's like because you
+know it gets noisy yes so like from
+perspective you know you know in a
+general sense yeah that's something but
+curious about it from
+>> right So, I I don't know. First of all,
+one thing I do want to mention is I
+think I had a free timing where it was
+noisy and it just so happened that I
+signed up within a 3month window and
+Apple started caring and decided maybe
+we shouldn't make these really weird
+free colors for everybody. Um, I don't
+think that it was just that my phone
+sort of calmed down over time, but I
+also have no reason to really actually
+know that. It just that was sort of it
+seemed like especially as we were
+getting closer and then into the Karuna
+season like maybe more people are
+actually getting on this. I don't know
+if there is a way to do exceptions for
+that. But with iOS being as not
+customizable as I wouldn't be surprised
+if there's not. Um usually when I get
+that I'll just sort of tap on it and
+I'll see who it claimed that it was
+blocking and I'll sort of decide from
+there is this person actually probably
+contacting me or is this thing just kind
+of having a moment again.
+>> Okay.
+>> You have a question about your the
+emoji.
+uh it's in I think it was NSO group or
+something uh that is that the same kind
+of concept
+uh issue that people used to promotion
+kind of the same principle
+>> so yeah that that one I think is
+specifically in
+was the favicon also part of a a contact
+as opposed to a
+>> so that that's a thing that's been
+around for a while I mean people were
+maliciously abusing it
+>> but I was curious if they were kind of
+utilizing the same context as they would
+for that. Uh that
+I don't know for sure put the contact
+information stuff up. Um
+I don't remember. At one point I think I
+did know what the nickname was targeting
+specifically, but
+I it's probably in the same
+region. Other questions?
+>> Just very basic. Will the slides be on
+the biz website? besides Buffalo
+website. I have no idea, but I will ask
+Matt, but I'll have to post it on
+GitHub. So, this has a link to my
+LinkedIn. It has the GitHub. I think it
+has a third link that I forget. And the
+GitHub stuff is going to be up like
+Monday at 5:00 p.m. because I'm going to
+get home kind of late tomorrow. And then
+need to go and resize a bunch of them
+and add all the links that I forgot to
+put in in the first place and a couple
+other spots. Um,
+>> yeah. Absolutely. Hey, as a dad someone
+who like ships iOS or mobile apps, is
+there a way I can determine what data
+will get pulled by this diagnosis?
+>> I
+like you like the different data like
+the local data for example
+has a lot of how do I know what to
+diagnose what or what I have access to?
+I just have to like work on it myself
+and kind of you know
+test a reverse engineer as I'm kind of
+like building
+>> right that is definitely a good way to
+go about it first of all as these other
+questions as you can tell I don't know
+but the the what I'm thinking is it's
+more running like the equivalent of PS
+logs and those kinds of things it's more
+kind of checking what the system's doing
+in general as opposed to looking into
+what specific apps are doing since it
+does have stack shots and stuff. I
+suppose that if your app is running and
+or crashing at the same time, that
+information will get pulled. So, there
+could be some stuff, but um yeah, I
+can't find the files quickly enough
+right now. Um
+yeah, it's a good question. I think that
+it's not entirely like that, but yeah, I
+don't know. Other questions that I don't
+know how to answer?
+with lockdown mode with uh like your
+your one time tokens that are getting
+text to you from whatever thing you need
+to log into. Does that get in the way of
+locking?
+>> No, they actually that's an interesting
+one. They don't. Um and a lot of times
+those are just coming from like SMS. Um
+and it does seem like interesting that
+now I'm thinking about it. A lot of the
+ones that are getting blocked are
+related to either FaceTime or
+essentially iMessage features. uh which
+are the same two things that customer
+was like maybe turn those off. Um but
+but SMS I think because it is sort of
+the more universal and less secure and
+more agent protocol I guess
+black just doesn't care about it or at
+least not in the same way but it's also
+like there's less extra stuff to parse
+in those I think
+questions
+actually hack how to answer that guess a
+followup too is like so um I mean I just
+got I'm just migrating Windows I just
+got Mac like three months ago still very
+new to it but
+>> uh I've got base iCloud so I actually
+don't even have my messages backing up
+there because it just fills immediately
+um so I have an annoying problem where
+I'll get a message on my laptop at my
+phone and they don't sync when I delete
+so in a situation where my phone was in
+lockdown mode would those messages still
+go through on my Mac is your Mac. So
+when I I forgot to say this one when I
+turned it on on my phone, my Mac several
+days was like turn it on and I just
+haven't on my Mac. I don't know why. Now
+it's on a recording so my Mac use. Um so
+if you turn it on on both I don't know.
+I've actually never turned messages on
+on my Mac because 10 years ago, a friend
+had some issues where he was like
+missing and stuff because it would go to
+his Mac but not his phone and then
+somebody would be like, "Well, just went
+to somebody else cuz he right back." Uh,
+and that syncing thing has been around
+forever in some form or another and I
+just don't trust it. Um, for the actual
+answer to your question, I don't know.
+But one option like you just don't have
+to your laptop as long as that's like
+viable which it is nice to have the
+keyboard and stuff at times. Anyone
+else?
+>> Yeah, please. Is there anything unique
+about the way back? So, anything man
+there's so many pieces I didn't get to.
+They have the same essential kernel.
+They're both X and U. The iOS one is
+more hard. Um, anything that can hack an
+iPhone default can hack your Mac just
+because the iOS one is more cardinal.
+Um, there have been some Karuna I think
+maybe the Npmuna
+spin-off that the past week or so I
+think was more Mac oriented because it
+was npm and devs and stuff like that and
+you're not going to be using on your
+phone. Um, but yeah, did that answer the
+question? Yeah. I I just like
+are our
+clicking the links and fishing emails
+still is the human still the issue.
+>> Yeah. A lot of the time that's that's
+annoying with the iOS ones. A lot of
+times it's zero. So it'll like if you're
+a targeted person at least and even with
+like the Kun and Dark Sword where it's
+just like these massive watering hole
+attacks. It's like if you land on that
+website, the JavaScript that's running
+in the background, just the way that you
+interact with web git and stuff you're
+screwed. Um, interestingly
+there was something both customer and
+the TS screening storef said where if
+you use Firefox or Chrome even though
+they're still using WebKit because you
+cannot get away from that on iOS whereas
+uh Firefox and Chrome are actually
+different engines on a Mac. Um, certain
+malware will actually not mess up your
+phone if you're not running Safari
+because it still has checks that it kind
+of shouldn't have. like it should be
+smarter doing that. But um yeah, I think
+I'm still not answering the question.
+I'm like fried right now. I apologize
+everybody.
+>> I mean, yeah, when it comes down to it,
+it attack surfaces on basically like
+every computing platform or somewhere,
+right? There's like things that are
+system utilities that you can beat up.
+There's application look like Adobe
+Acrobat, right? Giant attack surface for
+years. So I think you're like like the
+attack surfaces are you know what
+applications are you running especially
+commonly used stuff like browsers or
+that sometimes it's the system or system
+utilities that had shortcomings and in
+some case like deep-seated things from
+you know the 80s and 90s when you start
+talking about like uh you know Mac OS
+and Windows so you know from that
+perspective right I think almost any
+computing platform has sort of similar
+attack surfaces and similar
+uh concern and and right you know iOS
+does a better job of of locking things
+down but at the end of the day if
+there's no you know if if the uh you
+know the preview app has a vulnerability
+in the font rendering thing that you
+know gets rude right what what can you
+do
+a big jailbreaking a few years ago
+already
+last question I think uh the Next one is
+starting producing.
+Cool. Thank you.

@@ -1,0 +1,841 @@
+ABOUT
+================================================================================
+Title: NorthSec 2025 - Francois Proulx - Living Off the Pipeline
+Author/Channel: NorthSec
+Channel URL: https://www.youtube.com/channel/UCqVhMzTdQK5VAosAGkMtpJw
+Video URL: https://www.youtube.com/watch?v=FO8eIGu8EJo
+Video ID: FO8eIGu8EJo
+Published: 2025-10-07
+Duration: 27:33
+Views: 207
+Likes: 3
+Comments: Unknown
+
+Description:
+The next wave of Supply Chain attacks is brewing in our Build Pipelines (CI/CD), where 0-days and novel attack paths are still waiting to be discovered. In 2024, the XZ compression library compromise was used as a trojan horse to backdoor OpenSSH, thankfully, this was caught early on, but the next time it might go unnoticed for much longer. This talk picks up where we left off last year, and we tell the story of how we went from finding 0-day vulnerabilities in the Build Pipelines of critical Open Source packages to predicting TTPs for the next XZ-like attacks. This time we've adapted MITRE's ATT&CK framework for CI/CD environments. We'll go in depth on how Threat Actors can "Live Off the Pipeline" by abusing legitimate build tools to do their bidding proving why this has become Red Teamer's favorite new soft spot.
+
+The session introduces practical methods for predicting and identifying threats before they materialize by mapping build pipeline tactics to our adapted ATT&CK model. Real-world case studies, based on our forensics of the recent Kong Kubernetes Ingress Controller and Ultralytics YOLOv5 ML library compromises, will demonstrate how adversaries exploit build pipelines, escalate privileges, and can remain undetected long enough to have significant impact.
+
+This session empowers attendees to proactively identify and defend against advanced supply chain attacks, effectively countering adversaries that seek to "Live Off the Pipeline" as demonstrated in the XZ compromise.
+
+--
+François is VP of Security Research at BoostSecurity, where he leads the Supply Chain research team. With over 10 years of experience in building AppSec programs for large corporations (such as Intel) and small startups he has been in the heat of the action as the DevSecOps movement took shape. François is one of founders of NorthSec and was a challenge designer for the NorthSec CTF.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# NorthSec 2025 – François Proulx – *Living Off the Pipeline*
+
+## Author and publication information
+
+- **Speaker/author:** François Proulx  
+- **Author/channel listed:** NorthSec  
+- **Affiliation:** BoostSecurity, described in the transcript as a Montreal-based startup building an application security product.  
+- **Role:** Vice President of Security Research; leads the Supply Chain research team.  
+- **Experience:** More than 10 years of experience building application-security programs for large corporations, including Intel, and for small startups.  
+- **NorthSec involvement:** One of the founders of NorthSec and a former challenge designer for the NorthSec CTF.  
+- **Co-authors:** None were provided.  
+- **Credentials, degrees, certifications, or additional affiliations:** Not provided.  
+- **Personal contact information:** Not provided.  
+- **Available publication/contact links:**
+  - NorthSec channel: https://www.youtube.com/channel/UCqVhMzTdQK5VAosAGkMtpJw
+  - Video: https://www.youtube.com/watch?v=FO8eIGu8EJo
+  - Video ID: FO8eIGu8EJo
+
+## Summary
+
+The talk argues that modern CI/CD build pipelines are a major and insufficiently protected component of the software supply chain. Although web-application security has improved substantially, the speaker characterizes build pipelines as having a comparable security maturity to average PHP web applications from 2005.
+
+The central concern is that CI/CD systems routinely execute code in privileged environments containing secrets, tokens, and signing keys. They also process many untrusted inputs, including pull requests and source-code events. François Proulx therefore describes CI/CD remote code execution as “RCE as a service”: attackers can abuse externally triggered automation to execute code in environments that possess valuable credentials and access to artifact-publication mechanisms.
+
+The talk focuses on attacks against GitHub Actions and similar CI platforms. A typical attack involves a workflow triggered by a risky event, such as `pull_request_target`, combined with insufficient token-permission restrictions, execution of untrusted fork code, vulnerable containers or scripts, exposed secrets, or attacker-controlled build files such as Makefiles. The ultimate objective may be to dump runner memory and exfiltrate secrets. The speaker emphasizes that the same general problems can affect GitLab, Azure DevOps, CircleCI, OpenShift, Travis CI, Jenkins, and other systems whose workflows react to source-control events.
+
+Proulx presents the authors’ research tooling and operational approach. Their Package Supply project was rewritten in Go to improve scalability and extensibility, using the open-source Putin scanner as a core component. The research process was also changed from broadly collecting repositories to curating known entities—such as corporations, governments, universities, nonprofits, and open-source foundations—and then identifying their associated GitHub organizations. This supports more targeted scanning and provides a clearer point of contact for responsible disclosure.
+
+Putin scans GitHub and GitLab repositories using read-only tokens. It discovers and indexes repositories, then applies extensible Rego-based rules. A notable feature is scanning remote stale branches, which can preserve old workflow versions. In particular, stale branches may allow attackers to revive vulnerabilities that were fixed in the main branch when workflows use pull-request-target triggers.
+
+The talk describes two related systems:
+
+1. **Package Supply V3** identifies vulnerable build pipelines, assesses exploitability, and supports responsible disclosure.
+2. **Package Threat Hunter** monitors GitHub’s public event stream in near real time and can also ingest enterprise audit logs. It enriches events with vulnerability data and other signals, builds user personas, and identifies activity that may represent pipeline exploitation.
+
+The speaker illustrates the approach through investigations involving the Ultralytics YOLOv5 machine-learning library and the Kong Kubernetes Ingress Controller. In the Ultralytics case, Package Supply identified a workflow vulnerability in August 2024, but the issue was overlooked. The same vulnerability was later used in a compromise involving a Monero cryptocurrency miner. This incident motivated the creation of Package Threat Hunter, which was intended to detect exploitation as it occurs rather than only identify vulnerable configurations in advance.
+
+The authors also developed a pipeline-specific risk-scoring concept, the **Pipeline Vulnerability Scoring System (PVSS)**. It began as an adaptation of CVSS 3.1 but was being reconsidered using ideas from CVSS 4.0. The calculator was not described as complete or publicly released at the time of the talk.
+
+For defensive modeling, the authors adapted the OSC&R open software supply-chain attack reference to focus on tactics, techniques, and procedures relevant to build-pipeline exploitation. They further narrowed the model toward common scenarios in which attackers abuse existing pipeline tools to compromise the final software artifact.
+
+The talk concludes that attackers may only recently have begun exploiting these techniques at scale, creating an opportunity for defenders to identify and mitigate them before they become widespread. However, Proulx acknowledges that the research community may already have missed attacks.
+
+## Key technical ideas
+
+### 1. Treat CI/CD as a privileged attack surface
+
+CI/CD pipelines are positioned between source code and released artifacts. They often:
+
+- Execute code automatically in response to network-triggered events.
+- Run with elevated privileges.
+- Hold secrets, tokens, and signing keys in memory.
+- Publish artifacts to package or container registries.
+
+This combination makes build infrastructure a high-value supply-chain target.
+
+### 2. “Living Off the Pipeline” (LotP)
+
+The main technical concept is **Living Off the Pipeline**: attackers abuse legitimate tools already present in a build workflow instead of modifying the workflow itself or introducing obvious malicious tooling.
+
+Examples include:
+
+- **MkDocs:** An attacker-controlled `mkdocs.yaml` configuration can specify hooks that execute arbitrary Python code.
+- **Trivy:** A configurable output template using Go-template syntax can provide limited code execution or enable secret exfiltration.
+- **Environment-sensitive tools:** Environment variables or shell behavior can be poisoned to influence later jobs, creating a form of second-order code execution.
+
+The approach exploits the trust that pipelines place in their normal build tools and configuration files.
+
+### 3. Risky workflow triggers and untrusted inputs
+
+The talk identifies workflow events such as `pull_request_target`, `workflow_run`, issues, and issue comments as potentially dangerous because they can expose secrets while processing untrusted code.
+
+A vulnerable workflow may combine:
+
+- A risky trigger.
+- Unrestricted or overly broad token permissions.
+- Checkout of code from an attacker-controlled fork.
+- Use of secrets beyond the default repository token.
+- Attacker-controlled Makefiles or other build configuration.
+- Unfiltered branch names that may enable command or template injection.
+- Vulnerable build containers.
+- Persistent self-hosted runners.
+
+### 4. Remote stale-branch exploitation
+
+A distinctive detection idea is scanning old remote branches for vulnerable workflow versions. A workflow vulnerability fixed on the main branch may remain exploitable if an attacker can open a pull request against a stale branch containing the older workflow.
+
+This expands pipeline analysis beyond the current default branch and treats forgotten historical configurations as active attack paths.
+
+### 5. Automated, extensible pipeline scanning
+
+Putin is described as an open-source scanner specialized for build-pipeline vulnerabilities. Its design emphasizes:
+
+- Repository discovery using read-only GitHub or GitLab tokens.
+- Automated indexing and scanning.
+- Rego-based detection rules.
+- A domain-specific rule-writing approach.
+- Extensibility through cloning and adapting existing rules.
+- Scanning of stale branches.
+
+The research process distinguishes broad, lower-confidence findings from internally validated, higher-confidence findings that include exploitability and valuable secrets.
+
+### 6. Combining static exposure analysis with threat hunting
+
+Package Supply and Package Threat Hunter address complementary problems:
+
+- **Package Supply:** “Is this pipeline vulnerable?”
+- **Package Threat Hunter:** “Is someone exploiting a pipeline now?”
+
+Threat Hunter ingests public GitHub events and enterprise audit logs, enriches them with vulnerability and contextual data, applies detection rules, and stores results in a data lake. The system also builds behavioral personas for users interacting with projects.
+
+### 7. Signal reduction at large scale
+
+The described processing pipeline reduces a very large event stream to a manageable set of investigations:
+
+- Approximately 5.5 million public GitHub events per day.
+- About 500,000 events after initial filtering.
+- Approximately 46 events per day flagged for further attention after enrichment and correlation.
+
+This demonstrates an emphasis on practical triage and reducing false positives rather than merely producing large vulnerability inventories.
+
+### 8. Pipeline-specific risk scoring
+
+PVSS adapts vulnerability scoring to build pipelines. The motivation is that conventional CVSS criteria do not fully represent pipeline-specific properties, such as:
+
+- Whether a workflow exposes secrets.
+- Whether an attacker can trigger execution using untrusted code.
+- Whether the runner is ephemeral or persistent.
+- Whether the pipeline can publish or sign artifacts.
+- Whether exploitation can affect downstream consumers.
+
+The speaker stated that the calculator was still being refined and was intended for open-sourcing.
+
+### 9. Adapted ATT&CK/OSC&R modeling
+
+The authors adapt supply-chain attack references to focus on build-pipeline TTPs. Their goal is to prioritize the techniques most relevant to a common scenario:
+
+1. A vulnerable pipeline is identified.
+2. The attacker gains execution through existing pipeline behavior.
+3. Legitimate build tools are abused.
+4. Secrets or privileges are obtained.
+5. The final artifact is backdoored or otherwise compromised.
+
+This model is intended to support prediction, detection, and defensive prioritization of XZ-like supply-chain attacks.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+All right. Good morning everyone and
+thank you for coming.
+I'm Francois Proulx, VP of security
+research at Boo Security. Boo Security
+is a Montreal-based startup building an
+application security product and my team
+focuses on software supply chain
+threats.
+Let me start with a hot take.
+2025's build pipelines look like the
+average 2005 PHP web app in terms of
+secure coding.
+What do I mean by that? It's a real
+dumpster fire.
+Web app security has improved
+tremendously over the past two decades,
+but when it comes to the build pipeline,
+it still lags far behind.
+Let me clarify what I mean by build
+pipeline.
+The modern world depends on software. We
+all know that.
+Developers write code, they mix it with
+open-source code, everything is
+packaged, shipped by CI/CD.
+CI/CD runs with high privilege, that is,
+with secrets, tokens, signing keys that
+are in memory.
+It's often the bastard child, neglected
+by both security teams and dev teams.
+Up until recently, most pen testers did
+not even look at those targets, even
+though they're very juicy targets.
+Even if your CI/CD is hardened with
+strong authentication,
+in order to do its job, it has to accept
+a lot of untrusted inputs.
+So much so that I'd like to rename CI/CD
+RCE as a service.
+And that's because those systems run
+with high privilege, they're waiting to
+receive triggers over the network to
+process data and then execute code
+before uploading the results somewhere
+else. Let me fix the slide.
+That's more clear.
+In March of this year, you might have
+heard about a very popular GitHub action
+being compromised, TJ Actions change
+files.
+It's a pretty long story, but the crazy
+part is that based on our independent
+forensics that we did that we did in
+parallel of other larger teams such as
+Wiz and Palo Alto, we came to the same
+conclusion that in fact the final
+intended target was Coinbase.
+And since the attacker was not allowed
+to finish the job as they got caught
+very close to the the end goal,
+they got mad and they just put a simple
+memory dump snippet that logged all
+secrets in plain text for anyone to grab
+on the internet looking at workflow run
+logs.
+I equated it to nuclear fallout.
+Let's stop for a moment and picture
+where the build pipeline sits within the
+software supply chain.
+There's this amazing framework called
+Salsa, which stands for supply chain
+levels for software artifacts.
+On the left-hand side, you have what
+they call the producer, but really I
+prefer to call it the developer
+sitting on their laptop
+uh
+writing code using Git to commit and
+push to a shared repo, most often
+GitHub.
+Then they open a pull request so that
+other developers can code review
+and in most cases just the mere fact of
+opening the pull request will
+automatically trigger the build pipeline
+to run tests, linting, and other and
+other um automated actions.
+Then this build step will in many cases
+end up pushing a final artifact to some
+kind of registry.
+In the case of open source, the registry
+could be NPM, PyPI, Docker Hub, but
+there are many more registries you could
+think of, including for Terraform,
+Terraform modules, Terraform providers,
+Helm charts.
+So, now let's turn up the heat on this
+salsa.
+Because
+there are a lot of threats that we need
+to consider when we look at the build
+pipeline and sits it such since it's
+such a critical part of the supply chain
+as it sits uh between the source code
+and the final artifact.
+And also, if you remember, I renamed
+CICD RCE as a service.
+It's even more important to consider it
+when you model the supply chain.
+Let's walk through a typical attack
+sequence.
+We have an open source project hosted on
+GitHub in a public GitHub repo.
+It's using GitHub actions. That's really
+the most popular uh kind of CICD because
+it comes for free. You don't need to pay
+for the compute. It's built in.
+Typically, those uh GitHub actions will
+be used to build, package, and then
+distribute signed artifacts.
+In the case of the attack, you need a
+workflow that triggers on a so-called
+risky event. That could be pull request
+target, workflow run, issues, issue
+comment, and there are some more.
+And the the real reason why would be
+considered risky is that those expose
+secrets in the memory at runtime even
+when executing against untrusted code
+from a fork.
+So, then that workflow needs some kind
+of vulnerability. More on that in a
+moment.
+Ultimately, the attacker's goal is going
+to be to dump the memory of the runner
+so that they can exfiltrate all secrets
+that are in memory during the execution.
+And the reason is that most of those
+runners are effectively just VMs that
+were spun up on demand for the given
+job.
+And they typically grant sudo access to
+the code that runs.
+And most of the time those exploits can
+be zero click and leave few traces.
+This might look like a subway map to
+you, but it's actually the full attack
+tree for GitHub Actions.
+There are many possible mitigations and
+many ways to route around some of them.
+What kind of vulnerabilities are we
+talking about here? First, we have the
+so-called pull request, which is really
+when there are files contained in a pull
+request that would modify the behavior
+of existing tools present in that build
+pipeline.
+That's why we came up with the term
+living off the pipeline.
+More on that in a moment.
+Second, we have template injection,
+those mustache expressions with the
+curly braces.
+But really, we should just say it's
+command injection or script injection
+depending on the context where the
+expression is interpolated.
+Third, we have bot-mediated confused
+deputy. That's a very fancy way of
+saying that if the pipeline already
+trusts certain non-human identities, for
+instance, Dependabot,
+to run certain high-privileged action,
+for instance, automatically merging the
+dependency updates to the main branch,
+sometimes, and really depending on the
+authorization logic as part of that
+pipeline, there may be ways to game the
+system and effectively bypass those
+authorization checks.
+Finally, we have self-hosted runners
+that are not ephemeral.
+If you recall, earlier I renamed CICD
+RCE as a service.
+And keep that in mind when you consider
+that a runner is just a VM, as I said,
+which typically is going to be a hosted
+runner, which uh the VM is just spun up
+for that exact moment and then trashed.
+But, if you decide to self-host for some
+reason, you might need a more powerful
+CPU, some GPUs, or other
+uh access to other resources, then
+you're responsible for hardening uh and
+ensuring that the RCE is not going to
+allow to pivot laterally to other
+systems or just extract the secrets from
+other jobs.
+What does a vulnerable workflow actually
+look like?
+Well, let's look at it together.
+This one is running on a risky trigger,
+as I said, pull request target. That's
+only one of them.
+Also, it's not explicitly setting the
+permissions of the GitHub token. So, it
+may end up, depending on the
+configuration, to have the default
+read-write permissions.
+Also, because that pull request target
+is not specifying a filter on the
+branches,
+there may be options to revive from the
+dead this kind of vulnerability, and
+I'll I'll give a concrete example in a
+moment.
+Then, we have a container in that case.
+So, some jobs might be configured to run
+based on a Docker container, and that
+container might have other
+vulnerabilities that we cannot see by
+just looking at the pipeline file.
+Then, the workflow is checking out the
+untrusted code
+from the fork.
+It's also using that um
+another secret, that not the default
+secret, that appears, based on the name,
+to have read-write access to other repos
+than the one that's being targeted.
+Finally, we have make, which is going to
+be using the makefile that, in this
+case, the attacker has full control of.
+Then, they have RCE.
+On the right-hand side, you have a bonus
+Git branch name injection. So, when you
+open the PR, you have your fork, you you
+give it the the the name of the branch
+that you want, and that will be injected
+as the mustache expression at the
+bottom. So, then that's another way to
+get remote code execution.
+So, does this only happen on GitHub?
+Absolutely not. All modern CI platforms
+that trigger on events from source
+control systems such as GitHub
+may be vulnerable. So, that's also the
+case on GitLab, ADO, CircleCI,
+OpenShift,
+Pipeline as Code, Travis CI, Jenkins.
+Basically, all modern CI that will
+trigger on those events
+when the PR opens, for instance,
+and depending on the configuration, they
+may expose secrets even on more, you
+know, risky context such as untrusted
+code from a fork. Basically, the devil
+is in the details.
+So, last year at NorthSec, we told you
+all about our package supply project. In
+the months that followed, we rewrote it
+from scratch in Go. The reason is that
+we could benefit from our own open
+source scanner called Putin
+as a core building block, and that makes
+it more scalable and and extensible
+so that we can optimize the detection
+rules with custom rules and rescan in
+just about an hour the entire data set.
+Also, we shifted our focus from simply
+gathering as many GitHub repos as we
+could find to first manually curating a
+list of known entities. Entities being
+corporations, governments, universities,
+nonprofit organizations, large open
+source
+foundations such as Linux Foundation so
+that we would first have an entity and
+then find associated
+GitHub organizations.
+In the case of Google, for instance, we
+found over 100 GitHub organizations
+owned managed by Google. In the case of
+Red Hat, 120. US government federal and
+state entities, 340.
+For each of those organization, we can
+often see hundreds, if not thousands, of
+public GitHub repos. So, you can start
+to see the number of pipelines we can
+find across all of those repos.
+The advantage is that now we have a
+central entity that is
+potentially the right point of contact
+to
+perform responsible disclosure.
+I mentioned Putin. So, what is Putin
+anyway?
+Putin is our open source scanner that is
+specialized in finding vulnerabilities
+in build pipelines.
+It's very efficient. You give it a
+read-only token to GitLab or GitHub. It
+will automatically discover repos, index
+them, and scan to find vulnerabilities.
+Under the hood, it's using Rego.
+Rego is a language that is very easy to
+extend, and in this case, we create a
+domain-specific language that allows you
+to write your own rules to detect
+certain patterns. So, it's very easy for
+you to clone
+the existing rules, adapt them to your
+own needs.
+One cool and very unique feature we
+added pretty recently is the ability to
+scan just as efficiently on remote stale
+branches. The idea is that when it comes
+to workflows that trigger on pull
+request target,
+because you can effectively open the
+pull request against any remote stale
+branch
+that may contain an old version of the
+workflow,
+you can basically revive from the dead
+vulnerabilities that have been fixed in
+the main branch, but have been
+forgotten.
+You may wonder how prevalent this
+vulnerability class really is.
+Well, based on a recent snapshot of
+Package Supply,
+we had over 200,000 findings. Most of
+those are low confidence, basically what
+comes out of the open source version of
+Putine.
+Then we have our own internal rules,
+which are more precise, and that's what
+we'd call like high confidence. So, we
+have about 10,000 findings out of that.
+Uh and the idea is that we focus not
+just on vulnerable workflows, but we try
+to validate as many exploitability
+criteria as we can,
+as well as ensuring that there's an
+interesting secret to exfiltrate.
+So, for instance, if the secret would
+just have a read-only access, we would
+ignore
+such vulnerability.
+After that, we triage the those 10,000
+and find about 24% are easily
+exploitable, and we need to report them.
+Then there's some more, about 42% that
+are just as easily exploitable, but
+there's an environmental condition that
+prevents it from being exploited at this
+moment. For instance, if the workflow is
+present, vulnerable, but has been
+disabled. So, if someone were to
+re-enable it, or we've also seen cases
+where there's
+a dependency that makes the workflow
+crash. So, if something gets updated, it
+might suddenly make it exploitable.
+Now, let me tell you a story.
+Picture this. It's mid-August 2024. We
+spin up the first working version of
+Package Supply V3.
+Just a week later, it catches a
+regression in a very popular Python
+library. In fact, a GitHub action
+associated with it.
+It's It's Ultralytics.
+So, in the Ultralytics GitHub action, I
+had seen a very similar vulnerability a
+couple of months before. It had been
+reported, fixed. In that case, this was
+basically a a regression, a very similar
+vulnerability.
+And I kind of ignored it because there
+was something much more interesting that
+we had just found.
+Around the same time, we found
+vulnerability in several workflows on 22
+uh repos owned by Google. We reported
+those vulnerabilities to the Google uh
+bug bounty, their VRP program.
+Couple of weeks later, they report that
+it's been fixed. We check, indeed it's
+been fixed.
+We were waiting to to know how much they
+will pay out, and in the meantime, our
+system catches a regression in Google's
+workflows.
+We reported yet again, they accept, fix,
+and then they paid twice the bounty.
+Fast forward to December 2024, news
+breaks that Ultralytics, if you
+remember,
+uh was compromised using a
+by adding a Monero crypto miner.
+And it was done using the exact
+vulnerability that we had discovered and
+forgotten
+in August.
+So, we got very frustrated about this,
+that we had missed it, and kind of
+forgot being uh swamped with other
+things.
+Every quarter we have hackathons, and
+this time we used it to kickstart a new
+project called Package Threat Hunter.
+The big idea is that now we not only
+scan for vulnerable uh workflows, but we
+ingest the entire um firehose of
+GitHub's public events
+in near real time. So, it's about
+delayed by 5 minutes if you
+That's that's a constraint based uh that
+GitHub gives.
+We process the events, we cross it with
+various data sets, and then we can
+hopefully catch build pipelines exploits
+as they happen.
+Barely 10 days after the hackathon
+concluded it's Christmas holidays.
+Another hack happens on Kong Kubernetes
+ingress controller.
+Because it's the holidays most basically
+no one notices even the maintainers of
+Kong
+until we come back in January. We all
+see the news. Then we look at our own
+data that we had in threat hunter
+and we could see that we had all the
+data to uh make a forensics timeline.
+Uh also even more detailed than many
+other folks could do because we have
+extra data.
+Couple of weeks later I get the idea to
+use a dark web threat intel tool by the
+startup in Montreal called Flare.
+I think they're right here.
+Uh so pretty quickly I find a very a
+couple of very interesting uh forum post
+on uh cyber crime forum called breach
+breach forums.
+In early December a new user creates an
+account on breach forums.
+They start by talking about how to
+remain anonymous online.
+And here's the real nugget. 12 hours
+before the ultralytics hack they drop
+they drop the exact zero day copy paste
+the snippet uh with the line of code
+that's the the actual vulnerability
+with links to PuTTY
+and the living of the pipeline resource
+on our website.
+Um
+then based on the forensic timeline we
+know at the exact moment where the when
+the attack happened.
+24 hours after the the hack the same
+breach forum user comes back
+and is starting to to brag about about
+it
+by saying "Someone used PRs to leak
+secrets from from pipelines. They used
+it to drop a Monero miner which yielded
+very little, but it caused chaos around
+the world."
+And then the user is never used again
+and never post again on up until this
+day.
+I'm not here to give this person any
+more attention than they deserve, but I
+would say that the timeline of events is
+rather strange to me.
+End of the story.
+Let's shift gears back to package threat
+hunter. On the left-hand side you have
+the architecture for package supply V3,
+which is all about finding vulnerable
+pipelines, triaging them so that we can
+responsibly responsibly disclose.
+On the right-hand side you have package
+threat hunter, which is all about
+ingesting the GitHub firehose of public
+events.
+It's also designed to ingest our
+customers enterprise audit logs.
+Then everything gets feed fed to
+microservices architecture, which
+enriches with other data sets such as
+the vulnerabilities from package supply.
+There we have a bunch of detection rules
+and the events and detections go to a
+data lake, in this case BigQuery. That's
+where we also build organically personas
+of the different users we see
+interacting with the different projects
+on GitHub.
+More importantly, we tag those different
+personas with various criteria and of
+course the goal being to tag if they
+appear to be exploiting pipelines. Of
+course that requires putting a lot of
+pieces together to make that call before
+we can send it for internal review.
+Now this funnel chart really puts things
+into perspective in terms of
+signal to noise ratio.
+We start with about 5.5
+million
+public events daily.
+The vast majority of them are push and
+pull request events.
+Then we trim along the way as we
+determine if it's a critical open source
+project or someone's personal pet
+project that doesn't even have a build
+pipeline for instance.
+We still have about half a million
+events to deal with at that moment.
+Then we enrich with other data sets and
+various signals so that we can flag
+about 46 events on average daily.
+Once we have the events and we triage
+them as being noteworthy, we can import
+them to a visual timeline tool so that
+we can build a forensics timeline.
+As we discovered more and more
+vulnerable pipelines, we needed to start
+to attribute a risk rating.
+First of course, we thought about CVSS.
+By a very timely here. Um and in fact,
+we started by basically forking the CVSS
+3.1 calculator. We adapted the base
+metrics to be more relevant for
+pipeline.
+And we we built instead of CVSS, we
+built the PVSS. So which is the pipeline
+vulnerability scoring system.
+So the reason is that yeah, like build
+pipelines have certain criteria that
+don't apply very well to normal CVSS.
+But as we added more real world data
+into the calculator, we realized that
+the formula behind CVSS 4.0 would be
+even better. So it's not quite ready for
+prime time, but hopefully we plan on
+open sourcing the calculator in the next
+couple of weeks.
+Now let's jump to the blue team section.
+Most of you are familiar with Mitre's
+attack framework.
+But there's also this supply chain
+alternative the
+variant of of attack that's called Oscar
+which stands for open software supply
+chain attack reference.
+We did not come up with this resource,
+but what we did is that we took it and
+created a profile to focus just on the
+TTPs that are relevant for exploiting
+build pipelines.
+Already we narrowed it down quite
+significantly from the original Oscar
+matrix, but we can further simplify it
+and focus our attention on the TTPs that
+are
+most common. So, really the the common
+scenario of a vulnerable pipeline that
+can be exploited using LotP with the end
+goal to backdoor the final artifact.
+Throughout this talk, I mentioned
+multiple times living off the pipeline
+or LotP for short.
+Let me add a couple of more details
+about that. A LotP tool is one that is
+already present and being executed by
+the existing legitimate pipeline.
+And since the attacker is not allowed to
+modify the pipeline and trigger their
+own version,
+and that's a core defense mechanism by
+design of GitHub actions for instance,
+of course, that would be too easy if you
+were able to just modify the pipeline.
+You have to live with the existing
+tools, the existing pipeline.
+So, whoops, sorry.
+You have to live with it.
+So, the gotcha is that in most cases
+command line tools expect to find a
+configuration file in the the current
+working directory.
+You can find our LotP catalog at this
+address. We've already documented about
+45 tools already and it contains all POC
+payloads to really like make it easy for
+you to understand how it can be used.
+We have about 25 more tools just waiting
+to be fully documented as GitHub issues.
+So, if you want to help out, you can go
+and pick a GitHub issue and, you know,
+add the the extra documentation.
+Let's look at two very representative
+examples. First, we have mkdocs, which
+expects to find a configuration file,
+namely mkdocs.yaml.
+In that YAML, you can specify hooks that
+point to arbitrary Python code.
+Also, in here we have Trivy. Trivy is a
+security scanner that scans a
+containers, for instance.
+But, you can in the configuration file,
+you can specify the template
+uh so that the output is custom. And
+that template is using Go template uh
+syntax. That gives you a limited uh form
+of RCE, but still enough to exfiltrate
+secrets, which could contain sensitive
+uh tokens, and exfiltrate them via uh
+DNS-based techniques.
+Another variant is tools that don't
+expect a configuration file. They simply
+don't have a configuration file.
+Um but, they might behave differently if
+an environment variable is present.
+Obviously, because the attacker cannot
+simply modify environment variables uh
+externally, that may still be used as a
+second-order RCE.
+In fact, we've seen real-world examples
+where poisoning Bash before another job
+is started might be useful. So, you
+might effectively change the behavior of
+Bash that is about to run. And uh that
+that can be uh kind of second-order.
+Time to wrap up.
+Can we actually use these techniques to
+predict the next attack? Maybe. It's not
+going to be easy. Attackers appear to
+have only just started to use some of
+those techniques. So, we might be ahead
+of the curve on this this time.
+Or maybe we missed a whole lot. Either
+way, it's clear that when you think that
+CI/CD is more like RCE as a service, you
+can understand why it became red teamers
+favorite soft spot.
+If you want to learn more, check out our
+blog. We have different projects hosted
+on GitHub. We have a couple of positions
+open in the research team, as well as
+internships.
+And there's a few quick shout-outs to
+other fellow great researchers that made
+amazing talks at DEF CON last year.
+Thank you.

@@ -1,0 +1,828 @@
+ABOUT
+================================================================================
+Title: How Marketing Tactics Can Transform Security Culture - Ugochukwu Njubigbo
+Author/Channel: BSIDES LANCASHIRE
+Channel URL: https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew
+Video URL: https://www.youtube.com/watch?v=d6CHQAxxe-s
+Video ID: d6CHQAxxe-s
+Published: 2026-07-06
+Duration: 29:18
+Views: 71
+Likes: 11
+Comments: 2
+
+Description:
+No description provided.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# How Marketing Tactics Can Transform Security Culture
+
+**Author/Speaker:** Ugochukwu Njubigbo (“Ugo”)  
+**Channel:** BSIDES LANCASHIRE  
+**Channel URL:** https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew  
+**Video URL:** https://www.youtube.com/watch?v=d6CHQAxxe-s  
+**Published:** 2026-07-06  
+**Duration:** 29:18  
+
+## Author credentials and contacts
+
+- Ugochukwu Njubigbo states that he worked in marketing for approximately seven years, managing travel, fitness, and sports brands.
+- He moved into cybersecurity after a security gap at one of the organizations where he worked contributed to an incident.
+- He states that he completed a master’s degree in cloud and network security.
+- He describes gaining broader cybersecurity experience across penetration testing, security operations, human-focused security training, and vulnerability management.
+- During the discussion, he confirms having worked in the NHS, although no specific role or organization is provided.
+- His current organization is not identified.
+- No author affiliation, professional title, email address, telephone number, personal website, or other direct contact details were provided.
+- BSIDES Lancashire is identified as the publishing channel, but no additional organizational contact details are supplied.
+
+## Summary
+
+The presentation argues that organizations should stop treating employees as cybersecurity’s “weakest link.” Ugochukwu Njubigbo proposes instead that people can become the strongest link when security communication is designed to influence behavior continuously and intelligently.
+
+The central technical and organizational innovation is the transfer of marketing principles into security awareness and culture programs. In marketing, success is not measured simply by whether people saw an advertisement. Marketers analyze impressions, engagement, repeat interaction, referrals, timing, segmentation, and eventual action. The speaker argues that cybersecurity training should use a comparable model.
+
+Traditional approaches—such as annual training, generic phishing simulations, and completion-rate dashboards—may demonstrate participation but do not necessarily demonstrate improved security behavior. The proposed alternative is a continuous feedback system that repeatedly exposes employees to relevant security messaging, adapts content to their roles and circumstances, measures engagement in detail, and evaluates whether risky behavior changes over time.
+
+The presentation emphasizes that security messages should be tailored to different departments, job roles, psychological states, communication preferences, and accessibility needs. For example, a clinician finishing a demanding 12-hour shift may not respond effectively to the same training or timing used for office staff. Content may therefore need to vary in language, timing, format, and level of interactivity. Suggested formats include text, video, and gamified or interactive content.
+
+The speaker illustrates this approach through an incident involving an impersonation email directed at someone in finance. A staff member recognized the suspicious circumstances, paused, and sought verification. Afterward, the organization delivered department-specific training focused on how finance personnel could be targeted and how an attack could affect the organization. According to the speaker, the department requested that this tailored training be repeated, providing qualitative evidence that the approach resonated more effectively than generic training.
+
+Success should ultimately be evaluated through behavioral outcomes rather than participation alone. Relevant signals include whether employees report suspicious messages, ask for clarification before clicking, discuss security content with colleagues, question how policies apply to particular situations, and demonstrate reductions in risky actions, alerts, and phishing-link clicks. The speaker recommends reviewing these outcomes over the following two or three months and continuing to analyze the data beyond the initial campaign.
+
+The presentation concludes with a proposed model based on continuous measurement, behavioral analytics, adaptive training, and visibility into how individual roles may affect organizational security. The overall challenge to security leaders is to “stop delivering awareness and start engineering behavior.”
+
+## Key technical ideas
+
+1. **Replace completion metrics with behavioral metrics**  
+   Training completion is treated as an activity measure, not proof of effectiveness. The more important question is whether employee behavior changes afterward.
+
+2. **Apply marketing-style conversion thinking to cybersecurity**  
+   Marketing “conversion” involves a desired action such as a purchase or referral. In cybersecurity, conversion means actions such as pausing before clicking, reporting suspicious emails, seeking clarification, and using work systems more securely.
+
+3. **Create continuous security awareness**  
+   Security messaging should not be limited to annual training. Repeated, low-intensity exposure can be delivered through newsletters, internal communications, screensavers, workplace displays, and other recurring channels.
+
+4. **Use segmentation and personalization**  
+   One message should not be expected to work for everyone. Content should reflect department, job role, work pressures, and the ways different people receive information.
+
+5. **Optimize communication timing**  
+   Engagement data should be used to identify when different groups are most likely to pay attention. The speaker recommends considering work schedules, shift patterns, and the user’s likely mental state.
+
+6. **Support diverse communication formats**  
+   Security education may need to include text, video, interactive material, and gamified content. The speaker also highlights the need to account for neurodivergent employees and differing information-processing preferences.
+
+7. **Measure detailed engagement analytics**  
+   Useful data includes:
+   - Who opened an awareness email
+   - When they opened it
+   - Whether they reopened it
+   - Which links they clicked
+   - How long they watched a training video
+   - Whether users completed or skipped content
+   - Whether security content was shared or discussed internally
+
+8. **Build an analytics feedback loop**  
+   Data should be revisited after the initial campaign—potentially months later—to identify patterns and improve future messaging. The speaker presents this as an ongoing cycle rather than a one-time evaluation.
+
+9. **Measure post-training action**  
+   Indicators of impact include reductions in risky users, alerts, phishing-link clicks, unwanted subscriptions, and other insecure activities.
+
+10. **Retest and vary campaigns**  
+    Security behaviors should be tested repeatedly using changed scenarios and messaging. This is compared with marketing retargeting, where content is adjusted to maintain attention and test continuing interest.
+
+11. **Use qualitative indicators of behavioral change**  
+    Questions from employees, reports of suspicious emails, requests for verification, and policy-related discussions can indicate that users are beginning to internalize the training.
+
+12. **Engineer behavior rather than merely deliver awareness**  
+    The proposed shift is from distributing information to deliberately designing the conditions, repetition, personalization, and measurement needed to produce lasting secure behavior.
+
+## Overall assessment
+
+The presentation’s main contribution is conceptual and operational rather than a new cybersecurity tool or algorithm. It reframes security awareness as a behavior-engineering problem and proposes importing established marketing practices—segmentation, repeated exposure, timing optimization, engagement analytics, personalization, retesting, and conversion measurement—into cybersecurity programs. Its most important technical idea is that security teams should connect awareness activity to observable behavioral outcomes through a continuous measurement and adaptation loop.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Good afternoon everyone. Um, my name is
+Ugo and
+I used to work in marketing 7 years ago.
+I managed travel brands, fitness brands
+as well as um
+um travel, fitness and also sports
+brands. Um, it was quite an interesting
+um was quite an interesting career.
+However, I got bored and I decided to
+switch and I moved to cyber security.
+But that happened because of an incident
+at one of the um brands I was working
+for at the time. There was a gap. There
+was security gap and it led to an
+incident and that got me thinking how
+can we do things differently. Now coming
+into cyber, it's a whole lot. And one of
+one of the major um things people say in
+cyber is humans are the weakest link.
+However, I don't believe that's true.
+That's um false. Humans are actually
+your strongest link. And how do we make
+humans um the strongest link when it
+comes to cyber? That's why we're talking
+about this today. So, how can marketing
+thinking transform security culture? Um
+so, I've already talked about my journey
+and
+in in marketing what do we do?
+Basically, we're looking at who's
+looking at the brand messaging and who
+engaged with the brand, who acted, did
+they buy, did they make a referral, um
+did they come back, and how much did it
+cost the business? Now, that was what I
+was being measured for in cyber. I mean
+in um marketing I was being measured um
+based on who saw the brand messaging
+that I was putting out, who was um
+acting, who was liking, who was
+reposting, who was sharing, who was
+buying, how many times did they come
+back, um did I make a repeat sale
+multiple times where people that um got
+referral programs buying and staying
+with the brand? That was what I was
+being measured on. However, when I moved
+into cyber security, I realized it's
+almost the same thing when it comes to
+training people or getting security
+messaging across. You're not trying to
+um you're not doing anything new. You're
+only just trying to change the
+psychology of people and their behavior.
+Cuz that's what marketing is all about.
+When you see an ad on Facebook, you
+probably just see it once and then
+you're like, "Okay,
+just today, tomorrow, Facebook targets
+you and come back again." The next day
+you're seeing that same ad on Google.
+The next time you switch on your TV,
+you're seeing that same ad, it begin to
+register. And trust me, that is how it
+works. Changing your perception about a
+product or a brand and then before you
+know what's going on, you need to buy
+something. You quickly search for that
+brand and then you're like, "Oh, I've
+seen this multiple times and then I'm
+going to buy." That's when you came in.
+Psychologically, you've been taken
+through a journey. So how about we take
+people through a journey when it comes
+to cyber security instead of what we
+have um in most organizations most
+organization success rate when it comes
+security training is 95% people have
+done their training beautiful let's clap
+for who did the training or let's clap
+for the security team however um
+the people that are going to attack any
+brand or any organization I'm not
+looking at the the 95% that completed
+the um um the training they are going to
+be relentless targeting and targeting
+and targeting and changing their
+tactics. So why don't we shake up things
+a bit in cyber security and then switch
+up um and and and just try something
+else which is why we're talking about
+this today. So instead of doing annual
+training sessions, generic fishing
+simulations, which are nice things to
+do, it's good to get people into that
+mindset of this is how um this is these
+are the kind of threats you will be
+facing or these are the kind of things
+to expect and all of that. But however,
+if we change the way we approach things
+and
+coming to this slide, how can marketing
+tactics work here? Now in marketing,
+awareness means reaching out and
+creating impressions. So, every time you
+see an ad, random ad, you might not even
+be interested in that product, but it
+keeps coming on your feed, you keep
+seeing it on on Google, you keep seeing
+it on your Instagram feed, on Tik Tok,
+sometimes you find it. Um, when you walk
+around around um town, you see those
+messaging, it's beginning to create an
+awareness for you. Now, in cyber
+security, how are we creating awareness?
+is not something we can just do once and
+decide, oh, everyone has seen that
+newsletter or everyone has seen that
+training. It's about changing the
+culture, bathrooms, you can have
+messaging there. Newsletter, weekly
+newsletters, internal communications, we
+can have that there. Um,
+on on the screen, people can have that
+as a screen saver. So, you could be
+working with um IT support to get that
+messaging out constantly. So it doesn't
+have to be an elaborate video or an
+elaborate um big bold text, but it's
+just something that subtly registers in
+people's mind. You're creating that
+awareness. Now what happens? People
+start um engaging with that going to ask
+questions. How or what is this? Um a
+simple message like
+don't click think. Three words, right?
+Someone is going to ask questions in the
+organization
+what does this mean and then you start
+referring them to it cyber security now
+the thinking is changing don't click
+think oh okay now what is this now
+you're creating an engagement with your
+users within the organization it is no
+cyber security no longer looks as those
+guys with hoodies at the back office
+just doing cool stuff it's now we're
+having conversation that way the
+security training officer or the
+security training team is beginning to
+register an engagement which would go
+longterm. It's no longer just going to
+be a very short message. Now conversion
+in marketing conversion means someone
+clicks to buy, someone ends up um
+referring someone that's the conversion.
+In cyber what is the conversion? We want
+to change behavior. Now if that
+awareness starts creating that
+behavioral change where people see
+emails and the first thing instead of
+clicking they think and then they report
+and then get clarification I might go to
+click instead of people using their work
+emails for newsletters from Uber,
+McDonald's and the rest. They think oh I
+can actually use my personal Gmail and
+not compromise the environment by using
+um the office email and so on and so
+forth, right?
+What happened?
+Okay.
+Now, one of the things that is very
+prominent with marketing is that
+there's never a messaging that fits
+everyone.
+In marketing, the way you target 12 year
+olds or 16 year olds to maybe 25 year
+olds, the speak is different. In
+marketing, the way you speak to um the
+elderly clients from 50 and above is
+totally different. The way you speak to
+the middle age from 25 to 35, it's
+totally different.
+It should be translated into cyber
+security. It's not um everyone has
+different needs. Everyone has different
+pressure they face at work. Imagine
+you're talking about cyber security to a
+clinician that had just finished a
+12-hour shift. How do you think they
+would receive that message, right? He's
+under pressure. He's um gone through a
+12-hour shift in the surgery room, maybe
+two, three surgeries within that 12 hour
+period, and then they come out and then
+they receive an email in their inbox,
+engage with this um with engage with
+this fishing simulation at that point.
+Do you think that person would give
+their utmost attention to that
+simulation? they'll probably fail at the
+end of the day or they'll have to repeat
+that and they might just be bored and go
+to trap and answer those questions just
+you know I just want to go to sleep
+right but if messaging is being tailored
+to people based on their um department
+based on the kind of work shadow based
+on the kind of pressures thinking about
+um how so you think about the
+psychological um state of that person
+when or the ideal psychology of that
+person when they would engage with your
+messages. So, are you sending messaging
+messages
+when they done with shifts or are you
+sending messages just after their shift?
+Is it something you find a better time
+when they are off on their off days? So,
+it takes I know it takes a lot of work,
+but that's what marketing or that's what
+marketing agencies are doing. They are
+targeting you because they know you at
+home at 7:00 p.m. You'll be watching um
+something on TV and if they flash this
+message on your screen, you're going to
+pay attention because you are in that
+state, right? Um they know when you
+leave your house, you're on the you're
+on the highway and then or you're in
+town and then an ad goes out by 12 on a
+Saturday, you're relaxed, you're with
+your kids, you're going shopping, that
+messaging comes on and then you you can
+engage with that. You can resonate with
+that messaging. or um you're late to
+work. It's 8 it's 8:00 a.m. or 8:30 and
+then you're supposed to be clocking at
+9:00 and then you're you're you're in
+town. I doubt you'll be so focused on
+what is happening around you. You won't
+be looking at those messages flashing
+your face. A marketer is going to be
+losing money by trying to target you at
+that time. But if they target you at a
+different time, they would be engaging
+with someone that um um they'll be
+engaging with someone that is in that
+state of mind to um they would be
+engaging in that they'll be engaging
+with you at that um at the point where
+they need you to be. So that is why um
+segmentation personalization comes in
+and also um there's also the part where
+people are neurode divergent within an
+organization. People receive messaging
+differently. So, are you expanding how
+you're talking to people? Is it just a
+text um content? Is it videos? Is it an
+interactive gamified um content?
+It's a lot of work, but as cyber
+security um professionals, we should be
+ready to do that work and go the extra
+mile because
+um the people that are going to attack
+you, they are relentless. Now there are
+so many tools that would help you do
+that or achieve that.
+Um this is just a breakdown of um some
+of the things we could use as examples
+um in terms of um
+seeing if people are seeing our message.
+The first thing who opened awareness
+emails we need to be drilling down into
+the metrics. So instead of just looking
+at the big dashboard and then oh after
+one week 95 people are done. You need to
+be looking at who opened the emails,
+what time did they open the email, what
+time did they engage most. So if people
+are so whenever a newsletter has been
+sent in marketing, I go to the back end
+and then I'm looking at who opened the
+email, what time did most people engage
+with that email, how many people
+reopened that email, how many people
+clicked a link at what time. Now with
+all those little metrics, I'm able to
+know people engage more with content,
+let's say around 8:00 p.m. They are more
+relaxed at home. So that means I need to
+start tailoring more messages to that
+time. We should do that in cyber
+security. We shouldn't just be looking
+at the dashboard and look, oh, 1,000
+people clicked. We should be looking at
+when did they click, how did they click,
+how many times did they return to that
+email. That's one of the ways to get
+people um seeing the messaging clearly.
+Um it it shouldn't just be, oh, training
+completion. It should be how many people
+did the training and what was the
+exposure rate of that um of that
+campaign. Did it get as far as people
+sharing it even within the organization?
+Oh, did you complete this? I just
+completed my are people talking about it
+within the organization. That is when
+you know your story or your training is
+hitting home. Are people paying
+attention? Now, in marketing, one of the
+things that
+a marketer would see and be like, "Oh,
+someone is actually paying attention."
+Is when someone saves a post. Every time
+you save a post on LinkedIn, on
+Facebook, on Instagram, at the back end,
+the marketer sees that I posted this and
+50 people saved it. That means there's a
+potential of 50 people coming back to
+that post at a later date. In cyber
+security, what is the how many how in
+how many minutes do people watch my
+videos? We should be getting those
+metrics. It shouldn't just be, oh,
+people watch the video.
+People these days, I've been in
+trainings where I just have to skip skip
+skip.
+People do that in security training. So,
+how about we're looking at those little
+metrics and checking how long did they
+spend. It was a 30 minutes video, but
+then you have 50% of people finishing it
+in 15 minutes. Now, that's a gap. We
+need to be looking at how many people
+finished it in 30 minutes. We need to be
+looking at how many people spent more
+time. Um, were people interactive? So
+that's when you know people are paying
+attention. These are some of the
+examples. So delivery is not really
+impact overall what we're saying here
+high engagement means secret messaging
+is connecting um emotionally and
+practically that means people are
+spending more time on your messaging
+then you know your messaging is getting
+correct or the language you're speaking
+to people is resonating with them.
+someone sitting in the front desk would
+think or act differently to someone
+working in a clinical setting and
+someone working in finance and someone
+working in IT or some it's totally
+different. So tailoring messaging and
+seeing how they all react is one of the
+ways to know if people are actually
+paying attention. Now did awareness
+create action? So you've created the
+awareness here but what changed? risky
+users. Did they reduce? Did alerts
+reduce? Um do physically um fishing link
+clicks reduce? These are the things you
+need to look at
+after you've delivered a training or
+after you've sent out the training in
+the next 2 3 months. Looking at the
+metrics, did anything change within
+this? That should tell you
+it was successful, it was not
+successful. So it's not about oh
+everyone has completed it and then you
+sit back and just look at the big
+picture. But you don't drill into the
+data behind it. Drilling into that data,
+you you you you begin to understand
+that, oh yeah, people alerts are
+beginning to reduce. Um people are no
+longer signing up. We we we no longer
+receive unwanted emails with newsletters
+all over the place. It is beginning to
+reduce because in marketing um my
+preferred action for you is to sign up
+to my newsletter is for you to buy
+products. I need you to take action in
+cyber security.
+I also want that same action to
+replicate itself and
+convert conversion meaning certain
+things are beginning to reduce or people
+are beginning to um act differently
+means an action has taken place. Now um
+just in summary participation is not
+success but behavioral change is
+success. That is what we should be we
+should be measuring not the
+participation metric of 10,000 people um
+read this email or did it result to a
+behavioral change. Now that is what
+shows success and that is how you can be
+bringing marketing into cyber security.
+Um
+do secure behaviors last? Are people um
+are people consistently um trying to
+stay on top of the game when it comes to
+um ensuring that your environment is
+safe? How do we do that? Retest um your
+fishing campaigns, retest um something
+new. In marketing, we do that a lot
+where we retarget people with a new
+product similar to what they bought. Are
+people still interested in this product
+by changing little features? And then if
+people are really interested then we
+know that's a success um rate. Same
+thing with cyber security. Change up a
+little things and then you could keep
+getting are going to last in the long
+run. We've talked about one size never
+fits all. Messaging has to be diverse.
+It has to include everyone. It has to
+speak to people directly based on their
+roles, based on their psychology, based
+on how they receive um information. And
+the analytics feedback loop. One of the
+things in marketing is continuously
+looking at the data. We should not stop.
+Training teams should not stop looking
+at the data. Go back to the data. 3
+months, 4 months, you can still pick out
+insight from what has happened. You
+don't just stop at the big um numbers
+and then that's where it ends. You need
+to go back to the numbers and keep
+looking at it and looking at it. So my
+proposed model for um this in summary is
+continuous measurement which we just
+talked about. Always keep looking at the
+numbers. The numbers would tell a story
+and that is what you need. Behavioral
+analytics are behaviors changing across
+board within the organization. Are
+people getting better? Um adaptive
+training or adaptive education. One size
+does not fit all. Change it up, shake it
+up, messaging should be different. And
+then human rights visibility. You should
+be looking at every single person and
+how their role could compromise an
+environment. So the challenge for
+security um leaders is to stop
+delivering awareness and start
+engineering behavior because that is
+what is needed to um keep environment
+secured and that's how I've been able to
+bring experience from marketing to cyber
+security and it's currently working for
+my organization and I would say you too
+can do that for your organization and
+keep looking at the numbers. Thank you.
+Right, time for some questions. Any
+questions from the floor
+around the room?
+>> Over here. I wasn't looking over there.
+>> It's behind you. Um, sorry. So, my
+question, we do some work uh with the
+European Union. We're quite into this
+idea of KVI, which is like measuring
+value. Um, it's quite abstract. It's
+quite difficult. So measuring behavior
+and and maybe the adoption of cyber
+secure behaviors, what are the good
+indicators that we can measure, do you
+think? Or are there good indicators that
+we can measure that go into behavior
+rather than just what you see on the
+screen, do you think?
+>> Um, okay. Thank you for that.
+Um, when it comes to people changing
+behaviors, um, there's not just one
+metric you're looking at, right? It's
+what happens after a message has been
+delivered.
+Are people talking about that simulation
+that was being run in the organization?
+Did people come to your desk as the
+training officer to ask
+um certain questions? That shows people
+are beginning to assimilate what you've
+said or people have assimilated what
+you've just trained them on. Are people
+um
+are people reporting emails? Are people
+pinging and coming to you? Oh, can you
+just verify if this is okay for me to
+click? Um are people asking about
+there's a policy that says XYZ? Is it
+relevant in this situation? That is when
+you know sometime it can be abstract.
+Yes. like you said. Um but when you
+start getting those kind of
+conversations happening around your um
+happening within the organization, then
+you know um behaviors are changing or
+people are beginning to uh um to to sip
+what you're saying and understand better
+what you've just said. So in a way what
+you're saying there is that it's about
+measuring the uptick in the
+activity
+the actual communication between
+>> yes after in the aftermath of you
+delivering a training um program.
+>> Yeah.
+>> Thanks. Uh really interesting talk. Um
+did you say you worked in the NHS? Yeah.
+Okay. Have you um adapted any of your
+language that you're using to
+communicate uh to your users that um
+align with their experience of the core
+job that they have done and have you had
+any feedback on whether or not that was
+or wasn't effective?
+>> Yeah. Um this was this was recently um
+in
+just before Christmas we
+we had um a situation where it was an
+impersonating um
+email being sent to someone in within
+finance. The threat actor had done their
+homework. They knew someone was off on
+leave and they sent an email. someone
+else they had orchestrated the whole it
+was so nice and it took just one person
+within the organization to say pause
+I've seen this and then it come from
+this person that went on leave on so so
+day and this has happened and they said
+it is fine to go what's going on um
+that's when the whole digging started
+and then at the end of the day it was
+rectified there was no loss there was no
+financial loss however when we decided
+to retrain that department We decide to
+tailor the messaging to their speak.
+What happens in finance? How can you be
+targeted? Um the messaging became
+personalized to that department and how
+it can affect the organization. Now at
+the end of the training,
+it was the feedback was oh this was
+okay. Can we get this repeated over
+time? Managers came back and wanted the
+same um the same training to go multiple
+times. Now that's you could say that's
+an intangible there. There was no
+numbers attached to that but that gave
+the team um more um so that that gave
+the team more confidence to say if we
+start tailoring messaging to departments
+it's it it's going to resonate better
+and that's what we've been doing since
+December. We implemented this um this in
+December and now it's growing across
+different departments. It's quite a big
+organization but we just keep doing it
+over and over and over. So we just we we
+don't we stopped sending out just
+generic training to everyone. It now
+became personalized. So your department
+how can you be um a weak link in in in
+in security or how can an attacker take
+advantage of um your position to um to
+compromise an environment. So that's
+that's how we've done that in my
+organization.
+If there's not a question from the
+floor, I'm going to ask a question if I
+may. Um, okay. You talked about your
+marketing experiences and so on. Um, in
+a marketing world, you've got the
+additional challenge of you're not just
+trying to get people to buy soap. You're
+trying to get them to buy your brand of
+soap,
+>> but you've got other organizations that
+are putting out other marketing
+campaigns to buy their brands of soap.
+So is it easier in cyber security
+because you're only just trying to
+encourage people to take up good
+behaviors and I really like your phrase
+engineer behavior. Aim is to engineer
+behavior. So how does the challenge of
+not having other competitors
+in your space shape the argument and the
+engagement around engineering behavior?
+>> Um it's about being continuous not
+relenting in marketing. Um,
+in marketing, someone doesn't click,
+it's fine. I'll come back. Um, someone
+doesn't buy, no worries. I'll find
+something you really need. And it's it's
+crazy when you look at the marketing
+world. In the back end, we all see
+Facebook is nice, Instagram is nice, but
+at the back end, there are so many
+metrics to look at where it's based on
+certain things you've done. When you
+left the website, where did you go to
+next?
+There's so much I could get from that.
+Um, when you left my website, did you go
+to a competitor's website? I'm able to
+get those metrics on on the back end in
+Facebook and on Google ads. The same
+thing happens in cyber
+being relentless. Yes, people are going
+to see um other applications they want
+to engage with. people are still going
+to finish training and the next thing
+they're on Tik Tok clicking on whatever
+link they're chatting with people they
+have no idea who they are and then
+clicking certain links joining certain
+WhatsApp groups and all of that um
+joining telegram groups and getting
+information it's all about staying
+relentless sometimes we might not be
+able to measure all of that within the
+organization but with the networks we
+could still see after the training what
+do people do afterwards the people go on
+charge to ask certain questions um with
+certain um tools like ibos and a couple
+of other um tools. You could see what
+people um what questions people were
+asking on GPT or copilot. You could
+literally see all of those. So if people
+finish training, what are they doing
+next? What videos are they watching? Are
+they taking extra information
+continuous to what you're doing and keep
+hammering the messaging over and over
+and over again? That's how you change or
+engineer behavior in a way.
+couple of questions now. Let's go with
+the first one here and then go up the
+>> Thanks very much. Really enjoyed your
+talk first of all. Um
+so you went from marketing to cyber
+training and awareness. Yeah. Did you
+was it ever like um a decision or a
+thought to go into cyber marketing as a
+you know making that that jump? It seems
+like really easy to go from marketing in
+all your sports and everything to like
+working in cyber selling it. Did that
+never I just interested how I get what
+you're you're saying like
+was it not an easier jump to go to
+selling cyber?
+>> Yeah.
+>> And how do I do it? Cuz that's what I've
+got to do now. So please give me hints.
+>> Okay. Um thank you. Um it what you've
+asked here it's true it's not it's not
+easy to make that jump cuz
+I had done marketing like all my life
+straight out of school I was into
+marketing didn't know anything but when
+when that incident happening in the
+organization and I saw that gap I
+started taking trainings like several
+trainings I ended up doing a masters in
+cloud and network security and I I
+started looking for internships that I
+could I could do. And that was what gave
+me that um that background. Even if I
+had zero idea what what networks were or
+um what a malware looked like or how to
+analyze a malware, I started looking at
+those different trainings. I started
+engaging with professionals within the
+industry. I was asking questions. I was
+literally at every event just asking.
+Some people would say no, but some
+people were very kind enough to show me
+what trainings that would help me. There
+are so many free tools on YouTube um
+let's defend so many platforms you could
+get free training from and then you get
+to understand um what um so I I didn't
+focus on um training and awareness in
+cyber I decided to do cyber script as a
+whole so the pent testing um um script
+operations um human training um
+vulnerability management I did
+everything just get that broad knowledge
+and that helped me to settle in my
+current role.
+>> I'm going to stop it there if that's all
+right and apologies there are a couple
+other questions. You're going to be
+around over lunch so you can have
+conversations over lunch. Thank you very
+much for your talk. I really like that
+last comment about stop delivering
+awareness and start engineering behavior
+and I think that's a really clear way
+how do we go about engineering that
+behavior and focus on measuring that as
+well. So, can we ask everyone to show
+their applause or thanks

@@ -1,0 +1,1624 @@
+ABOUT
+================================================================================
+Title: BSides Buffalo 2026: Cyborg Security
+Author/Channel: BSides Buffalo
+Channel URL: https://www.youtube.com/channel/UCcmPr9iGIxAGxxyfbuqEHZQ
+Video URL: https://www.youtube.com/watch?v=e21J7-Vn72w
+Video ID: e21J7-Vn72w
+Published: 2026-06-22
+Duration: 51:24
+Views: 14
+Likes: Unknown
+Comments: Unknown
+
+Description:
+So you're thinking about becoming a cyborg. It may or may not surprise you to learn that there are several of us around already, and while cybernetic enhancement can greatly improve our lives, it also has its downsides. Adaptive devices used by people with disabilities and medical conditions have been failing in unexpected ways for years, despite oversight from government bodies. Recreational implants, which are much less regulated, have even more scope for interesting bugs. On the other hand, while commercially available augments and implants require extensive testing and are almost always closed-source, it's possible to build and install your own - theoretically.
+
+How do we secure medical devices that constantly collect telemetry? How hard would it be for someone to skim the data on that NFC chip that you got implanted in your hand? And when we find flaws in these machines, how are we meant to fix them if they're already in our bodies? Whether you're interested in joining the human IoT network for recreational purposes, want to explore, code, and create implantable devices yourself, or have a medical need for augmentation, join me for this briefing to prepare for the security and privacy implications of connecting ourselves directly to the Internet.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**BSides Buffalo 2026: Cyborg Security**
+
+## Author/Channel
+**BSides Buffalo**
+
+## Credentials and affiliations
+The supplied material identifies the author/channel only as **BSides Buffalo**. No individual speaker name, professional credentials, academic degrees, institutional affiliation, or employer were provided.
+
+## Contacts and links
+- **Channel:** https://www.youtube.com/channel/UCcmPr9iGIxAGxxyfbuqEHZQ  
+- **Video:** https://www.youtube.com/watch?v=e21J7-Vn72w  
+- No direct email address, social-media contact, or other contact details were provided.
+
+## Publication information
+- **Published:** June 22, 2026
+- **Duration:** 51:24
+- **Video ID:** e21J7-Vn72w
+
+## Overview
+
+The presentation examines the security, privacy, safety, and governance implications of connecting medical and recreational devices directly to the human body. Its central argument is that cybernetic devices should be treated simultaneously as medical equipment, software systems, networked computers, and extensions of personal identity.
+
+The talk traces a progression from mechanically controlled pacemakers to software-based and internet-connected implants. As devices become more intelligent and connected, they offer benefits such as battery conservation, automated treatment, telemetry, remote updates, and enhanced human capabilities. However, they also introduce risks involving software defects, insecure communications, proprietary code, centralized infrastructure, data collection, device failure, and limited user control.
+
+The author contrasts two related communities:
+
+- **Medical cybernetics**, which is constrained by extensive regulation, testing, cost, and proprietary technology.
+- **Recreational cybernetics**, in which individuals experiment with implants and modifications in lower-regulation environments, often accepting risks that commercial medical-device development would not permit.
+
+Examples in the presentation include pacemakers, artificial heart devices, adaptive and augmentative communication systems, insulin pumps, color-sensing implants, and implanted RFID/NFC chips. These examples are used to show that a failure or compromise is not merely a conventional cybersecurity incident: it can remove a person’s ability to communicate, disrupt essential treatment, expose intimate biological data, or directly threaten life.
+
+A major theme is that users often cannot make informed decisions because the relevant parties—patients, doctors, hardware engineers, software engineers, manufacturers, and regulators—operate in separate silos. The author argues for stronger communication between these groups, greater transparency, more open technical ecosystems, patient-centered risk discussions, and meaningful control over telemetry and device behavior.
+
+# Technical Innovation and Authors’ Ideas
+
+The presentation’s main technical contribution is a practical threat model for “bio-key networks”—systems in which computing devices are attached to, implanted in, or directly integrated with people. Rather than treating these devices only as clinical instruments, the author analyzes the complete system:
+
+1. The implanted or wearable hardware  
+2. Embedded and application software  
+3. Wireless communication channels  
+4. Telemetry collection and storage  
+5. Manufacturer or hospital infrastructure  
+6. Firmware-update mechanisms  
+7. The patient’s physical environment  
+8. Legal and organizational controls surrounding the device  
+
+The author’s ideas emphasize that security must be designed around the entire lifecycle of a device, including what happens when it fails, loses connectivity, becomes obsolete, or can no longer be safely removed.
+
+## Key technical ideas
+
+### 1. Medical devices are high-consequence computers
+
+The presentation treats devices such as pacemakers and insulin pumps as software systems whose failures can have physical and potentially life-threatening consequences. As devices evolve from mechanical operation to software-controlled behavior, ordinary software and cybersecurity concerns become directly connected to bodily safety.
+
+The technical implication is that device security cannot be evaluated independently from clinical consequences. A software defect, unauthorized command, failed update, or unavailable server may affect a person’s body rather than merely their data or workstation.
+
+### 2. Unsecured communication channels create unintended control paths
+
+The MiniMed insulin-pump example illustrates how an insecure communication channel intended for a remote controller could be used by other systems. The presentation describes how recreational developers connected the pump to a continuous blood-glucose monitor using bridge code that calculated insulin delivery.
+
+This demonstrates both sides of interoperability:
+
+- An insecure interface can enable beneficial innovation and user-controlled automation.
+- The same interface can allow an attacker who knows the device is present to interfere with treatment.
+
+The author therefore presents communication security as a core safety requirement, not simply a privacy feature.
+
+### 3. Open-source systems can enable user-driven innovation
+
+The OpenAPS example is used to show how public code can allow patients and independent developers to create more advanced treatment systems from existing hardware. According to the presentation, derivatives of OpenAPS enabled further development because the original code was publicly available.
+
+The author’s position is not that open source automatically makes a device safe. Instead, open code can:
+
+- Permit inspection for defects
+- Give users and clinicians more information
+- Enable independent experimentation
+- Support innovation outside manufacturer-controlled ecosystems
+- Make risk discussions more informed
+
+The presentation summarizes this position as: **“open source bad is better than closed source bad,”** because visible flaws may be more actionable than invisible flaws in proprietary systems.
+
+### 4. Telemetry expands the attack surface and the privacy threat
+
+Internet-connected medical devices introduce a second major system: the telemetry infrastructure. The author questions:
+
+- What information is collected?
+- Is all of it necessary?
+- Where is it transmitted?
+- How is it protected?
+- What happens if the receiving server is unavailable?
+- Who can correlate it with other personal information?
+
+The presentation argues that biological telemetry can become especially sensitive when combined with names, dates of birth, demographic information, and social-media data. Such correlation could produce a highly detailed profile of an individual.
+
+The proposed technical principle is **data minimization**: collect only what is necessary, avoid unnecessary transmission, securely store information locally where possible, and discard data when it is no longer needed.
+
+### 5. Centralized infrastructure creates systemic failure modes
+
+The talk highlights the risks of devices that depend on manufacturer servers or centralized update systems. A disruption to the server or related corporate infrastructure could affect:
+
+- Device updates
+- Medical scheduling
+- Shipment of medical equipment
+- Treatment-related services
+- The ability to monitor or manage devices
+
+The author raises an important design question: if an implanted device cannot contact its server, does it continue operating, fail safely, shut down, or fail in a dangerous way?
+
+This frames **failure behavior** as a critical architectural property. The presentation does not prescribe one universal answer, but argues that these outcomes must be explicitly considered.
+
+### 6. Wireless update functionality involves a difficult risk tradeoff
+
+The discussion of pacemakers presents a conflict between two risks:
+
+- A vulnerability may require a firmware or software update.
+- Wireless connectivity may provide an attack path or expose the device to remote interference.
+
+The author describes individuals who chose to disable wireless update functionality because they considered uncontrolled connectivity too risky. This highlights the need for user- and clinician-accessible risk assessments rather than assuming that connectivity is always beneficial.
+
+### 7. Physical security remains relevant for implanted devices
+
+For implanted RFID and NFC chips, the attack surface is physical proximity. The presentation describes the possibility of skimming information when an implanted chip is sufficiently close to a reader.
+
+The proposed mitigation is a physical RFID/NFC-blocking glove with removable layers:
+
+- With the blocking layer in place, scanning is prevented.
+- Removing the layer allows the chip to function normally.
+
+This example extends conventional access-control thinking to the human body. The author treats the body itself as part of the security perimeter.
+
+### 8. Device ownership should include repair and modification rights
+
+The presentation connects implanted devices with the right-to-repair movement and raises questions about warranties, software modification, proprietary control, and legal restrictions. The author argues that people may need the right to repair or modify devices that are inside their bodies, while acknowledging that the legal interaction between medical devices, repair rights, and the DMCA is complex.
+
+The technical idea is that a person who depends on a device should not necessarily be locked out of its operation, maintenance, or security evaluation merely because the device is proprietary.
+
+### 9. Security architecture should support local control
+
+The author favors architectures that allow the device user to control how information is collected and where it is stored. One example is storing telemetry on a local SD card rather than automatically uploading it to a remote service.
+
+The recommended controls include:
+
+- Local rather than mandatory cloud storage
+- Firewalls and network segmentation
+- Minimal telemetry collection
+- Explicit data-retention and deletion rules
+- Physical defenses for short-range wireless interfaces
+- User control over connectivity and updates
+
+### 10. Human and organizational interfaces are security components
+
+A recurring technical and operational idea is that communication gaps between disciplines create security weaknesses. Hardware teams, software teams, doctors, patients, and manufacturers may each understand only part of the overall risk.
+
+The author recommends that developers:
+
+- Build relationships with medical professionals and patients
+- Understand clinical needs and patient preferences
+- Learn about medical cybersecurity
+- Ask whether a proposed feature is genuinely necessary
+- Consider the patient’s benefit rather than only the manufacturer’s benefit
+- Be prepared to raise concerns or report problems
+
+The presentation also emphasizes that doctors and other medical professionals need better tools and frameworks for discussing cybersecurity, privacy, and ethical tradeoffs with patients.
+
+## Overall assessment
+
+The presentation’s innovation lies primarily in its systems-level framing rather than in introducing a new device or algorithm. It links implant design, wireless security, telemetry, open-source development, physical access control, centralized infrastructure, patient autonomy, and regulation into one unified security problem.
+
+Its strongest technical message is that cybernetic devices should be designed around:
+
+- Minimal data collection
+- Transparent and inspectable software where feasible
+- Secure communications
+- Resilient behavior when networks or servers fail
+- Explicit update and deprecation strategies
+- Local user control
+- Physical protection against proximity attacks
+- Patient-centered safety and privacy decisions
+- Collaboration across engineering, medicine, and policy
+
+The presentation ultimately advocates for an “informed cyborg”: a user who understands the capabilities, dependencies, data flows, failure modes, and risks of an implanted or wearable system well enough to make an informed decision about adopting, modifying, or rejecting it.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Hello
+from the future.
+Or
+at least
+one
+possible version
+of the future.
+Uh
+American Airlines did for once actually
+manage to get their time horizon warping
+working, so they did get me from future
+Los Angeles to present-day Buffalo on
+time. Uh they don't often manage that.
+I'm very pleased this time that they
+did.
+So, I am here
+from the future to talk to you about the
+implications of wiring humans up to
+bio-key networks. I come from a world
+where we managed to do all sorts of
+things. We've explored beyond the moon
+to Mars and all over the solar system.
+We have vastly more information about
+the world around us
+than we do in the present day.
+And that is something that's good, and
+that is something that's bad.
+We've also pushed the frontiers of human
+exploration.
+And that's not just learning about what
+humans themselves can do. We've started
+augmenting ourselves. We've started
+modifying ourselves. We've started
+making changes to ourselves
+to be the best, I mean, again, for
+certain values, to be the best versions
+of ourselves that we can be.
+And that naturally involves computers.
+So, if you want to learn about the risks
+and benefits of wiring yourself up to
+the IoT network, if you, like me, want
+to be a cyborg, and I have a great new
+device,
+they offered me they offered me the
+artificial eyes, but they were always on
+and connected to telemetry, so I just
+told them to go with the Coke bottle
+glasses instead.
+Uh you've come to the right place. This
+is your briefing
+on cyborg security.
+And we start story with a humble
+pacemaker.
+This was one of the very first
+inventions in the field of what I have
+come to call medical cybernetics.
+Early pacemakers were really simple.
+The theory here is your heart doesn't
+beat properly.
+So, what we can do
+when we learn you know, when in back in
+history we learned that the heart ran on
+electrical signals.
+Some bright spark basically came up with
+the idea that if we can modulate those
+electric signals using a device,
+you essentially create an artificial
+means for the heart to actually keep
+pace. And your very early pacemakers
+were purely mechanical. They were also
+occasionally faulty with some very
+interesting results. But, the idea
+behind the device is really genius. It's
+basically just you set up a mechanical
+device.
+It fires off electric pulses on a
+particular cadence.
+And that will then substitute for the
+heart the electrical pulses of the heart
+that are not firing properly.
+And that then evolves in your present
+CPU pun intended to a device that looks
+something like this.
+This pacemaker here is not a purely
+mechanical device.
+Cuz there are a few problems with early
+pacemakers. One of them being, you know,
+they've got to have batteries. And if
+you're constantly keeping an electrical
+signal going, those batteries are going
+to run out pretty fast. Which means that
+you're then basically doing open heart
+surgery on people on a regular basis.
+And so, as modern pacemakers or your
+modern pacemakers I should say evolve,
+and they come to pick up a lot of these
+sort of smarter features so they're only
+actually keeping time when it's
+absolutely necessary.
+You end up with lots of positives there,
+like battery conservation.
+You also end up with some interesting
+frontiers being pushed.
+If anyone is familiar with the software
+freedom conservancy, their director
+Karen Sandler has a pacemaker and has
+given multiple talks about all of the
+fun that she had trying to get the
+source code
+for her pacemaker.
+The proprietary source code for the
+device that was implanted in her body.
+Um
+Hold that one pacemakers cuz we're going
+to come back to that one. But
+essentially as these devices evolve and
+they become more advanced, there's then
+the expectation that essentially the
+device is going to be always on. Rather
+than being a purely mechanical device,
+this becomes a software based augment.
+And that goes really well. Um
+until it doesn't. Uh
+get this thing out of my chest. Um
+this is not really a headline that you
+want to be reading uh of a morning,
+particularly not if you're one of the
+people that had the uh exploding heart
+replacement devices implanted into your
+body.
+This was you know, shortly before your
+present, essentially a uh this was an
+idea that came out of pacemakers.
+Specifically designed to assist and
+augment people who have congestive heart
+failure.
+Congestive heart failure in layman's
+terms can basically be explained as
+well.
+Your heart sucks.
+The idea with these devices was where
+the common treatment for this was you
+have to get a heart transplant, which is
+major surgery and there's also a long
+waiting list.
+What if we can basically hook you up to
+an artificial heart that will actually
+do the work for you until you hit the
+top of the transplant list and we can
+actually get you a new heart. Or
+if we can even, you know, um
+if we can improve this beyond that,
+what happens then if we can actually
+hook you up to something that could
+replace your heart permanently? At that
+point, you remove the need for a
+lifetime of anti-rejection drugs and
+some of the more serious side effects
+can come with transplanted hearts. Not
+to mention that the lifespan of a
+transplanted heart is generally shorter
+than the human lifespan anyway.
+So, this is a great idea. Um they go
+they build a bunch of these devices and
+they start implanting them into people.
+You basically have, you know, the vast
+majority of the devices implanted in you
+and then you have a little battery pack
+outside.
+And then suddenly these devices start
+exploding when they're implanted in
+people.
+And this was a bit of a problem because
+once the device is implanted in you,
+you
+you're talking about then major surgery
+to actually get it out. And so you have
+the problem of the choice between
+getting a heart transplant or not
+getting a heart transplant, which were
+the original two options if you had
+congestive heart failure, is at least a
+well-enumerated choice. Your heart can
+continue to suck
+and that has a number of consequences.
+Or you can have a heart transplant and
+deal with a number of consequences along
+the lines of things like anti-rejection
+drugs.
+But suddenly what you have here is a
+choice that is a lot less
+well-enumerated and it's not one that
+the medical profession in your present
+was or is well-equipped to actually talk
+people through.
+It's completely different risk
+calculation of your heart can continue
+to suck or you can have this device
+which replaces your heart with a very
+small chance that it's just going to
+explode whilst it's in you.
+For another example, um adaptive and
+augmentative communication, which is
+used by all sorts of people. Uh people
+with cerebral palsy, it's used by
+autistic people, um it's used sometimes
+by people with speech difficulties or uh
+other issues that basically relate to uh
+basically laryngeal issues.
+And these devices, you know,
+I mean, in my future it can basically
+just wire them up to you. In your
+present it generally tends to look
+something like an iPad, but in the very
+early days of AAC devices,
+these devices were incredibly
+specialized. And that's for a number of
+reasons. One of which is that you have a
+vast majority of conditions which can
+cause people not to be able to speak or
+not to be able to speak in a way that
+most other people around them can parse.
+The other one is that these devices
+being very expensive were generally paid
+for by governments or government
+programs or health insurance. They were
+not generally paid for by the
+individual.
+And so this means that
+when you have someone whose AAC device
+catches on fire,
+to actually get an equivalent
+replacement for that is a very difficult
+proposition indeed. And in this case you
+can be waiting for
+you know, a very, very long time if you
+happen to be dealing with the state of
+Arizona.
+The problem with this is this is
+essentially an augment that allows
+someone who might not function in a way
+that most people consider normal
+to communicate in a way that most people
+would consider normal. And once they've
+used to that, if you take away the AAC
+device, you take away their ability to
+actually communicate.
+And this is about the point
+where um people start having some
+conversations about whether there might
+be interesting unintended consequences
+that come out of some of these medical
+devices.
+So this one here
+is again another device from your
+present. This is the Medtronic MiniMed
+insulin pump. And this was one of the
+great victories of the recreational
+cybernetics movement.
+If you are diabetic,
+the insulin pump essentially replaces
+regular insulin injections. So, you hook
+it up. There's a little pipe that goes
+Yeah, there's a little pipe that's
+actually attached to you, which delivers
+insulin to you on a regular basis.
+That has some sort of underlying
+algorithm. It's not very sophisticated.
+So, uh a number of very clever cyborgs
+figured out that they could take this
+Medtronic MiniMed insulin pump.
+And because it had a critical flaw in
+its communication channel,
+they could hook it up to a constant
+blood glucose monitor with a little bit
+of bridge code that figured out, based
+on their blood glucose levels, how much
+insulin it should actually be feeding
+into you.
+And at that point, you've essentially
+hacked a pancreas. So, you have this
+organ that doesn't work. You've just
+hacked yourself together a replacement.
+And this is great, except that it relies
+on the unsecured communication channel
+of the MiniMed insulin pump, which was
+meant to connect to a remote, but
+because it was unsecured, could connect
+to anything.
+And so then you have, you know, the flip
+side of that, which is
+what happens if someone
+knows that you have a MiniMed insulin
+pump and wants to screw with you. And
+that's where this gets really quite
+nasty.
+So, a win for the recreational
+cybernetics movement. Um
+Not so much on the medical cybernetics
+side.
+Another great pioneer of the
+recreational cybernetics movement is a
+guy called Neil Harbisson. And he was
+born with a condition called
+achromatopsia. What this means, again,
+in layperson's terms, is he was born
+completely unable to see color. His
+whole world was grayscale.
+And he figured out essentially by
+attaching a little antenna to his head
+about here, um that even if he couldn't
+see color,
+he could convert the color around him
+into a mechanism that he could actually
+understand, specifically uh sound waves.
+And so then you have the concept of
+someone who cannot see color, but has
+essentially figured out through
+cybernetics a different way to
+experience
+color. And again, um Neil Harbisson was
+also one of the very early pioneers of
+cyborg rights.
+And
+which is a concept that uh in my future
+got, you know, twisted and extended and
+twisted again and extended again. And we
+had to go through a few iterations to
+actually get to a point where this was a
+well-understood
+idea.
+Um
+which brings us to uh one of the great
+fashion accessories for my future, uh
+RFID and NFC blocking gloves. Because
+once people took this idea of
+recreational cybernetics and they ran
+with it, it turns out that there's all
+kinds of things you can do with that
+beyond just attaching an antenna which
+converts sound in sound waves into audio
+waves onto the back of your head.
+Even in your present, a lot of people
+have kind of figured out, well, if you
+have your RFID chip or your NFC chip and
+a credit card or a phone, the chips are
+like grain of rice size, they're that
+big.
+You could just implant one of these into
+your hand. And then if you happen to be
+into things like home automation and you
+want to be a cyborg, you take your NFC
+chip, you hook it up to your home
+automation, you just wave your hand in
+front of the door, and that lets you
+into the house.
+But
+what happens when uh someone tries to
+skim the information off the NFC chip
+that you've got implanted in your hand.
+Or what happens if you get the
+you'll get RFID chips implanted in your
+hand and RFID is a very old technology.
+Once the hardware is actually in your
+body,
+pulling the hardware out and replacing
+it with something more modern, that
+becomes a very interesting proposition.
+And so this is how you get um
+the great fashion accessory of RFID and
+NFC blocking gloves.
+If you don't want someone to scan the
+chip in your hand, you keep both layers
+on. If you do, you just yank off the top
+layer. And then you wave your hand and
+it works as intended. Same principle as
+like your RFID blocking or NFC blocking
+wallet. But this is something that as
+the cyborg movement becomes a thing, you
+have to consider because the attack
+vector of, you know,
+your hand just needs to be close enough
+to an NFC reader for a reasonable period
+of time. If that's tied to your entire
+home automation or, you know, you have a
+bunch of PII on there,
+that is a very very interesting
+conversation that you then have to have.
+And so coming from
+your present,
+as we go through time, a lot of this
+kind of evolves. And so you get the
+medical cybernetics movement and the
+recreational cybernetics movement
+basically evolving side by side. The
+medical cybernetics movement is very
+very locked down. To be able to actually
+build medical devices even in your
+present, you have to have a lot of time,
+a lot of money, and a lot of regulatory
+approval. The Medtronic closed-loop
+insulin delivery system got around that
+because it was exploiting a flaw in
+existing hardware. To be able to
+actually take that, you know,
+essentially you could exploit the the
+existing Medtronic insulin pump.
+And all that you had to manage as the,
+you know, would-be recreational cyborg
+was the bridge code. To actually build
+the insulin pump itself in a way that is
+safe and legal and regulated is a much
+more difficult endeavor.
+Whereas if you're just, you know,
+someone who wants to be a cyborg hacking
+away in a lab,
+that's a very different proposition
+because the barrier to entry is low, but
+you're one person, and therefore
+understanding the risk calculations
+there becomes a lot more difficult.
+Remember how I said, um,
+hold that thought about pacemakers?
+Cuz this [laughter] is where we're going
+to talk about, uh, some of how this goes
+wrong, uh, some of the evolution around
+how this goes wrong, and telemetry.
+Because you start with devices that are
+purely mechanical.
+On top of that, you then build
+software-based devices. Naturally, the
+next idea
+is that you are going to have, um,
+you're going to have devices that are
+internet-connected. And before I started
+getting into time warping, uh, back in
+your present,
+I had a very interesting conversation at
+one point, uh, with the doctor.
+Uh, I sat down and this doctor said, you
+know, we're going to hook you up to this
+this great portable machine. Um, it's
+all wires and leads. It's going to
+collect a bunch of telemetry on you, uh,
+and then it will stream it all over the
+internet direct to our server. Uh, I
+looked at the doctor and I went, "No,
+you won't."
+Because the trouble with this is
+once you get to the point of having your
+devices communicate with central central
+servers, or having your devices collect
+telemetry, you then have to worry about
+where that data is going,
+whether it is properly secured.
+And if someone gets hold of it, what
+they might actually be able to do with
+it. So, a journalist in your present
+has a pacemaker did a deep dive on this.
+Like being grilled alive, the fear of
+living with a hacked up heart.
+And
+the ultimate result of this journalist's
+research was as a result of the
+conversations that he had with his
+doctors, with medical professionals, and
+with several other people who had
+pacemakers,
+he actually made the decision to turn
+the wireless update functionality of his
+pacemaker off.
+He decided his risk calculation was I do
+not want this device to be connected to
+the internet because I don't know what
+could possibly happen here.
+I don't know what's going on with those
+wireless updates. And again,
+combine this with Karen Sandler's
+difficulty actually getting the source
+code to the pacemaker that she had. For
+the people who have these medical
+cybernetics devices implanted into them,
+although this changes in your present,
+that's a black box that you have
+implanted in your body.
+And so the risk calculation there is one
+that is not very well understood. And
+it's essentially the risk calculation of
+do you think that it's more likely that
+there's some like a similar to the Intel
+microcode bug
+in the pacemaker that's in your body
+already where you would want a firmware
+update? Or do you think it's more likely
+that someone is going to crash the
+central server?
+Uh speaking of crashing the central
+server, um this one wasn't in my last
+talk because if you think the uh if you
+think the penalties for stock market
+manipulation bad, uh you don't want to
+know what the penalties for uh time
+warping stock market manipulation are.
+With the medical device firm Stryker
+uh
+got popped by an Iranian
+basically Iranian state actors in March.
+And I have been waiting for this to
+happen so that I could put it in this
+talk without being accused of uh without
+being accused of time-based stock market
+manipulation cuz that gets you in all
+kinds of trouble. You you don't want to
+know about the interdimensional prisons.
+Uh
+the
+in this particular case, the actual
+attack was around in-tune device in-tune
+uh
+mobile device management. So, what
+basically happened was the hackers got
+into in-tune and they wiped a bunch of
+corporate devices.
+This did not kill anyone.
+That is a good thing. It did not break
+anyone's medical devices which is a good
+thing. What it did do was it delayed a
+bunch of shipments which meant that it
+delayed things like surgeries um
+where you might have to have like knee
+replacements or hip replacements or
+surgery for robots that would need to
+actually be delivered. It delayed its
+function. It would havoc with a lot of
+medical scheduling.
+But it could have been a lot worse.
+Because
+when this
+happens to the central server of a
+medical device manufacturer which I'm
+not allowed to tell you details but
+spoiler it does more than once.
+You then have issues of you know of the
+telemetry that you actually build around
+these systems.
+How does that work? Is it that if you
+have some sort of device implanted in
+you that is expected to phone home to a
+central server and the central server is
+gone, does it just shut down? Does it
+fail safe? Or does it fail deadly? Does
+it suddenly mean that uh
+whichever entity has decided that they
+don't like the device manufacturer that
+manufactured your particular organ.
+Does that mean that they can then just
+go and push a change to it which takes
+the whole thing out?
+And I present this from the futuristic
+perspective, right?
+But I wasn't the first person to ask
+these questions.
+This is a US audience. Raise your hand
+if the name Dick Cheney means anything
+to you.
+Yeah, good. Pretty much everyone.
+Dick Cheney
+I'm not here to talk about his politics.
+I am here to talk about his pacemaker.
+We keep coming back to pacemakers.
+Dick Cheney had a pacemaker.
+And this was in the very early days. So,
+we're talking, you know, 2000.
+We're talking the early the early 2000s,
+right?
+This was in the very early days of
+always-online medical cybernetics.
+And when the State Department got hold
+of that and the Secret Service got hold
+of that, alarm bells started going for a
+number of people.
+And they went to the medical device
+manufacturers and went, "Look,
+you're telling us that our Vice
+President needs to have an always-online
+pacemaker implanted into him.
+That's actually a national security
+risk. Like, we don't love that idea."
+And so
+Dick Cheney was one of the very few
+people who actually managed to
+medical device you know, the secret
+well, the Secret Service was going to
+negotiate that. But, they negotiated
+with medical device manufacturers to
+actually get um a pacemaker that had no
+online connectivity whatsoever. Karen
+Sandler went through the same
+negotiation and she also succeeded.
+There was only one phone that was
+willing to sell her one um that didn't
+have always-online connectivity.
+And so, this is a question
+as we kind of get more into my future,
+this is the central question that we end
+up debating around cyber and security.
+There are a few aspects that I want to
+discuss. We've talked a lot about open
+source and closed source code,
+proprietary and non-proprietary
+ecosystems.
+Some of this here is to borrow a phrase
+from one of my friendly Australian open
+source community, open source bad is
+better than closed source bad.
+Um
+because at least with open source bad,
+you have a chance that someone will be
+able to look through the code and go,
+"Hey,
+wait a minute. Something's not right
+here."
+It also means, although the barrier to
+entry is very high, it means that people
+who actually use these devices or have
+these devices implanted into themselves
+can then make a slightly more informed
+risk determination.
+It also empowers your doctors and your
+other medical professions, your other
+medical professionals to lead those
+conversations with people who might have
+these devices implanted into their body
+around what that would look like, what
+that would mean for them, and what the
+actual risks and benefits are.
+It also benefits the recreational
+cybernetics community because if there's
+code out there that you can start with,
+talking about the the the MiniMed
+insulin pump, a bunch of more advanced
+solutions have been derived from that,
+and that is because the original open
+APS code
+is open source. It is public. Anyone can
+go and take that and can do what they
+want with it.
+So, you then have, basically, a bunch of
+people sitting around in home labs that
+are
+I mean, a lot more advanced than this
+one, but again,
+I've signed interventional NDAs.
+Um
+coming together and essentially
+taking from the medical cybernetics
+movement and building, basically, get
+all the recreational devices. And in
+some cases here, the risk profile is
+very different because when you're
+building one of these things yourself,
+you get to ask yourself yourselves the
+question around things like telemetry.
+How much information I'm comfortable
+being uploaded to the internet? Can I
+store this on something that's locked
+down? Does it really need to actually
+collect this information about me at
+all?
+Because the risk profile here with both
+medical and recreational cybernetics is
+if someone can scrape publicly available
+data sets [clears throat] on you, so
+they get your name, your date of birth,
+they correlate that with social media
+data, they can correlate that with
+demographic data, and then they
+correlate that back to telemetry
+that is coming from
+some sort of device that you have
+implanted into your body.
+At that point, they almost have a more
+complete profile of you than you
+yourself might have.
+And so it's an interesting It kind of
+builds off this cybernetic this whole
+discipline for my future cybernetic
+social engineering,
+which is something that then becomes a
+big consideration for the recreational
+cybernetics movement in what information
+should we be publishing, what
+information should we not be publishing,
+and do we even need to collect this
+information at all? This becomes even
+more important as we kind of see the
+consequences of
+in your present it's the very early
+trials of brain implants, but as we kind
+of see the consequences of brain
+telemetry becoming a thing that people
+can actually collect, and then that
+people also need to worry about
+securing.
+So,
+I have then a few takeaways here.
+Um
+If you want to do this,
+think about the sorts of information
+that you should collect. Think about
+whether you to collect it at all.
+Think about whether you really need the
+full cycle conversion solution cuz yeah,
+I'm coming to you from the future,
+but I'm using a walking stick. I have
+the Coke bottle glasses.
+I turned down the full conversion eyes
+cuz I didn't want them to collect that
+much information on why I was seeing.
+And similarly, um
+when you're looking at, you know, a lot
+of these solutions, how do you protect
+yourself against all of the common
+attack vectors? And that really comes
+back to many of the basics of cyber
+security from things like
+physical defenses like your RFID and NFC
+blocking gloves to
+virtual defenses, firewalling your
+systems, only collecting information
+that is that needs to be collected,
+thinking about when you should deprecate
+information, you know, when you should
+basically discard information, what
+sorts of safeguards you should have
+around that, building virtual firewalls,
+but also sharing information with other
+people that are interested in this sort
+of thing.
+Because the more that we can all learn
+from each other about this world, um
+in my future, I mean, I'm not saying it
+was a fun path to get there. Uh it
+sucked. The The debates of the 2600s
+around um the debates of the 2600s
+around the rights of artificially
+augmented human intelligence as a result
+of the brain implant conversation were
+very, very spicy. But I I come from a
+future where like it's bright. People
+can play around with this and people can
+make their own decisions. And part of
+that is about people having the
+information that they need to have to
+actually be able to make an informed
+decision. Because yeah,
+>> [clears throat]
+>> you know, you have a device that you can
+strap to your back and it will allow you
+to fly. I'm not wearing it, which tells
+you what decision I made about that
+given all of the telemetry that it would
+have had to collect. But for some people
+the cool factor of a device like that is
+going to completely outweigh the
+telemetry that will be collected. For
+some people they might see that idea and
+go, "Okay, this is possible, but I don't
+like
+I don't like all of the telemetry that's
+being collected here." And so they might
+want to go and build their own and
+secure their own.
+So I hope then here that I have given
+you a reasonable overview of what it
+would be like to become an informed
+cyborg.
+Um this should allow you then to make
+your own decision. If you ever end up
+finding yourself needing medical
+cybernetics, I hope that this
+this briefing kind of gives you an idea
+of how to drive these conversations with
+your doctors and with your medical
+professionals and to best understand the
+risks and the benefits of all of some of
+these devices. If you're interested in
+recreational cybernetics, here's your
+baseline. Go wild because the only way
+we get to my future
+is through people like you.
+>> [applause]
+>> And we have, I believe then, about 20
+minutes for questions.
+Does anyone have any Ah, yes. Up the
+back there.
+>> Yeah, um I'm a software engineer who's
+hoping to, you know, eventually end up
+making medical devices. What do you
+think are the best things that I should
+kind of carry forward if I'm going to be
+moving into the medical field?
+>> How much medical training do you I mean,
+you said software engineer medical
+devices. Can I assume from that that you
+have essentially zero medical training?
+>> I have, yeah, no no medical training.
+>> Okay.
+If you get the chance, um there are
+conferences for this. Uh I have never
+been to them myself. Uh I I
+the the last couple of years have been
+in Olympia for some of them. I think
+some of them have died, but there are
+conferences which talk specifically
+about medical cybersecurity. Go to
+those.
+Being able to actually cultivate a
+relationship
+because one of the issues particularly
+in I mean I I
+I can drop the sci-fi persona now. One
+of the issues that we're actually
+dealing with is there's not a lot of
+communication between
+the the the multiple parts of this
+situation. Uh doctors, patients, and the
+companies actually the companies and
+hardware and software engineers actually
+building these devices are essentially
+all separate silos. So, the hardware
+people don't always talk to the software
+people. Neither of those necessarily
+talk to the doctors or talk to the
+patients. And that means that you have
+um
+the the general understanding that each
+person gets you each of these groups of
+people get of the problem is very very
+slight and
+and very limited. So, so cultivate those
+relationships.
+Understand what doctors want to be able
+to communicate with their patients.
+Understand what patients want in these
+sorts of devices cuz
+I I can guarantee you in a lot of cases
+Karen Karen Sandler Dick Cheney being
+the examples, but a lot of people if
+they're presented with full information
+about something like a pacemaker are not
+going to want it to connect to the
+internet. But that then potentially
+means that you end up with what what's
+the risk in there is genuinely something
+wrong with the software and you want to
+push it down. So,
+staying informed
+underst- having broader understanding of
+that
+always ask yourself the question, do we
+actually need to do this? What is the
+ultimate benefit not to us? What is the
+ultimate benefit to
+patients and doctors
+of this decisions that we are going to
+make.
+And build a thick skin because at some
+point you might have to blow a whistle.
+And be prepared for that. Um
+there have been many cases. Uh Therac is
+one that I don't go into in this talk.
+Um
+but warning if you do want to look that
+up, it's a cancer machine
+[clears throat] it's a radiation machine
+for chemotherapy that Therac used is
+really grim. Um
+which is one of the reasons why it's not
+in this talk cuz it's not the kind of
+fun.
+Um
+and that was one of the points where
+like the Therac code you could have been
+open source, someone might actually
+picked up what the problem was before it
+went
+to full meltdown. Um similarly with the
+exploding heart, there was a lot of uh
+that was not well publicized until
+ProPublica did um
+did a deep dive investigation into it.
+And so some of it is about just like be
+honest.
+Be honest. Cultivate those
+relationships. Um
+try to understand it from the
+perspective of people that aren't you.
+Particularly cuz a lot of
+you know, I work in tech and so when I
+was presented with the hey, we want to
+stream all this telemetry data to you to
+the internet, I could push back.
+And I was able to come in with talking
+points to to actually eventually talk
+them down to you can put the machine on
+me, but it has to all be on a local SD
+card cuz I don't want them just sending
+information about me over the internet.
+I don't trust that some random medical
+device company is going to use a secure
+channel.
+How
+I'm not going to ask for show of hands,
+but a lot of people here have probably
+worked places where can you Yeah, where
+secure channels should be used, but they
+aren't.
+So how much do you really trust the
+black box? And that's part of the
+be honest, but I guess the the big the
+big downside is like be prepared at some
+point you
+you might have to have some difficult
+conversations with people.
+And ultimately
+the best
+the best interest
+of whether it's the medical field or the
+recreational field, whether it's someone
+implanting an RFID chip into their own
+hand or life-saving devices, the best
+interest of the person who actually has
+to deal with the device should really
+should be paramount. It's not always,
+but it really should be.
+And that that I think is a good
+guiding principle to start with.
+Yep.
+>> Um
+you [clears throat] give the impression
+of having been through a number of these
+transactions
+with the medical medical community
+especially.
+>> Uh socially only two, but I talk to a
+lot of other people, so I'm familiar
+with many.
+>> All right. How much flexibility have you
+found on the medical community side to
+have the conversations about proper
+information security? Cuz you know, we
+have a well of understanding of
+information security on our side. We
+have a well of understanding of medical
+necessity on their side, but there
+probably isn't a lot of interchange of
+those two things.
+>> There's a massive silo there. I I
+actually gave this talk at LinuxFestNW
+last year and I had a couple of MDs who
+were there who came to it. And basically
+said that they came out and it was
+something that they'd never thought
+about before. And they'd never And some
+of it is like
+people who need these devices in times
+of great stress are not
+a lot of them are not well equipped to
+be able to push back. And some of it is
+just even the doctors don't really
+understand what they're signing patients
+up for. If you were to tell the doctors
+that we're implanting um
+that we're implanting basically the
+artificial hearts, that they were
+implanting a device that could just
+explode on people's bodies,
+they would probably have had very very
+different conversations with their
+patients. And so,
+in the two cases that I've dealt with,
+when I pushed back,
+I didn't get a lot of push back back to
+that.
+>> Okay.
+>> But it was also cuz I came and I just
+went absolutely no. Like, fundamentally
+no. You're going to have to find a
+different way to do this. Every patient
+Yeah, every every person who's involved
+with that is going to
+is going to have a different
+understanding of that. But a lot of them
+just don't know what they're exposing
+themselves to. And my experience in
+talking to doctors and hearing other
+people's stories has been that it's more
+a case of we also do not equip
+doctors
+and doctors and nurses and allied health
+professionals with the tools to be able
+to have these conversations. And so,
+it's not until you get into, you know,
+someone like people who work in the tech
+industry or someone like Karen Sandler
+who validly pointed out when she was
+speaking about the issue she had with
+her pacemaker, she's enough of a public
+figure that it's a security risk for
+her.
+Or Dick Cheney wearing was a really
+massive security risk. That's the point
+at which you start to get into those
+conversations. There's also a side
+tangent here about the DMCA that I'm not
+going to go off on. If you want to hear
+that side tangent, um
+I think
+Did I see a hand up?
+>> I was I was going
+>> I'll I'll back that.
+>> Yeah, that's more context than you know,
+basically when you're talking about it
+from a
+all these things
+kind of talk about the importance of how
+you how do bioethicists kind of front
+end this whole thing
+and talking about, you know, when you're
+in a situation like what you were
+talking about with an exploited heart,
+you know, you're there with a vulnerable
+person who is just going through a
+life-changing and a life-limiting
+situation and you're going to tell them,
+"Well, there are some theoretical risks
+or you could die."
+>> Yes.
+>> So, it's but but the point of that whole
+thing I I don't mean to cut you off, but
+I was leading up to a point. The point
+is that it's on the onus of medical
+device manufacturers to have the ethics
+in place to make sure that these things
+are taken care of ahead of time and not
+put that decision in front of these
+vulnerable people.
+>> Yeah, which is honestly part of the
+reason why I do this talk. And although
+I do not have any direct evidence to
+back this up, I suspect that there are
+cases where if you if you honestly told
+someone, "We can implant this device in
+you, but there's a risk of it
+exploding." That would still be an
+acceptable risk to some of that
+population. But, we don't
+As I understand it from the doctors that
+I've talked to and the cases where I
+have pushed back and the cases where I
+know people who have pushed back, the
+doctors are just not equipped to have
+that conversation right.
+Um did I see a hand up? Yeah.
+>> Can you talk a little bit about device
+warranties and like hacking
+you know, where the warranty is void if
+you hack it?
+>> Ooh, okay.
+>> And then like in the car hacking space,
+>> Okay.
+>> to repair there's some concerns about
+>> The right to repair movement, I mean,
+um
+I I used to have a part in the talk
+about this. Um it kind of disappeared in
+this version cuz cuz the Stripe hacked
+it over.
+Um
+it took over basically the bit that's a
+law that's related to that. But, yeah,
+the right to repair movement, I hope
+it's going to result in some good
+changes in this area as well.
+The MiniMed insulin pumps were an
+interesting case because by the time
+people figured out that they had an
+unsecure communication channel, they
+were actually not only out on warranty,
+but they had
+they were either discontinued around the
+time that was discovered or very shortly
+after. So, by that point, people were
+like people were still using them.
+People were still stuck with these
+things.
+Um
+Often cuz insurance wouldn't pay for a
+new one or a replacement.
+Uh eventually, Medtronic actually
+recalled them cuz someone sat down with
+them and went, "Yeah, maybe this is a
+risk you don't want to incur.
+Uh and they put you they put you to
+proof concept that you could basically
+use to just wipe one of these devices
+out with catastrophic consequences. And
+that meant that then for people who
+didn't want to go down the hacking path,
+insurance would then pay for a
+replacement.
+But
+yes, there are issues around warranties.
+Yes, I am part of the reason why I do
+not have and I have been very reluctant
+to engage with any sort of medical
+device that uplinks
+that that has any sort of internet
+connectivity is because it is a very
+fraught space. Um
+Totally later for the DMCA tangent, but
+the virtual version of the DMCA tangent
+is that it's overlap here between
+medical devices, right to repair, and
+DMCA. It gets really really complex.
+And as far as I am aware, there aren't
+any lawyers that specialize in that
+overlap, but there probably should be.
+And I think it it's going to get to the
+point
+where that will need to happen because
+there's enough
+complex intersections and tangents there
+that
+I expect there at some point to be a
+very interesting test.
+Again, I'm not actually Despite the
+sci-fi panel, I'm not actually from the
+future, so I don't know what the details
+of that test case is going to be, but my
+expectation is at some point it will
+happen. And I do think that overall an
+overall my personal calculation on this
+is the right to repair and the right to
+modify a device that is in your body
+that should derive from the right to
+repair and the right right to modify
+devices that you own.
+Uh who knows?
+Who who knows how that's going to shake
+out, but in terms of, you know, kind of
+informing you on the legal side, I'm not
+a lawyer, so I'm not going to
+speculate on specifics, but it is
+definitely an issue. There is an
+intersection there. I have talked to
+lawyers and people associated with
+lawyers who are aware that there is an
+intersection there.
+Um
+and I do hope that the right to repair
+is going to result in some positive
+movement in that direction because I
+think as well um
+for people who are technically informed,
+having those devices um
+and not having any control over them is
+very, very scary. Uh if you
+I'm pretty sure the slide's going to be
+published. The QR code on the first
+slide takes you to a list of sources. I
+do recommend reading the article about
+the fear of being
+buried alive because it's a really,
+really good overview of the issues in
+that area and what actually caused
+Jameson Wretch to eventually come to the
+decision of I don't want this thing
+connected to the internet.
+>> Which Which article was that?
+>> Uh it's called uh
+Hold on. Let me Let me actually bring
+If people want to scan it,
+>> [clears throat]
+>> let me actually bring this back up.
+One second.
+Yeah.
+Sorry.
+It's not
+Okay.
+I'm going to
+go to this website.
+Yeah, there we go. Well, that QR code,
+it's called the fear of being uh
+being buried alive. Um
+the the fear of being buried alive in
+the car. It's a really, really good
+rundown of all of the issues involved
+with that.
+Any other questions?
+>> Isn't "I am not actually from the
+future" exactly what someone from the
+future would say?
+>> [laughter]
+>> Uh no comment.
+Yes?
+>> Uh from Do you know of any these medical
+device companies that have a responsible
+disclosure type program at all? Or that
+>> I don't know about responsible
+disclosure, but if you're interested in
+um if you're interested in the
+trajectory and some of them that have
+worked with the community, uh Dana
+insulin pumps is a very good case study
+to look at. I don't know how accessible
+the information is. Um I never I didn't
+use it directly, so it's in my the
+resources I wrote for this.
+But my understanding of the situation
+was basically Dana saw what happened
+with the MiniMed pumps, and they
+actually built um
+they built a device that then works with
+a derivative of open APS.
+And so it is still an open-loop device
+in the sense that you open in the sense
+that the person who actually has the
+insulin pump can control it. Um
+as opposed to a closed-loop where it's
+all manufacturer controlled. But uh
+before closed-loop devices actually made
+it to market, Dana built one which was
+designed specifically to work with a
+derivative. And they did that because
+they
+Someone who was involved with the
+company either
+had type 1 diabetes or had a child with
+type 1 diabetes, I think. And basically
+heard about open APS, was already in the
+industry, and went, "Okay, there's got
+to be a solution to this." And actually
+built one that did make it to market.
+Um
+again, I'm a little hazy on the details
+cuz this [clears throat] is all from
+Yeah, this is all from
+memory. This was way back when I was
+first researching this talk, which is
+like 3 or 4 years ago now. But take a
+look at take a look at that case study.
+I'm not promising you that my rendition
+of that is entirely accurate, but that's
+the broad strokes.
+And that I think is the way that I would
+That's the way I would like to see a lot
+of this go.
+If you find out about anything related
+to responsible disclosure for medical
+device companies, I would be really
+curious to hear your um
+I would be really curious to hear what
+you want
+from a
+>> Yes, we if we did have like open
+standards and
+regulatory regulation but more of those
+agreements or encryption standards or
+about even bodily autonomy, certain data
+structures that we can
+have autonomy over our data, do you
+think if that was well designed enough,
+would it be compelling enough for the
+companies to buy into it or do you think
+that bigger companies, medical companies
+will always try to like build walls or
+maybe cite innovation as the reason why
+they want to customize their protocols?
+>> Okay, so I have to go back to the
+history.
+This might end up being the last
+question cuz my answer to this is going
+to take a minute. I have to go back to
+the history a bit here for a minute
+because
+um the the original pacemaker would
+absolutely never get approved. Uh if it
+was being developed today, there is no
+chance um that it would be approved as
+it was because it was so risky.
+But it's very similar to if anyone is
+familiar with the history of the birth
+control pill and one of the one of the
+reasons why there is one of the reasons
+that has been posited for why there is
+not a male birth control pill is because
+of the difference in protocol standards.
+I don't know how accurate that is but
+it's often posited.
+I can say with absolute certainty for
+pacemakers
+that that original pacemaker would not
+be today, no chance. And
+this
+it's kind of become a walled garden
+because of regulation and in that sense,
+the regulation is a double-edged sword
+because it does save lives
+but it also makes it very difficult for
+people to go away and try and build
+these things themselves. Open APS and
+all of its derivatives are using all of
+the bricks.
+And
+I have talked to people who have used
+OpenAPS. I've talked to people who have
+family members and loved ones who have
+used OpenAPS. I have never heard anyone
+say that it was not worth the risk.
+Everyone that I have ever talked to
+about OpenAPS who has either used it
+themselves or knows someone who is close
+to someone who has used it has said it
+has been a massive benefit and they have
+never seen like for them even if there
+was a risk, it was worth the risk.
+And they have seen a massive benefit and
+whatever issues they've had with it were
+completely outweighed by that.
+I think
+my assessment of this is something
+probably is going to change at some
+point as a result of things like the
+right-to-repair conversation, some of
+the conversations that are happening now
+around bodily autonomy and data autonomy
+and and data storage. I don't know
+what's going to change.
+I do think the Dana case is a really
+interesting one there because I think
+that is actually a case of the system
+working well. People hacked this and
+then someone who was intimately involved
+in already in the industry saw this and
+went I can do something with this,
+took it away
+and came up with a solution and I think
+I don't want to speak for the medical
+device manufacturers. A lot of them I
+think are big conglomerates and and who
+knows, you know,
+who knows what the internal machinations
+of those are, but I think that anything
+that gets companies
+anything that gets companies
+that have interests and forces to be in
+the interest of the patient into this is
+is the way to go.
+is basically my take on that. Exactly
+what that's going to look like I don't
+know, but I think that talking about the
+data standards and bodily autonomy
+standards I think would be a really good
+start.
+That it it is something that I
+I would like to see.
+The other aspect which would not in
+which would not necessarily relate to
+the device manufacturers directly, but
+the other aspect that I would like to
+see is a maybe not regulation, but a
+stronger framework which actually equips
+medical professionals to have the ethics
+conversations with their patients in a
+manner that is mutually beneficial.
+Um because from everything that I've
+seen,
+um from my experience is the ethics
+conversations don't happen. I just had
+to push back and go, "I'm sorry, that's
+not you know, that's not acceptable to
+me." Um
+and so you then end up and I'm not
+putting the fault on the doctors. They
+just The ethics conversation don't
+happen because no one involved is
+equipped to actually have them.
+So yeah, it it The short answer is it's
+complicated. Um but that that is my take
+on that is it's um
+I would love to see improvements there.
+I think some of what you're talking
+about is a good start, but my ideal
+world, but the
+the future like the future that I kind
+of imagine when I imagine my sci-fi
+persona coming and giving this talk is
+is one where the people who actually
+build the devices are a lot closer to
+the people who use the devices and you
+have those communication channels and
+actually
+build some sort of shared understanding.
+I'm guessing yeah, we are now at the
+line.
+So
+thank you all.
+>> Thank you.
+>> [applause]

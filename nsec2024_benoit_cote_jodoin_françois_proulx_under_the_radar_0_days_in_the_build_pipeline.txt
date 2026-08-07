@@ -1,0 +1,786 @@
+ABOUT
+================================================================================
+Title: NSEC2024 - Benoit Cote-Jodoin & François Proulx - Under the Radar: 0-days in the Build Pipeline
+Author/Channel: NorthSec
+Channel URL: https://www.youtube.com/channel/UCqVhMzTdQK5VAosAGkMtpJw
+Video URL: https://www.youtube.com/watch?v=4nfsTPEOzHA
+Video ID: 4nfsTPEOzHA
+Published: 2025-01-07
+Duration: 30:01
+Views: 149
+Likes: 1
+Comments: Unknown
+
+Description:
+Beyond the buzzword of 'supply chain security,' lies a critical, frequently ignored area: the Build Pipelines of Open Source packages. In this talk, we discuss how we’ve developed a data analysis infrastructure that targets these overlooked vulnerabilities. Our efforts have led to the discovery of 0-days in major OSS projects, such as Terraform providers and modules, AWS Helm Charts, and popular GitHub Actions. We will present a detailed attack tree for GitHub Actions pipelines, offering a deeper analysis than the prior art, and outlining attacks and mitigations. In addition, we will introduce a unique reference for 'Living Off the Pipeline' (LOTP) components, aimed at providing Red and Blue teams with a way to prioritize more risky scenarios.
+
+Benoît Côte-Jodoin is a Senior Product Security Engineer at BoostSecurity researching software supply chain security. Former active CTF player, he now designs challenges for the NorthSec CTF competition.
+
+François is a Senior Product Security Engineer for BoostSecurity, where he leads the Supply Chain research team. With over 10 years of experience in building AppSec programs for large corporations (such as Intel) and small startups he has been in the heat of the action as the DevSecOps movement took shape. François is one of founders of NorthSec and was a challenge designer for the NorthSec CTF.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Under the Radar: 0-days in the Build Pipeline
+
+**Authors/speakers:** Benoît Côte-Jodoin and François  
+**Channel/organizer:** NorthSec  
+**Published:** January 7, 2025  
+**Video:** https://www.youtube.com/watch?v=4nfsTPEOzHA  
+**Channel:** https://www.youtube.com/channel/UCqVhMzTdQK5VAosAGkMtpJw  
+
+## Authors, credentials, affiliations, and contacts
+
+### Benoît Côte-Jodoin
+- **Role:** Senior Product Security Engineer at BoostSecurity.
+- **Focus:** Researches software supply chain security.
+- **Background:** Former active CTF player; currently designs challenges for the NorthSec CTF competition.
+- **Personal contact details:** Not provided.
+- **Affiliation/contact links provided:** BoostSecurity and NorthSec are mentioned, but no direct contact information is supplied.
+
+### François
+- **Name as provided:** François. His surname was not provided in the supplied material.
+- **Role:** Senior Product Security Engineer at BoostSecurity.
+- **Leadership:** Leads the Supply Chain research team.
+- **Experience:** More than 10 years of experience building AppSec programs for large corporations, including Intel, and small startups.
+- **Additional background:** Described as having been involved as the DevSecOps movement developed; one of the founders of NorthSec and a former NorthSec CTF challenge designer.
+- **Personal contact details:** Not provided.
+- **Affiliation/contact links provided:** BoostSecurity and NorthSec are mentioned, but no direct contact information is supplied.
+
+## Summary
+
+The talk examines a relatively neglected part of software supply-chain security: the build pipelines used to produce open-source software. The authors argue that security programs commonly focus on known vulnerabilities in runtime dependencies, software bills of materials, and malicious packages in ecosystems such as npm, PyPI, and Docker Hub. In contrast, build-time dependencies and CI/CD workflows—particularly GitHub Actions—often receive less scrutiny despite having access to source repositories, release mechanisms, and powerful cloud credentials.
+
+The authors position build pipelines as production-critical systems because they generate artifacts that are later consumed by production environments. They highlight several characteristics that make these pipelines risky:
+
+- Build-time dependencies are often not included in conventional dependency inventories.
+- There is a shortage of tools for statically analyzing CI/CD workflows.
+- Build tools, compilers, linters, and test tools may contain obscure features capable of triggering code execution.
+- Workflows frequently use unsafe defaults, excessive permissions, unverified downloaded scripts, or insufficiently controlled external contributions.
+- The GitHub Actions ecosystem contains many thousands of actions but comparatively few published CVEs, which the authors regard as an indication that the area is insufficiently researched rather than inherently secure.
+
+The authors describe an attack pattern involving workflows triggered by pull requests from untrusted contributors. A vulnerable workflow may check out pull-request changes, execute attacker-controlled files, use secrets, or inherit unnecessarily broad GitHub token permissions. Code execution can arise through script injection or through build tools that process attacker-controlled configuration or source files.
+
+To investigate these issues at scale, they developed a data-analysis infrastructure called **Package Supply**. The system clones source repositories, parses CI workflows, applies static-analysis heuristics, produces an inventory of build components, and recursively analyzes relationships among packages and their build dependencies. The authors use BigQuery for large-scale SQL-based analysis and Neo4j for graph analysis, allowing them to evaluate how a vulnerable build component may affect downstream packages.
+
+Their research led to the discovery and responsible disclosure of vulnerabilities in open-source projects, including Terraform providers and modules, AWS Helm Charts, and GitHub Actions. The talk gives particular attention to Terraform modules, whose publication model can make a GitHub repository and its tags directly relevant to registry releases. A compromised workflow in a transitive module dependency can therefore affect users who consume a higher-level module without realizing that the lower-level dependency has changed.
+
+One demonstrated scenario involves a vulnerable Terraform module whose GitHub Actions workflow uses the Go template engine **gomplate**. A pull request can add a `.gomplate.yaml` configuration file using the tool’s `post-exec` feature to execute an arbitrary command in the build pipeline. The attacker can then remove the visible changes, close the pull request, and leave a release tag pointing to a dangling or orphaned commit containing the backdoor. The resulting malicious module can be published without an obvious change in the main branch. In the demonstrated case, the attack could exfiltrate an OpenID Connect credential and enable direct access to a cloud environment using a highly privileged token.
+
+The authors introduce the term **Living Off the Pipeline (LOTP)**, modeled after “Living Off the Land.” The concept covers legitimate build and pipeline tools whose features can be repurposed for malicious execution. They also describe a LOTP reference intended to help red and blue teams identify and prioritize risky pipeline components and scenarios.
+
+As a defensive measure, the authors released **Poutine**, an open-source security scanner focused, at the time of the talk, on GitHub Actions and GitLab. It can scan individual repositories or organizations, including organizations containing hundreds or thousands of repositories, and return findings within minutes according to the presentation. The scanner is intended both for direct pipeline assessment and as part of the authors’ Package Supply analysis.
+
+The authors recommend applying software supply-chain threat modeling to the complete software development lifecycle, inventorying and reducing build dependencies, selecting and maintaining safer dependencies, applying least privilege, explicitly limiting CI/CD permissions, and using static analysis against build pipelines. They emphasize that their current analysis remains relatively shallow and that the research area is still at an early stage, but argue that even simple analysis can uncover serious, exploitable weaknesses.
+
+## Key technical ideas
+
+1. **Build pipelines as supply-chain attack surfaces**  
+   CI/CD systems should be treated with the same seriousness as production systems because they create artifacts later used in production.
+
+2. **Build-time dependency inventory**  
+   Traditional dependency inventories and SBOM-oriented processes often omit tools used only during building, testing, linting, packaging, or releasing. The authors seek to inventory these direct and transitive build dependencies.
+
+3. **Attack-tree analysis for GitHub Actions**  
+   The authors model vulnerable workflows through combinations of:
+   - A public repository using GitHub Actions.
+   - A dangerous trigger, especially `pull_request_target`.
+   - Access to secrets or overly broad default permissions.
+   - Checkout or processing of untrusted pull-request changes.
+   - Script injection or code-executing build tools.
+   - Subsequent theft of credentials or modification of released artifacts.
+
+4. **Static-analysis heuristics at scale**  
+   Package Supply parses workflow definitions and applies heuristic checks. BigQuery enables rapid SQL-based analysis across large datasets, while Neo4j represents package and build relationships as a graph.
+
+5. **Recursive build-graph impact analysis**  
+   A vulnerability in one build component may propagate through multiple layers of build dependencies. Graph analysis is used to estimate the downstream impact of a compromised action, module, or workflow.
+
+6. **Living Off the Pipeline (LOTP)**  
+   LOTP describes abuse of legitimate pipeline tools and features. The example of gomplate’s `post-exec` configuration demonstrates how a normal build utility can become an execution mechanism when it processes attacker-controlled repository content.
+
+7. **Transient or concealed backdooring of releases**  
+   The Terraform example shows how an attacker can introduce malicious content through a pull request, trigger a workflow, clean up the visible repository changes, and leave a release tag pointing to a hidden dangling commit.
+
+8. **Credential theft through CI/CD identity**  
+   Compromising a workflow can expose secrets or cloud identity tokens. The demonstrated scenario uses an OpenID Connect credential to obtain powerful cloud access outside the Terraform control plane.
+
+9. **Least privilege as a pipeline mitigation**  
+   Workflows should explicitly define minimal permissions rather than inheriting broad defaults. The authors identify unspecified GitHub Actions permissions as a recurring weakness.
+
+10. **Poutine security scanner**  
+    Poutine is presented as a lightweight, open-source scanner for GitHub Actions and GitLab workflows. It is designed for rapid scanning of repositories and large organizations and reports the classes of workflow weaknesses discussed in the talk.
+
+11. **Research and training infrastructure**  
+    The authors also mention a GitHub project called **Muts**, a capture-the-flag environment containing approximately 20 challenges intended to exercise and test detection and exploitation of vulnerable workflows.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[Music]
+all right
+so um so this talk is going to be about
+uh supply chain security more
+specifically uh about how we found zero
+days in the bill pipelines of Open
+Source
+projects my name is fr and I'm joined
+today by my colleague Ben we're both
+supply chain security researchers
+working for a Montreal based uh security
+startup that is developing an
+application security posture management
+product that is meant to you um to help
+software development teams build secure
+software and also build it in a more
+secure way when considering the supply
+chain um
+threats so the backstory behind the talk
+is that when we hear about supply chain
+we mostly hear about um well it's a bit
+corupt I don't know if we can fix that
+it's a bit sorry about that um so when
+we hear about supply chain often we hear
+about the risk management of non
+vulnerabilties so cves that go on to you
+know to be the dependencies of your own
+uh piece of software so this area of
+supply chain is quite mature by now
+there are a lot of tools and uh
+techniques especially like sbom which is
+basically creating an inventory of those
+dependencies that you use in your
+software as CA is effectively taking
+that inventory and identifying the
+components that are um the subject to
+known vulnerabilities so cves and it's
+just you know getting more and more used
+that scale there are a number of
+products that have been in the market
+for for more than 10 years such as sneak
+for instance um and you know overall the
+ecosystem around that is quite mature
+it's even getting mandated to produce an
+sbom by the US government if you want to
+be A
+supplier and also we've heard about a
+supply chain in context of various
+malicious packages being published to
+package ecosystems such as npm piie
+dockerhub and and and the likes in that
+case a lot in that case a lot of times
+that is about typos squatting so kind of
+publishing um malicious packages with
+just a small typo where you know for
+instance the famous package in Python
+called request uh with just an extra s
+for instance or in the wrong place is an
+easy typo to make and you would be
+installing the wrong version uh of a
+dependency uh dependency confusion is
+another variant of that um but also you
+know more you hear about various aspects
+of credential stealing uh to publish
+malicious packages on behalf of existing
+trusted uh packages and uh also re
+recently if you heard about XZ L LZ
+LZ um there it was more like social
+engineering you know the the long game
+of convincing the community that someone
+was an active uh well-intended uh
+contributor of a popular open source
+project like namely that one was a
+dependency of op SSH indirectly through
+systemd and uh at some point the
+contributor ended up just sneaking in
+some back door in a very sneaky and
+complex way what we're interested in in
+our research is really the build
+pipeline of those open source packages
+because we think it's not at as much on
+most people's radar so there are a
+number of initiatives in the past year
+such as the oasp cicd top 10 which
+covers that aspect but uh it really
+doesn't provide much concrete
+remediation guidance it's more like uh
+an advocacy of the general types of
+threats uh but not much concrete like
+ways to fix the problems in those build
+pipelines there's a lack of tools uh to
+find problems like kind statical
+analysis in the space at the moment and
+even also to inventory the dependencies
+you may be using at build time and not
+just you know as a as a dependency of
+your final artifact there's also
+suspiciously few uh cve uh for build
+time components namely get up actions if
+you look you'll find that there's not
+even just shy of 20 cves published which
+is very suspicious uh given that are
+tens of thousands of tiny gab actions
+produced by every you know random people
+that you may be picking up like a tiny
+GI up action that does what you want but
+it might have a vulnerability and this
+is just kind of outside most people's
+radar so we had the intuition that
+really there should be more to be found
+in terms of you know non non
+vulnerabilities in there and we set out
+to do that research before we move on
+want to step the stage to have a common
+uh knowledge about what I mean by uh
+supply
+chain if you saw my talk last year about
+uh supply chain at nordc it was all
+about the salsa model slsa which stands
+for supply chain levels for software
+artifacts it is an open- Source threat
+model published by
+Google which is uh under the Linux
+foundation's open source security
+Foundation you can find that on salsa.
+deev sorry it's corrupt the the URL but
+uh what's important to know is that this
+model is kind of capturing a typical
+software uh development life cycle and
+the main components of it namely know
+the developer producing code on their
+laptop typically using git committing
+pushing to to you know T typically
+GitHub hopefully there uh he's using
+some kind of pull request to have uh a
+fellow uh contributor to perform some
+code review before it gets merged to the
+main branch and lot of times that will
+trigger some kind of
+cicd namely GitHub actions in that case
+um which will perform various tests uh
+linting and compiling and eventually
+releasing the final artifact in the case
+of an open source project for instance
+to npm piie Docker Hub again so uh when
+you look at those things I kind of have
+little bubbles to kind of give you
+concrete examples what that looks like
+in real life you know do GitHub
+workflows uh yamamo files would be kind
+of defining the the Manifest of GI of
+actions in that case and in the end like
+you are everyone here is a consumer of
+those uh packages in the likes of of
+doing a AP install on your Linux machine
+or pip install or having uh some kind of
+npm dependency in a package Json of some
+product you are
+developing when we just focus on the
+build part there are build time uh
+dependencies that don't go on to be part
+of the final artifact those build time
+dependencies they are both direct and
+transitive dependencies so you know it
+can get quite complex so salsa namely
+calls out a number of threats uh the use
+of compromise dependency where we can
+focus a bit more on the use of
+compromised build time dependencies and
+more generally uh compromising the build
+process so if we open the panderas box
+of the build uh pipelines of Open Source
+projects uh in the past year if you've
+heard about supply chain it's most
+likely in the context of the solar winds
+breach which was uh which is still a
+very popular uh networking uh software
+that is heavily used in US government
+departments so in high you know critical
+uh
+departments and uh it was a subject of a
+supply chain breach that indeed uh
+focused on the
+cicd of that commercial product but the
+same idea applies to open source
+projects so the build pipelines overall
+today are really quite of a mess if you
+kind of look deeply at it it's very
+complex uh very hard to analyze the
+Behavior Uh runtime behavior um the
+inventory of the build time dependency
+is just unaccounted for we have a lack
+of tools and you still see a lot of kind
+of curl pipe bash type of thing where
+just pulling some uh scripts and running
+it like without any kind of
+cryptographic signature
+verification uh also build tools such as
+compilers linters test tools of the and
+whatnot were in many cases really not
+designed with the scenario where you're
+accepting uh external contributions from
+Rogue actors and kind of parsing it and
+in many cases there those tools have
+little known features that are kind of
+foot gun that lead to remote code
+execution um so overall build pipelines
+cicd and on all that we think that they
+should be treated as carefully as
+production systems because they end up
+producing artifacts which go on to be
+consumed and used in production
+systems so in the process of trying to
+find these vulnerable repositories we
+started mainly manually just finding
+them but quickly we realized that there
+was a fairly common pattern that looks a
+little something like this in the form
+of an attack tree um of course a lot of
+open sources uh on public repos and some
+of them will be using get up action it's
+sort of a requirements for the things we
+were looking for um if the project
+doesn't have any build well there's no
+build to compromise um then we're
+specifically looking for a workflow that
+triggers on an event uh that is known to
+be kind of error prone it's considered
+dangerous if you if you want uh in this
+case it's an event called po request
+Target so this is an event that triggers
+a workflow on an incoming PR from an
+untrusted
+contributor then we would be interested
+in workflows that are using secrets so
+if they are dedicating to other systems
+um that could be interesting uh but more
+often than that uh these workflows can
+omit defining certain permissions and as
+such they receive a default token with a
+set of default permissions that is
+usually not
+necessary um and next we need some sort
+of code execution and there's two ways
+mainly we've been uh seeing how this
+happens uh One is using a script
+injection so U these workflows can embed
+user input uh say the request title into
+a script and then that allows to just
+execute arbitrary code or as mentioned
+build tools that have inherent
+properties that allow code execution
+such as compilers and
+linters and at the end of this uh you
+get into a pipeline
+and you may start thinking about
+pivoting or trying to get some impact
+out of it so either exfiltrate the B
+Secrets or maybe try to compromise the
+artifacts on the
+repository but the real attract Tre is
+much much comple more complex uh than
+this little scenario so as we were
+finding more and more examples we
+realized that there was a lot of sort of
+mitigating factors there were settings
+you can enable to be a bit more secure
+by default um and overall this problem I
+mean shows kind of the complexity of the
+problem and that is only for giab
+actions there's numerous build systems
+that are not covered
+today the big problem in our research
+was that you know once we get code
+execution we find these vulnerable
+workflows then we have the problem of
+trying to evaluate the impact of it so
+if we compromise a gab actions for
+instance it will be used in other build
+pipelines that will use other build
+pipelines so trying to find these uh
+issues recursively was a bit of a
+challenge this is a simple vulnerable
+workflow that is a bit cropped
+unfortunately um but as mentioned
+there's numerous uh problems in this
+that we were looking for um in the case
+of a bond request there's mainly three
+things we're looking for so the PO
+request Target event which is often
+misused um then we look for this ref
+down here
+which uh will actually pull down the
+pull request changes so these are sort
+of untrusted external contributor code
+changes so they can be any files
+modified in the repository and then what
+we don't really see at the bottom is you
+need some sort of command or injection
+that will trigger the remote code
+execution so in this case at the bottom
+there's a call to make so if you run
+make on untrusted changes it will load
+the make file it will run any command
+you want that's not great or uh you may
+be embedding um user input into the bash
+script that is executed down there and
+there's another set of problems in here
+like we mentioned untracked supply chain
+dependency so you can use containers um
+and there's also the permissions that
+the workflow has so in this case it's
+given a fairly privileged access token
+it doesn't Define permissions so it
+defaults to read write access on the
+repository so these set of problems uh
+were very common and we set out to try
+to find
+these so
+to to make this happen we created a
+project called the package Supply and
+the goal of this project was to analyze
+the CI workflows of common open source
+packages that are not really used or
+tracked in as bombs that are they don't
+have really CVS attach but they have a
+really critical role such as get up
+actions or ther modules which you give
+generally your
+most powerful credentials to um the
+process of analyzing each packages is
+often the same we try to clone The
+Source repository if we can find it then
+we will parse any ECI workflows that we
+find uh we'll run some static analysis
+security tools to try to get some
+findings out of there and then at the
+end of this process we end up with sort
+of a build inventory so all the build
+components that we saw in this projects
+um this allows us to sort of recursively
+crawl like the package that build
+package graph of these these
+projects and to Kickstart this process
+we scraped a large number of uh of repos
+um just to Showcase that this approach
+really scaled and in order to analy it
+we put everything into big query and
+this really allowed us to do like static
+analysis using SQL uh but it's it's
+really efficient you can test your
+ristic really quickly rather than
+running a tool 350 times every time you
+want to add more to it and the other
+analysis tool we use is neo4j so it is a
+graph database and this allows us to
+once we find like a vulnerable package
+we can sort of evaluate the impact of it
+in the
+ecosystem this is a sample of the crr
+data that we have and some of the
+euristic that we're using so on the left
+uh you see the sort of input packages
+and then we see in the middle that
+roughly half of the repositories that we
+found had gab actions and then and
+interestingly most or all of them don't
+Define permissions so depending on where
+this workflow is it may inherit more
+permissions than it needs uh we have the
+trigger on risky event so this is the B
+requests Target event there are other
+events we we're looking for uh in these
+workflows that are commonly misused and
+then at the bottom a bit lower in uh in
+incidence rates is the injections and
+the untrusted code check house so once
+you start um putting all of these Uris
+stics together you get a fairly High
+signal towards vulnerable open source
+packages and once we find one we put it
+in bigquery to look at the entire build
+graph and these are fairly normal and
+expected these build graph get large
+really really quickly and in this case
+we're able to see that uh say a package
+that has a command injection then
+affects you know a a very large number
+of
+dependencies and so this is getting
+really interesting as a project so we
+started looking at individual repos and
+then uh try to find how these
+vulnerabilities in in in uh build
+projects uh could affect other things
+and we found a number of things that mwa
+will be
+discussing thank you so yeah with with
+all that that allowed us to indeed find
+zero days in the build Pipelines of open
+source project H and perform like
+responsible disclosure uh namely at the
+beginning we were focus focusing our
+attention quite a bit on terraform
+providers and modules because we thought
+they were simply it was an ecosystem
+that was simply uh forgotten by most
+people that uh typically would be
+looking at npm and pii again um so yeah
+we did find a number of of those
+problems namely in the category of Pon
+request those can kind of build tools
+that have little known features that are
+dangerous uh and we started to see a
+patterns uh emerge and we we co we coin
+the term living off the pipeline very as
+a ND to living off the land which is a
+classic type of post exploitation or um
+exploitation uh kind of name that we see
+in merer and things like that uh but
+applied to the bill pipeline here so
+we've created this project living off
+the pipeline to
+inventory all those uh tools such as gun
+plate which you'll see in just a
+moment uh and there are also injections
+and this is just a small sample we have
+many more yet to be
+disclosed so if we just focus on this
+living of the pipeline sorry the URL is
+literally corrupt at the at the the top
+but you can find it like Google it and
+find it on GitHub so this is an example
+of gun gun plate so gun plate has a
+little known feature so first it's a
+kind of a template engine in the go
+language um it has this feature which
+you can configure it not just with a
+common line parameter but also with a
+config file namely dogum plate yaml
+which if you're submitting a pull
+request uh you know you can just add
+that file if it was not present and use
+look read the Comm uh read the
+documentation and figure out that
+there's this interesting com um feature
+called post exec which you can just
+specify any arbitrary command and then
+you get a remote code execution in the
+context of a bill
+pipeline so I'll do a demo of something
+with this is um directly inspired by one
+of those um uh responsible disclosure
+we've done on a terraform module that
+was used downloaded hundreds of millions
+of times uh
+like very popular not to name it like
+the second most popular on the terraform
+industry last year so before I move on
+to the actual demo uh just explain a
+little bit the terraform registry has
+both providers and modules modules can
+have dependencies themselves modules and
+providers effectively when you want to
+publish them it's literally no more than
+a GitHub repo which every time you tag
+it will auto automatically publish to
+the registry so it's as easy as that if
+you have the ability to tag you are
+publishing so uh if we look at the
+terraform module B in that case it's on
+GitHub it's using GitHub actions it's
+using various build tools uh namely gun
+plate which I just told you a moment ago
+and gab action has dependencies itself
+so the
+attacker comes in Forks the repo summits
+a PO request uh pretending to be some
+kind of typo fix but uh really what it's
+adding is this dogum plate yaml which
+contains the command the other way that
+could be exploited which we've seen in
+the wild is malicious git Branch name um
+any git ref tag branch is at the maximum
+255 characters because really it needs
+to be any a un a valid Unix file name so
+anything that can fit as a valid Unix
+file name and you'd be surprised what is
+a valid Unix file name in terms of the
+characters that are allowed it's more
+than enough to do bash or JavaScript
+injection so seen that in the past and
+you can find examples in our stuff so so
+basically triggers the
+test uh which one of those has a
+vulnerable get up action and ultimately
+uh that allows the attacker to back door
+the terraform module B which is a
+dependency of module a so you don't even
+know like you're dep you use module a
+you don't necessarily notice it has
+module B but suddenly it got back
+doored so in in in the end the outcome
+is that the attacker is able to
+exfiltrate the uh open ID connect uh
+credential in terraform Cloud which
+allows to completely circumvent
+terraform and just attack the cloud
+directly with the high power you know
+token so the
+demo all right so let's me so basically
+see terraform
+registry um there is one module version
+one which has a dependency module
+B all right so module B has its
+dependency version 109
+and if we look at the GitHub repo of
+that module we can see the legitimate
+version 109 at the moment someone is
+using terraform uh in that case
+terraform Cloud but doesn't have to be
+they're going to be running uh like the
+plan
+applying meanwhile the attacker is U
+setting up its attack it has some kind
+of Honey Pot to collect the tokens at
+the end of the
+attack so everything is scripted so what
+it does it's going to Fork the terraform
+module repo submit the pr that has the
+gun plate um
+payload and if we just zoom past a bit
+so we'll look at that PR that PR indeed
+contains this malicious
+file and if we just wait a few uh
+seconds gab action is going to run in
+that case just formatting the the readme
+which is a real world example we've seen
+that was vulnerable to that um and you
+know at that moment the attacker is able
+to actually clean up after a covered a
+traces cleanup script is basically
+getting U doing a G Force push to remove
+the suspicious file closing the pr and
+there is nothing suspicious at that
+moment even if we inspect the main
+branch we will not see the back door we
+can see now that the actual the Rogue
+version has been published under the
+token uh that was from gab action so now
+there's a back door version but if we
+audit the repo we will not see the back
+door it's not present there's nothing
+new literally like no diff in the main
+branch but if we pay attention to the
+latest release we see that the tag is
+pointing to a dangling commit like an
+orphan commit that is not part of the
+repo so the back door is there
+and meanwhile someone is using terraform
+and literally like from one minute to
+the other they don't know that there was
+no back door and now there is a back
+door that is pulled because it will
+refresh the module B
+automatically and from the perspective
+of the user nothing is completely silent
+there's nothing even doesn't show up in
+the the the logs like if you look at the
+logs it it it can be completely silent
+meanwhile the the token to to Google
+cloud in that case has been
+exfiltrated so what what can we do about
+that uh I would say you know go back to
+that salsa model uh threat model your
+overall software um development life
+cycle to consider supply chain attacks
+uh kind of understand your bill
+dependencies and and
+whatnot uh overall you know in inventory
+and potentially reduce your number of
+dependencies pick better dependencies
+better maintain more secure if possible
+but at least kind of be aware of what's
+out there and to be just uh
+proactive also uh lease privilege just
+apply the the you know Common uh lease
+privilege principle like again those
+default uh permissions in getb action uh
+there's a way to kind of configure like
+to lower the default permissions for
+instance or specify lower um uh
+permissions
+explicitly um also running some kind of
+static cone analysis tools on your build
+pipelines and that is a good segue to an
+open source tool which we we've released
+about a month ago called ptin uh ptin is
+an open- source security scanner
+focusing today on GitHub actions and
+gitlab but we have plans to expand it
+looking for feedback from you if you
+have specific use cases you'd like it to
+to apply today um you can point it to a
+GitHub
+organization uh or just a git repo and
+it will scan very efficiently uh namely
+you can point it to orgs that have
+hundreds of or thousands of repos it
+will return results within literally
+less than a few minutes so it's just as
+easy and lightweight to run it against
+your own bill Pipelines build it inside
+of uh just as kind of security check of
+your own pipelines um so we use it as
+part of this whole package supply
+project and go find it on GitHub star
+and try and possibly contribute again
+just feedback is a good
+contribution so what it looks like you
+install puts in you can run it as a
+Docker container too uh you give it a
+read only token to Repose and it will
+return like the types of vulnerabilities
+we've discussed so far so there's also
+the muts in project on GitHub uh which
+is really a capture the flag uh thing um
+it was designed to kind of test our tool
+so you can give it a try uh literally
+can exploit those workflows there are
+about 20 or so Flags uh so far no one
+has got them all even like the red team
+at ment they were unable to find the
+most the hardest ones so come talk to me
+can give you some
+hints uh overall the security of build
+pipelines is really complex it's an area
+that's still under most people's radar
+our research is really starting just to
+to scratch the surface of of that
+problem um our statical analysis namely
+in puten is still quite shallow
+simplistic but it's already finding very
+important
+problems uh again cicd should be treated
+just as you know seriously as production
+systems and we've demonstrated to you
+some real world scenarios that are in
+some cases very easy to exploit just go
+try and Missy put in the first challenge
+you should be able to figure it out
+within just a few minutes at most
+hopefully um and puts in you can give it
+a try and and and that's it uh there are
+a number of Articles we've published in
+the past year about this topic uh you
+know discussing in more details those
+responsible disclosure and the the Goa
+behind those and the projects I've
+mentioned in this case you can see the
+URL because it's not
+cropped thank you
+[Music]

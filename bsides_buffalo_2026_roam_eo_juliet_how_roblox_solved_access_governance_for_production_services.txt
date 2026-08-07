@@ -1,0 +1,1298 @@
+ABOUT
+================================================================================
+Title: BSides Buffalo 2026: RoAM-eo & Juliet: How Roblox Solved Access Governance for Production Services
+Author/Channel: BSides Buffalo
+Channel URL: https://www.youtube.com/channel/UCcmPr9iGIxAGxxyfbuqEHZQ
+Video URL: https://www.youtube.com/watch?v=-cyMEO_WE9Y
+Video ID: -cyMEO_WE9Y
+Published: 2026-06-22
+Duration: 44:41
+Views: 10
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Bring-your-own-IAM sounds like an attractive security policy, but in practice it's a euphemism for security debt. Every team rolls their own authorization, ignores access governance, and hopes audits never arrive. Roblox lived in that world for years. While infrastructure IAM has matured (AWS IAM, KMS, VPCs), application-layer access remains a free-for-all. Internal services—admin dashboards, data stores, bespoke tools—reinvent "who can do what" with no shared model for time-bound access, multi-tier approvals, or consistent audit. The industry is starting to name this gap, but almost nobody has built and deployed application-layer access governance across heterogeneous services at scale.
+
+This talk tells the story of RoAM (Roblox Access Manager), a generic access governance platform built to orchestrate requests, approvals, expirations, and recertifications—and then notify downstream policy engines via an interface modeled on OpenID AuthZEN. RoAM does not replace the authorization systems teams already have. It wraps them in a shared governance layer: time-bounded access, approval workflows, centralized audit, and automatic revocation. RIF (RoAM Ingestion Framework) is the continuous data ingestion layer that keeps the authorization graph current, projecting resource ownership from upstream data sources into Guard, Roblox's ReBAC authorization service.
+
+Expect us to cover real incidents, design mistakes, and concrete engineering patterns for turning brittle, bespoke authorization into a reusable access governance layer across services—without forcing a single policy engine or a greenfield rewrite.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# BSides Buffalo 2026: RoAM-eo & Juliet: How Roblox Solved Access Governance for Production Services
+
+## Authors and credentials
+
+- **Author/channel listed:** BSides Buffalo  
+- **Speakers identified in the transcript:** The speakers introduce themselves as **“Hers”** and **“Shak…”**; their complete names were not clearly provided in the supplied transcript.
+- **Professional role and expertise stated:** The speakers say they are part of Roblox’s **production [unclear in transcript] team**, working on:
+  - Authentication
+  - Authorization
+  - Access governance
+  - Zero-trust architecture
+- **Affiliation:** Roblox, as stated in the presentation.
+- **Credentials, degrees, certifications, and formal titles:** Not provided.
+- **Contact information:** No personal email addresses or speaker contact details were provided.
+- **Publication and video contacts:**
+  - BSides Buffalo channel: https://www.youtube.com/channel/UCcmPr9iGIxAGxxyfbuqEHZQ
+  - Video: https://www.youtube.com/watch?v=-cyMEO_WE9Y
+
+## Summary
+
+The presentation describes **RoAM—Roblox Access Manager**, an access-governance platform designed to solve a gap between authorization enforcement and governance for production services.
+
+The authors’ central observation is that Roblox already had many systems capable of enforcing access, including service permissions, groups, AWS IAM, Kubernetes access controls, identity-provider groups, SSH proxies, database procedures, YAML configurations, GitHub workflows, and authorization services. However, these systems handled governance independently—or not at all. As a result, access requests, approvals, expiration, revocation, exceptions, and audit records were fragmented across multiple tools and teams.
+
+RoAM was designed as a **governance layer above existing authorization systems**, rather than as a replacement for them. It provides a common lifecycle for:
+
+1. Requesting access
+2. Identifying the appropriate approvers
+3. Recording justification and discussion
+4. Granting access through the existing enforcement system
+5. Applying a time-to-live
+6. Expiring or revoking access
+7. Maintaining an auditable history
+
+This separation is the presentation’s principal architectural idea: **centralize governance without centralizing enforcement**. Each downstream system continues to enforce authorization according to its own model—such as role-based, attribute-based, or configuration-based access—while RoAM standardizes the surrounding governance process.
+
+The need for RoAM was driven by several operational and security problems. Organizational changes caused access mappings and approvals to break; broad permissions became easier to request than precise permissions; access was not consistently revoked after team changes; and quarterly compliance reviews required extensive manual data collection and reconciliation. The speakers cite more than a thousand orphaned YAML files, some containing broad wildcard permissions, as an example of accumulated access-management debt.
+
+The authors also explain why a conventional identity-governance system was insufficient for production infrastructure. Production access depends on dynamic context, including on-call status, incidents, ownership, environment, risk, compliance scope, and the required access duration. Roblox also manages hundreds of thousands of changing infrastructure objects, such as services, hosts, namespaces, database tables, and other resources. The authors argue that these characteristics require a production-aware governance layer rather than a static group-entitlement model.
+
+RoAM’s data model is intentionally small. Its central entities are access requests, subjects, applications, decisions, and comments. Requests distinguish between the requester and the subject receiving access, allowing users, managers, service owners, groups, service identities, and on-call roles to participate in workflows. Requests include explicit expiration times, and access is ephemeral by default.
+
+Approval decisions are stored separately from access requests. This enables multi-party approval workflows in which resource owners, managers, source-control owners, or other roles can approve independently. Approval rules are treated as data rather than being hard-coded into every workflow. Comments provide an audit thread containing justification, discussion, and review context.
+
+RoAM uses a relational database because compliance and audit questions require joins across requests, applications, decisions, subjects, and comments. Bulk requests are represented as multiple first-class requests linked by a request-group identifier. A transactional outbox is used to persist state changes and publish downstream events reliably without requiring two-phase commit.
+
+The presentation also covers **RIF, the RoAM Ingestion Framework**. RIF continuously ingests organizational and resource data from sources such as databases, HR systems, and storage systems, transforms it, and loads it into an authorization system. Its gRPC service interface supports both traditional pull-based ingestion and event-driven updates. Instead of repeatedly processing an entire large dataset, upstream systems can send changes or deltas when they occur. This keeps the authorization graph current when users change teams, resources change ownership, or organizational structures change.
+
+In the case study, a user requests access to a file owned by another team. RoAM determines the relevant authorization backend and approvers, sends notifications, records the approval process, instructs the backend to grant the permission, and schedules future expiration. If the user later changes teams, RIF updates the authorization graph, causing the previous relationship to disappear and the access to be revoked by the downstream authorization service.
+
+According to the presentation, RoAM produced both security and productivity improvements. The first production customer was an SSH proxy service. The speakers report reducing authorization-call latency from as much as **650 milliseconds to approximately 5 milliseconds** through integration with a more efficient authorization system. They also report replacing standing access with predominantly **four- to eight-hour just-in-time access**, improving compliance-audit and access-review workflows, and reducing duplicated governance work across more than ten teams.
+
+The authors conclude with lessons learned and future work. They would consider using Temporal rather than Kafka for orchestrating ingestion workflows because Temporal would provide workflow execution, communication between steps, and stack traces with less operational complexity. They also identify the value of discovering common access patterns and personas earlier, which could reduce duplication in the authorization graph. Finally, they emphasize designing around user workflows, including Slack, chat, and AI-agent interfaces, rather than assuming that a web UI should be the primary access-request mechanism.
+
+## Key technical ideas
+
+### 1. Governance and enforcement are separate layers
+
+RoAM manages the lifecycle surrounding access but does not replace the authorization engine that ultimately enforces permissions.
+
+- **RoAM owns:** requests, approvals, TTLs, expiration, revocation, notifications, and audit.
+- **Downstream systems own:** the actual permission model and enforcement mechanism.
+
+This allows heterogeneous services to participate without rewriting their authorization logic.
+
+### 2. Authorization-backend abstraction
+
+RoAM uses shared backend interfaces to communicate with different authorization systems. The backend may represent a file-storage service, AWS, Kubernetes, a generic authorization service, or another system.
+
+The backend determines how access is enforced, while RoAM uses a common governance process around it.
+
+### 3. Time-bounded and ephemeral access
+
+Every request has an expiration time, and access is intended to be temporary by default. After approval, RoAM schedules an expiration event that later instructs the authorization backend to remove the permission.
+
+This reduces standing access and makes expiration a normal part of the access lifecycle.
+
+### 4. Context-aware and multi-party approvals
+
+Production access may require approval from different roles depending on the resource and situation. RoAM supports multiple decision records for one request, allowing workflows such as approval by:
+
+- Resource owner
+- Manager
+- Source-control owner
+- Other service- or policy-defined approvers
+
+The request advances only when the required approvals are satisfied.
+
+### 5. Flexible subject model
+
+Subjects are polymorphic. They may be:
+
+- Users
+- Groups
+- On-call rotations
+- Service identities
+- Other identity-like objects
+
+The separation between requester and target subject also supports requesting access on behalf of another user or group.
+
+### 6. Backend-neutral resource and permission representation
+
+Resource and relation identifiers are stored as strings instead of being forced into one universal permission schema. This enables each authorization backend to preserve its own resource and permission model.
+
+### 7. Relational, audit-oriented data model
+
+RoAM uses a relational database because governance and compliance questions require cross-entity queries. The model includes:
+
+- Access requests
+- Subjects
+- Applications
+- Decisions
+- Comments
+
+Comments preserve the rationale and discussion associated with an access request, preventing audit context from being scattered across Slack, tickets, and code-review systems.
+
+### 8. Transactional outbox for reliable event publication
+
+State changes are written transactionally with an outbox record. Downstream events can then be published reliably without requiring distributed two-phase transactions.
+
+### 9. Continuous authorization-graph ingestion
+
+RIF keeps authorization data current by extracting, transforming, and loading information from multiple upstream sources. It supports:
+
+- Periodic pull-based ingestion
+- Event-driven delta updates through gRPC
+
+The event-driven approach avoids repeatedly processing large datasets when only a small change has occurred.
+
+### 10. Incremental adoption
+
+Because RoAM does not replace enforcement systems, services can onboard incrementally. Teams retain their existing authorization paths while adopting a shared governance lifecycle.
+
+### 11. Operational lessons about workflow orchestration
+
+The authors initially used Kafka to coordinate distributed ingestion workers but found it difficult to debug and operate. They state that Temporal would have been preferable because it could express extraction, transformation, enrichment, and loading as a workflow and provide execution traces.
+
+### 12. Future direction toward roles, analytics, and agents
+
+The authors identify several extensions:
+
+- Access during outages and infrastructure failures
+- Governance of identity-provider groups
+- Integration with cloud, Kubernetes, and vault systems
+- Service-account access management
+- LLM-based access queries and management
+- User-behavior analytics for unused-access detection
+- Different access policies for AI-agent personas and environments
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Um we're get started uh for our second
+uh speaker platform of the afternoon
+session. I'm Joel. I'm the NC I guess
+for this thing. Uh we have Shakit here.
+Uh they're from you guys from Roblox. Uh
+we give a presentation on Romeo and
+Juliet modern day access governance. So
+it just a couple of uh housekeeping
+things. Just make sure your phone's on
+silent. Do need to use bathroom. Go
+sides. Um, might want to come down to
+this end because there's the speakers
+and stuff are there unless you're just
+hanging. All right, cool. All right.
+Other than that, uh, a round of applause
+AND
+I guess we'll start. Uh, good afternoon
+the
+mention. My name is Hers and I have Shak
+me here. Uh, we are part of the
+production metro blocks. uh team deals
+with authentication, authorization,
+access governance, zero trust
+architecture essentially. Uh and we are
+here to talk about basically Rome. U
+Rome is an uh basically Roblox access
+manager. It's an access governance uh
+platform that we designed and built from
+scratch. Uh the core problem Rome
+essentially solves is that authorization
+existed everywhere but governance does
+not. Uh teams already have systems that
+could enforce access. uh service
+permissions uh groups but there is no
+consistent way to manage the full life
+cycle of access. Uh by governance I
+really mean who can request access uh
+who approves it uh how long that access
+uh should last and basically how it gets
+provisioned when does it expire and
+whether can you order the full life
+cycle.
+Uh fundamentally without this layer
+access really tends to become
+fragmented. temporary access really
+becomes fragmented and uh it becomes
+permanent. Service owners carry
+operational burden and security losses
+the visibility into why access was
+granted in the first place. Uh Rome
+solves this by sitting on top of
+existing authorization systems uh and
+acts as a governance layer. Uh it does
+not force every team to rewrite their
+own authorization requests. Instead,
+Rome manages the life cycle around
+those. uh we'll walk through the
+problem, the architecture, how we rolled
+it out across teams and what we would do
+differently now.
+So let's see like before Rome how was
+the picture every access uh system had
+its own workflow. Uh some teams use
+slackbox, some use configs, some used
+githubs and some had custom UIs. And
+like every virtual enterprise system uh
+there was a healthy amount of ask uh
+like ask the right person and hope they
+remember how it works. Uh to make it
+concrete SSH and database access were
+handled through SSH proxy with MySQL
+store procedures and uh YAML based
+reject matching. Uh AD and OCTA group
+access was done through slackbox uh by
+basically inserting rows into MySQL. uh
+Kubernetes access uh is done through
+GitHub PR and it's also uh basically
+bypassable uh through Argo CD. Uh
+network alles are managed again through
+GitHub PR and our own generic
+authorization service handles
+authorization really well but it does
+not really have any governance on top of
+it. Uh individually these systems really
+work well. Uh none of them are really
+bad systems. The problem is each one
+solves in its own way. uh each system
+has a different approval logic,
+different expiration behavior, uh
+different audit logs and different
+exception paths. So if you are an
+engineer requesting access, the
+experience really depends on what you're
+trying to access. Uh sometimes you open
+PR, sometimes you like uh use a slack
+command, sometimes you modify YAML
+context. You basically have to know like
+you know which tool exists where. uh
+it's less of a platform and more of like
+a access governance scavenger hunt. Uh
+for engineers basically that means it is
+very confusing and sometimes it takes
+like a month just to get basic access to
+get it working. Uh for service owners it
+means they have to maintain their own
+access workflows, own approval rules and
+own cleanup logic. Uh for security
+fundamentally this is a bigger issue on
+visibility. There is no single piece uh
+basically that can answer basic
+governance questions. Uh who requested
+this access uh who approved it and
+whether can we trace the full life cycle
+end to end. That is the fundamental
+fragmentation Rome is designed to fix.
+The goal here is not to replace any
+existing authorization system. The goal
+is to put like a consistent governance
+layer above all of them. one place for
+request, approval, provisioning and
+basically revocation and audit while
+letting like the underlying systems uh
+continue enforcing access the same way
+they did.
+So like why did we build it now? Three
+things really made this a priority for
+us. Uh the first was our re outages. So
+basically a lot of access across systems
+is tied to workday attributes, octa
+groupoups and hardcoded mappings inside
+individual systems. Um really works
+until organization or reop changes and
+organization changes all the time. Uh
+when teams are renamed, merged or moved,
+each access across these systems reacts
+differently. Some mappings stop
+resolving and some approvals go to the
+wrong owners and some access gets
+removed unexpectedly. We saw this happen
+two or three times across the like you
+know three months where infrastructure
+teams lost SSH access and recovery took
+months. Ouch. Yeah. We had three like uh
+ser that time. This was a big signal.
+Access should not break just because
+your or chart changes. Uh the second
+issue is really overprovisioning and
+policy drift because precise access is
+really hard to request and hard to
+manage. Broad access really becomes the
+easy path. People would often ask for
+wider permissions than they actually
+need. Uh because that is most likely the
+easiest path to request access. Access
+often was not revoked when people change
+teams and over time like these policies
+really drift away from reality. Uh one
+concrete example is our YAML based
+access configuration. We had over a
+thousand orphan YAML files uh many with
+broad wild card permissions. Nobody had
+the full confidence to like you know
+actually understand how they're mapped
+to active ownership, current team
+boundaries and real business needed. Uh
+this fundamentally creates both like a
+security risk and an operational debt.
+The third issue is socks compliance.
+Every enterprise needs to do like you
+know uh socks review every quarter and
+these uh quarterly like you know socks
+campaigns turns into a very heavy-handed
+manual campaign. We have to pull
+database queries, export spreadsheets,
+uh reconcile records across systems and
+ask teams to fundamentally validate
+access manually. Uh it almost took us
+like you know a month every quarter to
+do this and even after all the effort
+the result is not really good. Sometimes
+like you know we have to read to them
+because like somebody ran a like wrong
+database query. We could answer
+different pieces of discussion but not
+like the full governance story there.
+Who has access? Who approved it and why
+did they need it? All three problems
+fundamentally point to the same root uh
+issue. In this case
+does like you know really does not need
+another authorization system. We need
+really life cycle management. We need
+one governance layer that can like you
+know really sit on top of all these
+different production systems and provide
+like a fundamental constant uh
+consistent model for request approval
+expiration revocation and audit. That is
+what really convinced us like you know
+we like Rome really needed to exist.
+So there's a classic question like you
+know build versus buy. Uh we did not
+really start by assuming that we have to
+really build this for ourselves. Roblox
+already has like a production like a
+traditional IG in place and it really
+works well for the problem it is
+designed to solve. Uh it works well for
+corporate applications uh stable group
+based access access reduce and basically
+standard joiner remover lever workflows.
+U we also really tried extending that
+model into developer permissions. So we
+added like you know Roblox developer
+access uh use cases into the existing IG
+path and for stable formations that
+really works well. Uh but just as uh
+like you know we pushed that road map
+into uh our production infrastructure
+access. Uh the gaps really become clear.
+Uh production access at Roblox is not
+just like a question of should this user
+be in this group. Uh it is more
+contextual than that. Uh it is like you
+know is this person on call right now?
+Is there an active incident? Uh is this
+request tied to an sock uh owner
+who like own approves this uh like
+request? How long should this access
+last? 4 hours, 1 day or 30 days. Is this
+a target soft scope? Uh should this be
+auto approved or like basically manager
+approved or like service owner approved?
+Traditional IG really like you know
+struggles in these three areas. Scale,
+context and infra awareness.
+uh scale has been the biggest driver
+because like our production inventory
+basically is not like a small uh list of
+static apps. Uh we have hundreds of
+thousands of dynamic resources like
+services, hosts, uh name spaces,
+database tables, uh ales and other
+infrastructure objects. They constantly
+change. Uh context was another big issue
+here. uh production access depends on
+signals like ownership uh pager duty
+schedules incident uh state environment
+risk level and compliance scope uh these
+signals exist across uh roadblocks but
+uh an IG system does not understand them
+deeply enough basically to make the
+realtime decisions
+the another bigger like you know issue
+here is like infrastructure awareness uh
+SSH hosts uh communities name spaces
+database tables they don't really map to
+like you know a classic uh SAS file
+entitlements uh you can force them into
+that model but you'll have to like
+really rebuild that translation uh layer
+yourself and you'll have to maintain
+that and one of the biggest issue that
+like you know it leads to is like an
+operational tech debt during an incident
+basically like access really cannot
+depend on like you know a slow back sync
+or like a ticket routing or a heavy
+admin workflow. uh engineers really like
+they need quick access and it has to be
+governed time bound and approved and
+basically auditable. That is really why
+we chose to build road. Uh the
+conclusion is not that like you know
+your traditional IG tools are bad. They
+are really good for corporate access
+governance. They work for like you know
+Jira Jira governance lack all those are
+really good. The issue is production
+like you know infrastructure access
+really needs a different layer. uh
+buying an IG tool like you know still
+makes us to like you know we have to
+build those skill connectors and
+requires us to do the hard part really
+ourselves. The infraare governance
+really like you know uh basically needs
+to understand what Roblox resources are
+what are the ownership incidents and
+what are those like you know basically
+the approval and the policy required.
+Rome really makes this like you know
+layer like a first class citizen. Uh
+instead of treating like you know
+production access as like a set of like
+you know static groups Rome treat
+basically treats it as a life cycle uh
+the request context and basically
+approval. It gives us a like a reusable
+governance pattern that is like you know
+designed for production access and it
+allows us to sit on top of existing
+authorization systems and they can
+continue to do what they are good and we
+can cover the entire life cycle across
+robbots.
+So one of the like core design
+principles here is like Rome is not
+trying to replace every access system.
+It is very slow, risky and honestly not
+the right abstraction.
+Every production access system already
+has an enforcement path. So like we have
+our own generic authorization service
+which is like built over uh the open
+source solution to pass. Uh it knows how
+to make like you know service level
+authorization access. AWS IM basically
+knows how to like you know grant your IM
+permissions. Kubernetes IM or hardback
+can basically handle like you know
+cluster or namespace access. Octa is
+great at providing like you know
+identity and group membership. uh safety
+systems have their own like approval and
+enforcement needs. Apache ranger is
+great at essentially uh handling data
+access policies. Trying to replace all
+of them and like know rewriting them
+into like a working system. It means
+you're migrating them away from the
+critical path and asking every team hey
+please go and change your system and
+onboard us onto a new system. This is
+where like you know large platform
+projects really like really fail. they
+become too broad and essentially too
+disruptive and too politically
+expensive. Uh so instead we chose to
+separate governance from really
+enforcement.
+Uh Rome really like owns the common life
+cycle. Uh and then it allows every
+backend system to enforce how the access
+is actually granted and enforced. Rome
+does not need to know every low-level
+enforcement detail. It needs to know
+what access is being requested, who owns
+it and what policy does it uh needs to
+apply and where basically who needs to
+approve it and how long it should last
+and other details it leaves to the
+underlying back end. So in this case
+like you know uh Rome can just like uh a
+user can just like create an access
+request and get it approved and for
+instance in AWS it can basically apply
+the actual access request. uh before
+Rome every system had to rebuild
+essentially like you know their own
+governance life cycle in its own system
+after Rome it's all like really
+consolidated like you know basically
+consolidates across like 40 different
+like you know access services into one
+uh one system had its own request flow
+another had its own approval logic and
+another handle expiration differently
+some systems have no expiration
+notifications are really inconsistent
+across these systems exceptions are
+really handled differently uh auditail
+uh trails are basically scattered across
+like tickets, logs and GitHub PRs. This
+really like you know creates a lot of
+duplicated work for every team and like
+a fragmented experience for engineers.
+With Rome, the fundamental model really
+changes. Uh each uh back end really like
+uh keeps it trusted enforcement path but
+no longer has to invent like the
+governance workflow. Rome becomes a
+central control team that can like you
+know really manage all of access across
+roadblocks and the downstream systems
+still remain the source for enforcement.
+This really gives us a clean
+architecture. So, Rome really like
+centralizes the uh life cycle but not
+the enforcement. The distinction really
+matters here. It allows us to onboard
+systems rapidly and incrementally
+instead of doing like a big bang
+migration. It reduces risk for teams
+that they don't have to write their uh
+like you know rewrite their
+authorization logic. It also like
+essentially reduces duplicated work
+because they can all just come to like
+one life cycle model and it basically
+gives engineers one consistent place to
+like request access and understand what
+they have. The key framing here is like
+room centralizes governance without
+centralizing enforcement. That is what
+the uh like you know what makes the
+platform really adoptable. uh it
+respects existing systems but fixes the
+part that was missing across everywhere.
+Consistent life cycle management and
+auditability across production
+resources.
+So uh let me actually cover the Rome
+data model. It is intentionally very
+small. If you see there are like you
+know fundamentally five tables access
+requests, subjects, applications,
+decisions and comments. The central
+table is access requests. Every row
+essentially uh represents one permission
+request or grant. Uh the row captures
+who is asking, who the access is for uh
+what the application access belongs to
+and what resource is being uh accessed
+and what relation or permission is being
+requested and how long the access should
+last.
+One important detail here is that the
+requesttor and target subjects are
+separate fields. If you see that this
+means that someone can request access
+for themselves but a manager or like you
+know a service owner can request
+basically access on behalf of someone
+else as well.
+Every request has basically has a TTL
+here. Nothing is intended to be
+permanent or like uh
+indefinite by default. The request has
+an expiration time and that expiration
+time becomes part of the room life
+cycle. This really helps. One more thing
+is like you know if you if you don't
+have any like you know long-standing
+access you really don't need socks
+compliance because that is what
+fundamentally socks tries to do is like
+you know does every access have like a u
+expiration behavior. So that is what it
+like you know really solves that. The
+subjects table is really polymorphic. A
+subject can here be like a user a group
+on call rotation or another identity
+like object. This is really important
+because access governance is not always
+user to resource. Sometimes a requesttor
+and approver can essentially be a group
+a service identity or an onpar role. Uh
+the application table here basically
+represents the authorization back end
+plus the tenant. For example, one
+application here could be like uh AWS
+pro, another could be a Kubernetes
+cluster and another could be a generic
+like tenant into our generic
+authorization service.
+The separation really matters here uh
+because multiple applications can still
+use the same uh back end but still need
+to be governed independently.
+App A uh app B or app C can still use
+the same authorization system but they
+have different owners uh resources
+permissions approval rules and
+compliance requirements. For that reason
+if you see object ID and like relation
+ID are really stored as strings. Ro does
+not try to like uh force every backend
+into that one like you know rigid
+permission scheme. It lets each back end
+define their own like you know resource
+and permission model while Rome like
+really standardizes the governance life
+cycle around it.
+U the decision table if you talk about
+that it really captures approvals and
+that is very deliberately separate from
+like you know the access request table.
+A single access request can have many
+decision roles. Uh that really gives us
+the native support for multi-party
+approval. Uh for example, a request
+might require like three-step approval
+from the resource owner, your manager
+and like a source control owner. This
+really helps us to like you know
+decouple and like know scale up scale up
+as number of approvals you want. The
+request only moves to approve when the
+desired approvals are met. So for
+example like if it requires three
+approved only when all those three
+approved that is when like a request is
+approved. If a rejection is existing
+then basically uh the request is
+canceled or if it is like you know uh
+the required number of approvals are not
+met then the request does not move
+forward. This like you know design
+really helps us to avoid like you know
+this like hard putting approval
+workflows into the same request itself.
+Instead of treating every special case
+as like custom logic, approvals become
+like data.
+There's one more important thing here
+which is the comments table. It is the
+audit thread. It captures context,
+discussion, justification and review
+history attached to like a request. We
+chose to like you know have comments
+here essentially because we mod this in
+favor of bre. I'm not sure how many
+people are familiar with bre. It's like
+a Rex is a tool where like you know you
+can submit budget requests and like you
+know it goes to a multi-party approval
+and people can add comments and then
+eventually it's approved. This is
+something that is very important is that
+like you know often today when you go
+and request a resource the reason of
+like you know why did you request a
+resource or like you know what uh or
+like you know there's a discussion
+around it that happens in sometimes in
+Jira and sometimes in slack and that
+context is like know really missing from
+the request. So what matters is like
+when the request is approved and if I as
+a security engineer have to go and audit
+that there is like I have to follow like
+you know three different places. So
+that's what like really makes comments
+helpful here. So like when you file a
+request you can have that conversation
+just next to it and it gets told. So
+eventually when you want to like you
+know reordit that request you can go
+back and really like look at that like
+you know comments and see like okay this
+is the reason why sometimes like you
+know and sometimes it's like an
+exception. So that's also like really
+helps us to understand why uh what's the
+justification for that. There are like a
+fundamentally few design choices like
+you know worth calling out here. Uh
+first we use postress here instead of
+like a key value store. Uh because audit
+and like you know uh compliance
+questions are very join heavy. So that's
+why we went with the relational
+database. We frequently needed to answer
+like you know who requested access and
+basically which application it belonged
+to and what comments or decisions are
+attached. Second the request group ID.
+It allows us to like you know support
+bulk request cleanly. If a user needs
+access to 10 resources, Rome can fan out
+that really like you know 10 first class
+request into 10 rows while still
+grouping them together as one user
+action.
+Uh third is the flexible state of ids.
+uh we let us define the user behavior
+per object instead of like you know
+really hard coding them into one like
+global status scenar
+like you know room to evolve the life
+cycle over time. Finally every like
+essentially uh request goes to a
+transactional outbox for like a same
+database transaction. So that like like
+essentially lets Rome persist the state
+of like know change and publish like the
+uh downstream reliably into like event
+based system without requiring us a
+two-phase commitment. The main idea is
+that like you know the data model really
+keeps the request uh data normalized
+auditable and life cycle aware while
+like really being flexible enough to
+support like many authorization
+patterns. I'll leave to sh next.
+>> Thank you. So now for the fun part uh
+how it all works. Um let's do this uh
+with a case study. Uh so I work in IM uh
+manage a lot of the IM related security
+house and let's say uh for this case
+study uh harsh is no longer part of my
+team. He works on a different team and I
+need access to a file uh in an internal
+file storage service. Let's say like an
+internal Google drive or Dropbox or
+something like that. Um and that file's
+in there and Harsha is the owner of the
+file. So think of like a Google Docs,
+right? Like you guys have Google Docs,
+you want to request access to read a
+file, someone else has to approve it.
+That case study. How do we do this in
+Rome? It's actually very similar and
+very simple. You go onto the Rome web
+UI, find the object, request access for
+the subject. In this case, it's my team.
+Uh provide like a time to live, expiry,
+justification, all of that. Rome here,
+Rome service, um the part in blue, um it
+accepts that request uh and it
+determines what is the right
+authorization backend for this
+application. So you know file storage
+service can be uh any one of those uh
+like pink applications and it can choose
+the authorization backend of its choice.
+Um, Rome determines what that backend is
+and through a a series of shared backend
+API interfaces that we define. Uh, it
+determines who the right approvers are.
+In this case, Harshett uh and it sends
+Harshet and other approvers uh a
+notification saying like hey Shonax team
+wants read access to this file. Uh in
+this case the bonus of approval actually
+goes to the subject matter expert
+instead of some default like um like uh
+tech team or like um like a corebench
+team for instance which really improves
+your security threat model. Once the
+approver has uh you know checked checked
+out the request and approves, Rome sends
+a request to the authorization back end
+again saying like hey this is good to go
+add that permission and the next time I
+or anyone in my team go on to file
+storage service and try to open that
+file I will get that access and I'll be
+able to open that file because it's
+checking against its own authorization
+back end. Um if at any point we choose
+to revoke that access same thing we
+propagate that event to the
+authorization service and it will remove
+that permission. Now, why are we
+delegating the actual authorization
+component to a separate service in
+yellow instead of doing it inside of
+Chrome, right? Like Google Drive, it
+manages its own authorization. Dropbox,
+same thing. Why are we delegating that?
+And the reasoning is because we want to
+solve for all applications, not just
+these file storage systems. Every single
+application needs its own way of doing
+authorization. Some want to do RO based
+access, some want to do attribute based.
+You might even want to like keep a YAML
+file with your policies. That's
+completely up to you, the developer. We
+want to help you solve the governance
+problem. And that is why by enforcing
+this back-end interface, we can help you
+do that by providing a common uh
+governance platform for all
+authorization systems.
+So back to the case study, PowerShell
+approves uh that permission exists in
+the OZ system. What happens is that the
+next time I open the file store service
+and I click uh you know uh open its
+whatever ai system in yellow says yes
+you have this permission exists there's
+a way to traverse from my user object to
+the my team to the files the file in the
+file storage system and therefore go
+ahead give shown access
+cool are we still following good now
+let's consider another case where my
+team has access, but I get reordered to
+a different team. I'm now an infra. Um,
+well, my team should still have that uh
+access to be able to read that file, but
+I'm now in a different team. I shouldn't
+have that access. Um, this means that
+whatever Rome uses to determine access
+needs to always be current. Governance
+is only as good as the data behind it.
+For apps to trust Rome, the underlying
+data should always be correct and
+current. And this is really a big data
+problem. We want to continuously ingest
+data from various sources like you know
+databases, your HR management systems,
+S3 buckets and so on. Uh and make sure
+your access graph is kept current.
+Traditionally big data problems are
+solved uh through like tools like Apache
+Spark or Flink or Airflow
+and all they do is they do like they
+pull data from somewhere transform it
+and then load it somewhere. It's called
+ETL uh and it's distributed across
+compute uh in your like AWS uh EC2s and
+so on. uh and all these workers
+communicate through some sort of like
+distributed cube like a Apache Kafka or
+SQS
+Rome injection framework though pardon
+blue is very similar it's uh effectively
+an ETL pipeline but it has a gRPC
+service wrapper what it does it it takes
+data again from multiple data sources
+transform transforms it however you want
+it and then loads it to an authorization
+system of your choice Then Rome service
+can talk to that authorization system
+through those backend APIs that we run
+over. Now you're probably asking why do
+we need those gRPC wrapper, right? Like
+it sounds like you're pulling data,
+transforming and loading it like any
+other ETL service.
+The reason is because you want to do
+both a push model and a pull model. Uh
+traditional ETL works great in pull. You
+want to uh write a ETL pipeline that
+runs every five minutes, toss to your
+octa or work day, pulls your org schema,
+transforms it, loads it. Great.
+Wonderful. What happens now if your org
+schema is 50 GB and you want to run that
+every second? Your compute's going to
+blow up, right? And also like your or
+schema is not changing every second. You
+just have that kind of latency or that
+kind of cadence because you want to be
+more real time. So really what we want
+to go towards is an event- driven
+architecture where your uh upstream data
+source can alert you when something
+changes and they only send the the
+change the delta and then your uh ETL
+pipeline process it. That is where the
+gRPC wrapper comes in because you can
+expose your gRPC endpoints to these
+upstream data sources and they can hit
+those with your with their delta. You
+process it, save it in your OC system
+and you're good to go. So back to the
+case study, I moved to a different team.
+Uh as soon as I moved to the different
+team, the HRMS, whatever HR system you
+use, shows that I moved to a different
+team. That change change gets picked up
+by RIP, it processes it, stores it in
+the OC system. And the next time I go to
+the file storage service and I click
+open this file, it will hit that oxy
+service, see that there is no longer a
+mapping from me to my old team and
+therefore it will revoke my access.
+Cool. So with that said, let's recap the
+user experience, what we actually care
+about. Uh everything starts with an
+access request. Uh ro you submit that
+access request. It contains a subject
+who the access is for. uh includes an
+object what you're trying to access the
+relation uh it's basically the
+permission read only right so on uh a
+time to live when you until when you
+need that access for by default we
+enforce uh time to live to always be
+existing uh Rome is ephemeral by default
+we never want standing access and of
+course there's a justification you know
+hers doesn't want to give me access to
+it files just because I want it um now
+with that said once you have that
+request coming into Rome. Rome validates
+that uh those fields and then it routes
+it to the appropriate backend and the
+appropriate approvers approvers get
+notified. They uh approve or deny and
+once all the approval uh requirements
+are satisfied uh ROM instructs the back
+end to add grant the permission uh and
+then also schedules an expiry event that
+it will call in the future. So if the
+TTL is 6 months, the expiry event will
+be scheduled for 6 months in the future.
+And when that event triggers, Rome will
+then instruct the authorization back end
+to remove that permission.
+Note that every single state transition
+you see here is actually saved in an
+appendon audit log. This is crucial for
+the compliance audits that mentioned
+previously. uh when socks comes to us uh
+you know twice a year they ask hey
+there's a super important uh you know
+data store with PII want you to tell me
+exactly who access this data store uh
+how often what kind of access it took us
+weeks sometimes months to do that a lot
+of effort and a lot of manual effort
+with Rome it takes seconds and it's
+self-service so we can actually do
+important work um also So what happens
+when your uh company experiences a
+security breach? Some user gets
+compromised and you have to tell the
+government especially if you're a public
+company, hey what happened and how much
+damage do you have? Before it's really
+difficult to determine because you have
+so many like fragmented systems. Now
+with Rome with the same process you can
+determine hey this malicious or this
+user got compromised. These are all the
+different accesses that they they had
+and through certain uh behavior
+analytics you can tell like hey these
+were the access uh grants that they were
+able to use to do XY Z and that is a
+huge bonus for security.
+So where does Rome's impact live? It
+actually lives in two different places.
+There's security and productivity
+impact. On the security side of course
+um our first customer for Rome was
+actually a SSH proxy service that we
+built ourselves. Um so Roblox actually
+has a lot of our compute in our on-prem
+uh data centers and we need our
+engineers to be able to SSH to those
+machines. Um we have like millions of of
+those machines containers especially and
+previously when they tried to SSH those
+systems they like the authorization call
+that uh the system would have to make it
+took upwards of 650 milliseconds with
+Rome and Rome's default authorization
+system that it really integrates well
+again Rome doesn't implement the
+authorization but we have uh
+authorization systems that we integrate
+well with. We brought that um latency
+down to five milliseconds. That's a huge
+bonus. Um we also uh saw a drastic
+reduction in standing access replacing
+it with 4 to 8 hour just in time access
+because now requesting access is so
+easy. It's literally click a couple
+buttons if that
+people just prefer that more. You know
+engineers by they're they don't want to
+violate security concerns. It's just
+they will they want to complete their
+jobs. So they will do whatever is
+easiest but if the secure secure process
+is easy they will go for it. So now our
+SRES our infra engineers they are opting
+to use Rome even though what they might
+have broad access that access is very
+time so the risk to exposure is very
+minimal. We also saw a dramatic increase
+in adoption of strong oz. So like I
+mentioned the SSH proxy service that we
+implemented that used uh a very like um
+inefficient way of doing authorization
+because Rome in integrates with much
+stronger and much more efficient
+authorization services. We opted to
+migrate that SSH proxy service to this
+new authorization system. And just like
+that other services and other service
+owners are choosing to do the same
+thing. And as a result, we see a drastic
+organization shift towards a stronger
+security profile, which is a huge bonus
+as well. On the productivity side of
+things, we already mentioned the time to
+complete compliance audits drastically
+reduced. The time to complete access
+reviews. So if you are an S sur and you
+have broad access, you might want to
+periodically review what kind of access
+you actually use and what kind of access
+you don't really use. This would take
+you a lot of effort and a lot of time,
+which no one has. Rome automate auto
+automates this by sending notification
+events whenever your timebound access is
+about to expire a month ahead or two
+weeks ahead and you can be like oh
+actually I never used that access I'll
+just go ahead and revoke it and that way
+we can continue to trim down your uh
+track profile
+uh and finally dduplication you know
+this is not a uh unique problem that
+people face across the industry everyone
+needs to manage their access and every
+single team at Roblox has their own
+authorization system and they're like,
+"Okay, let me build some way to like
+govern that." We were able to go to more
+than 10 teams across Roblox and we're
+like, "Hey, we're building a generic
+system for all of you. Give us the
+features you need. We will build it for
+you. You go focus on more important
+work." And that way we're able to
+allocate our resources across the
+organization much more effectively. So
+again just to uh summarize better
+security metrics, faster uh adoption of
+authorization uh simpler access requests
+and better resource allocation were the
+top uh outcomes of Rome. So having done
+all that you know great things great
+impact if we went back in time a year 6
+months ago is there nothing we would do
+differently and of course not there's
+always lessons learned. Let's go over
+the top three. So if you remember the
+Roman judgment framework, the riff
+architecture, it's an ETL pipeline.
+There's extractors, transformers,
+loaders. It's a distributed uh service.
+And in order to communicate between each
+of those workers, we needed a
+distributed queue. We chose to use
+Kafka. Kafka is great for that. It's um
+it handles scale really well. You can
+configure it. Uh however just the nature
+of Kafka and this root problems is that
+you need to focus work a lot to optimize
+it configure it and it's really
+difficult to debug you know you can't
+use exactly use a standard ID debugger
+or like console print statements you
+have to rely on metrics and distributed
+logging to solve it which takes a lot of
+time and while we're doing this we
+realized hey we're using a separate
+service called temporal with just to
+orchestrate our jobs.
+Temporal can do this for you. Temporal
+can build your workflows such that you
+know here's a function that goes and
+fetches your data. Here's a function
+that processes it. Here's a function
+that enriches it. Here's a function that
+loads it to the authorization service.
+You can write that all in a temporal
+workflow and temporal will do your inner
+process communication your IPC for you
+which takes away a lot of the technical
+complexity of managing your copy
+cluster. Temporal also provides you a
+stack trace. So if your message doesn't
+get processed at any point, you can look
+at your entire stack trace and see where
+it fell through which is you know huge
+bonus and something if we were to do
+this again we would opt for instead of
+trying to build our own copa cluster. Um
+also Rome uh was built to solve just in
+time access for everyone at Roblox. This
+works great for your standard org schema
+based access. But what happens when
+there's similarity in job functions
+across the org schema? For instance,
+let's say Harsha and I, we're in
+different teams, right? But we're both
+security engineers. We both access
+similar things. So our access graph will
+look similar, but our access graph will
+also be duplicated. That's wasted
+resources. Imagine we could just have an
+IM role uh that we both share. The IM
+role has the relations to the respective
+resources that we access and we just
+have a relation to the IM role. That way
+we eliminate a lot of the duplicated uh
+resources, duplicated memory allocation
+and that in fact reduces the
+authorization latency.
+this would be the ideal way and this
+could be done if we knew um that Harsha
+and I we both do similar jobs. The
+problem on Roblox is we culturally did
+not have data. So we had to build Rome
+to gather that data so we can eventually
+build these IM rules and build these
+resource roles. Um so my advice to you
+know uh me if we we have that data is to
+focus on that or you guys uh if you have
+that data focus on your access patterns
+figure out those roles and personas and
+build those into your systems before you
+build all of Rome uh in effect. And
+lastly and this is for the product
+managers in the room uh always focus on
+your user stories. uh our initial ask
+was uh hey go build a web UI and the
+back end to manage access but as we've
+seen over the last six months with the
+rise of AI agents is people actually
+really like their Slack bots and their
+agents to do everything for them uh to
+the point where they just want to tell
+uh their AI AI agent hey I need to build
+this feature and oh by the way if you
+don't have permissions go and request
+that permission and handle it for you so
+what do you need for that you need the
+the chat integrations, you need the MCE
+servers and uh initially we didn't make
+that investment. We were able to quickly
+uh pivot to start those work streams and
+we're those are inactive development. Um
+but my advice here is to always keep
+tabs on on your users and their user
+stories and make sure that you're
+focused on that and not just uh what you
+initially set out to do.
+So uh just to wrap it up here, I know
+we're uh nearing the end here. Where are
+we with Rome and what's next? So, I
+already mentioned we onboarded the SSH
+proxy service. Uh that's going great. We
+also um our team has an internal generic
+authorization service that we can
+integrate with. Every single customer
+that uses that generic authorization
+service for their applications, they
+automatically get to use Rome. And
+actually that's a big reason why they
+even want to use that generic
+authorization service is the great way
+to manage access uh in progress right
+now. How do you get access when things
+are on fire when your infrastructure
+breaks when there's networking issues?
+How do you still get access to
+troubleshoot? That is something we're
+trying to focus on. We're also trying to
+figure out how can we manage access of
+identity providers like octa and ad
+groupoups so that people can get access
+to vault and people can get access to
+whatever resource that is managed by
+those octa groups or ad groups. Uh on
+the topic of vault and other cloud
+providers um AWS GCP uh kubernetes
+providers they all have their own way of
+managing access. We don't want our
+engineers to go to each of those
+individual systems to do that. We want
+to integrate that into a run. So that's
+an existing work stream. And finally,
+service accounts. Services need access
+as well. Similarly, how do you maintain
+that? That's also an existing work
+stream going forward. LLM based uh
+access queries and management. Imagine
+you're you just joined Roblox tomorrow
+and you could just ask your um you know
+your uh LLM agent. Hey, like I kind of
+don't know what I need to do, so just
+give me access so I can get get working
+and hit the ground running. And it can
+just go and figure out, hey, Harshett's
+on your team. Harshett has this kind of
+access. You probably want to access that
+and files that request.
+Similarly, um user behavior analytics.
+Uh imagine if you could just uh see like
+hey like you could get prompted hey like
+you haven't used this access that you
+requested three months ago at all maybe
+it's time to deprecate that and user
+behavior analytics would be able to tell
+you that because it integrates with the
+authorization systems and every time an
+authorization system determines hey this
+this policy is being used it will log
+that and you can aggregate that data to
+build these analytics and finally uh
+agent persona is you have these AI
+agents that live in different uh
+environments in sandbox environments in
+the cloud on your machine all those have
+different threat profiles. Um so you
+probably want to manage that access
+differently in each case. So in those
+cases we want to have Rome support that
+out of the box as well. Um with that
+said thank you all for uh putting up
+with us. I know this was a long talk.
+Um, but I hope you guys learned
+something. It was really fun for us to
+work on it and I hope it was fun uh for
+you guys too. Thank you.

@@ -1,0 +1,568 @@
+ABOUT
+================================================================================
+Title: What Alzheimer’s Teaches Us About Security - Andrew Lucas
+Author/Channel: BSIDES LANCASHIRE
+Channel URL: https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew
+Video URL: https://www.youtube.com/watch?v=0H4qI28hQdY
+Video ID: 0H4qI28hQdY
+Published: 2026-07-06
+Duration: 19:41
+Views: 14
+Likes: 1
+Comments: Unknown
+
+Description:
+No description provided.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# What Alzheimer’s Teaches Us About Security
+
+**Author/Speaker:** Andrew Lucas  
+**Author/Channel:** BSIDES LANCASHIRE  
+**Channel URL:** https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew  
+**Video URL:** https://www.youtube.com/watch?v=0H4qI28hQdY  
+**Published:** 2026-07-06  
+**Duration:** 19:41  
+
+## Author credentials
+
+According to the transcript, Andrew Lucas:
+
+- Has approximately **25 years of experience in media and the arts**.
+- Studied **computer science as part of his degree**.
+- Has led **security and IT transformation projects** for many organizations where he worked, including the **BBC**.
+- States that security and IT transformation were not usually part of his formal job title, but that he was asked to lead such projects because of his background and interest.
+
+**Affiliations:** No personal institutional affiliation was provided beyond the BSIDES LANCASHIRE channel hosting the talk.  
+**Contact details:** No personal email address, social-media profile, or other direct contact information was provided.
+
+## Summary
+
+Andrew Lucas uses his personal experience of caring for his mother, who was diagnosed with Alzheimer’s, to challenge conventional approaches to cybersecurity and information security. His central argument is that security systems should not assume that people will consistently remember complex policies, make perfectly rational decisions, or behave correctly under pressure.
+
+The talk begins by criticizing the common framing of security incidents as “human error.” Lucas questions the usefulness and sourcing of the frequently cited “95%” human-error statistic and argues that blaming individuals overlooks the design of the wider sociotechnical system. Security discussions, in his view, often emphasize technology while giving insufficient attention to how people actually think and behave.
+
+Lucas introduces dual-process theory as a useful, though simplified and criticized, model for understanding decision-making. He describes “System 1” as fast, emotional, and automatic thinking, and “System 2” as slower and more analytical. People may believe they are carefully reasoning through decisions, while much of their behavior is actually driven by emotion and subsequently rationalized.
+
+He connects this model with observations from Alzheimer’s disease. He explains that his mother’s memory is not always simply “lost”; access to memories can be fragile and inconsistent. At times, she may reason coherently, but without access to particular memories she may not recognize people or understand where she is. Her resulting actions can therefore be rational within the context available to her.
+
+Lucas identifies several common themes between Alzheimer’s experiences and cybersecurity:
+
+- **Uncertainty:** A familiar approach may work for a while and then unexpectedly stop working.
+- **Limited capacity:** People have finite energy, attention, and ability to process information.
+- **Dynamic context:** Outcomes depend on the surrounding people and environment rather than following a simple linear process.
+- **Adaptation challenges:** Systems and individuals may struggle when circumstances change.
+- **Dependence on familiarity and reassurance:** Under stress, people tend to rely on familiar cues and need support to make sound decisions.
+
+He relates these themes to **resilience engineering**, particularly work associated with David D. Woods. Lucas argues that resilience depends critically on people, yet people are often missing from cybersecurity legislation, standards, codes of conduct, and guidance. He specifically mentions the Cyber Security and Resilience Act as an example of a context where the role of people should receive greater attention.
+
+The practical conclusion is that organizations should design security systems around human fallibility rather than idealized behavior. Security guidance should be available when users need it, cognitive load should be reduced, and reporting or verification procedures should be simple enough to become habits. Organizations should also replace blame-oriented responses with a culture that encourages early reporting, discussion, and learning from failures.
+
+## Technical innovation and authors’ ideas
+
+The talk’s main contribution is a conceptual design approach: use insights from cognitive behavior, Alzheimer’s, and resilience engineering to redesign cybersecurity controls for real human limitations.
+
+Rather than presenting a new software tool or protocol, Lucas proposes changes to the architecture and operation of security systems:
+
+1. **Design for human fallibility**  
+   Security controls should assume that users will forget, become distracted, misinterpret instructions, and make mistakes. Systems that depend on perfect compliance with lengthy policies are inherently fragile.
+
+2. **Deliver guidance at the point of need**  
+   Users should receive prompts and instructions during the relevant task, rather than being expected to remember information from prior training or documentation.
+
+3. **Simplify reporting mechanisms**  
+   Lucas suggests making actions such as reporting a phishing email as easy as possible—for example, through a simple button instead of requiring users to remember a complicated reporting address.
+
+4. **Reduce policy complexity**  
+   He questions whether organizations need hundreds of information-security documents and suggests beginning with a concise set of approximately ten high-level principles that can guide users toward more detailed policies.
+
+5. **Normalize pausing and verification**  
+   Users should be encouraged to stop and think before acting on unusual requests. Verification should be framed as a positive behavior rather than merely teaching people what not to do.
+
+6. **Use two-channel verification**  
+   Lucas proposes verifying unusual or suspicious requests through an alternative channel or path. He describes this as a behavioral equivalent of multifactor authentication: trust is not based solely on the original communication channel.
+
+7. **Build secure behavior into habits**  
+   Structured routines should replace reliance on individual judgment in situations where users are tired, busy, emotionally stressed, or overloaded.
+
+8. **Prioritize safety over speed during pressure**  
+   Systems should anticipate that errors are more likely under pressure and should support safe decisions rather than forcing users to act quickly.
+
+9. **Treat the sociotechnical system as the object of improvement**  
+   When an error occurs, organizations should examine the technical, procedural, and behavioral conditions that enabled it, rather than focusing only on the individual.
+
+10. **Use non-blaming incentives**  
+    Threatening users or relying on punitive language may discourage reporting and learning. Lucas recommends a more positive culture that encourages people to report problems quickly and discuss what happened.
+
+## Key technical ideas
+
+- Security systems should be designed for **human fallibility**, not perfect user behavior.
+- Memory is an unreliable security control; important guidance should be **available at the moment of action**.
+- Complex documentation increases cognitive load and should be replaced or supplemented by **short, hierarchical guidance**.
+- Security behaviors should be converted into **simple, repeatable habits**.
+- Unusual requests should trigger **pause-and-verify behavior**.
+- **Two-channel verification** can provide a behavioral analogue to multifactor authentication.
+- Stress and emotional pressure degrade judgment; security controls should be designed to remain effective during those conditions.
+- “Human error” should be reframed as a possible **system-design failure**.
+- Resilience depends on integrating people into technical, organizational, and procedural security design.
+- A non-blaming culture can improve rapid reporting, organizational learning, and recovery from failures.
+
+## Overall assessment
+
+Lucas’s talk offers an interdisciplinary reframing of cybersecurity. Its technical innovation lies less in a new mechanism than in applying cognitive and resilience concepts to the design of security controls. The central design principle is that organizations should make the secure action easy, timely, memorable through repetition, and supported by the system itself—rather than expecting users to retain complex rules and apply flawless judgment in stressful situations.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+So, uh, so yeah, last year's talk was a
+magic show as well as a presentation,
+but I'm afraid no magic this year. Uh,
+this year I've got something a little
+bit more personal, bit more serious, uh,
+but also, I hope, illuminating and
+helpful. Um, it's about what Alzheimer's
+teaches us about, uh, security. Now,
+before I kind of go into that a little,
+let's just try and work out where the
+origin of this comes from. You've
+already heard Rob rant about this. Um,
+uh, this was a slide that I got my
+background. Actually, by the way, Rob,
+not even close. Um, my background was 25
+years in media in the arts. Um so the
+idea that he is the is the the the most
+cyber security virgin or um
+inexperienced one in this room
+absolutely not. To be fair I did have
+computers and just ensure I have some
+credentials for you. I did have cyber uh
+uh computer science in my background. I
+did it as part of my degree. I've
+actually run security and IT
+transformation projects for pretty much
+all of the organizations that I've
+worked in including the BBC. it just
+never was in my job title. I just got
+asked to do them because of the because
+of my own background and interest.
+This this particular this uh uh annoys
+me for some of the reasons that Rob
+talked me about. First of all, uh um
+human error. Uh it's absolutely
+fundamentally the wrong way to look at
+it. Um the statistic 95% I would
+probably argue uh I wasn't entirely
+sure. It was IBM by the way. didn't know
+who it was from. It was from IBM in
+2014. I'm not entirely sure that the
+statistic was uh well sourced and of
+course they're Americans and so
+therefore they can't spell recognize
+correctly. Um it drove me to try and
+understand well I wanted to understand
+what is it about that 95% and why is it
+that I look around and just as Rob was
+saying that we're seeing the focus of
+our socio technical system on the
+technology not saying they're not it's
+not useful really important but actually
+there seem to be so little focus on
+people so very much kind of those
+origins that uh that Rob was talking
+about at the end there. So I kind of
+started looking at various um
+psychological uh and I'm not an expert
+in psychology so you can kind of um and
+one of the one of the theories that I'm
+going to touch on here is dual process
+theory
+that basically breaks carnean uh
+building on on previous people as well
+but he divided our thinking up into
+system one thinking which is essentially
+a very fast and we again 95% of uh of
+our thinking is rooted in uh our system
+one thinking. Um and then there's the
+system two. The problem is that our um
+we trick ourselves. We think we're doing
+a lot of system two. We think we're
+being very analytical and and and
+working things through. The truth is a
+lot of our thinking is emotional. It is
+it is based in that system one thinking
+and we're then backfilling it with the
+system two. Now I would say um our
+colleague over here will probably uh uh
+say to me as well actually there is to
+some degree an element by which this
+dual process theory has been criticized
+for being slightly naive for missing a
+lot of the nuance. I would say yeah
+that's absolutely right but it's a
+really good uh uh easy concept I think
+upon which we can kind of get hold of
+some concepts. We don't need to be
+completely psych psychology experts.
+we've got those people out there who are
+doing that. But I think it gives us
+something to get hold of in part of that
+people uh people issue that Rob was
+talking about. It also got me thinking
+about the biology of it all as well. And
+so therefore it was probably not
+surprising when uh in summer of 2024 so
+nearly two years ago now um my mom uh
+was diagnosed with Alzheimer's
+suddenly very over very much overnight
+although we'd had some concerns about
+the you kind of usual forgetfulness. I
+have that myself anyway. So um but uh
+suddenly we had a a a dramatic turn in
+the way that she was behaving and
+understanding who she was with i.e. her
+husband Peter um uh and just not
+recognizing him quite distressing. It
+led to her going into hospital. So this
+picture is actual fact taken just
+outside one of the units down at the
+Royal uh Lancaster uh infirmary on a
+beautiful sunny day. It was one of the
+first days that we actually managed to
+get mom off the ward. Mom's background,
+by the way, was as a nurse of geriatric
+patients. She had nursed a huge number
+of people with um dementias and
+Alzheimer's in her past. Um but um uh
+and so when she was in the hospital, she
+was actually thinking that she was there
+to provide advice to the to the to the
+nurses who were in there. She didn't see
+herself as a patient in there. She saw
+herself as somebody who had come in to
+guide and why wasn't she allowed home
+from this job that she'd suddenly been
+suddenly been given to her.
+Actually, that's one of the major issues
+that we've had. But we'll um I'll maybe
+touch on that if I have time.
+But why am I bringing together
+uh Alzheimer's and cyber security?
+Um obviously there's a very personal
+story for me for both. I've got my
+background was around people rather
+largely. That's why I started asking the
+people questions. Um, and then I've got
+my mom who's got Alzheimer's. So Oliver
+Saxs um uh was did a lot of very famous
+studies which looked at people who had
+um uh mental disorders, me uh problems
+and his interest there was not just
+about the helping those people although
+that was very much a motivation but it
+by us understanding the diseased brain
+we also help to understand the working
+brain because If we break our bone, we
+go into the hospital, we have an X-ray,
+we understand what's going on with that
+bone. If we've got heart problems, we
+put electrodes on our system. We could
+also stand as well, but we look at the
+results of those and we understand
+what's going on with that heart. Very
+much more difficult to do that with the
+brain and the way that we think, the way
+that we make decisions.
+But uh I was inspired by Oliver uh and
+the work that he'd done. These by the
+way, these are books. I don't know
+whether you any of you remember those uh
+pieces of paper with print on. Um but
+the um he a huge uh amount of literature
+also the the the person who was the the
+the psychotherapist in uh the Awakenings
+film. Uh also uh for those of you who've
+got a classical bent, they're the
+subject of an opera uh called the man
+who mistook his wife uh for a hat. In
+fact, the subject of this particular
+book here. So by bringing those
+together, we can maybe understand a
+little bit about what the functioning of
+the healthy brain is.
+So just uh a very quick uh primer to
+what actually is happening with
+Alzheimer's. uh your neurons uh are
+basically got two uh key processes that
+are happening. uh uh you've got uh
+chemicals that are essentially wrapping
+around the neurons and preventing them
+from communicating to other neurons and
+then you have um uh towangles which are
+going on within uh the neurons and
+essentially degrading it and that
+ultimately leads to the kind of the the
+loss of memory mass the brain mass and
+essentially the the output of it is
+memory loss um although I would actually
+say It's interesting that it's not
+always loss so much as that the memories
+are fragile. It's like that they're not
+able the chemicals are not firing and
+they're not able to access those
+memories rather than having been lost.
+So actually that comes in waves and
+sometimes my mom is perfectly uh clear
+thinking. Um and by the way I something
+else this is not a madness. I don't
+perceive this as a madness that my mom
+is experiencing. Actually, a lot of what
+she is asking is enormously rational.
+It's just based on the fact that she
+can't access that memory that the person
+in front of her his her husband or that
+she had been married or where she is.
+So, of course, what she wants to do in
+that context is she wants to go home.
+So, it's a perfectly rational thing we
+would all want to do, right? I mean, um
+uh but uh it's it's it's actually basis
+is in the is in the loss. So some common
+themes really around both what I
+perceive as some common themes around
+sort of both Alzheimer's and security
+that sense of uncertainty
+um that uh your current approaches will
+work for a certain period of time and
+that you'll get you'll be able to assist
+and then suddenly they'll stop complete
+surprise. You don't you don't suddenly
+my mom is immensely surprised. Why am I
+here? Where how did I get here? what
+what what what did I do? Um uh a limited
+capacity to adapt because actually you
+know in terms of your energy levels in
+terms of your thinking it's limited
+about what you can achieve. Therefore
+you have balancing priorities uh and
+also that actually your it's your
+experience of this is is affected by
+those who are around you. It's a dynamic
+system. It's not a linear system.
+Well,
+that actually seems to uh reflect also a
+concept called resilience engineering.
+And there's a there's a somebody called
+David D. Woods who's done a huge amount
+of work here. And it seemed to me that
+actually when we looked at it, there was
+a fairly close read across from the uh
+principles that underpin the thinking
+around resilience engineering um to
+those experiences, those common
+experiences that I was finding within
+the cyber security uh cyber uh
+information security by the way uh and
+um and Alzheimer's.
+So
+actually really important this because
+we currently as you will most of you be
+aware I suspect we're currently exper
+there is a bill going through the house
+uh the houses of parliament just at the
+moment the cyber security and resilience
+act
+and actually what resilience engineering
+tells us is that people are absolutely
+critical to your organizational uh to
+resilience and yet if you look through
+that bill if you look through the uh
+codes of conduct. If you look through
+the guidance and the standards that we
+all work from, just as Rob was saying
+earlier on, the people are often absent
+from that really.
+So what are the observations and
+lessons? Um manmary is fragile. It's uh
+needs constant cues to reinforce their
+recall.
+So why are we building security systems
+that are based around uh the ability of
+our uh staff to remember that that
+segment of a document of is one of a
+hundred information security documents
+even the people who wrote those
+documents will not be able to get you to
+that right part. They have no way of
+getting to that. They can't recall it.
+Um uh so why are we expecting people
+whose jobs are not cyber security or not
+information security why are we
+expecting them to be able to remember
+that.
+So what could we do? Well actually let's
+just base start from a point whereby
+actually forgetting things is perfectly
+normal. It's a perfectly human thing to
+do. So can we actually remove the blame
+for that and actually provide guidance
+and prompts uh that are delivered to
+users at the moment that they need it
+rather than necessarily then having to
+remember what to do from uh from a
+previous point. Is there an ability, for
+example, um uh a rhetorical question? Is
+there an ability for us to put a a a
+button that will report through an email
+very simply? Um rather than having to
+remember the email address that uh a
+convoluted, by the way, how many
+convoluted email addresses have we seen
+about which which address to send a a
+fishing email or anything to? Let's make
+it simple um uh and uh not complex. So
+for example uh is do we really need 100
+level uh infosc documents or could we
+start with a basic set of 10 principles
+at the very top that lead us through at
+the very least lead us through on a
+journey through to a more detailed uh
+set of policy
+the cra constantly my mom is craving
+obviously being with her husband the
+fact she doesn't remember who who he is
+um is is the key problem, but also that
+sense of routine. Um,
+so
+let's understand that people all do
+trust what is familiar. They're looking
+for those things that are familiar even
+when they're necessarily wrong. Right?
+So the QR code is it looks perfectly
+familiar. I think that looks all right.
+Well, I can scan it.
+So what can we do about it?
+Normalize that pausing. Again, something
+you mentioned in your talk, Kelly, just
+stop, think before you proceed.
+Just make sure that we're encouraging
+people to do that, particularly in the
+in the situation of a uh request that
+seems out of the ordinary. Um uh so
+let's rather than teaching people not to
+do something, let's teach the positive
+of what behaviors we would like them to
+do. Okay?
+make that verification a habit and then
+I would say I don't I've not seen this
+so um uh this may be something that
+everybody's implementing I haven't come
+across it two channel verification it's
+the it's the behavior's equivalent of
+MFA yeah if you've got a request that
+feels in any way unusual or the timing
+of it is uh unusual or something about
+it does not feel right to you. Let's go
+and verify it via an alternative
+channel, via an alternative path.
+Alzheimer's p they need reassurance,
+constant reassurance. Most of my day uh
+is spent uh and by the way my I moved my
+parents and us to a house to live
+together in order to do this. So I'm
+actually experiencing this not quite
+24/7 but a large part of the day. Um uh
+so that reassurance is absolutely
+critical. If I don't, she spirals up
+into a panic. When you're up at a panic,
+nobody is thinking straight. Okay? If
+you're waiting for your users to be in
+the middle of a crisis situation
+um before they understand what they need
+to do, it's too late. You're going to
+have to you can can't they're not going
+to listen. Um, so we again nothing
+that's uh uh especially uh novel there.
+I think we all should know that that's
+when we're people when we're tired,
+we're busy, overloaded, that's when most
+likely those errors are going to uh so
+what can we do to uh make sure that
+we're expecting those errors are going
+to happen under practice, under um under
+pressure um and to prioritize the safety
+over the speed and make sure that what
+we recognize when those time those
+incidents are going to happen and what
+can we do to fix the system. By the way,
+I'm not just talking about a technical
+system. If we could provide technical
+support, great. But I'm talking about
+the behavioral system as well. What can
+we do to fix the system? Let's not blame
+the individual. Let's look at the bit of
+the system. Again, Rob talk most like I
+could have probably done this could talk
+in about 2 minutes because most of it
+was covered by Robin. Um and then
+finally
+emotions that system uh one thinking we
+are so driven by our emotional thinking
+um uh and so therefore it's not
+surprising that that is when um that's
+when things can uh um uh lead to
+confusions and to and problems.
+So, we need to recognize that. We need
+to recognize that emotional stressors
+degrade judgment. And so, what can we
+do? Let's try at the very least, let's
+remove the blame from errors. I'm not
+saying that you don't need to have
+ultimately um uh some HR policies that
+deal with uh persistent uh problems, but
+um and serious problems as well. But I
+think that there is a I think it's about
+the language that we're using. If we're
+threatening people, it's not helping.
+All right? It's the wrong message that
+we want to be. So, what could we do to
+turn that and make it of a more positive
+incentivization
+to uh to do the right thing rather than
+constantly telling people to do the
+wrong thing which they won't remember
+anyway. Okay.
+So key lessons design for human
+fallibility.
+Um don't base our systems on the
+expectation that people are going to act
+perfectly as we want them into those
+documents. They won't. If you design
+your system on that basis, it's going to
+fail.
+Replace judgment with a more structured
+um uh uh and habit. Try and build it
+into h people's habits.
+reduce that cognitive load.
+Uh, and let's try and turn that um, uh,
+negative view into a much more positive
+non-blame based culture. um that
+encourages people to uh talk about the
+issues to report things quickly and to
+uh and to reflect on what's happened so
+that we can then actually you know the
+best learning that we have is actually
+when things fail when things go right
+we're not learning it's when things are
+failing so we need to actually encourage
+people to just talk about it and then
+have a positive view about well okay so
+what do we do to put that right and that
+is my mom and Alzheimer's and hopefully
+a little bit of interest uh on
+information security. Thank you.

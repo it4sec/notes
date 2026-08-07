@@ -1,0 +1,1078 @@
+ABOUT
+================================================================================
+Title: Leveraging Sport Psychology Principles To Maximize Performance In Response Readiness - Jenny Lam
+Author/Channel: BSIDES LANCASHIRE
+Channel URL: https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew
+Video URL: https://www.youtube.com/watch?v=CHpZh_y5UKk
+Video ID: CHpZh_y5UKk
+Published: 2026-07-06
+Duration: 30:10
+Views: 7
+Likes: Unknown
+Comments: Unknown
+
+Description:
+No description provided.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Leveraging Sport Psychology Principles To Maximize Performance In Response Readiness
+
+## Author and source
+
+- **Author:** Jenny Lam (the title identifies Jenny Lam; the transcript appears to transcribe the speaker introducing herself as “Jam”).
+- **Channel/Publisher:** BSIDES LANCASHIRE
+- **Channel URL:** https://www.youtube.com/channel/UCxDCKy85C1u70CaspTj5-Ew
+- **Video URL:** https://www.youtube.com/watch?v=CHpZh_y5UKk
+- **Contact details:** No personal email address, website, or other direct contact information was provided.
+- **Affiliations and credentials mentioned:**
+  - Over 10 years of experience in the cybersecurity industry.
+  - Lancaster University alumna/alumnus.
+  - Cyber resilience adviser at Immersive.
+  - Ambassador for Liverpool and Chester for the Northwest Cyber Security Cluster.
+  - Previously worked in security operations, security monitoring, initial investigation, security engineering, and cyber exercising.
+  - Led a cyber exercising and readiness team at a global shipping company that had been severely affected by NotPetya in 2017.
+  - Former competitive ultimate frisbee player who qualified for the 2018 World Championships in Ohio and joined the GB women’s beach-frisbee team in 2019.
+  - Explicitly stated that she is **not a qualified psychologist** and that the presentation is based on personal interest and informal reading of sport psychology.
+
+## Summary
+
+The talk presents cybersecurity defense and incident response as a **team sport**, arguing that sport psychology concepts can improve individual and team performance during cyber incidents and readiness exercises. The author connects experiences from competitive ultimate frisbee with her professional work in cyber readiness, exercising, security operations centers, incident response, and organizational crisis management.
+
+Her central contribution is a practical framework built around three themes:
+
+1. **Process versus outcome:** During stressful incidents, responders should focus on the specific actions and procedures within their control rather than becoming distracted by the desired result, external judgments, or factors they cannot control.
+2. **Confidence building:** Confidence is treated as an active cycle involving positive and realistic self-assessment, taking manageable risks, experiencing success, and reinforcing that success.
+3. **“Foster your roster”:** Effective response depends on a high-performance team culture with a shared mission, clear roles, adequate depth, psychological safety, and constructive management of personalities and egos.
+
+The talk applies these ideas to security operations centers and incident response teams. Examples include analysts becoming distracted by executive reactions during a major incident, investigators becoming frustrated after failing to find evidence, or quieter team members withholding potentially important observations because senior people are present on a call.
+
+The author emphasizes that these psychological and team-performance practices do not replace technical competence. Organizations must first establish the necessary foundational knowledge, skills, processes, and documentation. Once those fundamentals are in place, the principles can help teams perform more consistently under pressure and extract greater value from exercises and drills.
+
+## Technical innovation and authors’ ideas
+
+The talk does not introduce a new cybersecurity tool, algorithm, or formal technical methodology. Its innovation is primarily **conceptual and operational**: it transfers sport psychology principles into cyber readiness and incident response practice.
+
+The most significant ideas are:
+
+- Treating cyber defense as a performance activity under pressure, similar to competitive sport.
+- Using psychological focus as a complement to technical incident-response procedures.
+- Connecting the sport-psychology concept of “process focus” to concrete cyber-response activities such as:
+  - Following incident-response documentation.
+  - Applying containment procedures.
+  - Recording findings.
+  - Sending regular updates.
+  - Changing search parameters or hypotheses when an investigation reaches a dead end.
+- Using frustration as a practical indicator that an analyst may be focusing too heavily on the outcome rather than the next controllable task.
+- Applying a confidence-building cycle to increase analysts’ willingness to communicate uncertain findings.
+- Framing the act of speaking up in an incident meeting as a manageable professional risk that can build confidence when handled constructively.
+- Treating communication and psychological safety as operational requirements, not merely interpersonal preferences.
+- Applying sports-team concepts to response-team design:
+  - A shared mission and culture.
+  - Clear responsibilities.
+  - Balanced capabilities rather than a team composed only of one type of specialist.
+  - Sufficient backup and depth to reduce dependency on particular individuals.
+  - Explicitly encouraged team behaviors.
+- Positioning exercises and drills as opportunities not only to test procedures, but also to develop confidence, communication, team dynamics, and high-performance culture.
+
+## Key technical ideas
+
+### 1. Focus on the response process
+
+In a major incident, analysts may become distracted by questions such as whether the breach is worsening, whether the CISO or manager will be angry, or whether the organization is “winning” or “losing.” These thoughts consume attention but are largely outside the individual’s control.
+
+The recommended response is to return attention to:
+
+- The current investigation task.
+- The applicable procedure.
+- The next containment or analysis step.
+- Documentation and evidence capture.
+- Regular communication.
+- Alternative investigative hypotheses when the current path is unproductive.
+
+The principle is summarized as **controlling the controllable**.
+
+### 2. Use frustration as a diagnostic signal
+
+Frustration is presented as a possible sign that the responder has shifted from process-focused reasoning to outcome-focused thinking. In practical terms, this should prompt the analyst to step back and ask:
+
+- What task am I actually responsible for now?
+- Which investigative techniques have already been tried?
+- What search parameters or hypotheses have not been considered?
+- What does the documented process require next?
+
+This creates a simple mental reset for high-pressure technical investigations.
+
+### 3. Build confidence through repeated action
+
+The confidence cycle consists of:
+
+1. Reframing negative self-assessment into a more tangible and constructive view.
+2. Taking a manageable risk or stepping outside one’s comfort zone.
+3. Experiencing success, or at least making progress.
+4. Recognizing and reinforcing the achievement.
+5. Gradually expanding the individual’s confidence and willingness to act.
+
+In a SOC, this can mean encouraging an uncertain analyst to share an unusual observation. Even if the observation is ultimately a false positive, communicating it may help rule something out and confirms that the analyst’s contribution is valid.
+
+### 4. Make it safe to speak up
+
+Incident response requires information to move quickly across the team. The talk highlights the danger of analysts withholding observations because they fear interrupting senior staff or being wrong.
+
+A response team should therefore create an environment where:
+
+- Uncertain but relevant findings can be raised.
+- Contributions are acknowledged.
+- False positives are treated as useful information when they help narrow the investigation.
+- Team members are encouraged to contribute regardless of personality or perceived technical status.
+
+### 5. Build a balanced and resilient response team
+
+A response team should not depend on a small number of individuals or a single type of expertise. The author compares this to a sports team in which different players have different positions and responsibilities.
+
+Operational implications include:
+
+- Defining roles clearly.
+- Balancing technical and wider response capabilities.
+- Maintaining backup capability when key people are unavailable.
+- Avoiding excessive dependency on specific individuals.
+- Ensuring the team has sufficient depth to sustain response activity.
+
+### 6. Establish mission and culture
+
+The author uses the example of the NASA cleaner who describes their work as helping build a spaceship to illustrate how a shared mission can connect every role to the wider objective.
+
+For cybersecurity teams, a shared mission helps personnel understand why their work matters—for example, protecting an organization, its industry, or vulnerable people from attackers. Leaders are expected to reinforce this mission through their own behavior and by encouraging the desired team culture.
+
+### 7. Treat exercises as performance-development activities
+
+Exercises should test more than whether a documented process exists. They can also be used to develop:
+
+- Individual confidence.
+- Communication under pressure.
+- Willingness to take action.
+- Team cohesion.
+- Psychological safety.
+- Leadership and role clarity.
+- The organization’s broader response culture.
+
+The author distinguishes between having basic technical skills and using performance principles to improve how effectively those skills are applied during stressful situations.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Thank you very much for joining
+everyone. Um, so my talk today is going
+to be on defense as a team sport. No,
+really. Um, I'll kind of explain what
+we'll be talking about as we go through
+it. Really loved Rob's talk. There's
+going to be so many kind of themes and
+I'm going to reference his talk a lot
+because all the points he's making fully
+agree with. Um, and hopefully you can
+kind of see how we're going to um, apply
+these to real world cyber readiness. So,
+first just a bit of an introduction as
+to who I am. So I'm Jam. I specialize in
+cyber readiness and exercising. Um I've
+had about over 10 years in the industry.
+I am a Lancaster Uni alumni. So it's
+really nice to be to be back here. Um
+I've sort of put my my timeline, my
+life, my career in logos. Uh so in 2011
+started at Lancaster University. Um got
+into cyber security by joining a module
+that I really wasn't supposed to be on.
+I don't know how I got through the
+system. and they showed a video of
+stuckset and I was there like how is
+this possible? How is it possible that
+there is a a virus or code that can
+change physical um physical output and
+create like that physical danger. So
+that's what started the journey. Um
+started doing like a placement year. I
+joined uh the Northwest Life security
+cluster at the time um supporting that
+and we'll talk about that later and
+we'll do a little plug for uh the
+workshop that we've got later on. uh
+moved into security operations. So went
+to a managed services company to do that
+security monitoring that initial
+investigation. Tried a little bit of
+security engineering as well and just
+trying to explore different areas and
+avenues of the cyber security industry.
+I sort of got to a point where I
+realized I really really just don't like
+staring at a command line for the entire
+day. I do enjoy speaking to people,
+helping people. So I started thinking
+about what is my next step. Um around
+2017 something happened to a company and
+all of a sudden there they have got an
+increased security budget and they are
+looking for a cyber exercising
+specialist. So I joined MK in 2019 and
+if you don't mart they are a global
+shipping company that were um hit by
+Netia back in 2017 quite badly. So uh
+that was great there working for a
+company with a big security budget who
+understood really wanted to mature their
+journey um and did a lot of exercising
+and readiness across quite a large
+global complex company.
+Uh ended up leading that team for a few
+years and then fast forward to kind of
+roughly today I currently am the cyber
+resilience adviser for Immersive. Um, so
+I do a a lot of exercising and readiness
+programs with customers and all sorts of
+weird and wonderful um industries uh
+like from postal services to electric
+vehicles to trains to gas. It's all
+strange uh but not very useful for pup
+quizzes. Um currently as well I came
+back to the uh Northwest Cyber Security
+Cluster. So I'm the ambassador for
+Liverpool and Chester. We are going to
+be running a workshop uh later today. Uh
+so please come check that out on behalf
+of the the cluster. But you're probably
+thinking okay readiness sure team sport
+but what what is the sport element? What
+gives me a right to kind of talk about
+this? Um so back again started Lancaster
+University I used to play ultimate
+frisbee. Has anyone heard of ultimate
+frisbee? Show of hands. Hey that's
+really good. Okay. A few years ago I
+would have had a a completely silent
+room. So um it was a hobby sport but got
+eventually quite quite good at it and in
+2018 um through the club that I was
+playing with at the time we managed to
+qualify for the world championships in
+Ohio. So it became a lot more intense a
+lot more training and it's an amateur
+sport. Um so it was all all selfunded.
+It's obviously quite a niche sport but
+there was still intense training weekend
+camps. um a lot of talk around social um
+sports psychology talking about how do
+we enhance our performance. Um so we did
+we did quite well. We won of three teams
+in the mixed division to represent um
+GB. And then in uh 2019 I also made the
+uh GB women's team for um sort of beach
+frisbee. So um I don't think we did very
+well. I was trying to not mention that
+but it still counts. I got the t-shirt.
+So um like I said I'm not a sports Oh uh
+yeah just to mention as well basically I
+found a lot of it was a lot of um
+pressure on yourself and that leads to a
+lot of sadness. Um so a lot of pressure
+a lot of doubting yourself a lot of
+thinking how can I be better why am I
+not performing why am I not doing well
+here and uh yeah that just leads to a
+lot a lot of sadness but I would like to
+say I am not a qualified psychologist
+but what I am going to talk to you today
+is the the similarities that I see
+across my two worlds so in the cyber
+readiness space in the exercise space I
+work with a lot of um security
+operations centers a lot of middle
+management or silver team right the way
+through to executives as well so we look
+at the whole end to end response, how do
+they communicate, what are the processes
+like? Um, but I generally prefer
+specialize working with security
+operations centers, looking at that
+technical exercising. How do you take
+that really focused concentration you
+need for your technical investigations,
+trolling through logs, trolling through
+alerts, correlating them, piecing
+together that timeline? How do you take
+that and translate it to something that
+the rest of the business kind of can
+talk about? And is again something Rob
+mentioned in his talk as well about
+being something that is really key to
+the industry that we work in. So I'm not
+a qualified psychologist. We just back
+in my frisbee days we did a lot of talks
+and I just had a personal interest in
+it. So this is just like loose reading.
+But I noticed there was a lot of themes
+that actually you could apply to the
+cyber world readiness world and to be
+honest anything in life. Um so as we go
+through today um we're going to look at
+three common sport psychology
+principles. There were so many avenues
+we could have gone down, but I've picked
+out my top threeish. Um, I sort of
+pulled them together as you'll see
+shortly. Um, and we'll start to see how
+they can apply uh to cyber readiness.
+But as we go through this, I would like
+you to kind of think of an example in
+your world in in your mind uh to kind of
+use as we go along. So, think about a
+time in your life when you had to train
+or practice for something. when you're
+training and you're doing something in
+preparation for something that you need
+to perform. So whether that be an exam,
+so you're, you know, revising, you're
+essentially training your brain and your
+knowledge to prepare yourself for an
+exam to perform in that exam. Maybe you
+play a musical instrument or maybe you
+work in the security operations team.
+Um, so you are doing preparedness stuff
+and you're uh doing your upskilling and
+preparing yourself for if the real uh
+the real incident happens or maybe just
+into gaming. there's like a boss battle
+or something that you just cannot get
+past and you go back and you kind of try
+and practice and get get through it. So,
+there's tons of examples you can use in
+your day-to-day life. If you've got
+something cyber related, great. But, um
+have that in mind and we might pick some
+examples uh as we go through.
+So, with that, let's dive straight into
+the first principle. So, this is
+probably my favorite one that I learned
+um kind of reading about uh sports
+psychology is process versus the
+outcome. So, this is about your mental
+focus. And again, the principles we're
+going to cover will focus the individual
+kind of aspect, but it may as well
+expand into the team aspect. If you're a
+manager, these are things as well that
+you need to consider for your teams. But
+for this one, this is a very individual
+focused mindset. So, when you are calm,
+perhaps you're training for something
+and there's no pressure, you are taking
+it easy, you're in a good flow state, so
+you're not worried about anything and
+you are fully focused on the process.
+And by that I mean what tasks you have
+to do, the techniques you're using to do
+this. So if I to come back to my frisbee
+days, um a lot of it was about, you
+know, how do you throw the disc? There's
+a lot of technique and making sure that
+you're accurate in your throwing. Um in
+terms of the the kind of way you run and
+the the paths that you take as well.
+You're very focused on the actions, the
+the focus goals of what I need to do.
+You're very grounded. Um I think a golf
+example is a good one about your swing
+technique. Um and you are controlling
+the controllable. You're not worried
+about anything else. You're just in your
+moment and this is where you perform
+really well. Now when you start thinking
+about the outcome, this is when you
+start thinking about factors that are
+beyond your control. So you start
+thinking about things that are not
+related to what you're doing, your
+process, your technique. So you start
+thinking about okay well you know we are
+3 nil down uh it's there's 15 minutes
+left on the clock we need to get this
+goal. When you start thinking about it
+you start feeling that pressure that is
+taking up your brain space. Even if it's
+a subconscious thought, um, and you can
+see my very rudimentary basic, uh,
+diagram here, it's still going to take
+up space and kind of clog your thoughts
+and clog your brain. You may be
+thinking, "Oh, if I if I hit the shot,
+I'm going to look amazing in front of
+the cameras. I hope there's a camera
+watching me." Again, something
+unrelated. It's out of your control and
+it's kind of taking up that brain space.
+Um, so thinking about are you winning,
+you may argue if you're winning in a
+competition uh scenario or competitive
+scenario that surely that's in your
+control cuz you're competing. Well, if
+you really break down the factors, you
+are controlling your performance, your
+team's performance perhaps, but you
+can't control the weather. You don't
+control how well the other team is
+prepared or what they're going through.
+You don't control any like external
+factors. So, you can only control what
+you can do. So um sometimes when you
+look at things saying are we winning or
+losing like it's not just a simple case
+of you control that there's a lot of
+external factors there but you can see
+that starts to kind of clog the brain
+starts to distract you and um the pro
+the principle behind this is kind of
+bringing that focus back down to what
+can you control uh ignoring those
+quieter uh ignoring the the external
+factors and bringing the focus um into
+your um your control.
+So kind of to summarize as on that
+principle, the outcome is about thinking
+about the results, thinking about the
+external, the end state, what is it
+you're trying to achieve. Um, and that
+involves thinking about factors beyond
+your control. The process is focusing on
+the specific actions that you need to
+perform in that moment. Now bringing
+this into cyber readiness. So let's
+picture the scene. You are a security
+operation center analyst. You are
+dealing with a major incident. So there
+is a lot going on. People are stressing
+around. You have your dashboard. You've
+got your logs that you're trolling
+through. You're trying to figure out
+what is happening, what is going on.
+There's major there's going to be a lot
+of noise. If you're focusing on the
+process or getting worried about the
+process, then you'll start thinking, "We
+can't let this breach get any worse.
+This is awful. Like, I need to get a
+hold of this now. Is the CISO going to
+be angry at us? Is my boss going to be
+angry at us? What are other people
+thinking?" And you may be trying to you
+may be hitting a dead end with your
+investigation. So, you may be thinking,
+"I've been trolling these blogs for
+hours and hours. I just can't can't get
+anywhere. I can't find anything and
+you're starting to get frustrated, which
+is a key sign that you are focusing on
+the outcome. Instead, um the principle
+here is to start practicing bringing
+that focus back. So, ignoring those
+factors and thinking about what do you
+need to do to achieve the best result
+that you want. What is what is the
+expectation and what is your
+responsibility? So, in a cyber readiness
+context, in a instant response context,
+you have a literal process. I'm not sure
+when sport psychology um was kind of
+talking like inventing this this
+principle that they would think that the
+process meant a literal document but in
+the cyber world we have process
+documentation. So uh ensuring you're
+following that make sure that's up to
+date. So follow the process and what is
+expected and it's why we do exercises.
+It's why it's important to know what
+what you need to do. What's the
+procedure for containment? What stage
+are you at? What do you need to do next?
+So again bringing that focus back to the
+tasks that you need to do. Um, if you're
+worried about the CISO being angry with
+us, okay, we'll bring that back to the
+process. Document your findings, send
+regular updates. Communication is so
+important in incident response and
+crisis management. And again, we'll come
+back to that shortly. If you're getting
+frustrated because you're hitting a dead
+end with your um your investigation,
+pivot your search. Take a great just
+take a step back, try something new. So
+again, focus on the process of what
+other options have you not tried? Are
+there other search parameters that you
+haven't tried? So try a different
+avenue, try a different hypothesis if
+that isn't working. So hopefully that
+illustrates kind of bringing the focus
+back to your process and again come back
+to your example that you thought of
+earlier. Think of a time where you were
+practicing. Maybe you're playing with a
+musical instrument and you're getting
+really really frustrated because it
+wasn't sounding how you wanted it to.
+Take that back to okay well if you focus
+on the process, focus on the technique,
+was it your breathing or was it your um
+your posture that might be affecting it?
+So with your example, think about a time
+where you perhaps were focused on the
+outcome. You were getting worried or
+frustrated and how could you have
+brought that back to the process. Um if
+anyone's got any good examples, quick
+show hands. If not, I will move on.
+Awesome. So second principle, um
+confidence building. Um so this one is a
+big one that I see in security. Uh and
+Rob when you mentioned in your talk as
+well about that imposter syndrome
+everywhere. Like there's so many people
+and I imagine a lot of people here who
+never feel they're technical enough or
+they're just not technical. And the
+amount of times I've been in a
+conversation where someone will about to
+you know interject with a really good
+idea but they'll say oh I'm not
+technical but and then they'll come out
+with this amazing idea and it's like why
+are you devaluing your input just by
+saying you're not technical. So a lot of
+that again this is a whole other talk
+and topic of conversation of how do you
+address that? But uh a core thing of
+this as well is about confidence. So
+cyber security there's a lot to learn
+the technical domain of what you need to
+know. I mean even that list in Rob's
+talk earlier about all the different
+aspects and roles that are involved in
+cyber security is broad. We cannot
+expect everyone to know this but I think
+that brings a level of feeling daunted
+that you don't know stuff. So there's a
+big element of building confidence and
+again this is from a very individual
+perspective but something that can be
+kind of honed and spread across the
+team. Now there is a cycle for this of
+how do you build confidence and none of
+this is going to be like an instant
+quick win. It's not going to be you do
+this and suddenly you're you're
+amazingly confident. This will be
+something that you do over time and the
+more you actively do it, suddenly in the
+future you'll take a step back and be
+like, "Huh, I actually feel quite good
+about this." So, it's a slow active
+thing that you have to build over time.
+But the cycle is essentially um think
+positively, which sounds very like I
+don't want to be like toxically
+positive, but it's about turning those
+thoughts into something a bit more
+tangible, a bit more optimistic, a bit
+more positive about yourself instead of
+thinking, "Oh, I'm not good enough. I
+can't do this." Thinking actually, I've
+got a good shot. I'm going to try this
+and I'm going to give it a go. Then you
+take action or take a risk as some other
+um kind of sources will kind of say. Um
+this is where if there's something that
+you are not comfortable with, you kind
+of take the risk. you push yourself, put
+yourself out there, take a bit of a
+personal risk. Now, that's not saying
+you go out and just do everything you
+want and do sort of risky behavior. It's
+more about what is uncomfortable for
+you, pushing that boundary a little bit
+and taking that risk. And when you do
+take that risk and you take that chance,
+sometimes you'll experience success.
+Hopefully, a lot of the times you'll
+experience success. And when you do
+that, it's important to reinforce that
+with thinking positively. So, thinking,
+you know what, that wasn't too bad. That
+was really positive. And you build that
+again. You push that boundary out a bit.
+And that's how you slowly build that
+confidence over time. Now, that was a
+sport psychology principle. For me, it
+was um I know this sounds really stupid
+in frisbee. It was sometimes just
+catching the disc. So, there would be a
+time where I think I've got a clear run
+some for someone to do a really good
+shot to pass me a disc, but I'd be too
+scared to go and make that run because
+I'd be worried I was going to drop it,
+which is silly given the whole sports
+throwing and catching. Um, but to kind
+of I've got to think positively. How
+many times have I caught the disc really
+well? um and not dropped it and then
+next time I had the opportunity taking
+that risk going to to kind of take that
+action and when I experienced success
+kind of reminding myself of yes I can do
+it. I've proven to myself I can do it
+and you continue to prove to yourself.
+So bringing that context to cyber
+readiness and again this is a common
+example I see in security operations
+centers when you're doing security sock
+incident response you will have multiple
+teams you may have a group of people two
+or three people that are on shift
+together um who are doing that initial
+investigation so there will be multiple
+people in conference bridges you may
+have a lead person so um in this
+scenario that I'm thinking of
+specifically there was one individual
+who was very shy very quiet and they had
+found something unusual uh and they were
+like kind of suspicious about something
+that they found which they weren't sure
+if it was related to the wider
+investigation that was going on. So they
+were worried. So they in this example
+here they were saying I won't I won't
+interrupt this instant meeting. There's
+a lot of senior people on this you know
+I can't be interrupting the the VP of
+cyber operations uh with my finding. I'm
+probably wrong and it's a false
+positive. Um you can probably see how
+harmful that is if someone has found
+something and in that in incident
+scenario you need them to speak up. You
+need them to share that information. Um,
+so if you were this person, how would
+that person build up that confidence? So
+the thinking positively aspect is not
+just about, yeah, you can do it. It's
+kind of making it a bit more tangible.
+So even if it is a false positive, then
+they still ruling out. It might save
+time and my technical observation is
+still a valid piece of the puzzle. So
+again, spinning that to be something a
+bit more positive and encouraging. The
+risk in this situation for that
+individual is to take that risk and just
+share their suspicions. So to speak out
+in that uncomfortable environment for
+them. For other people, this might be
+not like not even a decision. They're
+really comfortable speaking out on
+calls. But for them, this might be the
+most scariest thing that they've had to
+do um all day. So they take that risk
+and they share that finding in the
+meeting and they experienced success. So
+they overcame their hesitation and they
+spoke up and the world didn't end. They
+survived. So the team maybe maybe it was
+a um a real finding, maybe it was a
+false positive, but the team now know it
+is a false positive and can discard it.
+So you're now more integrated with the
+flow of um that incident. And again,
+that cycles back to the positive
+thinking of, you know what, that was
+fine. I contributed. We know now for a
+fact that that wasn't a false positive.
+So this is a really common scenario we
+see in security operation centers. And
+again coming back to Rob's point about
+communication in cyber security this is
+why we need to start seeing all the
+techies and stuff and everyone's got
+different personalities and different
+skill sets but making a situation and
+making an environment where everyone can
+feel comfortable speaking up and can
+share the information is so important
+and something that we always um stress
+with customers uh when they're looking
+at their instant response. So again come
+back to your example when was there a
+time where you weren't sure you were
+lacking confidence in something and
+think about how would you build that
+confidence what can you kind of think
+positively about how you've done
+something before what risk would you
+take for you to build that confidence
+and experience success.
+So um principle three um so this one not
+really a principle but uh it was kind of
+like a whole bunch of them bundled
+together um foster your roster. So this
+is more about the team aspect. So we've
+covered a lot too quite individual
+mental focuses. This one is about how do
+you bring that together as a team. So um
+you probably have noticed a lot in your
+um in like in the world of work there's
+a lot of leadership training that talks
+about how to build a great team um how
+to kind of foster that team environment.
+So uh there's a couple of examples I've
+brought to this about um kind of
+bringing your team together. And again,
+there's so many like avenues we could go
+down and rabbit holes, but just to call
+out a couple. So, mission and culture.
+Um, this defines who you are as a team.
+How many of you have heard the the story
+of the the NASA cleaner? Uh, when we're
+talking about mission and culture, um,
+it's probably a really commonly used one
+uh in the in the the industry where um,
+someone asked the clean was going around
+asking people what do you do? Um, who
+works for NASA? And then they said to
+the cleaner, what is it you do? And the
+cleaner says, I help build a spaceship.
+So it's that mission is the identity of
+no matter what you do you are
+contributing to that wider goal to that
+higher um mission of the purpose and uh
+the company. So it's important to have
+this because this defines who you are as
+a team and it sets the why. So some
+companies this might be really easy to
+to set in some organizations it's really
+obvious. If you work for the NHS for
+example, I'm pretty sure your goal will
+be about protecting the people and
+saving lives. Like it's so it's easier
+for some perhaps, but everything we do,
+and I'm fairly sure everyone who's in
+this industry wants to do it to protect
+the industry, protect the vulnerable
+people from being exploited by
+attackers. Um, so defining what that
+mission and culture is uh is really
+important and it's important for lead as
+well to lead by example and inspire
+those. So again, whole rabbit hole of
+leadership stuff we're not going to go
+down. Um but that is something to kind
+of call out from the sport psychology
+side of things. Um then it was into
+rugby. The uh New Zealand All Blacks are
+one of the best rugby teams in the
+world. Um in one of the books written by
+Dan Carter who is again one of their one
+of the known as one of the greatest All
+Blacks. Um he talks about the mission
+and the culture that was the All Black
+team. So their culture was you leave the
+the jersey um in a better place than
+when you found it essentially. So
+everyone that came in they understood
+the history of the the team and they
+understood that they need to leave the
+team in a better place than when they
+first got there and that is what has
+contri amongst many things contributed
+to such a successful culture and su
+successful performance culture um with
+that sporting team.
+So you think about that with your with
+your security operations team. It might
+not even be a security operations team.
+It might just be your team in response
+to readiness of what you do. If you want
+to optimize that performance, think
+about the why. make sure everyone
+understands the why of what they are
+doing.
+Secondly is uh roles. So making sure
+people have clear roles and
+responsibilities. Um this sounds really
+really dull but uh it's very it's kind
+of an important one to have. So again
+you think about a sports team you will
+have people that have different
+positions, different responsibilities on
+the field. In football you have um
+attackers, you have defenders, you have
+midfielders. So um all different roles,
+different responsibilities and you need
+to make sure that that team is balanced.
+So a team of allstar strikers is pretty
+useless. So you need to have balanced
+team doing different roles covering
+different aspects and you need to give
+your team depth as well just because
+you've got a full roster of team. What
+happens if someone is ill or they're not
+available? You need to make sure you
+have other people that can um take those
+roles and uh you don't have any
+dependencies on certain people.
+Uh, and the last one is personalities.
+So, we're going to get a bit blunt here,
+but people are people. We all have
+different personalities. People will get
+on. People will have massive egos in the
+room. I'm sure we've all worked with
+people where you thought, hm, okay, you
+can check your ego a little bit there,
+but everyone's got one. I've got one.
+The most humble person in the world has
+probably got one. So, it's just about
+managing those egos. Um, encouraging
+again that team um the team behavior.
+What is the team behavior you want in to
+encourage? Rewarding that, making it
+clear and again that ties back to your
+mission and your culture of what is it
+you want to achieve. And if we come back
+to that example of that security
+operations center analyst who didn't
+want to speak up because they were
+worried about being wrong or they were
+really afraid, have you created a team
+culture to make it safe for that person
+to do so? And you're rewarding the
+behavior to say, "Okay, yes, you've
+you've spoken up. Thank you so much.
+That was really great. Do that again."
+Um maybe wrong this time, but it's fine.
+So again, think about that team culture
+uh and team behavior. So this one
+perhaps your example might be a bit more
+difficult. If you have a team- based
+example where you work, you know, you're
+doing this with other people, um you can
+hopefully kind of see how that that
+works. And basically a team is a team.
+So a sports team will have exactly the
+same principles as um your response team
+or your team in whatever organization
+that you work from. And hopefully you
+can see from this how key it is to have
+a strong leader that helps direct, helps
+promote these cultures, helps sets the
+mission and and the culture as well.
+So um with that
+it's kind of all the principles really.
+So a quick summary, we've kind of talked
+about um the first principle which was
+that process versus the outcome. So,
+this is about building that mental focus
+during when times get really busy,
+really stressful, there's a lot of
+noise, a lot of distraction. How can you
+train your brain to kind of keep the
+focus on the process and not the
+outcome? And when you're doing this, and
+if you're going to kind of take this
+away and do this at home, the key
+indicator that you are kind of starting
+to think about the outcome and focus too
+much on the outcome is that frustration.
+And um if you're feeling frustrated,
+that may be because you're focusing a
+little bit on the uh on the outcome.
+It's all about controlling the
+controllable.
+Principle two is about the confidence
+cycle. So confidence is actively built.
+Sometimes it happens over time, but if
+you actively build it, you will find
+soon enough you'll get to a point where
+you're like, "Hey, actually, you know
+what? I'm pretty good at this." Um,
+celebrating successes is key. uh as you
+remember that cycle about thinking
+positively. It's not just about that,
+yeah, this is great, but you have to
+kind of acknowledge what you did well
+and uh acknowledge when you experience
+success and push the boundaries of your
+comfort.
+And principle three is more about the
+team. So, foster your roster. Everyone,
+every individual will contribute to that
+team environment. Hopefully, there's
+some key takeaways you can um bring back
+to your team. And like I said, there's
+so many avenues we could go down. And
+probably each of these is a whole
+separate talk in itself, but you need to
+create that team environment to again
+help with the other two principles. Um,
+but it's about creating the a high
+performance culture. Um, and leaving
+egos at the the door, which is probably
+easier said than done for um for all of
+us including myself. Um, I would like to
+add one thing though as well. Um,
+obviously
+with all of this, this is about
+improving performance. If you don't have
+the fundamental the the knowledge and
+skills that you need to do the job,
+focus on them first. So again, come back
+to my Frisbee example. I could be all
+rather good kind of building up my
+confidence um trying to focus on the
+process and outcome, but if I can't
+throw the disc to begin with, there's no
+point. So make sure um thinking about
+what it is you want to focus on, what
+what is your goal? Um what do you want
+to be good at? Thinking about the base
+skills, the base knowledge, what is it
+you need? And gearing yourself up and
+training yourself upon that. And as you
+start to hone your your strengths and
+hone your um skills, start bringing
+these principles in. So that is just
+something I want to add. And uh with
+that, it should hopefully lead to some
+happiness uh and you should start
+feeling a bit more positive and
+confident in what you're doing. So thank
+you very much.
+Just a quick plug as well. I mean, how
+long have we got? Five minutes.
+>> Five minutes. Okay. So, it' be good.
+We've got five minutes. If you've got
+any examples you want to share and then
+thoughts going through this, quick plug
+before we do that. Uh I'm part of the
+Northwest Cyber Security Cluster. We are
+going to be running a um kind of
+community war game event. Uh it's going
+to be very discussion based so you can
+kind of come and see how cyber response
+isn't just about security operations
+centers and not just about techies. It's
+a whole organization. Should be chaotic.
+It'll be great fun. Um so, please come
+along to that. It's at half 11 today, I
+think. Um but I think we got 5 minutes
+left. I think if you need to go go but
+does anyone have any questions or any
+kind of thoughts that they had and
+examples that they want to share as we
+were going through it?
+>> Brilliant. Um the example I'm going to
+use is a one that shows the value value
+of the principle rather than an example
+of me doing it well. It's the confidence
+cycle principle 2. Um I know when I'm
+stressed I narrow down my thinking and I
+don't take the decision I need to take.
+It's amazing how quickly that cycle that
+you put up breaks down when when I'm
+stressed.
+>> So I don't take action. I don't make the
+decision. I don't then recognize that I
+made the progress and it didn't matter
+almost whether I made the decision or
+not. I just need to take a step forward
+which then reinforces such such a strong
+cycle. It's a reminder when you're in
+those situations going don't know what
+to do.
+>> Yeah.
+>> And it's easy isn't it when you're
+stressed to kind of revert to the safe
+space to what you know which is
+>> kind of if I equate that to like cyber
+instant response. Um, this why processes
+and documentation is a good fallback as
+well to be like there's too much going
+on. I don't know what I'm doing. Have I
+just got everything that I need? Like
+the fundamentals. But yeah, it was a
+good point of how easy it breaks down
+when when you're stressed and you're
+distracted.
+>> Anyone else?
+>> No. If not, oh,
+>> sorry, another question. Go on. Mhm.
+What I really like about these
+principles and these two is again the
+soft and fluffy on top of the do your
+skills. So again celebrate successes
+consciously take risks create the right
+environment dynamics. You can you can go
+through the process of an exercise, you
+can go through the process of a a drill
+without bringing these in
+>> or you can bring these in to get maximum
+value from the activity you're doing as
+well.
+>> Exactly. Exactly. So there's a level and
+there's someone's journey, isn't it?
+when you're looking at your either your
+own personal development journey as
+cheesy as that sounds or your
+organizational journey kind of looking
+at do you have the basics and then how
+do you build on that basics and I think
+we always say like target our weaknesses
+and hone the strengths and it's like we
+all know how to target our weaknesses
+but how do you hone the strengths so
+again this is something that you can do
+to kind of hone hone those strengths and
+make them even better um it's something
+I try to kind of encourage especially
+among like security operations center
+because so much of this is applicable
+for when you're staring at the screen
+for hours on end trying to figure out
+what's going on. Have we got any like
+red teamers or people who do like
+offensive security if you're doing the
+CTF later? Yeah. At the back. Um, a lot
+of people I know love doing those CTFs
+because it's the problem solving aspect.
+It's you're there, you're trying to
+crack a puzzle. When that frustration
+starts getting in because you've been
+trying to crack it for hours, that's
+probably when you're starting to think,
+why haven't I got this yet? I'm starting
+to get really frustrated like what what
+am I doing wrong? What can I try? So
+again, bring that thought back to what
+techniques have haven't you tried? What
+could you try next? So um there's so
+many things applicable here to the the
+sort of technical world as well as the
+business world. So everyone, life, uh
+sports, hobbies, everything.
+Cool. Uh awesome. Thank you very much
+everyone.
