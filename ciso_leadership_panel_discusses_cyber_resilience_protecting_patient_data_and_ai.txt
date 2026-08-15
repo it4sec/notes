@@ -1,0 +1,1177 @@
+ABOUT
+================================================================================
+Title: CISO Leadership Panel Discusses Cyber Resilience, Protecting Patient Data, and AI
+Author/Channel: Healthcare Innovation
+Channel URL: https://www.youtube.com/channel/UCwGHciFPNQqyHMcR7tFH5WA
+Video URL: https://www.youtube.com/watch?v=4zMztDVoCXs
+Video ID: 4zMztDVoCXs
+Published: 2026-08-11
+Duration: 38:58
+Views: 5
+Likes: Unknown
+Comments: Unknown
+
+Description:
+A CISO leadership panel explores how leading health systems are strengthening cyber resilience, protecting patient data, and aligning security strategy with innovation, AI adoption, and regulatory expectations.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# CISO Leadership Panel Discusses Cyber Resilience, Protecting Patient Data, and AI
+
+## Source and participants
+
+**Author/channel:** Healthcare Innovation  
+**Channel:** Healthcare Innovation  
+**Channel URL:** https://www.youtube.com/channel/UCwGHciFPNQqyHMcR7tFH5WA  
+**Video URL:** https://www.youtube.com/watch?v=4zMztDVoCXs  
+**Published:** 2026-08-11  
+**Duration:** 38:58  
+
+The source is a recorded panel discussion rather than a conventional research paper. The discussion focuses on healthcare cybersecurity, cyber resilience, medical-device security, AI-enabled attacks and clinical AI applications.
+
+### Participants and credentials
+
+- **Professor Benoit Desjardins**
+  - Chief medical cybersecurity officer
+  - Professor
+  - Practicing doctor
+  - Medical imaging specialist at University of Montreal CHUM
+  - Emeritus professor at the University of Pennsylvania
+  - Described in the discussion as an AI expert and professor of radiological medicine
+  - **Contact details:** Not provided.
+
+- **Sharon**
+  - The transcript identifies Sharon as a long-serving cybersecurity professional and a “recovering CISO.”
+  - She discusses medical-device monitoring, asset discovery, segmentation and legacy systems.
+  - Her surname, organizational affiliation and additional credentials were not provided.
+  - **Contact details:** Not provided.
+
+- **Anahi Santiago**
+  - CISO of Christiana Care in Delaware
+  - Discusses security strategy, long-range planning, AI governance, vulnerability management and healthcare risk decisions.
+  - **Contact details:** Not provided.
+
+- **Moderator**
+  - Name was not provided.
+  - Teaches at the University of Denver and UMGC.
+  - Described himself as a “recovering CISO.”
+  - Holds roles in Cylera and other organizations.
+  - **Contact details:** Not provided.
+
+The description identifies the event as a CISO leadership panel but does not provide a separate list of paper authors, affiliations or personal contact information.
+
+## Summary
+
+The panel’s central idea is that healthcare cybersecurity must shift from periodic, perimeter-oriented protection toward continuous, organization-wide resilience. Healthcare systems are portrayed as unusually difficult to secure because they combine clinical technology, administrative applications, medical and IoT devices, cloud systems, vendor connections and numerous specialized business functions.
+
+Anahi Santiago argues that security leadership must have a permanent role in organizational decision-making. A CISO who participates in strategic planning can anticipate developments such as hospital-at-home programs, virtual care, remote surgery using 5G, quantum computing and AI. Christiana Care reportedly plans five years ahead in order to prepare for its future operating environment. The panel nevertheless emphasizes that the threat environment changes so quickly that long-term planning must be supplemented by continuous adaptation.
+
+The participants describe medical-device security as a major operational challenge. One panelist reports having approximately 90,000 IP addresses, of which about 70,000 are medical devices or IoT systems. These assets are difficult to manage because IT teams may not own them; clinical engineering often manages the devices, with information-security support. The panel describes a collaborative model in which a cybersecurity specialist is embedded within clinical engineering and clinical-engineering staff receive cybersecurity training.
+
+Asset visibility is presented as a prerequisite for effective defense. Sharon describes an intake process requiring cybersecurity review for new network-connected devices, repeated scanning, and segmentation of medical-device environments by functions such as radiology, pharmacy and laboratory systems. This approach is intended to identify unauthorized or previously unknown devices. However, the panel notes that devices change rapidly and that complete IoT segmentation is difficult.
+
+Legacy technology creates a further security and clinical-continuity dilemma. The discussion gives examples of Windows 7 and even Windows 2000 systems that remain in clinical use because a medical application or device was never updated for newer operating systems. One Windows 7 laptop was connected to a blood-monitoring system supporting a high-value, continuously running test. Shutting it down would have affected clinical operations and revenue, illustrating why vulnerable systems can remain active despite known security risks.
+
+The panel distinguishes ordinary network segmentation from microsegmentation. Microsegmentation requires detailed knowledge of how systems communicate and what information is exchanged. Each medical-device type may require a profile defining legitimate traffic and distinguishing it from suspicious traffic. Because healthcare environments contain complex dependencies, constructing and maintaining these profiles is technically and operationally demanding.
+
+A major portion of the discussion concerns the use of AI by attackers. Benoit Desjardins describes “Mythos,” identified in the transcript as a model associated with Anthropic’s Claude, as a general-purpose model with advanced cybersecurity capabilities. According to the discussion, it can identify vulnerabilities, generate exploits and support attack campaigns. The panel also refers to a Google Threat Intelligence Group report describing an AI-assisted zero-day exploit campaign involving a two-factor-authentication bypass flaw in unnamed open-source administrative software.
+
+The panel’s broader argument is that AI lowers the expertise barrier and dramatically accelerates offensive activity. Desjardins cites an incident in which a Russian actor reportedly compromised 2,516 FortiGate devices across 106 countries using AI-based tools for attack planning and exploit generation. He also presents an illustrative comparison in which an AI-assisted attack can progress from exploit generation to full system compromise in approximately 73 seconds, whereas defensive processes may require minutes for detection and triage, an hour for prioritization and up to a day for patching.
+
+This speed imbalance challenges traditional vulnerability-management practices. Sharon argues that healthcare organizations may need to reassess their policy of delaying patches on critical systems until extensive testing is complete. Two individually low-risk vulnerabilities may be combined into a critical exploit, meaning that conventional risk rankings may underestimate compound risk. In some situations, accepting planned downtime for patching may be safer than leaving a vulnerable clinical system operational.
+
+The panel proposes resilience as the mechanism for making faster patching possible. Rather than relying only on fixed patch windows, healthcare organizations may need to move toward continuous or automated patching supported by redundancy, downtime procedures and repeated exercises. Possible approaches include maintaining additional devices or treatment capacity so that one MRI or other medical system can be removed for patching while patient care continues. The panel recognizes that such redundancy is expensive and may not always be practical; clearly defined downtime procedures and regular practice are presented as an alternative or complement.
+
+The panel also challenges the assumption that adding more technology necessarily improves resilience. Interoperability can create tightly coupled dependencies among equipment from different vendors. Removing or patching one component may disrupt a wider “spider web” of connected systems. Anahi Santiago therefore recommends application rationalization—reducing the number of systems that must be secured—instead of expanding technology sprawl.
+
+Healthcare’s representation in advanced AI-security initiatives is also questioned. The discussion states that no healthcare companies were included among the 50 organizations associated with “Project Glass Wing,” and that healthcare representatives had not yet succeeded in obtaining inclusion. The panel argues that healthcare needs better sector-specific data to justify cybersecurity investment, particularly as margins shrink and security spending competes with clinical capabilities.
+
+A key economic distinction is that the return on investment for security is harder to quantify in healthcare than in financial services. Financial losses from fraud can be calculated directly, whereas the panel notes that healthcare lacks an equivalent widely accepted figure for patient harm, morbidity or mortality resulting from cyber incidents. Hospitals are also described as many businesses operating under one organization, including clinical departments, pharmacies, food services, retail operations, power infrastructure, parking and, in some cases, trauma-related air-traffic functions. This diversity contributes to the complexity of healthcare security.
+
+Finally, the panel discusses beneficial uses of AI in clinical care, particularly medical imaging. Desjardins describes AI systems that can identify subtle indicators of pancreatic cancer on prior CT scans, detect stroke during image acquisition and alert the stroke team before a radiologist completes the interpretation, and prioritize imaging studies containing potentially urgent findings such as pulmonary embolism or new cancer. These examples frame AI as both a significant cyber risk and an important tool for improving clinical outcomes.
+
+## Key technical ideas
+
+1. **Strategic security alignment**
+   - Give the CISO a continuing role in enterprise strategy.
+   - Plan security capabilities against future clinical models, including hospital-at-home care, virtual care, remote surgery, AI and quantum technologies.
+
+2. **Medical-device and IoT visibility**
+   - Maintain a detailed inventory of connected devices.
+   - Use device-intake reviews and continuous scanning to identify approved, unknown and rogue assets.
+   - Treat medical devices as a distinct and exceptionally large part of the attack surface.
+
+3. **Clinical-engineering and security integration**
+   - Embed cybersecurity expertise within clinical engineering.
+   - Train clinical-engineering personnel to manage cybersecurity responsibilities alongside device operations.
+
+4. **Segmentation by clinical function**
+   - Separate environments such as radiology, pharmacy and laboratory systems where feasible.
+   - Progress toward microsegmentation only when communication patterns and legitimate protocols are sufficiently understood.
+
+5. **Legacy-system containment**
+   - Recognize that unsupported operating systems and applications may remain clinically essential.
+   - Address them through inventory, segmentation, compensating controls and carefully managed replacement or downtime plans.
+
+6. **AI-accelerated offensive operations**
+   - AI can enable non-experts to discover weaknesses, generate exploits and conduct attacks.
+   - AI may also reverse-engineer vendor patches and produce exploits shortly after patches are released.
+
+7. **Revised vulnerability prioritization**
+   - Evaluate combinations of vulnerabilities rather than considering each weakness independently.
+   - Reconsider risk models that classify vulnerabilities as low risk when they can be chained into a critical exploit.
+
+8. **Continuous patching and operational resilience**
+   - Move beyond fixed patch windows toward faster or continuous patching.
+   - Support this with redundant equipment, alternative treatment capacity, rehearsed downtime procedures and rapid recovery processes.
+
+9. **Application rationalization**
+   - Reduce unnecessary technology sprawl.
+   - A smaller and more controlled application estate may be easier to secure and patch than a larger collection of overlapping systems.
+
+10. **Interoperability as a security dependency**
+    - Connected devices from different vendors may use incompatible interfaces and authentication mechanisms.
+    - Interoperability can increase systemic coupling, making individual component changes disruptive.
+
+11. **Sector-specific AI-security collaboration**
+    - Healthcare needs access to advanced vulnerability-discovery capabilities and better sector data.
+    - The panel argues that the unique clinical and operational consequences of healthcare attacks justify stronger healthcare participation in security initiatives.
+
+12. **AI for clinical decision support**
+    - Detect subtle disease indicators that may not be obvious to radiologists.
+    - Analyze images during acquisition to accelerate emergency notification.
+    - Prioritize large imaging backlogs by flagging potentially urgent findings.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[music]
+>> I am joined by a very prestigious panel
+of security experts here today. So
+I'll I'll make some introductions rather
+than everyone go down rabbit holes.
+At the end we've got Professor Benoit
+Desjardins,
+chief medical cybersecurity officer and
+professor,
+practicing doctor and medical imaging
+specialist at University of Montreal
+Chum,
+emeritus professor at U-Penn just up the
+road who escaped to Canada last year was
+it Benoit?
+>> Two years ago.
+>> Two years ago, okay.
+Next we've got Sharon who you just heard
+from. Sharon and I have known each other
+almost as long as I've known Benoit I
+think. So Chase I've been chasing around
+states since her days in Florida many
+many years ago.
+Next to me is Anahi Santiago,
+CISO of Christiana Care up in Delaware.
+Another another long serving
+cybersecurity professional and and
+colleague. And then myself and I
+realized I didn't actually introduce
+myself at the earlier session this
+morning. I'm
+I teach
+at the University of Denver and also
+UMGC just up the road. I'm also a
+recovering CISO like like Sharon. And
+finally I
+hold a couple of roles in
+Cylera and other organizations. You can
+Google any of us. I guarantee you'll get
+thousands of results back from from all
+four of us.
+We're going to continue the discussion
+around cybersecurity and dig into that I
+started earlier and dig in deeply in in
+a couple of areas here. I'd ask that you
+please hold your questions to the end so
+that we can we can get through this.
+Healthcare
+can't really escape the growing
+geopolitical threats
+as as the US wages yet another war in
+the Gulf
+which is depriving China of its oil
+right now and maybe a
+flash point in the future.
+While at the same time obviously the US
+is is is loosening ties with NATO
+Europe. Putin's invasion of Ukraine has
+stalled
+after losing 1.3 million men and losses
+are not being replaced enough. This is
+significant because Putin looks
+increasingly desperate and paranoid at
+home and on the international stage. She
+is reportedly becoming more and more
+upset at the USA and Japan for their
+support of Taiwan
+against invasion by China. Both China
+and Russia have massive armies of cyber
+warriors
+while Iran and the DPRK the Democratic
+People's Republic of North Korea are not
+far behind their capabilities. Meanwhile
+you know paranoia and distraction
+extends all the way to to this city
+where CISA has lost most of its staff
+and the FBI has been reportedly gutted
+of a lot of its cybersecurity
+investigators. With CNIs including
+hospitals being cyber attacked across
+Europe and America we face never before
+seen challenges. These are as
+philosophers would like to say
+interesting times and I think that's
+probably an understatement. Um I want to
+start the questions off
+with an AHI next to me.
+Um the healthcare threat surface is
+expanding almost weekly so it seems with
+providers adding hundreds of medical and
+other IoT devices and a deluge of new AI
+applications including ambient energetic
+AI. As a CISO of a major hospital system
+is security able to keep up with changes
+in the threat surface and does
+leadership recognize that by adding high
+risk systems they're not they are
+changing the balance of security. All
+right.
+>> That's a great question.
+I I, you know I think the the easy
+answer is it's very hard to keep up with
+the emergent changes, not just in the
+way that health care organizations want
+to use technology, but in the way that
+the threat actors are exploiting the
+those technologies, but I think any
+successful CISO
+um, is one that has a seat at the table
+and maintains that seat at the table in
+such a way that one can anticipate what
+the strategies are of the organization
+and plan accordingly. And so, I I use
+the example of Christiana Care, who
+looks at their strategic plan
+in such a way that we plan for 5 years
+out so that we can be who we need to be
+8 years from now.
+And so, that gives me a fairly decent
+runway to be able to prepare a security
+program that's aligned with things like
+aggressive hospital-at-home programs,
+um, aggressive, you know, uh, virtual
+care.
+We're already looking at the potential
+of remote surgeries via the use of 5G
+technology. And so, I'm crafting a
+program that is already in the thick of,
+um, quantum and AI and so on and so
+forth. Um, but that doesn't uh, change
+the fact that
+I can't remember what you said, but
+something to the effect of 30 seconds
+from now, we were already
+>> We don't live in the same world we lived
+in 30 seconds
+>> Exactly. And that's really fair. And
+especially now with me those and, um,
+everything that's that we're learning,
+it's it's it's challenging, but there
+are ways to at least keep pace,
+um, and certainly ways to not
+necessarily fall behind.
+>> Right. Right. Rebuttal, Sharon, Benoit?
+>> I don't have any I don't have any
+rebuttal to that. Um it's um I mean I
+live it every single day in what I do.
+And so
+we added last month alone
+almost 5,000 IOCs to our seam
+just to monitor. And that's what we know
+about. That's already known threats.
+That's doesn't address the ones that are
+there. So that's the kind of what that's
+the kind of volume world we're living in
+now.
+Um
+um as far as as
+as a as a security as operating
+security.
+>> It's it's certainly very dynamic, right?
+>> Yes.
+>> The threat surface is dynamic. The
+assets on our network are dynamic. The
+applications in our data centers and in
+the cloud are dynamic. Uh and it makes
+it a a greater challenge than ever
+before to keep up with these things.
+>> I shared a statistic for our own
+organization that I have 90,000 IP
+addresses on my network. 70,000 of those
+are medical devices or IoT. So things
+that are very very difficult to manage.
+Uh so think about the percentage of
+Windows standard workstations that I can
+manage versus
+the tens of thousands of devices that I
+have to somehow creatively figure out
+how to contain.
+>> Yeah. And your IT team don't manage your
+medical devices.
+>> No, they do not.
+>> No. Who manages them?
+>> Um
+clinical engineering with a lot of
+support from information security. And
+do clinical engineering know how to
+spell cybersecurity? They actually do.
+So we I mean we we have a very robust
+training program for our clinical
+engineering team. And then I have an
+implant in clinical engineering that is
+a cybersecurity medical MIoT
+>> Right.
+>> um member of my team that lives in
+clinical engineering. So it's a model
+that has
+worked as best as it can work.
+>> So, cross collaboration between teams is
+important and growing in importance,
+right? So, we
+uh we've got a professor of radiological
+medicine here.
+Um you know, what what challenges are
+you seeing around medical devices,
+right? Medical imaging?
+>> Well, there's, you know, there's so many
+medical devices in hospitals,
+essentially.
+Um like where I was at Penn for like,
+you know, 16 years, we had like, you
+know, hundreds of radiology devices. We
+had thousands of devices across the
+hospital.
+Uh we had uh you know, injection devices
+that were all networked that were
+administering medication.
+We had uh devices coming in and out of
+the system mainly for, you know, some
+uh kind of vendors' devices temporarily
+hooking up to the system to run an
+experiment or something like that.
+That's what happens in academic medical
+centers. I was involved even, you know,
+in some experiments like AI and uh
+advanced software and for MRI scanners
+and stuff like that where, you know, at
+night we scanned the pig and then
+essentially, you know,
+uh major company came in, hooked their
+system on the network, and but really
+they were able to do that, but you know,
+they could have brought in, you know, uh
+some some basically malware and then
+that could have spread throughout the,
+you know, hospital. So, it's a big
+problem to just keep track of those
+devices because they they just, you
+know, it's not just a fixed set of
+devices. And more and more they're
+Internet of Things that are, you know,
+hooked up to the hospital from all over
+the place. It's very difficult.
+>> So, Sharon, medical devices are growing
+at 18% per annum compound globally,
+right?
+>> Yes.
+>> How do you keep up with what's connected
+to your network?
+>> [clears throat]
+>> Scan, scan, and more scans.
+Um and um
+we do have an intake system
+um by which, you know, they, um,
+you know, have to go through a review,
+cybersecurity review, for all new
+devices that come on the network. That
+tells us a lot. But, you know, those
+devices rotate
+very rapidly, you know? And there's
+different models. You have different
+models of them. You have So, you know,
+we use a, um, a very commonly used
+product called X Dome in our environment
+to specifically scan. We, of course,
+segment our medical devices as much as
+possible. You can never, I think, really
+segment all of your IoT
+into one place, but at least your
+medical devices you can segment off or
+have radiology on a network, pharmacy on
+a network, lab on a network, and and do
+that. And so, that helps us,
+um,
+identify when we have a rogue medical
+device show up that's not, you know,
+identified,
+um, on that particular network. So,
+I would say we do a fairly good job at
+it, but it's a problem with some of
+those devices that live within our
+ecosystem. Healthcare organizations are
+infamous for having to use something
+till the wheels fall off of it.
+And so, we have a lot of legacy,
+um, and I won't name it It's not CHOP,
+just to let you know, but I won't name
+the healthcare system, but, um,
+I experienced an incident where we
+identified a Windows 7 laptop in a lab
+that was hooked up to a,
+uh, blood monitor that ran a test that
+cost $1,400
+a test, and they ran that thing 24/7
+doing these tests for all of their
+hospitals around the area because they
+were the one the one only ones, and it
+was a high revenue generating, and they
+had a fit when said, "You need to shut
+that down."
+Because one, it was very important to
+clinical care. Two, it was revenue
+generating for the hospital and it was,
+you know, something that that they
+needed. And so, as a result of that, you
+know, when you identify those legacy
+things in your environment, having to
+deal with them can be a long drawn-out,
+very manual process.
+>> And I presume the system had never been
+patched since birth.
+>> Um yeah, well, it it had been patched
+probably to the point that you could
+stop that when they stopped patching
+Windows 7. And then no, after that it
+didn't get patched ever again.
+And they just kept running it. Um
+>> There there's quite a few of those
+systems in my experience.
+>> Yes.
+>> Some even running Windows 2000.
+>> Yeah.
+>> Still in employed in a clinical capacity
+because the application was never
+updated to run on anything newer, right?
+So, asset inventory,
+>> Yeah.
+>> segmentation, you get down into
+microsegmentation, host protocols.
+>> We haven't we haven't yet gotten to
+microsegmentation.
+Microsegmentation
+requires a level of knowledge and
+understanding of how how
+how the systems connect, what
+information passes.
+That that is a very complex
+>> Right.
+>> thing. It's like having firewalls
+between, you know, your perimeter
+firewall, that, you know, and then
+you've got your application firewall,
+and then you've got your database
+firewall, and making sure all of those
+talk to each other seamlessly and not
+allow all of the right traffic to pass
+through. That's a very complicated, and
+you've got to map that.
+>> You've got to build profiles for every
+one of those medical device types
+>> Mhm.
+>> to understand what is legitimate
+traffic,
+>> Yes.
+>> and then what's illegitimate traffic.
+And as you said earlier, right? It's
+it's dynamic, right?
+>> It is.
+>> Yeah.
+I want to expand this question onto AI,
+to our resident AI expert up here. Uh
+Benoit, you know, um
+everyone's talking about AI this month.
+Everyone's been talking about it for the
+last 2 years. It's you know, the new
+panacea, the new everything, right? The
+new calamity if you read some of the the
+press out there. It's the elephant in
+the room, right?
+Let's talk about Mythos, right? And also
+some of the work that the Google Threat
+Intelligence Group has been doing. Tell
+us about what these new systems are and
+how everyone including our Teflon
+president is worried about them, right?
+>> So, I think this year really is the
+turning point in the application of AI
+in cybersecurity.
+I think with the advent of Mythos
+it's a whole new ballgame out there,
+okay? Mythos is a new model by
+Anthropic. It's part of Claude, okay?
+It's Claude Mythos. And it's a general
+model, okay? It's not like a
+cybersecurity super specialist model.
+It's just a general purpose model. It
+just happened to be a super specialist
+in cybersecurity that can easily find
+vulnerabilities, that can build
+immediately you know, exploits to
+exploit those vulnerabilities, and that
+can run campaigns immediately. And it
+has discovered thousands of zero-day
+exploits in operating systems and in web
+browsers. And some vulnerabilities were
+you know, as old as 30 years old in the
+code. And in for example, in
+Firefox it found 271
+zero-day exploits. So, this is pretty
+crazy.
+And this was just announced like you
+know, the Mythos was just announced like
+you know,
+a little bit over a month ago. So, early
+April.
+And it's been a lot of change since
+then. Now, yesterday essentially we
+found out
+And was a report by the Google Threat
+Intelligence Group that they had
+documented their first AI-assisted
+zero-day exploit
+campaign.
+And so, it was like kind of a 2FA bypass
+flaw that was exploited on in some kind
+of open-source administrative software
+that was not named, so we don't quite
+know what it is. I'm sure it's going to
+be named at some point.
+And fortunately, they were able to stop
+that campaign before, you know, the hell
+broke loose. But, they got lucky this
+time. It's not going to happen all the
+time.
+Now,
+AI has been around for a long time. And
+And it's been a hot topic for the last
+couple of years, and now it's becoming a
+really hot topic in cybersecurity. AI
+does a couple of things, you know. One
+of the things AI does is that it makes
+non-experts become experts. And that's
+not only in cybersecurity, that's in
+every single field, okay?
+Now, in cybersecurity, we have a great
+example. I mean, 3 months ago, in
+February,
+there was a case of a Russian actor
+who was able to compromise 2,516
+FortiGate devices.
+And it did that across 106 countries.
+And it didn't use a There was no, like,
+you know, zero-day vulnerability that
+was exploited. Basically, he just used
+two AI-based software, Deep Seek, to be
+able to, you know, plan attacks, as well
+as Claud, to be able to generate
+exploits. And essentially, he just ran
+the whole thing. I mean, this was not an
+expert. He just ran the whole thing. It
+was great to find vulnerabi- to find
+your basic flaws about access, about,
+you know, unprotected access, about
+reused password or weak passwords, etc.
+And but essentially this non-expert did
+a lot of damage in all thousands of
+devices over many many many countries.
+And
+the second thing that AI does is that it
+brings speed, massive superhuman speed.
+Okay, it makes attacks super super fast.
+Now, just this morning basically there's
+new numbers comparing the speed of
+attacks versus speed of defenders. And
+I'm going to read those. Essentially
+right now these days we're dealing with
+you know, when you generate an AI-based
+script, you know, at zero seconds you
+generate the script. And then after that
+it takes about you know 5 seconds for a
+CVE to be exploited. And after that it
+takes 20 seconds to bypass the MFA.
+And after 30 seconds, you know, a shell
+is dropped. And then after 45 seconds
+uh all the credentials are dumped. And
+then after you know, 73 seconds
+basically there's full compromise of the
+system. So 73 seconds, okay?
+On the other side, defense, latest
+numbers, well, the seam will basically
+capture that information. It's going to
+take about a minute. And then after that
+it's going to be uh kind of a tier one
+triage. It's going to take 5 minutes.
+And then there's going to be once the
+threat is identified it's going to be a
+priority ticket issued in an hour.
+And then after that it's going to be um
+a patch issued if lucky in the first 24
+hours.
+Uh by the time the ticket is issued
+that system, okay, will have attacked
+500 other institutions. So this is the
+kind of massive difference in speed.
+And one of the problems um
+with AI, I mean, you might have heard
+about mythos that
+because of its power it was restricted
+to
+I mean, the access was restricted to
+just a couple of companies. It's part is
+called, you know, the
+project glass wing. And so it was, you
+know, basically given to the big ones,
+you know, Apple, Microsoft, Google,
+etc., etc. So that they could fix their
+system [laughter] before the system was
+made public so that they could, you
+know,
+bad guys could find all the
+vulnerabilities. But even if bad guys
+don't have access to Metas right now,
+one of the problems is as follow.
+There's a bunch of other software that
+are AI-based that are less performing
+than Metas, than Metas.
+And they can do [clears throat] a lot of
+the work even if they're not as good as
+finding vulnerabilities. One of the
+things they can do is as follow. You are
+all aware that every Tuesday there's
+like, you know, the Microsoft patch
+release
+every couple of Tuesdays, Microsoft
+patch release that fixes the flaws. And
+these days in the latest patches I've
+found a lot of flaws and fixed a lot of
+flaws. Well, AI software can take that
+patch, that that that system that's been
+submitted by Microsoft, can reverse
+engineer it, and then basically can
+identify all the flaws that are to be
+patched by this patch, and then generate
+exploits from this patch within like
+seconds of getting access to the patch,
+and then start running campaigns within
+seconds of having generated that
+vulnerability. So as soon as Microsoft
+issues a patch, essentially even if
+these all these bad guys don't have
+access to Metas, they have access to
+software that can reverse engineer that
+patch and create immediately, you know,
+large campaigns exploiting these
+vulnerabilities across the world. This
+is the new reality, and over the next
+year or two what we're going to see is a
+bunch of companies using AI software to
+find the vulnerabilities, fix them as
+fast as possible, while at the same time
+cyber attacks will be raining on them.
+And it's going to be a bad year or two,
+but we're going to have to go through
+that process.
+>> So, nothing to worry about then.
+No No sky net just yet.
+>> Well, he just articulated my worst
+nightmare.
+I mean, that is why I don't sleep at
+night.
+And I think that the the problem in
+health one of the problems in healthcare
+is
+patching systems
+is
+is a critical thing for us, you know,
+patching medical device systems,
+patching our own systems that are
+connected to medical devices
+or you know, we can disrupt an entire
+ecosystem in our lab or in our pharmacy
+by just simply deploying a patch
+in our environment.
+>> So, you can't do that on a critical
+system that's keeping a patient alive,
+right?
+>> Well, I mean, you you you might have to,
+right? Like I So, I'm actually
+I have to leave this afternoon
+at 1:00 I have an AI governance steering
+committee and then at 2:00 I'm actually
+presenting this to the board. We have to
+change our methodology not only for how
+we mitigate vulnerabilities and respond
+faster, but also our risk management
+vulnerability. We've always erred on the
+side of caution. We're not going to
+patch a system because it might break
+things. The reality given the speed that
+Benoit just referenced,
+the the riskier thing might be to patch
+and take the downtime. And so, I'm my
+presentation to the board this afternoon
+is we've got to change the way we do
+things because it's not only, you know,
+traditionally we've patched critical
+vulnerabilities and have tested, tested,
+tested, tested. What Mythos has
+demonstrated is that you can take two
+low-risk vulnerabilities that have
+traditionally just been ignored and link
+them to create a critical exploit. And
+so, we have to really start to socialize
+that multiple frequent downtimes, which
+is something we've always avoided in
+health care, might be the better
+solution than just testing and erring on
+the side of caution. And that's a really
+scary proposition, but it's one that we
+my executive management and leadership
+needs to understand as we begin to shift
+cuz it I don't want it to be a 1 to 2
+years of awful pain. I feel like we
+really need to get ahead of this
+um
+faster. I I think it will be 1 to 2
+years, but I don't want it to be.
+>> And it's building resilience into that
+that I think is it's it's when you patch
+and you have a downtime that's
+unanticipated, how do you recover from
+that as quickly as possible, get them
+back up and running? That's why
+resilience is so important in the
+ecosystem. Now, as we go from this
+Windows-based
+and I don't mean Microsoft Windows, I
+mean a patching window-based
+um patching methodology where you only
+patch in these in this time frame to
+more of a continuous automated patching
+model.
+>> Right. Do we need additional
+infrastructure to support that? An M + 2
+M + 3 model so that we can take out a
+single MRI and patch it and still have
+capability to treat patients with a a
+second MRI or a a second device that can
+>> That's a proposition.
+>> It's a very expensive. MRIs are not
+cheap.
+>> at a time where
+>> a few vendors here. We'd love to sell
+you one [laughter] if you if you happen
+to be in the market for an MRI.
+>> But I think it's evaluating the one the
+criticality of that and the possible
+impacts
+um to that. You know, it's you've got to
+identify those things that are
+absolutely critical to your
+infrastructure and to your clinical care
+continuum. And then you evaluate that
+and maybe it's not only having maybe not
+having one there, but making sure that
+those downtime procedures that they have
+if that thing goes off the network, that
+they know exactly what to do and that
+you exercise that with them on a regular
+basis.
+>> Mhm.
+>> So that they know exactly what to do.
+It's a muscle
+>> Do we need to be moving more towards
+split technology solutions for for for,
+you know, medical treatment? Uh so, you
+know, uh we've got Siemens here, we've
+got, you know, Samsung here, we've got
+Philips here at the show today. Some of
+the folks I've met. Um do we need to be
+having one of each of those technologies
+in place so that when a patch is a is
+made or a vulnerability is discovered in
+one particular technology stack, we can
+take that out, test it properly as I
+said, right?
+Without [clears throat] impacting
+patient workflows?
+>> Uh but that's
+This is where the interoperability
+causes your problem because connecting a
+Siemens device and connecting a Philips
+device in in in in interoperability
+is not necessarily the same. They don't
+use the same API keys, they don't use
+the same, you know, there's that and and
+we are so
+you know, there was such a push for
+hospitals to become these interoperable
+you know, environments that now we've
+built this spider web of things that if
+you go in there, it's like playing pick
+up sticks and if you pull the wrong one
+out,
+you know,
+>> But we we have technology stacks that
+are dependent on one or two technology
+vendors, right? What would happen if
+Epic were taken down, right? That's an
+extreme example, but you can take that
+to any of the components that make up
+the HIT or HIOT networks in our
+hospitals today.
+>> there's an argument to be made for the
+opposite, which is a move towards
+application rationalization so that you
+are not playing whack-a-mole with every
+with with multiple
+systems. So, in order to be able to
+effectively move at the speed and
+reduce the vulnerabilities,
+you have to look at less systems on
+which to
+to have to address. So,
+what I'm sharing with my board is
+a recommendation for rationalization,
+not additional tech sprawl.
+>> Okay.
+>> Yeah.
+>> Now,
+>> [clears throat]
+>> I want to come back to to Mythos. Mythos
+right now is only available to some of
+the big companies, right? The big banks,
+for example, I had dinner with a number
+of CISOs in the financial services
+sector a couple of weeks ago, and they
+were just exasperated with the number of
+vulnerabilities that they were able to
+find in their stacks. And this is, you
+know, financial services is the the rich
+big brother to all all other industries
+across the country, so you can imagine
+we get the scraps in health care. They
+get the, you know, the prime red meat,
+right? Sorry to offend vegetarians in
+the audience, but I mean, they get they
+get the prime cuts here, right?
+If if health care if the banks, rather,
+are finding hundreds and hundreds of
+vulnerabilities in their code, what's
+the situation for health care?
+And do we stand a chance?
+>> Health care doesn't even
+Out of the 50 companies that are part of
+Project Glass Wing,
+no health care companies are included.
+>> you mentioned that. Yeah.
+>> And not even at Epic. And I had a
+conversation with Epic about this, and
+their answer was very
+It was not an answer. It was
+uh but basically, I have a concern, and,
+you know, through the health care sector
+Coordinating Council and Health ISAC,
+we're trying to
+push for the
+of health care given just the unique
+nature of how we operate, but today we
+have not been successful.
+>> Right.
+If we were to get, you know, some health
+care entities included in plug on
+project Glasswing, right?
+What you what would you expect to find
+given the proliferation of systems we
+have here? And would it make any
+difference to your ability to make the
+make those systems whole to uh patch
+vulnerabilities? Do you have the
+capability, capacity, resources in order
+to make a difference? Or would it just
+be
+more things to keep you up at night?
+>> I think it would be cost reallocation.
+Um and I do anticipate, and again this
+is part of the conversation I'm having
+with our board, is
+uh we're going to have to make we have
+we're going to have to invest
+differently. Health care margins are
+shrinking.
+Um my organization used to enjoy a 10%
+margin. It no longer does.
+And so to
+suggest that we're just going to throw
+more money at it
+um implies that that money's
+coming from somewhere else. And that
+might be a you know, a decision on
+investing in cyber security differently
+and investing less in some clinical
+capability, but those are the hard
+questions that we have to solve. But we
+need the data. And then we have no
+health care representation then it's all
+fud. Um I mean, it's not, but we need
+the data to be able to go to leadership
+and demonstrate what it is that we need
+to do and we're just don't have it yet.
+>> Right.
+>> And I think it's going to require also a
+much tighter collaboration
+between your traditional IT
+infrastructure teams, particularly your
+networking teams, that apply
+segmentation, you know, because there's
+going to be a balance Mhm. this in the
+way you architect your ecosystem
+and it's like a it's like a general
+looking at a battle strategy for a
+certain, you know,
+geographic area that he's responsible
+for protecting and defending and even um
+um being offensive when necessary. And I
+think that's one of the things that
+healthcare has traditionally not been
+from a cybersecurity perspective is we
+are not an offensive, we are a
+defensive, we're not even
+counteroffensive.
+Um and so I think we're going to have to
+look at those strategies differently now
+with this AI coming at us that we can be
+in some cases a more automated offensive
+than just defensive or even
+counteroffensive
+um when once attacked that we can
+implement those strategies. So I think
+it's going to be a rework and a
+rearchitecture
+of the way we view this whole ecosystem
+now.
+>> Well,
+well, one of the big difference between
+uh banks and hospitals is that a bank
+will typically offer less
+less different kinds of services than a
+hospital. So they'll have like just a
+couple of IT software and they can run,
+you know, meet house on these software
+to find all the bugs and typically they
+will be software from big companies and
+they can fix that.
+In a hospital, you will have typically
+over a thousand different software from
+different vendors because there's a
+zillion different departments in
+hospitals and then there's software for
+clinical purposes, there's software for
+administrative purposes and many of
+these software will be from big
+companies that have the resources to
+patch them using Lilia's AI software,
+but a lot of these software come from
+much smaller company like, you know,
+mom-and-pop shops that have like, you
+know, they design one product and then
+they have like, you know, a couple of
+programmers. They just don't have the
+resources. Some of these companies
+could be actually defunct. You're still
+using a software from a defunct company
+that has absolutely no way of patching
+the vulnerabilities. So, you only thing
+you can do is that you can patch I mean
+it runs on Windows for example.
+You hope that it's going to run on the
+latest Windows and then patch the
+vulnerabilities on Windows per se, but
+you won't be able to patch the
+vulnerabilities from that little
+software. And so, this is a much more
+difficult task for a hospital than for
+banks because of the diversity and the
+number of vendors and you know, software
+that we have in hospitals.
+>> there's one other point in health in
+health care it's difficult to calculate
+an ROI. In financial services, if you're
+about to lose a million dollars cuz of
+fraudulent bank transactions, that ROI
+of security is immediately apparent and
+immediately justifiable.
+>> Yes.
+>> We haven't put the price yet on the
+on the cost of a patient life, right?
+>> Yeah.
+>> We we don't have a figure for it. We
+don't have a figure for a patient
+morbidity, mortality, or patient harm,
+right?
+>> Yeah.
+>> And and and and I think
+you can't discount the fact that any any
+hospital
+is 50 businesses running under one
+umbrella.
+I mean
+my hospital is a hotel.
+It is a food service.
+>> It's a very expensive food service.
+>> It's a very expensive food service.
+Um, and it is a retail food service. It
+is a pharmacy. It is a retail pharmacy.
+It is a gift shop. It is you know, it is
+it would it is a cleaning service. It is
+you know, it is it's a power plant. It's
+a fire station.
+>> It's a parking lot.
+>> You know, sometimes because if you're a
+level one trauma center, you're also air
+flight control.
+>> Yep.
+>> You know, so you really have to think
+about the the software and the each one
+of those individual businesses needs its
+own individual sort of macro ecosystem
+to run. Every one of those softwares is
+unique, it's specific purpose-built for
+that particular business running in a
+hospital. And that is why it is so
+complex
+um to
+>> And that's why the smart people like us
+are running it, right?
+>> Absolutely.
+>> Yeah.
+Okay, we've got about 5 minutes left. I
+want to open the floor to to questions.
+I think Gail
+and maybe Kylie, too, are running around
+with microphones.
+But if you've got a question, raise your
+hand and
+one of our
+great great folks here will come out and
+and uh
+and and hand you a mic.
+While we're waiting for a brave people
+to ask questions, oh, we've got one over
+here.
+So.
+I was going [clears throat] to say,
+while we're waiting, is
+are we is AI going to transform patient
+outcomes, do you think?
+>> It's already transforming patient
+outcome, basically. I mean, AI can do
+things that radiologists can't do right
+now. I mean, it has couple of impacts in
+two areas.
+One of them is that it can detect
+disease earlier in different ways. Okay,
+for example,
+there's AI software that's out there,
+right?
+That can detect on CT, you know,
+evidence of pancreatic cancer in a way
+that's not obvious to radiologists. And
+they did that by looking at patients who
+developed pancreatic cancer later on and
+going back to the prior CTs and trying
+to look at the radiomics
+the radiomics of essentially the
+pancreas and to try to identify early
+markers that are are visible to
+radiologists. So, that's one way that
+radio that AI can help. Another way is
+that AI can detect stuff much faster
+before the radiologist can read the
+exam, and that's something implemented
+whenever you have
+a patient undergoing a CT scan of the
+head for a stroke. Okay?
+The old way of doing that is that a
+patient underwent the CT, and then when
+the exam is finished, the the images
+were sent to the radiologist for
+interpretation. Now you got AI software
+running on the scanner, and as the
+individual images get acquired and
+generated, if the AI software, which
+analyzes each image as it is generated,
+detects a stroke, then it will
+immediately send a message to stroke
+team saying, "Hey, we have a stroke. The
+patient is still on the scanner, but
+come here, get him because he's going to
+need, you know, anticoagulation therapy
+or clot-busting medication to to deal
+with that." So that's one way that AI
+helps a lot. Another way is to, you
+know, help deal with the volume, to
+prioritize cases. I mean, we have like
+the volume in radiology increases by by
+like 5% every year, the volume of images
+to read or studies to read, whereas the
+number of radiologists increases by 0.4%
+every year. So we need help to
+compensate for this discrepancy. And so
+AI is there to be able to help with that
+and help prioritize the studies because
+if it can read about Say we have a
+backlog of like a thousand CTs to read,
+well, you can run AI on that backlog and
+say, "Find me studies that have
+important features like a pulmonary
+embolus, incidentally, or new cancer or
+whatever, and uh just flag it and put it
+on the top of the list so that we can
+the radiologist can look at it as soon
+as possible because it's an emergency.
+This stuff exists already and it helps
+medicine a lot in term of uh
+>> So, the benefits are worth the pain.
+>> Yeah.
+>> Yeah.
+Um I'd like to thank our wonderful panel
+for stepping out from their uh the
+clinical and and managerial roles to
+Benoit, to Sharon, uh to Anaki, and uh
+thank you all and I think we are going
+to lunch. Is that the plan?
+>> [music]

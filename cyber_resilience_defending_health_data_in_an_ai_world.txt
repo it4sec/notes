@@ -1,0 +1,871 @@
+ABOUT
+================================================================================
+Title: Cyber Resilience- Defending Health Data in an AI World
+Author/Channel: Healthcare Innovation
+Channel URL: https://www.youtube.com/channel/UCwGHciFPNQqyHMcR7tFH5WA
+Video URL: https://www.youtube.com/watch?v=KOdB6KZEeD0
+Video ID: KOdB6KZEeD0
+Published: 2026-08-10
+Duration: 27:44
+Views: 6
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Sharron Finney, director of Information Security with Children's Hospital of Philadelphia, speaks about cyber resilience at Healthcare Innovation's Summit in Washington, D.C.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**Cyber Resilience- Defending Health Data in an AI World**
+
+## Speaker / Author Information
+- **Speaker:** Sharron Finney in the *About* section; identified as **Sharon Finney** in the transcript.
+- **Role:**  
+  - *About:* Director of Information Security, Children’s Hospital of Philadelphia (CHOP).  
+  - *Transcript:* Senior Director of Cybersecurity Operations, Children’s Hospital of Philadelphia.
+- **Professional background and credentials stated in the transcript:**
+  - More than **25 years** in the technology field.
+  - Began in programming and wrote an early program on a punch-card system.
+  - Held two CISO positions at **AdventHealth** and **Johns Hopkins**.
+  - Describes herself as a former or “recovering” CISO who returned to her primary interest, security operations.
+  - Has experience spanning consulting and employment at CHOP.
+- **Affiliation:** Children’s Hospital of Philadelphia.
+- **Additional institutional description:** Finney describes CHOP as a leading pediatric hospital in the United States, known internationally in more than 133 countries.
+- **Contact details:** No personal email address, telephone number, mailing address, or other direct contact information was provided.
+- **Channel / publisher:** Healthcare Innovation  
+  - Channel URL: https://www.youtube.com/channel/UCwGHciFPNQqyHMcR7tFH5WA
+  - Video URL: https://www.youtube.com/watch?v=KOdB6KZEeD0
+- **Video details:** Published August 10, 2026; duration 27:44.
+
+## Overview
+
+The presentation argues that healthcare cybersecurity must evolve from a narrow focus on preventing intrusion toward **cyber resilience**, defined primarily as preserving continuity of care, patient safety, institutional trust, and the ability to recover rapidly after disruption.
+
+Finney’s central premise is that the traditional healthcare security model—protecting a known, internally managed data-center perimeter—is no longer adequate. Healthcare workflows now span cloud platforms, SaaS ecosystems, AI-enabled decision support, connected medical devices, APIs, remote staff, and extensive machine-to-machine communication. As a result, she argues that healthcare security operations must become more identity-centered, behavior-aware, context-sensitive, and closely integrated with clinical and business continuity planning.
+
+The presentation emphasizes that cybersecurity incidents in healthcare should be treated as potential **patient-care disruptions**, not merely IT events. This changes how organizations should prioritize architecture, investment, incident response, third-party risk, and recovery planning.
+
+## Main Technical and Strategic Contributions
+
+### 1. Reframing cyber resilience around continuity of care
+
+Finney’s most important conceptual shift is from attack prevention to operational resilience. A resilient healthcare security program must be able to:
+
+- Preserve clinical operations during cyber incidents.
+- Recover systems quickly.
+- Contain risks originating from third parties.
+- Protect patient safety.
+- Maintain institutional and patient trust.
+- Coordinate cybersecurity with emergency response and business continuity functions.
+
+She recommends exercises and tabletop scenarios involving security, emergency response, and business continuity teams so organizations can understand the effect of cyber incidents on patient care.
+
+### 2. Replacing the traditional perimeter with identity
+
+The presentation describes the healthcare perimeter as effectively dissolved because systems, staff, devices, applications, and services operate across distributed cloud and remote environments.
+
+Finney identifies **identity as the new perimeter**. This includes not only human users but also:
+
+- Service accounts.
+- API keys.
+- OAuth tokens.
+- Cloud workflows.
+- AI agents.
+- Automation platforms.
+- Medical-device integrations.
+- Trusted workload relationships.
+
+This requires security operations to move from an infrastructure-centric model to an **identity-and-behavioral model**.
+
+### 3. Addressing non-human identity and credential sprawl
+
+A major technical theme is the growth of non-human identities. Finney argues that these identities may already outnumber human identities in healthcare ecosystems.
+
+This creates risks associated with:
+
+- Excessive or poorly understood service accounts.
+- Credential sprawl.
+- Compromised API keys.
+- Misused OAuth tokens.
+- Automated workloads operating without obvious human oversight.
+- Trusted relationships between systems.
+
+Because these identities perform critical functions and may access protected health information, security teams need greater visibility into their behavior and relationships.
+
+### 4. Treating APIs as critical healthcare infrastructure
+
+Finney characterizes APIs as a major contemporary attack surface because they support:
+
+- Electronic health record integrations.
+- AI interfaces.
+- Telehealth.
+- Cloud application connectivity.
+- Interoperability.
+- Medical-device communication.
+
+She argues that API security must become a core operational capability. This includes the ability to:
+
+- Discover APIs and associated credentials.
+- Monitor API activity at runtime.
+- Apply behavioral analytics to API keys and connections.
+- Detect violations of expected trust relationships.
+- Investigate potentially compromised tokens and credentials.
+
+The presentation connects this requirement to the broader shift from perimeter monitoring to monitoring relationships and behavior across distributed systems.
+
+### 5. Using AI for defense while recognizing its risks
+
+Finney presents AI as both an accelerator of cyber risk and a potential tool for defense.
+
+She notes that threat actors are adopting AI, including for the development of exploits. At the same time, healthcare security teams need AI strategies and tools to process the growing volume and complexity of security events.
+
+Potential defensive uses discussed include helping security operations:
+
+- Analyze identity and behavioral data.
+- Identify anomalous API or token activity.
+- Evaluate access context.
+- Assist with decisions about isolating potentially compromised devices.
+- Support monitoring of AI interactions, data flows, and API usage.
+
+However, she does not advocate unrestricted automation. In clinical environments, a security action such as isolating a device could interfere with an active procedure. She therefore expects a **human in the loop** to remain necessary, particularly where automated action could affect patient care.
+
+### 6. Establishing AI governance as security governance
+
+Finney argues that AI adoption is moving faster than organizational governance. She also compares this situation with the longstanding healthcare practice of deploying large numbers of applications that may not be fully governed.
+
+Her key governance position is that security operations must have a seat at the AI governance table. Security teams need visibility into:
+
+- AI interactions.
+- Data flows.
+- API usage.
+- AI-assisted behavior.
+- Potentially anomalous or malicious AI activity.
+- The difference between approved and potentially harmful AI behavior.
+
+The concern is not limited to explicitly unauthorized tools. Finney emphasizes that malicious activity may operate “low and slow,” remaining inside an environment for as long as possible while avoiding obvious detection.
+
+### 7. Moving beyond static role-based access control
+
+The presentation argues that traditional role-based access control is insufficient for modern healthcare environments because it assumes:
+
+- Static roles.
+- Stable environments.
+- Predictable workflows.
+
+Finney proposes a move toward **attribute-based access control (ABAC)** and dynamic, contextual security decisions. Relevant attributes include:
+
+- Device posture.
+- User behavior.
+- Workload identity.
+- Clinical context.
+- Location.
+- Data being accessed.
+- Whether protected health information is involved.
+- API gateway familiarity.
+- Whether the workflow is approved.
+- Whether the access pattern is anomalous.
+
+The goal is to support a zero-trust architecture in which access decisions are based on current risk and context rather than solely on a preassigned role.
+
+### 8. Designing for third-party compromise
+
+Finney uses healthcare disruptions associated in the transcript with Change Healthcare and “Strack” as examples of ecosystem and identity risk.
+
+The Change Healthcare discussion illustrates how dependence on external platforms can affect:
+
+- Pharmacy operations.
+- Reimbursement workflows.
+- Scheduling.
+- Broader care delivery.
+
+The “Strack” example is presented as an identity-focused compromise affecting cloud-connected environments, workstations, ordering systems, and supply chains.
+
+From these examples, Finney concludes that healthcare resilience must assume that third-party compromises are possible, perhaps inevitable. Organizations need procedures for:
+
+- Assessing whether a compromised vendor is contained.
+- Determining when connectivity should be restored.
+- Establishing confidence that reconnection will not extend the impact.
+- Managing third-party containment and operational recovery.
+
+### 9. Applying layered defense to unstable environments
+
+Finney supports a multi-layered defense strategy but notes that implementation is difficult when organizations are modernizing legacy environments while systems and workflows continue to change.
+
+The proposed layers include:
+
+- Identity protection.
+- API discovery and runtime monitoring.
+- Behavioral analytics.
+- Dynamic, contextual access decisions.
+- AI governance.
+- Human oversight of high-impact security actions.
+- Third-party risk and recovery planning.
+- Coordination with clinical continuity and emergency response programs.
+
+## Key Technical Ideas
+
+1. **Cyber resilience means preserving continuity of care, not merely blocking attacks.**
+2. **Identity has replaced the traditional network perimeter** in distributed healthcare environments.
+3. **Security operations should shift from infrastructure-centric to identity-and-behavioral analysis.**
+4. **Non-human identities are a primary security domain**, including service accounts, API keys, OAuth tokens, AI agents, and automated workloads.
+5. **APIs should be treated as critical healthcare infrastructure** and monitored for runtime behavior, trust-relationship violations, and credential compromise.
+6. **AI is needed to help security teams keep pace with threats**, but it also introduces governance, monitoring, and abuse challenges.
+7. **AI governance is part of security governance** because AI affects data flows, access, APIs, and operational behavior.
+8. **Static role-based access control is inadequate** for dynamic cloud, AI, and clinical environments.
+9. **Attribute-based and contextual access control** should evaluate device posture, user behavior, clinical context, location, data sensitivity, workload identity, and workflow legitimacy.
+10. **Human oversight remains essential** when automated security actions could interrupt clinical procedures or patient care.
+11. **Third-party compromise should be treated as an expected scenario**, requiring containment, recovery, and reconnection criteria.
+12. **Security performance should ultimately be measured by trust, continuity of care, and safe innovation**, not only by detection, response, and containment.
+
+## Overall Assessment
+
+The presentation’s technical innovation lies less in proposing a single product or algorithm than in defining a new operating model for healthcare cybersecurity. Finney connects identity security, API protection, AI governance, behavioral analytics, clinical context, and business continuity into one resilience-oriented framework.
+
+Her central idea is that healthcare security decisions must account for operational and clinical consequences. In this model, the most effective security operation is not necessarily the one that blocks the most activity, but the one that can distinguish harmful behavior from legitimate clinical workflows, respond proportionately, preserve patient safety, and help the organization continue caring for patients during disruption.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[music]
+>> Good morning everyone. Thank you all for
+attending the Innovation Summit and
+allowing me the opportunity to speak
+with you today.
+I am Sharon Finney. I'm the senior
+director of cybersecurity operations
+of Children's Hospital of Philadelphia.
+It is the leading hospital in pediatric
+health in the country and is well known
+around the world in over 133 countries.
+Um
+I have been in
+this field for
+longer than I would like to admit,
+>> [laughter]
+>> but at least 25 plus years implementing
+technologies. I wrote my first program
+on a punch card system. Any of you
+younger than the people sitting in this
+front row who have to Google that
+know what it is.
+Um but I started out in programming and
+it eventually led me to two CISO jobs
+with two of the top healthcare systems
+in the country,
+AdventHealth and Johns Hopkins, which
+were wonderful experiences. I am now a
+recovering
+CISO
+and have gone back to my true passion,
+which is security operations.
+And
+I love building things. And this is a
+time
+like we have never seen before to build
+things that help secure not only
+healthcare system ecosystems, but also
+patients and build in resilience that
+allows us to continue patient care in
+situations that organizations have never
+faced before Uh, today. So I have some
+notes here because as you can tell, I'm
+not from DC.
+Uh, with this accent. So, I'm from the
+south, which means I will talk your ear
+off. So, if you see me looking down, it
+is so that I can stay on track and uh,
+make sure we get through this with time
+for questions at the end.
+Um, so I want to frame this discussion
+first by saying this is going to be
+about we're very centric to
+cybersecurity operations in this new
+world that we live in. Um, I live it
+every single day.
+I get a um, at 6:30 in the morning every
+morning, I get a Gartner report that
+says here are the all the cyber things
+that happened in the last 24 hours. I
+have gotten that list for probably
+six, seven years now.
+Every day it gets longer.
+Every day.
+I remember a time when I got maybe a
+CISA um, notification or an alert
+maybe once, twice a month.
+Sometimes I get three, four a day now.
+That's the world we live in.
+So, I want to talk really specifically
+about what it means to defend
+um, a modern healthcare organization
+and ecosystem as AI accelerates,
+um, cloud adoption expands, and
+traditional data center boundaries
+are no more.
+They don't exist anymore.
+Um,
+historically,
+cybersecurity has focused on protecting
+internal infrastructures around an area
+we reasonably knew. You know, we could
+walk into it, we could see it, we could
+put our feet on the ground in a data
+center, we could look at all the
+servers, we may not know what's on all
+of them,
+but we could see them and we could touch
+them.
+Um but today
+healthcare has fundamentally changed
+um um over the past probably 10 years.
+All of our workflows, clinical,
+business, um
+security workflows, any kind of workflow
+that you're working with today,
+travels across cloud-hosted platforms,
+SaaS ecosystems,
+um AI-enabled
+decision support, um connected medical
+devices, which is growing. Our We all
+know that our IoT environments are
+expanding.
+And
+APIs,
+which is a thing that didn't exist, you
+know, used to in the day in a physical
+data center since
+we would just send data out and we
+received data in. So, it was, you know,
+north-south traffic. Oh, you know, we
+kept everything like in our perimeter
+and that's This is my dance space and
+this is your dance space, okay?
+And we don't live that way anymore.
+We're in a rave, okay? That's what it's
+like out there.
+Um
+and so um
+and and we have this enormous
+amount of machine-to-machine
+communications occurring every day
+that we don't even realize happen
+because they're autonomous.
+They just happen in the background of
+things.
+So, the key message that I really want
+to leave you guys with today is
+cyber resilience is
+no longer simply about preventing
+attacks.
+It is about creating and preserving
+continuity of care.
+Um and it's about being able to recover
+our systems quickly.
+Um patient safety, institutional trust,
+um, as we several of the speakers have
+talked about building trust um, today
+which I think is
+extremely important topic uh, to, um,
+continue to build upon,
+um, because it all does depend on trust.
+Oh, okay. So, here's my disclaimer. I
+have to put it up here.
+Um, these are not the opinions These are
+my views, my opinions and based on my
+experience. Um, this the content
+presented here does not necessarily
+represent or reflect
+specific Children's Hospital of
+Philadelphia material but is a
+culmination of all my experience from my
+consulting days all the way to being
+employed, uh, by
+Children's Hospital of Philadelphia.
+And
+So,
+let's talk about the perimeter
+which we don't have anymore.
+We do not have a perimeter.
+I think this is one of the biggest
+transformations that has occurred in any
+industry, not health care as this is not
+specific to health care.
+We built all of our programs and
+everything around, um,
+this on-premise infrastructure.
+Um,
+we don't live where we lived 30 seconds
+ago.
+That's how fast this change is today. We
+don't live where we lived 30 seconds
+ago.
+Um, today
+these clinical systems are increasingly
+living and hosted in the cloud.
+Um, they are
+our AI services are all over the board,
+everywhere.
+Uh, clinicians, um, our staff work
+remotely. I myself work one day a week
+on prim at the hospital.
+Um, but we have clinical staff that
+telework. We've got clinicians that are
+based in China, South Africa, um, the
+Pakistan,
+um, in in geopolitical times such as
+these,
+from a cybersecurity perspective, having
+a distributed workforce like that, um,
+is very challenging. Because how do you
+let good people in and keep bad people
+out?
+I know, when you open those doors.
+But what's important here is identity is
+the new perimeter in this world.
+Absolutely.
+Um,
+it is no longer our firewalls.
+So, because of that,
+um, we're now dealing with not only
+north-south traffic, but we're dealing
+with a ton of east-west traffic in our
+networks today,
+um, that, um, travel uh, between
+systems, between APIs, APIs connecting
+to the outside world, APIs connecting
+our internal systems. And we all know
+that the recent breach history has been
+focused on API key
+uh, compromise.
+Um, several of the most recent events
+have been API key compromises.
+Um, so, cybersecurity operations has to
+make a shift from an
+infrastructure-centric design to a
+identity-and-a-behavioral
+design. Now, that doesn't sound like a
+big shift,
+um, but it is a big shift in the data
+analytics that's required to do it.
+And as a result of that, we also need to
+adopt
+AI strategies and AI tools
+in order to help us keep pace
+uh with uh threat actors that are
+continuing
+to um adopt AI. As a matter of fact, I
+got a notification on that Gartner list
+this morning uh that Google identified
+um a threat actor who has um
+um used AI to develop um a uh
+infiltration and an exploit to a
+zero-day vulnerability. And they can
+demonstrate the functionality of that
+today.
+Um
+so, you know, the shift is occurring now
+more rapidly and rapidly and rapidly as
+we look towards this. So, I want to look
+back at about three um events,
+significant events that occurred that
+have impacted healthcare.
+So, we have Change Healthcare.
+This changed the way that we looked at
+cybersecurity and particularly
+cybersecurity operations.
+Um
+they um
+it wasn't simply a breach.
+Um what it exposed was a systemic
+dependency
+on outside ecosystems
+um within the healthcare operations and
+workflows. We all knew these existed
+before Change Healthcare. I mean, we
+knew that we were communicating with
+Change Healthcare. We knew that we were
+connected with them. We just didn't
+realize the impact
+of what would happen if they had a major
+compromise.
+>> [snorts]
+>> And it sort of opened our eyes to things
+like pharmacy operations, reimbursement
+workflows, scheduling, things that
+really um
+detrimentally could affect care delivery
+within hospital environment. So,
+the lessons we learned there were fairly
+profound because we can no longer think
+about
+just protecting systems and blocking
+malware or detecting events or
+intrusions into our environment.
+We've got to think about now operational
+continuity, resilience,
+um recovering, third-party containment
+as well.
+Um
+cybersecurity incidents in health
+healthcare now are patient care
+disruptors,
+period.
+And that changes how we have to
+prioritize investments and
+architectures.
+The Strack breach.
+Um this was another warning about
+ecosystem risk, but um it was different
+in the fact that it was identity-based.
+Um and um
+and so and it focused on attacking their
+identity infrastructure
+to penetrate them.
+And so the um you know, their cloud
+connecting environments, workstations,
+it was malware activity, it was
+everything they could throw at them
+including the kitchen sink from a threat
+actor perspective uh to shut them down.
+And although it really didn't impact
+patient care directly because it didn't
+affect the medical device side of the
+Strack business and and that, but what
+it did do was it shut down ordering
+systems, it affected supply chains, and
+it really disrupted
+for a longer period of time and we still
+don't have an attestation from Striker
+that they are completely recovered. They
+have not issued that formally. I think
+Unit 42 is doing their forensics
+on that and they've come out with a
+statement that says
+we've got it contained, we're working on
+it.
+And then how long does it take to get
+that formal attestation that they've
+recovered? And when do you as a
+healthcare system
+release connectivity back to Striker?
+And I would when do you do that? What
+would gives you the comfort level that
+you can do that without sustaining
+further impact to your own internal
+operations?
+So
+this moving forward into this sort of
+cloud first architecture federated
+identity systems
+operational resilience must assume that
+third-party compromise scenarios are
+inevitable.
+Every compromise we've noted in the last
+probably
+four to five months
+has been some sort of supply chain
+attack against these systems because
+these threat actors know that they can
+disrupt.
+So let's talk about Methos.
+So
+there's a there's so much activity
+around AI in general
+and I think Methos
+um
+really brought it to a head when they
+were when you're looking at code-based
+development.
+Um
+it is
+um
+I think it represents it AI AI adoption
+is moving faster than we can govern it.
+I mean that's just that's a fact.
+But I don't think that's really new to
+healthcare because we've been adopting
+applications
+that we haven't governed for years.
+Okay? We have thousands of them in any
+healthcare ecosystem. You have thousands
+of applications. Whether you know you
+have thousands or not, you do.
+Okay?
+And so I think that the
+um
+What's important about AI governance to
+security operations
+is
+we have to have
+a seat at that table because AI
+governance is now security governance.
+We've got to figure out how we
+monitor and have visibility into AI
+interactions, data flows,
+API usage,
+anomalous AI-assisted behavior. How do
+you identify good AI versus a bad AI?
+in your environment. It isn't always
+just about
+what you've approved or what you've
+disallowed or what you blocked or
+haven't blocked. Sometimes it's about
+that thing that infiltrates your
+environment and operates low and slow
+underneath the covers.
+Which is basically what threat actors
+want to do today. They want to operate
+low and slow and they want to stay in
+your environment as long as possible.
+So
+non-human identity.
+If you'd told me 25 years ago that I'd
+be standing in a room full of people
+talking about non-human identities on
+computers, I would have said you're
+crazy. That's not never going to happen.
+You're never going to have a not a
+computer that's not a that doesn't have
+a human attached to it.
+And here we are.
+So, in these environments,
+um the challenges are the APIs, the
+service accounts, the OAuth tokens, the
+cloud workflows, the AI agents, the
+automation platforms, and the medical
+device integrations that we have within
+a healthcare system. The amount of
+traffic on a network, internal and
+external, uh to a healthcare system,
+um
+is astronomical.
+And the amount of data that flows over
+those, because at the end of the day, we
+treat patients. Everything we do is
+about treating a patient at a specific
+point in time.
+Everything we do
+probably passes some degree or has
+access to PHI at some point in time.
+We just don't know when that point in
+time is.
+And therefore, we can't map the
+behavior.
+So, we can't identify the anomaly
+of that API connection or that OAuth
+token that looks compromised, but may
+not be. We just don't know. And security
+operations people, we can only act on
+what we know.
+If we act on what we assume, then we
+break things. And nobody wants security
+operations breaking stuff in their
+environment. But the breaking of things
+can have very detrimental effects to
+clinical care.
+If I isolate a device in a surgical
+operating room while a surgeon has a
+patient open on the table,
+and I isolate that device while he's
+using it, because it's got malware on it
+or it got flagged as having malware on
+it,
+then that's a manual operation for me
+today. I got to pick up the phone. I got
+to call the surgical coordinator. I got
+to find out the surgeon that's in that
+room. I got to find out whether or not
+he's using that device. Can I isolate
+it? Can I not? How long will it be till
+till I isolate it? Is the malware going
+to impact what he's doing surgically?
+Can it alter the data?
+I've got to ask all those questions.
+Now, AI can help me get to some of that,
+but not all of it.
+That's why I don't you think you'll ever
+see
+in my lifetime,
+as a security operations person,
+um
+that we don't have some kind of human in
+the loop in these systems.
+But, what we've got today, the
+challenges that we face are um attackers
+know
+that identities are the key.
+And as a result of that, they're
+targeting tokens, service accounts, API
+keys, all of those kinds of things,
+trusted workload relationships.
+We have credential sprawl. Now, we all
+talked about data sprawl about 10 years
+ago.
+Now, we have credential sprawl.
+Um and our
+non-human identities, if they have not
+already, are outpacing our human
+identities
+in our ecosystems,
+which creates a unique challenge.
+So, as we've seen recently, API keys are
+the new attack surface. Why? Because
+they're the things that
+create EHR integrations. They are the
+things that allow AI interfacing
+engines. They are the things that allow
+telehealth to occur, cloud application
+connectivity, interoperability,
+and medical device communication.
+>> [snorts]
+>> So, So,
+this is why API security has to evolve
+into a core operational
+uh capability for security operations
+teams and technical teams as a whole.
+Um we've got to be able to discover
+them. We've got to be able to monitor
+them um um
+the runtime. We've got to be able to do
+behavioral analytics on these API keys.
+And this leads us to why our back, which
+is our standard, you know, role-based
+authentication model,
+um is no longer sufficient. It was built
+for a different time and place.
+Um we have to it one, it assumes static
+roles. It assumes stable environments
+and it assumes predictable workflows.
+That is the exact opposite
+of what we have today.
+It's the exact opposite.
+So, um
+today we have to be dynamic in the way
+we approach this.
+Um we have to assess device posture. We
+have to assess its user behavior.
+>> [clears throat]
+>> I mean, it's a risk-based modeling
+on how risky is this access and where is
+it coming from and is it anomalous or
+not. Um it's no longer about
+well, is the same doctor accessing a
+system at the same time from two
+different places. Okay, we've gone way,
+way past that
+to
+is it workload identity? Is it, you
+know, does it violate an API trust
+relationship, user behavior, clinical
+context, what are they accessing, where
+from?
+And, you know, a physician,
+you know, using an ap- approved AI
+workflow in on prem in a hospital
+environment using a hospital computer is
+way different than when they're remote
+and managed device, they're exporting
+data,
+um they're going through an unfamiliar
+API gateway.
+Um you know, so static role and uh
+cannot
+take us to the next level.
+So,
+we've got to move to this A A by model,
+which directly relates to the class um
+um
+um a guidance that was output.
+We've got to go attribute based and
+we've got to be able to we've got to
+enable a dynamic contextual security
+decision about whether or not we allow
+somebody access to a system or not.
+This is where AI can help and AI hurts a
+little. Yeah, you know, it's it can be
+either way.
+So, um but you know, AI or ABAC ask the
+appropriate questions.
+What are they using?
+Is the device trusted? Are they coming
+from a known place? What workflow? Is
+PHI involved? You know, what are they
+trying to access? Where are they
+accessing it from? It asks all of those
+questions and then it helps us support
+what we all want to get to which is that
+zero trust architecture and it helps
+support us in cloud environments
+um that are dynamic and API ecosystems
+and also AI governance.
+So, we have to move to a multi-layered
+defense strategy. Um and I think that
+this is sort of obvious and it's very
+simple to stand up here and say on a
+stage, not so easy to implement,
+particularly when you're trying to
+remodel an existing ecosystem. While I
+I equate it to we're trying to build a
+house and lay a foundation
+uh for a house on top of ground that is
+experiencing an earthquake.
+It's hard to get that level
+and stable
+where it will support the weight that
+you place upon it.
+Um and so
+with that, I will leave you with um
+some executive actions that I think
+um
+needed to infuse our
+um
+uh security
+sort of mantra that we the way we
+approach security every day is we need
+to treat identity like it's the new
+perimeter.
+Treat it like that. Treat it like you
+would a firewall. We've all configured a
+firewall rule. We all know what that
+looks like. We all know
+the complexities of that and this needs
+to be treated treated no differently.
+Secure
+the APIs like they are critical health
+care infrastructure because they are.
+Govern AI before it scales. I'm not sure
+that that ship hasn't sailed
+for for a lot of us, but um it's
+important to stay focused on it. And to
+have security have a seat at that table
+um for AI governance.
+And then align secur- align all of your
+cybersecurity to your patient safety and
+resilience. Work with your emergency
+response teams. Work with those Work
+with your business continuity teams at
+your hospitals.
+Um to align those programs and run um,
+you know, meaning table tops, run
+exercises with them so that you can see
+how this is going to impact you.
+Um,
+and then my final thought, which is um,
+the future of modern healthcare SOC will
+not be measured solely by how well it
+detects, responds, and contains.
+We will eventually be measured by how
+effectively it preserves trust.
+It um, establishes and supports
+continuity of care,
+and a safe innovation
+in an AI-driven ecosystem.
+>> [music]

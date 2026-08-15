@@ -1,0 +1,1011 @@
+ABOUT
+================================================================================
+Title: AI Innovations and Disruptors in Healthcare
+Author/Channel: Healthcare Innovation
+Channel URL: https://www.youtube.com/channel/UCwGHciFPNQqyHMcR7tFH5WA
+Video URL: https://www.youtube.com/watch?v=vDr6Hmw0J2g
+Video ID: vDr6Hmw0J2g
+Published: 2026-08-11
+Duration: 35:42
+Views: 10
+Likes: Unknown
+Comments: Unknown
+
+Description:
+Find out what the leading edge is in advanced analytics, especially in AI and machine learning—at a time of rapid development- in this session at the Healthcare Innovation Summit in Washington, D.C.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# AI Innovations and Disruptors in Healthcare
+
+## Source and authors
+
+- **Title:** *AI Innovations and Disruptors in Healthcare*
+- **Author/channel:** Healthcare Innovation
+- **Channel URL:** https://www.youtube.com/channel/UCwGHciFPNQqyHMcR7tFH5WA
+- **Video URL:** https://www.youtube.com/watch?v=vDr6Hmw0J2g
+- **Video ID:** vDr6Hmw0J2g
+- **Published:** 2026-08-11
+- **Duration:** 35:42
+- **Description:** A session at the Healthcare Innovation Summit in Washington, D.C., discussing advanced analytics, artificial intelligence, and machine learning in healthcare.
+
+### Speakers and available credentials
+
+The transcript identifies several speakers by first name or role, but does not provide their full names, formal biographies, affiliations beyond those explicitly mentioned, or contact details.
+
+- **David**
+  - Described as a **medical geneticist**.
+  - Discusses AI deployment at **Cleveland Clinic**.
+  - The transcript does not provide his full name, formal title, additional credentials, or contact information.
+
+- **Ben**
+  - Described as a **radiologist**.
+  - Discusses the development, validation, and limitations of radiology AI.
+  - The transcript does not provide his full name, formal title, affiliation, or contact information.
+
+- **Chad**
+  - Participates in the discussion about AI disruption, workforce concerns, and healthcare workflows.
+  - The transcript does not provide his credentials, affiliation, full name, or contact information.
+
+- **Ted**
+  - States that he **runs an AI company**.
+  - Discusses AI transparency, reasoning, workflow redesign, and human–AI collaboration.
+  - The transcript does not provide the company name, his full name, additional credentials, affiliation, or contact information.
+
+- **Moderator**
+  - The moderator’s name and credentials are not provided.
+
+No personal email addresses, institutional contact details, or speaker-specific URLs are provided. The only contact-related information supplied is the Healthcare Innovation channel and video URLs above.
+
+---
+
+## Summary
+
+This session examines how artificial intelligence is moving from experimentation toward operational deployment in healthcare. The speakers focus less on speculative AI capabilities and more on practical implementation: clinical documentation, medical imaging, prior authorization, scheduling, administrative work, workforce transformation, and the redesign of healthcare processes.
+
+A central theme is the distinction between **automating individual tasks** and **replacing entire professions**. The panel argues that current healthcare AI is highly useful for narrow, repetitive, or pattern-recognition tasks, but remains insufficient for fully autonomous clinical decision-making. Successful implementation therefore requires human oversight, validation, monitoring, and redesign of existing workflows.
+
+### Current deployment at Cleveland Clinic
+
+David describes Cleveland Clinic as having made a substantial organizational commitment to AI, including the appointment of a chief AI officer approximately one year before the session. The organization has moved beyond limited experimentation in several areas:
+
+- **AI-assisted clinical documentation:** Approximately 5,000 Cleveland Clinic providers received AI scribing software on their iPhones and are using it to document patient encounters. David characterizes this deployment as highly successful.
+- **Medical imaging interpretation:** Imaging is identified as a major current area of work.
+- **Prior authorization and appeals:** AI is being developed to generate the documentation needed for prior authorization requests and appeals, particularly for specialists such as medical geneticists. The intended benefit is to reduce administrative effort and allow clinicians to spend more time on higher-value activities.
+- **Scheduling:** David identifies patient scheduling as another area with substantial automation potential. AI could potentially match patients to the appropriate scheduling protocols more rapidly than centralized staff working through referral rules manually.
+- **Business and administrative functions:** The panel notes that additional AI activity is occurring on the business side of healthcare, although the speakers do not describe all of those projects in detail.
+
+### Radiology as a leading AI application area
+
+Ben explains that radiology has been one of the medical specialties most affected by AI. He states that more than 70% of newly produced FDA-approved healthcare AI software is related to radiology.
+
+The discussion describes an evolution from narrow diagnostic tools to systems capable of identifying multiple findings:
+
+- Earlier systems were often designed for a single binary task, such as determining whether pneumonia was present.
+- Newer systems can identify many conditions at once. As an example, Ben refers to software acquired by Sectra from Eastern Europe that can reportedly diagnose approximately 75 different findings on chest radiographs.
+
+However, the speakers emphasize that broad capability does not automatically mean robust clinical performance. A system that works well on outpatient chest radiographs may perform poorly on severely ill intensive-care patients whose images contain difficult positioning, lines, enlarged hearts, or extensive lung abnormalities. The technical implication is that AI systems must be evaluated across the full range of clinical conditions in which they will be used, rather than only on relatively clean or representative cases.
+
+### Pattern recognition versus clinical knowledge
+
+The panel distinguishes between current AI systems as highly capable **pattern-recognition engines** and the broader knowledge required for clinical interpretation.
+
+Current systems can rapidly recognize visual patterns, but the speakers argue that radiologists also rely on:
+
+- Anatomy
+- Pathology
+- Physiology
+- Clinical context
+- Medical knowledge acquired through training and experience
+
+Ben argues that present-day AI is not yet close to replacing radiologists because many systems lack an integrated model of these underlying concepts. He points to efforts to incorporate physical or world models into AI and suggests that analogous models in healthcare would need to include anatomy, pathology, and physiology.
+
+This would represent a significant technical transition: from systems that primarily match patterns in data to systems that combine pattern recognition with structured medical knowledge and more reliable reasoning. The speakers do not predict when such systems will become available or whether adding this knowledge will preserve the speed and performance of current models.
+
+### Automation, augmentation, and disruption
+
+The session presents disruption as a gradual process rather than a single event. The speakers emphasize that AI may first replace tasks, not people.
+
+Examples include:
+
+- Automatic transcription of radiology reports
+- Tracing contours in imaging studies
+- Calculating measures such as left ventricular ejection fraction
+- Generating prior authorization documents
+- Coding and billing
+- Scheduling
+- Administrative and repetitive healthcare operations
+
+Ben gives the example of radiology transcriptionists whose work was eliminated after voice-recognition software became integrated into a new PACS workflow. Radiologists reportedly benefited from immediate transcription rather than waiting for reports to return later for approval, but the transcriptionist role itself disappeared.
+
+The panel also discusses the idea that healthcare professionals who learn to use AI may displace those who do not. This frames near-term competition not only as AI versus humans, but also as **AI-enabled workers versus workers who do not effectively use AI**.
+
+### Workforce and deskilling concerns
+
+The speakers identify several risks associated with AI adoption:
+
+- **Deskilling:** Medical students and trainees may lose opportunities to develop diagnostic and interviewing skills if AI performs too much of the initial work.
+- **Misinformation in electronic health records:** AI systems that summarize EHR data or generate diagnoses may reproduce inaccurate information already present in the record.
+- **Loss of clinical learning:** Traditional interactions among interns, residents, consultants, and patients help trainees learn how to ask questions and distinguish reliable from unreliable information. The panel questions whether AI-mediated workflows will preserve this learning.
+- **Devaluation of work:** Employees may question their value when machines perform tasks that previously defined their jobs.
+- **Black-box decision-making:** AI systems may produce answers without providing sufficiently clear explanations of how those answers were generated.
+- **Workflow dependence on changing models:** Commercial AI platforms can change frequently, meaning that organizations building processes on top of them may be working with a constantly changing technical foundation.
+
+Ted stresses that human beings should not be treated as interchangeable components. In his view, organizations should value the people who design, monitor, and improve automated workflows, even when the individual tasks within those workflows are automated.
+
+### AI reliability, learning, and reasoning
+
+The panel repeatedly states that current systems are not yet reliable enough to replace humans in healthcare. The speakers discuss systems that can still be wrong frequently, while also emphasizing that model performance is improving rapidly.
+
+Several technical requirements are identified:
+
+- Systems should provide explanatory information about why they reached a conclusion.
+- Errors should be detected, analyzed, and used to improve future behavior.
+- AI should incorporate reasoning rather than relying solely on statistical pattern matching.
+- Organizations need mechanisms to test whether model updates improve or degrade performance.
+- Clinical AI should remain argumentative or assistive rather than operating as an unexplained black-box diagnostic authority.
+
+Ted describes commercial AI platforms as a rapidly changing landscape, with major model updates and new features appearing frequently. This creates an operational challenge: healthcare workflows built around a model may change when the underlying model changes.
+
+The speakers’ preferred direction is collaborative human–AI operation. They argue that healthcare AI should be introduced by examining and rebuilding workflows, with humans remaining involved in design, validation, supervision, and patient-centered decision-making.
+
+### Cost reduction and incentives
+
+The discussion questions whether AI is currently reducing healthcare costs and, if so, for whom. The speakers note that:
+
+- AI may reduce labor or administrative costs.
+- AI-enabled billing and coding can increase healthcare spending rather than decrease it.
+- Prior authorization may become an AI-mediated contest between insurers and providers rather than a net reduction in system-wide costs.
+- Savings depend on the goals and incentives built into the implementation.
+- A large proportion of AI proofs of concept and experiments reportedly fail, making disciplined planning important.
+
+Ted argues that organizations should begin with a clear objective and design the implementation backward from the desired outcome. They should determine which existing processes can be retained, which must be discarded, and how the new workflow affects patients and families.
+
+The session also emphasizes that a workflow that is efficient for an organization may still be difficult for patients, particularly older adults or people dealing with illness. Patient and family involvement is therefore presented as an essential part of responsible AI implementation.
+
+---
+
+## Technical innovation and authors’ ideas
+
+The session’s technical contribution is primarily conceptual and implementation-oriented rather than a report of a new algorithm or experimental study. Its core ideas concern how healthcare organizations should evaluate, deploy, and govern increasingly capable AI systems.
+
+The speakers propose a progression:
+
+1. **Narrow task automation**
+   - AI performs a tightly defined function such as detecting pneumonia, transcribing a report, tracing an anatomical contour, or calculating a measurement.
+
+2. **Multi-finding systems**
+   - AI expands from one diagnostic target to many possible findings, such as systems that identify dozens of abnormalities on a chest radiograph.
+
+3. **Context-sensitive clinical systems**
+   - Systems must perform reliably across different patient populations, imaging conditions, and levels of clinical complexity.
+
+4. **Knowledge-integrated models**
+   - AI should incorporate medical concepts such as anatomy, pathology, physiology, and clinical context rather than relying only on statistical visual similarity.
+
+5. **Reasoning and explainability**
+   - Systems should provide interpretable rationales, identify uncertainty, and support safe human review.
+
+6. **Human–AI workflow collaboration**
+   - AI should be embedded into redesigned clinical and administrative processes, with humans responsible for oversight, correction, and patient-centered judgment.
+
+---
+
+# Key technical ideas
+
+- **Deploy AI where the task is narrow, repetitive, and measurable.** Documentation, transcription, scheduling, authorization support, and image measurements are presented as practical entry points.
+- **Distinguish task replacement from professional replacement.** Automating a task does not necessarily eliminate the broader role of a clinician.
+- **Validate models under real clinical conditions.** Performance on clean outpatient images may not transfer to ICU cases or other complex settings.
+- **Move beyond pattern matching.** Future medical AI needs integrated knowledge of anatomy, pathology, physiology, and clinical context.
+- **Develop reasoning-oriented systems.** The panel views reasoning as distinct from merely producing plausible outputs based on learned patterns.
+- **Require explainability and error analysis.** AI should indicate why it reached a conclusion, expose failure modes, and support learning from mistakes.
+- **Continuously monitor commercial models.** Frequent updates to foundation models can alter the behavior of healthcare applications built on top of them.
+- **Keep clinical AI assistive and accountable.** The speakers favor augmentation and human control over unexplained autonomous diagnosis.
+- **Redesign workflows rather than simply adding software.** Effective implementation requires examining every step of a process and determining what should be retained, automated, or rebuilt.
+- **Treat humans as part of the technical system.** Healthcare workers are needed to design, supervise, validate, and improve AI-enabled workflows.
+- **Evaluate incentives and patient impact.** Cost savings for an organization do not necessarily translate into lower costs for patients or the healthcare system.
+- **Include patients and families in implementation decisions.** A technically efficient process may still be difficult or inappropriate for people navigating illness or limited technical ability.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[music]
+>> David, your organization Cleveland
+Clinic has long been at the forefront of
+tech innovation. Uh how are you thinking
+about and your organization thinking
+about
+uh AI experimentation versus
+implementation and where we are in this
+moment?
+>> Um well,
+I think we can say that they really went
+all in when they hired the chief AI
+officer a year ago.
+Uh prior to that, we had a chief digital
+officer, uh but uh at least for a year
+now, we've had a chief AI officer.
+And there's some areas where actually
+they've gone all in. Uh we have AI
+scribing software for documenting
+encounters.
+Uh about 5,000 Cleveland Clinic
+providers
+had this software pushed to their iPhone
+and they're using it. And I saw
+one of my newsletters, my email today,
+said that I forget which institution had
+done uh
+I forget 100,000, you know, AI scribe
+notes. I I can guarantee you Cleveland
+Clinic has done much more than 100,000
+uh cuz we see over a million patients a
+year.
+Uh so, that's been very successful and
+it's been uh
+just jumping right in there after
+testing out all the competitors and
+making, you know, a choice.
+Uh right now, what they're working on uh
+is imaging interpretation and
+he'll be tell us all about that.
+And then uh one of the big things for
+specialists like myself, I'm a medical
+geneticist,
+is dealing with prior authorization and
+appeals letters and they're working on
+those for us because, you know, every
+genetic test we order
+end up having a prior authorization. And
+if we could just like put the order in
+and AI goes ahead and generates all the
+stuff for prior auth, that'll make our
+life a lot easier. And we could spend
+time doing more valuable things.
+Um and then there's certainly more
+things that they're working on, but I'll
+pass it on to
+you.
+>> So, I'm lucky. I'm a radiologist, okay?
+And uh radiology is the field that has
+been most impacted by AI in all the
+medical specialties. If you look at all
+the new AI software that's been produced
+over the last many years,
+uh approved by the FDA, something like
+more than 70% are related to radiology.
+And so, I've seen them evolve over
+years.
+Um some of the And and then again, you
+know, the the
+level of performance of these software
+range from very experimental to more
+robust. Uh there's some software that's
+still very experimental that has to be
+validated, that we have to test very
+carefully.
+Uh there's others that are more
+operational. And and then for those
+those that are more operational, they
+tend to have a very narrow scope.
+So, for example, you know, there's we we
+might have heard like, you know, results
+of studies saying, "Uh this software is
+as good as radiologist at diagnosing
+pneumonia."
+Yeah, but you know, that specific
+experiment was just, you know, they
+showed the radiologist and the AI
+software just a series of films and it
+says, you know, "Is there pneumonia or
+not?" So, a binary thing. And so, the
+software is really good at doing one
+thing. Now, that's been going on for a
+couple of years. Now, we're seeing more
+and more software that is good to doing
+a bunch of stuff. Like I just finished I
+was at the Sectra
+um advisory meeting um couple of days
+ago.
+And Sectra is a PACS company for in
+radiology.
+And uh they bought uh software from
+Eastern Europe called occiput who can
+diagnose 75 different things on a chest
+radiograph.
+So you say, "Wow, you know, that's
+fantastic. This is not just one thing.
+This is 75 different things." But then
+if you test that software, the software
+is really really good at, you know,
+diagnosing outpatients films like, you
+know, healthy patients who come on the
+outside they can walk by themselves and
+they they get an x-ray from, you know,
+can AP and lateral, PA and lateral, and
+then essentially
+they don't have much, but they might
+have small findings and the AI is really
+good at that. But if you try that
+software on a patient in an ICU, which
+is all crooked on a bed, you know, full
+of lines and then big heart and, you
+know, sometimes the lungs are completely
+white, the software results are
+completely suck, okay? So essentially
+these software, they're good up to a
+certain point, but that's
+their status at this point in time. But
+>> [clears throat]
+>> you know, couple of years ago they could
+only diagnose one thing. Now they can
+diagnose 75 things in healthy patients.
+What is it going to be in 3 to 5 years?
+>> Ben while I when thinking about
+disruption, I think about and you
+alluded to this how medical scan
+interpretation was one of the first use
+cases of healthcare AI way before this
+last wave of generative AI hit us,
+right? The last 2 years.
+So, I mean
+we were looking we were researchers were
+um studying medical image uh AI use a
+decade ago, right? So now it's now it's
+10 years later, so
+do you consider that disruption? Do you
+consider it uh
+augmentation through automation? How do
+you think about that and do you think
+that
+any lessons can be learned or applied
+based on that use case specifically?
+>> In 2016, Geoffrey Hinton, who was a
+godfather of AI, and he won the Nobel
+laureate Nobel Prize in physics in 2024,
+made a prediction. He said, "We You've
+got to stop training radiologists
+because within 5 years they will be
+replaced by AI."
+That was 10 years ago. There's still
+more radiologists and more need for
+radiologists than ever before. And so
+people say, you know, he's full of
+and essentially he just doesn't know
+what he's talking about. But he's the
+godfather of AI and he won a Nobel
+Prize. So he knows what he's talking
+about. He was just off in his timing,
+okay?
+He thought it would take 5 years.
+It's going to happen
+and AI will replace many of the
+radiologists' tasks that we do today,
+but it's going to take longer. Um
+the reason it hasn't happened
+is just manifold, but one of them is
+most radiology AI software right now is
+kind of, you know,
+superb pattern recognition engines,
+okay? They're really good, but
+there are some tasks that radiologists
+do that involve pattern recognition,
+but there's some tasks that involve more
+knowledge than that. And right now, if
+you look at the software that's out
+there, like, you know, LLMs, stuff like
+that, they're they're just like, you
+know, pattern recognition that recognize
+stuff based on experience from the
+entire content of the internet,
+but they don't have a clue what they're
+looking at.
+And so,
+this current generation of software will
+not replace radiologists, nowhere close.
+What needs to happen, and we're starting
+to see that, is kind of incorporation of
+some of the basic knowledge that
+physicians and radiologists have that
+enable them to interpret radiograph
+[clears throat] and other exams
+properly.
+Uh you might have heard that Yann LeCun
+recently left Meta to, you know, create
+his own company and it's a company where
+he's going to
+kind of, you know, create
+have AI models incorporate, kind of, you
+know, physical models of the world,
+okay? And so, that includes, you know,
+like
+the world itself, but that can also
+include information about anatomy and
+pathology and physiology and all this
+stuff that we learn in medical school
+that enables us to do the work that we
+do on a daily basis. Once we reach
+systems or we start getting systems that
+have all this basic information
+incorporated in and are not just, you
+know, super pattern matchers anymore,
+then things will start being severely
+disruptive in health care. But we
+haven't reached that point. We don't
+know when it's going to happen.
+Uh people are starting to realize that
+not not everybody, but, you know, some
+people like Yann LeCun are starting to
+realize that we need these systems and
+we don't know how long it's going to
+take to develop those systems and we
+don't know if when we include all that
+extra information, whether these systems
+will be as performant as the current AI
+software.
+I mean, [clears throat] the current
+software right now can diagnose stuff in
+a fraction of a second because it's just
+pattern matching. But if you burden with
+the system with a lot of information
+about the model of the world or anatomy
+or physiology or stuff, they might not
+be as fast as current AI systems, but
+they might be faster than radiologists.
+So, we'll see in the future when that
+when these systems
+start becoming and you know, become
+available and then how they do, but we
+we need to reach that system for major
+disruption to happen in health care,
+right? Now, the tools we have are really
+useful. They're great. They're they're
+kind of, you know, augmenting the job of
+radiologists, but the radiologist still
+is in control, still knows the anatomy
+and everything and uses these systems
+for for basic stuff. A lot of the scut
+work like, you know, tracing contours
+and exams to generate, you know, compute
+like a left ventricular ejection
+fraction and stuff like that, but
+they're they're not quite at the level
+that we need them to be to eventually be
+truly disruptive.
+>> There's such a It's such a important
+subtle and maybe but important
+distinction between replacing tasks and
+replacing people.
+Um and I think that can be applied
+across lots of sectors. Um so, sticking
+to the point of this replacement or
+disruption, um
+Chad, David, from from your
+uh perspectives, uh are you seeing
+clinicians and staff um
+worried about uh devaluing?
+Are you Is there fears of deskilling in
+terms of, you know, where we are with AI
+right now in in your organizations? Are
+those valid [music] concerns? You read
+about them a lot, but is that something
+that's being experienced in in reality?
+>> Interesting question.
+In terms of say medical students sort of
+learning,
+you know, and
+a lot of things being replaced and so
+they're not actually getting the
+opportunity to have the skills, what
+you're saying. And that certainly is a
+concern. I mean, it comes up to me um
+I'm thinking about the fact you have AI
+that can look through the
+EHR and identify all this information
+and give you diagnoses.
+The concern I have is that
+there often times is misinformation that
+is perpetuated in the EHR.
+And how can that be identified? Number
+one. The other thing is everybody's had
+this experience like, you know,
+an intern goes in and sees the patient,
+comes out, talks to the resident. The
+resident goes in and talks to the
+patient and gets a totally different
+history.
+And the intern then learns from that how
+to ask the questions.
+And I don't know that people are looking
+at that with
+uh you know, AI in in healthcare
+currently, but it's a concern I have
+because
+as a consultant, I go through lots of
+medical records and I see lots of
+misinformation. And to teasing out
+what's the real information versus
+what's not is extremely important
+because talk about hallucination.
+That'll ultimately
+>> Yeah.
+>> Ted?
+>> What was the question again?
+>> [laughter]
+>> Um
+>> Uh AI disruption?
+>> In terms of fear fear amongst staff,
+employees of whether it's clinical staff
+or otherwise in terms of
+them being their positions being
+devalued, um deskilling, things like
+that.
+>> Yeah. So,
+that's a human fear.
+Very human.
+Everybody has it. Your value is placed
+in something.
+What is your How do you value yourself?
+Is it your job?
+Is it your contribution to family?
+Is it
+what?
+So, at the end of the day if uh employer
+tells you we found a better way,
+is your value tied to that job and what
+you're doing or is your value tied to
+what you do in life and how you approach
+it and your interaction with other
+people?
+That's a hard thing to approach for any
+industry,
+much less
+all industries at the same time.
+That's the disruption.
+It AI really makes individuals
+question.
+Where's my value? If if a machine can do
+this, where's my value?
+It's kind of what we went through when
+the sewing machine was invented, right?
+So, it's it's a disruption just that the
+technology exists.
+Now it's up to us as humans to decide
+how we apply it and where that value of
+that application lies and how it's going
+to be used going forward. Whether that's
+automating tasks to make certain
+professions easier or whether that
+automation of a task that was fairly
+simple to automate now requires
+the people that were in that profession
+doing that work
+to question what their value is.
+Because they don't
+they can't compete with the machine.
+>> Yeah.
+>> So so yes, those conversations happen
+literally almost every day for me.
+>> There is a There's an interesting
+article that came out 2 weeks ago.
+So two essays by Chrissy Farr and Mike
+Dechardon, d o n not like me Decharde.
+And they were talking about essentially
+the kind of you know order of people in
+the health care enterprise that will be
+replaced by AI.
+It's not going to come at the same time,
+you know.
+At my institution for example, we've
+already seen some aspects of jobs in
+health care being completely wiped out
+by AI. For example, recently, we changed
+PACS system
+and we used to have, you know,
+transcriptionists to essentially
+transcribe, you know, recording of
+reports by some radiologists, not all of
+them. Some Some already were on voice
+recognition
+and then producing reports like 24 hours
+later to all radiologists being forced
+to use the
+voice recognition software as part of
+the new PACS system.
+And although there's some people who are
+reticent to that,
+they adapted and now they're very happy
+because they don't have to wait 24 hours
+for a report to be dictated and come
+back in their queue and say, "Well, do
+you approve that report of this thing
+that you dictated a day ago and you
+don't remember what you saw, whether
+they missed something?" Whereas now, you
+see the report transcribed immediately
+and essentially you sign it and it's
+out. So, the all the transcriptionists
+that worked at my institution, they're
+gone. Bye-bye. Okay, there's no There's
+just like There's You can't You retrain
+them for something else. They're
+transcriptionists. They just They're
+gone. Okay, finished. Now, in that, you
+know, the essay by Far and Desjardins,
+essentially, they talk about the
+hierarchy in the health care profession
+of that will be replaced progressively
+by AI. If you look at
+AI
+health care employees, okay? You've had
+the the administrative staff that have
+increased like about like a thousand
+times faster than, you know, the
+increase in the number of physicians.
+You got like billers, coders,
+bunch of, you know, other administrative
+people. These people will be the first
+one to be replaced completely lead AI.
+And eventually, that's going to go
+through the rank and just going to be
+less need, much, much less need for
+these people who, with, you know, AI
+being the job better and faster than
+them. Um
+doesn't mean that the current AI
+software can do that right now, but I
+believe it's getting close and not in
+the way that I initially imagined.
+I talked this morning about
+um Metos, okay?
+Claude Metos.
+Metos is I mean, Claude Metos is just a
+general purpose model
+who just happened to be extraordinarily
+good as a hacker. It beats
+[clears throat] entire teams of hackers
+much faster and nobody can can, you
+know, come close to that. Well, hacking
+is much, much more difficult than, you
+know, coding, radiology exams, or
+billing. And so, the these
+capabilities, the these, you know,
+capabilities to do these kinds of job
+that are done in the health care system,
+doesn't have to be programmed in the
+system anymore. It kind of, you know,
+this capability emerges from general
+models. And so, you you will be able to
+see more and more these general models,
+you know, being trained or being adapted
+to perform very, very specific task and
+we'll see that they perform that much,
+much better than the current health care
+employee that can do that because
+they're just much, much faster, they
+work 24/7,
+and then they don't get tired, and uh
+it's a pretty menial task, you know,
+very repetitive, and AI is really good
+at that. And so, we're going to see more
+and more these employees being replaced.
+And so, it's very difficult to deal with
+that. I mean,
+we hear a lot in radiology, you know,
+they're saying, you know, yeah,
+AI is not going to replace radiologists.
+I mean, radiologists who know how to use
+AI will replace radiologists who don't
+need know how to use AI.
+>> [clears throat]
+>> This is okay? This is
+essentially eventually AI will replace
+radiologists. It's unavoidable. In 100
+years, AI will replace, you know, all
+professions involving cognitive ability.
+And so that's 100 years from now, but at
+some point between now and 100 years
+from now, there's going to be a
+transition where AI will take over most
+professions. And so it's a very very
+difficult situation right now because we
+know that AI is becoming much much
+powerful. And and these general models,
+we're not talking about specialized AI
+models that that we used to work on,
+it's just these general models that are
+all-purpose models are becoming super
+super good at very very specific tasks.
+And that's the situation we're facing
+right now. And
+it's difficult to deal with that for
+employees, it's difficult to deal with
+that with for employers. And we know
+that AI will save money and that
+healthcare margins are, you know,
+smaller and smaller these days, so
+there's going to be an incentive to try
+to save money in the future.
+So that's a tough position and that's
+the position we're facing right now.
+>> I want to get back to this the save
+money question
+as as we get close to the end, but
+David, you mentioned a Cleveland Clinic
+prior authorization, scribes. We talked
+about scribes earlier today.
+Prior authorization is interesting
+because
+it's almost a
+a battle between the insurers and the
+providers that are using AI for prior
+authorization purposes. So
+one might argue that's actually kind of
+like a net neutral versus being
+disruptive.
+Are those like the are those the two
+areas where you you potential disruption
+is happening with AI at the Cleveland
+Clinic? Are there other areas that um
+maybe more pie-in-the-sky, whole uh holy
+grail type uh type use cases that that
+you see beyond what's what's happening
+uh
+now with with prior auth and scribes?
+>> Yeah.
+Well, my understanding is that the a lot
+of stuff is going on on the business
+side with AI.
+>> Yeah.
+>> Yeah, and so I'm not sure I I understand
+it all about that. Um I think another
+group of uh
+employees that are at risk are the
+schedulers.
+Cuz like right now we do have the
+ability for patients to actually go in
+MyChart and do self-scheduling for
+things.
+But
+that's not as perfect as it could be. AI
+can probably like match the patient up
+much better
+and you could replace all these
+schedulers. And the problem with the
+schedulers in a large institution
+is that you have this pool of people who
+answer phones
+and then depending on what referral is
+for, they then have to go find all the
+protocols for how you schedule this
+person. And like AI can do that like in
+a heartbeat. And so those would
+definitely be the folks that are at risk
+as well.
+And uh
+in response to some of the other
+questions, I think
+for practitioners, our biggest
+concern is that for AI in clinical
+applications, needs to be argumentative
+and not jump into like having black box,
+you know, diagnosis and things like
+that.
+>> Yeah, I was going to add to that um
+in a little bit different of a way.
+Um
+AI is a black box.
+The companies have said they don't know
+how it runs. Anthropic just came out
+with an idea of how to explain what's
+happening during runtime and execution.
+Um
+so if you hired an employee
+that you
+said is pretty capable, you're pretty
+sure he's pretty capable, looks pretty
+good, but you never met him,
+you've never seen him,
+you don't ever get to meet him or see
+him,
+but you give him tasks and he comes up
+with answers for you.
+Is that an employee that you're going to
+keep around for a long time
+if those answers are 60% wrong?
+You're trying to get to the 40%.
+So, part of the disruption is that it's
+making us as leaders think that we can
+replace people.
+You cannot replace a human.
+Human Each human is unique, an
+individual, and I run an AI company.
+>> [laughter]
+>> So,
+I'm challenged in hearing that we're
+going to replace humans in but I also
+agree that you can automate tasks.
+And if you automate tasks smartly, it's
+the humans that design those tasks, that
+are running those tasks, that are
+touching the tasks every day. That's
+your gold mine.
+You should value them.
+>> Then what?
+Well, you know, right now, okay, the
+systems might be wrong 60% of the cases
+and but they're not ready to replace
+humans at this point in time.
+>> Yeah.
+>> But these systems will get better and
+better and better with time and they'll
+identify with you know, ex- putting
+explanatory information in there, you
+know, what leads to a wrong conclusion
+and then potentially put information for
+the system to to learn from that and
+correct its behavior and eventually we
+can assume that
+these systems will make less and less
+errors with time. I mean, if you put in
+more information and you know, you train
+and you correct whenever they make
+error, eventually they'll learn whether
+it's by reinforcement learning or
+whatever, they they get better. And then
+once they get better and instead of
+making errors in like 60% of the cases,
+they make errors in like, you know, 0.1%
+of the cases,
+and that's better than humans. And so,
+at that point, when the systems get to
+that level of expertise, then they will
+be ready to replace humans. The current
+systems are not there yet. That's why
+we're still have going to have like a
+bunch of humans working in health care
+for many years, but the systems are
+improving very, very fast. And so, we
+don't know when they will reach, you
+know, this level of error of like, you
+know, 0.1%. Who knows?
+But, right now, you know, the current
+systems, they're just not quite there
+yet. But,
+these systems are moving are improving
+very, very, very rapidly.
+>> And and by rapidly, um
+AI systems mature about every 4 months.
+New features are released about every 4
+days.
+So, if you're building on top of a
+commercial platform like uh Google
+Gemini, OpenAI's ChatGPT, Grok uh from
+uh now SpaceX, and um
+I I'm missing a few.
+Um oh, yeah, the obvious one,
+Anthropic.
+Um
+you're getting a changing landscape
+underneath your process.
+So, that that person that you would hire
+that you never meet that's going to
+decide things for you, that's going to
+give you an output,
+also changes how it thinks every 4 or 5
+days.
+>> But, the thinking hopefully improves
+every 4 or 5 days, and that's the goal
+to make them better.
+>> Hopefully.
+>> Well, we we have mechanisms to test
+whether the thinking is getting better
+or worse.
+>> I agree, but the thinking is not
+reasoning.
+And what we're really trying to build is
+reasoning into our systems to make
+decisions about humans much safer.
+That's the intent. That's the goal at
+the end of the day. We don't want anyone
+to die.
+So
+>> Yeah.
+>> How do we get there? And I think the way
+that we get there is by disrupting our
+processes.
+We're thinking the old way.
+We have to think a new way.
+The new way is
+that's the goal. Nobody dies.
+How do we make sure that happens?
+Our current processes are great, but
+there's new technology that are it's
+going to make it really a lot easier in
+some cases, but we have to walk through
+the hard challenge of walking and
+rebuilding every one of those workflows.
+And that really requires humans and AI
+to work together collaboratively.
+And in health care, that is the only
+recipe I've seen successful.
+>> I wanted to quickly close on this. Kind
+of another way to think about disruption
+is
+well, are are the incentive are is the
+disruption that's taking place aligned
+with the incentives that are there and
+it goes back to the cost question and
+and I read a lot about
+AI reducing costs in health care and and
+sometimes I I ask, well, for whom? Is is
+it reducing costs for patients?
+Not yet.
+Uh providers, you know, they're they're
+using AI tools for
+uh you know, more aggressive billing and
+coding. Well, that's adding to spending,
+not reducing it.
+Uh where do you all see just maybe
+quickly someone has any any any thoughts
+on how AI can reduce health care costs
+if it's not already?
+>> So,
+last year I just read a report that 80%
+of the the
+um
+80% of the AI POVs and and experiments
+were failures.
+So to save money,
+you have to start with the intent.
+Start with where you want to go and how
+you want to land
+and then work out the details in
+between.
+Some of the same process will translate
+over to the new process.
+Some of the same workflows will
+translate over. Some of them will not.
+You have to be willing to shed those and
+let them go and build new
+and and be willing to engage your
+patients and families to say, "Hey,
+we're thinking of doing this. How does
+this impact you?"
+They're not asking for a new app on
+their phone. They're not asking to
+register so that they can figure out
+their own scheduling.
+They're going through something
+themselves going through scheduling. I
+just did this with my elderly parents.
+Going through scheduling and they're
+pretty savvy on their phones.
+They had a really hard time because
+they're going through something.
+So every time we change technology, not
+only do we impact the organization's
+bottom line, but we also impact the
+clients and constituents and patients
+and families that were that were
+really really in our hearts there to
+serve.
+So a disruption means we have to look
+internally and say, "Are we ready to do
+this and is this the right thing to get
+us to where we need to go?" Not just
+it's going to save money, keep us in our
+margin, but also save money, keep us in
+our margin and do better by the people
+that we're serving.
+>> I see that big red light. I I think it's
+time to wrap. But but thank you so much
+for
+another great discussion.
+>> Mhm.
+>> Hey.
