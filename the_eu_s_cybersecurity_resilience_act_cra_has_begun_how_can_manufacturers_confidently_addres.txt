@@ -1,0 +1,921 @@
+ABOUT
+================================================================================
+Title: The EU's Cybersecurity Resilience Act (CRA) has Begun – How Can Manufacturers Confidently Addres ...
+Author/Channel: FIRST
+Channel URL: https://www.youtube.com/channel/UCK3_z6YyWvfqrOuCmrfxsTw
+Video URL: https://www.youtube.com/watch?v=LlS9jyJWnyo
+Video ID: LlS9jyJWnyo
+Published: 2026-08-28
+Duration: 30:04
+Views: 5
+Likes: Unknown
+Comments: Unknown
+
+Description:
+The EU's Cybersecurity Resilience Act (CRA) has Begun – How Can Manufacturers Confidently Address their Obligations and Security Requirements?
+
+Mars Cheng (TXOne Networks Inc., TW)
+
+The EU’s Cybersecurity Resilience Act (CRA) is a landmark regulation targeting the cybersecurity of products with digital elements within the EU market. While full mandatory enforcement is set for December 2027, manufacturers must comply with critical reporting obligations starting in September 2026. With harmonized standards and third‑party verification bodies (Notified Bodies) still pending clarity, how can manufacturers move from a reactive, rushed state to a proactive, composed compliance strategy?
+
+This presentation will focus on the manufacturer’s reporting obligations and the cybersecurity requirements for “Important Products.” We will share our Product Security Incident Response Team (PSIRT)’s practical approach to planning and evaluating the future compliance roadmap.
+
+---
+
+Mars Cheng (@marscheng_) is the Head of Cyber Threat & Product Defense Center at TXOne Networks Inc., responsible for leading the three subgroups under the center, including PSIRT, Advanced Threat Research Group, and Threat Operation Group. He also serves as the Executive Director of the Association of Hackers in Taiwan (HIT/HITCON), a Review Board Member for both HITCON Conference and Training, FIRSTCON26, the General Coordinator of HITCON CISO Summit 2026, and a Cybersecurity Auditor for the Taiwan Government. In these roles, he plays a pivotal part in fostering collaboration between industry and government to strengthen national cybersecurity resilience.
+
+Mars specializes in IoT, ICS/SCADA systems, malware analysis, threat intelligence and hunting, blue team, and enterprise security. A seasoned speaker, Mars has delivered over 60 presentationst at international cybersecurity conferences, including Black Hat USA, Europe, and MEA, RSA Conference, DEF CON, CODE BLUE, FIRST, HITB, HITCON, Troopers, NOHAT, SecTor, S4, SINCON, ROOTCON, among others. He is also an experienced cybersecurity instructor, having delivered over 35 training sessions at events such as Global Cybersecurity Camp (GCC) 2026, 2024, HITCON Training (2025, 2022, 2021, 2020, 2019), NICS Elite Practical Training Taiwan (2025–2022), and for various ministries in Taiwan, including National Defense, Economic Affairs, Education, and Finance, as well as for publicly listed companies.
+
+He has successfully organized several notable HITCON events, such as the HITCON CISO Summit in 2025, 2024 and 2023, HITCON PEACE 2022, and HITCON 2021 and 2020.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**The EU's Cybersecurity Resilience Act (CRA) has Begun – How Can Manufacturers Confidently Address their Obligations and Security Requirements?**
+
+## Author and credentials
+
+### Mars Cheng
+- **Affiliation:** TXOne Networks Inc., Taiwan
+- **Position:** Head of Cyber Threat & Product Defense Center
+- **Responsibilities:** Leads the center’s:
+  - Product Security Incident Response Team (PSIRT)
+  - Advanced Threat Research Group
+  - Threat Operation Group
+- **Additional roles:**
+  - Executive Director of the Association of Hackers in Taiwan (HIT/HITCON)
+  - Review Board Member for HITCON Conference and Training
+  - Review Board Member for FIRSTCON26
+  - General Coordinator of HITCON CISO Summit 2026
+  - Cybersecurity Auditor for the Taiwan Government
+- **Technical specialties:** IoT, ICS/SCADA systems, malware analysis, threat intelligence and hunting, blue-team operations, and enterprise security.
+- **Speaking experience:** More than 60 presentations at international cybersecurity conferences, including Black Hat USA, Europe, and MEA; RSA Conference; DEF CON; CODE BLUE; FIRST; HITB; HITCON; Troopers; NOHAT; SecTor; S4; SINCON; and ROOTCON.
+- **Training experience:** More than 35 cybersecurity training sessions, including programs for Global Cybersecurity Camp, HITCON Training, NICS Elite Practical Training Taiwan, Taiwan government ministries, and publicly listed companies.
+- **Event organization:** Organized or helped organize HITCON CISO Summit events in 2023–2025, HITCON PEACE 2022, and HITCON 2020–2021.
+
+### Contacts and links
+- **Social-media handle:** `@marscheng_`
+- **Organization/channel:** FIRST
+- **FIRST channel URL:** https://www.youtube.com/channel/UCK3_z6YyWvfqrOuCmrfxsTw
+- **Video URL:** https://www.youtube.com/watch?v=LlS9jyJWnyo
+- **Email address, telephone number, and direct professional contact details:** Not provided.
+
+## Technical focus
+
+The presentation explains how manufacturers can operationalize compliance with the EU Cyber Resilience Act (CRA), especially:
+
+1. **Reporting obligations**, associated with Article 14 in the presentation.
+2. **Manufacturer cybersecurity obligations**, associated with Article 13.
+3. **Security requirements for important and critical products.**
+4. **Product classification and conformity assessment.**
+5. **Cross-functional PSIRT and incident-response preparation.**
+
+The central message is that CRA compliance should not be treated as a last-minute documentation exercise. Manufacturers should begin by building repeatable processes that connect product security, engineering, customer-facing teams, information security, legal, communications, and management.
+
+## Main analysis and summary
+
+### 1. CRA affects products with digital elements
+
+Cheng presents the CRA as unusually broad because it applies to products with digital elements placed on the EU market. The scope therefore extends beyond traditional security products and includes software, firmware, operating systems, networking products, antivirus products, routers, firewalls, VPN solutions, and other connected or digitally enabled products.
+
+The presentation emphasizes that compliance must be addressed across the product lifecycle:
+
+- Design
+- Development
+- Maintenance
+- Vulnerability handling
+- Risk assessment
+- Security testing
+- Technical documentation
+- User documentation
+- Security update and mitigation processes
+
+The author’s practical interpretation is that manufacturers must prepare product-by-product rather than assuming that an organization-wide security program alone will be sufficient.
+
+### 2. Reporting must be designed for strict time limits
+
+The presentation identifies two reporting-trigger scenarios:
+
+- **Actively exploited vulnerabilities**
+- **Serious incidents that affect a manufacturer’s ability to support products**, such as incidents affecting software or firmware updates
+
+The described reporting sequence is time-sensitive:
+
+- **Within 24 hours:** Early-warning notification
+- **Within 72 hours:** More detailed vulnerability or incident information, including mitigations where applicable
+- **Within 14 days:** Final report for vulnerabilities
+- **Within one month:** Final report for incidents
+
+Reports are described as being submitted to the relevant EU reporting or supervisory structures through the CRA single reporting platform, with coordination involving national CSIRTs as stated in the transcript.
+
+A key technical and organizational difficulty is that PSIRT teams may know the affected product and vulnerability but may not know where the product is deployed. Cheng therefore proposes connecting product-security processes with customer-success and sales data, such as records of product versions, customer locations, regions, and deployment information.
+
+### 3. A cross-functional reporting model
+
+Cheng’s proposed approach begins with identifying internal stakeholders. Depending on the scenario, these may include:
+
+- PSIRT or product security
+- Research and development
+- Quality assurance
+- Product management
+- Customer success
+- CISO or information-security teams
+- Legal
+- Public relations
+- Sales
+- Infrastructure and cloud-service teams
+
+The presentation distinguishes between vulnerability cases and serious incidents:
+
+- **Vulnerability cases** primarily require product-security, engineering, product-management, and customer-facing coordination.
+- **Serious incidents** may also involve corporate infrastructure, cloud services, public services, and internal information-security teams because those systems could affect product availability, support, or distribution.
+
+The proposed process is:
+
+1. Receive intelligence about a vulnerability or incident.
+2. Filter and verify whether the information is credible.
+3. Form a task force based on the scenario.
+4. Identify affected products, versions, customers, and regions.
+5. Prepare the 24-hour early warning.
+6. Consolidate technical details and mitigations for the 72-hour notification.
+7. Prepare the final report.
+8. Notify and coordinate with customers, not only regulators.
+9. Review the process through repeated exercises and revise it.
+
+### 4. Tabletop exercises as an engineering and compliance tool
+
+One of the presentation’s strongest practical ideas is the use of repeated tabletop exercises. Cheng reports that conducting exercises revealed more than 32 issues requiring tracking, identification, or revision.
+
+The exercises are intended to test both the written process and its execution under time pressure. Suggested scenarios include:
+
+- Vulnerabilities in products
+- Non-vulnerability incidents
+- Compromised engineering devices
+- Compromised production services
+- Incidents affecting update or firmware-delivery capabilities
+- Zero-day situations
+- Customers using centralized procurement while deploying products across multiple countries
+
+The author treats these discovered problems as valuable findings: identifying operational gaps before a real incident allows the manufacturer to improve procedures, clarify responsibilities, and establish evidence of preparedness.
+
+### 5. Product-location visibility is a major operational problem
+
+A recurring issue is the gap between product-security knowledge and deployment knowledge. A manufacturer may know which product and version are vulnerable but lack reliable information about:
+
+- Where the product is actually deployed
+- Which countries are affected
+- Whether the customer resold or redistributed the product
+- Whether centralized procurement obscures final deployment locations
+
+Cheng suggests leveraging customer-success systems and other cloud-based business records to improve this visibility. The technical idea is not merely to maintain vulnerability data, but to correlate vulnerability intelligence with product inventory, customer information, versions, regions, and deployment context.
+
+### 6. Classification and conformity assessment
+
+For manufacturer obligations, Cheng describes a classification-driven process. Products are grouped into categories such as:
+
+- Default products
+- Important Class I products
+- Important Class II products
+- Critical products
+
+The appropriate conformity-assessment route depends on the product category and its associated security requirements. The presentation mentions several conformity-assessment modules:
+
+- **Module A:** Described as allowing manufacturer self-assessment or self-declaration.
+- **Module B plus C:** Described as involving third-party verification.
+- **Module H:** Presented as a quality-system-oriented route that may be more suitable for very large organizations with extensive product lines.
+
+The suggested sequence is:
+
+1. Identify the product category.
+2. Determine the applicable security requirements and standards.
+3. Perform a product-specific gap assessment.
+4. Select an appropriate conformity-assessment route.
+5. Establish or improve the security processes.
+6. Produce technical documentation and user documentation.
+7. Conduct testing and collect evidence.
+8. Complete the declaration of conformity.
+
+Cheng notes that organizations with many products may need to repeat this process across individual product lines. He also states that free or unpaid software is not exempt when it is placed on the EU market, according to his interpretation of the CRA.
+
+### 7. Gap analysis covers the full product-security program
+
+The gap analysis is described as covering much more than vulnerability scanning. It includes:
+
+- Secure-by-default principles
+- Product-security lifecycle processes
+- Vulnerability handling
+- Incident handling
+- Risk assessment
+- Security testing
+- Technical documentation
+- User manuals
+- Evidence that required controls and processes operate effectively
+
+The proposed implementation path moves from simpler controls to more comprehensive ones:
+
+- Security checklists
+- Threat modeling and risk assessment
+- Security requirements analysis
+- Vulnerability-handling procedures
+- Security testing
+- Documentation and evidence collection
+
+Cheng also emphasizes monitoring the evolving standards because the detailed harmonized standards and related requirements were described as being published in stages.
+
+## Technical innovation and authors’ ideas
+
+The presentation does not introduce a new algorithm, protocol, or software system. Its principal innovation is a **practical operating model for turning CRA requirements into an executable product-security and incident-response capability**.
+
+The main ideas are:
+
+1. **Treat regulatory reporting as an operational system, not a compliance document.**  
+   The 24-hour, 72-hour, and final-report deadlines require predefined roles, escalation routes, information sources, and decision criteria.
+
+2. **Connect PSIRT intelligence with business and deployment data.**  
+   Vulnerability response must be able to identify affected products, versions, customers, and geographic regions. Customer-success and sales systems are therefore treated as important security data sources.
+
+3. **Use scenario-based, cross-functional tabletop exercises.**  
+   Exercises expose execution failures that are difficult to identify through policy review alone. Repetition is used to refine procedures and create a more reliable response capability.
+
+4. **Separate vulnerability workflows from serious-incident workflows.**  
+   The two scenarios involve different technical evidence, internal stakeholders, infrastructure dependencies, and customer impacts.
+
+5. **Include customer notification as part of responsible response.**  
+   Regulatory reporting is presented as only the first layer. Manufacturers must also communicate with customers to manage operational impact and protect product and company reputation.
+
+6. **Use product classification to drive compliance planning.**  
+   The product category determines the relevant security requirements and conformity-assessment approach. This makes classification an early architectural and project-planning decision.
+
+7. **Build product-security visibility and threat intelligence capabilities.**  
+   Cheng recommends not only responding to incoming intelligence but also developing the ability to hunt for vulnerabilities affecting products “in the wild.”
+
+8. **Plan for evidence-based conformity.**  
+   Compliance requires more than having controls in place. Manufacturers must be able to demonstrate lifecycle processes, testing, risk assessments, vulnerability handling, documentation, and mitigations.
+
+## Key technical ideas
+
+- CRA reporting is triggered by actively exploited vulnerabilities and serious incidents affecting product support or operation.
+- Reporting workflows should be engineered around strict deadlines: 24 hours, 72 hours, and final reports within 14 days or one month depending on the scenario.
+- A CRA response team must include more than PSIRT: engineering, QA, product management, customer success, sales, CISO, infrastructure, legal, and PR may all be required.
+- Product-security teams need access to reliable product, version, customer, region, and deployment information.
+- Centralized procurement creates a product-location visibility problem that requires additional tracking mechanisms.
+- Repeated tabletop exercises are essential for validating real execution capability.
+- Vulnerability and serious-incident response should use separate but coordinated workflows.
+- Product categories—default, important, and critical—determine security requirements and conformity-assessment paths.
+- Gap analysis should cover secure-by-default design, lifecycle security, threat modeling, risk assessment, vulnerability handling, incident response, testing, and documentation.
+- Manufacturers should monitor the staged publication of CRA standards and identify the requirements applicable to each product type.
+- Compliance should be prepared before the final enforcement deadline because documentation, testing, review, remediation, and third-party assessment may require substantial time.
+- The presentation’s main contribution is an actionable compliance roadmap based on stakeholder coordination, product visibility, exercises, gap assessment, and evidence production.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[music]
+Good morning everyone. So this is really
+early session. [snorts] So today we will
+go through the EUA cyber resilience
+as issues. So but from TS1 side from
+manufacturer side from product Q side I
+will say ECA is very very difficult
+components and regulation because unlike
+GDPR
+CRA resilience they focus on product
+software
+any you have a digital element you need
+to fulfill CI requirement in the EU
+market. So we will go through how and
+when and what we do for the compliance
+in 2026 September and the next year se
+2027. So before we go through that allow
+me to a little bit introduce myself. I'm
+Marsh Jen from TS1 networks especially
+from Taiwan and also executive director
+of association of Hing Taiwan. Basically
+we organize different conference um
+competitions trainings. We always also
+organize a CESO summit and in my
+background I usually spoke at a global
+cyber security conference including BRA
+USA, BHA Europe, Bara Asia, Middle East
+Africa, RSA conference, cold blue
+conference too for the several times and
+also removable member of Hikon
+conference and training. Um also I have
+more and more experience about as a
+security audit to our cy um Taiwan
+government agency and critical
+infrastructure.
+So today we will more go on this EU
+cyber resilience act.
+More or less you must to note cyber
+residience as is very very very I would
+say high requirement highly um difficult
+um um at in the EU market unlike two
+unlike other regulation in Europe
+because I will say CIA affect worldwide
+area. If your product would like to
+sales process in the EU market, you need
+to fulfill the CI element. So let it go
+through we today we will focus on two
+part article 14 and article 13 and
+article 14 they focus on reporting
+obligations this effect in this year
+September September 11 and article 13
+will focus on manufacturer obligations
+well affecting next year December so we
+will go through in these two typical
+part and sure what kind of requirement
+they have and how we and made it and
+make it. So as we are product maker, we
+know the product life cycle. We know the
+product have design, development and
+maintenance mode and the different
+phase.
+In those phases, I will say we need to
+do a lot of things including a risk um
+assessment. We need to do the mon
+vulnerability handling. We have a secure
+life cycle. we need to do the many many
+testing in our product and also CIA
+combine those element in the
+regulations.
+So if we are strong we are the security
+identity vendors we will fulfill every
+security requirement is more easier but
+I would say CI ask all products need to
+fulfill that it's not it's not an easy
+things
+so go a little bit about um CI timelight
+now we're on June 2026 here so in this
+year September
+we have reporting obligations for fat
+ly. So these obligations ask us we need
+to um encounter some situation we will
+go through later um encounter some
+situation we need to process we need to
+perform and initiate reporting
+obligation to the ina to the national
+search in the um Europe and also we need
+to leverage the CI single reporting
+platform they were opened around
+September
+for the another reg uh obligation we
+need to fulfill is for manufacturers
+Since this year August if not deated um
+public standard of harness framework and
+vulnerability handling will be completed
+and October end of October for the
+important and critical products security
+requirement will be completed
+and December this year we know what kind
+where is a notified body is a third
+party can identify our product is
+qualified is pass this regulation and
+requirement.
+in the next um October 13. So for the
+genetic security requirement standard
+also will be public. You will see the
+different timeline for fulfill until the
+December 11. They have a different
+timeline. They have they have different
+standard public one by one step by step.
+But if we will not keep off do the
+fulfill CI compliance earlier we will
+counter some issue like because in
+December 11 207 they are we need to
+fulfill the whole requirements no matter
+how much standard no matter handling no
+matter different security requirement
+based on what kinds of product we
+belongs to important one important two
+or critical product. So I will say I
+encourage everyone if you have product
+need to go through you need to pursue
+the CR8 earlier is better because we
+still encounter many many issue and
+unlike um other regulations now CRA is
+ongoing process and because EU and EU
+opinion are more focused on that. So the
+first part reporting obligations.
+So
+what trigger reporting? What kinds of
+situation or scenario will trigger um
+reporting? So vendor need to report our
+situation and status to the our
+supervisor to the ina. So two scenario
+in the regulations. First one will be
+active exploited vulnerabilities. So
+since our intelligence to since we have
+notified we get a notify for the um your
+vulnerability your product vulnerability
+is is public exported or suffer some um
+attack compared attack group malicious
+actually abuse it you need to initiate
+this reporting applications. Second one
+will be a several incident.
+If you have some huge and um several
+instance encounter in your companies and
+this incident will affect and impact
+your product support for example like um
+software update firmware update they
+will impact your ability to product
+you need to initiate this reporting
+updations. So it's a very clear scenario
+is like here we have a scenario we have
+a intelligence here and we need to
+initiate this reporting obligation. So I
+will say it's very not easy things
+because since we have intelligence we
+need to have early warning notification
+to ina
+single reporting platform within 24
+hours. land. We need to have a different
+vulnerability or um incident information
+notification to release again with 72
+hours and you need to propose your final
+report within 14 days you are if you are
+mulabilities 14 days you are incident
+one month to the
+single reporting perform two. So I will
+say this is very tight time pressure
+things if you not do exercise if you not
+prepare advant in advance it's very very
+difficult to fulfill since we encounter
+this situation so I will suggest a
+process of prepare process here we
+already go through this process too so
+we believe we also have exchange with
+our I'm my kind vendor too with like
+different vendors in the global
+I also agree this um process is can good
+to go for the fulfill of CI2. So first
+things you need to identify your
+internal stakeholders.
+So we are vendor but we are PERT but we
+also have a many many business unity
+layer such as um customer success such
+as um R&D QA or CISO or our product
+management team or even legal team PR
+team too you need to identify your
+internal stakeholders you have a
+different role layer then you have
+planned internal process so this plan is
+more like define your procedures. You
+need to exercise, you need to have a
+process procedures to let you know what
+kinds of situation we encounter. Learn
+what kinds of process we follow
+and you need to take a draw exercise
+tabletop exercise or what kinds of
+scenario situation you can take a draw
+basically
+leverage this um exercise you will find
+many many issue in your companies I
+would say it's is execution phased is
+execution phase problem you need to take
+care
+and finally since we complete Four, step
+one, step two, step three is a cycle.
+Then we can announce for internally say
+we complied this reporting application.
+We have a process, we have SSIS, we all
+prepared. Okay. But at least we have two
+scenario there. exploring
+vulnerabilities. We have early warnings
+notification, vulnerability
+notifications, final report and
+according CI regulation already told us
+what kinds of content we need to provide
+to the supervisor. So like in early
+warning notifications
+they want to know first things is what
+kinds of product what kinds of versions
+get affected for this vulnerabilities.
+So from product security side is a very
+interesting topic because we handle
+vulnerability we handle pro handle the
+vulnerability uh reporting or fix or
+patch issue but we don't know where our
+product sell we don't know where we the
+product used in a different country in
+Europe so we need to leverage like in
+our company we will say s customer
+success manager they will have a list
+they will have a detailed information
+they note what kinds of product like our
+endpoint product like network product
+our firmware software sales to which
+region they have a little bit
+information like in Salesforce or in
+other cloud services
+so we have different role layer mapping
+to stakeholders I will say it's not
+totally belongs to product security
+teams we need to coordinations we do a
+lot of coordination on these things so
+like vulnerability notification you will
+see a fat product new product new
+vulnerabilities
+or corrective actions any mitigations.
+So you have two type on this one day
+vulnerabilities or there vulnerabilities
+if one day vulnerabilities
+you don't you already have patch but
+this patch is effective or any other
+abuse scenario happened you need to
+evaluate that so you have R&D you have
+PN also procing joined
+and to the final repost stage you have a
+CISO role sometimes legal or PR will
+join of course in early early morning
+stage So depends on your company's
+organizations
+you will have different stakeholders and
+I will say of course in several um
+instance of course too but unlike
+product security several instance also
+cover your pro your company
+infrastructure. So more leverage to our
+infrastructing more leverage to our
+infosect teaming. So sometimes we need
+to um leverage more information like
+what kinds of our cloud service our
+public service get affect that may
+impact our product supply and usage. So
+we need to leverage infosc. So in
+different scenario we have a different
+role layer I would say totally
+different. So this only a list occurring
+regulation to us. We need to provide
+those scenario but in those incident
+happened we cannot notify our supervisor
+only right because we already know that
+as a responsibilities we need to notify
+our customer also too we need to let our
+customer know something happened for our
+product. So I would say regulation is a
+is a first level and second level we
+need to also notify and coordinate with
+our customer because we not can we
+cannot not notify our supervisor but not
+notify to our our customer. It's another
+makes sense things. So here we also have
+a total process here we can share since
+we receive any intelligence about
+vulnerability about several incident
+everything we will do a filter
+[clears throat] to analyze is true or
+not if true or if not totally true we
+need to verify again we have organized
+task force very quickly
+based on different scenario we find R&D
+team we find CISO we find our customer
+success
+But always we will trigger our customer
+success because we in in the early early
+warning stage we need to know who where
+get this impact. So within 24 hours we
+need to have information producting
+leverage that send to learn in the 72
+hours we identify the general
+information vulnerabilities information
+any mitigation take also consolidate it
+and send to the in
+but if we have zero date if the
+vulnerability is eate so it's huge
+process so how many company can patch
+your vulnerabilities within 14 days. How
+many less? So I would say in the CRA
+regulation they not ask you need to you
+have to patch the real date but you you
+need to propose the mitigations.
+So it's a very good example here. So we
+will say if real day they hear complete
+security update if possible but usually
+not possible but also we need to face
+our customers say we have strong
+mitigation can make sure can guarantee
+your malabilities not too strong not too
+terrible.
+So in 14 days we will send to the the
+the ina to the final report.
+So you will see here we also notify our
+sales and customer. I also suggest that
+because we cannot only fulfill
+regulation but not but destroy our
+product reputation or company
+reputations
+and then we have a process and also
+encourage most powerful things we do we
+deal in our company for several times at
+least three times we find over 32 items
+we need to trick and identify and revise
+it. So I would say product security
+identify the process and procedures but
+we consult we we invite all stakeholders
+join us we have tabletop SSI and we have
+different road and we I will suggest in
+your scenario you need to cover the non
+vulnerabilities vulnerabilities your
+engineer device is compro compromised it
+or your production life production
+service are compromised you have two
+different scenario more diverse are good
+then do exercise leverage your different
+teams R&D team product team QA team
+sales team also customer team all
+together you will find different issue
+so also we will get many many many
+questions in the execution lab because
+this is a time pressure things if we
+don't have
+more detailed process and procedure can
+followed we are hard to process and we
+are hard to achieve on kind. So here
+also we have identified cross few
+question like our customer success
+manager will tell us
+if our customer use centralized
+procurement and what kinds of mechanism
+we can we will note they are actual
+deploy stage or countries it's questions
+like we have a many we have a many
+customer they buy our product from
+Germany but they dispute to a whole
+country in Europe in US in Japan it's
+like centralized pro procurement but how
+product company how manufacture can
+identify where the product is where they
+use it is a cross so we need to have
+other mechanism to fulfill this to make
+our coverage more completed so I would
+say one by one leverage those tabletop
+exercise you will find many issue a lot
+of issue even we already think advance
+Even we have already seen a lot of we
+planned a lot of we also get a lot of
+questions from customer side from
+customer success side from our product
+management side even from our R&D side
+so so many problem
+in arise I will say it's good problem
+because since we have this problem we we
+know this problem we can prepare earlier
+for the optations
+so
+in the final stage we will
+Since we complete all process
+procedures, we do the tabletop exercise,
+we also learn something, we also
+repeated to build the procedure too.
+Then we can announce the policy. The
+most important key three key things in
+the reporting obligation I will say
+personal awareness because in the
+resilience ad the stakeholders for the
+manufacturer is not only product
+security team it's not only infosc only
+they covered too many many stakeholders
+and wrote you need to make land have a
+security winners for product security
+for resilience at and for product
+security side I will say we need to have
+a strong cyber intelligence platform
+phone not always do laser hunting but we
+need to hunt our product vulnerabilities
+in the wild. That is a question because
+accordingly regulation they say we not
+takes we get intelligence we receive the
+information then we can we will trigger
+the scenario the reportifications. So we
+have two one more single CI platform
+here and security visibility here we
+also encourage if we can build more
+strong more comprehensive product for
+the security visibility that will be
+good right and second part I want to go
+through obligation for manufacturers I
+will say from my viewpoint side I will
+say is most difficult part for the all
+single vendors because despite product
+if your Companies have a 120 products,
+30 products. You need to one by one they
+have it um you need to fulfill that one
+by one. But first things we need to
+identify what kinds of requirement we
+have we offer we need to fulfill. So
+conformity assessment things happen here
+in the CI regulations they have a four
+type for default product important class
+one important class two and critical
+product. So like operating systems anti
+virus router firewall they are well
+belongs to important one and two. So you
+need to go through different method to
+clean your CIA compliance.
+So like here if you are default product
+or if you are including class one if
+class one you need you can apply how
+standard or common specifications
+to fulfill with module A and module A is
+unlock is like self proof and showcase
+say you are fulfill comp the CI2 but for
+the module B plus C and module H we
+leverage EU doc they need to third party
+verifications
+they need to third party verifications
+so I would say you need to know your
+what kinds of product belongs to
+different category identify the category
+land do some different things
+so prepare process here identify
+category first you need to know your
+products default class one class two
+orical products then according to the
+product type plan the security process
+because you have different security
+requirement need to fulfill.
+This fulfill this requirement is also
+divide deep dive to the different type
+like if you are anti virus you are
+louder you are um critical um small card
+you you have different standard need to
+follow they are totally different
+standard too. So you need to plan that
+plan that and do the conformity
+assessment leverage the the different
+module A B plus C H or EC basically I
+will suggest if you are very big
+companies you have a thousands product
+line I totally encourage you you follow
+module H it's a quality season as we we
+say earlier
+then we need to declaration center of
+con confformity for We are CI for field.
+I will say for this total process for
+example TX1 we have four at least four
+model four product lines
+but we are hard to do the module edge
+because we only product line. If we do
+the module edge our different product
+lines process and method need to be
+revised or big change. So we need we
+will goes to module A or module B plus H
+B plus C. So
+the category will be first important
+part of things and I totally strong you
+read the the real document
+the original document want from CIA site
+because they are clearly identified have
+a definition say what kinds of product
+belongs to class one class two or
+product and you need to follow that you
+definitely need to follow that and I
+also re receive a one question from
+Taiwan's people say if we are free
+product should we fulfill should we need
+do we fulfill the the CIA compliance? My
+answer is yes.
+No matter um paid or unpaid software
+products if your your product need to
+into the EU market you need to fulfill
+CIA after December 11, 2027.
+So since we know what kinds of um
+category we belongs to land we need to
+do first things gap evaluation is most
+difficult part here according to
+different type anti virus software
+operating system laers there are
+different vendor different sol different
+standards there are different gap and
+you identify your gap by different
+product belongs class one class two
+in the gap analysis I will say they
+cover almost all product security
+content inside like secure by default
+like product security life cycle like
+malability handling in event handling
+you need to have a procedures process
+you have need to have has bond and
+element inside layer most part you need
+to follow it. So basically we need to
+conduct risk assessment for the gap
+analysis in part one cyber security
+requirement and we also need two monop
+handling process for the monop handling
+requirement. So I will say we also need
+to build from simple to difficult simple
+one security checklist.
+So modeling risk assessment and risk
+assessment fulfill the CI cyber security
+requirement security testing as bond and
+technical documents and user manual also
+it's high part very huge part in CI
+regulation to fulfill. So build up the
+vulnerability handling process. I
+believe if if you already join the first
+proc
+member you don't worry about the mo
+handling issue because you already you
+already have one but you also need to
+notice the standard progress
+in the nowadays in this moment the
+detail standard the detail of complete
+homage standard not published yet so you
+need to follow one by one in different
+stage in different time zones and also
+if you focus on type A, type B like here
+or type C important product you need to
+fulfill different standards here. So
+most important to say is like here for
+cyber resilience at they also have a
+different deadline for the different
+technical commit from a different
+technical committed they have render
+like data protection also they also do a
+cyber working group for different part
+you can see in the EU website
+you will find which standards when well
+come out
+so it's a um very cool example Here if
+you are antivirus or if you are
+networking management systems virtual
+provide network VPN network solutions
+you also for that and do different
+things you have a different requirement
+here for example like they will have
+asked no no no vulnerabilities how what
+kinds of requirement layer so you are
+follow requirement here in different
+type software or products there are
+different one so you need to follow
+different document but I would say be
+honest the document progress is totally
+different some already 30% some already
+80%. So it's huge difference we need to
+follow that but we need to start earlier
+I will say and if our product need to
+process to we go through the the notify
+body leverage third party notifications
+find a notify body first but I would say
+notify body basically will go live in
+this in this August so after august you
+can check the list on the website for EU
+site they have published who can proof
+your product are compromised or not. So
+I would say evaluate more things for
+this 2077 applications. You need to make
+everyone know who requires DI8 how
+important
+and do the gap analysis because this
+leverage your own producting
+product valent and do the
+documentations.
+So many I would say paperwork need to be
+proceed and process. So for company
+assessment and the declarations of
+common here December 11th and Dece um
+2026 and 2027 happened but I would say
+even it's nasty year things we
+definitely to go earlier because think
+about that if we need to prepare Q life
+cycle documentation review it make sure
+we don't know any known vulnerabilities
+do the testing a lot of requirement need
+to followed execute and show showcase
+have evidence that a corporate not a
+problem. So here's takeaway two for
+reporting obligations and manufactur
+obligations. I will say CRA is a
+regulations. So you need to follow if
+you want to stay in in your market. So
+you need to do a lot of things master we
+can very easily to take identify the
+requirement what is require identify
+your road coordination process
+procedures and exercise. I will say SS
+always the very very important part in
+the internal side because leverage this
+SSIS you can find a lot of things issues
+and fulfill and and fix that can make
+your CI compliance most better and most
+powerful. So that will be my
+presentation. Thank you for all
+listening. Thank you. [applause]
+>> Yeah, thank you very much uh Mars Chang
+for this great talk. Uh we have uh two
+three minutes left for any questions.
+The mics are here in the middle of the
+room
+if there are any.
+All right. Well, then thanks again with
+a warm applause to Mark Chang. Thank
+you.
+[applause]

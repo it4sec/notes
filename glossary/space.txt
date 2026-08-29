@@ -1,0 +1,357 @@
+I analyzed the paper as a **satellite-industry technical glossary**, normalized obvious duplicates/variants, and excluded author names, citations, and most company names. Where the paper explicitly expands an acronym, I preserve that expansion; otherwise I leave the acronym as written rather than adding outside definitions.
+
+### 1. Satellite architecture, mission and orbital terminology
+
+* **Ground Segment**
+* **Space Segment**
+* **Communication Segment**
+* **User Segment**
+* **Ground Station (GS)**
+* **Ground Station as a Service (GSaaS)**
+* **Traditional Ground Station**
+* **Cloud-based Ground Station**
+* **Custom Ground Station**
+* **Mission Control / Mission Operations Center**
+* **Data Processing Center / Data-Processing Facility**
+* **Remote Ground Station / Remote Terminal**
+* **Teleport**
+* **Satellite constellation**
+* **Geostationary Earth Orbit (GEO)**
+* **Medium Earth Orbit (MEO)**
+* **Low Earth Orbit (LEO)**
+* **Commercial Off-The-Shelf (COTS)**
+* **Payload**
+* **Spacecraft bus**
+* **Star bus architecture**
+* **Linear bus architecture**
+* **Shared bus**
+* **Trust boundary**
+* **Payload-to-bus interface**
+* **Payload data-handling unit**
+* **Mission-data path**
+* **Onboard processing**
+* **Housekeeping telemetry**
+* **Telecommand**
+* **Tracking / ranging**
+* **Orbit maintenance**
+* **Station keeping**
+* **Deorbiting**
+* **Collision-avoidance maneuver**
+* **Safe mode**
+* **Orbital proximity**
+* **Rendezvous and proximity operations**
+* **Co-orbital operations / interference**
+* **Orbital dynamics**
+* **Constellation topology**
+
+These are central to the paper's system model, which explicitly separates ground, space, communication and user segments and distinguishes GEO, MEO and LEO architectures.  
+
+### 2. Spacecraft subsystems, components and payload technologies
+
+* **Electrical Power Subsystem (EPS)**
+* **Attitude Determination and Control Subsystem (ADCS)**
+* **Communication Subsystem (COMMS)**
+* **Telemetry, Tracking and Command (TT&C)**
+* **Thermal Control Subsystem (TCS)**
+* **Propulsion Control Subsystem (PCS)**
+* **Command & Data Handling Subsystem (C&DHS)**
+* **Onboard Computer (OBC)**
+* **COM module**
+* **Front-End Processor (FEP)**
+* **COM/FEP gateway**
+* **Solar cells**
+* **Onboard batteries**
+* **Power distribution**
+* **Star tracker**
+* **Magnetometer**
+* **GNSS receiver**
+* **Gyroscope**
+* **Reaction wheel**
+* **Magnetic torquer**
+* **Transponder**
+* **Software-Defined Radio (SDR) payload**
+* **Synthetic-Aperture Radar (SAR) payload**
+* **Imaging sensor**
+* **Reconfigurable RF component**
+* **Transmitter**
+* **Receiver**
+* **Antenna**
+* **Feed / waveguide**
+* **Baseband system**
+* **Radio**
+* **Modem**
+* **Signal-processing chain**
+* **Beacon system**
+* **Modulation equipment**
+* **Coding equipment**
+* **Propellant storage/distribution**
+* **Valve**
+* **Thruster**
+* **Onboard storage**
+* **Digitization**
+* **Buffering**
+* **Compression**
+* **Software-defined waveform processing**
+
+The paper explicitly identifies EPS, ADCS, COMMS, TT&C, TCS, PCS and C&DHS as the main spacecraft-bus subsystems, while SDR, SAR, GNSS receivers, imaging sensors and transponders appear as payload technologies.  
+
+### 3. Satellite communications, links and spectrum terminology
+
+* **Radio Frequency (RF)**
+* **Satellite Communication (SATCOM)**
+* **Inter-Satellite Link (ISL)**
+* **Satellite-to-Ground (S2G)**
+* **Ground-to-Satellite (G2S)**
+* **Ground-to-Ground (G2G)**
+* **Satellite-to-User (S2U)**
+* **User-to-Satellite (U2S)**
+* **User-to-Ground (U2G)**
+* **Forward (FW) Link**
+* **Uplink**
+* **Downlink**
+* **Crosslink**
+* **Payload downlink**
+* **RF uplink/downlink**
+* **Direct-to-device architecture**
+* **3GPP non-terrestrial networks**
+* **GNSS**
+* **GPS**
+* **VHF**
+* **UHF**
+* **L-band**
+* **S-band**
+* **X-band**
+* **Ka-band**
+* **Laser communication**
+* **Optical communication**
+* **Electromagnetic Pulse (EMP)**
+* **High-powered microwave**
+* **VSAT**
+* **VSAT hub / VSAT modem**
+* **Ship Ground Station (SGS)**
+* **Land Mobile Ground Station (LMGS)**
+* **Portable Personal Ground Station (PGS)**
+* **Satellite Service Provider (SSP)**
+* **Point of Presence (PoP)**
+* **Dynamic routing**
+* **Link congestion**
+* **Link flooding**
+* **Routing diversity**
+* **Spectrum measurement**
+* **Signal acquisition**
+* **Signal processing**
+* **Beam hopping**
+
+The paper treats link direction as an important part of the satellite system model and explicitly covers ISL, S2G, G2S, G2G, S2U, U2S and U2G, along with direct-to-device and 3GPP non-terrestrial architectures.  It also discusses VHF/UHF and L-, S-, X- and Ka-band capabilities. 
+
+### 4. Onboard buses, terrestrial networking, interfaces and standards
+
+**Spacecraft buses/interfaces:** **CAN, SPI, I2C, UART, RS-485, SpaceWire, Ethernet, MIL-STD-1553, PC/104**. The paper specifically identifies these as common spacecraft subsystem interconnects. 
+
+**Terrestrial/network technologies:** **IP, API, VPN, VoIP, BGP, OSPF, RIP, PPP, SNMP, Ethernet, cellular networks, Internet/Intranet, remote-access services**. 
+
+**Standards/framework-related technologies:** **3GPP, CCSDS, ITU, ISO 27001, AS9100, PHY/MAC, OSNMA, FHSS, DSSS**.
+
+**Commercial ground infrastructure named in the paper:** **AWS Ground Station** and **Azure Orbital**, both given as examples of cloud-based GS/GSaaS. 
+
+### 5. Satellite cybersecurity frameworks and foundational terms
+
+* **Satellite cybersecurity**
+* **Electronic warfare**
+* **Counterspace**
+* **Cyber-physical security**
+* **Threat taxonomy**
+* **Threat modeling**
+* **Attack surface**
+* **Attack lifecycle**
+* **Target asset**
+* **Vulnerability**
+* **Impact**
+* **Adversary**
+* **Adversarial capability**
+* **Tactics, Techniques and Procedures (TTPs)**
+* **Tactic**
+* **Technique**
+* **Sub-technique**
+* **Procedure**
+* **MITRE ATT&CK**
+* **SPARTA**
+* **NIST Ontology for Modeling Enterprise Security**
+* **Reconnaissance**
+* **Resource Development**
+* **Initial Access**
+* **Persistence**
+* **Execution**
+* **Defense Evasion**
+* **Lateral Movement**
+* **Impact phase**
+* **Confidentiality**
+* **Integrity**
+* **Availability**
+* **Supply-chain security**
+* **Insider threat**
+* **Non-kinetic counterspace**
+
+The paper's own lifecycle taxonomy uses Reconnaissance, Resource Development, Initial Access, Persistence, Execution, Defense Evasion, Lateral Movement and Impact as its major phases. 
+
+### 6. Cyber and electronic-warfare attack techniques
+
+* **RF interference**
+* **Jamming**
+* **GNSS jamming**
+* **Spoofing**
+* **GNSS spoofing**
+* **Replay attack**
+* **Signal interception**
+* **Eavesdropping**
+* **Signal hijacking**
+* **Signal injection**
+* **Signal suppression**
+* **Broadcast hijacking**
+* **Unauthorized transmission**
+* **Protocol exploitation**
+* **Protocol manipulation**
+* **Frame manipulation / frame-processing exploitation**
+* **Cryptographic interception**
+* **Command injection**
+* **Command replay**
+* **Command execution**
+* **Unauthorized telecommand**
+* **Telemetry manipulation**
+* **Firmware exploitation**
+* **Firmware manipulation**
+* **Firmware injection**
+* **Memory compromise**
+* **Hardware/firmware exploitation**
+* **Backdoor**
+* **Cryptographic-key replacement**
+* **Authentication bypass**
+* **Credential theft**
+* **Credential compromise**
+* **Credential abuse**
+* **Valid-credential abuse**
+* **Phishing**
+* **Spear-phishing**
+* **Social engineering**
+* **Malware**
+* **Ransomware**
+* **Data exfiltration**
+* **Data destruction**
+* **Data corruption**
+* **Denial of Service (DoS)**
+* **Distributed Denial of Service (DDoS)**
+* **Localized denial of service**
+* **Botnet**
+* **Terminal exploitation**
+* **Rogue equipment**
+* **Ground-segment compromise**
+* **Network/infrastructure intrusion**
+* **Supply-chain compromise**
+* **Hardware backdoor**
+* **Privilege escalation**
+* **Privilege separation**
+* **Masquerading**
+* **Disable fault management**
+* **Prevent downlink**
+* **Modify onboard values**
+* **Safe-mode abuse**
+* **Power manipulation**
+* **Constellation hopping via crosslink**
+* **Ground-to-satellite-to-ground relay**
+* **Covert channel**
+* **Payload compromise**
+* **System hijacking**
+* **Orbit manipulation**
+* **Service disruption**
+* **Kinetic Anti-Satellite (ASAT) attack**
+* **Laser dazzling / laser interference**
+* **EMP weapon**
+* **High-Altitude Nuclear Explosion (HANE)**
+* **High-powered microwave**
+* **Physical deception**
+* **Physical adversarial patch**
+* **Camouflage, Concealment and Decoys (CCD)**
+
+The paper's segment-based threat taxonomy explicitly includes ASAT, sensor injection, EMP, system hijacking, payload/firmware compromise, DDoS, malware, jamming, spoofing, replay, protocol exploitation, signal hijacking, cryptographic interception, supply-chain compromise and adversarial ML.  The lifecycle taxonomy then adds more precise operational concepts such as signal injection/suppression, firmware injection, power manipulation and crosslink-based lateral movement.  
+
+### 7. Defensive, detection and resilience technologies
+
+* **Radiation-hardened components**
+* **Command encryption**
+* **Bus/payload isolation**
+* **Authenticated boot**
+* **Secure boot**
+* **Redundant critical systems**
+* **On-orbit anomaly detection**
+* **Power-side anomaly monitoring**
+* **Telemetry-integrity checks**
+* **Golden-image firmware**
+* **Protected-memory firmware recovery**
+* **Zero-trust segmentation**
+* **Multi-Factor Authentication (MFA)**
+* **Secure SDLC**
+* **Endpoint monitoring / EDR**
+* **Intrusion-Detection Systems (IDS)**
+* **Cryptographically signed firmware updates**
+* **Spread spectrum**
+* **FHSS**
+* **DSSS**
+* **Adaptive beamforming**
+* **Cryptographic signal authentication**
+* **OSNMA**
+* **PHY/MAC-layer anomaly checks**
+* **Transmitter fingerprinting**
+* **Dynamic rerouting**
+* **Rapid rekeying**
+* **Hardware-provenance checks**
+* **Least-privilege access**
+* **Checksum auditing**
+* **Runtime attestation**
+* **Certificate/credential revocation**
+* **Digital-twin validation**
+* **Diversity-based redundancy**
+* **Geographically diverse ground infrastructure**
+
+These technologies come directly from the paper's prevention–detection–restoration mitigation framework. 
+
+### 8. AI, machine learning and autonomous-satellite terminology
+
+* **Artificial Intelligence (AI)**
+* **Machine Learning (ML)**
+* **Adversarial Machine Learning (AML)**
+* **ML-enabled satellite systems**
+* **Onboard ML**
+* **Onboard autonomy**
+* **Autonomy logic**
+* **Anomaly detection**
+* **Anti-jamming**
+* **Beam hopping**
+* **Reinforcement Learning (RL)-based control**
+* **Onboard learning**
+* **Adaptive retraining**
+* **Quantized model**
+* **Pruned model**
+* **Inference accelerator**
+* **Model inference**
+* **Training-data poisoning**
+* **Backdoor insertion**
+* **Adversarial input**
+* **Adversarial perturbation**
+* **Inference-time manipulation**
+* **Model-parameter manipulation**
+* **Model-update security**
+* **Model integrity**
+* **Decision boundary**
+* **Misclassification**
+* **ML-driven scheduling**
+* **Mission planning**
+* **Collision avoidance**
+* **Network management**
+* **Cyber monitoring**
+* **Remote-sensing model deception**
+* **Degraded autonomy performance**
+* **AI-based anomaly detection**
+
+The paper specifically describes ML use in communications, control, perception, scheduling and anomaly detection, and identifies adversarial inputs, poisoning, backdoors, model-update attacks and constrained onboard inference as emerging satellite-security concerns.  Importantly, the authors state that AML is an **emerging/prospective attack class**, not a publicly confirmed root cause of a historical satellite incident in their corpus. 
+
+

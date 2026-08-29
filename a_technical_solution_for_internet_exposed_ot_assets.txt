@@ -1,0 +1,799 @@
+ABOUT
+================================================================================
+Title: A Technical Solution for Internet-Exposed OT Assets
+Author/Channel: S4 Events
+Channel URL: https://www.youtube.com/channel/UC5MdLu7ji_eyGiTfigk75lQ
+Video URL: https://www.youtube.com/watch?v=peUMM9WtP7g
+Video ID: peUMM9WtP7g
+Published: 2026-08-13
+Duration: 25:09
+Views: 212
+Likes: 6
+Comments: Unknown
+
+Description:
+At S4x12 Eireann Leveritt showed there were millions of OT devices directly accessible from the Internet. Shodan and other scanners show the situation has not improved in the 14 years since that initial presentation.
+
+Michael Pyle unveiled a simple and effective technical solution that doesn't rely on the asset owner doing the right thing. A secure by default solution to reduce the Internet connected OT problem.
+
+Subscribe to Dale’s ICS Security: Friday News & Notes email here:
+https://friday.dale-peterson.com/signup
+Check out S4x27. Feb 8 - 11 in Tampa:
+https://s4xevents.com
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# A Technical Solution for Internet-Exposed OT Assets
+
+## Authors, presenters, and available details
+
+- **Primary presenter:** Michael Pyle  
+  - **Credentials/affiliation:** Not provided in the supplied material.  
+  - **Contact details:** No direct contact information was provided. The presentation states that interested parties may contact Michael Pyle or Daniel Payet for a live proof-of-concept demonstration, but it does not provide an email address or other direct contact channel.
+
+- **Colleague mentioned:** Daniel Payet  
+  - **Credentials/affiliation:** Not provided.  
+  - **Contact details:** Not provided.
+
+- **Previous presenter mentioned:** Anna Diamond  
+  - **Role:** Presented the organization’s installed-base program at the prior S4 conference.  
+  - **Credentials/affiliation:** Not provided.  
+  - **Contact details:** Not provided.
+
+- **Author/channel listed in the source:** S4 Events  
+  - **Channel:** https://www.youtube.com/channel/UC5MdLu7ji_eyGiTfigk75lQ  
+  - **Video:** https://www.youtube.com/watch?v=peUMM9WtP7g  
+  - **Video ID:** peUMM9WtP7g  
+  - **Published:** 2026-08-13  
+  - **Duration:** 25:09  
+  - **Credentials and organizational contact details:** Not provided beyond the channel and related event links.
+
+- **Additional links supplied in the source:**
+  - Dale’s ICS Security newsletter: https://friday.dale-peterson.com/signup
+  - S4x27 event: https://s4xevents.com
+
+## Summary
+
+The presentation proposes **Internet Exposure Prevention (IEP)**, a secure-by-default capability intended to prevent operational technology (OT) devices from becoming directly accessible from the public internet. Michael Pyle frames the problem as one that cannot be solved reliably through deployment instructions alone. Although vendors commonly advise users not to expose OT devices to the internet, the presentation cites more than **145,000 internet-exposed OT assets globally**, with approximately one-third located in the United States.
+
+The authors’ central technical and operational idea is to embed prevention directly into the device rather than relying on installers or asset owners to configure the system correctly. The solution should permit legitimate outbound communication—such as an OT device communicating with a cloud service—while rejecting unsolicited inbound internet traffic.
+
+Pyle compares the model to telephone behavior: a device may initiate and maintain an expected communication, but it should ignore incoming communication from an unknown source. This approach is intended to make the device effectively invisible to internet scanners and reduce accidental exposure caused by port forwarding, configuration mistakes, unclear instructions, or insufficient operator expertise.
+
+The presentation first develops the approach for IPv4 and IPv6, then addresses an important legacy-networking edge case: customers whose internal networks use publicly routable IP addresses. The proposed adaptations attempt to preserve secure-by-default behavior without assuming that every internal OT network uses private addressing.
+
+A proof of concept compared two otherwise identical devices: one implementing IEP and one without it. In tests conducted both behind a firewall with port forwarding and in a honeypot directly connected to the internet, the unprotected device was discovered by scanners such as **Shodan, Censys, and Criminal IP**. The device implementing IEP did not respond to the probes and did not appear in those services during the reported tests.
+
+The presentation also discusses deployment in existing devices. The concept could be implemented in new products and potentially added to devices already in the field through firmware upgrades. Pyle notes that an alternative rollout strategy could initially detect and alert on exposure, allowing asset owners to decide when to enable blocking. The broader proposal assigns responsibility across vendors, system integrators, and asset owners: vendors provide secure-by-default products, integrators deploy them securely, and asset owners maintain secure operation.
+
+## Key technical ideas
+
+### 1. Secure-by-default prevention at the device level
+
+The primary innovation is to make internet exposure prevention an inherent device behavior rather than an optional deployment practice. The device should protect itself even when installation guidance is misunderstood, ignored, or incorrectly applied.
+
+### 2. Permit expected outbound flows while blocking unsolicited inbound traffic
+
+The solution does not simply block all internet connectivity. It distinguishes between:
+
+- **Outbound or device-initiated communication**, which may be needed for cloud services.
+- **Unsolicited inbound communication**, which should be ignored unless it belongs to an already established, device-initiated flow.
+
+This preserves required cloud communication while limiting unsolicited access from the internet.
+
+### 3. IPv4 implementation using address classification
+
+For IPv4, the proposed baseline behavior is:
+
+1. Prefer assigning the device an address from the RFC 1918 private address space.
+2. Inspect incoming packets before normal processing.
+3. Examine the source IP address.
+4. Ignore traffic whose source is publicly routable, unless it is associated with a communication initiated by the device toward a cloud endpoint.
+5. Preserve communication from private addresses on the internal network.
+
+### 4. IPv6 implementation using ULA and global-unicast restrictions
+
+For IPv6, the proposal uses:
+
+- **RFC 4193 Unique Local Addresses (ULAs)** as the default addressing model.
+- **Global Unicast Addresses (GUAs)** only when the device needs to communicate with the internet.
+- A restriction allowing incoming communication associated with the designated prefix used by the customer’s network, while preventing arbitrary internet-originated access.
+
+The presentation argues that even if an attacker spoofs an address from that prefix, the response would be routed back toward the legitimate customer network rather than to the attacker.
+
+### 5. Handling legacy networks with public internal addressing
+
+The authors identify a significant edge case: some legacy customer networks use publicly routable IP addresses internally, including systems established before RFC 1918 private addressing became available.
+
+For such environments, the proposed approach is to:
+
+- Permit assignment of a routable address.
+- Require administrative action to enable this mode, potentially through an advanced configuration interface.
+- Require the administrator to specify the network’s base address using the first **n bits** of the address.
+- Use a lower bound that might be 12 bits, with a proposed default of 16 bits.
+
+This configuration is intended to preserve the prevention mechanism while accommodating internal public addressing. The presentation acknowledges that misconfiguration could cause some leakage or reachability, but argues that the approach retains much of the secure-by-default protection.
+
+### 6. Passive behavior against internet scanners
+
+The proof of concept focuses on making the protected device non-responsive to unsolicited probes. The reported results indicate that:
+
+- The unprotected device responded to scans and was discovered within minutes.
+- The protected device generated no effective response to the scanning entities.
+- The protected device did not appear in Shodan, Censys, or Criminal IP during the tests.
+- The results were observed both behind a firewall with port forwarding and in a directly connected honeypot.
+
+### 7. Applicability to new and deployed devices
+
+The concept is presented as applicable to:
+
+- New OT products designed with IEP from the outset.
+- Existing devices updated through firmware.
+- Exposure remediation for assets identified through an installed-base program.
+
+The presentation also considers an alert-only deployment mode, in which firmware detects internet access and records or reports it before blocking is enabled.
+
+### 8. Division of security responsibilities
+
+The authors propose a three-part responsibility model:
+
+- **Vendors:** Secure by default and secure by design.
+- **System integrators:** Secure deployment and adherence to installation guidance.
+- **Asset owners:** Secure operation and maintenance.
+
+This structure is intended to avoid the “I thought somebody else was doing it” problem by making responsibilities explicit.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[music]
+>> At last year's
+S4 conference, my colleague Anna Diamond
+presented on our installed base program,
+in which we work to identify
+assets exposed to the internet, learn
+who the owners are, and then take steps
+to alert them to the risks that they
+face.
+Today, I plan to speak with you about a
+concept
+that prevents these internet exposures
+out of the box.
+So, we never have to deal with this
+going forward.
+As a reminder,
+there globally, there are over 145,000
+OT assets from a variety of different
+vendors
+currently exposed to the internet.
+Automated scanning continues to add to
+those numbers, and we're seeing that
+grow.
+Approximately 1/3
+of the devices that are exposed actually
+are located in the United States.
+>> [clears throat]
+>> Well, given these statistics,
+it caused us to stop and ask ourselves,
+"What can we do
+to prevent this?"
+The question did not have an apparent
+immediate answer,
+but we dug in.
+So, we thought, "What does this type of
+solution look like?"
+We can't just block all incoming
+communications from the internet,
+because in some cases, our OT devices
+need to be able to reach out to the
+internet and have an ongoing
+communication with a server in the
+cloud.
+So, what we really need is a solution
+that allows that outgoing flow to work
+properly,
+but at the same time, we want to block
+what I call unsolicited
+inbound communications
+that the device is not expecting to see.
+So, it's analogous to our phones.
+Today, we pick up our phone, we make a
+phone call,
+outbound, hopefully somebody on the
+other end picks up and answers.
+We communicate.
+We end the call,
+and then we go on.
+But if we're sitting there on the couch
+doing something productive, like doom
+scrolling through TikTok videos,
+and an incoming call comes in
+from somebody that is not in our contact
+list,
+we ignore it.
+We're applying the same principles here.
+That's what we want
+to deliver as an inherent
+secure-by-default capability
+in our devices.
+Why do we want this to be
+secure-by-default inherent in the
+device?
+I mean,
+let's face it,
+our
+companies like ours put a lot of effort
+into documenting
+and outlining secure deployment
+guidance.
+We provide the do's and the don'ts.
+And I can guarantee you the don'ts
+certainly include do not expose this
+device to the internet.
+Yet,
+>> [clears throat]
+>> we see
+this 145,000-plus
+number of devices that are out there.
+Why?
+In some cases, yes,
+it's because the naive, I'll be
+generous, that the naive
+lazy person uses
+port forwarding to provide themselves
+with the lazy man's
+remote internet access to their system.
+Not very smart, but it's done.
+But the fact is most of these issues
+are by accident. They're by They're
+mistakes that occur out there.
+So,
+we want secure by default behavior for
+this solution
+so that we remove our reliance on humans
+doing it properly. Now, I have my
+opinions on why
+we put all this effort into
+these uh secured deployment guidance,
+and yet they're not being followed, but
+before I share that with you, let me
+just ask for a show of hands.
+Who among you
+actually read the installation
+instructions when you're setting
+something up?
+Cuz I Now, my hand is only up by
+example. As I'm not claiming that I do
+that, okay? Just as an example.
+That's the reason.
+I'll put it nicely. Read the darn
+manual.
+But they don't. And even when they do,
+we can't always depend on them to follow
+the instructions that are laid out.
+Maybe they're not clear, maybe they're
+not understood, maybe they don't have
+the knowledge or skills or background
+to allow them to do that.
+So, it happens, and it happens a lot.
+Now, as we [clears throat] worked on
+this, I really like this quote by Steve
+Jobs
+because it really captures what we went
+through
+when
+coming up with our final idea.
+We started out with some very complex
+solutions,
+perhaps even a little bit of crazy
+solutions.
+But we kept chipping away at it and
+chipping away, had a few arguments,
+and we finally settled on what I think
+you'll find to be, if not an elegant
+solution, certainly a simple approach
+that is straightforward to implement in
+our embedded devices.
+Now,
+>> [clears throat]
+>> we call our solution internet exposure
+prevention.
+And we started with IPv4.
+And we looked at that we looked at RFC
+1918 that defines the private address
+space.
+And we started out saying, "Okay, the
+first thing we're going to do is we're
+not going to allow the device to be
+assigned anything but a private
+address."
+And then secondly, we're going to look
+at the packets just as they come in
+before they're processed at all,
+look at that source IP address of that
+incoming packet,
+and decide, "Is this a private IP
+address or not, that source IP address?"
+If it isn't, then it is a publicly
+routable IP address, we are going to
+ignore it.
+Unless
+that source IP address comes from a
+device as in the cloud that our product
+or device initiated those communications
+to.
+Now, moving to IPv6,
+in the IPv6 space, you RFC 4193
+defines the
+universal local address space. It's not
+publicly routable on the internet.
+So, we started out by saying, "Our
+devices can only be assigned a ULA."
+But in some cases
+our devices again need to be able to
+reach out to the internet. And to do
+that, they need a global unicast address
+to be assigned to them, which is
+publicly routable over the internet.
+So,
+for those devices that have the need to
+be able to reach out and touch the
+internet,
+we do allow them to be assigned a global
+unicast address.
+But again, we'll restrict the flow
+to
+communications to the cloud that are
+initiated by the device itself.
+Pretty straightforward.
+So,
+>> [clears throat]
+>> we've come up with these core
+principles.
+Ignore
+unsolicited traffic
+from the internet.
+Accept if the device initiates that
+flow.
+And preserve preserve the
+flow of communications
+from private IP addresses on the
+internal network and have that run
+properly. We're done.
+We've got a solution. We're ready to go.
+High fives all around.
+Let's go have a beer.
+Except
+except
+there's an edge case.
+And the edge case is
+some cases some customers
+bear that it might be actually use
+public IP space for their internal
+networks.
+What are they thinking?
+Just when I thought we had a solution,
+we're faced with that reality.
+So, we have to go back and rework it and
+rethink what we're
+looking at. Say, do our rules still
+apply?
+And
+to be fair, a lot of these
+uh systems were put in place before the
+RFC 1918 existed. So, they're kind of
+legacy grandfathered in systems that are
+using these
+publicly routable IP addresses, but
+we've got to deal with it.
+>> [clears throat]
+>> So, the first thing obviously we have to
+do
+is we have to drop the requirement that
+the device not be able to be assigned
+anything but a private IP address.
+Because we've got to be able to
+accommodate that.
+But, we will require admin access
+in order to do that, perhaps even an
+advanced tab if possible to go to to be
+able to turn on and enable
+that uh internet routable IP address to
+be assigned to the device.
+But, to go along with that
+we need to find a simple schema
+that does not
+allow the internet prevention concept to
+be bypassed. Because that's what's
+happening today. People are deliberate
+Some people are deliberately going in
+bypassing the rules, bypassing the
+guidance
+and
+exposing these devices to the internet.
+We don't want that. We still want to
+retain as much as possible
+the secure by default behavior.
+So, we don't want it to bypass, we don't
+want it to really significantly dilute
+the solution.
+So,
+again, starting with IPV4
+we look at that address space
+and we say, "Okay, I'm using routable IP
+addresses."
+Whether it's private or routable,
+normally
+those that device will exist on a subnet
+of some some sort. It'll be segmented
+and be on a subnet. That subnet
+will have
+a base or a parent that that subnet the
+device is on is a child of.
+What we can do
+is identify that base.
+It's the first n bits of the IP address
+of the device represent the base
+that its [clears throat] subnet is
+derived from.
+And so, along with allowing
+an IP address, a routable IP address, to
+be assigned to the device, we will also
+require
+that you identify
+the n bits, the number of n of bits,
+that represent your base address. And
+we're going to put a lower limit on that
+in terms of what you configure.
+And
+>> [clears throat]
+>> perhaps it's debatable, but that number
+is likely 12.
+But we'll default it to 16. So, that
+means the first two octets represent the
+base.
+And then the subnets are derived from
+that. And then you can put you can make
+it larger than 16, obviously.
+There's no real point for somebody to
+try to use this. They're not going to be
+able to use that to manipulate and give
+themselves access from the internet
+because there's no way they can depend
+on having an IP address assigned to them
+that is part of that base. Even if it's
+even if they try to broaden it out. Now,
+it could make a mistake, could could
+cause a little bit of leakage or
+reachability from the internet if not
+properly configured, but
+it goes a long way still to preserving
+that whole default by
+secure by default nature
+of the solution.
+IPv6,
+the approach is similar.
+IPv6,
+for those of you who aren't as familiar
+with it,
+um
+all
+global unicast addresses
+are
+derived from
+a designated prefix. And those
+designated prefixes
+are unique
+from one customer to another and they
+are assigned by the ISPs.
+So, we can deal with this problem quite
+simply with IPv6 by saying we will allow
+and solicit incoming communications
+from the same designated prefix that the
+device resides on.
+Doing that will still allow that
+internet that internal
+use of routable IP addresses for that
+communications,
+but
+>> [clears throat]
+>> prevent anything from the outside from
+the internet from actually coming in.
+Yes, from the internet you could spoof
+that
+GUA address,
+but the fact is once it comes in, even
+if the device responds to it, it's never
+going to come back and reach
+the attacker because that designated
+prefix is allocated to that end
+customer. The ISPs are going to route
+back to that customer's internet-facing
+routers, not to
+uh
+not [clears throat] send that back to
+the attacker. So, again, they will never
+see it. The device remains invisible
+to the attacker.
+So, getting that out of the way,
+now we can talk about the fun stuff, our
+proof of concept.
+With our proof of concept,
+we started out with two identical
+devices with the exception that one of
+those
+had our internet
+exposure prevention solution implemented
+in it,
+while the other did not.
+And our initial proof of concept
+put those devices behind a firewall.
+We port [clears throat] forwarded to
+both of those,
+and we watched to see what happened. We
+monitored the firewall logs, captured
+the traffic.
+Does this work?
+And what we found is that the device
+without internet exposure prevention,
+it was repeatedly hit
+and discovered
+through
+these internet scans. And you can see
+here, if you look at the
+column with the web browsing all the way
+through, that means that the device is
+responding to all those scans.
+And it is it is showing up to the
+attackers.
+And it was discovered within minutes. We
+saw multiple
+route internet addresses from the
+internet hitting that device
+over and over and over again because
+they discovered it in 10 minutes or so,
+maybe less.
+While the device with internet exposure
+prevention
+failed to be discovered. And if you look
+at the firewall log, again, you show in
+that column incomplete, incomplete,
+incomplete.
+Incomplete meaning there was no response
+sent at all to the
+uh scanning scanning entity.
+It was not discovered.
+We let these left these running for a
+while.
+The device without internet exposure
+prevention was discovered by tools like
+Shodan and Censys and Criminal IP.
+The device with internet exposure
+prevention never showed up.
+It was never listed.
+We did the same exact proof of concept,
+but instead of putting them behind a
+firewall, we put them in a honeypot
+where they were directly connected to
+the internet and repeated the test.
+Exact same results.
+The device
+>> [clears throat]
+>> without internet exposure prevention
+showed up in the tools like Shodan,
+while our device with IEP did not.
+So, we feel that
+we reached
+the goals, the objectives that we set
+out for ourselves. We have a solution
+that
+is
+secure by default behavior that is
+preemptive
+in stopping this problem.
+It essentially makes the device
+invisible to probes
+and undetectable by search engines,
+whether your commercial ones like
+Shodan,
+or homegrown by quote unquote homegrown
+by
+the more sophisticated attackers.
+If we look at
+>> [clears throat]
+>> some customer stories and assess
+this solution
+to those those situations,
+some stories from examples from our
+install base program, we had a building
+management system at a school that was
+exposed. We were able to identify that
+customer
+and alert them,
+and then
+send in some Schneider Services teams to
+assist them in securing that
+installation.
+Similarly, we had an exposed gateway, a
+medium voltage switch, and a PLC that
+were exposed. Again, we were able to
+identify the end customer, and they took
+care of remediating the problem
+themselves. But, the point is that these
+situations
+would never have occurred if we assess
+this and look at our internet exposure
+prevention solution, they never would
+have occurred. And just like anything
+else, having to go out in and fix
+something after the fact is a lot more
+expensive
+than doing it right the first time.
+And
+not to mention the fact that just
+identifying who these customers are that
+own these exposed assets
+is quite challenging and difficult to
+do.
+>> [clears throat]
+>> So, I think that from an industry
+perspective
+few if any vendors
+have a secure by default
+method in
+in their devices that prevents this
+inner
+internet exposure that's we're seeing
+today.
+We're really completely reliant on
+the installers following the guidance
+that we're provided.
+And
+with the rising expectations on our
+customers on secure by default
+we
+uh we need to step up our game. I
+believe our industry can do more
+and we are planning to do more and
+implement this, start implementing this
+idea in our devices.
+Again
+again, talking about the accidents. We
+have a customer
+who said
+"I had no idea that my device was
+exposed to the internet."
+Internet exposure prevention would have
+kept this from happening out of the box.
+We've presented this concept to a US
+security agency and to a European
+security agency.
+Both of them showed a high degree of
+interest and gave us positive feedback
+on the idea
+and the US agency went so far as to say
+that it showed avant-garde thinking,
+which I thought the fact that French was
+hilarious, but
+>> [clears throat]
+>> um they did.
+So, as a company we are planning on
+implementing this in several devices
+already. We're working to align our
+internal teams on the secure by default
+behavior and getting them behind it.
+And we're considering how we can use
+this to remediate
+the
+the devices found as part of our install
+base program because this This is not
+just limited to implementation going
+forward.
+We can take the firmware for devices
+that are already in the field and
+upgrade them to include this concept
+such that when it is downloaded to those
+devices in the field,
+they will immediately block
+that inner any incoming internet
+communications and stop it from
+happening.
+Now,
+some of you might be concerned that
+that's going to be detrimental to
+what we want to achieve. It might break
+something, but I shudder to think that
+anything
+critical is dependent on internet access
+or internet net reachability in terms of
+operations of the system.
+I mean, the other day [clears throat]
+I lost my internet for 24 hours
+and
+I could not say Alexa, turn on my
+lights.
+Yes, it was inconvenient. I had to be up
+off the couch and go push a switch,
+but it wasn't critical.
+And I would hope that anybody doing any
+kind of remote access today with an
+exposed device
+would not be doing anything that was
+critical. So, I don't really myself
+don't know that it's a big issue to
+immediately block that access.
+The other approach would be
+to use the concepts to detect and alert
+on the device being accessed from the
+internet. Now, show of hands
+of any asset owners here, which would
+you prefer? Would you prefer just we you
+update the firmware and it takes care of
+blocking it
+out of the box or would you
+Anybody for an out of the box approach?
+Are there no asset owners here? How many
+people here are asset owners operators?
+Okay, so you don't So, or would you
+prefer that it just alert you to the
+solution? Raise your hand if you prefer
+that it just alert you to the solution.
+Okay, so but but if you download the
+firmware, then you'd want the choice
+um
+after you install it. So, by default, it
+would alert, but you'd want the choice
+to be able to turn it on. Is that what
+you're saying?
+And you, sir, also?
+Great.
+Little bit of ad hoc market research on
+the fly.
+Thank you for that feedback.
+>> I would like to
+determine where my device goes to.
+>> We can log that. We would log that.
+So,
+Whoop, did I hit the wrong hit the wrong
+button?
+Um so, last slide.
+Um
+we need secure by the default, secure by
+design
+in our products
+to serve as a baseline for secure by
+operations. And And
+get the the asset owners off to a good
+start. We also need our system
+integrators for soft to read the manual.
+Um
+and focus on secure as deployed. And
+then lastly, the asset owners to focus
+on secure by operations. And having a
+model like this where we divide
+responsibilities up helps to avoid the I
+thought somebody else was doing it
+problem. We know who is responsible
+for what. So, I challenge everyone as
+they go forward
+to look at how their particular role,
+what they can do to improve the
+situation as we go forward.
+Thank you. And if you have if you have
+if you are interested in a live demo of
+the
+uh proof of concepts that we we did, you
+can contact myself or my colleague
+Daniel Payet. Raise your hand, tall.
+And we'll be happy to meet with you
+afterwards and give you a live demo of
+the proof of concept. So, thank you very
+much.
+>> [applause]
+[applause]
+[music]
