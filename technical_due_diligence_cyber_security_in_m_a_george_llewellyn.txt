@@ -1,0 +1,558 @@
+ABOUT
+================================================================================
+Title: Technical Due Diligence: Cyber Security in M&A — George Llewellyn
+Author/Channel: BSides Birmingham (UK)
+Channel URL: https://www.youtube.com/channel/UCdaEr923LMNroFmQTfnAr-A
+Video URL: https://www.youtube.com/watch?v=4TGn9-3WMYo
+Video ID: 4TGn9-3WMYo
+Published: 2026-09-02
+Duration: 17:09
+Views: 5
+Likes: Unknown
+Comments: Unknown
+
+Description:
+"Technical Due Diligence: Cyber Security in M&A"
+George Llewellyn
+
+Recorded on the Rookie Track at BSides Birmingham 2026.
+
+What security due diligence looks like during mergers and acquisitions, and the risks that surface when two estates come together.
+
+#BSidesBrum26
+https://bsidesbrum.com
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Technical Due Diligence: Cyber Security in M&A — George Llewellyn
+
+## Publication and Author
+
+- **Title:** *Technical Due Diligence: Cyber Security in M&A — George Llewellyn*
+- **Author/Speaker:** George Llewellyn  
+  - The transcript briefly spells the surname as “Luwellyn,” but the supplied About section identifies him as **George Llewellyn**.
+- **Recorded for:** BSides Birmingham 2026, Rookie Track
+- **Channel:** BSides Birmingham (UK)
+- **Channel URL:** https://www.youtube.com/channel/UCdaEr923LMNroFmQTfnAr-A
+- **Video URL:** https://www.youtube.com/watch?v=4TGn9-3WMYo
+- **Published:** 2026-09-02
+- **Duration:** 17:09
+
+### Author credentials and role
+
+According to the transcript, George Llewellyn:
+
+- Works for a **private-equity-backed financial services organization**.
+- Is the **technical lead for the group mergers and acquisitions function**.
+- Leads a team of **engineers and technical project managers**.
+- Works with external vendors and delivers **technical due diligence and integration services** to business units.
+- Primarily operates across the **UK and Ireland**, with recent work in **Northern Europe**, including Sweden and Denmark.
+- His organization acquires smaller **accountancy and audit practices**, generally purchasing a book of business and the associated assets, people, and data.
+
+Other professional credentials, certifications, academic qualifications, employer name, and affiliations were **not provided**.
+
+### Contacts
+
+- The speaker said he could be found on **LinkedIn**, but no LinkedIn URL or profile identifier was provided.
+- No email address, telephone number, postal address, or other direct contact details were provided.
+- The BSides Birmingham channel and event links are provided above; these are event/channel contacts rather than confirmed personal contact details for George Llewellyn.
+
+## Summary
+
+The talk presents a practical approach to cybersecurity technical due diligence during mergers and acquisitions. Its central argument is that acquiring a business means acquiring not only its financial assets, but also its people, data, applications, infrastructure, operating practices, and inherited security risks.
+
+The due-diligence process begins after initial financial and compliance checks and the signing of heads of terms. The technical team then evaluates the target’s technology estate, security controls, operating model, financial commitments, regulatory position, and readiness for integration. The purpose is not merely to collect declarations or certificates, but to obtain evidence of the target’s actual security condition.
+
+Llewellyn emphasizes the difference between being told that an organization is secure and demonstrating that it is secure. He criticizes assessments that rely solely on old penetration-test reports, certifications, interviews, or statements from an overloaded business-as-usual IT team. Instead, his approach combines direct investigation with technical tooling, including vulnerability scanning, penetration testing, and compromise assessment.
+
+A key risk arises when a smaller company joins a larger organization. The newly acquired business may become a more valuable target because attackers can potentially use its weaker infrastructure as an entry point into the larger group. Consequently, the risk profile increases around exchange, completion, and public announcement. Integration is therefore presented not just as an operational activity, but as a major security control.
+
+The assessment covers identity and access management, privileged access, endpoint and end-user computing, infrastructure, applications, cyber and data-protection practices, incident response, vulnerability management, IT governance, financial costs, regulatory requirements, and integration readiness. The team also performs a cost-to-run analysis, partly to identify savings and partly to reveal shadow IT that may not appear in discussions with central IT staff.
+
+Findings are scored according to risk and business impact. Some issues must be remediated before completion, while others can be carried into integration if there is a documented route to remediation. The speaker gives the example of missing multifactor authentication, which is treated as an immediate red risk because it may affect cyber-insurance coverage and the security of the acquiring group. Other issues, such as end-of-life systems or insecure custom applications, may be accepted temporarily if a clear remediation plan exists.
+
+The overall recommendation is to connect technical findings to business value. Integration initiatives that both reduce costs and mitigate security risks are more likely to receive stakeholder support. Simplifying and consolidating the technology estate is presented as one of the most effective ways to reduce long-term security, support, and operational complexity.
+
+## Technical Innovation and Authors’ Ideas
+
+The talk does not describe a new security algorithm, software system, or formally novel research technique. Its technical contribution is a practical operating model for applying cybersecurity evidence and risk analysis to M&A decisions.
+
+The main ideas are:
+
+1. **Treat due diligence as evidence gathering rather than assurance collection.**  
+   Security claims should be tested through active inspection and technical evidence, not accepted solely on the basis of policies, interviews, certifications, or historic reports.
+
+2. **Use a process of elimination to define scope.**  
+   Rather than automatically excluding financial systems, infrastructure, or applications from review, the team considers each area and documents why it is or is not included.
+
+3. **Combine complementary assessment techniques.**  
+   The approach uses:
+   - Vulnerability scanning to identify exposed weaknesses.
+   - Penetration testing to determine whether exploitable attack chains exist.
+   - Compromise assessment to identify evidence of previous or ongoing compromise.
+   - Asset and technology discovery to establish what the target actually operates.
+
+4. **Assess the real technology estate, including shadow IT.**  
+   A cost-to-run analysis is used not only for financial planning but also to identify applications and subscriptions purchased outside formal IT governance.
+
+5. **Examine access risk in the context of the transaction.**  
+   Employees who were previously trusted may become insider threats when they learn about a transaction. The review therefore includes identity governance, privileged access, shared accounts, MFA, stale accounts, and excessive permissions.
+
+6. **Treat integration as a security mechanism.**  
+   Maintaining two separate infrastructures increases complexity and creates additional security boundaries. Consolidating the acquired estate into a better-understood standard environment can reduce the attack surface and improve the organization’s ability to secure its perimeter.
+
+7. **Link risk scoring to concrete business decisions.**  
+   Findings are not treated as an undifferentiated list of problems. They are classified according to whether they are deal blockers, pre-completion remediation items, or risks that can be carried forward with a documented “path to green.”
+
+8. **Use integration value to accelerate remediation.**  
+   If an integration activity produces both cost savings and security improvements, it becomes easier to justify and implement that activity quickly.
+
+## Key Technical Ideas
+
+- **Discover before judging:** Establish the actual applications, infrastructure, endpoints, accounts, and external connections in use.
+- **“Prove it” security validation:** Use direct investigation and tooling instead of relying on declarations of compliance or security.
+- **Pre- and post-completion risk changes:** Recognize that public announcement and group integration can increase the target’s attractiveness to attackers.
+- **Identity is a transaction risk:** Review MFA, privileged accounts, shared accounts, dormant accounts, and potential insider-threat exposure.
+- **Shadow IT is a security signal:** Financial and subscription analysis can reveal unmanaged technologies omitted from official IT inventories.
+- **Find attack paths, not isolated weaknesses:** Vulnerability scans and penetration tests should help determine how weaknesses could be chained into compromise.
+- **Compromise assessment matters:** Due diligence should look for evidence that the target may already have been breached.
+- **Integration readiness affects security exposure:** Incompatible systems and operating models prolong the period during which insecure legacy environments must be maintained.
+- **Risk acceptance requires a remediation path:** Issues carried into integration should have documented ownership and a route to resolution.
+- **Simplification improves security:** Reducing the number of disparate infrastructures and technologies makes the environment easier to understand, operate, and defend.
+- **Technical risk should be connected to value:** Cost savings and security remediation can reinforce each other when planned as part of integration.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Yes, technical due diligence in
+cyber security and M&A. It's a bit
+disconcerting hearing my voice come out
+the speaker. So, um yes, so my my talk
+is of course technical due diligence and
+cyber security and M&A.
+So, I'm George Luwellyn of course as you
+already heard a few times. What is M&A
+and what do I do? So, any of you know
+what M&A is?
+>> Major acquisition. Absolutely. Yeah. Um,
+it take takes many different forms. I
+work for a private equity backed
+financial services organization. It's
+everybody's favorite flavor at the
+moment.
+>> There's no due diligence in M&A.
+[laughter]
+>> There is.
+>> Um, [snorts] so, so, so yeah. So, for
+those that don't know what M&A is, I'll
+tell you what we do. So, uh, we're a
+financial services business and our
+private equity funders like us to grow
+by mergers and acquisitions. So, go and
+buy other smaller companies. We like the
+Borg. Uh, resistance is futile. You get
+integrated.
+Um, [snorts] and what do I do? So, so
+sorry, what what we buying? We're buying
+other smaller accountancy and audit
+practices. Um, we don't generally go for
+asset deals. So where you see software
+houses buying um buying other
+businesses, they generally like the
+assets and they've already got a team of
+skilled individuals that will do it. We
+are buying a book of business and the
+assets that come along with that. But
+there are flesh assets. Um the people
+that deliver the services to that book
+of business are as important and often
+time all of the time the data that they
+rely on to do their job is as important.
+And so we need to make sure that that D
+is secure, that it's integral, um, and
+that we understand the incumbent
+technology because, you know, if you buy
+a house and the wall falls over the next
+day, it's it's not a very good house. If
+you buy a business and their technology
+falls over the next day, it's not a very
+good business. And everybody comes and
+says, "George, what the f have you
+done?" So I am I am the technical lead
+for for the group M&A function. I look
+after a team of skilled engineers and
+technical project managers. Work with a
+few vendors and we deliver due diligence
+and integration services to business
+units across the group predominantly
+UK and Ireland but uh we've been doing a
+lot in the in Northern Europe recently.
+So we've been visiting Sweden and and
+Denmark too.
+All right. So, here's some AI generated
+facts that don't make any sense, but
+this is just really to indicate that
+this talk isn't for me to just throw a
+load of information at you that doesn't
+make sense and more to give you some
+information about what we look for and
+why we look for it.
+And here's a bit of an overview of the
+process that we follow.
+So red flag due diligence.
+We generally get the compliance and the
+financial people in there before all the
+operational teams like mine get involved
+and the business starts committing time
+and money. Uh they want to make sure
+that there is the the financials are
+sound of the business that they're
+buying. We are a regulated business and
+so we need to make sure that they're
+compliant to. Once that red flag stage
+is finished, we'll sign heads of terms.
+It's essentially saying we this is in a
+letter of intent that says we want to
+buy your business. We're going to
+undertake a survey, a technical due
+diligence uh process and then we start
+technical due diligence and I'll talk a
+little bit more about what we do during
+technical due diligence, our scope and
+the different phases of it. Um but we
+work through due diligence and the
+various bits that come come along with
+that and then we head on to exchange
+which is generally when the risk profile
+of a deal starts increasing
+and then completion announcement
+you've heard by a couple of people and
+and and Ram who preceded me mentioned it
+um businesses are targets um regardless
+of their size
+by virtue of a smaller business joining
+a much larger mothership, the [snorts]
+the payoff and the reward for for a
+breach um is much more substantial. And
+so the smaller business and their
+smaller, less secure infrastructure all
+of a sudden becomes very palatable and
+very tasty to a threat actor. And so
+once we complete and say, "Look at these
+new people that have joined us," all of
+the threat actors start throwing stones
+at the windows and seeing if they can
+find a way in. Um, and and then we work
+through integration. And I'll I'll say
+it a few times during during this that
+in integration really is the best way to
+secure your perimeter. It's all right to
+say
+over here, but
+>> no idea why.
+>> The ghost of Christmas ghost of
+Christmas past.
+Yeah. Um, yeah. It's to simplify is to
+simplify your estate. Yeah. rather than
+having two different infrastructures,
+you have one. You understand and secure
+your perimeter uh a little bit better.
+And so what typically happens is there
+are there are businesses out there that
+sell due diligence as a service. So
+they're professional service people.
+Lots of them that I've come across are
+not technical and don't have any
+experience in cyber security, cyber
+defense, but they are very good at
+talking to people. Um, they will say
+flashy things like ISO and they'll look
+for a pentest report that happened a
+long time ago and they'll interview an
+IT manager. Or the flip side is they'll
+come to the business will decide to buy
+a business. Not all businesses are M&A
+backed, sorry, PE backed, but will want
+to do M&A. And so that business will
+say, "We're doing an M&A, we're doing an
+acquisition." And they'll go to an
+already overloaded BAU team that doesn't
+have the resource or the skills to
+deliver uh to deliver a proper due
+diligence assessment. Um, and it doesn't
+it gives it gives a false indication of
+what secure looks like. Um, and I think
+the I think the the anecdote that we
+want to call up here is don't just tell
+me you're secure, prove it.
+So, I don't want some writing on a paper
+that says, "Oh, yeah, I was we had this
+and we've covered this up from 12 months
+ago." I want to actively go in and have
+a look at what you've got, interrogate
+it, and then deploy some tooling that
+gives me actual intelligence. And so,
+what's our scope and what do we
+generally look at? [snorts] dependent of
+on the size of the acquisition. We will
+either we will either scope up or we
+will scope down dependent on depend
+obviously dependent on what we think the
+perimeter will be. But we look at this
+as a process of elimination rather than
+rather than just saying we're not going
+to look at the financials, we're not
+going to look at the infrastructure. Um
+we write we have a look and say why
+we're not going to look at it. So scope
+on the left um and some things we look
+for on the right. So, identity and
+access management.
+You might have had somebody in a
+business that's worked there for 15
+years and never decided to be an insider
+threat.
+They might hear about the deal and all
+of a sudden decide to become an insider
+threat. 30 million pound for an equity
+shareholder isn't 30 million pound for
+suing accounts, unfortunately. Um, and
+privilege access management as well. A
+lot of you that have worked in the
+industry probably have seen it in action
+where I know John that's been there 10
+years has got domain admin on his
+standard user account and he's just
+walking around the building with no uh
+MFA
+end user compute as well and I'll I'll
+talk a little bit more about end user
+compute but we see unmanaged
+applications and people with people with
+privileged access that they don't
+necessarily need. We carry out an
+infrastructure assessment. The
+application portfolio review and the
+infrastructure assessment, they're kind
+of hand in hand. The we're looking for
+age, security controls, supportability
+post acquisition. Um, all of these
+things are key indicators of where an
+attack chain might find its way to and
+get some interesting information out of
+it or lock some interesting information
+up. We also look at what they've been
+doing for cyber security and data
+protection. Have they got incident
+response plans? Are they testing
+actively? How are they managing the
+vulnerabilities that they've got in
+their IT operating model? Because they
+might have a very skilled guy doing all
+of this stuff here, but they might have
+nobody that no stakeholders that are
+brought into the process, which means it
+just goes nowhere.
+Um, so yeah, the the IT operating model
+is important. The IT the IT financials
+are also very important. We conduct a
+cost to run analysis. This is used
+twofold. Private equity people love to
+see where they're going to save money.
+Um, but this is a good So, this is good
+for them, but it's good for us in it
+because we often times see shadow IT
+where people from marketing go and buy
+themselves a shiny new toy or the
+finance people buy themselves an AI
+subscription and just talking to your IT
+people isn't necessarily an indication
+of what your tech stack looks like
+across the business. And so, we do the
+cost to run analysis. We assess
+regulatory standards. As as I've already
+uh mentioned, we are a regulated
+business. Um an integration readiness as
+well is a good indicator of risk. If
+they're running completely different,
+you know, I don't know, let's say
+they're a Linux house, we're a Windows
+house, they're using a practice
+management system that we don't and
+they're not used to, it's lots of change
+for them and it means it will take us
+longer to get through integration. And
+so we have to make sure that an
+incumbent infrastructure is secure while
+we work through a program of work. We
+don't just have one of these on at any
+one time. We're managing three or four
+at the moment. So um it gets busy.
+So lots of you. So so yeah, I said don't
+just tell me you're secure, prove it.
+Um so what what do we do to prove it?
+And lots of you will be aware of these
+but I'll talk through anyway. And Jazz
+said the red on black would look crap.
+Um, I didn't change it. I regret it now.
+[laughter]
+Uh, sorry. So, we do So, we do a
+vulnerability scan. We just look uh down
+the road at any open windows that we
+might use to break in. [snorts] We do a
+penetration test. And so, how can we uh
+so how can we prove if there's any
+exploitable attack chains? We do a
+compromise assessment as well which um
+which is tooling that helps us helps us
+identify if there's any evidence of past
+or ongoing compromise.
+We use this to we use this to decide um
+we use this to feed into the report.
+We work with partners. We we're a small
+team and we're very busy. Um we we need
+we rely on external expertise to help
+us. So I know there's some people from
+PE pentest partners here today. They
+help us with pentests of course and
+compromise assessments.
+Rethor are a specialist CTO CIO level
+advisory that help us assess more
+complex infrastructures.
+Horizon 3.ai are a they're a they're a
+scanning tool. So you can deploy a
+lightweight application, lightweight VM
+into a cloud and it relies on line of
+sight though. So whilst this is good and
+it'll look for things that you think
+you've patched or that they think
+they've patched, it does rely on line of
+sight and so is not good for
+disconnected by design infrastructures
+and ax axonius or axonius, however you
+pronounce it. Um, plugs into an existing
+security stack and just sucks loads of
+information out on that. So very useful
+tools for very different purposes or
+quite quite similar but different
+purposes.
+So, what have we found?
+Minecraft more than once. Never on the
+never on the end point of an IT person,
+fortunately.
+Uh, which is which is funny. It's nice
+to see the people have fun, but so what?
+Um, it's it's an unmanaged application.
+It shouldn't be there. We don't know
+what it is or how they've installed it.
+They shouldn't have been able to if we
+were policing them properly. Uh but
+again, so what I recently did a due
+diligence on um on a business that was
+subject to the biggest cyber breach in
+UK accountancy history back in 2022. Um
+some they had a BYOD bot model. Somebody
+didn't just install a game, they
+installed a cracked game. Um and that
+that was the foot in the door for the
+threat actor. There was redundancies.
+They lost a lot of customers. Customers
+lost a lot of data. Um very uh very very
+bad stuff or very very scary stuff and
+some other less interesting stuff that
+we found as well and critical
+vulnerabilities present that haven't
+been patched out even though during the
+interview they told us they've got a
+good patch management process.
+Suspicious outbound connections. Um just
+do whatever you want. Uh weak weak
+privilege access hygiene which we've
+talked about and dormant and stale
+accounts. uh and inconsistent endpoint
+controls.
+And so all of that's good, but how do we
+score? How do we score it? And what do
+we do when we've scored it? Um
+where there's an where there's money to
+be made. There is an appetite for risk.
+Some of this risk is some of this risk
+we can carry forward. We just have to
+make sure we've got a path for green. We
+hand it over to a BU team. They don't
+want to just hear, "Yeah, here's a load
+of crap that we found." They want us
+they want their they want our help in
+understanding what to do with it. And
+so, um, we score things essentially, and
+I won't I won't take you through the the
+entire scoring process, but, um,
+if there's no MFA, that scores red
+straight away. Why does it score red?
+you're very unlikely to get a cyber
+insurance policy if you haven't got MFA
+on um by virtue of joining into our
+group of of businesses. You get covered
+by our group cyber insurance. We can't
+have that breached. So that would be a
+deal breaker and we'd have them to put
+that on. So we'd have them put that on
+pre-MP completion. Um we would enable
+MFA, remove the reliance on shared
+accounts. Um and infrastructure and
+applications. So end of life operating
+systems, self-built applications running
+on insecure code, i.e. not patchable
+because it dep something's deprecated or
+breaks something. This is something that
+we probably could carry forward, but we
+would have to have a path to green
+documented um that we would work through
+in integration.
+This is kind of the wrap-up. So just to
+talk about just just to recap what I've
+talked about here. So we discover the
+targets tech stack. We assess for
+compromise and we create a cost to run
+analysis again because it shows us a
+shadow IT. We document and we score the
+risk and we mitigate as much of the risk
+as possible um at minimum the critical
+risks and then we identify value ads for
+integration which can be used for
+mitigate risk. Um, so if I can tell a
+stakeholder, you're going to save a lot
+of money by doing this piece of
+integration, and it also mitigates a
+risk that we found in DD, it's much more
+likely for us to be able to pull pull
+that value lever and mitigate that risk
+in an expedient way. And again,
+the easiest way to to close a lot of
+this risk down is to simplify your
+estate. Um, don't keep managing
+disparate infrastructures. It gets
+unwieldy, it gets costly. Um, it gets
+hard to support for your operational
+teams. Um, but also it's less secure.
+>> Lot often times lots of different
+technologies that aren't part of your
+standard tech stack and we don't know
+how to look after. Um, I got the five
+minute warning. So, I don't think we've
+got the two minutes. I've got uh I've
+got a chat bot lining.
+If you want to ask me any questions and
+you don't want to ask me to my face
+because of my accent,
+feel free to speak to Llewellyn.
+Um, you can find me on LinkedIn as well.
+I'd love to connect. Um, and yeah, I am
+here to talk afterwards as well. Thank
+you very much for listening everybody.
+[applause] Thank you.
