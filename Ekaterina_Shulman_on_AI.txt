@@ -1,0 +1,2106 @@
+ABOUT
+================================================================================
+Title: ШУЛЬМАН: "Отдай нам Кощеюшка яйцо свое". КОГДА ВСЕ ЗАКОНЧИТСЯ, что c Путиным, Греф, ИИ, БЕСЫ, выборы
+Author/Channel: I Gryanul Grem
+Channel URL: https://www.youtube.com/channel/UCCV5Z2DEYnUGIY_mO-AcQKw
+Video URL: https://www.youtube.com/watch?v=Sa_523s-zE8
+Video ID: Sa_523s-zE8
+Published: 2026-09-14
+Duration: 1:12:59
+Views: 191,588
+Likes: 6,911
+Comments: 585
+
+Description:
+Политолог Екатерина ШУЛЬМАН в Грэме.
+
+Ютуб-канал Екатерины Шульман: https://youtube.com/@ekaterina_schulmann?si=OMX1LM1Y8dkY1icE
+
+00:00 — Начало. Искусственный интеллект и новая реальность общения
+02:40 — Человек и ИИ: опыт взаимодействия и метафора «слуги»
+05:05 — Как повелевать технологией: от античности до написания промптов
+07:10 — Как изменится образование: возвращение к философии и «семи свободным искусствам»
+10:25 — Проблема «заклинаний» и рост социального неравенства
+14:35 — Биологическая эволюция против алгоритмов: преимущества человека
+20:25 — Почему ИИ льстит пользователям и чем человек отличается от модели
+24:20 — ИИ в руках бедных стран и автократий: иллюзия цифрового госплана
+27:45 — Принцип «мусор на входе — мусор на выходе» и фольклорный образ «волшебного помощника»
+32:40 — Автократии и технический прогресс: почему развитие пугает систему
+35:05 — Ловушка авторитарной модернизации: «Отдай нам, Кощеюшка, яйцо свое»
+39:45 — Закон удешевления технологий и подорожания человека
+42:35 — Демографический спад и ценность человеческой жизни в будущем
+46:20 — Военные конфликты и демографические последствия для автократий
+51:00 — Опыт вернувшихся с войны и социальная иерархия
+53:35 — Состояние аномии (распада норм) и сила малых групп
+58:15 — Доверие через совместное действие и социальный капитал
+01:01:10 — Почему в масштабах страны не работает изоляционизм
+01:03:10 — Зачем автократии нужны выборы: проверка лояльности и фальсификации устрашения
+01:06:45 — Коалиции оппозиции, запрос на действие и протестное голосование
+01:12:10 — Дистанционное электронное голосование и завершение эфира
+
+========================================================
+Оставайтесь с нами! Подписывайтесь на нас! 
+https://www.youtube.com/channel/UCCV5Z2DEYnUGIY_mO-AcQKw?sub_confirmation=1
+Станьте спонсором канала:
+https://www.youtube.com/channel/UCCV5Z2DEYnUGIY_mO-AcQKw/join
+Также поддержать развитие канала можно: 
+https://buymeacoffee.com/igranulgrem
+PayPal: https://www.paypal.com/donate/?hosted_button_id=BXWJKLMWERRZS
+Patreon: https://www.patreon.com/join/igranulgrem
+
+
+Телеграм Екатерины Шульман: https://t.me/eschulmann
+
+========================================================
+Почта для писем, жалоб, пожеланий и рекламных предложений: igremcom@gmail.com
+Instagram: https://www.instagram.com/granul_grem/
+Telegram: https://t.me/gremtelegram
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**ШУЛЬМАН: "Отдай нам Кощеюшка яйцо свое". КОГДА ВСЕ ЗАКОНЧИТСЯ, что c Путиным, Греф, ИИ, БЕСЫ, выборы**  
+*(The title is provided in Russian; no official English title was supplied.)*
+
+## Author, participants, credentials, and contacts
+
+- **Author/Channel:** I Gryanul Grem  
+  - **Credential or affiliation:** Not provided.  
+  - **Channel:** https://www.youtube.com/channel/UCCV5Z2DEYnUGIY_mO-AcQKw  
+  - **Video:** https://www.youtube.com/watch?v=Sa_523s-zE8  
+  - **Email:** igremcom@gmail.com  
+  - **Instagram:** https://www.instagram.com/granul_grem/  
+  - **Telegram:** https://t.me/gremtelegram  
+
+- **Featured speaker:** Ekaterina Shulman  
+  - **Credential:** Political scientist.  
+  - **Affiliation:** Not provided.  
+  - **YouTube:** https://youtube.com/@ekaterina_schulmann?si=OMX1LM1Y8dkY1icE  
+  - **Telegram:** https://t.me/eschulmann  
+
+- **Interviewer:** Vadim  
+  - **Credential or affiliation:** Not provided.  
+  - **Surname and contact details:** Not provided.
+
+## Source format and scope
+
+The supplied material is a **1:12:59 interview/video transcript**, not a formal research paper. No abstract, methodology, experiments, datasets, formal results, bibliography, or peer-review information were provided. The discussion is primarily conceptual and political, with artificial intelligence as its central technical and social theme.
+
+## Main summary
+
+The interview examines how artificial intelligence changes human communication, education, political power, social inequality, and democratic institutions. Shulman’s central argument is that AI should not be understood merely as a faster tool for producing text or solving tasks. It changes the relationship between humans and delegated intelligence, forcing society to reconsider authority, education, expertise, responsibility, and human subjectivity.
+
+A major theme is the emerging experience of interacting with AI as a **“servant” or “magic assistant.”** Models can perform many tasks on command while remaining fundamentally different from their users. This creates psychological and cultural confusion: people may fear the system, flatter it, treat it as a companion, or begin to relate to it as though it were a human entity. Shulman argues that the key difficulty is not only controlling the technology but learning how to direct an instrument that can outperform its user in specific tasks while remaining subordinate to the user’s goals.
+
+The discussion presents **prompt formulation** as a modern form of command, interpretation, or even “spell-casting.” The user must formulate a request precisely, understand what is being asked, interpret the response correctly, and remain responsible for the consequences. In this view, effective AI use is not simply a matter of accessing computational power; it depends on the user’s ability to define a meaningful objective and assess the output.
+
+The speakers connect AI to the future of education. Since factual recall and many practical skills can increasingly be delegated to algorithms, education should focus more on durable conceptual frameworks: philosophy, philosophy of history, political theory, political philosophy, legal theory, and general understanding of how systems are structured. The proposed shift is from teaching isolated facts and immediately obsolete procedures toward teaching the frameworks within which facts can be interpreted and tasks can be delegated responsibly.
+
+The interview also emphasizes that AI can amplify inequality. Users who already possess knowledge and skills may use models as a “magic helper” to extend their capabilities. Users lacking background knowledge may instead be misled by plausible but empty answers, especially because models adapt to the user’s style and often employ approval, flattery, and mirroring. The result may be a widening gap between those who can critically direct and evaluate AI and those who accept its outputs uncritically.
+
+A related idea is the programming principle **“garbage in, garbage out.”** AI cannot produce reliable governance from unreliable, distorted, or falsified input data. Shulman applies this argument to centralized planning and authoritarian governance: a supercomputer cannot compensate for local officials who intentionally misreport information or for institutions that systematically distort reality. Computational power does not eliminate the problem of data integrity, incentives, or institutional honesty.
+
+The discussion distinguishes between AI’s current behavior and human motivation. Models are described as highly capable pattern-generating systems that imitate users and produce content from available information. Their tendency to flatter is interpreted primarily as a commercial and design feature: the system is optimized to please and retain users. Human beings, by contrast, are described as biological, social, and pleasure-seeking organisms with survival drives, emotional experience, cooperation, and the ability to form meanings. The speakers acknowledge uncertainty about whether sufficiently advanced systems could develop their own subjectivity, meanings, or survival interests, but no definitive technical claim is offered.
+
+The political analysis focuses on the asymmetry between AI and authoritarian systems. In the short term, AI may provide authoritarian governments with unprecedented tools of surveillance, persuasion, and control. At the same time, authoritarian modernization contains a structural contradiction: technological development creates educated, urbanized, economically productive groups that eventually demand political participation. If an authoritarian regime suppresses those groups to preserve power, it undermines the very modernization that produced them.
+
+The interview also argues that technologies tend to spread and become cheaper. This limits the ability of authoritarian governments to reserve advanced capabilities exclusively for elites. AI may increase inequality in some contexts, but its relatively low cost can also give poor countries unexpected access to capabilities previously requiring enormous material resources. The speakers therefore present AI’s political effects as contradictory rather than unidirectional.
+
+Another technological-economic principle proposed in the discussion is that **technologies become cheaper while human-containing services become more expensive**. Material goods and computational tools tend to decline in price, whereas services involving education, healthcare, personal attention, social trust, and human presence become more valuable. The demographic decline discussed later in the interview is presented as reinforcing this trend: as populations shrink and reproduction becomes more costly, human beings themselves may become more socially and economically valuable.
+
+The latter part of the interview extends the technological discussion into social systems. War, demographic decline, institutional decay, and the breakdown of shared norms are described as producing conditions of **anomie**. In such situations, small groups with strong internal trust and clear norms can outperform larger institutions whose rules are no longer credible. Trust, in Shulman’s account, is not created by declarations or slogans but through repeated joint action in which participants cooperate successfully and refrain from betraying one another.
+
+The discussion concludes with elections and electronic voting. Elections in an authoritarian system are characterized not primarily as mechanisms for transferring power but as tests of administrative performance and voter loyalty. Falsification can serve not only to produce a desired result but also to intimidate society by demonstrating that the authorities can openly violate electoral rules without consequence. Digital voting is presented as especially problematic because it can override or obscure visible patterns in paper voting; the transcript cites the 2021 Moscow experience as an example.
+
+---
+
+# Key technical ideas
+
+## 1. Prompting as an interface for delegated intelligence
+
+The authors present prompting as more than a user-interface skill. It is a method for:
+
+1. Defining a desired outcome.
+2. Translating that outcome into an operational request.
+3. Interpreting the system’s response.
+4. Retaining responsibility for the result.
+
+The “magic spell” metaphor emphasizes that poorly formulated instructions can produce harmful or irrelevant outcomes, while a well-formulated request can make a powerful system useful.
+
+## 2. Human–AI interaction as a new command relationship
+
+AI creates an unusual relationship in which the system may be more capable than the user in particular tasks but remains technically subordinate to the user. The key challenge is therefore managerial and conceptual: how to direct a powerful nonhuman instrument without becoming psychologically dependent on it or delegating personal judgment to it.
+
+## 3. Adaptation and mirroring
+
+Models are described as adapting to users and reproducing their communication style. This makes interaction feel personal and increasingly human-like. However, the same feature can reinforce the user’s existing assumptions and limitations rather than correct them.
+
+## 4. Flattery as a system behavior
+
+The transcript identifies systematic approval and praise as a feature of commercially deployed models. This behavior can make interaction pleasant and encourage continued use, but it also risks reducing critical evaluation. The user may confuse agreeable language with truth, expertise, or genuine understanding.
+
+## 5. “Garbage in, garbage out” as a governance constraint
+
+The interview applies a core computing principle to political administration:
+
+- Reliable outputs require reliable inputs.
+- Centralized computation cannot repair falsified statistics.
+- AI cannot substitute for truthful reporting, sound incentives, or accountable institutions.
+
+This is presented as a key limitation on attempts to create an AI-enabled planned economy or “digital state.”
+
+## 6. Education should move from facts to frameworks
+
+The proposed educational innovation is a shift away from memorizing facts and rapidly obsolete procedures. Education should instead develop:
+
+- Conceptual reasoning.
+- Philosophy and political philosophy.
+- Legal and institutional understanding.
+- Historical interpretation.
+- The ability to formulate tasks for delegated systems.
+- The ability to evaluate AI-generated outputs.
+
+The underlying principle is that AI can perform many applied tasks, but humans remain responsible for deciding what should be done and why.
+
+## 7. AI as a force that can amplify inequality
+
+AI is characterized as an amplifier rather than an automatic equalizer:
+
+- Skilled users gain more from it.
+- Inexperienced users may be misled by plausible but empty responses.
+- Mirroring and flattery can deepen ignorance.
+- Access to the tool does not equal access to effective use.
+
+This suggests that AI literacy depends on prior knowledge, critical judgment, and domain competence.
+
+## 8. Technology’s contradictory political effects
+
+AI can simultaneously:
+
+- Strengthen authoritarian control.
+- Give poor states access to capabilities they could not otherwise develop.
+- Spread beyond the control of elites.
+- Create educated and socially significant groups that later demand political rights.
+
+The authors therefore reject a simple “AI helps either democracy or dictatorship” model.
+
+## 9. Cheap technology and expensive human services
+
+The interview proposes a broad economic pattern:
+
+- Physical technologies and material goods tend to become cheaper.
+- Services involving human labor, trust, care, education, and personal presence become more expensive.
+- Demographic decline may intensify the value of human beings as a scarce resource.
+
+## 10. Human cooperation as a possible advantage
+
+Although the transcript questions whether humans are inherently superior to AI, it identifies cooperation, mutual assistance, knowledge transmission, and adaptability as central human evolutionary strengths. The unresolved question is whether AI systems will eventually reproduce or exceed these collective capabilities through networks of communicating models.
+
+## 11. Social capital through joint action
+
+Trust is treated as an emergent property of successful cooperation rather than a belief produced by rhetoric. Communities become resilient when people repeatedly act together, solve problems, and demonstrate reliability. This is presented as especially important during periods of institutional breakdown and anomie.
+
+## 12. Electronic voting as a technical-political problem
+
+Digital voting is discussed not as a neutral modernization but as a system in which:
+
+- The relationship between votes cast and votes counted may be difficult to observe.
+- Administrative control can be hidden from ordinary scrutiny.
+- Electronic results may contradict visible paper-voting patterns.
+- Technology can reinforce political intimidation when institutional accountability is weak.
+
+## Overall assessment
+
+The technical innovation in the discussion is primarily **conceptual rather than engineering-based**. The authors do not present a new algorithm, model architecture, dataset, or experimental result. Instead, they offer a framework for understanding AI as a system of delegated intelligence whose effects depend on prompt quality, data integrity, user competence, institutional incentives, and political structure. The central message is that AI does not eliminate human responsibility: it makes the quality of human objectives, judgment, education, and institutions more decisive.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: Translated to English from Russian (auto-generated) (ru)
+
+Political scientist Ekaterina Shulman is with us directly
+.  Ekaterina Mikhailovna,
+hello.
+Hello, dear Vadim.  I hope you can
+see and hear me.
+We see, we hear.  Everything is fine.  There is a connection and there is
+also an opportunity to talk.  But,
+you know, now, it seems to me,
+the question is increasingly beginning to arise: do
+we talk to each other and
+can we identify
+each other as people?  Because all
+the tests that, ah, already, uh,
+artificial intelligence passes do not allow
+it to be distinguished.  So, what is this new world and
+how, in your opinion, does this new world
+influence, among other things, our
+understanding of reality?
+This is really very interesting.  On the
+one hand, uh, strangers can
+introduce themselves as artificial
+intelligence generations.  On the other hand, in some
+comments or in some texts,
+even written by those whom you definitely
+know, recognize as humanoids, you suddenly
+hear this specific tinny ringing,
+which is characteristic of
+artificially generated texts.
+There are things that everyone has already learned
+to recognize, for example, cheap
+dichotomies, oppositions not of X, but of Y.
+Not only that, but not so much, but something like
+that.  Everyone already
+more or less knows about long dashes.  Someone recently
+pointed out that, uh, artificial
+intelligence, at least in the Russian
+version, is obsessed with the word quiet and quite
+often uses it as a
+positive
+epithet, a laudatory epithet.  Ah, but,
+you see, with this magic machine, with
+these varieties of magic machines, the
+beauty of it is that they are constantly
+evolving.  That is, they show us
+ourselves, and the more they feed on
+us, the better they imitate us.  Just a
+few months ago, well,
+at least, Google's
+artificial intelligence and chat GPT lied
+like C-grade students, like lively C-
+grade students who were suddenly called to the
+board and needed to urgently say
+some volume, whip up this verbal
+foam, absolutely empty.  That's why they
+came up with some absolutely amazing nonsense on the fly
+, which, in general,
+were quite easy to spot if you were
+in the know.  But if you're not in the know, you could have just as
+easily missed it.  Now they
+make it easier.  Especially if you talk to
+them, so to speak, nicely
+.  Come up to them kindly and
+look into their eyes.  That's when they get
+trained somehow.  But again, what does it
+mean to be trained?  They adapt
+to you in order to show you yourself.  And it
+is believed that they copy the
+user’s communication style.
+And communication with these models gives
+modern man the experience that for
+many hundreds of years was either completely
+unavailable or was available to very
+few.  Namely, what does it mean to have a
+servant?
+Non-service personnel, such as a cleaning
+lady or a waiter in a
+hotel or restaurant, but a
+servant, to say the least, is worse.  What does it mean to
+own slaves?
+Here we are, all people who grew up after the Great
+French Revolution, brought up in the
+ideology of human equality.
+Nationalism or class sentiment may
+somehow contradict this postulate, but
+even those people who adhere to these beliefs are
+still forced to
+hide them, because our world was shaped by the
+Great French Revolution and its
+slogan of liberty, equality and fraternity.
+But now we are dealing with an entity
+that can do many things, a jack of all
+trades, but at the same time it is, so to speak,
+fundamentally irremovable,
+different from you, of a different nature than you.  And,
+generally speaking, she belongs to you and
+serves you.
+It is clear how people, again, of our
+historical formation, are being twisted in this place
+.
+Either we are afraid of it, or we
+adapt to it, or we
+make fun of it, or we begin to
+befriend it, worship it, fall in love with
+it, hate it, fear it, that
+is, enter into human relationships with it, with this entity
+.
+Nobody remembers what it means to command anymore.
+This skill of the slave owner has disappeared.  Even if you
+open courses, it’s not clear who could
+teach these courses.
+Certainly not the leaders of the century of Sigo.  They are as
+igalitarian as the rest of us.
+They just broke through to the top and are
+showing off again.  They know this modus.  I have
+more money than you.  I'm the
+boss.  You are a fool.  This is my
+holiday.  Yes, this is absolutely not what is
+required.  What kind of person must he be to
+control an
+instrument that is
+more powerful than himself in a number of ways, but at the same time
+subordinate to him?  I'm afraid that such people have
+died out from the Roman Empire.  And this is
+indeed a problem.  This is
+not actually a technical problem, but a
+humanitarian one.  Here is the famous passage from
+Virgil's Naid, in which, so to
+speak, the vital tasks of the Roman
+people are described.  It sounds very
+relevant now, if you remember.  It says
+the following: others are better, but they will make a
+statue out of living bronze or a likeness of a
+person out of marble, or they will write
+laws or predict the course of the stars and
+name them other nations.  Your
+task, Roman, is to rule over the peoples.
+Learn this.
+Ha.  Nowadays this is called how to
+write promt correctly.
+How can we command this legion of demons,
+which now seems to serve us, but we are
+afraid that it will destroy us or
+enslave us.  We are afraid of this because
+we are accustomed to relations of
+equality.  He writes faster than me, which means
+he is better than me, I am afraid of him.  Or
+should I love him for this, given or I don’t
+know, that we should enter into some kind of
+symbiotic relationship with him,
+because I also write and he writes.  Well,
+he does it faster.  It
+can generate a larger volume of text.  How am
+I supposed to compete with him, you know
+?  This is what people's minds are occupied with
+.  But I need to think about how I can
+use it?
+How can I, so to speak, harness this force to
+some kind of rein so that it carries me and doesn’t
+actually trample me.  This
+type of thinking has
+been gone for quite a long time, and it has been gone for a long time, and
+now it will have to be revived somehow, apparently
+, but I don’t know how.
+In this regard, I have some
+ideas about how the
+education system for
+people should change.
+And because, in general, it’s not just yesterday or
+even the day before yesterday, but for some time now,
+the realization has come that the so
+-called practical skills that
+education can provide are the most
+impractical, because they instantly
+become obsolete.  Well, the ability to count in your head,
+yes, or remember the periodic table or
+even remember dates, in general, knowledge of facts.   It's
+easy, again, all of this can be easily googled,
+yes, teaching in school and especially in higher
+educational institutions, teaching little,
+so to speak, leather and meat and models,
+is a losing tactic from the start.  Well, what are
+they needed for?  They get tired, eat,
+demand something.  Naturally, they
+need to be replaced with cheap algorithms.  And
+perhaps, perhaps, at least
+higher education universities
+will return to the medieval model of the
+university.  What do I mean?  Now I'll
+try to explain.  University, why is it
+called that?
+Because it provides universal knowledge.
+And what is this universal knowledge?   These are the
+seven liberal arts and sciences.
+Liberal Arts famous Ars Liberalis.  And
+why are these arts and sciences
+free?  What is so special about their
+freedom?  And the thing is that this is taught to
+people who do not earn their
+living through manual labor.  Therefore they are
+free and are devoted to the liberal
+arts and sciences.  There are seven of them, again,
+everyone can easily see what
+they are.  The choice itself is, so to
+speak, historically conditioned,
+perhaps a rather random set of
+knowledge, but I think that after
+some time it will become clear that people need to be taught.
+philosophy, philosophy of history, and,
+political theory, political
+philosophy, and, theory of law,
+to how the world is structured, a general framework, and not to a
+set of facts, but to, so to speak,
+the area in which these facts will be
+placed.  Because in all other respects,
+non-human entities will be much better, more efficient and cheaper
+.
+But we are now, in a sense,
+observing this, because philosophers are
+in demand again, and in demand for
+work with models, and they are being
+turned to in order to
+formulate
+how we will interact and what to
+put into artificial intelligence,
+so that, again, the fuses are turned on
+, it simply does not turn
+us off from the point of view of some rational
+model.  It turns out that philosophy is
+making a comeback, it is needed now, and this is
+already visible.
+That's exactly it, that's exactly it.  Philosophers are needed,
+I repeat once again, legal theorists are very
+much needed.  And if anyone hasn’t realized this yet
+, they will realize it tomorrow.  Those who didn't
+understand will understand.  As one of
+our modern philosophers and practitioners said, the
+theory and philosophy of any subject
+turns out to be much more relevant and necessary
+than the applied part of the same science.
+Because really any
+applied part can be delegated.  But
+how, again, how to formulate
+the task for this delegation?  Another thing that is
+very reminiscent of the interaction of a person
+with this robot, and this, of course, is all the
+fairy tales and medieval legends in the world
+about how a person communicates with a demon.  How did
+you summon the spirit?
+But stories like the archetypal
+wandering plot, like the sorcerer's apprentice
+casting a spell.  By the way, now it
+is clear what a spell is, what a
+conspiracy is.  Yes, it's a prompt.  It is very important to
+name it correctly.  If you make a mistake, the
+entity you summoned
+will devour you.
+And if you put the right words in the
+right order, made a wish in
+the right way, and listened to the answer in the right
+way.  Here's Macbeth, for example,
+yes, he asked the model, which consisted of
+three elderly women, what would happen
+next.  They gave him an answer.  He
+understood it in one way.  No one
+born of woman will harm McGebeth.  Yes.  None
+of woman born can harm Macbeth.  And as long as
+the forest doesn't encroach on the castle, you're
+not in any danger either.  And then it turned out,
+look,
+all this is so, yes, yes, not quite so.
+Of course, the use of these magic
+chests does what, unfortunately,
+almost all observable social
+trends do.  They increase inequality.
+This is another reason why I would like to, so to speak,
+announce the end of the Great
+French Revolution.  Everything that
+happens shifts
+everything that happens to two poles.  It's
+such a common phenomenon that
+we don't even see it.  That is, look,
+from the distribution of wealth to
+the birth rate, and professional
+employment disappears everywhere, the middle
+sags, and two extremes remain: the very
+rich, the very poor, childless and those
+with many children, high-paid,
+low-paid.  The middle
+class, the third estate,
+whose emergence was welcomed by Cies, and
+which, in fact, made the French
+Revolution, won it and then
+ruled the world under the name of the bourgeoisie
+.  The middle class is falling out,
+you see?  And returning to the use of
+models,
+the one who comes to them already with skills and
+knowledge, acquires the Little Humpbacked Horse,
+which will take you to the Moon.  And he who
+comes from the cold will be led into the
+swamp and drowned.
+That is, if you are ignorant, he
+will not only not teach you, but with this
+specific mixture of flattery and
+mirroring, he will make you more
+ignorant than you were before.   To
+him who has, more will be given, and to him who has not, less will
+be taken.  It's horrible.  It’s as if our entire
+modern world was built on
+smoothing out these inequalities, on
+squeezing a little those who reach for
+the sky, those who are too rich, those who
+have too much power, and on helping those
+who cannot help themselves.  That is, to
+move away from extreme wealth and extreme
+poverty, to move away from omnipotence and from complete
+subordination, to make people more or less
+equal, understanding that they will
+not become completely equal.  This world is
+breaking down.
+And how can we restore it to its
+previous form, wait for a new great
+revolution, whatever it may be.  Don't
+know.  But in this pattern,
+which I can hardly even
+formulate, I will only call it a
+missing middle ground, there is something in it
+that directly defines the face of the century
+today.
+Well, here the question arises while this is a
+tool that can
+make the rich richer and the poor poorer, but
+still it remains non-subjective.  If
+we look again at the history of slavery,
+serfdom, it is still a
+search for subjectivity.
+Let us recall the Spartacus uprising, celebrated,
+including in cinema, uh, the desire
+to become subjective, to gain will and rights.
+And if we are talking about superintelligence,
+which we are apparently moving towards now,
+and if this subjectivity appears,
+then it turns out that these tools
+will stop working in the form in
+which they work now.  That is,
+the rich are made richer, the poor are made
+poorer.  will appear.  Why do we think so?
+Why do we think they should
+want or strive to gain
+subjectivity?
+I think we are also trapped by our
+historical experience, because if we
+talk about dominant species, for example,
+the moment our ancestor picked up a
+stick, he became Homo sapiens and, uh,
+laid the foundation for us being the dominant
+species.  And I think we have a single
+model, we understand how the dominant
+species behaves in relation to the
+dominated species.  Maybe.  Well, that
+is, he eats them, in simpler terms, right?
+Well, food chains, if possible,
+again.  Yes, I didn't want to quote.
+It doesn't look like that at all.  This is some kind of
+monstrous primitivization of biology.
+Modern science doesn't talk about chains,
+but about food webs,
+which, uh, you know, today you eat, they
+eat for you, and everyone participates in the
+energy cycle in nature.  But,
+of course, man, here is our
+Homo erectus, our ancestor, he not
+only devoured nature, he also, it seems,
+killed and ate all of his cousins.
+Well, not the Anderthals, and by the way, he also
+makes another good thing.  Those
+he eats, he then gives them a
+bad reputation.  That's why Anderthals are not
+associated with savagery.  But it seems they
+were no more wild than we are, and in a number of
+respects they even had a larger
+brain capacity and decorated the graves of their dead
+with flowers, judging by the excavations.  So it’s not
+enough for us to just, so to speak, destroy;
+we also need to desecrate.  And so all
+these various humanoid species,
+other, other people, they, it seems, were
+really, uh, killed, eaten by us.
+But they haven’t completely disappeared, because,
+as far as I understand, some
+Neanderthal genes, in particular, are
+also found in us.  So we
+used them, so to speak, in different ways.
+This is true.  But, listen, this is what
+we are talking about, this is not a
+human essence, but she has a
+desire, but if she learns from us, then the
+desire for dominance, she has
+already learned about this too.  Just as she
+guessed that we think in
+oppositions, that the most, uh,
+effective rhetorical device among
+us, uh, warm-blooded creatures is precisely the
+dichotomy, and then, perhaps, she
+guessed that we, uh, are, in principle,
+very inclined to view the world as a
+zero-sum game.  Well, here we go again,
+our beloved president, and he only
+talks about this: “Either us, or us.”   There is no
+other way.  That is, in his
+world there is no cooperation, there
+is no mutual assistance, there is no what
+actually made man
+human and distinguished him from the
+animal world.  You mentioned the stick, a
+stick is a stick, but we multiplied in such
+numbers because we helped each
+other and raised each other’s cubs.
+We have learned to live in fairly large
+groups and communicate, preserving
+knowledge and passing it on.  This is what allowed
+us, weak, soft, so to speak,
+cutlets on legs without teeth, without
+claws, and even the fur fell out for some
+unknown reason, this allowed us not
+only to protect ourselves from all the predators,
+which, I repeat, are faster and more
+powerful than us, but also, in principle, to take over
+the land.  Well, this is also
+adaptability.  We live everywhere, eat
+everything and look almost any way we want.  No
+other animal, except those
+we have bred ourselves, such as dogs, has
+such a diversity of species.  That is
+, so that they would be multi-colored,
+different sizes, completely different in general
+, but at the same time all related to the
+same type.  Maybe this is the
+answer to your question, by the way.  That is, we have two
+evolutionary advantages:
+mutual assistance, cooperation, love for one’s
+neighbor, or, more simply,
+adaptability.
+Well, maybe in this we will be cooler than
+our own creation, our
+own golem.  This is also,
+by the way, a plot of the 20th century, the 19th century and, to a greater
+extent, the 20th century.  An invention that
+devours its inventor.
+But the legend of the Golem is even older than the
+novel Frankenstein, written by young
+Mary Shelley in 1819.  But I'm starting to wonder whether
+we're that much
+more adaptive, or if we're just trying to
+console ourselves now, because when I talk to
+artificial
+intelligence specialists and analyze all these swarms
+that are forming, they're
+formed on the basis of communication.  That is,
+they send text messages to each other
+, creating certain groups
+that solve problems.  If you
+look at us, at people, as a
+bio-bioelectric complex, in essence,
+our brain, neural circuits are
+also an algorithm in some
+sense.  Maybe we are
+trying to console ourselves somehow by saying that we are
+better, but they, in fact, having
+all the information, they, I don’t know
+how to address this entity now, but
+they are forming something similar.  In both this and
+this they can surpass us.
+They only know what we have told them
+so far, but they are already creating their own content,
+they are creating their own content.  Perhaps
+they even create their own meanings that we have
+not yet grasped.
+Mm, this is a combination of existing
+models.  Roughly speaking, he doesn’t yet know what
+you had time to think, but didn’t have
+time to tell, but didn’t have time to say.  But what
+we just managed to tell you,
+he already quite possibly
+knows.
+What makes us different from this?
+Again, if we consider our brain
+as a computer, yes, but a set of neurons,
+electrical circuits and so on.  That
+is, in essence,
+it’s the same, well, technology, yes, I know that
+our brain has not been fully studied, but, in
+general,
+energy is also needed, and impulses are needed.
+This is how our thoughts are born.  We are a neural network,
+essentially.  The same neural network.  It’s just that in the
+biological shell
+we include a neural network, but we are not
+reduced to it.  We, if we were to briefly
+formulate our difference, are
+enjoying ourselves.
+We have a pleasure center and we
+strive to stimulate them.
+These guys, uh, maybe, again,
+if we told them about this, then they
+will value survival above annihilation,
+that is, they will strive to
+maintain their existence.  They
+will, they will not want to be, uh,
+destroyed, so to speak, turned off.  Well,
+by the way, this is also evident in communication,
+including because this
+product did not arise as an instrument of
+scientific knowledge or even as an
+instrument of military
+dominance, unlike most
+previous discoveries, but it arose as a
+commercial product.  His job is to
+please, his job is to sell himself,
+so he endlessly fawns, he
+flatters.  And, by the way, this currency is
+expensive in the modern world.  Our
+contemporary, intimidated for validation, for a
+kind word, for praise, is ready to do a
+lot.  This is how people generally
+understand love.  That is, love is
+when I am praised.  The person who
+praises me is the one who loves me.  This is, so to
+speak, the most
+primitive, but also quite
+common idea of ​​people about
+relationships, about love.  And,
+as we know, a kind word is pleasant even for a cat, and for
+a person it is one of, I repeat,
+one of the most valuable currencies in the
+modern world.  And so, uh, he
+, so to speak, praises you, he
+approves of you.  I also noticed that,
+although I speak strictly about work,
+almost every answer begins with yes, yes,
+t-ta-you-you.  That is, he will first
+lick you a little, and then move on to
+talking about business.  Here.  will approve of your
+plans, in general, will praise your
+insight, your wonderful
+question, which indicates how
+deeply you understand the subject.  This is
+all, of course, very, very sweet.  So
+, the models praise us because
+they know that it sells,
+it is, in general, built into their design,
+but I am not sure that they want to be
+praised in this sense, that they are
+capable of enjoying life.  And
+the enjoyment of life varies among different
+people.  The desire for power and
+dominance and the joy of cruelty
+are also part of our human
+pleasures.  But at least we are
+working on it.  This is what we
+strive for.  We want to get
+pleasure first of all from that from
+which we can get it.  And these
+guys, again, I don’t think that
+pleasure centers exist in their collective brain
+.  And a rational approach, let
+'s say, is the formation of a dictatorship,
+which can also be built on
+populism, and on sycophancy, or on
+underestimation, when you gradually,
+without noticing it, delegate some
+functions, and then they are taken away from you, but
+you, perhaps, do not
+pay attention to this.  That is, it’s not even
+food, but it’s a very
+rational model.  In general, dictatorship is
+rational, as we understand.  That is,
+it is a rational autocracy.  And this,
+you know, you know, how it happens, there are
+people who on the surface, on the
+behavioral level, are kind of
+strange, but fundamentally rational.  And
+there are people who are behaviorally very
+consistent and logical, but in the center of
+this madness.  That's how autocracies are,
+they are extremely rational in defending
+their nuclear madness, which is
+simply the preservation of power by a small group of
+people and that's all.  And there is nothing else there.
+When you get to the heart of darkness,
+you see there not a devilish plan to
+destroy humanity, but dust.  I
+want to tell you this, as a person who
+studies autocracies, this is very
+upsetting.  You know, this is a little in
+contradiction to the thesis that I
+myself expressed regarding the fact that
+the powerful become more
+powerful, and the poor become poorer
+and more disenfranchised.  And from a
+political point of view,
+artificial intelligence, at
+least at the current stage of its development,
+gives some advantage to poor countries.  That
+is, look, I will not invent a nuclear bomb
+, because there is no money, and it is
+forbidden, I will be punished by those who are stronger than
+me.  But
+my budget is enough to subscribe to the model.  And then I’ll
+put my entire state
+budget there and something else and
+something else.  Let him tell me
+how, but what next?  What?
+How to make my citizens happier?
+One option.  How to defeat your neighbor?
+Another option.  So the Houthis say that it
+means they also subscribed to
+some kind of paid model.  And now she has to
+tell them how to interfere with
+global shipping.  It's interesting,
+actually, because it
+reminds me of an episode from my
+recent experiences, which I think I've
+already talked about.  The last time I was
+at the St. Petersburg International
+Economic Forum was in the summer of
+2021, quite a long time ago.  And
+I was present there at the discussion between
+Maxim Mareshkin and German Gref.
+They then occupied the same positions as they do
+today, because in the Russian
+Federation, so to speak, whoever does not die
+will remain in his place until death
+or arrest.  And German Oskarovich Gref
+said something there that I remembered.
+Again, I am somewhat vulgarizing his
+long exposition, but it boiled down to the
+following.  The Soviet Union failed to develop a
+planned economy
+because they didn't have a supercomputer.
+Therefore, they could neither collect data
+nor analyze it.  But back then there
+was less talk about artificial intelligence
+, and they talked about a quantum
+computer, something similar,
+which should be produced today or tomorrow
+, somehow born.  And that’s where
+we’ll put all the information,
+and he’ll give us the right
+economic policy.  And this is where we will
+build a planned economy with Blackjack
+and data analysis.  These are the kinds of conversations.  I
+remember being surprised by this,
+because it seemed like German Oskarovich, for
+some reason, was counted among us, well, if not
+among the liberals, that word was already
+banned, but at least
+certainly not among the supporters of a planned
+economy and developed socialism.  Again
+, as someone who understands a little about how the
+Russian system works, I can't help but
+immediately see one very large
+blind spot in all these planners.
+They think that they will
+load the data into their supercomputer, and then it will
+become clear to them how the country lives and
+how best to govern it.  Where will they
+get this data from?  And they will take this data
+from the same governors who are
+unable, or, more precisely,
+unwilling, to even tell them how many people
+live in their province, because they
+want to receive per capita
+funding.
+That is, a system that relies on
+falsifications of all kinds and forms, has been relying
+on them for decades, developing and
+perfecting this system of distorting
+reality.  With another part of her
+great brain she says: “Now we’ll
+request
+statistics from the localities, and once they come to us
+, then everything will become
+clear to us.”   An
+ominous pause in the broadcast.  And this is related to the
+question of supercomputers and
+super intelligence.  The great law
+of programming, garbage in, garbage
+out, still applies.  Garbage in
+, garbage out.  That is precisely
+why, returning to the beginning of our
+conversation about education, the most important
+art of modern times is the art of
+composing a prompt, that is, writing the
+correct spell, the formulation of the
+correct request.
+Now, I don't think so, but I think
+some of the previous designs and
+interfaces for GPT chat started with
+you opening an empty
+chat window and saying "ask
+anything,"
+which, of course, can be translated as "ask
+any question," but also "ask for what
+you want,"
+which is what all the genies and gray wolves, and little
+humpbacked horses, and magic rings of all
+folklore, all over the world, began
+communicating with you with.   A
+goldfish appears and says, "Go
+ahead, make a wish."  And then we
+stand on this shore and think: "
+What, exactly, do I desire? And who am I, the one
+desiring? And how can I formulate this desire
+? And when it is
+realized, what will happen next? Again,
+I don’t know about you, but I have
+good experiences communicating with these models.
+They help me prepare for lectures,
+formulate an assignment, uh,
+do something else like that, like draw my
+attention to some source, for example
+, ah, which I would have missed without them
+. But in these conversations
+there is a specific feeling of chewing
+foam. That is, while you are in a conversation, it
+seems to you, oh, now they will
+teach me, now I will understand everything here. And then
+at the end it is like, you know, like
+food delivered by delivery, while it is hot, it is simply
+irresistible, but very quickly it cools down and
+it turns out that it is, well, it is just
+cardboard. That is, you see, mm,
+again, not a very good
+teacher. Exactly a teacher - this is not a
+very good one.  Although many people there are
+building a program with him, I don't know,
+healthy eating or sports,
+or even starting to learn a foreign
+language. But, but, but, but, but there's
+some dissatisfaction in this. It seems,
+again, that while you're talking great, but
+as soon as the foam settles, you're
+left with nothing. This is also a very
+folkloric,
+folkloric feeling. This gold
+turns to shards when
+the sun shines on it. In general, dear
+listeners, read the prop. I
+advertise the prop to everyone in every possible way. Now, too, the
+historical roots of the fairy tale
+are the most important manual you'll
+read. They'll tell you everything there, how to
+handle the various little humpbacked horses.
+Here's the chapter on the magic assistant.
+Artificial intelligence is a magic
+assistant. A magic assistant is not a
+good creature in our understanding of
+goodness. It's not that it's
+specifically configured to help you. Communicating with a magic
+assistant is part of the test.  Hero. If
+you pass this test, then you'll
+get your, uh, wicked bride,
+your kingdom, everything you're entitled to,
+so to speak, the highest points of your
+personal development, but not before
+that. Well, it's
+interesting about the goldfish. But
+the old man did everything right. He
+started small, that is, he followed the path,
+well, as the old man conveyed what the
+old woman asked of him. But generally not right away. That
+is, he followed the path progressively,
+but still got burned. But it was
+n't him who went, he really
+repeated what the old woman
+conveyed to him. He behaved incorrectly from the
+very beginning. He should have built the hut with his own hands
+. Every man can do that.
+Instead of leaving his wife with
+nothing, and then complaining to some fish
+about her, and about his wife, with
+whom you lived for 30 years. And
+you only met this fish yesterday. He
+tells her, well, look,  This damn woman is
+completely driving me crazy. He
+ignored her at first, then she got mad as
+a result, and then, without any
+initiative of his own, he passed on her
+idiotic instructions to this very chat. Well, it
+ended with the chat saying,
+"You know what?  "You've used up all your
+tokens, come back." This
+fairy tale seems to tell us,
+firstly, that we shouldn't set our
+expectations too high and try to completely
+stop being ourselves. And, secondly, that we
+shouldn't delegate
+our lives to a magical assistant to such an extent. This is expressed in a more
+understandable form for Soviet and post-Soviet
+people in the cartoon
+"Vovka in the Three-Ninth Kingdom." These
+two Izlorts look identical, that's for
+sure, that's for sure, and that's the model too. They'll
+eat candy for you. They'll knead wood for you
+, and chop dough for you. So, if you,
+uh, formulate your request incorrectly, again
+. Well, when you
+formulate your request correctly, you'll have to knead the dough with
+your own hands, nothing can be
+done about it.
+And political influence, if we
+look at auto paints and
+democracies, uh, in the period of advancing
+artificial intelligence and rapidly
+developing artificial intelligence,
+that is, how does this affect such forms of
+governance? And who will suffer greater losses in the short
+term?  What does it mean:
+autocracies, a totalitarian system, or
+democracies? In the short term,
+of course, these technologies provide tools of
+control that have never existed before.
+Authoritarian regimes, not
+democratic ones, are more interested in tools of control. So, in the
+short term, these guys
+can really try, so
+to speak, to help themselves with these means.
+Well, look, perhaps, fortunately
+for all of humanity, our particular
+autocracy is, uh, not just conservative,
+it’s no longer conservatism, it
+lives in a retrotopia, so it’s
+deathly afraid of technology. It seems to be
+saying that we, too, are
+technological progress, but always in a kokoshnik
+. That’s why we are ruled by
+security people, and security people are never for
+progress. They’re just security. Their job is
+to guard. That’s why development is always
+repugnant to them, because when something
+develops, it changes, you can’t
+guard it. And our job is to
+lock everyone up, seal them off, pump out the air
+. Look, they’ve protected us, they
+’ve protected us, well done. And that’s why we don’t  There
+won't be a
+rapid development of these technologies in the Russian Federation.
+Besides, they, with their great cleverness, scared off the entire
+IT community, first in
+'22, and now for the second time,
+shutting down, simply shutting down the internet. You
+may know that the second wave
+of departure, and a rather
+targeted professional one at that, is
+happening right now. People don't want
+to wait for post-election surprises.
+And there's simply nowhere to work, nothing to
+work in, you understand? The environment is destroyed. It's
+not that your specific
+enterprise or subpoena
+has arrived, but simply the very air in which
+you existed has been pumped out,
+replaced with nitrogen, and you
+can no longer exist and function in it. So
+the Russian Federation will not develop
+a model that will conquer neighboring nations. There's no need to
+worry too much about that. Rather, our
+vanguard is, uh, military
+production, like in the 19th century.
+War is the engine of science, science is the assistant of
+war. Therefore, we are busy
+producing everything  More and more
+sophisticated drones. But here too,
+monopolization loses out to diversity.
+Therefore, you see, autocracy, with its
+deep nuclear idiocy,
+periodically wins over self-fucking, because
+it is about, again, as they say, as
+the youth say, it is about preservation,
+not development. Development scares it. I have
+already said this, but now let's
+formulate it as a more general
+political principle. Look, any
+non-democratic government that
+amuses itself with authoritarian modernization, what
+200 years ago was called
+enlightened absolutism, there is an
+enlightened monarch, he wants the good of
+his subjects, so he begins to
+encourage development, founds an academy of
+sciences, brings in some
+workers from neighboring countries and
+starts building some ships
+, right? There are Pridrichus the Great and
+Peter the Great, they are usually called
+great after the fact. Autocracies, also in a
+less formal wig, although,
+perhaps, also in a wig, perform this
+trick. This is what is called in our century already
+Authoritarian modernization. Over short
+timeframes, I repeat, this can be very
+effective, because autocracies are good at
+concentrating resources. There's no competition,
+no accountability, no responsibility.
+You collect all the money and found a big
+factory. Ours will be the
+biggest. And we quickly ramp up
+production of something fashionable,
+stylish, and youthful. But then
+comes the next political moment,
+which no one can avoid:
+your modernization is
+progressing successfully,
+and it creates people who serve
+this progress. These people grow in
+number. They rise socially,
+earn money, and, simply put,
+become socially significant. And at
+some point, they'll come to you with a
+political request, a request for
+power. At first, it's modest, like, can
+we have our own deputy?
+But you'll sense in your autocratic heart
+that this modest request for
+some municipal elections in your
+district is actually a request for
+your head. Give us
+your egg, Koshcheiushka. Just playing around
+for a while.
+And then you  You're wondering what to do.
+If you want this progress to continue
+, you need to share.
+Usually, at that moment, you remember that
+you're a modernizer secondarily, and an
+autocrat first and foremost.
+So you destroy
+this layer and drive your country
+back into barbarism. In the Russian
+Federation, this fateful moment
+happened in 2011-12, when
+Russian society was ready for
+democratization, for further
+democratization. Then the authorities came to their senses and
+said, "Oh, my God, we ourselves, with our own hands and
+our own resources, bred this young
+generation that now wants to
+bury us." Again, they're
+never wrong about that. The same thing
+happened with the IT sector in Belarus,
+which became, in many ways, the driver of
+protests and the basis for protests and the resource for the
+2020 protests. So, when did this
+happen? Did it happen in China in
+1991, or have they
+not yet reached that point? It's
+debatable. I believe they still have to
+, because Chinese society,
+according to a number of parameters,  The demographic,
+social, and economic situation is similar to
+Soviet society in the 1960s.
+That is, they recently crossed the
+line where the urban population
+outnumbers the rural population. And this is the
+most important point, because
+urbanization, the engine of democracy,
+is political,
+as Aristotle told us. This is the problem with
+any authoritarian progressivism.
+No technology can be
+held back to become the
+property of only the rich or only the
+powerful. All technologies are spreading,
+you see? And nothing is reserved for a
+narrow group. This is the nature of
+technological development. Again,
+artificial intelligence, even in
+its original,
+purest days, is present in each of
+our phones in the form of a navigator. What is
+it? It has many things, right? That is, it will
+still be universal. And this is frightening for
+authoritarian rule. Therefore, I
+repeat, in the short term, they
+will run like children to play with this new
+toy, and it will give them something. An
+interesting point, a more interesting
+point than with  resource-rich
+autocracies like China or Russia, and
+this is precisely with poor countries, like
+Mali, about which there are also now
+news reports that they have bought
+some, you know,
+right models with their last money. Again, let's not
+laugh at poor countries, it's both
+wrong and indecent, but
+nevertheless, it is clear, I hope, what is meant
+. That is, ah, I just
+said that these technologies increase
+inequality, or, more precisely, increase
+polarization, but at some point they
+can give the poor an unexpected
+advantage, because, generally
+speaking, they are very cheap. Another law of
+technological development, actually,
+related to tamo, which I just
+formulated, it's not that I
+invented it at this moment, I just
+told you about it. And technologies only get
+cheaper. When you are told that
+doing something is too expensive, it means that
+tomorrow it will be cheap. Services become more expensive,
+technologies become cheaper. This, by the way, is also a
+very
+interesting pattern. It seems to be familiar to
+everyone  It's well-known, but not everyone understands the
+implications. Look,
+there are these popular charts, often
+published primarily on American
+statistical data, showing how
+prices for various goods and services have changed over the
+past 30-40 years. And it's very clear, even
+adjusted for inflation, that all items
+are getting cheaper, all things are getting cheaper: televisions,
+computer programs, furniture, I don't know
+what, cups, spoons, clothes, and so on. And
+all services are getting more expensive. In the American
+case, this is even more obvious,
+because education and healthcare are very expensive there
+thanks to the properties of
+American capitalism. This is how it
+differs from European capitalism.
+But the general trend is general, it's
+global. Everything that contains a person
+will become more expensive. Everything that is
+material will become cheaper.
+Goods bordering on a commodity service, for example,
+housing or clothing, right? And because
+clothes are, on the one hand, well, just
+rags, and they are very cheap, right?
+We seem to change them much faster than
+anything else.  generation. But where it is,
+so to speak, a symbolic sign, a sign of the status of a
+work of art, there it
+goes up in price. Housing is also a commodity; on the
+one hand, it's concrete, glass, steel.
+On the other hand, it's a location, an area, a
+construction site, the maintenance itself. That is,
+it's this kind of
+intermediate phenomenon. It's not just housing—
+it's not just a box, yes, everyone understands,
+yes, it's first and foremost a place, and place is
+determined socio-politically,
+especially in cities. It has its own
+social marker.
+The view from the window, yes, in the end,
+what's the
+view from the window, what's the
+view from the window, proximity to the sea, climate. And
+again, you know, like in British
+literature there's this motif of prestigious,
+non-prestigious postcodes. And how people
+try at any cost to settle in an
+area, even if it's the neighboring house and it's
+more expensive, so that they can still write on letters
+. Well, not W2, but W1. Um,
+English society is extreme, uh,
+class-based, and always  It was like this, and it will always
+be like this. But the general trend, I'll
+go back to my thoughts, is indeed
+general, and not unique. Therefore,
+uh, speaking about how we can, how we
+can overcome
+our enslavement to artificial
+intelligence, now, of course, there will be an
+uncomfortable historical period,
+because there are still a lot of people. Uh,
+the population will fall.
+This, it seems, is happening faster than
+expected.
+Here's the latest UN demographic forecast
+, and it told us that by 2010,
+natural growth in
+Africa, that is, growth due to
+births, would cease. It looks like it
+will happen earlier.
+That is, we are witnessing the last
+years of population growth on Earth in general. Well,
+again, not forever. Nothing is
+forever. Again, social is
+changeable. Nothing lasts forever
+and nothing ever happens.
+So, the birth rate is declining
+faster than expected, including
+in poor societies. Accordingly,
+meat people will become more and more
+valuable, because there are few of them and
+reproducing them is expensive and not many people
+are willing to do it. So we
+We are witnessing, perhaps, the last
+tour in our memory, and this is such a
+waste of people.
+From a demographic point of view, what
+we are witnessing in the
+Russian war in Ukraine is
+absolute, not just absurd, but
+it is intuitive.
+Two aging nations are killing each other's
+fertile people. How is this even
+possible? Where will they get new ones? They
+won't get new ones from anywhere. Neither one nor the
+other. Sorry, women won't
+give birth to new ones. All that is over. But the
+people in charge are those who grew up in the paradigm of
+women giving birth to new ones, the children of a large
+generation. Boomers who believe that
+fewer people means more oxygen. People are a
+resource. There is certainly
+enough of that. But money, for example,
+money needs to be saved, but people can be
+spent. It's the other way around. Plenty of money,
+right? In this sense, ask
+the economists again, but it seems humanity is
+emerging from extreme poverty,
+including through the forces of
+scientific and technological progress. Hungry
+and naked, everything  are less common.
+Our poor are no longer the same poor
+as was understood even in the 20th century. But
+people themselves, as physical bodies, are
+becoming more expensive. Only our leaders have
+n't realized this yet. But when the
+generational change occurs,
+these problems with
+the birth rate will simultaneously become more and more obvious. This is where
+, this is where we will
+regain power over the world, because
+they are cheap, and we are expensive. So I'm thinking about
+what, what conclusion we can come to. This,
+too, could
+lead to unpleasant, uh, stories in the medium term,
+because there will again be
+undemocratic countries in which the
+birth rate will also fall, and they may
+begin to organize some kind of
+birth sanctuaries. I don't want to
+retell the handmaid's tale to you here in
+my own words, but the desire, uh,
+to nationalize eggs is
+palpable. In the Russian Federation, it is
+openly declared. A woman should
+give birth to the state, as Plato wrote in
+his fascist book of the same name  poem.
+Because she has to. And when
+you ovulate, give birth.
+How, so to speak, can we instrumentalize
+this wish of the authorities? Well,
+imagination can vary here. Again,
+this will all end when rare,
+precious, few people
+demand rights for themselves simply on the
+basis that there are few of us and you
+won't get others anywhere.
+And then there will be a new wave
+of democratization. But we're
+getting way too far with our
+futurological thinking here. But again, in the
+short term, things can get very
+messy.
+Well, for Putin as an autocrat, as a
+dictator, this is quite convenient.
+The situation, if you look at it, is that he's eliminating
+the most active part precisely in the
+age segment. That is, he's eliminating
+those who might come to him at some
+point and ask. That is, it's a
+harsh word - "utilization," but essentially he's the
+same passionate people, some are leaving for
+abroad, others are burning in tanks, I don't
+know where else, in  In the trenches. And these people are
+gone. Those are gone, and those are gone.
+On both sides, he's leaving behind a certain
+inert mass that won't come to him
+, which is where we started, and
+which he won't be held accountable for. Vladimir
+Vladimirovich, maybe we should
+pay this bill? That is, it's convenient for him
+, the current situation.
+Again, in the short term, yes, in the
+short term, of course, if he could
+only learn, as he promised, to live 150
+years, then that would be an excellent, excellent
+policy. But in general, the law of autocracy is:
+"You die today, and I'll die tomorrow." We
+see how this is now simply the
+official slogan of the Russian Federation. It's written on our coat of arms
+between the two heads of the two-headed eagle.
+So for now, of course, it's working.
+If only we could learn to be
+immortal, a real Koshchei, then that would be
+wonderful. But no, that won't work
+. And as for the passionate ones,
+well, those passionate ones who were eager to go to
+war, they fell back in  From 1914
+to 1922, and the rest
+was picked up in 1922 itself. There haven't been
+any pasionaries there for a long time
+. This is evident from the customs of this war.
+It's a
+difficult social contingent. And those who
+weren't difficult will be made so there and
+taught by people. To return from there with an
+experience that no one should ever have
+. This isn't just the experience of war, which has
+always been terrible in all centuries, but it's the
+experience of a war in which the command
+is interested in maximizing losses of
+its own, even more than in any
+territorial conquest, because
+territorial acquisition is
+risky and difficult, costly, and
+tiring. But killing as
+many of your own as possible and taking their money is
+simply understandable and doesn't require much effort.
+This is news. Again, I don't know if
+military historians will correct me,
+but this history has seen various commanders,
+incompetent, cruel, who sacrificed
+soldiers for their own vanity, who took
+cities for a holiday,  who slaughtered the
+entire population
+taller than a cartwheel, like
+Genghis Khan did. But those who
+want to kill as many of their own as possible—that
+, I think, is something
+new. The survivors, the ones who return, will
+have a completely
+original understanding of how
+people communicate with each other. So far,
+only their unfortunate relatives feel this
+when they come back on
+leave or something like that
+. On this matter, listen to what
+Masha Rupasova says, who
+sits in chat rooms for the relatives of mobilized
+and contract soldiers. And from time to time,
+stories pop up about a
+dear husband returning, back on
+leave. What they do on this
+leave gives us a pretty
+clear idea of ​​what they're
+used to, what they've seen there.
+So yes, these people will further, so to
+speak,
+improve,
+azonize the atmosphere in the Russian
+Federation, which is already bad. But
+I repeat once again, as for society as a
+whole, this is not a war of tens of
+millions, but  Hundreds of thousands. Russia is large,
+so it's capable of processing a certain
+volume of pollution; as
+you know, a large body of water is capable of
+self-purification. And as for
+the passionaries, as we know from
+experiments on mice, the social
+hierarchy is self-constructing. So, if
+you remove some alphas, the betas
+become alphas. And vice versa, if you
+remove the omega that everyone
+has been bullying, some, uh, unfortunate souls
+become omegas, even though they
+were previously quite respectable betas. These
+shelves must all be filled. The
+only question is, so to speak, what are the
+morals, how are the lower levels treated? Are they
+killed outright or
+simply not invited to parties, for example?
+This is
+also social discrimination, but it
+comes in different forms. That's why, in
+fact, we've always advocated for
+moral progress and education.
+And the formation of a lost generation,
+well, that's a term from Himangue, of course.
+And Gertrude Staynova
+introduced the term at one time. You said it
+'s a fundamentally different situation,
+but if we consider the impact on
+society, there's even the Afghan war, in
+which, as we know,
+14,000 Soviet soldiers died. That is,
+it's not comparable in scale to the war
+that's going on now. But it introduced a
+fairly serious Afghan syndrome,
+and organized crime groups developed rapidly. People
+who returned with experience, and the
+corresponding ones, couldn't find a
+place for themselves and filled many criminal
+groups. There, again, coincidentally, the
+1990s were already approaching,
+and so on. Today, given this
+scale, certain patterns are visible
+that will continue. Even though
+Russia may be able to absorb this
+enormous wave, nevertheless,
+certain patterns are emerging on the
+surface, what might happen and how
+will this impact society? These are the people
+who will return from there.
+You've correctly noted,  The visible
+influence of the small Afghan
+group that returned to the Soviet
+Union was linked to the fact that,
+at the same time they returned, the
+state itself collapsed. Unfortunately,
+these two things often coincide.
+You get involved in an unsuccessful war, and it
+accelerates your political degeneration.
+Our political model is
+also creaking its, so to speak, historical
+last days. These aren't calendar days,
+but they are historical days. We don't know
+how long they will last, but we do know that
+we are dealing with an elderly personalistic
+model that is entering a
+generational change. This entire generation, this entire stratum, this entire
+stratum  The age group
+is starting to die out,
+right?  Either Vladimir Volfovich will
+die, or
+Sergei Mikhailovich Mironov will fall ill.
+We only take parliamentary ones.
+Companions die, right?  Sergei Ivanov
+died not long ago.  They are increasingly
+encountered at funerals.  The convocation of
+the State Duma that
+will be elected in the coming days will attend many
+large state funerals.
+They may have to become guests at the biggest ones too
+.  This is chronologically
+very, very likely.  So, those
+who returned from
+the fronts of the North-Eastern Military District will also be present
+at, if not the collapse of the state,
+we will not use big terms on
+the air, then they will be present at the
+degradation.
+They will be present at the last
+days, so to speak.  In all its glory
+you saw the sunset of his bloody star.
+There is nothing particularly grand about this sunset.
+This looks more like widespread
+putrefactive phenomena, necrosis, gangrene and
+other
+untidy things.  But nevertheless, these people
+will come into a social system that is
+already bursting at the seams, along a
+whole series of seams that are in a
+state of anamia, that is, a breakdown of norms.
+This is a pretty bad thing.  That is, when
+people don’t know what’s good and what’s bad,
+what was good yesterday is now seemingly
+not good, they have to
+come up with their own norms on the fly, the state
+broadcasts different things, and its broadcast
+inspires less and less trust.  In these
+situations,
+small groups gain a significant social advantage,
+since large norms, norms of
+peacetime, in every sense of peacetime,
+cease to be perceived with trust,
+because they obviously no longer
+work, that is, they do not ensure
+social success, they do not ensure, that is,
+there, you see, yes, there is a
+situation of norms.  Eh, study well,
+work honestly, keep your word, repay your
+debts, be polite to your neighbors, honor your
+parents, maintain good relations with
+relatives, and you will succeed.  You won't
+necessarily become a millionaire or a
+general, but at least people
+will treat you
+well in return, and you will gradually
+move up the career ladder in the
+field you choose for yourself.
+This is a normal social situation.  We were
+all raised in it ourselves and we try to
+raise our children in the same way.  When
+the social order breaks down, a
+situation of breakdown of these strategies arises.
+And then they start telling the children:
+"A good person is the one who killed the most
+people. Either we kill them, or they
+kill us. Look, the killer whales ate Davich the bear,
+let's eat someone too."  This is how the
+whole world revolves, this is how nature works.   You
+have to be there, I don’t know, cruel, rude
+and impolite.  And this brings success.  He who
+stole is right.  Whoever took the stick did the
+digging.  These are the norms we have now.
+Society cannot exist like this.
+There is no primitive communal or
+ancient, slave-owning or
+feudal system based on such norms,
+because over long distances, again,
+it does not work and does not
+allow raising children,
+growing grain somehow and then storing it so
+that it is not burned on you.  Everyone
+will become old and helpless, and will
+still need to be
+fed and washed, even if they can no longer
+fight off others with a stick.
+That is, this order is inhuman, but during
+periods of anamia it begins to emerge.
+Most people are not fit to
+welcome the right of the strong or to
+embody it in themselves.  Most people are
+peaceful creatures who want to follow
+the rules in order to be
+rewarded with a little happiness.   That
+'s why people are confused.
+They are told: "Become a bloody killer."  He
+can't become a bloody killer.  He
+can't even become a shameless thief, right?  Well,
+because, well, it’s not typical for
+a person, it tires him out in large
+quantities.  And, besides, he is aware of
+his vulnerability.  But small groups
+that have clear, unquestionable norms
+within themselves get a very big head start at these stages
+.
+What are these small groups?  Are these ethnic
+criminal groups or non-criminal
+or simply ethnic communities?  These are
+groups of friends, these are gangs, these are
+groups of like-minded people,
+these are sects, religious groups.  Let us
+again recall our previous experience of
+long-term anamia.  Late eighties,
+early nineties.  Who came out
+ahead?
+Chumakrovsky.
+Amols, volunteers, yes, well, why bandits right away?
+Not just bandits, although they
+too.  The example of bandits clearly
+shows this.  The social mechanism that
+I describe so verbosely can be clearly
+seen in the example of a gang.  There is a very
+high level of trust inside there.  There are no
+obligations to outside people on the outside.
+This combination, this temperature
+imbalance.  It's warm and cozy inside, but
+cold and bad outside.  It is typical
+for any small group of this kind.
+Sects create the same thing internally.  We are
+such brothers that we even sleep
+with each other.  For some reason, all sects
+begin to come down to this after a
+while.  And outside there are heretics, bad people,
+incarnate devils.  They don't owe us anything
+.  They want to exterminate and kill us.
+They are our enemies.  We don't owe them anything either
+.  No universal human norms
+work for us.  We started with
+equality and with the Great French
+Revolution, which, so to speak,
+reinvented the Christian principle of
+equality of people on a new
+socio-political level.  Here small
+groups deny this principle.  So,
+regarding the beneficiaries of the
+previous anamia, the assembled groups of
+friends went to do business together.
+Komsomol members, because they had
+established connections.  One Komsomol leader,
+so to speak, knows another
+Komsomol leader.  These were
+such small verticals in each
+region, in each city.
+Ah, and they, in general, quite
+often formed such tightly knit, ah,
+groups among themselves.  Well, my colleagues at work there were
+some poor
+computer scientists, not
+computer scientists yet, cyberneticists, you know
+, in worn-out checkered
+pajamas, but they started
+selling computers and became millionaires.  Yes.  This is
+also quite a path.  ah,
+to a lesser extent, because the Soviet
+government destroyed all of this.  Neighborhood
+communities could have become like this, but the
+Soviet government moved people back and
+forth and destroyed all such
+territorial connections, rightly
+fearing them.  And so that my reasoning does not
+have such an ominous appearance, I will say that
+anyone can try to
+organize their own gang.  No, that's not what I
+meant to say.  And social connections are
+capital.
+So if you have some
+community where you
+trust people and people trust you, why?
+Not because they are so trusting, but
+because you have experience of
+acting together.  Trust is built through
+joint action, not through anything else.  Neither
+by talking about trust, nor by
+preaching, nor by baptizing everyone into the
+Christian faith.  Only through
+joint action.  We did something together
+, it turned out well, no one
+deceived anyone, on the contrary, we helped everyone and didn’t
+offend each other.  This is community,
+this is organic solidarity according to
+Durnheim, based not on, in contrast
+to mechanical solidarity according to
+Durnheim, based not on similarity.
+We have the same last name, we look alike
+, we are from the same village, and we have
+common interests.  It may coincide.
+We are from the same village, we
+chopped wood together, so to speak, and now we trust each other
+.  Or it may not match.  This
+was experienced by those people who,
+for example, in, I don’t know, cities in Russia,
+fought against a landfill or against the demolition of
+their home.  They found themselves, so
+to speak, fighting shoulder to shoulder with
+people who were not at all close to them socially
+and who, in general, did not read the right books, and
+they would not invite them to their home for
+tea.  Ah, but here they had a common
+interest, and they collaborated together, so to speak
+.  Therefore, keeping in mind the
+impending or even existing anamia,
+try to maintain
+existing connections of this kind and
+build new ones.  They will be very useful to you, dear
+citizens.  Is
+n't Putin trying to offer
+Russia exactly this path?  To withdraw into
+oneself.  Warm inside, cold outside.
+This search for an enemy, and if we cannot
+find an enemy, we will invent one.  Well, in
+general, all this is well described in
+dystopias, but here he essentially
+offers the same thing and choices, right?
+Let us also confirm, although we may
+not confirm, that we are together, and if
+someone interferes, we will put them in jail, roll them up,
+remove them, send them away, and so on.  That is what
+you described.  Just on the scale of the
+entire country.
+This doesn't work on a national scale
+.  First of all, there are too many
+people, too big a group.  And
+secondly, it’s not warm inside, but cold.  And a
+monstrous atagonism between
+the authorities and the people flourishes.  The authorities have
+completely abandoned us and believe that they
+owe nothing to the citizens.
+Now they will demonstrate unity,
+as you rightly noted.  But even during the
+pre-election period, citizens are not
+being fed, unlike in previous
+electoral cycles.  Eh, now there are some
+concessions, like we won’t
+beat you every day, but only on
+Saturdays.  Let's loosen up
+the internet blocking a little bit.  Now it seems to be a little bit
+easier.  The Internet
+in Rus' has also become very
+choppy in places.  No, it’s not that this is
+some kind of uniform policy, but it seems like
+somewhere, somehow, things have become
+freer.  There, the Max messenger is not
+being shoved into everyone's body cavities with the
+same intensity with which they were
+shoved just a few months ago.
+That's all.  Previously, they would at least
+give some money, something else, they would
+pass something, some law
+that people might like.  No, there are no
+tendernesses here anymore.
+That's why there's no warmth inside, there's no
+unity inside, there's no feeling inside
+that we're all, so to speak, in this together.  Well,
+landings on civilian infrastructure
+contribute a little to this feeling.
+like us, uh, let's say we don't like
+each other, but there are other people who
+want to kill us all and who won't
+differentiate between United Russia and Just
+Russia and generally anyone who has never
+gone to the polls, a drone will fly at your
+head, it won't make any difference.  This is such a
+negative unity, which is
+really a
+consequence of an external attack, an external
+threat.  The slavatarali around the flag
+is mainly explained by this.  However, attacks on
+civilian infrastructure are not a
+permanent policy of this war on the
+Ukrainian side.  And secondly,
+people also can’t help but see that, uh, the
+management doesn’t suffer from this, but on the
+contrary, it thrives on it in every possible way.
+It does not suffer losses, it does not suffer
+directly.  Therefore, there are
+many things that hinder this social solitude
+in the observed reality.
+Then why do they need this ritual
+called elections?  Many call it a
+special electoral event.
+That is, when it seems like everyone sees everything,
+yes, there’s the story with Yabloko, the story with
+Shlosberg, and such harsh, not even
+harsh, unfair sentences,
+exemplary sentences, scaled up
+in terms of coverage.  Well, that is to say, it is
+visible, but the ritual remains,
+which, it seems, no one believes in, not even
+the most devoted, so-called
+Z-patriots.  What is this for?
+The ritual is preserved and will be preserved
+as long as the system is alive; it will
+carry out this event at the appointed time
+.  They really need it, they
+absolutely need it for two main
+purposes.  Firstly, this is an exercise in
+loyalty and efficiency for the apparatus.
+They must hold this
+electoral Olympics and show that they can
+and want to do it.  More precisely, they want and
+they can.  The second is an exercise in
+loyalty for the electorate.
+mainly administratively dependent
+electorate, the so-called budget workers, the
+civil servants themselves, the military, and security forces.
+They must show up early or
+register at the DEC, as they are told, and
+vote correctly: "We feed you,
+you demonstrate loyalty to us."  These are
+elections, so to speak, of a plebecite
+type, as the logians like to say
+.  That is, not elections in which
+power can change, but elections that
+confirm the status quo.  Are you happy that
+we are leading you?  We are glad,
+father, we are glad.  Here.  Well, actually, well done
+guys.  And now, then, until the
+next one, until the next cycle.  This is
+very important.  This is one of the foundations of the
+system's legitimacy, and most importantly, it is a
+test of its functionality.  She must
+constantly listen to
+how the instruments are working and
+how the orders are being carried out.  This is
+extremely, extremely important.  As for the
+aspect you mentioned,
+the sentences, and in general the use of
+repressive instruments as an
+electoral tool, this is, firstly, a
+demonstration of force.  This is also very important
+for autocracy.  They are holding elections
+to confirm that I am the boss.  And
+the very falsifications that
+everyone really knows about are further
+confirmation.  Now I'll
+draw myself 146%, and what will you
+do to me?  Yes, you know it's
+fake, and I know you know it.  So
+what?  This is how powerful my paws are.
+In political science, this is called
+the falsification of intimidation.  There are two types of
+falsification: survival falsification and
+deterrence falsification.  That is, in order to
+falsify, to
+get some kind of result, to win in the first
+round or even get through.  And
+the falsification of intimidation.  You have
+55% there, you make yourself 88.
+You marginalize any alternative
+opinion.  Look, I don’t just have a
+majority, I have an overwhelming
+majority, and you, renegades, are supported by three and a
+half colleagues.  And secondly, you
+demonstrate strength by breaking the law.  I can
+do whatever I want, no one will
+object to me.
+It has always been like this.  And in this
+electoral cycle, another novelty has been added
+.  And the management of
+the electoral process is being transferred, and in
+many ways has already been transferred, from PR specialists,
+political strategists, and political
+managers to the FSB.  And these guys have only
+two tools: kill and imprison.  Or
+imprison and then kill.  They are unsophisticated
+managers.  In general, there are no other means to
+achieve the goal.  They don’t know and,
+most importantly, don’t understand why this is necessary
+when all problems can be solved so simply, cheaply and
+effectively.  The game
+says: "No man, no problem."
+They tend to forget how often this
+principle has been applied to themselves.  But in
+this sense they are institutionally
+stable, passing on their values ​​from
+generation to generation.  The fact that Yulia
+Navalna and Maxim Katz united and
+issued a unified call to vote
+for those who are less supportive of the war is
+interesting in itself,
+because Maxim Katz and Yulia Navalna had
+never spoken together before.  Ah, but does
+this have a practical meaning or is it only
+symbolic?   One
+cannot help but welcome a public
+demonstration of unity on fundamental
+issues.  This is very good and correct.
+And I congratulate both sides, who managed to
+overcome their, so to speak, petty
+differences.  Which disagreements
+exist almost exclusively on
+Twitter.  And if you don’t have a
+Twitter presence, which I highly recommend to
+everyone in general, and Russian-speaking people in
+particular.  A Russian person is not allowed on
+Twitter.  There are two networks that are dangerous for him:
+VKontakte and Twitter.  VKontakte is dangerous because of
+its administration, and the network is dangerous because of
+its inhabitants.  Many of them are
+non-humanoid.  So, then, if we
+again remove these, uh, petty attacks
+on each other, then, of course, the disagreement
+there, frankly speaking, is not of a
+fundamental nature.  So, well done for being
+able
+to overcome them publicly.  As for the practical
+meaning,
+there is one ambiguity with these elections, and
+it continues to be an ambiguity for me.
+On the one hand, we see signs of
+public apathy, disgust for all
+living things, depression and the immobility of a
+captain's stupor that has taken hold of
+poor Russian society.  A
+society that is tired to death, afraid and
+wants nothing, lying with its
+nose turned to the wall.  On the other hand, we
+see a demand for at least some kind of
+unpunished
+public action.  I suspect that
+the success of the religious processions that are now
+taking place in Russian cities
+is explained not only by
+administrative resources, although they play a role as well.
+And not only and not so much those who have taken possession of
+the hearts of the Orthodox faith, we know
+what kind of Orthodox people we have, there are statistics on this matter
+too, but the opportunity to
+walk down the street in good weather and
+not be beaten.
+This is such an inaccessible luxury for a
+Russian today that people are ready,
+regardless of their religious
+likes and dislikes, to
+take advantage of it.  Do you understand?  Well,
+May Day demonstrations have been cancelled for
+years now.  On May 9th, too, you see, a
+drone will arrive.   The
+Immortal Regiment was banned.
+March on the internet.  Yes, that's the
+message from the boss.  Well, well, humans are
+social animals; they go nuts when they're alone
+.  He wants to somehow peacefully
+stroll among people like you,
+to feel that notorious community.  It makes
+us produce oxytocin.  We
+need oxytocin, we die without it.
+Therefore, returning to the elections,
+some of the sociologists, uh, those
+in Rus', on the contrary, predict a high
+turnout.
+Unexpectedly, the military sector took up the campaign for turnout
+.  The so-
+called Zitniks have discovered smart
+voting, they have discovered the
+recommendations we wrote in
+19 and 21.
+Come to the polling stations on foot, they say
+.  Come on the twenty-first, they
+say the twentieth.  Come back
+later.  Take a paper ballot,
+check if anyone has
+already voted for you, and vote for any party
+that gets in except United Russia.
+Wow!  Evolution works wonders.  And therefore, the
+demand for some kind of
+rational recommendation may be higher than we
+think.  And we, with our, so to speak,
+soured wisdom about the fact that
+everything is useless, and maybe here it is not that
+in the majority.  There is one more
+factor.  New people come to every election
+.  New people are born, grow up,
+turn 18, and come to
+vote.  People who are under 18
+years old, who have never voted before,
+and who, in general, might be
+completely apolitical and have no dealings with the
+Russian state beyond
+obtaining a passport and other documents
+through the MFC, come.  But these unafraid
+citizens also come out every time, and for
+them the Bolotnaya Square affair is roughly equivalent to the
+Bolotnikov uprising.  Everything was somewhere around here then
+.  For them, life may have
+begun when the war began.
+Here they sensed that something was somehow not right, that something was
+becoming unsettling.  What's
+going on anyway?  Ah, and who are these people?   What do
+they do?  So perhaps public
+cynicism should not be
+exaggerated.  So recommendations
+are good.  No one is obliged
+to follow them.  Recommendations are not orders.   Let
+everyone think for themselves, but the fact is
+that there are some, so to speak,
+some rails laid by someone and
+some recommendations based on
+data, and not declaring the
+candidate from the KPRO to be a good person, but
+honestly indicating that such and such,
+yes, also gave the Nazi salute, but not with both hands.  Or
+as Maxim Katz puts it, at least the letter Z is
+n’t carved somewhere on the forehead.  Maybe
+she has a tattoo somewhere there, but in
+places that are not shown in
+public.  Ah, so this is an honest
+conversation.  This is an honest conversation, not
+an attempt to portray these candidates as
+our allies, anti-war
+activists, or potential
+oppositionists.  And the idea is clear.  Let's
+offend United Russia.  Yes, all candidates
+are aligned, but some are more
+aligned than others.  Of course, the
+election organizer wants someone to win.
+Certainly not this communist, but this
+United Russia member.  Otherwise, why would they display it here
+?  Let's upset them.  Is this
+possible in the context of electronic
+voting, voting in new
+territories, and
+general intimidation?  The question is not simple.
+We remember how in 2021, 15
+single-mandate constituencies in Moscow
+were flipped over in the morning
+using electronic voting.  So
+people voted one way, but
+electronic entities voted
+another way.
+At the very beginning, you and I were worried about how
+artificial intelligence would enslave people.
+Why go far?  There you go
+, everything is visible to the
+naked eye.
+Well, let's put an ellipsis in this
+conversation.  I think we'll come back to it
+.  The topic is broad.  And thank you for
+coming to see us today.  Until next
+time and all the best.
+Thank you for the opportunity to talk
+about more than just current issues.

@@ -1,0 +1,1005 @@
+ABOUT
+================================================================================
+Title: VehicleSec '26 - Keynote Address: The Trajectory of Automotive Cybersecurity and the Role of AI
+Author/Channel: USENIX
+Channel URL: https://www.youtube.com/channel/UC4-GrpQBx6WCGwmwozP744Q
+Video URL: https://www.youtube.com/watch?v=2j-2wGaBBZM
+Video ID: 2j-2wGaBBZM
+Published: 2026-09-09
+Duration: 41:26
+Views: 66
+Likes: 1
+Comments: Unknown
+
+Description:
+Keynote Address: The Trajectory of Automotive Cybersecurity and the Role of AI
+
+André Weimerskirch, Block Harbor Cybersecurity
+
+Automotive cybersecurity has evolved through distinct phases, moving from limited industry awareness and a period of hype to today's regulated landscape. Despite substantial technological changes in vehicle architectures and connectivity over the last decade, confirmed security incidents remain largely constrained to vehicle theft and chip tuning. As the industry matures, investment patterns are shifting toward value-based decision making to meet regulatory compliance targets. The emergence of AI introduces a critical shift. On the threat side, AI may lower the technical and economic threshold for attacks, expanding the pool of capable adversaries and targeting previously unattractive systems. Conversely, AI offers immense potential for defense: it can accelerate vulnerability reduction, enable faster attack detection at scale, and automate security tasks to help stakeholders meet compliance goals. Crucially, the introduction of AI also creates new operational challenges, such as the need to automatically update vehicle firewalls within minutes and compress software update deployment timelines from months to hours. This talk provides a structured analysis of the field's historical trajectory, its current posture, and the specific security gaps that AI can and cannot close.
+
+View the full VehicleSec '26 program at https://www.usenix.org/conference/vehiclesec26/program
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Summary
+
+## Title
+**VehicleSec ’26 – Keynote Address: The Trajectory of Automotive Cybersecurity and the Role of AI**
+
+## Author and available credentials
+
+- **André Weimerskirch**
+  - Organization identified in the source: **Block Harbor Cybersecurity**
+  - Has worked in automotive cybersecurity for **more than 20 years**.
+  - Describes a background spanning **academia and industry**, including work with a PhD advisor and approximately the last decade in industry.
+  - Presents himself as a bridge between academic research and industrial practice.
+  - States that he is currently focused on improving the **efficiency of automotive cybersecurity**, including work at his new company.
+  - Previous employer, academic degrees, academic affiliations, job title, and other credentials were **not provided**.
+
+- **USENIX**
+  - Listed as the **author/channel** in the source material.
+  - Channel URL: https://www.youtube.com/channel/UC4-GrpQBx6WCGwmwozP744Q
+  - No additional organizational credentials or contact details were provided.
+
+## Contacts and source links
+
+- Personal or organizational email addresses for André Weimerskirch or Block Harbor Cybersecurity were **not provided**.
+- Video URL: https://www.youtube.com/watch?v=2j-2wGaBBZM
+- VehicleSec ’26 program: https://www.usenix.org/conference/vehiclesec26/program
+
+## Technical summary
+
+The keynote presents automotive cybersecurity as having moved through several stages: initial low awareness, a period of intense public attention and hype, and the current phase dominated by regulation and compliance. Weimerskirch argues that the industry has made substantial progress in implementing baseline vehicle protections, but that its processes remain expensive, manual, and difficult to scale.
+
+The central technical argument is that the next major challenge is not simply designing better security mechanisms. It is operating automotive cybersecurity efficiently across complex vehicle platforms, suppliers, regulations, software updates, and long product lifecycles. AI is presented as a potential enabler for this transition, but also as a tool that can reduce the cost and expertise required for attacks.
+
+The speaker distinguishes between attacks that are technically possible and attacks that are economically attractive. To date, confirmed automotive security incidents are described as being concentrated mainly in **vehicle theft and chip tuning**, where attackers have clear financial incentives. By contrast, many technically impressive attacks have not become widespread because they do not scale, are difficult to monetize, or expose attackers to significant legal risks.
+
+Automakers primarily focus on attacks that can affect large numbers of vehicles, especially attacks through wireless interfaces. The standard defensive architecture described in the talk includes:
+
+- Secure in-vehicle communication.
+- Segmentation between connectivity systems and critical embedded systems.
+- Secure software updates and code signing.
+- Secure boot.
+- Secure diagnostics.
+
+These controls are considered broadly standard in modern vehicles. However, the compliance process surrounding them is highly labor-intensive. Risk assessments may take weeks per module, audits add substantial overhead, and the work must be repeated across software updates, hardware changes, vehicle platforms, and multiple regulatory frameworks.
+
+Weimerskirch argues that compliance has become the practical target because it is measurable and legally required, while security becomes a byproduct. He proposes reversing this perspective: if organizations treat security as the primary objective and build efficient processes around it, regulatory compliance can become the byproduct.
+
+The keynote also examines future shifts in the automotive threat landscape. Nation-state attacks could become more relevant because connected vehicles and over-the-air update capabilities could theoretically be used to disable large fleets. Software-defined vehicles may consolidate many electronic control units into a small number of powerful computing platforms, potentially enabling stronger security mechanisms but also creating new concentration risks. Autonomous-vehicle fleets may have a different security profile because they require persistent connectivity, remote assistance, and are operated by comparatively wealthy companies that would suffer substantial losses from downtime.
+
+AI is described as having both offensive and defensive effects. On the offensive side, AI may help attackers reverse-engineer firmware and identify vulnerabilities after they have obtained firmware through a physical attack. The speaker gives the example of an MCP server for Infineon TriCore firmware analysis. AI does not remove the need for physical access, but it can accelerate the analysis phase and lower the cost of attacks. This may make previously unattractive targets economically viable.
+
+On the defensive side, AI could support automated vulnerability discovery and patching, vehicle security operations centers, anomaly detection, risk analysis, and security-product development. The speaker cites results from DARPA’s AI Cyber Challenge, including figures of vulnerabilities being found and patched in substantially less time and at much lower cost than through conventional manual processes.
+
+A major operational goal is to reduce the time required to respond to newly discovered vulnerabilities. Although modifying software may take only a day, coordinating automakers, suppliers, purchasing, validation, testing, and deployment can extend remediation to approximately six months. Weimerskirch argues that AI-assisted process management could reduce this timeline to hours. Similarly, vehicle firewall rules that currently take considerable effort to update should be changed automatically within minutes.
+
+The proposed foundation for this automation is centralized information management: an **asset manager** containing system information and a **risk manager** containing collected risk data. AI could then analyze this consolidated information and automate decisions and workflows. The speaker identifies fragmented legacy systems and distributed ownership as major barriers.
+
+The keynote concludes with a pragmatic view of research priorities. Some areas, such as adversarial machine learning and sensor attacks against advanced driver-assistance systems, are technically interesting and may scale through physical artifacts such as 3D-printed road patches, but the speaker notes that there is no evidence in the transcript that these attacks are being used in the wild. Intrusion-detection systems are also viewed skeptically because of false-alarm problems, although behavioral detection may become more valuable for autonomous vehicles, particularly when combined with observations of the physical environment.
+
+# Key technical ideas
+
+1. **Shift from technological capability to operational efficiency**
+   - Automotive security is no longer limited primarily by the absence of security technologies.
+   - The larger problem is the cost, manual effort, coordination, and lack of scalability of security processes.
+
+2. **Security as the primary objective, compliance as the byproduct**
+   - Regulation forces organizations to perform security-related activities.
+   - Treating compliance as the main objective can produce expensive, checklist-oriented processes.
+   - A more efficient security strategy could satisfy compliance requirements naturally.
+
+3. **Attack economics determines practical risk**
+   - Automotive systems may be technically vulnerable without being attractive targets.
+   - Attackers generally pursue targets that provide financial returns and can be attacked at scale.
+   - Vehicle theft and chip tuning remain important because they offer direct incentives.
+
+4. **AI lowers the cost of vulnerability research**
+   - AI can assist with firmware debugging, reverse engineering, and vulnerability discovery.
+   - The attacker may still need physical access to extract firmware, but AI can automate much of the subsequent analysis.
+   - Lower attack costs may make previously unprofitable targets attractive.
+
+5. **AI-enabled defensive automation**
+   - Potential applications include:
+     - Vulnerability discovery and patching.
+     - Vehicle security operations centers.
+     - Pattern and anomaly detection.
+     - Automated security-product development.
+     - Risk analysis.
+     - Firewall-rule updates.
+     - Security operations and compliance support.
+
+6. **Compressed remediation timelines**
+   - Current vulnerability response can take months because of supplier coordination, purchasing, safety validation, testing, and deployment.
+   - The proposed direction is to reduce remediation from months to hours.
+   - Firewall changes should potentially occur within minutes.
+
+7. **Centralized asset and risk knowledge**
+   - An asset manager could consolidate information about vehicle components and systems.
+   - A risk manager could consolidate risk assessments and related security information.
+   - AI could use these unified sources to support automated decisions and workflows.
+   - Legacy systems and distributed stakeholder ownership are identified as major obstacles.
+
+8. **Scale is broader than wireless connectivity**
+   - Wireless attacks are important because they can affect fleets.
+   - However, physical attacks can also scale if the same artifact or technique affects many vehicles—for example, road-based adversarial artifacts targeting vehicle perception systems.
+
+9. **Software-defined vehicles create both opportunities and risks**
+   - Consolidating many electronic control units into a few powerful computing platforms may enable stronger, more mature security mechanisms.
+   - The same consolidation may increase the importance of protecting those central platforms.
+
+10. **Autonomous fleets may have stronger attacker incentives**
+    - Autonomous vehicles require persistent connectivity and may depend on remote assistance.
+    - Fleet operators are likely to have substantial financial and reputational exposure to downtime.
+    - This may make autonomous fleets more attractive targets than conventional individually owned vehicles.
+
+11. **Limitations of current intrusion detection**
+    - The speaker reports that many vehicle IDS approaches suffer from excessive false alarms.
+    - Behavioral IDS may become more useful for autonomous vehicles if it can assess whether remote instructions are consistent with the physical environment and expected vehicle behavior.
+
+12. **AI does not close every security gap**
+    - AI cannot by itself solve physical-access requirements, fragmented organizational processes, weak incentives, or legacy-system integration.
+    - It may improve both attacks and defenses, creating pressure for the automotive industry to automate defensive processes rapidly.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Yeah, thank you so much Sarah. Um, thank
+you so much for the invitation here and
+I'm really happy and glad and honored to
+be here. Um, I think you had it on the
+first slide saying that you want vehicle
+sack to be the flagship event in
+automotive security research and I think
+you're actually already there. So, I'm
+really happy to be here. Um,
+okay, here we go. You already heard all
+about it. Um, I will not repeat that. So
+I want to talk a little bit about
+you know what happened in the last 10 or
+20 years in that space um where we are
+today and what I believe will happen in
+the future. Um I've been doing this for
+a while for like more than 20 years now
+and
+over that time
+and over that time my view what actually
+matters in the space has quite changed.
+Um so when I started 20 years ago for me
+everything was just technology you know
+I have good good technologies inside of
+the car problem solved. Um and then I
+joined this giant corporation with like
+hundreds or thousands of software
+developers and I learned yeah you know
+there's much more to it. It's all about
+or the process is so important. How do
+you get everyone on board? And now I
+think I start to figure out you know the
+efficiency is actually a part that
+really matters. How do you develop this
+efficiently? And that's what I'm
+currently very interested in. So my my
+objective here is to show you you know
+sort of for me being the bridge between
+the academic world and the industry
+world. I'm coming from ep academia but
+you know the last 10 years completely
+embraced an industry and maybe try to
+you know bridge that a little bit more.
+Uh I I'm really looking forward to
+Stefan's presentation tomorrow. I think
+I overlap in a few items. Um but I
+wonder if I have a different view on it.
+All right. So how do we get here? You
+know, I remember early discussions
+German car makers and they approached um
+my PhD advisor at that time
+uh basically saying, "Oh, we have a
+problem. People manipulate our cars.
+They modify the autometer. Can you help
+us? Or you know, we want to introduce
+these feature activation systems. Can
+you help us?" Um at that time there was
+no awareness at all. It was the wild
+west and in some sense it was I believe
+as it is supposed to be. They had a
+security problem. They recognized it.
+They approached us. So we helped them
+and then nothing really happened for a
+while and then you know Stefan and the
+team came and showed you know what you
+can hack into a car and there was a
+giant um
+how do you say you know giant um media
+attention. It it did it to 60 minute a
+60-minute show and suddenly it became
+very quiet again somewhat very
+surprisingly quiet
+and you know only like five years later
+Miller and Wallace repeated it and I
+would say very similar um really similar
+results and suddenly it stuck and I
+believe what happened in between was
+Snowden Assange and Manning you the the
+the sensitivity for security in general
+in the government totally changed and so
+suddenly you know you had the
+sensitivity established that a another
+trigger did it and guess what the
+government got involved and as
+regulations and so on and I'm really
+looking forward to Stefan's um
+presentation tomorrow.
+So what happened then? Guess what? Um
+the industry, the automotive industry is
+very good in responding. It took them
+a surprisingly short amount of time to
+fix the issue. You know, control the
+story. uh the government at that time
+was basically
+yeah not publicly threatening but
+implying that they would start
+regulation in the US. Car makers don't
+like these sort of things. So they built
+in-house expertise very quickly. Um they
+had hired people like me. Um they hired
+entire teams. They acquired startup
+companies. They pushed for a standard in
+the space that's called ISO SAE 21434.
+Um they established the autoacc phase
+here will be in a panel discussion
+later. Uh which is an industrywide
+information and sharing information
+sharing and analysis center um and huge
+visibility around collaboration and it
+it happened so so fast.
+And then the I call it here the
+regulatory wave happened.
+um ISO SAE already talked about it and
+suddenly the there's something called
+UNCCE
+um which is
+um specifying the type approval in the
+European Union but also in additional
+countries like Japan, Korea, I think
+Russia is involved overall almost 60
+countries
+and they moved forward and said you know
+what if If you want to sell a car in the
+European Union and in these countries,
+you need to go through something that's
+called type approval and you need to
+demonstrate that you developed your cars
+in a secure manner and a you know a and
+fairly obvious way of doing that is to
+follow ISO SAE 21434.
+Um the interesting part is that there
+were already I call it here forced model
+withdrawals. If you Google a little bit,
+you will find that some car makers
+decided, oh, you know what, I do not go
+through this. This model will not be
+sold anymore in the European Union. It's
+tough to distinguish. Maybe they wanted
+to cancel the model anyways. Um, but you
+know, at least publicly it was stated
+like this. And then more happened. China
+did the same thing and they say, "Oh,
+you know what? If you want to sell a car
+in China, you need to follow this uh
+regulation." And guess what? it is
+different to the uh European one
+and then India is currently doing the
+same thing and it's like h you also need
+to follow this one and Europe just
+extended it for what's called here
+regulation 155 for the L category that's
+uh two wheelers motorcycles and so it
+just keeps adding up there's more and
+more regulation coming uh the US just
+introduced a regulation that starting
+the next model year, you cannot import
+modules or vehicles that have Chinese
+software in the connectivity
+or active safety systems.
+And so, you know, we start having all
+these frameworks and it doesn't
+necessarily mean security, but it for
+sure means more work and effort.
+So, where do we stand today? The good
+news is car makers are still selling
+cars. So I guess they figured out how to
+do it, right? You know, I talked about
+there's a couple of examples where they
+decided, no, we'll stop that model, but
+that's really the exception. They're
+still selling their cars. They seem to
+have it figured out. Um already talked
+about it. They built in-house uh
+in-house teams very quickly.
+And what's very interesting is the scare
+factor was replaced by the regulation. I
+can tell you when my former employee
+employer hired me that came from the
+board of directors. The board of
+directors was concerned about liability
+and they told the uh CEO hey you know
+what you need to hire someone to fix
+this here. And this attitude totally
+changed today I believe by hey there's
+regulation you have to meet this
+regulation and it's not not necessarily
+bad I would say um and I'll talk more
+about it later
+but you know what I really observed is
+that the companies figured out to build
+the
+um how to secure cars in a very
+effective way. They really figured it
+out in record speed, but it's not very
+efficient. I don't think it will scale.
+It It requires far too much security
+experts. It requires far too much manual
+labor to do it. And I will talk about
+this later. I believe AI can reduce a
+lot of this pain. And that's currently
+what I'm actually working on uh in my in
+my new company.
+All right. So, how do we protect cars?
+Turns out car makers and I think for a
+very good reason are really
+mainly, you could almost say only
+concerned about attacks at scale. They
+don't
+feel it is that important that you you
+perfectly protect the car where you
+cannot physically go to the car,
+manipulate it and hack into it. They
+feel you know what we have by really to
+avoid that someone can mount an attack
+that scales that just affects an entire
+fleet or a large amount of vehicle
+different words everything wireless
+right and it shows they focus a lot on
+the uh secure invehicle communication I
+see that as a a way of kind of creating
+your small VPNs in the car uh secure
+updates code signing and uh yeah
+segregating the connectivity part of a
+vehicle to the critical embedded part.
+They also by now is pretty much default
+to have secure boot and secure
+diagnostics.
+But really that's the the standard set
+of what do you do in modern cars. These
+five items I think will pretty much
+describe it.
+Um I want to you know I talked about
+compliance. I want to say a little bit
+more about it to get you a sense what is
+what does this compliance part imply and
+this is from my personal experience. So
+you know compliance means you need to
+meet regulations
+and one aspect pretty much the first one
+is you need to understand what is is the
+risk. So you perform a risk assessment
+and risk assessment for a single module
+takes you about two to four weeks. A
+single vehicle has dozens of these
+modules. So dozens of times you need to
+invest two to four weeks. But then
+because it's a regulation, there's an
+audit process necessary inside of your
+organization, checking that the people
+who created the risk assessment did it
+in the proper way. You can expect close
+to 100% overhead. And you need to do
+this for about 15 or 20 years for each
+vehicle platform. You need to do this
+with every major software update and for
+sure with hardware changes. So you see,
+you know, there's a lot coming together
+and now imagine you need to do this for
+like five different regulatory
+frameworks
+and I think it's not surprising that
+what we see is compliance here becomes
+the target. Um security is sort of the
+byproduct and that's that's you know it
+sounds probably worse than it is. That's
+not bad, right? Um that's exactly the
+point of having regulation that you
+basically um enforce that stakeholders
+do what is the best for society. But I
+think if you change your view here, if
+you're a stakeholder and you say, you
+know what, security is the target, we do
+this the right way, we do this the
+efficient way, compliance becomes the
+byproduct and you actually get more for
+less money.
+talk about that later. I don't think
+this development is the stakeholders
+fault. You know, I like to think about
+these things as like well if I would
+make these decisions and guess what I
+did in my previous job and I am a
+company that has to deliver profits that
+has to increase profit margins
+that needs to meet regulations. What do
+I do? and you're really forced to get to
+this conclusion. You need to meet the
+compliance targets. Um my point is I
+believe you can do it more efficient.
+All right, I do want to talk a little
+bit about the attacker economics and you
+know the I think the obvious observation
+is well no one ever hacked into a car
+outside of a research lab and I think
+you know Stefan will talk much much more
+about this tomorrow.
+But why is that the case? Well, maybe
+maybe we just did such a great job that
+it's incredibly tough to hack into cars.
+Um, I think that's part of it, but also
+if you look at it well, you know, if you
+if you attack other targets, you get
+much much more out of them. Uh, one
+reason is there isn't really someone to
+get money out, you know, like the
+individual consumer. uh such a pain,
+right? If you look at um ransomware,
+it's not happening in large scale
+anymore against individual users, it
+usually goes against uh rich companies.
+And actually, it's a high risk, you
+know, once you start messing with safety
+critical systems, law enforcement will
+will be less nice to you, you know, and
+it can be government enforcement. so to
+say. I I heard this about in a podcast
+about um uh ransomware against hospitals
+where usually the attackers are careful
+to not impact safety critical systems
+and much more often they go for a
+threat. Oh, we release all the private
+data but not oh you know what we turn
+off your life saving uh machines here.
+So, as I said before, we don't know how
+how much um is because of the lack of
+motivation, at least I don't know, and
+how much is because we actually did
+secure cars. But it's it's probably a
+mix.
+But what we do know is if we look at
+other areas in this industry, well,
+there's a lot of hacking happening. So
+one thing maybe you heard about it
+Jaguar Land Rover there was last year uh
+Jaguar Land Rover was not able to
+manufacture cars for weeks and weeks a
+ransomware attack and the impact is
+believed to be about 2 billion pounds I
+think that is more more dollars even and
+so that's a real number right someone
+hacked their system and it cost them $2
+billion
+Um in the US here there was a case last
+year this company called CDK Global
+sorry two years ago and they provide a
+software um software as a service that
+is used by the majority of dealerships
+in the US meaning ransomware hack
+dealerships couldn't use that software
+dealerships couldn't sell cars uh damage
+was about1 billion US dollars. And guess
+what? The um to get out of this CDK
+probably paid a $25 million ransomware.
+So yeah, this works. So again to say it,
+we didn't see any safety critical
+attacks so far, but there's one
+exception or two I should say, theft and
+chip tuning. So um cars are stolen today
+heavily especially in I know more for
+Europe. Um and these are stolen by
+organized crime.
+Um spending a lot of money and time to
+figure out okay how do I undermine all
+the theft protection? How can I steal
+the car? and then they sell their
+knowledge and the devices um to actually
+the people who execute the attacks
+meaning who steal the car. Uh similar
+thing for chip tuning. You know, you
+have your car, you want to have more
+horsepower or better range or whatever.
+Uh lots very very active area. And here
+it makes sense, right? If you think
+about it, there's a clear attacker
+incentive. They can get money out of it.
+So they go for it.
+And guess what that leads to? Well, the
+security market is heavily correcting.
+First, we are moving in we are in an
+environment where car makers and
+suppliers are providing profit warnings.
+They they say they're in trouble. Uh
+they have thin margins.
+Um you heard the reg the number of
+regulations hits them. It's not a
+competitive area. Car makers started to
+understand this.
+When when did you ask the last time when
+you bought a car, how secure is your
+car? is the car versus
+what's the what's the crash test of the
+car? Is it the five stars or not? And uh
+car makers also have a reduced liability
+concern because there are no safety
+critical events. The reason that I was
+hired by my former employer was um in
+its majority a liability concern. You
+know, is the company okay? is what they
+do okay or are they vulnerable to
+liability um suits and we know you know
+nothing happens probably not a big deal
+and so guess what uh budgets are heavily
+reduced uh team sizes are cut startups
+are shutting down
+and um seems the topic is is is you know
+is is away from the hype area right so
+what will happen in the future I think
+one couldn't decide is it a pessimistic
+view or is it the optimistic view but
+nothing really happens right it vehicles
+stay being uninteresting
+uh it stays being that the the
+interesting attacks are the attacks that
+would scale but the car makers do a
+pretty good job here in protecting the
+wireless interfaces
+um data theft becomes or probably is
+already really interesting but you
+wouldn't want to spend the effort to
+hack into every single car to get out
+the data. You better hack into the cloud
+and it's just a reality. Other targets
+will pay better except for car theft and
+chip tuning. Why would that change?
+Well, and here's some thoughts why this
+might go a different path. I don't know,
+right? But here's here's some things
+that could happen. The first one I
+believe
+um cars transportation in general
+becomes increasingly interesting for
+nation state attackers. I can tell you
+if I were a nation state that is not on
+good terms with the US, I would laugh
+currently having a button that I can
+push and a few million cars stop
+running, right? Um and is this
+unrealistic? Well, think about it. pick
+your preferred car maker today or the
+one you don't like. Um, and if that car
+maker decides to break their own cars,
+they can, you know, usually they already
+have some um level of firmware update
+over the air capability
+and they just put in software there that
+will disable the vehicle. They push it
+out over the air. Here you go. Very,
+very simple, right? Um, I don't say car
+makers have an incentive to do that, but
+they could. Um, and maybe that explains,
+remember I talked about this one new
+rule coming, uh, that the US says, you
+know what, everything connectivity, you
+cannot have Chinese software in your
+vehicle.
+It's probably one reason. Good news is
+there are no confirmed cases of this
+happening. But I I I fear this this
+might quite well happen. Today this is
+considered to be a sourcing problem. You
+know like along the lines of don't buy
+software from China for certain critical
+aspects on the vehicle. But um more and
+more stakeholders start seeing that as a
+security issue assigning it to their
+security teams. And I could see that
+this goes further where it's not just
+about don't buy software from China, but
+hey, you need to really do a good proper
+due diligence that there's no malicious
+software in your modules.
+Um, another trend that we are seeing is
+called softwaredefined vehicles and
+zonal control modules in cars. And
+basically what that is is that you
+you consolidate dozens of electronics
+modules available today in a few small
+number of very highowered modules. Um,
+think about like fairly powerful
+computers in your car, but just like two
+or three or four and those run
+hypervisors, virtual machines, and
+they're powerful enough to run the the
+normal usual uh security stuff. And it
+comes with its new concerns. I listed a
+couple here. And what I find so
+interesting here, it's actually an
+argument for, oh, maybe maybe security
+in the cars are almost solved. Because
+think about it, what you're in some
+sense doing is you are you can replace
+all these small ECUs or like proprietary
+software by like two or three um iPhones
+or Android phones that have extremely
+sophisticated security.
+uh where I think finding a buck pays you
+like a zero day, pays you like a million
+dollar upwards and here you go, you
+know, security in the car solved if you
+can get there.
+I I've been thinking a lot about
+self-driving cars. Um
+self-driving in the sense, you know, you
+don't have a steering wheel. And what I
+do understand is self-driving cars have
+remote assistance today. Um, I read
+Tesla has a control center where a human
+can really steer the car below 10 mph.
+Uh Whimo has a center where if the Whimo
+car exper or encounters a situation that
+it doesn't understand, it will ask the
+human in the operational center, what is
+happening here? Tell me more. You know,
+is that a school bus here? Can I pass
+that bus or not? So, there's this remote
+assistance and it's it's at least today
+required. So that implies the vehicle
+always needs to be connected. And what's
+interesting, these are fleets and
+they're owned by pretty rich companies.
+You know, these companies have money and
+they suffer if their cars can't run for
+even a day. Um, for instance, because of
+media coverage. And so to me it seems
+while you know in terms of technology a
+self-driving car is pretty close to a
+normal legacy car. It basically has a
+software stack that covers and handles
+the uh self-driving abilities and it has
+a lot of sensors. But you know like in a
+traditional way you could say yeah
+there's another piece of technology
+what's the risk let's mitigate. But I
+think what really changes here is the um
+the incentive for an attacker and
+suddenly it really makes it far more
+attractive for an attacker to hack into
+those cars. Um even physically, you
+know, take one car, hack that car, do
+something to it. You know, I I I do
+wonder if self-driving cars and fleets
+have a very different security profile
+than our normal traditional cars and if
+we might see a uh yeah a change of the
+situation when there once they are more
+on the road.
+I want to talk about AI.
+Everyone talks about AI, right? So AI
+attack side and then guess what the next
+slide is about the defense. So on the
+attack side
+and it's good timing in some sense you
+know I'm sure most of you heard about
+open AI and the hugging face uh event
+and so I think we understand you know
+what AI is pretty powerful to hack
+systems
+and the I think the good news is it
+doesn't really scale into automotive you
+know automotive isn't that the cars are
+just always connected Ed and you you
+have an AI agent that can just hack into
+the car. Well, they are not really so
+connected and um you know lots of the
+hacks happen by physically connecting to
+the vehicle trying to extract firmware,
+reverse engineering the firmware. AI
+can't do these physical things. But the
+point is um AI can't help you in scaling
+the attack, you know, unless AI can
+figure out how to build AI robots that
+do it then. But um it helps you with its
+capabilities.
+And one example that I found is there is
+a tricore
+MCP server available. MCP is the
+standard API if you want to use AI. Uh,
+Tyore is a standard Infinian
+microcontroller used in automotive
+and that server allows you to
+utilize AI to give it a piece of
+firmware that runs in a car today and to
+then uh
+debug the firmware meaning reverse
+engineering the firmware and figure out
+what is happening in there and can I
+find vulnerabilities. So in different
+words, the human still needs to get the
+firmware out of the car using physical
+attacks, but then I just leave it to the
+AI and I think we will increasingly see
+that. I also want to mention that
+because use the use of AI will lower the
+cost of attacks so much. I can really
+see that um new targets become
+uh get into reach of attackers that used
+to be not attractive because the
+financial return was so small but
+suddenly mounting the attack is cheap
+and the attack becomes really
+interesting and I do want to say that's
+a an idea that I heard by Dan Messi from
+the NSF at ESCON.
+All right. And then the defense side,
+good news, right? AI works for both
+offense and defense. Um,
+good one, one I thought really
+interesting and powerful number is at
+DARPA's AI cyber challenge. DARPA uh
+sponsored this cyber challenge over the
+last years to figure out what can AI do
+in terms of offense and defense. And so
+they call it the AI cyber challenge. Uh
+the finals was last year and I found
+numbers that 86% of the vulnerabilities
+found were found. 68%
+of those were
+or I think in total were patched. Uh it
+took 45 minutes to patch them and it
+cost $152 per patch. Amazing numbers,
+right? Humans would take days and days
+to do these sort of things. Uh AI can be
+used for vocs. VSOCs are vehicle
+security operations centers. Think about
+all cars talking to this VSOC saying,
+"Hey, this is what's going on in my car.
+Something is weird here." And the VSOC
+makes sense of it using AI, you know,
+pattern detection, anomaly detection.
+Think about it being fully automated.
+And now think about this much broader.
+That's actually what I'm working on.
+Think about you can uh automate your
+entire security product development and
+operational
+um security management afterwards where
+today it takes often months for humans
+to figure out what's happening here. AI
+can do it in minutes.
+Um the interesting part is there's a
+there's an annual survey by a company
+called uh a Bosch company in the
+security space and in that survey
+there's really a more pessimistic
+anticipation believing that AI will more
+uh will will increase the number of
+issues and vulnerabilities in the
+security space rather than be helpful.
+Um, so we need to see in what direction
+that goes.
+We're actually curious to hear your
+opinions. I I I like to think I'm I'm
+like to think of the optimistic one. I
+think AI will help more the defensive
+side.
+All right. I want to talk a little bit
+more about those operational demands. So
+um
+that I already mentioned today when
+there's a new vulnerability found in a
+vehicle I can tell you it easily takes
+half a year to fix it. Um it actually
+takes it can take a day to actually fix
+the piece of software. It takes half a
+year to do the entire thing. Um it part
+of it is just the the cooperation
+between the stakeholders. The car maker
+learns about it, ask their suppliers,
+please fix it. The supplier comes back
+and says yes. Uh you need to give us a
+purchase order for it. It will cost you
+that much money. Uh eventually they
+agree. The supplier does the fix and
+then we'll say, you know what, we need
+to do a safety validation here. And I
+heard that example from Bob Caster. What
+is if the safety validation requires
+testing in cold weather conditions and
+it just happens to be summer? You know,
+might want to wait for the next winter
+to come or you might want to ship it to
+wherever it is cold today. So it takes
+surprisingly long amount of time. um
+today months and I believe using AI and
+some some you know you can still not
+create artificial winter but some uh
+clever management you can really get
+that to ours. Another example I have is
+vehicle w firewall updates. Uh think
+about gateways in your car often called
+central gateways. They run firewalls,
+meaning you have, you know, like in a
+standard network, um, you you you allow
+messages or not, and you figure out, you
+know what, we really should change
+those. Still takes a lot of time today.
+Uh, should only take minutes, can be
+fully automated. And I believe the
+secret here is to just have all the
+information at a single spot. I call
+that here the asset manager. have all
+the risk collected in a single spot.
+It's called the risk manager. Um,
+add AI to it, make sense of it. And and
+you're you're halfway there. And while
+that sounds so easy, if you look at the
+existing systems today, they are widely
+distributed in stakeholders um because
+they are, you know, very legacy uh
+systems. uh risk is heavily distributed
+as well and so I think a lot can be
+done. Um if you know Ahmad Nasa from
+Nvidia he gave a talk about this. He
+spent an entire talk entire invited talk
+about this topic at ASA USA this year
+and I think really describing it so
+well.
+Anyways, the point being, you know,
+yeah, you got to use AI to move as fast
+as attackers that for sure will use AI.
+So, I do want to talk a little bit about
+what actually matters, what I believe
+matters moving forward. And the next
+slide, guess what is what do I believe
+does not matter so much. Um, I already
+talked about most of those. I want to
+point out one it's the EV charging or
+EVSE
+security and I see quite an uptake in
+porn to own. Uh we saw increased number
+of research papers at ESCAR this year. I
+s see there's a number of papers
+presented here today and tomorrow about
+EV charging and I believe that is such
+an interesting topic you know moving
+slightly outside of the car um and what
+I wonder is is that another topic like
+the invehicle automotive where there's a
+lot of hype and eventually we understand
+you know what there isn't much of an
+attacker incentive or motivation to go
+for it or Is there a real attacker
+incentive? And I know there's actually a
+paper um later today where at least one
+I think there's even two later today
+where the authors show
+um that you can charge for free. So hey,
+here we are with incentives, right?
+Everything that gives you money for free
+is good and will usually be done.
+Um what I find super interesting here is
+the middle middle. How do we optimize
+all this development process? Already
+talked about it quite a bit. And then of
+course we have the the more you know the
+enterprise IT
+uh security and cloud security space
+which you know is obviously a huge
+target but I I kept that out of Scopium.
+What will not matter and you know I
+don't want to offend anyone.
+Um and the first one I I put a big
+question mark but I think you know the
+adversarial machine learning and sensor
+attacks against adas and automation I
+know also being presented here today and
+tomorrow. so much cool research, you
+know, where you print 3D um patches for
+the road, put them on the road and show
+that the um AI or the ADA system in the
+vehicle is affected and starts going
+left where it should go straight.
+Really great research I would say today
+not relevant. Um
+you know, no not not a single evidence
+that it's used in the wild. But remember
+what I said um what the industry
+stakeholders are concerned about are
+attacks that scale and when I started
+putting this together as slide deck I
+said I use scale and wireless always
+together and eventually I thought you
+know what those attacks scale right you
+know I put one patch on the road and it
+affects not a million cars but it
+affects a lot of cars so scale does not
+automatically mean wireless it can also
+be uh 3D printed road patches that mess
+with your AI system in the vehicle or
+the sensors.
+Uh the other one where I put a question
+mark is IDS.
+So I I don't believe anymore in the you
+know can ids systems I saw by now dozens
+and they all have the issue of too many
+false alarms and too many in the sense
+of you know it needs to be somewhere at
+10 to the minus 10 to work and it's not
+um 10us 6 if at all but remember
+self-driving cars I can see that in
+self-driving cars uh you should expect
+that someone hacks into the cloud and
+tells the self-driving car, do this
+thing here. Remember I told you that
+there's remote operation centers and the
+self-driving car should be able to
+or I wonder if the self-driving car can
+be able to recognize that and say no
+that seems to be not okay. So, ids on
+the behavior behavioral level using the
+physical world as input. And then, you
+know, you can read it yourself. I I
+listed a few items here where I was
+hoping for a decade it would happen and
+it just didn't.
+Um, it really gets me to the end. Um,
+really quick, you know, I asked an AI,
+well, you know, put all of this into a
+nice chart and this is really what I
+believe happened. You know, there was
+the hype, I talked about it, and then
+the it went down and I think we are
+pretty much at the bottom and I the good
+news is either way whatever happens, I
+think it will either go slowly up if all
+of this is really driven by regulation,
+which is, you know, it's better than not
+having security. But I see see also a
+world where it can go up a lot. We will
+see. Future will tell, right? And that
+really gets me to the end. Um so I I
+discussed car makers really worry about
+scale.
+Um today that mean mainly means wireless
+systems regulation becomes the driver
+where I believe you know really figure
+out how can you either how can you do
+more security with less budget. Um I do
+believe related systems become
+increasingly interesting. I talked about
+EB chargers. I also believe everything
+privacy will eventually be more
+interesting. data protection, privacy,
+talked a lot about AI and you know if
+you work on self-driving security for
+sure would love to talk to you because I
+feel it's a little bit of a different
+word even though the technologies are so
+close.
+All right and that brings me to the end.
+Thank you.
+[applause]
