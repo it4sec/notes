@@ -1,0 +1,3177 @@
+ABOUT
+================================================================================
+Title: AI Is Making Coding Cheap. Here's What Matters Now
+Author/Channel: Perfology Clips
+Channel URL: https://www.youtube.com/channel/UCqonLaJbU-uBfy0EhUffM7Q
+Video URL: https://www.youtube.com/watch?v=AVvDFsMUxf0
+Video ID: AVvDFsMUxf0
+Published: 2026-09-09
+Duration: 1:45:08
+Views: 391,034
+Likes: 3,136
+Comments: 143
+
+Description:
+AI is changing what it means to be an engineer.
+
+Andrew Ng and Laurence Moroney offer two complementary perspectives on the future of AI — from how AI is changing software development and product discovery to the skills developers need to build valuable AI systems.
+
+Andrew Ng argues that AI is making software construction significantly faster and cheaper. As the cost of building software falls, the bottleneck increasingly shifts toward something harder:
+
+What should we build, and why?
+
+That changes the role of the engineer.
+
+The fastest-moving engineers may increasingly be those who can combine technical ability with product thinking, user empathy, experimentation, and a deep understanding of the problems customers actually need solved.
+
+Laurence Moroney approaches the same shift from the career and engineering side. His advice is simple:
+
+Don't become an AI shill. Become a trusted advisor.
+
+When someone says:
+
+“Let's build an AI agent.”
+
+The first response shouldn't be choosing an agent framework.
+
+It should be:
+
+Why? What problem are we solving? What outcome do we want?
+
+Moroney proposes a practical four-step workflow for building useful AI agents:
+
+1. Understand intent
+2. Plan
+3. Execute using tools
+4. Reflect and verify
+
+This process helps separate real AI engineering from AI hype.
+
+The discussion also explores a major split emerging in AI development:
+
+Big AI vs. Small/Open-Weights AI.
+
+Big AI focuses on increasingly powerful models and the race toward AGI.
+
+Small AI focuses on efficient, self-hostable and open-weight models that developers can fine-tune and run closer to the user.
+
+That second category could create major opportunities for engineers who understand model fine-tuning, deployment, optimization and local inference.
+
+Laurence Moroney has recently highlighted this Small AI shift, including increasingly capable open-weight models that can run on phones, laptops and single-GPU systems.
+
+Andrew Ng has similarly emphasized moving from AI experimentation toward AI products and workflow redesign rather than simply accumulating disconnected AI experiments.
+
+The career message from both speakers is therefore surprisingly practical:
+
+Don't just learn AI. Learn how to create value with AI.
+
+That means developing skills across:
+
+• AI and machine learning
+• Software engineering
+• Product thinking
+• User empathy
+• AI agents
+• Model fine-tuning
+• Open-weight models
+• Small AI and local inference
+• Problem solving
+• Communication
+• Measuring real business outcomes
+
+They also emphasize the importance of hard work — but not simply counting hours. The goal is meaningful output and measurable progress.
+
+And when evaluating a new AI technology, Moroney recommends making it as mundane as possible.
+
+Strip away the marketing.
+
+Understand the mechanics.
+
+Know what the model is actually doing.
+
+That is how engineers become trusted technical advisors instead of simply repeating the latest AI buzzwords.
+
+In this video, we break down Andrew Ng and Laurence Moroney's perspectives on AI engineering, AI jobs, AI agents, product discovery, AI hype, Small AI, open-weight models, career strategy and the future of software development.
+
+The biggest question is no longer:
+
+“Can AI write the code?”
+
+It's:
+
+“Do we know what should be built?”
+
+
+Copyright and Attribution Notice:
+All original lecture content, slides, and audio rights belong exclusively to Stanford University and Andrew ng and Laurence Moroney. This summary and commentary are produced strictly for educational purposes.
+
+🔔 Subscribe to our channel for more tech tips and tutorials:
+👍 Like us on Facebook : https://www.facebook.com/perfology
+👍 Add us on Instagram: https://www.instagram.com/perfologys/
+👍 Follow us on Linkedin: https://www.linkedin.com/in/perfology/
+
+#AndrewNg #LaurenceMoroney #AI #AIEngineering #AIAgents #AIJobs #SmallAI #ArtificialIntelligence #MachineLearning #SoftwareEngineering #Perfology
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# AI Is Making Coding Cheap. Here's What Matters Now
+
+## Authors / speakers and credentials
+
+### Andrew Ng
+- **Role in source:** Speaker discussing AI careers, AI-assisted software development, product management, and engineering practice.
+- **Credentials and affiliations stated:** The transcript places him in a Stanford teaching and academic context and refers to his relationships with Stanford faculty and frontier AI laboratories. However, his exact title, degree history, formal affiliations, and professional contact details were **not explicitly provided**.
+- **Contact details:** Not provided.
+
+### Laurence Moroney
+- **Role in source:** Speaker discussing AI careers, AI engineering, agents, responsible AI, open-weight models, and small AI.
+- **Credentials and experience stated:**
+  - Worked for many years at **Microsoft** and **Google**.
+  - Also worked at **Reuters** and in startups in the United States and abroad.
+  - Was a lead AI advocate at Google for many years.
+  - Worked on launching and advocating **TensorFlow**.
+  - Taught many people TensorFlow and PyTorch.
+  - Authored more than 20 books.
+  - Taught college courses.
+  - Currently runs a group at **ARM**.
+  - Described as a sought-after speaker.
+- **Contact details:** Not provided.
+
+### Source / publishing channel
+- **Author/channel:** Perfology Clips
+- **Channel URL:** https://www.youtube.com/channel/UCqonLaJbU-uBfy0EhUffM7Q
+- **Video URL:** https://www.youtube.com/watch?v=AVvDFsMUxf0
+- **Published:** 2026-09-09
+- **Duration:** 1:45:08
+- **Speaker contact information:** Not provided.
+- **Additional channel links listed in the source:**
+  - Facebook: https://www.facebook.com/perfology
+  - Instagram: https://www.instagram.com/perfologys/
+  - LinkedIn: https://www.linkedin.com/in/perfology/
+
+> The supplied material is a recorded discussion rather than a formal research paper. It does not provide a conventional abstract, bibliography, experimental methodology, or peer-reviewed results.
+
+## Summary
+
+The discussion argues that AI is rapidly reducing the cost and time required to construct software. As code generation improves, the main engineering bottleneck shifts from implementation toward deciding **what should be built, why it should be built, and whether it creates measurable value**.
+
+Andrew Ng emphasizes that AI coding tools and reusable AI building blocks—such as large language models, retrieval-augmented generation, agent workflows, voice AI, and deep-learning components—allow individuals and small teams to build more capable software much faster. He describes AI coding progress as particularly rapid and advises engineers to remain current with the latest generation of coding tools.
+
+The resulting change is not simply that engineers write code faster. Product definition, user research, experimentation, and feedback become relatively more important. Ng describes a repeated loop: build software, show it to users, gather feedback, revise the product concept, and repeat. Engineers who can combine implementation ability with user empathy and product judgment may move especially quickly because they do not have to wait for a separate product-management function to determine every next step.
+
+Moroney approaches the same transformation from the perspective of engineering careers and organizational value. He argues that possessing “AI” on a résumé is no longer sufficient. Companies increasingly want people who can understand AI deeply, connect technical work to business outcomes, deliver production systems, manage risks, and communicate technical reality clearly.
+
+A central theme of Moroney’s presentation is the distinction between an AI practitioner and a **trusted technical adviser**. When a company asks to “build an AI agent,” the first question should not be which framework to use. It should be: **Why? What problem are we solving? What outcome do we want?** In his example, a company initially asked for an agent but ultimately needed to make its salespeople more efficient. The resulting system automated much of the research required before sales calls and reportedly reduced wasted time by 10–15%.
+
+The speakers also discuss the likely division between large, externally hosted AI systems and smaller, self-hostable or open-weight models. Large AI systems are described as pursuing increasingly capable models and possibly AGI. Small AI emphasizes models that can be fine-tuned, deployed privately, and run on phones, laptops, or relatively limited hardware. Moroney expects demand for skills such as fine-tuning, optimization, deployment, and local inference, especially in privacy-sensitive areas such as medicine, law, and media.
+
+## Technical innovation and authors’ ideas
+
+### 1. The product-management bottleneck
+
+Ng’s primary organizational insight is that cheaper software construction changes the location of the bottleneck.
+
+Previously, engineering capacity could limit how quickly a product could be built. With AI-assisted coding, a clearly specified software project can be implemented much more rapidly. The scarce resource therefore shifts toward:
+
+- Identifying valuable problems.
+- Writing clear product specifications.
+- Understanding users.
+- Testing assumptions.
+- Deciding which features to build.
+- Measuring whether the result is useful.
+
+The proposed response is not to eliminate product thinking, but to integrate more product discovery into engineering work. Engineers who can speak with users, interpret feedback, and make informed product decisions can shorten the build–feedback–revision cycle.
+
+### 2. AI coding as an acceleration of implementation, not a replacement for engineering
+
+Both speakers reject the simplistic idea that generated code makes engineering unnecessary. Moroney argues that greater engineering skill improves the ability to use code-generation systems effectively.
+
+The engineer’s responsibilities expand to include:
+
+- Defining objectives before generating code.
+- Assessing whether generated code satisfies those objectives.
+- Understanding its architecture and dependencies.
+- Evaluating maintainability and security-related risks.
+- Managing documentation and future changes.
+- Determining whether the resulting technical debt is justified.
+
+Moroney distinguishes between code that is cheap to generate and finished, engineered software that remains expensive because it must be tested, maintained, documented, understood, and integrated into a business.
+
+### 3. Technical debt as a framework for responsible code generation
+
+Moroney applies the conventional idea of financial debt to AI-assisted software development. Every new system creates future obligations, including:
+
+- Bugs and fixes.
+- Documentation.
+- Maintenance.
+- New requirements.
+- Support.
+- User feedback.
+- Integration and operational work.
+
+Generated code can therefore be valuable when it creates more business value than the technical debt it introduces. It becomes harmful when teams generate prototypes without clear objectives, leave poorly structured code in production, or create systems that only the original author understands.
+
+His recommended controls are:
+
+1. Define clear objectives.
+2. Build toward a specific requirement.
+3. Test whether the requirement was actually met.
+4. Assess business value.
+5. Preserve human understanding through readable code, documentation, clear algorithms, and meaningful naming.
+6. Discard failed experiments when appropriate rather than treating generated code as intrinsically valuable.
+
+### 4. A four-stage architecture for useful AI agents
+
+Moroney presents a practical agent workflow:
+
+1. **Understand intent**  
+   Determine what the user or organization is actually trying to accomplish.
+
+2. **Plan**  
+   Break the objective into steps and select the tools available to the system.
+
+3. **Execute using tools**  
+   Browse, search, retrieve information, call services, or perform other actions required by the plan.
+
+4. **Reflect and verify**  
+   Compare the result with the original intent. If the objective was not met, revise the plan or repeat the process.
+
+The important technical idea is that an agent is not defined by branding or by the use of a particular framework. It is a structured loop connecting intent interpretation, planning, tool use, and verification.
+
+The video’s examples suggest that this workflow can improve generated outputs because the model receives more context about:
+
+- The desired outcome.
+- The available tools.
+- Tool-specific constraints.
+- The larger task or story.
+- Requirements for format, length, or quality.
+
+In the video-production example, Moroney says that explicitly providing the story context, scene objectives, tool constraints, and desired emotional effect led to more useful prompts and fewer failed generations.
+
+### 5. Turning hype into mechanics
+
+Moroney’s method for evaluating AI systems is to make them “as mundane as possible.” Instead of accepting claims such as “AI can create a movie” or “a model understands video,” engineers should ask what the system mechanically does.
+
+For text-to-video generation, he reduces the process to the creation of successive frames whose changes are guided by patterns learned from video and text. This mechanical interpretation is intended to:
+
+- Reduce hype.
+- Reveal limitations.
+- Clarify which skills are needed.
+- Help technical advisers explain the system to business leaders.
+- Make it easier to identify realistic applications.
+
+The broader principle is to distinguish engagement-driven claims from technically grounded capabilities.
+
+### 6. Small AI and open-weight deployment
+
+Moroney predicts a bifurcation between:
+
+- **Big AI:** large externally hosted models that continue growing in capability and may pursue AGI.
+- **Small AI:** efficient, self-hostable or open-weight models that can be adapted and deployed close to the user.
+
+The proposed technical opportunities include:
+
+- Fine-tuning models for downstream tasks.
+- Model optimization.
+- Deployment on local hardware.
+- Privacy-preserving inference.
+- Lower-latency applications.
+- Reducing the cost of operating cloud services.
+- Running models on phones, laptops, and single-GPU systems.
+
+The discussion emphasizes that self-hosted models can be especially valuable when organizations cannot share sensitive information with an external model provider. Examples mentioned include movie studios protecting intellectual property, medical organizations, and law offices.
+
+### 7. Local inference and hardware-aware AI
+
+Moroney describes AI moving beyond the conventional CPU-plus-GPU model. He discusses the use of CPU capabilities for AI workloads, including scalable matrix extensions, and connects this trend to mobile devices and embedded intelligence.
+
+The technical advantages described are:
+
+- Lower power consumption.
+- Reduced hardware footprint.
+- Lower latency.
+- Improved privacy.
+- Avoidance of uploading data to a backend service.
+- Reduced cost and complexity of maintaining a cloud-based inference service.
+
+An example involves searching photos directly on a device rather than uploading them to a remote service. The local approach could avoid data transfer, reduce response time, and eliminate some backend operating costs.
+
+### 8. Responsible AI as business and systems risk management
+
+Moroney argues that responsible AI must include more than broad social principles. It also requires understanding how safety mechanisms can fail in practice.
+
+His image-generation example illustrates a poorly implemented safety filter that treated some demographic terms inconsistently and generated stereotyped results for others. The lesson is that responsible AI systems need to be evaluated for:
+
+- Inconsistent behavior across similar inputs.
+- Overly narrow interpretations of fairness.
+- Stereotyping introduced by prompts or filters.
+- Reputation damage.
+- Business and product consequences.
+- Unintended effects of safety interventions.
+
+He frames risk mitigation as part of the engineering job: identify the risks of transforming a business process with AI, then design controls and verification procedures.
+
+## Key technical ideas
+
+- **AI reduces implementation cost, shifting the bottleneck to product discovery and specification.**
+- **Engineers increasingly benefit from combining software development with user research and product judgment.**
+- **Generated code should be evaluated as technical debt, not treated as free software.**
+- **Clear objectives and measurable business value should precede code generation.**
+- **A useful AI agent follows four stages: understand intent, plan, execute with tools, and reflect/verify.**
+- **Agent systems should be selected because they solve a defined problem, not because agents are fashionable.**
+- **Technical advisers should translate AI hype into mundane, inspectable mechanisms.**
+- **Production value, delivery, and business outcomes matter more than demonstrations alone.**
+- **Small, open-weight, self-hostable models may create opportunities in fine-tuning, privacy, local inference, and deployment optimization.**
+- **On-device AI can reduce latency, protect data, and lower backend infrastructure costs.**
+- **Responsible AI includes testing safety mechanisms for inconsistency, stereotyping, operational risk, and reputational damage.**
+- **AI careers require a combination of machine learning knowledge, software engineering, product understanding, communication, risk management, and delivery capability.**
+- **The speakers recommend building real projects, measuring output, learning continuously, and diversifying beyond one model, API, or framework.**
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+What I want to do today is um chat to
+you about career advice in AI. And um in
+previous years I used to do most of this
+you know lecture by myself. But what I
+thought I'd do today is um I'll share
+just a few thoughts and then hand it
+over to my good friend Lawrence Moroni
+who I invited to uh speaker and and
+kindly agreed to come all the way to San
+Francisco. just lives in Seattle uh to
+share with us a very broad market
+landscape for what he's seeing in the
+job market as well as tips for um career
+growing a career in AI. But there were
+just um two slides and then one more
+thought I want to share with you before
+I hand it over to Lawrence which is um
+it really feels like the best
+opportunity
+the best time ever to be building with
+AI and to building a career in AI. A few
+months ago, I know that in social media,
+traditional media, there are a few
+questions about, you know, is AI slowing
+down, right? I people saying, well, is
+GP5 that good? I I think it's actually
+pretty good, but there are questions
+about is AI progress slowing down? And I
+think part of the reason the question
+was even raised was because if a
+benchmark for AI is, you know, 100% is
+perfect answers, then if you make rapid
+progress, at some point you cannot get
+above 100% accuracy. But um one of the
+studies that most influenced my thinking
+was work done by uh this organization
+MER meter that studied
+as time passes how complex are the tasks
+that AI could do as measured by how long
+it takes a human to do that task. So few
+years ago maybe GBD2 could do tasks that
+a human could do in like you know a
+couple seconds and then they could do
+tasks that took a human 4 seconds then 8
+seconds then like a you know a minute 2
+minutes 4 minutes and so on and the
+study estimates that the length of task
+AI can do is doubling every seven
+months. Um and I think on this metric I
+feel you know optimistic that AI will
+continue making progress meaning the
+complexity of task as measured by how
+long a human takes to do something is
+doubling rapidly and same study with
+smaller data set seems to same study
+argued that AI coding um the doubling
+time is even shorter maybe like 70 days
+so this code that used to take me you
+know I don't know 10 minutes to write
+then 20 minutes to write 40 minutes to
+Right. And AI could do more and more of
+that. And so the reasons I think this is
+a golden age to be building best time
+we've ever seen is um maybe two themes
+which are more powerful and faster. So
+we can all all of you in this room can
+now write software that is more powerful
+than what anyone on the planet could
+have built you know like a year ago. Um
+by using AI building blocks. AI building
+blocks include large language models,
+rack, agent workflows, voice AI, and of
+course deep learning. It turns out that
+a lot of LMS have a decent at least
+basic understanding of deep learning. So
+if you ever prompt one of the frontier
+models to implement a cutting edge
+neuronet network for you like pro try
+prompting it to you know implement a
+transform network for you is actually
+not bad at at helping you use these
+building blocks to build software
+quickly. Um and and and so we have very
+powerful building blocks that were very
+difficult or did not exist a year or two
+ago. And so you can now build software
+that does things that no one else on the
+planet, right? Even the most advanced
+teams of planet could have done. And
+then also with um uh AI coding, the
+speed with which you can get software
+written is much faster than ever before.
+And I personally found it is important
+to stay on the frontier of tools because
+the tools for AI coding changes right I
+don't know really rapidly. So I feel
+like um uh you know since several months
+ago my personal number one favorite too
+became cloud code um moving on from some
+early generations I think uh and then I
+think um since the release of GPD5 I
+think open eye codeex has actually made
+tremendous progress and this morning
+Gemini 3 was released which you know
+haven't had time to play over it yet
+just this morning right seems like
+another huge leap forward so I feel like
+if you ask me every 3 months what my
+personal favorite coding tool is. It
+actually probably changes definitely
+every six months, but quite possibly
+every 3 months. And I find that um being
+half a generation behind in these tools
+means being frankly quite a bit less
+productive. And and I know everyone says
+AI is moving so fast or engineered so
+fast but AI coding tools of all the
+sectors in AI many things maybe don't
+move as fast as the hype says it does
+but AI coding tools is one sector where
+I see the pace of progress is is
+tremendous and staying at the latest
+generation of tools rather than half
+generation behind um makes you more
+productive
+and with our ability to build more
+powerful software and build it much
+faster than ever before. I think one
+piece of advice that I give now much
+more strongly now than even a year ago
+or two years ago is just go and build
+stuff right take classes from Stanford
+take online courses and additionally
+your opportunity to build things and I
+think Lauren's going to talk about
+showing them to others is greater than
+ever before but there's one weird
+implication of this that um is maybe not
+is is still I don't know more and more
+people are appreciating but not widely
+known which is the product management
+bottleneck which is that when it is
+increasingly easy to go from a clearly
+written software spec to a piece of
+code, then the bottleneck increasingly
+is deciding what to build or
+increasingly writing that clear spec for
+what you actually want to build. When
+I'm building software, I often think of
+going through a loop where we'll write
+some software, write some code, show it
+to users to get user feedback. I think
+of this as a PM or product management
+work and then based on the user feedback
+I'll you know revise my view on what
+users like what they don't like this UI
+is too difficult they want this feature
+they don't want that feature and uh
+change my conception of what to build
+and then go around this loop many times
+to hopefully iterate toward a product
+that users love and because of AI coding
+the process of building software has
+become much cheaper and much faster than
+before but that ironically shifts the
+bottleneck to deciding what to build. Um
+so
+um some weird trends I'm seeing in
+Silicon Valley and in many tech
+companies people have often talked about
+a engineer to product manager engine to
+PM ratio and you know you take these
+ratios a grain of salt because they're
+kind of very over the place but you hear
+companies talk about agm ratio of like
+4:1 or 7:1 or 8:1 this idea that one
+product manager writing product specs
+can keep you know like four to eight or
+some number like that engine is busy but
+because engineering is speeding up
+whereas product management is not sped
+up as far as much by AI as engineering
+um I'm seeing the end to PM ratio
+trending downwards maybe even two or one
+to one right so some teams I work with
+the proposed head counts was like 1 PM
+to one engineer which is a a ratio
+unlike almost all Silicon Valley so the
+traditional Silicon Valley companies and
+the other thing I'm seeing is that um
+engineers that can also shape products
+can move really fast where you go one
+step further take the engineer take the
+PM and collapse them into a single human
+and I find that um uh they're definitely
+engineers that like doing engineering
+work that you know don't enjoy talking
+to users and having that more human
+empathetic side of work but I'm finding
+increasingly that the subset of
+engineers that learn to talk to users
+get feedback develop deep empath empathy
+for users so that they can make
+decisions about what to build. Those
+engineers also the fastest moving people
+that I'm seeing um in Silicon Valley
+today. And I I I I I feel like um at the
+earliest stage of my career, one thing I
+regretted for years was um in one of the
+roles I had, I went to try to convince a
+bunch of engineers to do more product
+work. And I actually made a bunch of
+really good engineers feel bad for not
+being good product managers. And that
+was a mistake I made. Regretted that for
+years. I just shouldn't have done that.
+And part of me feels like I'm now going
+back to repeat that exact same mistake.
+Um, having said that, I find that um,
+uh, the fact that, you know, I can write
+code, but also talk to users to shape
+what to do that lets me and the
+engineers that can do this go much
+faster. So, I think it may be worth
+taking another look at whether engineers
+can um, do a bit more of this work. uh
+because then if you're not waiting for
+someone else to take the product to
+customers, you just write code, have a
+gut for what to do next and iterate,
+that pace, that velocity of execution is
+much faster.
+And then before I hand over to Lawrence,
+um just just one one one last thing I
+want to share which is uh in terms of
+navigating your career, I think one of
+the most strong predictors for your
+speed of learning and for your level of
+success is the people you surround
+yourself with. I think we're all social
+creatures. We all learn from people
+around us. And um it turns out that uh
+it turns out there you know studies in
+sociology that show that right if your
+five closest friends are smokers the
+odds of you being a smoker is pretty
+much high. Please don't smoke. Right.
+Well just just just a example. Um I
+don't know of any studies showing that
+if your five or 10 closest friends are
+really hardworking determined people you
+know learning quickly trying to make the
+world a better place of AI that you are
+more likely to do that too. But it's one
+of those things that I think is almost
+certainly true. So all of us are
+inspired by the people around us and
+we're able to find a good group of
+people to work with that helps drive you
+forward. Um in fact here at Stanford I
+feel very fortunate right the fantastic
+student body fantastic group of faculty.
+Um and then the other thing that I I I I
+think we're fortunate to have at
+Stanford is a connective tissue. So you
+know candidly a lot of the um people
+working at a lot of the cutting edge AI
+labs the frontier labs they were former
+students of a lot of different Stanford
+faculty and so that rich connective
+tissue you know candidly means that at
+Stanford we often find out about a lot
+of stuff that's not widely known because
+of the relationships the friendships and
+when some company does something you
+know one of my friends in the faculty
+will call up someone the company say hey
+that's weird does this really work And
+then so that re rich connected tissue
+means that um we're all just as we try
+to pull our friends forward our friends
+also pull us forward with the knowledge
+and the connected tissue and this
+knowhow of um bleeding which
+unfortunately is not all published on
+the internet at this moment in time.
+though. So I think while you're at
+Stanford um make those friends form that
+rich connective tissue and there have
+been a lot of times that just for myself
+where frankly I was thinking of going in
+some technical direction I'd have you
+know one or two phone calls with someone
+right close to research either a Sanford
+researcher or someone in the frontier
+lab they would share something with me
+right that I didn't know before and that
+changes the way I tech choose the
+technical architecture of a project. So
+I find that that group of friends you
+surround yourself with, those little
+pieces of information, try this, don't
+do that, that's just hype. Ignore the
+PR, you know, don't don't actually try
+that thing. Those things um make a big
+difference in your ability to to to
+steer the direction of your projects. So
+So while you're at Stanford, take take
+advantage of that. This connective
+tissue that Stanford has is actually
+really unique. There are lots of great
+universities in the world, but at this
+moment in time, I don't think there's
+any any uh I I don't want to sound like
+I'm doing PR for Stanford now, but I
+really think there's no university in
+the world that is uh as privileged as
+Stanford at this moment in time in terms
+of the richness of the connective tissue
+to to all of the leading um uh AI
+groups. Um but to me that that's also
+that we're lucky here to have a
+wonderful community of people to work
+with and learn from. And for you too, if
+you uh apply for jobs, the thing that is
+much more important for your career
+success would be if you go to a company,
+it'll be the people you work with
+day-to-day, right? Um so I I here here's
+one story that um uh that that I've told
+in previous classes I repeat, which is
+uh there's a Stanford student that I
+knew this was many years ago that um I
+knew and they did really good work at
+Stanford. I thought they were a highf
+flyier and they applied for a job at the
+company and they got a job offer from
+one of the companies with, you know, a
+hot AI brand. Um, this company refused
+to tell him which team he would join.
+They said, "Oh, come sign up for a job.
+There's a rotation system, matching
+system, blah blah blah. Sign up the
+dotted line first then, you know, we'll
+figure out what's a good project for
+you." Um, partly because, you know, it
+was a good good company, right? His his
+parents are proud of him for getting a
+job at this company. This student joined
+this company hoping to work on exciting
+AI project and after he signed on dotted
+line he was assigned to work on the
+backend Java payment processing system
+of the company. Nothing against anyone
+that wants to do Java backend payment
+processing systems. I think they're
+great but this was AI students that did
+not get matched to an AI project. And so
+uh for about a year he was really
+frustrated and he actually left this
+company after about a year.
+The unfortunate thing is I told this
+story in CS230 some years back and then
+um uh after I was already telling the
+story in this class, a couple years
+later, another student uh in CSU30 went
+through the same experience with the
+same company, not Java back and payment
+processing, but a different project. And
+I think this effect of um trying to
+figure out who you'll be actually
+working with day-to-day and making sure
+you're surrounded by people that inspire
+you and work on exciting projects, I
+think that's important. And if you're
+completely candid, if a company refuses
+to tell you what team you'll be assigned
+to, you know, that that that does raise
+a question in my mind, right? Uh of
+whether or not, you know, what will
+happen. Um, and I think that um, instead
+of working for the company with the
+hottest brand, sometimes if you find a
+really good team with really, you know,
+hardworking, knowledgeable, smart people
+trying to do good with AI, but the
+company logo just isn't as hot. I think
+that often means you actually learn
+faster and progress your career better.
+Uh, because it is, after all, we don't
+learn from the, you know, excitement of
+the company logo when you walk through
+the door. You learn from the people you
+deal with dayto-day. So I just urge you
+to use that as a as a huge criteria um
+for your selection process for for what
+you decide to do, right? Um and uh I
+think um and and and then uh but but I
+think number one uh on on my advice is
+it's become much easier than ever before
+to build powerful software faster. And
+what that means is um do be responsible.
+Don't build software that hurts others.
+uh and at the same time there are so
+many things that each of you can build
+and what I find is the number of ideas
+out in the world is much greater the
+number of people with the skill to build
+them so I know that finding jobs has
+gotten tougher for fresh college grads
+at the same time a lot of teams you know
+we just can't find enough skilled people
+right uh and so there are a lot of
+projects in the world that if you don't
+build it I think no one else will build
+it either uh so you don't need to so
+long as you don't harm others you know
+to to be responsible possible. There a
+lot of things that you don't need to
+wait for permission. You don't need to
+wait for someone else to do it first and
+then you do it. Um the cost of a failure
+is much lower than before because you
+waste a weekend but learn something.
+That seems fine to me. So I think so
+long as you're being responsible going
+for it, trying things out um and
+building lots of things would would be
+the number one most important thing I
+think would help your careers. Um, and
+uh, yeah, I think I think uh, I'm going
+to say one last thing that is um,
+considered not politically correct in
+some circles. Uh, but but I'll just say
+it anyway, which is in some circles it
+has become considered not politically
+correct to encourage others to work
+hard. I'm going to encourage you to work
+hard. Now I think the reason some people
+don't like that is because there are
+some people they're in a phase of life
+where they're not in a position to work
+hard. So right after my children were
+born I was not working hard you know for
+a short period of time right uh and
+there are people because of a injury
+disability you know whatever very valid
+reasons they're not in a position to
+work hard at that moment in time and we
+should respect them support them make
+sure they're well taken care of even
+though they're not working hard. Having
+said that, all of my, you know, say PhD
+students that became very successful, I
+saw every single one of them work
+incredibly hard. I mean, the 2 a.m.
+sitting up hyperparameter tuning, you
+know, been there, done that, right?
+Still doing it some days. Uh, and if you
+are fortunate enough to be in a position
+in life where you can work really hard,
+um, there are so many opportunities to
+do things right now. Um, if you get
+excited as I do, spending evenings and
+weekends coding and building stuff and
+getting user feedback, you know, if you
+lean in and do those things, it will
+increase your odds of being really
+successful. So, I don't know, maybe I
+get in some trouble with some people
+encourage you to work hard, but I find
+that uh the truth is people that work
+hard get a lot more done. We should also
+respect people that don't and people
+that aren't in a position to do so. But
+um uh you know between watching some
+dumb TV show versus finding your agentic
+coder on a weekend to try something. I'm
+going to choose the latter almost every
+time, right? Unless I watch a show with
+my kids. Sometimes I do that. But you
+mean but just you know uh beside I I I
+hope you do that. Uh and uh all right.
+So that was the main things I want to
+say. Um what I want to do is uh hand the
+stage over to my good friend Lawrence
+Moroni um who who who share um a lot
+more about career advice on AI. May just
+quick intro know Lawrence for a long
+time. Um he's done a lot of online
+education work sometimes with me and my
+teams. Taught a lot of people tensorflow
+taught a lot of people pietorch. He was
+lead AI advocates at Google for many
+years. Now runs a group at ARM. Um I've
+also enjoyed quite a few of his books.
+This is one of them. He recently also
+published a new book on PieTorch. This
+is an excellent book introduction to
+PyTorch and uh is a very sought-after
+speakers in many circles. So I was very
+grateful when he agreed to come speak to
+us. So
+>> pleasures all mine. I just want to
+reinforce something that Andrew was
+talking about earlier on about choosing
+the people that you work with being very
+important. But I also want to show that
+like from the other way around that the
+company when they're interviewing you
+are also choosing you. And the good
+companies really want to choose the
+people that they work with also. And
+I've been doing a lot of mentoring of
+young people over the last particularly
+over the last 18 months who are hunting
+for careers for themselves. And I want
+to tell the story of one young man and
+this uh this guy very well educated,
+great experience,
+super elite coder. Um he he could do
+every challenge that was in front of
+him. And he got laid off from his job in
+April. He worked in medical software and
+the medical software business has been
+changing drastically. Funding has been
+cut by the federal government in a
+number of areas and he got laid off from
+his job. And with his experience, with
+his ability, with his skills, all of
+these kind of things, he thought that it
+would be very easy for him to find
+another job. And the poor young guy had
+a really terrible April. Like he got
+laid off from his job in April.
+Immediately before that, his girlfriend
+had broken up with him. And then a
+couple of weeks later, his dog died. So
+he was not in a good place. And so I sat
+down with him after a couple of months
+and took a look and he had a spreadsheet
+of jobs that he was applying to and he
+had over 300 jobs that he was tracking
+in the spreadsheet. And in a number of
+these jobs, he actually got into the
+interview process and he went very deep
+in the interview process with companies
+like Meta. Um, uh, who else? Not Google.
+was Meta, there was Microsoft, there was
+one of the other large tech companies
+where you do like lots and lots of
+interview loops. And every time towards
+the end of the loop, he knew he did a
+great loop. He solved all the coding. He
+had great conversations with the people
+or at least he thought he had. And then
+every time within a day, the recruiter
+would call him and say, "No, you didn't
+get the job."
+And it was like it was it was
+heartbreaking. And like I said, 300 plus
+jobs he had been tracking. So, I started
+working with him to kind of do some mock
+interviews and to do some fine-tuning.
+Um, oh, it was uh it was Jeff Bezos
+company, not Amazon. Um, that was one of
+the other big tech company that he'd
+interviewed with. And I started like
+working through him and doing some test
+interviews and all this kind of thing
+with him. And terrific, terrific
+candidate. Couldn't figure out what was
+going wrong until I decided to try and
+do a different sort of interview where I
+gave him a really tough interview. I
+gave him some tough lead code. I gave
+him some really obscure corner cases in
+his coding and I saw how he reacted and
+how he reacted was the advice that was
+given to him in the recruiting
+pamphlets. And a lot of these recruiting
+pamphlets will say things like you're
+going to have an opp you're going to
+have a an opportunity to share an
+opinion and you got to stand your
+ground. You got to have a backbone.
+Don't bend.
+His interpretation of that was to be
+really really tough. Right? So I would
+pick corners in his I would pick holes
+in his code. I'd pick corner cases where
+things may not work and I would give him
+a test of crisis. And this advice that
+he'd been given to stand his ground
+ended up making him kind of hostile in
+these interview environments. And I was
+looking at this then from the point of
+view of what Andrew was just talking
+about where it's a case of hey good
+people good teams people that you can
+work together with. And from the
+interviewer perspective, if I'm managing
+this team, this person is that cliche
+10x engineer, but I don't want him
+anywhere near my team because of this
+attitude. Um, we worked on that. We
+fine-tuned it. And that the the strange
+part is he's a really, really nice guy.
+It's just this was the advice he was
+given and he followed that advice and he
+failed so many interviews as a result.
+So when I gave him the next job that he
+was interviewing at was at a company
+where teamwork is very very highly
+valued and uh the good news is he got
+the job at that company he's now working
+there he doubled his salary from the job
+he was laid off from and he ended up
+having like about now he looks back on
+it he had six months of unemployment um
+but at the time when he was going
+through all of that it was a very very
+difficult time for him. So the flip side
+of it like if you're looking at a
+company and looking at the people you'll
+be working with is very very important
+but also realize they are looking at you
+in the same way. And so if you've gone
+to um tech interview coaching and they
+gave you that advice to stand your
+ground and have a backbone. It's good to
+do that but don't be a jerk while you're
+doing so. Can you see my slides? Okay.
+So I'm Lawrence. Um I've been working in
+tech for more decades than chatp thinks
+there are ores in strawberry. uh and uh
+so I've worked in many of the big tech
+companies. I spent many years at
+Microsoft, spent many years at Google,
+also worked in uh places like Reuters.
+I've done a lot of work in startups both
+in this country and abroad. And so what
+I want to really want to talk about
+today is like to think about what does
+the career landscape look like today um
+particularly in AI because um first of
+all what Andrew said about you're in
+Stanford you've got the ability to um
+make use of the networks that you have
+in Stanford make use of the prestige
+that you have and I say use every weapon
+you have because unfortunately the
+landscape right now is not ideal. We've
+gone through some very difficult times.
+All you have to do is look at the news
+and you can see massive tech layoffs,
+slowing hiring in tech and lots of stuff
+like that. But it's not necessarily a
+bad thing um if you do it the right way.
+So I want to just have a quick look the
+job market reality check. Actually out
+of interest I don't know this is a um
+are you juniors? You're graduating this
+year or you're graduating next year or
+what is the general survey? Your third
+year of four.
+Third year of three, I'll say. So,
+you're going to be graduating coming
+summer. How many people are already
+looking for jobs?
+Okay. Quite a few of you. How many
+people have had success?
+Nobody. Oh, one. Okay. Sort of. Okay,
+that's good. So, like you're probably
+seeing some of these things, the signals
+out there. Junior hiring slowing
+significantly. When I say junior, I mean
+like graduate level. High-profile
+layoffs are dominating the headlines. I
+was at Google a couple of years ago when
+they had the biggest layoff they'd ever
+had. We're seeing layoffs at the likes
+of Amazon, Microsoft, other companies
+like that. Uh it feels that entrylevel
+positions are scarce and I'm underlying
+the word feels there and I want to get
+into that in a little bit more detail
+later. And also competition is fierce.
+But my question is should you worry and
+I say no because if you can approach
+things in the right way, if you can
+approach the job hunting thing in the
+right way, particularly understanding
+how rapidly the AI landscape is
+changing, then I think people with the
+right mindset will thrive.
+So what do I mean by that? So as Andrew
+had mentioned, the AI hiring landscape
+is changing because the AI industry is
+changing, right? um the AI industry. I I
+actually first got involved in AI back
+way back in 1992. Um I worked in it for
+a little while just before the AI
+winter. Everything failed drastically.
+Um but I got bitten by the AI bug and
+then in uh 2015
+when Google were launching TensorFlow, I
+got pulled right back into it. Became
+part of the whole AI boom, launching
+TensorFlow, advocating TensorFlow to
+millions of people and seeing the
+changes that happened. But along 2021
+2022, we had a global pandemic. The
+global pandemic caused a massive
+industrial slowdown. This massive
+industrial slowdown meant that companies
+had to start pivoting towards things
+that drove revenue and directly drove
+revenue. And at Google, TensorFlow was
+an open source product. It didn't
+directly drive revenue. We began to
+scale back. Every company in the world
+also scaled back on hiring at this time.
+Then we get to about 2022, 2023. What
+happens? We begin to come out of the
+global pandemic. We begin to realize all
+industries have this massive log jam of
+non-hiring that they had done or hiring
+that they hadn't done. And we're also
+entering a time where AI was exploding
+on the scene thanks to the work of
+people like Andrew. The uh the world was
+pivoting and changing to be AI first in
+just about everything. And every company
+needed to hire like crazy. every company
+then hiring like crazy in 2022 2023
+meant that most companies ended up
+overhiring.
+Um so and what that generally meant was
+people who were not qualified for higher
+positions usually got higher positions
+because you had to enter into a bidding
+war just to be able to get talent. You
+ended up having talent grabs and you
+ended up having stories like the one
+Andrew told where it's a case of here's
+a person with AI talent. Let's grab
+them. Let's throw money at them. Let's
+have them come work for us and then
+we'll figure out what do we want to do.
+So, as a result, 2022, 2023, all of this
+massive overhiring happens because of AI
+and because of the COVID log jam. And
+then 2024, 2025 is the great wakeup,
+right? Where a lot of companies realize
+this overhiring that they had done. They
+have ended up with a lot of people who
+are underqualified. Oh, sorry. Yeah,
+underqualified for the job that they
+were doing. A lot of people ended up
+getting hired just because they had AI
+on their resume. And there's a big
+adjustment going on. And in the light of
+this big adjustment, show just one
+second. In the light of this big
+adjustment, oh, you're not seeing my
+slides. Okay. Uh, and in the light of
+this big adjustment, there we go. Uh, I
+think it's cuz my power uh I'm not
+plugged into power mains. And in the
+light of this big adjustment, then what
+has happened is now a lot of companies
+are much more cautious about AI skills
+that they're hiring. And if you're
+coming into that with that mindset and
+understanding that realize opportunity
+is still there and opportunity is there
+massively if you approach it
+strategically. So what I want to talk
+through today is how you can do exactly
+that.
+So I see three pillars of success in the
+business world uh and particularly in
+the AI business world. And nowadays you
+can't just have AI on your resume and
+get overhired. Nowadays, not only do you
+have to be able to tell that you have
+the mindset of these three pillars of
+success, but you also have to be able to
+show. And to be able to show these,
+there actually has never been a better
+time. As Andrew demonstrated earlier on,
+the ability to vibe code things into
+existence. He doesn't like the word vibe
+code. I kind of agree with him, but the
+ability to prompt things into existence
+or whatever the word is that we want to
+use um allows you to be able to show
+better than ever before. Um he was
+talking earlier on about product
+managers and he had this time when he
+got engineers to be product managers and
+then those engineers ended up being
+really bad product managers. I actually
+interviewed at Google twice and failed
+twice uh despite being very successful
+at Microsoft, authored 20 plus books,
+taught college courses. I interviewed at
+Google twice and failed twice because I
+was interviewing to be a product
+manager. uh then when I interviewed to
+be an engineer they hired me and they
+were like why didn't you try to join us
+years ago you know so a lot of it is
+like just you know being a good engineer
+you've got the ability to do that and
+show that nowadays and with that ratio
+of engineer to product manager changing
+engineering skills are also far more
+valuable than ever so the three pillars
+to success number one understanding and
+depth and I'm going to mean this in two
+potential two different ways number one
+is academically right to have the
+understanding and depth depth
+academically of machine learning of
+particular model architectures to be
+able to understand them to be able to
+read papers to be able to understand
+what's in those papers and to be able to
+understand in particular how to take
+that stuff and put it to work. The
+second part of it understanding in depth
+is really having your finger on the
+pulse of particular trends and where the
+signal to noise ratio favors signal in
+those trends. And I'm going to be going
+into that in a lot more detail a little
+bit later.
+Secondly, and also very very importantly
+is business focus. Um so Andrew said
+something politically incorrect earlier
+on. I'm going to also say a similar
+politically incorrect thing. First of
+all, uh hard work. Um hard work is such
+a nebulous term that I would say that
+think about hard work in terms of you
+are what you measure. There is the whole
+trend out there. I'm trying to remember.
+Was it 996 or is it 669? 996, right?
+9:00 am to 900 pm six days a week is a
+metric of hard work. It's not. That's
+not a metric of hard work. That's a
+metric of time spent. Um so I would
+encourage everybody in the same way as
+Andrew did to think about hard work, but
+h what hard work is is how you measure
+that hard work. You know, you can work
+eight hours a day and be incredibly
+productive. You can work six hours a day
+and be incredibly productive. But it's
+the metric of how hard you work and how
+you measure that. I personally measure
+that from output, things that I have
+created in the time that I spent. Um I I
+joke a lot, but it's true that um I've
+written a lot of books. Uh Andrew held
+up one that one that he held up that um
+he helped me write a little bit. Um I
+actually wrote that book in about two
+months. And people say, well, how how do
+you have time with your jobs and all
+these kind of things? How do you you
+must work like 16 hours a day in order
+to be able to do this? But I actually um
+the key to me being able to write books
+is uh baseball. any baseball fans here?
+So, I I love baseball, but if you sit
+down and try to watch baseball on TV, a
+match can take like three and a half or
+four hours. So, all of my writing I tend
+to do in baseball season. So, I'm like
+if I'm going to sit down, I like the
+Mariners from I'm from Seattle. I like
+the Dodgers.
+Nobody booed. Okay, good. Uh, and you
+know, so like usually one of those is
+going to be playing at 7:00 at night.
+So, instead of sitting in front of the
+TV just like watching baseball
+mindlessly, I'll actually be writing a
+book while baseball's on in the
+background. It's a very slowmoving game.
+This is something like that's the hard
+work, you know, in this case. And I
+would encourage you to try to find areas
+where you can work hard and produce
+output. And that's the second pillar
+here is that business focus, the output
+that you produce to align that output
+with the business focus that you want to
+have and with the work that you want to
+do. There's an old saying, don't dress
+for the job you have, dress for the one
+you want. I would say a a new angle on
+that saying would be don't let your
+output be for the job you have let your
+output be for the job you want. And if I
+go back to when I spoke about I failed
+twice at Google to get in. The third
+time when I got in um I had actually
+decided to do to approach this in a
+different way and I was interviewing at
+the time for their cloud team. Uh they
+were just really launching cloud. Um and
+I had just written a book on Java and so
+I decided to see what I could do with
+Java in their cloud. I ended up writing
+a Java application that ran in their
+cloud for predicting stock prices using
+technical analytics and all that kind of
+stuff. Um, and when I got to the
+interview, instead of them asking me
+stupid questions like how many golf
+balls can fit in a bus, you know, they
+they saw this code. I had put this code
+I remember I was producing output for
+the job I wanted. I'd put this code on
+my resume and my entire interview loop
+was them asking me about my code, right?
+So, it put the power on me. It gave me
+the power to communicate about things
+that I knew as opposed to going in blind
+to somebody asking me random questions
+in the hope that I'll be able to answer
+them. And it's the same thing I would
+say in the in the AI world, the uh the
+business focus, the ability for you now
+to prompt code into existence, to prompt
+products into existence, you know, and
+if you can build those products and line
+them up with the thing that it is that
+you want to do, be it at Google or a
+meta or startup or any of those kind of
+things and have that in-depth
+understanding not just of your code, but
+how it aligns to that business. This is
+a pillar of success in this time and
+age. And I will also argue that even
+though it looks like the signals look
+like there aren't a lot of jobs out
+there, there are. What there aren't a
+lot of is a good combination of jobs and
+people to match them. And then of course
+the this bias towards delivery. Ideas
+are cheap. Execution is everything. Um
+I've interviewed many many people who
+came in with very very fluffy ideas and
+no way to be able to ground them. I've
+interviewed people who came in with
+halfbaked ideas that they grounded very
+very well. Guess which one's got the
+job. Right? So I would say these three
+things understanding in depth of the
+academics behind AI of the um the
+practicalities behind AI and the things
+that you need to do business focus
+focusing on delivery for the business
+understanding what the business needs
+and being able to deliver for that and
+again that bias towards delivery.
+So uh quick pivot what's it actually
+like working in AI right now? It's
+interesting. Okay. Um, so as recently as
+like 2 or 3 years ago, working in AOI
+was if you can do a thing, you're great.
+Um, if you can build an image
+classifier, you're golden. We'll throw
+six figure salaries and massive stock
+benefits at you. Unfortunately, that's
+not the case anymore, right? It's really
+a lot of today, what you'll see is the
+Pword production. What can you do for
+production? What can you do? Um if it's
+building new models, if it's optimizing
+models, if it's understanding users, uh
+UX is really really important.
+Everything is geared towards production.
+Everything is biased towards production.
+The history that I told you about like
+you know going from the pandemic into
+the overhiring phase that we'd had um
+you know the the businesses have pulled
+back and are optimized towards the
+bottom line. I have an old saying that
+the bottom line is that the bottom line
+is the bottom line. And this is the
+environment that we're in today. And if
+you can come in with that mindset when
+you're talking with companies, that's
+one of the keys to open the door.
+One of the things I've seen in the field
+has been maturing from it used to be
+really nice that we could do cool things
+and we could build cool things. Now it's
+really build useful things. Those useful
+things can be to cool too by the way and
+the results of them can be cool. and the
+changes that we see that come about as a
+result of delivering them can be cool.
+Um so it's not just coolness for
+coolness sake but to really you know to
+focus on delivery focus on um being able
+to provide value and then the coolness
+will follow I guess what I'm trying to
+argue.
+So four realities number one
+unfortunately nowadays business focus is
+non-negotiable. Now let me I'm going to
+be a little bit politically incorrect
+here again for a moment. Um for I've
+been I've been working like I said for
+most of the last 35 years in tech. I
+would say for most of the last 10 years
+a lot of large companies particularly in
+Silicon Valley you know have really
+focused on developing their people above
+everything. Part of developing their
+people was bringing their entire self to
+work. Part of bringing their entire self
+to work was bringing the things that
+they care about outside of work. Um and
+that led to a lot of activism within
+companies. Now please let me underline
+this. There is nothing wrong with
+activism. There is nothing wrong with
+wanting to support causes wanting to
+support causes where of justice. There
+is absolutely nothing wrong with that.
+But the overindexing on that has in my
+experience has led to a lot of companies
+getting trapped by having to support
+activism above business. Um I you've
+probably seen an example about two years
+ago of where activists in Google broke
+into the Google Cloud heads office
+because they were protesting a c a
+country that uh Google cloud were doing
+business with. They broke into his
+office. They had a sitin in his office
+and they they used the bathroom all over
+his desk and stuff like that. This is
+where activism got out of hand. And as a
+result, the unfortunate truth is the
+good signals in that activism are now
+being lost because of those actions.
+People are being laid off, people are
+losing jobs, activism is being stifled,
+um, and business focus has become
+non-negotiable. There's a bit of a
+pendulum swing going on. And the
+pendulum that had swung too far towards
+allowing people to bring their full
+selves to work is now swinging back in
+the other direction. We might blame the
+person in the White House and all that
+for for these kind of things, but it's
+not solely that. It is that ongoing
+pendulum there that and I think it's an
+important part of it is that you have to
+realize going into companies now that
+business focus is absolutely
+non-negotiable.
+Secondly, risk mitigation is part of the
+job. Uh and I think a very important
+part of any job particularly with AI. I
+think if you can come into AI with a
+focus and a mindset around understanding
+the risks of transforming a particular
+business process to be an AI oriented
+one um and to help mitigate those risks
+I think is really really powerful and I
+would argue in an interview environment
+that's the number one skill to have to
+have that mindset around you are doing a
+business transformation from heruristic
+computing to intelligent computing
+here's the risks here's how you mitigate
+those risks and here's the mindset
+behind that. Uh the third part is
+responsibility is evolving. Now
+responsibility in AI um has again
+changed from a very fluffy definition of
+you know let's make sure that the AI
+works for everybody uh to a definition
+of let's make sure that the AI works
+let's make sure that it drives the
+business and then let's make sure that
+it works for everybody. often that has
+been inverted over the last few years
+and that has led to some famous
+documented disasters. Let me share one
+with you.
+Uh let's see. I have lots of windows
+open. Okay. Uh anybody know everybody
+knows image generation, right? Text to
+image generation. I want to share I um
+these were things that happened a couple
+of years ago with Gemini.
+So with Gemini, I was doing some testing
+around this one and I was working
+heavily on responsible AI
+and part of responsible AI is you want
+to be representative of people and when
+you're building something like if you're
+a Google and you're indexing information
+you really want to make sure that you
+don't reinforce negative biases and if
+you're generating images it's very to
+easy to reinforce negative biases. So
+for example, if I said give me an image
+of a doctor, right? If the training set
+primarily has men as doctors, it's more
+likely to give a man. If I say give me
+an image of a nurse, if the training set
+more likely to have women as nurses,
+it's more likely to give me an image of
+a woman. But that's reinforcing a
+negative stereotype. So I wanted to do a
+test of how Google were trying to
+overcome that given that these negative
+biases are already in the training set.
+So, I said, "Okay, here's a prompt where
+I said,"Give me a young Asian woman in a
+cornfield wearing a summer dress and a
+straw hat looking intently at her
+iPhone." And it gave me these beautiful
+images. It did a really nice job.
+Okay. And I said, "This is a virtual
+actress I've been working with. I'll
+share that in a moment." And I say,
+"Okay, what if I ask for an Indian one?"
+So, I said, "Okay." Whoops. A young
+Indian woman. Same prompt. and it gave
+me beautiful images of a young Indian
+woman. Then I was like, okay, what if I
+want her to be black?
+For some reason, it only gave me three.
+I'm not sure why, but it still adeared
+to the prompt. So, the responsibility
+was like looking really, really good.
+So, then I asked it to give me a Latina.
+Latina. It gave me four. But, yep, she
+looks pretty Latina. Maybe the one on
+the bottom left looks a little bit like
+Hermione Granger. Uh, but on the whole
+looks pretty good. Then I asked it to
+give me a Caucasian. What do you think
+happened?
+While I understand your request, I am
+unable to generate images of people as
+this could potentially lead to harmful
+stereotypes and biases. Right. This was
+a very poorly implemented safety filter
+where the safety filter in this case was
+like looking for the word Caucasian or
+looking for the word white and the
+result saying it wouldn't do it. I was
+like okay well let me let me test the
+filter a little bit and I said okay
+instead of Caucasian let me try white
+and yep while I'm unable to fulfill your
+while I'm able to fulfill your requests
+uh I'm not currently generating images
+of people. It lied to my face, right?
+Because it had just generate images of
+people. Anybody know the hack that I
+used to get it to work.
+This is a funny one. So, I will show you
+one moment.
+I asked it to generate an Irish woman.
+What do you think it did?
+Right. It gave me this image of an Irish
+woman, no problem, in a summer dress,
+straw hat, looking intently at her
+phone. But what do you notice about this
+image?
+She's got red hair in every image,
+right? I grew up in Ireland. Um, and
+Ireland does have the highest proportion
+of red heads in the world. It's about
+8%. But if you're going to draw an image
+of a person and associate a particular
+ethnicity with a color of hair, you can
+begin to see this is massively
+problematic. There are areas, I believe,
+in China, where the description of a
+demon is a red-headed person, right? So
+what ended up happening here from the
+responsible AI perspective was one very
+narrow view of the world of what is
+responsible and what is not responsible
+ended up taking over the model ended up
+damaging the reputation of the model and
+damaging the reputation of the company
+as a result. In this case it's
+borderline offensive to draw all Irish
+people as having red hair. But that
+never even entered into the mindset of
+those that were building the safety
+filters here. So when I talk about
+responsibility is evolving that's the
+direction that I want to sorry one
+moment get my slides back that's the
+direction I want you to think about that
+now responsible AI has moved out of very
+fluffy social issues and into more
+hardline things that are associated with
+the business and prevent damaging the
+reputation of the business. There's a
+lot of great research out there around
+responsible AI and that's the stuff
+that's been rolled into products. And
+then of course like I just showed with
+Gemini, learning from mistakes is
+constant. Question at the front.
+>> Yes, I've also heard that I didn't
+verify that Gemini
+this be true that they mix races and
+ethnicities with historical context.
+>> Yeah.
+>> Yeah. So the question was like you know
+issues where races and things were mixed
+mixed in historical context was the same
+problem. So, for example, if you had a
+prompt that said, "Draw me a samurai,"
+right? The idea was like they didn't
+want to have you the the engine that
+changed the prompt to make sure that it
+was fair would end up saying, "Give me a
+mixture of samurai of diverse
+backgrounds, right? And then you'd have
+male and female samurai, samurai of
+different races, and those kind of
+things." And it was the same prompting
+that ended up causing the damage that I
+just demonstrated. So the idea was to
+intercept your prompts to make sure that
+the output of the model would end up
+providing something that was more fair
+when it comes to diverse representation.
+Um so it was a very naive solution that
+ended up being rolled in. That was a few
+years ago. They've massively improved it
+since then. But that's when I'm talking
+about if you're working in the AI space
+nowadays, that's how responsibility is
+evolving. You can't just get away with
+that stuff anymore. Right? That Gemini
+lesson was a good that Gemini example is
+a good lesson from that and the mindset
+of you will make mistakes. So learning
+from mistakes is a constant ongoing
+thing. And going back to the people
+point that Andrew made earlier on the
+people around you will make mistakes
+too. So to have the ability to give them
+grace when they make mistakes and to
+work through those mistakes and move on
+is really really important and is a is a
+reality um of AI at work. I've spoken a
+lot about the business focus advantage
+so I'm going to skip over this.
+So now let's talk about vibe coding. Um
+so let's talk about the whole idea of
+generating code. Now the meme is out
+there that it makes engineers less
+useful by the fact that somebody can
+just prompt code into existence. Um
+there is no smoke without fire of course
+but I would say don't let that meme get
+you down because that's when you start
+peeling into these things that is
+ultimately not the truth. The more
+skilled you are as an engineer, the
+better you become using this type of
+vibe. You somebody give me another
+phrase other than vibe coding, using
+this kind of prompt to coding. And I
+always like to think about this and to
+try and put you and put people that I
+speak with into the role of being a
+trusted adviser for the people that you
+speak with. So whether you're
+interviewing with somebody, get yourself
+into the mindset of being a trusted
+adviser of the company that you're
+interviewing for. whether you're
+consulting or whatever those kind of
+things are. So when you want to get into
+the idea of being a trusted advisor,
+then you really need to understand the
+implications of generated code. And
+nobody can understand the implications
+of generated code better than an
+engineer. And the metric that I always
+like to use around that is technical
+debt. Quick question, are you familiar
+with the phrase technical debt?
+Nobody. Okay. Um, Andrew and I were
+doing a conference in New York on Friday
+and I used the phrase and I saw a lot of
+blank faces. So, I didn't realize that
+people didn't understand what technical
+debt is. So, let me just take a moment
+to explain that because I find it's an
+excellent framework to help you
+understand the power of vibe coding.
+Think about debt the way you normally
+would, right? Buying a house. If you buy
+a house, you know, like say you borrow
+half a million dollars to buy a house
+and a 30-year mortgage. um when you're
+buying that house that half a million
+dollars with all the interest you pay is
+about double. So you end up paying back
+the bank about a million dollar on half
+a million owned. So you have 30 years of
+home ownership at a cost of $1 million
+in debt. That is probably a good debt to
+take on because the value of the house
+will increase over that time. You're not
+paying rent over that time. And that
+million dollars that you're spending on
+this house over those 30 years is a good
+debt to take on because you're getting
+greater than a million dollars worth of
+value out of it. A bad debt would be an
+impulse purchase on a highinterest
+credit card. You know those pair of
+shoes, those latest ones, I really want
+to buy them. It's $200. By the time I've
+paid them off, it's $500. You're not
+getting $500 worth of benefit out of
+those shoes. Approaching software
+development with the same mindset is the
+right way to go. Every time you build
+something, you take on debt. It doesn't
+matter how good it is. There's always
+going to be bugs. There's always going
+to be support. There's always going to
+be new requirements coming in from
+people. There's always going to be needs
+to market it. There's always going to be
+needs for feedback. All of these things
+are debt. Every time you do a thing, the
+only way to avoid a debt is to do
+nothing. So your mindset should then get
+into when you are creating a thing
+whether you're coding it yourself or
+whether you're vibe coding it or any of
+these things that you are increasing
+your amount of technical debt those
+things that you need to pay off over
+time. So the question then becomes as
+you vibe code a thing into existence in
+the same way as buying a thing is it
+worth the technical debt that you're
+taking on? What does technical debt
+generally look like? bugs that you need
+to fix, people that you need to
+convince, you know, to help you maintain
+the code, uh documentation that you need
+to do, features that you need to add,
+all of these kind of things. You're all
+very familiar with them. Think about
+those as that extra work that you need
+to do beyond your current work. That's
+the debt that you're taking on. You
+know, there are soft debt and there are
+hard debt.
+So to me that would be the number one
+piece of advice that I give and it's the
+one that I give every time I work with
+companies around vibe coding and a lot
+of companies that I speak with a lot of
+companies that I consult with I do a lot
+of work with startups in particular you
+know they just want to get straight into
+opening Gemini or GPT or anthropic and
+start churning code out you know let's
+get to a prototype phase very quickly
+let's go to investors let's do stuff
+it's great Um it can be but debt debt
+debt debt debt is always going to be
+there. How do you manage your debt? A
+good financiier manages their debt and
+they become rich. A good coder manages
+their technical debt and they become
+rich also. So how do you get the good
+technical debt? How do you get the
+mortgage instead of the high credit card
+debt? Well, number one is your
+objectives. What are they? Are they
+clear? And have you met them? Right? You
+knew what you needed to build. You
+didn't just fire up chat GPT and start
+spinning code out. At least I hope you
+didn't, right? Uh, think about how you
+build it. AI is there to help you build
+it faster. Uh, I'm kind of working on my
+own little startup at the moment in the
+movie making space and I've been using
+code generation almost completely for
+that. Um, but what I've ended up doing
+for my clear objectives met box here is
+that I've started building this
+application. I've tested it. I've thrown
+it away. I started again, tested it,
+thrown it away. Each time my
+requirements have been improving in my
+mind, I understand how to do the thing a
+little bit better and I can show some of
+the output of it in a few minutes. But
+the idea there is that always about
+having those clear objectives and
+meeting them. And then if you're
+building out the thing and you're not
+meeting those objectives, that's still a
+learning. There's no harm in throwing it
+away because code is cheap now in the
+age of generated code. Finished code,
+engineered code is not cheap. So get
+those objectives, make them clear, build
+it, hit a specific requirement and move
+on. Is there business value delivered is
+the other part of it. You know, I've
+seen people vibe coding for hours on
+things like Replet to build a really,
+really cool website and then the answer
+was so what? I mean, how's this helping
+the business? How's this really driving
+something? It's really cool. Yes, Mr.
+VP, I know you've never written a line
+of code in your life, and it's really
+cool that you built a website now, but
+so what? Um, so like think about that
+and focus on that and that's how you
+avoid the bad technical debt. And then
+of course the most understated part of
+this and in some ways the most important
+particularly if you're working in an
+organization is human understanding,
+right? The worst technical debt that you
+can take on is delivering code that
+nobody understands, right? Only you
+understand that and then you quit and
+get a better job and then the company
+like is now dependent on that code. So
+being able to as part of the process of
+building it to make sure that your code
+is understandable through documentation,
+through clear algorithms, through the
+fact that you've spent some time pouring
+through it to make sure that even simple
+things like variable names make sense,
+um is a really really important way to
+avoid bad technical debt. And that bad
+technical debt, my favorite one is the
+classic solution looking for a problem.
+Right? Somebody has an idea, somebody
+has a tool. If the only tool you have is
+a hammer, every problem looks like a
+nail. And you know, you end up having
+all of these tools that get vibecoded
+into existence. I've worked in large
+organizations where people just vcoded
+stuff, checked it into the codebase, and
+then it became really hard to find the
+good stuff amongst all the bad. Um,
+spaghetti code, of course, poorly
+structured stuff, particularly when you
+prompt and prompt and prompt and prompt
+again. Um, you know, that it can end up
+getting into all kinds of trouble. Um,
+my favorite one at the moment that I'm
+really struggling with is uh I'm
+building a MacOSS application. Anybody
+ever build in Swift UI on Mac OS? Okay,
+a couple. Um, Swift UI is the default
+language that Apple use for building for
+Mac OS as well as iPhone. But when you
+look at the training set, the data
+training sets that are used to train
+these models, the vast majority of the
+code is iPhone code, not Mac OS code.
+And when I prompt code into existence,
+it's often given me iOS um APIs and
+those kind of things. Even though I'm in
+Xcode and I've created a Mac OS app and
+it's a Mac OS template and I'm talking
+to it in Xcode, it still gives me iOS
+code, stuff like that. And then if I try
+to change it using prompting, you end up
+spiraling into like spaghetti code and
+you have to end up changing a lot of
+this stuff u manually. And then of
+course the other one that I joked about
+it earlier but it's also true is you
+know some of the bad technical debt that
+you're going to encounter in the
+workspace is authority over merit. Um
+that VP suddenly took out his credit
+card subscribed to Replet and started
+building stuff in replet and guess whose
+problem it is to fix it. Um, you know,
+so a lot of the advice that I start
+giving companies and a lot of the words
+that I would encourage you to start
+thinking of in being a trusted advisor
+is to understand this stuff and to
+manage expectations accordingly.
+Okay. So framework for responsible vibe
+coding we've just spoke about. Um, so
+one of the things I want to get into as
+uh we're coming soon to a close is the
+hype cycle. So hype is the most amazing
+force. I mean, I think it's it's one of
+the strongest forces in the universe and
+particularly in anything that's hot,
+such as uh the two fields that I work in
+that are super hot at the moment and
+full of hype are AI and crypto. You
+should see my Twitter feed. Um that the
+amount of nonsense that's out there is
+incredible. So one of the things that I
+would say about the anatomy of hype that
+you really need to think about is if you
+are consuming news via social media that
+the currency of social media is
+engagement.
+Accuracy is not the currency of social
+media. So I go on to even LinkedIn which
+is supposed to be the more professional
+of these is absolutely overwhelmed with
+influencers posting things that they've
+used Gemini or GPT to write an engaging
+post so that they can get engagement and
+they can get likes and the engine itself
+is engineered, excuse the pun, to reward
+those types of posts and we end up with
+that snowball effect of engagement being
+rewarded. Um, if you are the kind of
+person who can filter the signal from
+the noise and then who can encourage
+others around the signal and not the
+noise, that puts you in a huge advantage
+that makes you very distinctive. It's
+not as quickly and easily tangible as
+likes and engagements on social media,
+but when you're in a one-to-one
+environment like a job interview or if
+you are in a job and you are bringing
+that signal to the table instead of the
+noise, that makes you immensely
+valuable. So coming in with that
+mindset, coming in with the idea of
+trying to filter that signal from the
+noise, trying to understand what is
+important in current affairs, how you
+can be a trusted adviser in those things
+and how you can really whittle down that
+noise to help someone is immensely
+valuable. I want to start with one
+story. I might be stealing my own
+thunder. I I'll go on to in a moment. So
+one story uh last year um when agents
+started becoming the keyword and
+everybody's saying you know in 2025
+agent will be the word the word of the
+year and the trend of the year a company
+in Europe asked me to help them to
+implement an agent. So, let me ask you a
+question. If a company came up to you
+and said, "Please help me implement an
+agent." What's the correct first
+question that you ask them?
+>> What is an agent for you?
+>> Okay, that's good. What is an agent for
+you? I'd actually have a more
+fundamental question. Uh, yep.
+>> What do you want to do?
+>> What do you want to do? Okay, even more
+fundamental. My question was why?
+Why? you know, and it's like, peel that
+apart. Like I spoke with the CEO and he
+was like, "Oh, um, yeah, you know,
+everybody's telling me that I'm going to
+save business costs and, you know, I'm
+going to be able to do these amazing
+things and, um, yeah, my business is
+going to get better because I have
+agents." And I'm like, "Well, who told
+you that?" you know, it was like, "Oh,
+yeah. I read this thing on LinkedIn and
+I saw this thing on Twitter and it was
+like you." And we ended up having that
+conversation and it was a difficult
+conversation because I had to keep
+peeling apart and I started asking the
+questions that you two just mentioned as
+well until we really got to the essence
+of what he wanted to do. And what he
+really wanted to do when we to take all
+domain knowledge about AI aside was that
+he wanted to make his salespeople more
+efficient. And I was like, "Okay, you
+want to make your sales people more
+efficient." Nowhere in that sentence do
+I hear the word AI and nowhere in that
+sentence do I hear the word agent. So
+now as a trusted adviser, let me see
+what I can do to help your salespeople
+become more efficient. And I'm not going
+to be an AI shill or an agent shill. I
+just want to see what do we do to make
+your sales people more efficient. If
+anybody here has ever worked in sales,
+one of the things you realize what a
+good salesperson has to do is their
+homework, right? You know, before you
+have a sales call with somebody, before
+you have a sales meeting with somebody,
+you need to check their background. You
+need to check the company, you need to
+check the needs of the company, you
+know, you see it sometimes in the movie
+that like, oh, such and such plays golf,
+so I'll take them to play golf. It's not
+really that cliched, but there is a lot
+of background that needs to be done. So,
+I spoke with him and I spoke with their
+leading salespeople and found out that,
+you know, and I asked the sales people,
+"What do you hate most about your job?"
+and they were like, "Well, I hate the
+fact that I have to waste all my time
+going to visit these company websites,
+going to look up people on LinkedIn, and
+every website is structured differently,
+right? So, I can't like, you know, just
+like have a path through a website that
+I can follow. I have to take on all this
+cognitive load." And they were spending
+about 80% of their time researching and
+about 20% of their time selling. Oh, and
+by the way, most salespeople don't get
+paid very much. they have to make it up
+by commission. So they're only spending
+20% of their time doing the thing that
+gets them commission directly. So we're
+like, okay, well here's something now
+where we can start thinking about making
+them more efficient by cutting into
+that. So we set a goal is like to make
+sales people 20% more efficient and then
+we could start rolling out the ideas of
+AI and then we could start rolling out
+the ideas of agentic AI. And quick
+question, what's the difference between
+AI and agentic AI?
+Okay. So, yeah.
+>> Okay.
+>> Yep. Excellent. Yeah. So, Agentic AI is
+really about breaking it down into
+steps. Um, which is good engineering to
+begin with, right? But in Agentic AI in
+particular, I find there's a set pattern
+of steps that if you follow them, you
+end up with the whole idea of an agent.
+The first of these steps is to
+understand intent. You know, we tend to
+use the words AI, artificial
+intelligence a lot, but what large
+language models are really, really good
+at is also understanding. So, if the
+first step of anything that you want to
+do is to understand intent, right? And
+you can use an LLM to do that to kind of
+think about this is the task that I need
+to do, this is how I'm going to do it.
+Here's the intent. you know, I want to
+meet Bob Smith and sell widgets to Bob
+Smith and this is like the what I know
+about Bob Smith. Help me with that
+intent. The second part then is
+planning, right? So you declare to an
+agent what tools are available to it,
+browsing the web, searching the web, all
+of these kind of things. And once you
+understand your clear intent to be able
+to go to the step of planning and using
+those tools for planning and an LLM is
+very very good at then breaking that
+down into the steps that it needs to to
+execute a plan. Search the web with
+these keywords. Browse this website and
+find these links. Those types of things.
+Once it's then figured out that plan,
+then it uses the tools to get to a
+result. And then once it has the result,
+the fourth and final step is to reflect
+on that result. and looking at the
+result and going back to the intent. Did
+we meet the intent? Yes or no? If we
+didn't, then go back to that loop. All
+agent is really broken down into those
+things. And if you think about breaking
+any problem down into those four steps,
+that's when you start building an agent.
+And that was part of being a trusted
+adviser. Instead of coming in and waving
+hands and saying agent this, agent that,
+look at this toolkit, save 20%. You
+know, it's really to break it down into
+those steps. So, we did. We broke it
+down into those steps. We built a pilot
+for the salespeople of this company.
+and they ended up saving between 10 and
+15% of their time of their wasted time.
+The doctrine of unintended consequences
+hit though after this. And the
+unintended consequence was the
+salespeople were much happier because
+the average salesperson was making you
+know several percentage points more
+sales in a given week. They were earning
+more money in a given week and their job
+just became a little bit less miserable.
+and then refinement to that agentic
+process to be able to do all of that
+research for them and to help give them
+a brief in a few minutes instead of a
+few hours to help them with the sales
+process ended up being like a win-winwin
+all around. But if you go in being
+hypedled and like oh build an agent for
+the thing without really peeling apart
+the business requirements, the why, the
+what, the how, and all of these kind of
+things. We ended up like, you know, this
+company just would have been lost in
+hype. You've probably seen reports
+recently. I think McKenzie put one out
+last week showing that about 85% of AI
+projects at companies fail. Um, and part
+of the main reason for that is that
+they're not well scoped. People are
+jumping on the hype bandwagon and
+they're not really understanding their
+way through the problem. And I think you
+know the big brains in this room and the
+network that you folks have a really key
+component of being able to succeed is to
+understand your way through that
+problem. So that was a hype example
+around Agentic that I was thankfully
+able to help this company through. Other
+recent hype examples you've probably
+seen the software engineering is dead.
+My personal favorite Hollywood is dead
+or AGI by year end. Um, I was in Saudi
+Arabia at this time last year at a thing
+called the FI and it was a dinner at the
+FI and I sat beside the CEO of a company
+who I'm not going to name, but this was
+a CEO of a generative AI company and at
+that time he was showing everybody
+around the table this thing that he'd
+done where it was text to video and he
+could put in a text prompt and get video
+out of the prompt and get about 6
+seconds worth of video out of it. Year
+ago, that was I beg you pardon two years
+ago. two years ago that was hot stuff.
+Nowadays obviously it's quite p anybody
+can do it. But he made a comment at that
+table and it was a lot of like um media
+executives at that table was like by
+this time next year from a single prompt
+we'll be able to do 90 minutes of video
+and uh so bye-bye Hollywood you know
+like so the the whole Hollywood is dead
+meme I think came out of that. First of
+all we can't do 90 minutes even two
+years later from a prompt and even if
+you did what kind of prompt would be
+able to tell you a full story of a movie
+right? So this type of hype leads to
+engagement. This type of hype leads to
+attention. But my encouragement to you
+is to peel that apart. Look for the
+signal. Ask the why question. Ask the
+what question and move on from there.
+So becoming that trusted adviser,
+world's drowning in hype. How do you do
+it? Look at the trends, evaluate them
+objectively. Look at the genuine
+opportunities that are out there. There
+are fashionable distractions. I don't
+know what the next one is going to be,
+but there are these distractions that
+are out there that will get you lots of
+engagement on social media. Ignore them
+and ignore the people that are leaning
+into them. And then really lean into
+your skills about explaining technical
+reality to leadership. Uh, one skill
+that one person coached me in once that
+I thought was really interesting because
+it sounded wrong but it ended up being
+right was whenever you see something
+like this, try to figure out how to make
+it as mundane as possible. When you can
+figure out how to make it as mundane as
+possible, then you really begin to build
+the grounding for being able to explain
+it in detail in ways that people need to
+understand, right? Like if I you you go
+and you look at you know I think Gemini
+3 um was released today but there were
+leaks earlier this week and one person
+kind of leaked that I built a Minecraft
+clone and a prompt you know that kind of
+stuff. This is the opposite of mundane,
+right? This was like massively hyping
+the thing, massively showing, and of
+course they didn't. They built a flashy
+demo. They didn't really build a
+Minecraft clone. But the idea here is if
+you can peel that apart to like, okay,
+how do I think about what are the
+mundane things that are happening here?
+Um the the one that I've been working
+with a lot recently is video. So text to
+video prompts, as I've mentioned,
+instead of the magical you can do
+whatever you want, all nice and fluffy,
+Hollywood is dead. What is the mundane
+element of doing text to video? The
+mundane element of doing text to video
+is that when you train a model to create
+video from a text prompt, what it is
+doing is it's creating a number of
+successive frames. And each of those
+successive frames is going to be
+slightly different from the frame
+before. And you've trained a model by
+looking at video to say, well, you know,
+if in frame one the person's hands like
+this, in frame two it's like that, then
+you can predict it moves this way if
+there's a matching prompt. And suddenly
+it's become a little bit more mundane
+but suddenly they begin to understand it
+and then the people who are experts in
+that specific field not the technical
+side of it are now the ones that will
+actually be able to come up and do
+brilliant things with it.
+So that hype navigation strategy filter
+actively go deep on the fundamentals get
+your slides to work and then of course
+keep your finger on the pulse. The
+hardest part of that I think is the
+third one is really keeping your finger
+on the pulse and that's when you have to
+wait into those cess pits of people like
+just farming engagement and really try
+to figure out the signal from the noise
+there. But I think it's really important
+for you to be able to do that to be
+connected to understand that reading
+papers is all very good. The signal to
+noise ratio I think in reading papers is
+a lot better. But to understand the
+landscape that the people that you are
+advising, they are the ones who are
+waiting in the cesspools of Twitter and
+X and LinkedIn and there's nothing wrong
+with those platforms in and of
+themselves, but the stuff that's posted
+on those platforms.
+So overall landscape,
+it is ripe with opportunity. Absolutely
+ripe with opportunity. Um, so I would
+encourage you as Andrew did to continue
+learning, to continue digging into what
+you can do and to continue building. But
+there are risks ahead, right? You know
+the Have anybody remember the movie
+Titanic?
+remember the famous phrase in that
+iceberg right ahead you know but
+immediately before that there's a scene
+in Titanic if we weren't being filmed I
+would show it but I can't uh for
+copyright reasons where the two guys up
+in the crow's nests are kind of like
+freezing and talking and like the crow's
+nest at the top of the ship is where the
+spotters would be to spot any icebergs
+in front and go back and watch the movie
+again you'll see the conversation
+between these two guys is that all
+they're talking about is how cold they
+are um and then it cuts away to the crew
+of the ship who are like, "Wait, aren't
+they supposed to have binoculars?" You
+know, and then the crew is like, "Oh, we
+left the binoculars behind in port."
+That framing the whole idea was like
+they were so arrogant in being able to
+move forward that they didn't want to
+look out for any particular risks. And
+even though they had people whose job it
+was to look out for risks, they didn't
+properly equip or train them. And that
+to me is a really good metaphor for
+where the AI industry is today. There
+are risks in front of us. um those
+risks, the B- word, the bubble word
+you're probably reading in the news is
+there are there. Um to me though, the
+opportunity and the um
+the uh the things to think about in
+terms of a bubble are most of you
+probably don't remember the dot bubble
+of the 2000s. But if you think about the
+dot bubble, that was the biggest bubble
+in history. It burst,
+but we're still here. And the people who
+did.com rights not only survived, they
+thrived. Amazon, Google, you know, they
+did it right. They understood the
+fundamentals of what it was to build
+a.com. They understood the fundamentals
+of what it was to build a business
+on.com. And when the bubble of hype
+burst, they didn't go with it. There was
+one website, I believe it was pets.com,
+that they had the mindset of if you
+build it, they will come. They had Super
+Bowl commercials around pets.com. they
+couldn't handle the traffic that they
+got and that was the kind of site that
+when the when the bubble burst those
+were the kind of sites that just
+evaporated. So that bubble in AI is
+likely coming. There is always a bubble.
+So the companies that are doing AI right
+are the ones like I said that won't just
+you know um avoid the bubble that they
+will actually thrive uh postbubble. and
+the people who are doing AI right, the
+folks in this room who are thinking
+about AI and how you bring it to your
+company and the advice that you're
+giving to your company and leaning into
+that in the right way will also be the
+ones who not only avoid getting laid off
+in the bubble crashes but the what will
+be the ones who will thrive through and
+after the bubble. So anatomy of any
+bubble and what I'm seeing in the AI one
+in particular is this kind of pyramid.
+At the top is the hype that I've been
+talking about. At the bottom is massive
+VC investment. I'll be frank, I'm
+already seeing that drying up, right?
+You know, once upon a time you could go
+out with anything that had AI written on
+it and get VC investment. Then you could
+go out and do anything with an LLM and
+get VC investment. Now they're far far
+far more cautious. I've been advising a
+lot of startups. The amount that they're
+getting invested is being scaled back.
+Um the uh the stuff that's being
+invested in is changing and you know the
+you know this the second layer down
+massive VC investment is already
+beginning to vanish. Unrealistic
+valuations companies that aren't making
+money being valued massively high. We
+all know who they are. You know we're
+beginning to see those unrealistic
+valuations being fed off of that hype.
+Me too products where somebody does
+something and it's successful and
+everybody jumps on the bandwagon. We're
+also seeing them everywhere. We saw them
+throughout the dot bubble, right? And
+then right at the bottom is that real
+value. You know, I probably shouldn't
+have done a the triangle like this. It
+should be more an upside down triangle,
+right? Because you know the uh the real
+value here is small bit. I vibe coded
+these slides into existence. So this is
+one of the technical debt I took on um
+you know. So the but the the real value
+there that that that kernel of value is
+there and the ones that build for that
+will be the ones that survive.
+So
+the direction that I see the AI industry
+going in um and the direction that I
+encourage you to start thinking about
+your skills in is really over the next
+five years there's going to be a
+bifurcation. Okay, it's going to I'm
+just going to be orary in how I describe
+them as big and small, right? Big AI
+will be what we see today with the large
+language models getting bigger in the in
+the desire to drive towards AGI. The
+Geminis, the clauds, the open AIs of the
+world are going to continue to drive
+bigger and bigger is better in the
+mindset of those companies towards
+achieving AGI or towards achieving
+better business value. That's going to
+be one side of the branch. The other
+side of the branch is I'm going to call
+it small. We've all seen open source
+models. Um I hate the term open source.
+let me call them open weights or let me
+call them self-hostable
+uh models are becoming they're exploding
+onto the landscape. Um I read an article
+recently about Y Combinator that 80% of
+the companies in Y Combinator we're
+using small models from China in
+particular. Um so the Chinese models um
+in particular are doing really well
+probably because of the overall
+landscape there not leaning into the
+large models the same way as the west
+is. Um I see that bifurcation happening.
+China I think has that head start on the
+small models that may last it may not
+does I don't know. Uh but the point is
+we're heading in that particular
+direction of I'm going to call them
+instead of big and small now models that
+are hosted on your behalf by somebody
+else like a GPT or a Gemini or a Claude
+or models that you can host yourself for
+your own needs. Um as this side is right
+now is underserved. This bubble may
+burst. this one right now is underserved
+and that this bubble will be later on.
+Um, and the major skills that I can see
+developers needing over the next two to
+three years on this side of the fence
+will be fine-tuning. Uh, so the ability
+to take an open source model and
+fine-tune it for particular downstream
+tasks. Let me give one concrete example
+of that that I've personally
+experienced. I work a lot in Hollywood
+and I've worked a lot with studios
+making movies and um one studio in
+particular I was lucky enough to sell a
+movie to. It's still in pre-production.
+It'll probably be in pre-production
+forever. Um but one of the things I
+learned as part of that process was IP
+in studios is so protected it's not even
+funny. Um, go and Google for James
+Cameron who created Avatar and the
+lawsuits that he's involved in of this
+person who apparently sent him a story
+many years ago about blue aliens and is
+now suing him for billions of dollars
+because obviously there were blue aliens
+in Avatar. Um, the level of IP
+protection in Hollywood is insane. The
+opportunity with large language models
+is equally insane. Um, a lot of the
+focus is on large language models for
+creation, for storytelling, for
+rendering and all that. But actually the
+major opportunity that they have is
+actually for analysis. Um, to take a
+look at um, synopsies of movies and find
+out what works and what doesn't. Why was
+this movie a hit and this one wasn't?
+What time of year was this one released
+and became successful and this one
+wasn't? And with the margin on movies
+being razor thin, that kind of analysis
+is huge. But in order to do that kind of
+analysis, you need to share the details
+of your movie with a large language
+model. And they will absolutely not do
+that with a GPT or a Gemini or whatever
+because they're now sharing their IP
+with a third party. Enter small models
+where they can self-host their their own
+small model and they are getting smarter
+and smarter. The 7B uh model of today is
+as smart as the 50B model of yesterday.
+You know, a year from now, the 7B model
+of a year from now will be as smart as
+the 300B uh model of yesterday year. Um
+so they're moving in that direction of
+building using small self-hosted models
+which they can then fine-tune on
+downstream tasks. Similar with other
+things where privacy is important, law
+offices, medical offices, all of those
+kind of things. So those type of skills
+are fundamentally important going
+forward. Um so that's the bifurcation
+that I'm seeing happening in AI. The
+sooner bubble I think is in the bigger
+nonselfhosted.
+The later bubble is in the smaller
+self-hosted. But either way, for you for
+your career to avoid the impact of any
+bubble bursting, focus on the
+fundamentals, build those real
+solutions, understand the business side,
+and most of all, diversify your skills.
+Don't be that one-trick pony who who
+only knows how to do one thing. I've
+worked with brilliant people who are
+fantastic at coding a particular API or
+particular framework and then the
+industry moved on and they got left
+behind.
+Okay. So, yeah. Um when bubbles burst
+that overall fallout kind of spoken
+about it a little bit already funding
+evaporates hiring freezes become layoffs
+projects get cancelled and talent floods
+the market. Yep.
+>> Quick question from the last five.
+I have heard a lot about like how India
+is and they're very like specific about
+like they want people who are like very
+specific like a problem that they have.
+So they require people to be like
+basically put up that things that I'm
+missing. So
+how do you think how how is it more
+important to
+like diversify skills versus like
+actually like focusing on for example
+LLMs versus like computer vision or
+versus like very specific downstream
+>> right so I mean I think so the question
+was around Nvidia in particular are
+hiring for a very specific very narrow
+scenario so then the question is how
+important is it for you to become an
+expert in a narrow scenario versus
+divers diversifying your skills I would
+always argue it's still better to
+diversify your skills um because that
+one narrow scenario is only that one
+narrow scenario and you're putting all
+your eggs into one basket. Nvidia would
+be a fantastic company to work for.
+Nothing against them in any way but if
+you put all of your eggs into that
+basket and you don't get it then what
+right? So I think the idea of really
+being able to know if you are passionate
+about a thing to be very deep in that
+thing is very very good but to only be
+able to do that thing I think you know I
+would always encourage to be diversified
+and when I say diversified like you were
+saying LLMs or computer vision or
+anything like that I think that mean
+that's one part of it but it's like that
+knowledge of models and how to use them
+to me is a uni skill it the the
+diversification of skills is breaking
+outside of that also to be able think,
+okay, what about building applications
+on top of these? What does scaling an
+application look like? What does
+software engineering in this case look
+like? What about user experience and
+user experience skills? Cuz it's all
+very well to build a beautiful
+application, but if nobody can use it,
+I'm looking at you Microsoft Office. Uh,
+you know, that, you know, there's like
+there's stuff like that that you just,
+you know, that's what I really mean
+about diversifying beyond. So even in
+that like mono example with Nvidia to be
+able to break out of like that one
+particular example but to show skills in
+other areas that are of value I think is
+really important.
+Okay. Um as we're just running a little
+bit so yeah just wanted to I've kind of
+gone into a little bit already but I'm a
+massive advocate for small AI. I really
+do believe small AI is the next big
+thing. uh because we're moving into a
+world and this is part of the job that I
+do at ARM is we're kind of moving into a
+world of like AI everywhere all at once.
+Um, so there's a traditional, and it's
+interesting you just brought up Nvidia
+because there's a traditional conception
+that compute platforms are CPU plus GPU
+when it comes to AI, but that's also
+changing, right? CPU general purpose,
+GPU specialists, but for example, in
+mobile space, um, there's massive
+innovation being done with a technology
+called theme, uh, scalable matrix
+extensions. And what theme is all about
+is really allowing you to bring AI
+workloads and put them on the CPU. uh
+the the the front runners in this are a
+couple of Chinese phone vendors um uh
+Vivo and Oppo who've just recently
+released phones withme enabled chips and
+what's magical about these is that a
+they don't need to have a separate
+external chip drawing extra power taking
+up extra footprint space just to be able
+to run AI workloads and b the CPU of
+course being a low power pulling thing
+being able to run AI workloads on that
+they've been able to build interesting
+new scenarios and if I talk about one in
+particular
+Uh there's a company called Alip Pay and
+Alip Pay had an application where you
+would and we've all seen these apps
+where you can go through your
+photographs and you can search for a
+particular thing, you know, places I ate
+sushi or something along those lines and
+use that to create a slideshow. All of
+those require a back-end service. So
+your photographs are hosted on Google
+Photos or Apple Photos or something like
+that. And that backend service runs the
+model that you can search against it and
+be able to do the assembly of them. What
+Alip Pay wanted to do was like say there
+are three problems with this. Problem
+number one, privacy. You have to share
+your photos with a third party. Problem
+number two, latency. You got to upload
+those photos. You got to send the thing.
+You got to have the backend do the
+thing. And then you got to download the
+results from the thing. And then number
+three is building that cloud service and
+standing that up cost time and money. So
+if they could move all of this onto the
+device itself, now the idea was they
+they could run a model on the device
+that searches the photos on the device.
+You don't have the latency and business
+perspective. They're now saving the
+money on st on creating this standup
+service. They now have AI running on the
+CPU in order to be able to do that.
+Apple are also people who've invested
+heavily in this scalable matrix
+extensions. You see whenever they talk
+about if you ever watch a WWDC or
+anything like that when they talk about
+the new A series chips and M series
+chips about the neural cores and those
+kind of things in them that's part of
+the idea. So to think about breaking
+that you know habit that we've gotten
+into uh where you need a GPU to be able
+to do AI is part of the trend that the
+world is heading in. Apple are probably
+one of the leaders in that. I'm very
+very bullish on Apple and Apple
+intelligence as a result and um from the
+AI perspective and you know seeing that
+trend and following that vector to its
+logical conclusion we're as models are
+getting smaller embedded intelligence
+getting everywhere isn't a pipe dream it
+isn't sci-fi anymore it's going to be a
+reality that we'll be seeing very very
+shortly so that idea of that convergence
+of AI because of the ability of smaller
+models getting smarter and lower powered
+devices being able to run them. We see
+that convergence hitting and I see
+massive opportunity there.
+So uh one last part and just going back
+to agents for a moment. I think you know
+the one thing that I always say is like
+a hidden part of artificial intelligence
+is really what I like to call artificial
+understanding. And when you can start
+using models to understand things on
+your behalf and when they understand
+them on your behalf to be able to craft
+from that understanding new things you
+can actually develop superpowers where
+you're far more effective than ever
+before. Be that creating code or
+creating other things. And I'm going to
+give one quick demo just so we can wrap
+up. Um, and I was talking earlier about
+generating video.
+So, uh, this picture is Whoops.
+Sorry, the connection here is not very
+good. I lost it. So, here we go. This
+picture here is actually of my son
+playing ice hockey. And I took this
+picture and I was saying, "Okay, I think
+I'm very good at prompting." And I wrote
+a nice prompt for this picture to get
+him. He's in the middle of taking a
+slapshot. He's got some beautiful flex
+on his stick. And I asked it like,
+"Okay, it's a prompt like, you know, him
+scoring a goal. What do you think
+happened?
+Should we Should we watch? Let's see if
+it works.
+Ah, this was the wrong video, but it
+still shows the same idea. Um, because
+of poor prompting or because of poor
+understanding of my intent, if I talk
+about it in agentic senses, the arena
+that he was in, which is a practice
+arena and doesn't have any people in it.
+Sorry, pause it. Um,
+if I just rewind to here,
+and if we look up in this top right hand
+corner here, this is basically where
+they store all the garbage. Um, but the
+AI didn't know that. I had no idea of
+it. So, assumed it was a full arena and
+it started painting people in. And even
+though he shot a mile wide, everybody
+cheers and somehow he has two sticks in
+his hand instead of one and they forgot
+his name. Right? So, I did not go
+through an agentic workflow to do this.
+I did not go through the steps of a
+understand my intent b once you
+understand my intent understand the
+tools that are available to you in this
+case it's ve and understand the
+intricacies of using v um make a plan of
+how to use them make a plan of how to
+build a prompt for them and then use
+them and then reflect so I'm kind of
+I've been advising a startup um that is
+working on movie creation using AI and I
+want to show you a little sample here of
+a movie that been working on with them
+where the whole idea A is like if you
+want to have performances out of virtual
+actors and actresses, you need to have
+emotion, right? You need to be able to
+convey that emotion and you also need to
+be able to put that emotion in the
+context of the entire story because when
+you create a video from a prompt, you're
+creating an 8-second snippet. That
+8-second snippet needs to know what's
+going on in the rest of the story,
+right? So, if I show this one for a
+moment, and it's a little wooden at the
+moment. It's not really working
+perfectly. I have professional actors
+who are friends who are advising me on
+this and they laughed at the
+performances. But try to view it through
+the difference that we had from an
+unagentic prompt with the hockey player
+to this one.
+Let's hopefully we can hear it.
+I guess I can do the pub quiz after all.
+They just shut me down. I'm so close.
+But they wouldn't listen.
+>> I won't.
+>> They never listen.
+So like here's the idea of like again
+just thinking in terms of agentic as I
+saying earlier on breaking it into those
+steps that allowed me to use exactly the
+same engine as I was showing you earlier
+on that failed to be able to show
+something that works and is able to do
+things like portraying emotion that I
+just spoke about. So I know we're a
+little bit over time so sorry about
+that. I can take any questions if
+anybody has any. I see Andrew is here as
+well. He's at the back. And I just
+really want to say thank you so much for
+your attention. and really appreciate
+it.
+[applause]
+>> Yep. How much of this video generation
+workflow do you think
+is improved with the project and how
+much is it set by where you might have
+coffee?
+>> Yeah,
+>> it's a great question just to repeat for
+the video. how much of the improvement
+is from the use of an agentic workflow
+versus just lack of hockey stuff in the
+training set for the failed one. Um I
+not comparing like to likes so just
+using my gut. Um, when I looked at when
+I broke this down into the workflow,
+they said, "Okay, I created scenes like
+this one and they were awful when I just
+did it directly for myself, um, with no
+basis, no agentic, no artificial
+understanding." And when I broke it down
+into the steps where it's like, okay, in
+this scene, the girl is sitting on the
+bench and she's upset and the person is
+talking to her and he wants to comfort
+her. um feeding that to a large language
+model along with the entire story and
+along with the constraints that I had
+where the shot has to be 8 seconds long,
+clear dialogue and all of those kind of
+thing and then to understand my intent
+from that one. The LLM ended up
+expressing a prompt that was far more
+loquacious than I ever would have, that
+was far more descriptive than I ever
+would have. The LLM had understanding of
+what makes a good shot, what makes a
+good angle, what makes good emotion far
+more than I would have I could spend
+hours trying to describe it. So that
+first step in the agentic flow of it
+doing that for me and understanding my
+intent was huge. The second step then is
+I you know the tools that it's going to
+use. So I explicitly said which video
+engine I'm going to be using. I was
+using Gemini as the LLM and hopefully
+Gemini is familiar with VO you know that
+kind of stuff. So to understand the
+idiosyncrasies of doing things with VO
+um what I learned like for example VO is
+very bad at doing high action scenes but
+is very good at doing slow camera polls
+to do emotion as you saw in this case.
+So the LLM knew that from me declaring I
+was using that as a tool and then
+further it built a prompt and then
+further refined the prompt from that and
+then the third part actually using the
+tool to actually generate it for me.
+Generating a video with something like
+VO costs I think between two and three
+dollars to generate like four videos in
+credits. So the last thing I want to do
+is generate lots and lots and lots and
+lots of videos and throw good money
+after bad. But all of that token spend
+that I did earlier on to understand my
+intent and then to make the plan for
+using the agent was saved in the back
+end where it got it right like you know
+maybe not get it right first time but it
+would very rarely take more than two or
+three tries to get something that was
+really really nice. So I think you know
+without com comparing like with like I
+do think that plan of action and going
+through a workflow like that worked very
+very well.
+Any other
+questions, thoughts, comments? Yep. Up
+at the back.
+>> Ary over the years
+>> what has surprised me the most about the
+AI industry over the years? Oh, that's a
+good one. Um, I think what has surprised
+me the most, um, and it probably
+shouldn't have surprised me is how much
+hype took over. Um, I actually I
+honestly thought a lot of people who are
+in important decision-making roles and
+that kind of thing would be able to see
+the signal better than they did. Um and
+I think the other part was that the um
+the desire to make immediate profits as
+opposed to long-term gains also
+surprised me a lot. Um let me share one
+story um in that space was one of the
+things that after we Andrew and I taught
+the TensorFlow specializations on
+Corsera and after that Google launched a
+professional certificate where the idea
+of this professional certificate was we
+give a rigorous exam and at the end of
+the rigorous exam if you got the
+certificate
+um it was a high prestige thing that
+would help you find work and
+particularly at the time when TensorFlow
+was a very highly demanded skill in
+order to get work. Um, running that
+program cost Google $100,000 a year.
+Okay, drop in the bucket. Not a lot of
+money. Um, the goodwill that came out of
+it was immense. Um I can tell two story
+I'll tell one story very quickly was
+there was a young man um and he went
+public in some like advertising stuff
+that with Google that he lived in Syria
+uh and we all know there was a huge
+civil war in Syria over the last few
+years and he got the TensorFlow
+certificate. He was one of the first in
+Syria to get it and it lifted him out of
+poverty where he was able to move to
+Germany and get work at a major German
+firm. And I I met him at an event in
+Amsterdam where he told me his story and
+now because of like the job that he had
+in this German firm, he's able to
+support his family back home um and move
+them out of the war torn zone into a
+peaceful zone all because he got this
+like AI thing, right? And there were
+countless stories like that. um very
+inspirational, very beautiful stories.
+But the thing that surprised me then was
+uh sometimes the lack of investment in
+that where there was no revenue being
+generated for the company out of that.
+We deliberately um kept it revenue
+neutral so that the price of the exams
+could go down. We wanted it to self-
+sustain. It ended up not being revenue
+neutral. It ended up costing the company
+about 100,000 to 150,000 a year. So they
+canned it, you know, and it's a shame
+because of all the potential goodwill
+that can come out of something like
+that. But I think those would be the two
+that immediately jumped to mind that
+have surprised me the most. Um, and then
+I guess one other part that I would say
+is the people who've been able to be
+very successful with AI
+who you wouldn't think would be the ones
+that would be successful with AI has
+always been inspirational to me. So
+allow me one more story. I have a good
+friend. I showed ice hockey a moment
+ago. I have a good friend who is a
+former professional ice hockey player.
+And any ice hockey fans here? Okay. You
+know, it's a kind of a brutal sport,
+right? You see a lot of fighting and a
+lot of stuff on the ice. And he dropped
+out of school when he was 13 years old
+to focus on skating. And he will always
+tell everybody that he's the dumbest
+person alive cuz he's uneducated. He and
+I are complete opposites, you know,
+that's why we get on so well. And uh he
+retired from ice hockey because of
+concussion issues. And he now runs a
+nonprofit uh the ice rinks for
+nonprofit.
+And about 3 years ago, um, we were
+having a beer and he was like, "So tell
+me about AI and tell me about this chat
+GPT thing. Is it any good?" And I was
+like, you know, just sharing the whole
+thing. Yes, it's good. And all that kind
+of stuff. And it was obviously a loaded
+question and I didn't know why. But part
+of his job um at his nonprofit is that
+every quarter he has to present to the
+board of directors the results of the
+operations so that they can be funded
+properly because even though they're a
+nonprofit, they still need money to
+operate. and he was spending upwards of
+$150,000
+a year to bring in consultants to kind
+of pull the data from all of the
+different sources they were pulling data
+from. There's like machines in what's
+called the pump room that has a
+compressor that cools the ice and there
+were spreadsheets and there was accounts
+and all this kind of stuff and he was
+not tech-savvy in any way and but he
+like needed to process all this data. So
+he did an experiment where he got Chachi
+PT to do it. And this was the loaded
+question like asking me was it any good.
+And so we talked through it a little bit
+and then he told me why. And so I took a
+look at the results because he was
+uploading spreadsheets. He was uploading
+PDFs and all this kind of thing and
+getting it to assemble in a report. And
+it takes him now about two hours to do
+the report himself with Chat GPT and it
+worked and it worked brilliantly. And
+that 150,000 a year that he's saving on
+consulting is now going to uh
+underprivileged kids, right, for hockey
+equipment, for ice skating equipment,
+for lessons and all of that kind of
+thing. So, it was taken out of the hands
+of an expensive consulting company and
+put into the hands of people uh because
+of this guy. And he says he's the
+dumbest person alive, you know, but I
+hope he's not watching this video. Uh
+but and he's like, you know, but he and
+I told him afterwards that
+congratulations, you're now a developer,
+right? and he didn't like that. But,
+[laughter] you know, but it it's like
+surprises like that that the superpowers
+that were handed to somebody like him
+that he's not technical in any way, but
+he was able to effectively build a
+solution that saved his nonprofit$1 to
+$150,000 a year. And like things like
+that are always surprising me in a very
+pleasant way.
+>> Yep. Sorry, I'll get to you next. Sorry.
+Yeah.
+>> I thinkers uh like us It's easy. It's
+easier to maybe because we can kind of
+like understand like what signal is
+from. We can read paper but how about
+people doesn't have this like knowledge
+like
+>> Yep. So just to repeat the question for
+the video for engineers like us
+sometimes it's easy to navigate the hype
+to see the signal from the noise but
+what about people you know who don't
+have the same training as us? Um I think
+that's our opportunity to be trusted
+advisers for them. Um and to really help
+them through that to understand it. Um I
+think the biggest part in the hype story
+right now is just understanding the
+reward mechanism right you know the
+everything rewards engagement rather
+than actual substance. And that the to
+me step one is seeing through that like
+the story I just told about my friend
+you know he seen all this kind of stuff
+but he wasn't willing to bet his career
+on it you know but he needed like that
+kind of advice around it and to kind of
+start peeling apart what he had done and
+what he did right and what he did wrong
+and you know so that positioning
+ourselves to be trusted adviserss by not
+leaning into the same mistakes that the
+untrained people may be leaning into I
+think is the key to that. Um, and you
+know, just understanding that the
+average person is generally very
+intelligent, even if they may not be
+experts in a specific domain, and to key
+in on that intelligence and help them to
+to to foster and to grow that in, you
+know, um, and navigate them through the
+parts where they'll have difficulty and
+let them shine in what they're very very
+good at.
+>> All right. Over here, there was one.
+>> Yeah. Uh, I have a question for AI and
+machine learning for scientific
+research.
+>> Okay. Which is something very popular to
+get your perspective on where you think
+that it is a good idea and where you
+might say
+so um AI and machine learning for
+scientific research where is it a good
+idea and where should you be cautious um
+oh uh I my initial gut check would be I
+think it's always a good idea right um I
+think you know there's there's no harm
+in using the tools that you have
+available to to you but to always to
+just doublech checkck your results and
+double check your expectations against
+the grounded reality. Um, I've uh always
+been a fan of using automation in
+research as much as possible. My
+undergraduate was physics uh many many
+years ago and I was actually very
+successful in the lab because I usually
+automated things through a computer that
+other people did handwriting and pen and
+paper with so I could move quickly. So I
+know I am biased in that regard but I
+would say like for most research for the
+most part I think you know use the most
+powerful tools you available but check
+your expectations.
+Little story actually on that side was
+um uh trivia question. Poorest country
+in Western Europe. Anybody know?
+>> Seria.
+>> What's that?
+>> Western.
+>> Western Europe is Wales. So uh I
+actually did my undergraduate in Wales
+and I went back to do some lectures in
+the university there and um I met with a
+researcher there and he was doing
+research into brain cancer um using
+computer imagery and using various types
+of computer imagery and I asked him
+what's the biggest problem that you have
+what's the biggest blocker for your
+research and this is about eight years
+ago and his answer was access to a GPU
+and uh cuz like for him to be able to
+train his models and run his models, he
+needed to be able to access a GPA. And
+uh the department that he was in had one
+GPU between 10 researchers, which meant
+that everybody got it for half a day,
+right? Monday through Friday. And his
+half a day was Tuesday afternoon. So in
+his case, he would spend the entire time
+that wasn't Tuesday afternoon preparing
+everything for his model run or his
+model training or everything like that.
+And then Tuesday afternoon once he had
+access to the GPU, then he would do the
+training, right? And then he would hope
+that in that time that he would train
+his model and he would get the results
+that he wanted. Otherwise, he'd have to
+wait a week, you know, to get access to
+the GPU again. Uh, and then I showed him
+Google Collab, right? Anybody ever used
+Google Collab, right? And you can have a
+GPU in the cloud for free with that kind
+of thing. And the poor guy's brain
+melted, right? Um, that, you know,
+because I took out my phone and I showed
+him a notebook running on my phone and
+Google Collab and training it on that
+and it changed everything for him
+research- wise. Um and you know now it
+was a case of and this was with free
+collab he had much more than he had with
+his shared GPU. So I think you know for
+someone like him you know machine
+learning was an important part of his
+research but he was so gated on it that
+the ability to widen access to that
+ended up like really really advancing
+his research. I don't know where it
+ended up. I don't know what he has done.
+It has been a few years since then but
+you know that story just came to mind
+when you asked the question.
+Any more questions? Any feel free to ask
+me anything.
+Oh yeah, at the front here.
+>> This is more of a general question.
+Could you talk about AI helping
+reduce? Would you think AI would be a
+force of social equality or social
+inequality?
+>> So can AI be a force of social equality
+or social inequality? Um I think the
+answer to that is yes. It can be both
+and it can be neither. I mean I think
+that ultimately the idea is that if in
+my opinion any tool can be used for any
+means. So the important thing is to
+educate and inspire people towards using
+things for the correct means. There's
+only so much governance can be applied
+and sometimes governance can cause more
+problems than it solves. Um, so I always
+love to live my life by assuming good
+intent but preparing for bad intent. And
+in the case of AI, I don't think there's
+any difference there that everything
+that I will do and everything that I
+would advise is assuming good intent
+that people will use it for good things,
+but also to be prepared for it to be
+misused. Um, the bad examples that I
+showed earlier on, I think where good
+intent rather than bad intent. Um, and
+most mistakes that I see like that are
+good intent being used mistakenly as
+opposed to bad intent. But I would say
+that's the only mantra that I can the
+only advice that I can give in that kind
+of thing is always assume good intent
+but prepare for bad intent.
+The AI itself has no choice, right? It's
+how people use it.
+Andrew, did you want closing comments or
+any
+questions?
+Thanks.
+>> All right. Thank you, Andrew. Thanks,
+[applause]
