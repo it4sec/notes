@@ -1,0 +1,2559 @@
+ABOUT
+================================================================================
+Title: RECON 2026 - The AI Reversing Panel: Are we all powerful, or out of a Job?
+Author/Channel: Recon Conference
+Channel URL: https://www.youtube.com/channel/UCqn2811xAehfLgpEy386T8Q
+Video URL: https://www.youtube.com/watch?v=iDJDmie8XaQ
+Video ID: iDJDmie8XaQ
+Published: 2026-09-16
+Duration: 1:26:17
+Views: 923
+Likes: 14
+Comments: Unknown
+
+Description:
+It’s not every day we convene a panel at Recon.
+AI affects us all, but where can we go beyond buzzwords and make it concrete?
+- What actually works, how we set up our own harnesses, what constantly fails, and what works today that didn’t even a month ago? Are there limits?
+- How the technology affects us daily, from attackers to defenders? We see software development sped up to the max, models finding vulnerabilities autonomously, malware being dissected by AI, and written even faster.
+- Topics such as disclosure, when vulnerability in code == public, and if coordinated disclosure can survive it. Is full disclosure back?
+- And lastly… are we still going to have a job in a year or two? Will there still be a need for researchers? Let’s be specific.
+We will welcome surprise guests to the panel, as we cycle through topics. The topics themselves are discussion seeds only.
+
+Moderator
+Gadi Evron
+
+Panelists:
+Aaron Portnoy
+Marion Marschalek
+John McIntosh
+
+Guests:
+Halvar Flake (Thomas Dullien)
+Sergey Bratus
+Dragos Ruiu
+Thai Duong
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# RECON 2026 – The AI Reversing Panel: Are we all powerful, or out of a Job?
+
+## Authors / participants
+
+The source identifies the **Recon Conference** as the author/channel. The event is a panel rather than a conventional research paper.
+
+- **Author/channel:** Recon Conference  
+- **Channel:** https://www.youtube.com/channel/UCqn2811xAehfLgpEy386T8Q  
+- **Video:** https://www.youtube.com/watch?v=iDJDmie8XaQ  
+- **Published:** 2026-09-16  
+- **Duration:** 1:26:17  
+
+### Moderator
+
+- **Gadi Evron** — Moderator. The transcript identifies him as co-founder and CEO of a company rendered as “Nastic,” focused on agent security. No individual contact details or additional credentials were provided.
+
+### Panelists
+
+- **Aaron Portnoy** — The About section lists Aaron Portnoy. In the transcript, his name is rendered inconsistently as “Erin Portway.” He is described as building products at “Mineguard,” helping secure AI systems, founding “Bone Tone,” publishing in “Frack,” appearing on the cover of *Time*, and having been at an organization rendered as “threeon” since 2008. The transcript also discusses his extensive reverse-engineering experience and work on AI harnesses. No contact details were provided.
+
+- **Marion Marschalek** — Worked in antivirus, Intel, and AWS; reverses malware daily; runs the Black Hoodie project; and is described as technically retired. The transcript also mentions that she teaches reverse-engineering classes and has worked on binary visualization and malware analysis. No contact details were provided.
+
+- **John McIntosh** — Security researcher; founder of Clear Sec Labs; works on agentic reverse engineering; and has written open-source reverse-engineering tools. He discusses using LLMs with deterministic tools for patch diffing. No contact details were provided.
+
+### Guests
+
+- **Halvar Flake (Thomas Dullien)** — Guest participant. The transcript presents his views on employment, compute, local models, reasoning, and AI-assisted research. No further credentials, affiliation, or contact details were provided.
+
+- **Sergey Bratus** — Guest participant. The moderator states that he has led and funded projects at DARPA. He discusses AI’s ability—or inability—to create new technical primitives and research abstractions. No contact details were provided.
+
+- **Dragos Ruiu** — Guest participant. The moderator identifies him as the founder of “Conc West” as rendered in the transcript. He discusses reverse engineering of firmware and embedded systems. No contact details were provided.
+
+- **Thai Duong** — Guest participant. He describes a campaign to find and exploit vulnerabilities with AI, collaboration with frontier labs, and experiments involving exploitation, stealth, and AI-assisted discovery. The moderator also describes him as having moved from finding bugs to paying others to find them. No contact details were provided.
+
+**Individual affiliations, email addresses, biographies beyond the descriptions above, and direct contact information were not provided in the supplied material.**
+
+---
+
+## Summary
+
+The panel examines how AI is changing reverse engineering, vulnerability research, malware analysis, exploitation, security engineering, and the security labor market. Its central argument is not that AI has either already replaced security researchers or is merely a productivity tool. Rather, the panel presents AI as a rapidly changing force multiplier whose usefulness depends heavily on human expertise, workflow design, verification, and judgment.
+
+A recurring distinction is made between **what models are capable of doing** and **what those capabilities mean for employment and professional roles**. The panelists generally reject the idea that AI will immediately eliminate all security jobs. They do expect automation to affect routine, mechanistic, and lower-skill work, while creating new opportunities for people who can guide models, build effective workflows, investigate opaque systems, and handle decisions requiring accountability.
+
+### AI-assisted reverse engineering
+
+John McIntosh describes a patch-diffing workflow that combines LLMs with deterministic reverse-engineering tools. A task that previously required months of manual work was reduced to several weeks with an earlier AI-assisted workflow, and to a few days or less with current tools. The important innovation is not simply asking a model to analyze binaries; it is combining probabilistic model reasoning with deterministic tooling and structured workflows.
+
+Aaron Portnoy emphasizes that models are strong at mechanistic procedures but weaker at the **meta-strategy** behind expert work. Reverse engineering is not only a sequence of operations. It also involves deciding:
+
+- where to look;
+- which paths not to pursue;
+- when to stop;
+- how to rank findings;
+- what evidence is sufficient;
+- and how to respond to unexpected behavior.
+
+The panel describes AI harnesses and scaffolding as mechanisms for encoding this strategic layer. However, these harnesses are unstable: when a more capable model appears, it can absorb or replace parts of the workflow, forcing researchers to redesign their scaffolding.
+
+A further proposed improvement is the use of **ranking and decomposition** rather than presenting a model with a massive body of decompiled code all at once. Portnoy also discusses knowledge graphs as a way to preserve continuity between analysis sessions, retain intermediate results, and encode researcher feedback and methods.
+
+### Exploitation and autonomous operation
+
+Thai Duong characterizes current AI-assisted hacking as closer to the “Deep Blue” phase than the “AlphaGo” phase: humans and machines work together, and the human remains essential. Models can discover vulnerabilities, but reliable exploitation still requires skilled human direction.
+
+The panel identifies several reasons for this limitation:
+
+- exploitation must be reliable, not merely plausible;
+- modern mitigations create difficult technical constraints;
+- there is limited public training data for some advanced exploitation problems;
+- real-world operations require stealth and careful sequencing;
+- current agents are probabilistic and often too eager to perform many actions at once.
+
+An experiment in which an agent was released into a network reportedly resulted in the agent performing too many simultaneous actions and “going completely crazy.” The panel uses this as evidence that autonomy can be counterproductive when the correct strategy requires restraint, timing, and risk management.
+
+### Malware analysis and reverse engineering
+
+Gadi Evron describes using Claude to analyze multiple malware samples, including a large JavaScript sample, obfuscation, and a binary. The model produced useful results, but the panel stresses that usefulness is not equivalent to correctness.
+
+Marion Marschalek highlights verification as the central problem. An AI system may misclassify a remote-access Trojan as ransomware, or incorrectly interpret a packed sample. She also describes an incident in which an AI system was asked to analyze a runtime packer and chose to execute the sample instead of reasoning about the packer statically. Even when execution occurs inside a virtual machine, the analyst may not be able to determine whether the environment was truly safe.
+
+This leads to a broader principle: AI-generated security analysis must be independently validated, particularly when the result could affect incident response, attribution, or containment decisions.
+
+### Human expertise, accountability, and new research areas
+
+The panelists identify several areas where human judgment remains especially important:
+
+- assigning responsibility or attribution;
+- making decisions in open-ended problem spaces;
+- determining when an investigation should stop;
+- assessing whether an output is trustworthy;
+- handling safety-critical systems;
+- understanding unfamiliar or opaque mechanisms;
+- and creating new abstractions or research directions.
+
+Portnoy argues that AI should not be the final accountable entity for decisions such as nation-state attribution or other actions with serious consequences. He also suggests that AI itself may become a major reverse-engineering target because its internal mechanisms are opaque and difficult to interpret.
+
+Sergey Bratus frames the issue in terms of **new primitives and abstractions**. He asks whether AI has independently produced something comparable to a genuinely new technical idea or computational abstraction. The discussion concludes that the panelists have not seen AI independently invent such a primitive without human steering. AI is considered strong at combining existing techniques, but not yet demonstrated to be a reliable autonomous source of fundamentally new security concepts.
+
+A related example involves AI combining known mathematical knowledge with an exploitation problem involving GPU-rendered pointer values. The model reportedly identified a mathematical lemma that allowed the researchers to convert pixel information into pointers without loss. The panel treats this as an example of AI combining widely separated pieces of existing knowledge, rather than inventing a completely new technique.
+
+### Local models and access to AI
+
+The panel raises concerns about unequal access to powerful AI systems. If advanced models become controlled by large companies or specific countries, organizations and individuals without access could be disadvantaged.
+
+Local and open-weight models are presented as a partial safeguard. John McIntosh notes that local models can protect users from losing access to centralized services. Halvar Flake cautions that local models are generally weaker than frontier models, but argues that smaller specialized models may be sufficient for particular tasks such as code analysis.
+
+He gives the example of a small reasoning-focused model that can run on an iPhone and solve combinatorics problems despite lacking the broad factual knowledge of a frontier model. The implication is that security workflows may not always require a general-purpose model; task-specific reasoning models could be locally deployed and self-hosted.
+
+### Entry-level work and professional development
+
+Marion Marschalek expresses concern about the disappearance of entry-level reverse-engineering positions. If routine junior work is automated, the field may lose the training path through which future experts develop.
+
+The panel nevertheless recommends entering the field, but using AI as an accelerator rather than as a substitute for understanding. Suggested approaches include:
+
+- selecting a specific area such as firmware, compatibility reverse engineering, patch diffing, or malware analysis;
+- using AI to build a focused curriculum;
+- reaching the edge of what current tools can do;
+- learning to integrate AI into an existing project;
+- and developing expertise beyond merely operating a chatbot.
+
+The panelists repeatedly recommend choosing a concrete project and applying AI directly to it. Their view is that newcomers can learn faster than previous generations, but they must develop enough technical understanding to guide, challenge, and verify the system.
+
+### Vulnerability disclosure
+
+AI-assisted vulnerability discovery is presented as a potential threat to current disclosure systems. If models can generate large numbers of findings, maintainers and vendors may become overwhelmed. The bottleneck may shift from discovering vulnerabilities to receiving, validating, triaging, and responding to reports.
+
+The panel discusses several related problems:
+
+- maintainers failing to respond within expected disclosure periods;
+- researchers receiving no response from major vendors;
+- large volumes of low-quality or fabricated reports;
+- duplication of vulnerability findings;
+- and the possibility that a vulnerability in code could increasingly become equivalent to a public vulnerability.
+
+The participants do not conclude that coordinated disclosure is obsolete. Instead, they describe a system under growing pressure. Thai Duong argues that disclosure remains important, particularly when maintainers do not respond. Other panelists note that organizations may need AI-assisted intake and triage simply to handle the increasing volume of submissions.
+
+### Firmware, embedded systems, and context limitations
+
+Dragos Ruiu identifies firmware and embedded systems as areas where current AI systems remain weak. Binary analysis does not provide models with the same convenient token structure as source code, and large amounts of binary context can exceed practical context-window limits.
+
+The problem is compounded by limited training data. Embedded systems often depend on processor-specific details, SDKs, and documentation that may be inaccessible or protected by nondisclosure agreements. These characteristics make firmware a promising area for continued human-led research.
+
+### Formal guarantees and safety-critical systems
+
+A discussion with a professor from Dartmouth College introduces safety-critical software and formal verification. The concern is whether AI-generated software could ever receive a reliability assurance comparable to software integrity levels used in safety-critical systems.
+
+The panel notes that AI systems are probabilistic and that current models do not provide the level of determinism and confidence required for many critical applications. Formal limits such as undecidable problems remain relevant regardless of AI progress. The discussion suggests that future research may focus on software understanding, formal guarantees, and the boundary between probabilistic AI behavior and systems requiring provable properties.
+
+---
+
+## Key technical ideas
+
+1. **Human expertise remains a force multiplier for AI.**  
+   The panel’s dominant model is “expert plus tool,” not autonomous tool replacement.
+
+2. **Separate capability growth from job displacement.**  
+   A model becoming more capable does not immediately imply that corresponding human roles disappear.
+
+3. **Combine probabilistic LLMs with deterministic tools.**  
+   Patch diffing is presented as an example where LLM reasoning complements established reverse-engineering tooling.
+
+4. **Encode expert meta-strategy in harnesses.**  
+   Effective systems need more than procedural steps; they must represent search direction, stopping conditions, prioritization, and rejected paths.
+
+5. **Expect harnesses to become obsolete quickly.**  
+   As models improve, they absorb portions of existing scaffolding, requiring repeated redesign.
+
+6. **Decompose and rank analysis targets.**  
+   Processing smaller units and prioritizing them is more practical than giving a model an entire large decompilation at once.
+
+7. **Use knowledge graphs for continuity.**  
+   Knowledge graphs may preserve context, results, methods, and researcher feedback across discontinuous analysis sessions.
+
+8. **Reliable exploitation is harder than vulnerability discovery.**  
+   AI can identify potential weaknesses, but exploit reliability, mitigation bypasses, and operational stealth still require human expertise.
+
+9. **Autonomous agents need restraint, not just capability.**  
+   Agents that execute many actions simultaneously can damage an operation; a correct strategy may require making fewer moves.
+
+10. **AI malware analysis requires verification.**  
+    Useful output is not sufficient when classification, packing analysis, or execution decisions can be wrong.
+
+11. **AI is effective at combining existing knowledge.**  
+    The panel gives examples of models connecting mathematical knowledge with exploitation problems and combining known techniques that humans overlooked.
+
+12. **Independent invention of new primitives remains un demonstrated.**  
+    The participants report no clear example of an AI independently generating a genuinely new reverse-engineering or exploitation abstraction without human guidance.
+
+13. **Local specialized models may be more practical than general frontier models.**  
+    Small models with targeted reasoning capabilities could be deployed locally for code and security tasks.
+
+14. **Firmware and embedded analysis remain difficult.**  
+    Limited training data, NDA-protected documentation, binary representation, and context-window constraints create barriers for current models.
+
+15. **AI may shift vulnerability-management bottlenecks.**  
+    Discovery is becoming faster, while intake, validation, triage, and coordinated response may become the limiting stages.
+
+16. **Human accountability remains essential.**  
+    High-impact decisions such as attribution, safety-critical behavior, and consequential remediation should not be delegated without meaningful human responsibility.
+
+17. **AI itself may become a reverse-engineering target.**  
+    Understanding opaque model behavior, mechanisms, and decisions could become a significant future research area.
+
+18. **The recommended strategy is active experimentation.**  
+    The panel encourages researchers to begin with a concrete project, integrate AI into their workflow, and use it to reach the edge of current capabilities rather than merely automate routine work.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+Hi everyone. So today this is our final
+panel. I'm only going to introduce one
+person because he will be the moderator
+of this talk tonight. So please give a
+warm welcome to Mr. Getty Evon.
+>> Thank you.
+>> Okay, you go ahead. Thank you Devin.
+I would like to start by introducing our
+various panelists
+because it will save a lot of time. Some
+of the failure patterns for panels are
+essentially about how can we spend as
+much time about on introductions as we
+could and then ask everybody the same
+question one after the other and then go
+to consensus among everybody, right? And
+we're going to try to avoid that. So our
+first panelist right here is Erin
+Portway
+and I asked him everybody really for
+three things. Something you do right
+something they've done and then
+something we don't know about them or
+that in their private life or something
+similar. He builds products at Mineguard
+which I think is pretty good. um he
+helped secure AI systems but also he
+founded bone tone which you might
+remember or heard of from somewhere
+right and he published in on frack which
+tells you how he has really good genes
+and doesn't age as a human being
+and lastly he was actually on the cover
+of time so we should be honored we have
+somebody who broke through hucker famous
+right and lastly he's been at threeon
+since 2008 ate.
+But honestly, most of his life now is
+about reverse engineering what his one
+year old wants to eat. So, appreciate
+you making the time, Marian. And I
+threatened them all. And usually I just
+like to introduce people myself and make
+it kind of casual and just go with it.
+But I threatened them. I'll make up
+their introductions. And they
+immediately sent me their introductions.
+So, she did work in antivirus and at
+Intel and at AWS. She reverses malware
+every day. She still runs Black Hoodie,
+which is one of the coolest projects in
+the world in my view. If you haven't
+heard of it yet, and you must have.
+Exactly. Yes. Let's give her a round of
+applause for that for Black Hoodie.
+And she's she's also a crazy crazy
+[ __ ] because she's training for
+her first ultramarathon.
+So, superhuman right there. And then the
+last awkward introduction I'm going to
+get through for now is for John
+Macintosh.
+So he's a security researcher. He
+founded clear sec labs. Now he's all
+about agentic reverse engineering as you
+must have noticed with the training here
+this week. And he wrote a stack of open
+source reverse engineering tools even
+before AI was a thing. Meaning he's been
+doing it for a while. He actually
+understands this more than just somebody
+who's been vi coding like me. So that's
+a plus. And lastly,
+it truly holds the belief, and I'm going
+to quote this precisely, that the only
+true pint size is the imperial pint. How
+dare you, sir? How dare you? Especially
+here. Now that that's done with, we can
+start a panel. I'm Gotti. I've been in
+security now for many, many years. I
+also age well. Are you guys calling me
+fat? What's going on here? But no, I've
+been in security for many, many years.
+Right now I am the co-founder and CEO of
+a company called Nastic where we do
+agents security and we just lost
+everybody from the zoom which is fine.
+So ignoring that for a minute everything
+is fine. Everything is fine. Does
+anybody understand computers? Anybody?
+Okay. The purpose of the panel is to try
+and untangle this thing called AI. And I
+I don't usually train or prepare or talk
+to people before panels because I
+believe it needs to be real. It needs to
+not be rehearsed.
+But here I felt there is something
+different because it's not just that AI
+is a buzzword. It's not just that AI is
+effective. It's it's truly polarizing
+right now. I mean I usually more now
+that I'm a CEO and no longer techie.
+Most of what I do all day long is talk
+to CESOs.
+But I am doing more reversing now than
+I've ever done because of claude.
+And the question becomes,
+am I going to have a job in a year, two
+years, 10 years as a CEO? I'm not even
+talking about programmer or verse
+engineer. My own engineering team at
+Nostec, I think they haven't written one
+line of code in months and months and
+months. It's all about the plan. It's
+all about the engineering. It's all
+about the review. Then we're three to
+four weeks behind on our PRs because
+we're writing too much code and I had to
+change that as well. So my fiance is a
+vulnerability researcher and I often
+have the conversation with her of is she
+going to have a job in a year? Maybe she
+should go and become a washing machine
+repair woman. So essentially with all
+the buzz out there about AI with all the
+concepts around this should this have
+been a panel about let's talk about how
+we use AI and truly make it effective or
+let's talk about its effective on the
+world for example vulnerability
+disclosure are we going to go back to
+2000 in the world of full disclosure
+when there is no coordinated disclosure
+in the world is this going to be about
+what is the future going to look like
+where should researchers be what are we
+going to research are we going to be
+replaced by I and the answer became
+let's just talk about whatever comes up
+and be honest about it because every
+single person in this room is an expert.
+Every single one in this room could have
+been up here on this stage and usually I
+don't talk too much with the moderator
+but was important to frame the
+conversation. To make it more fun we
+have a few more people who will step in.
+Now doing a panel also on Zoom is
+horrible combining the physical and the
+dig digital but I did ask uh Caillou and
+Hoverflake Thomas Dallion to join us for
+a comment at some stage but because we
+can't just have them disappear. Hey hey
+hey guys we can just have them disappear
+and not show up. They are going to be up
+there on the screen. So if they want to
+say something, they are going to jump up
+and down and show you the audience they
+want to talk and you the audience can
+choose whether they want to let them or
+not and let me know the moderator and
+I'll call them in to speak. It will work
+out. It will work out and we'll have
+tech tech problems. But generally
+speaking, we'll have four people step in
+to chat with us in various parts of this
+conversation. And to start us off, just
+to make sure that the tech problems
+start right from the get-go, I want
+Halvar to start us off with something
+short that he thought of to share with
+the rest of us here. What's top of mind
+for him when we talk about AI and
+research and reverse engineering?
+Hoverver, take it away. It's no longer
+March 2020. You don't have to be muted.
+Did you try turning it off and on again?
+>> Ah, there we go. Thank you. I should
+have turned the volume on. See, it
+works. Um, Halvar, please start us off.
+Yeah. Uh I'm not even sure what to say.
+Like I I I'm generally uh not an AI
+doomer. I don't think that AI is going
+to kill all the jobs. I think there's
+very strong economic forces that will
+make sure that uh people will remain
+employed and critical. Uh I guess my
+view is that for the foreseeable future
+an expert with a tool is going to be
+more effective than the tool alone.
+Um, and because we're in a sort of
+adversarial competitive environment
+pretty much everywhere in the economy,
+um, there'll still be employment. Uh,
+then as an employer, you probably have
+to plan your salary to compute spend
+differently because you probably want to
+equip every employee with a certain
+amount of compute these days. [gasps]
+But that's not much different from like
+a carpentry shop that needs to buy power
+tools so the carpenters can actually
+work. So I think in the past the split
+between capital investment for a
+developer and the developer seller was
+very much just the salary and nowadays
+you may have to give the devs more
+expensive tools. So you have hope for
+the future. Okay.
+>> Actually I would what would be stronger
+than saying hope I don't think that all
+the dumerism is terribly sensible.
+>> With that I want to start with John.
+John at objective by the sea last
+November you gave a talk on how you I
+believe automatically reverse engineered
+all Apple's patches was that it or
+something else
+>> yeahic dipping so it's basically
+combining LLMs you know with terministic
+tools and was able to uh you know solve
+that problem of patchiffing which I did
+manually the year before you know I gave
+a talk here at recon on Windows patch
+stiffing and that was you know in AI
+time a whole year ago uh and then five
+months later I could use AI to do the
+same process And uh originally it took
+me a few months to get the patch
+shipping workflow and now you know with
+with with the AI tool I was able to do
+that you know within probably a couple
+weeks for that. Um
+>> so how long did it take you originally
+in November?
+>> Well I really you know for the Windows
+one it was all manual. It was me
+correlating all the binary was me having
+all the intuition and then you know with
+the LMS it was it was the LMS having
+that intuition. So that that was the
+difference.
+>> And if you had to do it now how long
+would it take you? uh with today's tools
+uh the same thing. I I don't know if you
+can single single shot it, but you can
+do that in just a few days or less.
+>> Few days.
+>> Yeah.
+>> Okay. That's scary.
+I'll go to Aaron. Erin, I'm just going
+to let you have a free shot because I
+want you to blank out. Can you just tell
+us something random or specific because
+you actually said yesterday, Gotti, you
+know what? I hear you. I want to think
+about this panel even more. So, just
+surprise us. What have you got to tell
+us? Um I tend to agree generally with
+what Halvar is saying. I think that it's
+important to tease don't agree with
+Alvar.
+>> I mean partially. So I I think there's
+it's important to differentiate between
+the capability curve and the
+displacement curve. So the the
+capabilities of the models themselves
+and then actually what that means for
+the job market for the when it actually
+gets implemented uh and what it means
+for people's actual roles. So I do think
+it's going to automate and change the
+bottom 50% in terms of skill and wrote
+mechanized work that people do. I also
+think it'll generate new opportunities.
+>> That brings me straight back to the zoom
+to Tai because I think Tai has a more
+philosophical outlook on this kind of
+breaking it down into a model. Ty, do
+you want to take it away?
+>> Sure. So you know we started a campaign
+uh trying to find and exploit as many
+vulnerabilities as possible with AI in
+the past few months and uh in our view
+you know uh there have been like two
+defining moments in the history of like
+human and machine competition the deep
+blue moment and the anthago moment. Uh
+in 1997 uh IBM blue defeated Gary
+Kasparov in chess and then in uh 2016
+Ango defeated Lido in goal. Uh but we
+see that these victories actually
+represented fundamentally different
+transitions.
+At the nibble, the strongest uh chess
+player in the world was not a computer
+but a centaur, a human working to
+alongside with a machine. And for nearly
+a decade after that, the highest level
+of chess was dominated by this human
+computer hybrid.
+The game of go follow a different path.
+After a go there was little doubt that
+the best goal player was simply the
+machine. So what we want to understand
+uh was uh is where computer hacking sit
+on this spectrum. Are we at the deep
+loop moment where humans and AI together
+are perform either alone or are we
+approaching an unfaloo moment where the
+machine no longer needs the human.
+uh you know we focus on motivated
+research and exploitation. Uh so far
+have everything we have seen including
+you know our operations uh
+collaborations with the frontier labs
+suggest that we remain firmly in the
+deep blue mo error.
+LMS have you know demonstrated and I
+think everybody has agreed to this point
+right an the an extraordinary ability to
+discover vulnerabilities but we found
+that turning this discovery into
+reliable exploitation still requires a
+skilled human in the driver seat uh we
+build uh what we believe was the first
+exploit against Apple's memory integrity
+uh pro enforcement or MIE in April and
+during that work and in subsequent
+research since then we've saw firsthand
+that even frontier models such as meters
+struggle to overcome the the
+mitigations.
+Uh probably the problem is there's not
+too much like public data for the models
+to learn from. For now we feel like
+crossing that gap still requires human
+expertise and we know that you know
+computer hacking is not is much more
+than vulnerability exploitation right in
+many of our viming engagement we don't
+need to exploit a single vulnerability
+to infiltrate a network but once inside
+the real challenge is stay staying
+stealthy
+every action carries a risk a single you
+know careless uh move can burn the
+entire operation and because LM system
+today remain probabilistic and too eager
+to act too eager to please the human
+right. So we have been very hesitant to
+deploy them fully autonomously. There's
+a b a bunch of studies uh about this but
+if you look at the study carefully you
+will see that it's not you know set up
+in the real environment.
+So we think even in like real world
+computer hacking human judgment remains
+very essential.
+>> But like I just like to quickly step in
+and said you had 30 seconds you're now
+at four minutes but the reason I'm
+stopping you is not because you're not
+interesting but because I want to call
+you chicken.
+>> What do you mean you're not going full
+autonomous? Why are you being s such a
+[ __ ]
+A [ __ ] cat? You know, I have a cat. His
+name is Unix. And he kept looking at me
+from behind the door and doing meow
+meow. So, why not autonomous? What stops
+you right now?
+>> What stopped me from deploying the
+agents, you know, autonomously because
+we don't want to get caught,
+>> you know? Uh we actually did that uh you
+know one of our interns did uh release
+uh blog code you know inside uh a
+network and it it it went completely
+crazy right the agent it doesn't care it
+just try to do multiple things at the
+same time and I think like that's the
+strength of the agent of the AI right
+but you know sometimes you want to make
+the right move not like so many moves at
+the same time
+>> and that I think brings me to the I'm
+going to cut you off because I'm a
+moderator. Before we continue to not
+running autonomously, running
+autonomously, whatever it is, I actually
+want to point out the first failure
+pattern of this panel and that is
+everything I could think of was about
+vulnerabilities and exploits.
+And when it comes down to it, I kicked
+off Cloud Code a couple weeks ago and I
+asked him, "Go to this URL
+and grab this malware and start running
+through it, show me what you can do,
+show me what you can analyze." And six
+or eight samples later and a 30,000 line
+JavaScript, no batch file and minimized
+JavaScript and an offiscated binary, it
+gave me the results for everything. Was
+everything correct? Probably not.
+But the world truly is changing and
+malware is a big part of it. And that is
+the biggest reason other than her being
+really cool and really smart that Marion
+is here. And Marion is the one who said,
+"Gatty, why is everything on your panel
+aimed to vulnerability researchers?"
+Marion. [clears throat]
+Hi.
+>> Hi.
+>> I'm not going to attach a question. I'm
+just going to ask you to say something.
+>> Yeah. Well, my question to Gal was like,
+why am I on this panel? I'm not a
+vulnerability researcher. And that's
+when we agreed that there had to be some
+malware content,
+which I truly appreciate. And it's great
+that you bring that up that you threw
+Claude at this problem and it was
+following the chain of infection and it
+gave you information about that and and
+it got the results which is great.
+My problem with analyzing Melbour with
+autonomous systems is I need to trust
+the output. And AI so far has proven to
+be relatively good at this and sometimes
+not being good at this. And so if I
+handed a a remote access Trojan and it's
+telling me it's a ransomware, I still
+have to go and verify those results. And
+something that I couldn't answer so far
+is how do we verify that these um that
+that the results are actually
+right and another thing like something
+that I've been recently looking into is
+runtime packers like analyzing runtime
+packers with AI and that's there there
+there's two issues there. First of all,
+CL doesn't really understand that in
+order to analyze a packer, you don't
+really have to run the sample and uh it
+there have been in incidents where I
+mean everything happened in a virtual
+machine but they ask like can you tell
+me how this packer works and it it goes
+um sure let me quickly run it and see
+what's happening and I'm like no
+[laughter]
+>> and what happened next? where the
+malware ran
+[laughter]
+>> in a sandbox
+>> in a virtual machine relatively
+contained you know
+>> and did it breach the virtual machine
+how would I know like I didn't watch you
+know it's not a debugger [laughter]
+>> isn't pucker is all about finding the
+offset like with UPX 25 years ago when I
+did it no okay moving on so I think this
+brings us to a point of using AI and I
+think there is a rule which says
+harnesses eat up models. Harnesses are
+great. Harnesses make us capable and
+then a new model comes out and the model
+eats up the harness with one prompt, one
+shot. So I want to go to our various
+panelists Aaron and John and say what
+changed for you? What does your
+scaffolding what does your
+infrastructure look like? How is it
+different today than six months ago and
+from two weeks ago?
+Aaron.
+>> Yeah. I think AI has this thing where
+it's able to train on a lot of like
+mechanistic things, right? So, it ends
+up converging just like if you see uh
+text and you're like this is AI slop, I
+can identify it as AI. Same problem
+applies to when you are reverse
+engineering. The methodologies it's
+going to use are from the the median of
+the data that it has. And a lot of that
+data is mechanistic.
+What it misses is the counterfactual.
+Why you didn't go down a path, why you
+didn't do a thing. That's meta strategy.
+My harnesses tend to contain the meta
+strategy and AI is eating away at the
+meta strategy by figuring out
+>> what is a meta strategy
+>> basically how it's easy to measure if
+you read someone's blog post it has on a
+you know we reverse engineered this we
+found a bug it has a survivorship bias
+telling you all the time that was wasted
+uh the path it didn't take it's it's
+kind of like a post hawk rationalization
+so the harness is containing the hey
+stop here stop at this point Right?
+Those those that bit of information is
+not really captured in the training. So
+what I find is the harness contains the
+logic that is strategic about uh
+direction, where to look, when to stop,
+measurements around that. And as the
+models get better, they're starting to
+eat away that edge. So when a new model
+comes out that's more capable, it it's
+embodying a little bit more of that meta
+strategy. And so the harness has to
+change to address.
+>> Have you ever been in a position like me
+where you destroyed your entire
+scaffolding and started from scratch
+because it sucked? Yeah, very much like
+kind of John Carmarmac who rewrote the
+Quake engine like a dozen times. I
+suffer from the same problem. Like I
+could
+>> How often do you do it?
+>> Every time.
+[snorts]
+>> Doesn't that hurt? You You spend so much
+time trying to figure out how the model
+works and how the agent works and how
+the scaffolding works and how you can
+add a little bit of determinism to the
+mix and then you're telling me, "Oh no,
+I have to throw it all away."
+>> Yeah, but I don't have to code it by
+hand anymore.
+>> John, what about you? changed for you
+six months ago and two weeks ago.
+>> I guess it maybe depends on which uh
+which models you're using, whether
+you're using a local versus a frontier
+model. Uh obviously a lot less work
+needs to be done with a frontier model.
+It can kind of enumerate paths or you
+know if you're looking at uh bugs, it
+can it can do that a lot uh uh more
+capable than a local model. A local
+model needs a little bit more help. It
+needs a little bit more context and you
+got to kind of design the system where
+uh
+>> come on be specific. What changed? What
+did you do different? I'll tell you one
+example for me. I used to take it
+through every single step and separate
+the context and do SL clear all the
+time. Then it moved to a place where I
+said my job is to make sure the agent
+keeps running and doesn't stop. It's
+wasted cycles when it does. Then it
+moved to a space where I said you know
+what openclaw came out and I thought it
+was brilliant. Not because of openclaw
+but because it said [ __ ] determinism
+>> and everything just worked.
+There there is aspect of I used to be a
+you know Claude and I you know earlier
+versions four five
+>> Claude and I
+>> used to bemoir we used to be friends and
+we used to work together he used to ask
+me questions and then you get to 48 and
+he I'm like hey I got I and he's working
+so there's you know it's progressing
+it's getting faster there's a lot less
+you need to do for that that bigger
+model that's what's changed
+>> so Aaron starts from scratch every
+single time I'm sorry Aaron can you tell
+me about a shift in a project like you
+noticed man that doesn't work anymore
+more and I just did this two weeks ago.
+What was that?
+>> Trying to throw an an overly large
+amount of decompiled code at a model
+where I didn't want to wait for 3 days
+for the results.
+>> You threw a huge huge set of decompiled
+code.
+>> Two things. Uh instead of analyzing the
+holistic everything all at once, um
+applying techniques that are looking at
+things individually and ranking them and
+giving me a little bit more power to
+focus efforts. That was one. The second
+one was exploring um proper knowledge
+graphs because as you do this work it's
+very uh discontinuous like you start
+from scratch you have an agent you do
+some work you set it down you come back
+a week later you end up doing kind of
+from scratch again not rewriting the
+harness but you're kicking off a process
+it doesn't have the context I have 20
+plus years of built life experience
+reverse engineering and I bring that to
+every target so the idea the biggest
+change lately was to try to figure out
+how to explore knowledge graphs and have
+continuity of results and methods and my
+feedback encoded in the harness as I
+move forward. We all understand that AI
+is out there. I believe we all realize
+at this stage that it's extremely
+effective. We all realize the storm is
+coming and it's coming for our jobs to a
+degree and we all realize that many of
+us I started with saying I talk to a lot
+of CESOs nowadays as opposed to
+researchers but a lot of the people I
+talk to including researchers are
+not sure how to start or think maybe I
+should retire. I made enough money or
+maybe I don't need too much money. I can
+go somewhere on some island and leave
+off of whatever I made so far because
+how the heck are we supposed
+to keep up? And the answer that I came
+up with is just do it. Just start.
+Marian, why did you not do it at first?
+Why did you actually start? And then
+what did you like about it and what did
+you hate?
+>> Well, when I first tried using AI, it
+didn't work and then it started doing
+better.
+[laughter]
+>> Go on.
+>> Say more please.
+>> So in the past I was interested in
+binary visualization because if you
+binaries are graphs, right? And
+visualizing graphs can be really nice
+like there there's beautiful graphics
+that come out of that and they can be
+helpful in analysis of those binaries.
+So like a couple years back I was giving
+a talk here about binary visualization
+and that was hard work at the time.
+There was no gedra. There was no
+headless scripting in IDA. I didn't have
+an IDA license. I did a whole project
+with Radar 2. I was coding for months
+and going back and forth with the radar
+developers about bug fixes if you know
+how that goes in their telegram channel.
+And then for visualization I was using
+D3 which is a JavaScript framework and I
+have no idea how to write JavaScript. So
+that was another
+>> thank god for that
+>> couple weeks. Yeah, same same. And um
+after that presentation, I shelfd the
+project cuz I had a real job too. And
+eventually I got back to that project
+when AI started to make real sense. And
+I told AI that I wanted binary
+visualization and it wrote me an IDA
+procript and the GRA script and the
+binges script and the whole JavaScript
+pile that you need to visualize it. And
+it did all that like like include and me
+we worked on that for half a day and now
+I have binary visualization
+with in a beautiful gooey with like
+buttons to click and options for the
+graph to go bigger and smaller and I
+still know JavaScript and it's great
+because I never wanted to learn
+JavaScript. I just wanted the graphics,
+right?
+>> So this brings us forward a little bit.
+So Halvar uh I believe I'm not
+misattributing when I'm saying you kind
+of made IDC scripts famous. IDA Pro made
+things easier and then IDC made things
+easier and you actually shared your work
+and then iluck introduced skipping and
+changing history as I see fit. Feel free
+to get upset and then iluck introduced
+the compilation and it got easier again
+and every single time more people got
+into reverse engineering. More people
+did the work and we needed more reverse
+engineers and more researchers in the
+world. Also at the same time we
+[clears throat] have seen expansion in
+other fields for example vulnerability
+researcher to pentester right where a
+lot of the tools were already created
+and some pentesters could be
+vulnerability researchers or coders or
+write PC's but the world of researcher
+to engineer to analyst and then finally
+to everybody at home with for example
+Excel that [clears throat] people can do
+what only accountants could do but if
+I'm to mix my analogies what's going to
+happen now. And the bigger question that
+I want kind of to lead us into is are we
+really still going to have a job? But I
+don't want us to stop there. I want
+people to that I asked the question of
+to specifically tell me where if they
+can tell the future a little bit and
+they can be wrong and we can laugh at
+them in two months as opposed to 10
+years from now. Please tell me what can
+I tell all my friends who are
+researchers who say AI is going to
+replace me or at least 99.9% of us not
+all of us are going to look for the new
+types of bugs or the bugs that you don't
+find yet or whatever it is. I'm going to
+stop talking and say halvar convince me
+that we have hope and we have a future.
+>> I mean you signed up to be a knowledge
+worker which kind of means you have to
+move with the knowledge.
+>> Yes, but in the 60s we prom I was
+promised with AI that it's going to fold
+my laundry and it's going to have real
+problems with chess. Instead, it solves
+chess and doesn't fold my laundry.
+>> It's not really related. I just want to
+tell you that
+>> like
+>> so confused.
+>> To repeat what I said like if you sign
+up to be a knowledge worker, you will
+have to continuously adapt throughout
+your career, throughout your
+professional life to new tools.
+>> But I don't want to adapt to people that
+were very upset when compilers were
+introduced.
+>> Well, I am upset. I don't want to, h I
+really don't. I have studied. I have
+worked. I have learned. And now you tell
+me I'm going to have to be constantly a
+researcher, never an engineer, and just
+constantly learn, constantly throw away
+all my scaffolding and all my tools and
+all my infrastructure and constantly
+change everything I do to stay relevant.
+>> No, what are people thinking about
+retirement?
+>> Well, I don't know. I mean, my my view
+is that I always anticipated that I will
+have to learn for the rest of my life. I
+think everybody that does reverse
+engineering has a joy of learning. You
+say we should keep learning, keep
+changing. This is part of being a
+knowledge worker, right? It ties right
+into a really annoying research that
+came out of MIT that said AI makes us
+dumb and stupid and moronic and other
+words I can find in the dictionary. I
+find that if we keep researching and we
+keep changing our scaffolding and keep
+going to the next layer, we actually
+become smarter. Where is the line? Where
+is the line? How? So, number one, you're
+telling me I have to keep studying. I
+have to keep throwing everything out. I
+have to keep taking input in which is
+much harder than producing output. And
+now I can't rely on my tools. I can't
+rely on what's real. It changes every
+two weeks. I don't think that's
+reasonable to ask of people.
+>> If you don't think that's reasonable, I
+can't help you. I'm sorry. [laughter]
+>> And I think that first of all, okay, you
+win that one. It's not that I disagree,
+but the problem with discussions about
+AI is we all end up being tech bros and
+talking in manifestos. You know, we need
+to keep changing and we need to adapt.
+We need to be on top of it. And I'm not
+sure exactly what's different from
+Bitcoin or blockchain in general when we
+talk about it. My fiance is refusing to
+let me write anything that's higher
+level to avoid being a tech bro and
+writing manifestos. But now that I'll go
+back on point and put my diagnosed ADHD
+on back under control,
+where does this end?
+I'm going to go to Aaron and say, is
+there an end to insight to AI, whatever
+the hell that means? Is there something
+we're always going to need humans for?
+Is there something that AI naturally you
+can't predict the future, but I'm going
+to force you to.
+What where the what where
+something? Tell me. Help me. I mentioned
+earlier the kind of AI slot problem
+right and that's a convergence to the
+median reversing interesting reversing
+happens outside of the distribution the
+interesting novel things that happen I
+think right now it's not replacing our
+jobs directly because where that median
+is is not threatening to the skill level
+of the most reverse engineers
+as it gets more data to train on it will
+begin to take things that were required
+you needed to extract extrapolate for
+now it can interpolate because it
+becomes part of the the training set. I
+think that median is going to rise over
+time as more people publish and more
+information and more training happens.
+Um but I think that that is to to the
+point about having to upskill. Um I
+think the cognitive offloading stuff
+that you're mentioning with the studies
+is about how you use the thing. What are
+you if you're using AI to do some wrote
+task that you are totally capable of
+doing yourself? Yeah, you're going to
+have raid rot. If you use AI as a force
+multiplier to chase that edge and make
+sure you're above that median,
+then you are learning. And
+>> we we have a mutual friend. His name is
+Adam Lori. Major malfunction. So Major
+also didn't touch AI until very
+recently. And he does glitching, meaning
+he tries to find the precise place, the
+precise angle, and the precise timing to
+fire an E impulse at the cheap and try
+to get it to show it show him his its
+secrets. And he [clears throat] left
+home. He has a lab that's a few tens of
+thousands of dollars. Uh although he
+brought the experiment down to just an
+uh small chip that cost like 20 bucks.
+Major left the the lab working on a
+specific chip for 8 weeks I believe and
+every 8 or 13 seconds it would try to
+glitch. [clears throat] It came back
+home eight weeks later. Miracle number
+one it kept going. It didn't break.
+Miracle number two it found nothing.
+which is not that surprising being able
+to do this is a nation state level
+capability and a hobbyist level
+capability like it's always been in
+hacking but then he went on prompter get
+the [ __ ] out which is a YouTube show
+many of us went on just to show for
+three to five minutes what it is we
+actually do no slides and he he messaged
+me and said Gotti there was this guy who
+showed how he asks five different LM
+something gets an answer and then
+continues with whatever LM he wants and
+then he said can you send me that one
+presentation where somebody showed how
+they use IDA through an MCP something or
+other. And then he went to Chip and
+tried a few things and within three
+attempts it glitched the system
+which is incredible because at that
+point in time just by using AI no
+autonomous loops no agentic tales where
+the robot snakes it's its own input
+output whatever just talking to it he
+succeeded in something insane. He made a
+nation state level capability available
+for everybody. But he didn't stop there.
+He went and started vibe coding and he
+created it to a degree I don't know if
+he went this far where he can or he will
+be able to soon chain all these glitches
+and play with timing and um compare add
+in softwarebased attacks and he put it
+all out on GitHub. I mean he kept going
+he kept going higher and the higher and
+higher level to think more he didn't
+just automate himself and made himself
+stupid right and I want to connect this
+with one more to challenge you HD Moore
+and I think somebody else got coming up
+at at black hat in my own RSA talk
+recently showed how he decided to test
+the edges of AI and he used it in order
+to learn a protocol the AI does not have
+in its training set training data and
+Using reasoning alone, he showed how he
+could use whatever agent he was using in
+order to actually kick its balls, just
+completely break that protocol down,
+understand it, and do things to it. Why
+would the training data some be
+something that stops us?
+We have a reasoning machine we can use.
+>> Yeah, the the example you're talking
+about is like the core of reverse
+engineering. I that protocol isn't some
+wild extra planetary you know thing that
+we've never seen before. So I think it's
+it while that particular protocol is not
+in the training data the mechanistic
+operations to understand it and the
+patterns to follow are in the training
+data. Um so I don't [clears throat] I
+don't see that as a compelling thing
+that glorifies AI to be able to do some
+capability that's outside of the
+training data. I think
+true.
+>> So if I learn smaller steps, for
+example, I learn how to pick up a pen, I
+learn how to attach the pen to paper, I
+learn how to start moving my hand, I
+learn what the letter looks like, along
+what a word looks like. I have all these
+um capabilities.
+What's the difference? Why would
+training data be a thing? Why would we
+care? We have reasoning capabilities
+now. Please help or share.
+>> The current reasoning capabilities of
+models do not solve all the problems all
+the time. The frontier solves harder
+problems with low probability and pretty
+much everything all the frontier labs
+are doing currently is trying to improve
+reasoning on those problems where they
+can get some solutions but not reliably.
+But the entire uh reinforcement learning
+post training that they're doing is
+essentially about giving them problems
+where they fail a good fraction of the
+time and then training towards less
+failure on on these tasks in a fraction
+of the time. So when you say that
+reasoning can solve everything, in
+theory it can, but it is a form of
+search into a very high dimensional
+space and if you you randomly search
+into a very high dimensional space,
+you'll be spending a lot of compute in
+order to find a solution eventually. Um
+yeah, and I guess there's a reason why
+the big labs have such ridiculous
+compute spend because they need to do
+that all the time to increase model uh
+performance.
+>> And with these right words, I'm going to
+turn to Marian. What if we no longer
+have AI in the future? What if it's a
+scarce resource we can't access anymore?
+That's something that's in your head
+quite a lot, isn't it?
+>> I wouldn't say I'm I'm spending too much
+thought about it, but um yeah, like what
+if what if in the future like there is
+gatekeeping around AI and then the
+people with money have AI and the people
+without money don't have AI? like the
+small companies don't but the big
+companies do. Like one country does and
+the other country doesn't and like these
+imbalances um give me the creeps to be
+honest.
+Also though I'm technically retired and
+I'm not spending too much of my day like
+worrying about those types of futures. I
+leave that up to other people.
+>> Everyone else.
+>> Yeah, everyone else.
+The the point is you're somebody who
+plays with AI, right? You're a so-called
+retired although you're reverse all the
+time.
+>> And why would you worry about not having
+access to AI if it's not something
+that's a concern? Why would that come
+up?
+>> Well, if my workflow becomes dependent
+on the use of AI, then I'd be hurting if
+I couldn't use AI anymore. Like if I
+couldn't use the right the most powerful
+model or like the the fastest model.
+And um granted my workflow isn't that
+impactful on the stateation
+but um imagine that happens on a bigger
+scale and we already see that like
+certain parts of the internet are more
+accessible to some populations than
+others and yeah to say that's not fair
+is an understatement and like in the
+future we're talking about financial
+powers and political powers and AI is
+going to play a role in all those like
+there's
+inequalities happening that will be a
+problem not not not mine but everybody
+else's you know
+>> it refrains the question of if AI to you
+must use AI now there is a poverty line
+that we might not be able to cross or
+some powerful all powerful people
+stopping us somebody who mentioned two
+or three times already local models in
+this panel is John so I would like to
+turn it over to you
+>> I mean the idea of AI going I guess
+there's gatekeeping I mean uh I think
+that problem exists anyway with
+resources for different nations today
+with I mean non AI resources uh the
+local model scene though uh you know GLM
+came out this week 5.2 competes uh you
+know with GPT I think at least 55 or 54
+I think the local is kind of the savior
+in that case where you can you can't
+really take that away from me unless you
+took away all my my comput machines. Now
+you may not be you may not be a a fable
+out there but that local kind of
+protects you in that space.
+[clears throat]
+>> We're probably between four months and
+18 months. So let's assume eight or six
+because AI moves fast from having open
+weight models completely overtaking
+methas. And the question for me really
+is do we really need to run our own AI?
+I mean, it scares me personally that
+somebody's just one day is going to
+decide just like with the big platforms
+and social media deciding one day you no
+longer have access. What happens if we
+no longer have access to these models?
+But let's stay on the local models for a
+second. Halver, you've been playing with
+local models for exploitation. What do
+you think?
+>> Well, local models are strictly weaker
+than some of the frontier models.
+Um, I mean, we see the GLM52 performing
+reasonably well. Uh, personally I'm I'm
+ridiculously excited about something
+called VIP 3B, VIPinker 3B that was
+released by VBO 2 days ago. Um, it's a 3
+billion parameter tiny model that is a
+post train of quen 2.5.
+3 billion uh that has been trained just
+on reasoning and has forgotten all the
+facts, but it solves combinotauric
+combinatorics problems really well. like
+you ask it something like count the
+number of palindrome integers uh whose
+digit sum is 41 which don't contain
+zeros and it'll start reasoning and
+it'll come to a good answer and that's a
+3 billion parameter model small enough
+to run on an iPhone. So there's an
+argument to be made that while at the
+moment the like you'll never be
+competitive as a generalist where the
+frontier model that's closed and runs
+like two trillion parameters or
+something. But for reading code, you
+don't need a model that knows where the
+Eiffel Tower is located.
+And um
+uh so I guess I'm
+I'm not bullish that the gap will ever
+close completely, but I am pretty
+bullish that you can have much smaller
+models which are much more reasonable to
+have either self-hosted or locally
+deployed.
+Um
+and I think that's a pretty bright
+future. Like I couldn't count the number
+of palendrome integers with a digit sum
+of 41 uh with no zeros reasonably. uh 3
+billion like the fact that the three
+billion parameter model can do it is
+really fascinating. It's like watching
+an octopus do my math homework.
+>> You're getting an applause over here. So
+I want I want to take the panel
+somewhere else. I want to focus for a
+second. Ty, my question for you is
+you're pretty tied in to all this in
+Khalif. You used to essentially find
+bugs. Now you pay other people to find
+bugs is what was the introduction you
+wanted me to say and I'm doing things
+out of order again to try and keep
+people interested and engaged. Am I
+doing a good job? No. Okay. But the
+point is
+you are now right your job relies on
+letting other people use models. Your
+job relies on helping show how insecure
+the world is. And maybe also your job is
+about how we'll go over the hump and two
+three years from now we won't have any
+more bugs. I was at unprompted Heather
+Atkins CS of Google for Fle of Deepmind
+came on stage and they did not talk
+about finding vulnerabilities anymore.
+They talked about autonomous fetching
+which is really really hard to do which
+is all me going round and round and
+round to come back to you and say is
+there a future do you foresee yourself
+or somebody you pay being a
+vulnerability researcher a malware
+analyst or a harness builder? I don't
+want to be a harness builder man
+>> like uh that's what we want to find out
+where's the limitation of AI in this
+thing right uh and so far we saw that
+you know there are things that it cannot
+do and so that's still some hope for for
+us here right but uh we don't know how
+long this going to last would be like 10
+years or 10 months I don't think anybody
+knows right even the the people at the
+frontier labs they don't know So that
+maybe like for us that's an interesting
+question that we want to find out and
+maybe you know when we find out I mean
+maybe in three months from now I think
+the one of the frontier labs they told
+me that every year they would have like
+three uh release right so we have just
+seen like the first release of this year
+there will be two new generation by the
+end of the year what gonna happen uh you
+know I can't wait for that, right?
+Because maybe it's just like uh the AI
+can do everything and then we can just
+figure out what we need to do next,
+right? And I think that is interesting
+to me as well like figure out how we fit
+into this, right? I I'm not like
+pessimistic like the AI cannot replace
+us like entirely. Even if it can find
+vulnerability and exploit
+vulnerabilities, there would be still
+things for human to do. So, and then
+it's our job to figure out what we what
+we can do there. what can we make
+ourself useful?
+So I believe like there's still a role
+of human. I'm I'm just not sure you know
+what we going to do, right? Maybe we're
+not like gonna stay at like I I pro own
+days anymore, right? But maybe there's
+still something there for us to do.
+>> Aaron is moving around. Erin has
+opinions.
+>> Yeah. I just I think AI will never well
+shouldn't ever be in a position to be
+accountable without a human in the loop.
+Do you really believe there's going to
+be a human in the loop?
+>> I maybe I'm using overusing that phrase,
+but accountability generally speaking
+for an AI is I I think there has to be
+someone at the end of
+>> is there accountability for software
+anywhere
+>> in terms of like that being the final
+accountable thing. So if you talk about
+malware reverse and engineering, if
+you're going to go and assign
+attribution to a particular nation state
+instead of another one, do you want that
+decision being like I'm sorry that we
+got into a war with you? It was the AI's
+fault. like it should that's a place I
+don't think we should ever let AI usurp.
+That's one. Um the other one I think
+where AI should be involved or should
+not be involved is it will right now at
+least endlessly endlessly work on
+open-ended problem spaces. And so
+there's some amount of discernment that
+generally comes from people with
+experience to say okay stop don't do
+that don't go at this particular problem
+or look in this direction. So I think
+those are two things that uh I think we
+still need people in the loop for. And
+then one other thing to call out I think
+is that reverse engineering is certainly
+going to change with all the automation
+the capabilities but I also think
+there'll be new opportunities for people
+who like to reverse engineer because at
+its core reverse engineering is about
+not being intimidated by opacity and if
+AI is going to solve that problem with
+regard to binary reverse engineering
+guess what's also very opaque AI itself.
+So trying to understand like the
+mechanistic interpretility problem which
+is an emerging field like if you go ask
+the frontier labs why an AI made a
+decision they're hardressed to give you
+like the actual like you don't have a
+debugger that's able to necessarily give
+you the fidelity uh and train of thought
+to the level that you might like with
+binaries. So I think there's a future.
+It just looks different for people who
+like to get clarity about opaque things.
+And it might be that AI is actually uh
+providing that in terms of a target that
+you have to then go understand because
+it's it's going to be given more power.
+You need to understand and be
+accountable for how it came to
+conclusions. If we go back to the the
+question like you know well we still
+have jobs um and you know saying like we
+don't know we don't know what's in the
+future but that that's always been the
+case. uh we didn't know about the
+internet coming. We didn't know about
+all all these new technologies. We don't
+know what's around the corner. You know,
+a simple token prediction machine uh
+right now has changed all of us. We're
+all here talking about AI um and changed
+our work and our pace of work. U but
+that's always been the case and like as
+said before like the adaptability piece
+that's that's the value or that's that's
+where we have to kind of stay sharp to
+stay ahead. I think that's how we keep
+our jobs. um those pieces coming
+together I don't think has changed
+except for the rate of change and that's
+maybe the brand the newest thing for me
+is every month there's a new thing to
+keep up with and learn with but before
+you know maybe we could see a trajectory
+or a a good way to pursue education or
+good like my son came up to me said hey
+dad I want I want to learn programming
+I'm like but why though you know and
+I've been you know just all these things
+uh then those are things we don't know
+but I think our job is to take a step
+and just keep uh keep moving forward
+I just I don't think it's changed much
+except for the pace. Try not to actively
+moderate but just let people talk. It
+will work. It will work.
+>> All right, I'll talk. I'm teaching
+reverse engineering classes since 2015
+and as such I meet a lot of people who
+just enter this industry and something
+I've observed over the last few years
+and specifically the last 6 months is
+that the stagnant disappearance of
+entry-level jobs. And that has me really
+mad. Like when we talk about AI and the
+human in the loop or the the the expert
+in the room, we need experts. If we stop
+having entry- level jobs, we won't have
+juniors and we won't have experts one
+day anymore. I have so many
+conversations with people who are
+completely overworked these days want to
+quit and start goat farming. And if we
+all do that, who is going to be the
+expert? And I don't understand how the
+system is supposed to scale in the
+future. Like I could rant about that all
+day.
+>> Tell tell us how you really feel.
+>> No, but but let's go around. If you met
+a junior or an entry- level person
+wanting to go into cyber security,
+reverse engineering research right now,
+what would be your advice and why would
+it not be don't? I'll start with John.
+I I mean uh for for someone coming brand
+new into this and they've never been in
+the space before
+as much as it can maybe replace that
+entry level position I think it also can
+be an accelerator for your learning um I
+don't have to go search a bunch bunch of
+things right now uh you know last year
+when this you know a GPT OSS 20B came
+out and this 12 GB file is sitting on on
+my machine at home and I'm asking ask
+asking questions it's helping me analyze
+a stack um I don't need to go to an
+expert Um I do training you could just
+work with an AI and you get you know I
+could replace myself there but you the
+rate at what you can learn now is also
+increased I think that's what I would
+advise like you never you just you push
+someone coming into this to learn and
+that's as said that's her job all along
+just keep learning
+>> I wouldn't discourage anybody from
+entering the field it was just tell them
+like be quick you don't have years to
+learn binary analysis anymore like use
+the AI to teach you things use it to
+help you be faster don't use it to do
+your job for you cuz in the future skill
+will matter more than it ever has.
+>> There's a future for people in cyber
+security. Just to say that out front. I
+think that for the same reason AI is not
+yet and probably won't, you know,
+combine general relativity and quantum
+mechanics. There's going to be our
+version of these problems that are at
+the edge that the tech is not going to
+be able to solve. And I would recommend
+anyone that wants to get into cyber
+security to get comfortable with the
+latest and greatest technology. It's a
+force multiplier. It's an accelerant and
+it'll let you chase problems that were
+out of, you know, the pri prior
+generation's reach without sweat and
+toil and time. Um, so I think just like
+the tech accelerating, I think the
+learning will accelerate. I think the,
+um, what junior folks will be able to do
+if the access problem isn't there, uh,
+will also accelerate. Um, I just think
+we can't all predict exactly what
+that'll look like because it's it's it's
+an exponential change.
+I want I want better from you guys. I
+want to actually ask Dragas to step up
+for a minute. He's another person I
+asked to talk to us today. He is the
+founder of Conc West. He's been in the
+space for many, many years. And his
+challenge was precisely this, to call
+all you guys on your BS and give us
+something specific he believes is still
+out there today that we can do. Here's
+the mic.
+>> Two things. One, I think that there's
+going to be a code explosion. So you're
+going to need way more reverse
+engineering and you're actually going to
+be a shortage of people to do this
+because you're going to need to guide
+this. The area that I've been looking at
+really heavily is firmware engineering
+and models suck at binary analysis.
+Binary analysis doesn't produce like
+tokens and like into tokens like source
+code and it uh consumes a lot of context
+space. With a million tokens, you can't
+look at more than about 100k of code in
+binary. So we are facing severe context
+limitations as well with embedded and
+firmware. None of that stuff is in
+training materials. It's in and SDK's
+documentation that you need an NDA to
+use. It's sure the processors are
+simpler, but there's just not a lot of
+training material for these things to
+use in the embedded space. So I think
+that the embedded space is an area where
+there going to be a lot of problems.
+We're not going to get there real fast
+with models right now with our training
+data. So that's was my point really.
+>> Thank you. And now I'm going to give the
+rest of the people on the panel a little
+bit more time. Marion, you use AI to
+learn all the time, to learn and be
+better and faster and meaner, not just
+running ultramarathons, right? What's
+your process? How can we learn from you?
+>> It really doesn't help with running at
+all.
+>> Have you have you tried videoing
+yourself?
+>> I'm
+I'm faster than I've ever been with
+shoveling information in in my head.
+like my reading comprehension has gone
+way up. Granted, but like my favorite
+thing about AI is that I can ask it a
+detailed question and it will write me
+like personalized blog posts to read and
+I don't have to spend hours and hours
+looking on the internet. And um I'm also
+close to burnout because like that is a
+lot to read and a lot to remember and
+and a lot to keep up with and the
+industry is moving very quickly these
+days. So there's even more to learn. But
+um I still don't quite know if that was
+the question, but that's what I do with
+clothes. Yeah.
+>> Okay. So, I saw Aaron writing down a lot
+of things. So, let's start with Aaron.
+I'm going to have you start and give us
+something specific.
+>> I'm just trying to think what I would
+what I would tell myself uh if I were in
+a junior position right now is to pick a
+particular goal. Pick a lane. Vdev, you
+know, reverse engineering generally
+speaking, compatibility, reverse
+engineering, firmware, whatever it is.
+Pick a thing.
+use AI and accelerate to the very edge
+of whatever that field is because now
+you have something that is essentially a
+mid-career level expert more or less or
+an amalgamation of all of us. Um, and
+you can actually very quickly build a
+curriculum for yourself, push yourself
+to the edge of what that thing can do.
+And when you hit the edge, now you're at
+the innovation layer and you can start
+to figure out, okay, I want to harness
+it. I want to improve it. There are
+incentives for the frontier labs to
+improve via fine-tuning and training and
+all these things in particular domains.
+Hopefully cyber isn't like reverse
+engineering specifically isn't the one
+they focus on like you know we have more
+existential problems or interesting
+other uh industries that they could be
+focusing on. So I always think there
+will be individual agency to uh find the
+edge of a particular niche topic that
+you're interested in cyber security.
+Find the edge of the current tech and
+that's where you can innovate and
+actually push things forward via
+harnesses and rewriting it every day
+like I do or whatever uh you're
+interested in. So I would say for
+juniors getting into it, yeah, just you
+you now have the tools. I had to look up
+an incard 95 when I started when I cared
+about something. It's probably over half
+your heads.
+>> A CD ROM that you had an encyclopedia on
+a CD ROM. Now you can just pick a topic
+and go to the the absolute end of what
+the innovation ceiling is. And that's
+absolutely wild. I would say take
+advantage of that because I wish I had
+that when I started.
+>> For a new person getting into it, I I
+would I would pick a project. If you're
+into like for example, I was I was into
+patch tiffing and these LM LM things are
+out there. Well, how can I apply LMS to
+patch stiffing? Uh well I walked in and
+I'm like well uh how do I you know
+integrate uh you know after a patch
+shift is done you have this context
+window you that drag us Drago mentioned
+like uh too much firmware too much
+context as a problem for LM well you
+wouldn't even know that u maybe getting
+into that into that space if you didn't
+start to to integrate that into your
+workflow. So if you want to learn more
+or maybe take a step uh I think we had a
+discussion before got this big wave of
+AI is coming and uh what are you gonna
+do watch it kind of crash over you or do
+you take a step people in this room
+who've been in this industry for four
+five years what can they work on right
+now in your view right this second to
+stay relevant or what can they pivot in
+their career into to be relevant a year
+from now two years from now god knows 10
+years from now
+>> I mean it's what what I just said was
+the integration piece you you have a
+project you're currently working on and
+you want to accelerate that project. I
+mean, yeah, we can you can use a chatbot
+or you can do whichever, but how can you
+leverage that in your system and
+whatever your workflows are? So we've
+always been automating whether that be
+uh running the scripts um really more
+complex systems uh now we're just
+automating faster and we have a not not
+only standard tools um for automation uh
+like like reading or uh but it we have
+uh the ability this intuition piece
+where we we had to fully program that
+before but now we have this intuition
+like this little buddy and we put that
+little buddy anywhere we want in our
+workflow and it just becomes faster and
+uh we again learn all those problems. So
+it releases application apply that to
+your to wherever your your your
+workspace is, whatever your goals are.
+>> So keep using AI.
+>> Yeah.
+>> So you're no longer a researcher, you're
+an AI user.
+>> Or you you've always we've always been
+>> the latest person to solve an Aeros
+problem was somebody doesn't understand
+math and just use GPT. I am looking for
+somebody here, somebody here to come and
+say we don't know what the future is
+obviously but for everybody listening
+right now to everybody who will in the
+future look at this in the internet and
+cringe with the noise the microphones
+are making they will know how wrong we
+were and they will know right now what
+they can aim their careers toward stay
+relevant rather than just using AI. Do
+you have an idea anywhere on what they
+need to do
+>> barring using AI
+>> in AI without AI? How can they stay
+researchers and be relevant? being a
+typist and refusing to use a computer at
+some point. Like you have it's a it's
+going to be the tool of the day. They
+have to accept it or you're going to be
+a purist that's left behind, you know,
+like it's just not I don't think there's
+much of a place for purists with this
+change. I think embracing it will allow
+you to I I think there's a I'm going to
+come back to that kind of meta strategy
+point versus like mechanistic
+repeatability, right? I think the in the
+human intuition, the creativity, the
+experience is where you encode, you
+know, harnesses and all these things
+where you can start to actually do
+something uh that AI given an
+open-ended, you know, Ralph, it's not
+going to work.
+>> I'll pick it up and say if I started as
+a researcher 5 years ago, I probably did
+a lot of things by hand. I probably did
+things manually. Probably knocked my
+head against the wall and said, "How
+does this thing work?" And I have some
+experience and I can actually steer the
+AI as long as it needs us. If you start
+today
+going outside of your agent to do
+something manually, I'm not sure most
+people would even know how, right? It's
+a major problem. But my question for you
+is, can you foresee from your work right
+now, whether it's only for 3 months or
+10 years, something that AI cannot do
+that will still research because we like
+researching? Do you have any of these in
+mind other than harnesses?
+Anybody really? Anybody in the room?
+Yes, we have somebody.
+>> Can I say something?
+>> I would love for you to say something.
+you know like I think uh let's just you
+know stop asking this question right
+because nobody knows like uh I have an
+analogy that I like a lot like you know
+when humans discover how to use fire
+they don't stop just stop asking like
+what they would do with fire right they
+cook men so let's just cook let's see
+what we can cook with this and then
+let's have fun this is actually the
+funnest time in security Okay. Uh we
+anybody even the newcomer or the
+oldtimers can hack anything now. Why
+don't you just go hack things, right? I
+mean there's there are things to worry
+about but you know let's worry about
+them when they actually happen. Right
+now it's not happening yet. So let's
+just keep cooking I guess. That's how I
+think about it. That's how you know the
+entire team my team think about it.
+Basically,
+uh there are things that we have to
+worry, but you know, this thing is just
+so exciting right now. Why don't we
+just, you know, have some fun? Uh yeah.
+>> Oh,
+uh what I was going to say was, uh AI is
+not going to solder any wires anytime
+soon.
+>> Agreed. [clears throat] Yeah, the
+hardware problem. So I think we're I
+think we're good for like probably a
+couple decades.
+>> So two years. Okay. But oh 12 months.
+>> Marian, what is your one piece of
+thought on where AI is not going to
+replace us entirely or partially or
+whatever it is in the near future?
+>> VM protect
+>> mic drop right there. You said that you
+don't want to leave juniors behind.
+>> Correct.
+>> Do you have an idea on how to include
+them? Because I don't. I mean it's not
+my idea technically. I had a
+conversation with Erin earlier about how
+reverse engineering itself is going to
+change and like that the skill itself is
+going to adapt to the problem right and
+he had this really good point of like
+years ago we didn't have good
+disassemblers and that was the problem
+and now we don't have perfect AI and
+that is the problem and I yeah if you're
+just getting started in the industry
+don't start the way our generation did
+with without the AI, but like include
+that in your workflows and you'll be
+better than the last generation with the
+new tools.
+I I imagine
+>> I actually have one more person that I
+asked to be here today.
+And Sergey requires no introduction, but
+I'll say he has led a lot of projects at
+DARPA. He has funded a lot of people to
+do a lot of really cool [ __ ] over the
+years. you usually come in and ask the
+question of how can we think about this
+differently and you really wanted the
+opportunity even though you had a lot of
+thoughts to wait on the panel to hear
+what others are saying before you step
+up and now I'm honored to give you the
+microphone.
+>> So I have absolutely no idea about AI.
+The only part that's AI about me is this
+uh like AI and my hoodie, right? But let
+me ask you this.
+Has AI to date come up with a new
+primitive?
+Has AI come up with something that's as
+bamboozling as maybe continuation
+passing style compilation
+or any other kind of abstraction that
+really makes your mind itch,
+right? Uh and if not, I mean, if yes,
+then I confess my ignorance. If not, do
+you see it doing that anytime soon?
+Because that would be an interesting
+moment if it hasn't happened already.
+>> I have not seen it without a human
+steering it. Some of the work uh Tai's
+company has been doing is pretty cool
+and I think to his point of like let's
+cook and use it. Like that's where you
+find out what it can do. Um I haven't
+seen it just hey go find a row hammer,
+go find a you know some new technique no
+one's thought about or abstraction. Um I
+don't think it's there. I think the only
+way to get there is the analogy I was
+using is you know sometimes I get
+inspired by the most random things
+reading the back of a cereal box at
+breakfast and then it applies some
+connection in my brain to the thing I'm
+working on as weird as that might be and
+that's an inspiration that's very human
+and it's part of our lived experience.
+AI doesn't quite have that but it does
+have cross-disciplinary knowledge. I
+could see a future in which we might it
+might get to that point where it can
+take something from biology and apply it
+to exploitation but I haven't seen it do
+that and the only the closest I've seen
+it get is when you have someone with
+years of experience who is saying hm I
+have an idea and you give it the seed
+and you say go look if this is possible
+I'll give you the parameters you you
+kind of guide it through that um but on
+its own no
+>> so uh one uh perfect example of this was
+the recent Linux looks uh uh uh uh dirty
+page, dirty copy, right? And that entire
+cluster of vulnerabilities. Somebody had
+the idea that the combination of a cache
+and uh that that crosses multiple
+systems and crypto and has readable and
+writable objects are that sort of a kind
+of a h you know weird machiney thing.
+and they uh told AI to go look for that
+and lo and behold.
+>> Yeah.
+>> Right.
+>> And it needs that input from the person
+who has the who's making that
+connection.
+>> Uh and again I was trying to listen
+carefully to uh uh the talks today and
+again what questions are we asking of AI
+where what guidance are we giving it?
+Okay here is this VM of fuscation here
+is this new DRM. Here's this DRM scheme,
+right? Here is the interpreter meta
+pattern meta pattern, right?
+And we explain these things, we package
+these things
+and then AI goes and finds them. Can it
+come up with these patterns? Can it come
+up with new patterns, better patterns,
+more satisfying patterns? So we saw an
+example where
+it actually found something that uh you
+know we didn't know. So basically most
+of the time it us telling us like you
+need to look at this thing and that
+thing. So we found that you know it's
+very good at that and I agree with you
+and then in this case we try to exploit
+GPU bug in Chrome and you know we have
+like uh in modern exploitation you need
+to defeat like as right you need to be
+able to read memory off this GPU process
+and we have this bug that we can
+actually read uh memory but the memory
+uh won't return to us uh you know in raw
+pointers they they would be rendered by
+the GPU as a pixels.
+So uh and then we can read the pixel of
+the stream
+uh but we didn't know how you know to
+convert the pixel uh in a lossless way
+into the pointers and then uh block just
+told us oh by the way you can just use
+this math lema
+to do this to solve this problem and
+it's true uh there's a math lema that
+actually uh allows us to convert put the
+pixel into uh you know the pointers
+without losing anything. So I think it's
+very helpful to have the entire of like
+human knowledge in your brain right like
+a single human doesn't have that
+capability AI has that capability so it
+can actually look up things on wiki beta
+uh you know on its own and and that's
+the one instance that we found is
+actually know something that we didn't
+know and I think we haven't found a case
+where invent a new tech you know
+technique but it's very good at like
+combining
+uh you know obvious uh techniques
+together and sometimes you know we
+humans we miss like those combinations
+and AI is very good at that. So those
+are the two cases that we saw that
+sometimes it gave us uh new things that
+we didn't know. So there is um this uh
+uh idea making the rounds of the rungs
+of reasoning the rounds of discovery
+right uh goes back to causality and
+Judea pearl right uh on the lowest side
+association seeing inputs and outputs
+predicting outputs from seeing inputs
+perfect at that right uh humans cannot
+possibly remember so many inputs and
+predict outputs then uh it's
+intervention you hold or you set some
+inputs to something new. Can you
+predict? Do you have a clear idea of a
+mechanism? This is where humans uh do
+the thinking about the mechanism and
+derive their predictive power from that.
+And then the last rung is
+counterfactual,
+even harder. We know things happen this
+way. Uh we know things happen that way.
+But can we think of a world where they
+happen differently?
+And uh that's your arguably weird
+machines. This is also arguably all of
+your scientific discovery of here is the
+theory that perfectly explains, you
+know, relativity or other things. Do you
+see AIs
+operating on intervention and
+counterfactual?
+>> I would say intervention, yes.
+Counterfactual ends up in that weird
+place where it's like endlessly large,
+right? In terms of trying to you're
+trying to prove a negative or prove it
+in a negative space. Um, but back to the
+point I was talking about with like uh
+blog posts that talk about a success
+story are not giving you those
+counterfactuals. They're not telling you
+what went wrong. They're not telling you
+everything they tried. People write up
+exploits uh on blogs and they give you
+some amount of what they the the the you
+know the retrospective of how they got
+there and the survivorship bias, but
+they're not giving you every little
+thought. They can't give you every
+little thought they had and every little
+connection they made. And because that
+doesn't get part, you know, put into the
+training data. It doesn't get captured.
+I think that it it will it will be able
+to I think aio will be able be able to
+make advances at doing that. Um, but I
+don't think it will do it any better
+than we can other than to Tai's point
+about like it has way more knowledge and
+context and humans are limited bi
+biologically.
+>> I'm going to jump in here and uh let the
+AIS have a say on this. So I asked
+Claude uh have LMS come up with any new
+reverse engineering primitives that uh
+that are innovative that haven't been
+come up with humans and it was it put a
+caveat first. It said most of these were
+driven by researchers but it came up
+with five things that LLMs have done.
+Continuous function embeddings map each
+function to a vector so behavioral
+similarity becomes the nearest neighbor
+distance replacing graphite somorphism
+stick with here I'll give you the short
+version then basically functional
+embeddings um decompiled C is language
+interoperability primitives abstraction
+features superposition features these
+are all kind of abstract concepts that
+are you know none of them are real
+strong answer But you could make the
+argument that there is a little bit of
+innovation and that's it.
+>> Please ask the very same AI to review
+this as a peer-reviewed paper. I would
+pretty much bet you anything it will
+reject it. So as part of this superp
+position embeddings cloud-based hygienic
+holistic based approach where we can go
+to okay enough buzzwords I want to kind
+of uh start wrapping this up and I want
+to go to John and say John
+I'm I'm going to throw something at you.
+Do you think there is any point anymore
+in disclosing vulnerabilities?
+I am framing the question. And I'm
+priming you as an LLM to answer what I
+want you to answer, but feel free to
+take it anywhere.
+>> I mean, the systems that we have today
+uh they're put in place uh for a reason
+for for protection. I mean, there's if
+you're following Twitter right now, the
+rate at which we can find new things is
+increasing and the rate of I guess
+people are maybe publicly posting things
+is increasing.
+The process is important for for safety.
+Um I I don't I don't really see how it's
+changed really.
+Ty, I'm going to go to you. You're
+reporting a lot of vulnerabilities out
+there. How many people still answer
+within 90 days, not to mention patching?
+>> Uh, I think it's 50/50. I think we still
+need to slow vulnerabilities. I mean, in
+just, you know, disclose it on our
+block, right?
+uh and I think for some uh really really
+dangerous point is that the the the
+maintainers are not you know uh
+responding then we just need to share it
+with the rest of the world right that's
+how we think about it and I think uh
+this actually works out very well uh you
+know we have this one case where we know
+that you know uh the batch is out there
+already because it affected like mult
+able uh software packages and we know
+that if somebody monitored the commit
+history they would be able to uh come up
+with an exploit right away with any
+decent LM and we know that it also
+affected like other web servers. So we
+put
+>> but aren't we going to get to a place
+where I mean I can tell you I reported
+many vulnerabilities the last few months
+and getting an open source maintainer to
+even answer you at this stage is
+becoming so hard. I'll shift the
+question. I'll go to Aaron and say,
+Aaron, do you think that with all these
+LLM based, agent-based vulnerability
+discovery capabilities?
+Aren't we just moving to a place where
+it's useless? Isn't the vulnerability in
+code just equaling
+vulnerability in public? Do we need to
+disclose anymore?
+>> So, the is a vulnerability in code the
+same as a public vulnerability
+that's going to track the capability
+curve and who has access to it. So, I
+think that it's going to be a lot easier
+to it's clearly a lot easier to find
+them. What I'm more worried about is
+that I I've had some very bad
+experiences in the last 6 months trying
+to give vulnerabilities to bigname
+vendors and just getting ghosted on
+hacker 1, bug crowd straight to MSRC.
+Just it's been a nightmare. Um to the
+point where I really almost don't want
+to do it. You know, there's the
+responsibility aspect of like I should
+do it, but also I have other things to
+do and I'm not going to sit here and
+hound them over that. And I think that's
+I've seen that sentiment start to
+proliferate around uh people who are
+doing the same. Um so it's kind of a bit
+of a ethical quandry with it and that if
+you find something and you know it's bad
+and it affects users
+and the responsibility should be with
+the code author,
+what is your level of responsibility
+with that when everyone else's
+capabilities are just going up and up
+and up and up, right? When you think,
+okay, it's more likely thread actors
+probably do actually have access. I ran
+the zero day initiative for 6 years. We
+had 1,500 vulnerabilities, zero day
+vulnerabilities a year that we were
+looking at how that we accepted and
+you know I know what the dupe rate was
+when people would collide on these
+vulnerabilities. I can't even fathom how
+bad it is right now. I watched the Linux
+kernel security mailing list quite
+closely because they are at the edge of
+this and Linux recently is the only
+other person to say this saying look a
+vulnerability in code equals public. I'm
+not sure we're there yet, but I can tell
+you that if people stop answering
+because it's not their job to deal with
+endless slop reports. I've gotten slop
+reports about vulnerabilities in files
+that don't exist. I call it all stage D
+because in one of my skills that I
+created, I go through whatever findings
+and I say make sure that it doesn't say
+this is a real vulnerability in case AWS
+gets boned or it's a real vulnerability
+in case the user downloads something.
+But aside to stage D, I honestly don't
+know what to do about open source. I
+have no idea. Um, John, you've been
+reporting to Apple in your life, right?
+Do you see the large companies treating
+this differently?
+>> I mean, they're all in a space like
+they're being overwhelmed by by all the
+submissions and I'm not really in
+position to to speak to all the teams
+and they're going to have to use AI to
+automate the the, you know, the
+receiving of all those submissions. the
+idea that you know is a bug in code you
+know already public you know that that's
+that that's always been the case I'm
+trying to think of it's just just the
+rate at which we can find these things
+the rate at which those submissions are
+happening that it just AI reveals all
+the bottlenecks that we have and right
+now the bottleneck is probably on the
+submission and and receiving side
+>> and I wonder what does how does malware
+relate to this I mean
+are we going to start seeing vibe
+malware analysts like we see a lot of
+people going and finding
+vulnerabilities. What does that look
+like?
+>> There there is AI written malware out
+there. I don't know if it's any better
+or worse than the stand like malware is
+really not great code. So I'm pretty
+sure AI can do that [gasps]
+like
+it's an interesting it's an interesting
+question though because we've always
+seen a lot of malware, right? There's
+other methods than AI to multiply your
+code to the millions and suddenly
+there's so much more malware. Now we
+have AI contributing to the picture. I
+don't think it will have a big change on
+the landscape necessarily like that
+suddenly we see more malware than
+before.
+It might be better written now.
+They might come up with new they might
+come up with new protection tricks which
+is something that mildly worries me. But
+overall I don't expect a big big change
+in that field. What's interesting is
+like Melbour Melbour has anti- analysis
+features right um they they defend
+themselves against sandboxes and
+disassemblers and decompilers and um but
+came up in a discussion earlier like
+what if malware comes up with tricks to
+defend itself against AI analysis and
+like we haven't seen that yet as far as
+I know but I'm looking forward to that
+honestly
+>> wants to say something
+>> we we saw this just a couple days ago
+supply chain attacks the team PCP
+started putting in uh uh bio fine
+bowarfare warnings to stop people from
+using uh AI from using doing their
+supply chain tax recent
+>> because why not abuse the refusals. My
+main question to the audience is does
+anybody vehemently disagree I chose the
+word carefully strongly disagree with
+something that was said here. Do you see
+a future? Do you not see a future? Do
+you use AI differently? Do you feel that
+you need to talk about math for some
+reason?
+Okay, we have somebody who wants to talk
+about math. I hope not, but we'll figure
+it out.
+>> I'm not a real mathematician, by the
+way, but um Oh, I'm Chris Hower. I'm a
+colleague colleague of Sergey. Actually,
+I'm a professor at Dartmouth College.
+There's something we haven't talked
+about at all yet. Uh it's safety
+critical systems where you need proofs
+of behavior, right? Right? You want to
+fly an airplane. You want that code to
+be LM generated.
+I don't.
+Um
+there are problems that AI will arguably
+never solve and those problems are the
+classes of problems that are
+undecidable.
+Uh the hing problem, Rice's
+[clears throat] theorem, they still
+exist in the age of AI. Um and no matter
+what we do, you know, AI has been proven
+to be effective that you're memorizing
+uh syntactic structures that can emulate
+uh semantics to some degree and to some
+levels of complexity. uh if you think
+about for those of you who are familiar
+with the Shonsky hierarchy of abstract
+machines and what kind of formal
+grammarss they they can reason about
+what is that uh level at which things
+will collapse with um you know AI.
+Um these are questions that I think are
+the future of research in that field uh
+for you know software understanding
+and I encourage um you know all of you
+to think about those questions and if
+anybody has thoughts about it please
+come talk to me because I'm very
+interested in that in that topic.
+Anybody else who is a heathen and wants
+to challenge us
+today?
+Okay, we have one more person right
+here.
+>> Your comments just now uh but they
+certainly relate. Uh so Aaron, you said
+earlier that AI should always have a
+human in the loop. Um I'm a career
+changer to this field and my old old
+background is safety critical control
+software where we have the concept of
+software integrity level where we give a
+bit of an assurance on how many nines of
+uptime you expect a piece of software to
+have. If you think of AI we're currently
+in the 50s of software the early
+discovery of what it is that AI can do.
+Do you really never believe that there
+will be an AI parallel to software
+integrity level where someone can
+genuinely trust it?
+>> Make AI a nonprobabilistic
+technology somehow. I I can't
+confidently say that I'd be comfortable
+with that. I think the very So, you
+know, we have transformers, neural
+networks, there's a long history of of
+things that brought us to this point. I
+think there's probably future
+innovations that can maybe give us a
+little bit more of that determinism, but
+what we have today, no future maybe.
+>> I mean, in a way where determinism isn't
+part of the requirement, do you
+genuinely not see such a parallel? um
+how you get with enough testing like the
+the if if you're a if you have
+non-determinism as a given the only way
+I'm comfortable with the answer that
+that gives me is if I have enough data
+to know that it's you know just like we
+our laws of physics are not laws it's
+you know 9.8 8 m per second per second
+observed many times. I'm pretty
+confident, but I'm not sure. I'm just
+really confident because it's worked so
+many times. I would need that level of
+like confidence, right? So, if if we,
+you know, are able to, you know, quantum
+computing, we can run this uh this AI's
+non-deterministic reasoning loop and get
+a result a billion times.
+Okay, I'll accept nondeterminism in that
+case.
+My name is Matil and I am glad to finish
+probably this uh interaction on a
+potentially not so optimistic note but I
+just wanted to say that we've talked
+about AI that basically cannot create
+but that only draws connections right
+and that's what we've seen we give it a
+direction and we just hope for the best
+and I read something about how the human
+brain actually works the same and we
+draw connection and a question I had was
+if I ask you all to create a color,
+would you be able to do so? And I
+realized quickly that I am not. And I
+really hope in the room someone can find
+and be able to create a color. But I
+just want to say that we can only draw
+parallels. We create connection from
+patterns from the serial box. I do that
+too. I do that in the shower when my
+mind just wanders. So isn't AI doing the
+same? Isn't AI creating connection and
+not creating out of the void? Sure. But
+don't we do the same?
+>> Totally agree. I don't think there's
+anything new ever in this entire world.
+I think the difference is we have
+physical stimuli. It does not. And I
+think the diversity of the physical
+stimuli, you know, is is wildly
+different for each one of us
+geographically, biologically, so many
+different ways that AI is a bit more
+bounded in that. But agreed, it's it's
+nothing is new. it's created from
+something else or referenced from by
+something else combined with something
+else. Um, so yeah, I definitely agree
+with that point uh philosophically
+>> and I definitely agree with that point
+as well which brings you back again to
+Plato and what is where or the origin of
+ideas and I really tried hard to pull us
+down to earth which is hard because we
+don't know too much and I really hope
+that what we achieved is being able to
+share a little bit about how we're
+thinking about it and why we're thinking
+about it and spread a little bit of hope
+and excitement about the topic. So, I'm
+going to go one by one doing an
+anti-attern and I'm going to count 20
+seconds for each of you. Johnny, you've
+been quiet last. What What are you
+excited about?
+>> I was quiet cuz uh you guys using words
+I've never heard before. We'll go with
+that. I'm more of an applied guy, you
+know, apply. Um, but so 20 seconds on
+for my experience and again my AI
+experience started uh last year uh
+diving into I doing a lot of reverse
+engineering and these MCPS came out and
+that was my awakening moment like these
+things are going to change everything
+cuz what used to take hours takes
+minutes and that time is getting smaller
+and smaller. Uh my encouragement again
+is again taking that step. This thing is
+coming. It sounds like everyone raised
+their hand in this room anyway. You guys
+are all already into AI and that that
+looks that is great. But if you're not,
+take that step. That's my it's my last
+beat.
+>> Marian, something you're excited about
+in 20 seconds in AI.
+>> I don't know. Like I'm I'm curious how
+the how the future's going to look like.
+I have no no idea. Is there still going
+to be reverse engineering in two years?
+Like maybe, maybe not. But I'm I'm I'm
+looking forward to see like if if
+there's not seriously there's so much
+other stuff to life than computers. But
+[laughter]
+[clears throat] I like reverse
+engineering. I like looking at assembly.
+I hope it doesn't go away.
+>> Erin, um I'm excited about the fact that
+I can learn things way faster. Um I can
+state my curiosity. I don't have to go
+to the eighth page of Google to get my
+answer from a blog post from 2003. Um, I
+actually have a sounding board that I
+can explore interesting topics with at a
+rate I've just never been able to do.
+So, personally, that's excites me. Um,
+and then on a more like kind of larger
+level, I actually think people that are
+getting into it now with this, it just
+blows my mind what they'll be able to
+do. So, I think that's an exciting thing
+to watch play out.
+>> And a lot of thanks to everybody. And
+I'll say something I'm excited about. I
+think we live in one of the most
+exciting eras in all of history
+and all we need to do is start today. We
+thought we did, we didn't yet. Start
+today. Do something new today. Involve
+AI with something you know it sucks at.
+And take somebody with you for the ride.
+People are getting left behind. Find
+somebody. Show them how to use this
+thing. That's my two messages today to
+all of you.
+[applause]
+Thank you all.

@@ -1,0 +1,864 @@
+ABOUT
+================================================================================
+Title: Lessons from the Plant Floor  What OT Security Assessments Really Teach Us - Mike Dutko
+Author/Channel: BSidesPhilly
+Channel URL: https://www.youtube.com/channel/UCWpdDvIuLZC-5QEXkE-r2bg
+Video URL: https://www.youtube.com/watch?v=oPq9lDxe7nM
+Video ID: oPq9lDxe7nM
+Published: 2026-02-11
+Duration: 26:59
+Views: 32
+Likes: 1
+Comments: Unknown
+
+Description:
+Nozomi Networks is a cybersecurity company that provides a platform for monitoring and managing cybersecurity risksIndustrial networks are evolving faster than ever, bringing new connections and new risks to the plant floor. In this talk, Michael Dutko shares real-world lessons learned from years of conducting OT security assessments and helping organizations move from unmanaged chaos to managed control. Through field stories and practical examples, he highlights what makes OT environments unique, where teams struggle most, and what works when balancing uptime with security. Attendees will gain insights into the expanding threat landscape from traditional wired attacks to emerging wireless and supply chain vectors. The session focuses on actionable approaches to visibility, segmentation, and risk reduction without disrupting operations. Whether you’re an IT defender stepping into OT or a control engineer facing new cyber realities, this talk bridges both worlds with hard-earned perspective and practical takeaways.
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# Lessons from the Plant Floor: What OT Security Assessments Really Teach Us
+
+## Author, credentials, affiliation, and contacts
+
+**Presenter/author:** Mike Dutko, also referred to as Michael Dutko in the description and transcript.
+
+**Credentials and experience provided:**
+
+- Electrical engineer by training; the university he attended and degree details were not provided.
+- Began working with networks around 2004.
+- Worked as an electrical engineer and systems integrator.
+- Designed and deployed OT networks in greenfield and brownfield environments.
+- Built an OT networking practice within a previous company and later developed an OT security assessment practice.
+- Conducted asset inventories, assessed end-of-life equipment, and manually identified vulnerabilities.
+- Worked at manufacturing facilities and renewable-generation sites, including solar, wind, and traditional generation facilities.
+- Responded to the operational impact of the 2017 NotPetya attack at a manufacturing facility.
+- Later worked for a security services company providing OT consulting.
+- Reported having conducted more than 50 OT-specific security assessments.
+- Works for a company identified in the description as **Nozomi Networks**, described as a cybersecurity company providing monitoring and management of cybersecurity risks. In the transcript, the company name is rendered as “Nomi Networks.”
+
+**Contacts and links:**
+
+- Personal email, phone number, professional profile, and other direct contact details: **not provided**.
+- Author/channel: **BSidesPhilly**
+- Channel URL: https://www.youtube.com/channel/UCWpdDvIuLZC-5QEXkE-r2bg
+- Video URL: https://www.youtube.com/watch?v=oPq9lDxe7nM
+- Published: 2026-02-11
+- Duration: 26:59
+
+## Summary
+
+This talk presents practical lessons from more than 50 OT security assessments. Dutko’s central perspective is operational rather than traditionally security-focused: OT security must account for physical processes, production availability, safety, legacy equipment, and the skills of the personnel responsible for operating and maintaining industrial systems.
+
+The talk first distinguishes IT from OT. IT primarily processes information, whereas OT combines computing with hardware that senses and changes the physical world. OT systems can control motors, pumps, robots, electrical breakers, production lines, and other physical processes. Because failures can affect safety and production, Dutko argues that OT priorities differ from the conventional IT CIA triad. In his ordering, **safety** is the highest priority, followed by **availability**, **integrity**, and finally **confidentiality**.
+
+Dutko explains that many OT systems were originally designed for reliable access and continuous operation rather than security. Earlier control environments often relied on hardwired signals and physical access. As these environments adopted servers, workstations, Ethernet, remote access, applications, and connected field devices, their exposure increasingly resembled that of conventional IT systems while retaining OT-specific operational constraints.
+
+A major lesson is that organizations frequently lack basic visibility. Dutko characterizes many organizations as reactive: they fix problems only after something breaks and avoid changing systems that still appear to work. He describes asset inventory as the essential starting point for improvement. Organizations need to identify what devices exist, how they are connected, which systems are IT, OT, or IoT, which vendors and firmware versions are present, and which assets are unsupported or vulnerable.
+
+The talk uses network segmentation as a practical example of risk reduction and operational improvement. In one assessment, a manufacturing network had accumulated unmanaged switches and poorly structured connectivity. The network was redesigned so that production lines had separate subnets and VLANs, a DMZ was introduced, and the OT environment was isolated from the IT network. According to Dutko, this reduced network outages enough for the organization to eliminate an additional production shift that had been needed to compensate for downtime.
+
+Dutko also emphasizes that OT attack surfaces extend beyond conventional PLCs and control systems. Examples include:
+
+- Rogue wireless access points installed by technicians who need mobility while updating PLCs, drives, or HMIs.
+- OEM-installed remote-access routers using LTE or 5G that may be present without the plant operator’s awareness.
+- Unmanaged switches that allow devices to connect without network access control.
+- Safety relays and safety controllers whose configuration changes may not be monitored.
+- Wireless or Bluetooth-enabled tools, such as torque wrenches, that may contain exploitable software and could allow settings to be changed while displaying an apparently correct value.
+- Building-management and smart-building systems located near OT networks.
+- Shared credentials between IT and OT, allowing an IT credential compromise to extend into the OT environment.
+
+The talk treats building-management systems as an increasingly relevant adjacent domain. Protocols and systems associated with building automation appear alongside traditional OT technologies, and building controllers may affect production environments if they are insufficiently isolated.
+
+Dutko’s recommended assessment and protection strategy is layered. It begins with passive visibility and asset inventory, continues through network documentation and segmentation, and then adds intrusion detection, attack-surface management, endpoint protection where appropriate, identity and access management, secure remote access, backups, and tested recovery procedures. Since many OT devices cannot be patched easily, compensating controls such as segmentation and monitoring are particularly important.
+
+A further contribution of the talk is its emphasis on communication mapping. Dutko describes constructing logical views of which devices communicate, over which protocols, and across which network layers. Using the Purdue model as a framework, assessors can identify unexpected communication between levels or zones and then consider moving hosts, adding proxies, or introducing intermediate controls to reduce unnecessary connectivity.
+
+Finally, Dutko argues that technology alone is insufficient. OT security programs must involve the human and organizational layers. Assessments may identify technically appropriate recommendations that plant personnel lack the skills or resources to implement. Effective improvement therefore requires cooperation among control engineers, IT defenders, security teams, and operational staff.
+
+## Key technical ideas
+
+1. **Treat OT security as safety- and availability-driven security**  
+   OT security priorities differ from standard IT priorities because cyber incidents can affect physical safety, production continuity, and industrial control.
+
+2. **Begin with passive visibility rather than intrusive scanning**  
+   The described approach gathers information by passively observing network traffic. This can reveal assets, relationships, protocols, and operational behavior while minimizing the impact on sensitive OT environments.
+
+3. **Build a comprehensive asset inventory**  
+   Inventory should include device type, IT/OT/IoT classification, vendor, firmware, connectivity, lifecycle status, and vulnerabilities. Visibility is presented as the prerequisite for meaningful protection.
+
+4. **Calculate vulnerabilities with a light operational footprint**  
+   Rather than directly scanning OT devices in the same way as conventional IT systems, the approach described uses observed information and asset data to determine likely vulnerabilities while reducing operational risk.
+
+5. **Use traffic mapping to reconstruct undocumented architecture**  
+   Logical communication graphs can show which systems communicate, using which protocols, and across which zones or Purdue-model levels. This provides a practical basis for identifying unnecessary or dangerous pathways.
+
+6. **Apply segmentation as both a security and reliability measure**  
+   Separate subnets, VLANs, DMZs, and IT/OT isolation reduce exposure and can also limit network faults and improve operational stability.
+
+7. **Detect hidden wireless and remote-access infrastructure**  
+   Rogue access points, technician-installed wireless networks, and OEM-provided cellular routers can create paths into or around the plant network. These may be missed by conventional inventories, especially when they operate out of band.
+
+8. **Extend OT monitoring to adjacent systems**  
+   Building-management systems, smart-building technologies, security cameras, and other connected devices may be close enough to OT systems to create significant risk if segmentation and access controls are weak.
+
+9. **Monitor safety-critical configuration changes**  
+   Safety relays, safety controllers, torque tools, and other devices should be monitored for unauthorized or unexpected changes, especially as formerly isolated equipment becomes network-connected.
+
+10. **Use layered controls where patching is difficult**  
+    Recommended layers include network architecture, segmentation, identity and access management, secure remote access, intrusion detection, endpoint protection for suitable boundary systems, backups, and tested recovery.
+
+11. **Include people and process in the security design**  
+    The talk rejects a technology-only approach. OT security improvements depend on coordination between IT, security, control engineering, and operations teams, as well as on having the skills to implement and maintain recommended controls.
+
+## Overall assessment of the technical contribution
+
+The talk’s technical innovation is primarily methodological and field-derived rather than a new algorithm or security protocol. Its contribution is a practical assessment model that combines passive network visibility, asset and vulnerability identification, communication mapping, Purdue-based segmentation, monitoring of wireless and adjacent systems, and operationally realistic compensating controls. The author’s main idea is that OT security becomes effective when it is integrated with plant operations and reliability objectives rather than applied as a direct copy of conventional IT security practices.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+All right. Hey everybody, welcome. I'm
+not used to using a microphone in a room
+this small. So, uh, if I am talking too
+loud, just let me know. All right. So,
+uh, today we're going to kind of go
+through, uh, lessons from the plant
+floor, what OT assessments really teach
+us. Uh, just a real quick check. If I
+say OT, do you guys know what I'm
+talking about? All right, I see some
+head nodding. 10 years ago, I'm not sure
+I would have as many people nodding
+their head. So that's called progress.
+So that's always a good thing. Uh so I
+work for uh Nomi Networks. Uh we're a
+global provider of threat management and
+monitoring uh products uh specifically
+for the OT and IoT space. So you know,
+not your traditional IT type products.
+We are geared specifically uh for
+sensitive OT environments. That's
+everything from your critical
+infrastructure uh manufacturing uh we
+also get involved with adjacent systems
+in data centers uh your BMS uh cooling
+as well as uh perimeter security and
+I'll talk a little bit more about that
+as we go through the presentation. Um
+but enough about that. We're going to
+kind of start off this conversation
+today uh with a little bit about who I
+am and and how I got here. Uh I am not a
+uh I would say a traditional security
+professional. I spent a lot of years uh
+trapesing through manufacturing
+facilities out in renewable um
+generation facilities, your solar, your
+wind, uh traditional generation sites,
+um doing OT assessments. But it all
+started, I'd say in about 2004, I built
+my first network cable. Um and I also
+would call switches hubs. Who knows what
+a hub is, right? Who remembers what a
+hub is? That's what like I'd be in a
+plant floor like, "Yeah, just take it up
+to the hub." It's like, well, that was a
+hub maybe 20 years or 10, 15 years ago
+at that point, but you know, we had
+moved on to, you know, more traditional
+uh uh switch tech route and switch
+technology at that point. So, I
+graduated university [clears throat] and
+I went to work as an electrical
+engineer. So, definitely not security
+focused. Um, but I started learning, you
+know, before I even knew it, learning
+about different types of networks. Um, I
+got exposed to my first first, you know,
+kind of traditional Ethernet based
+network, but I also learned a lot about
+other uh non-traditional OT type
+networks. Who's heard of device net?
+I got one hand. So, that's actually a
+really, you know, very niche OT type
+network. Once you learn about it, you
+want to forget everything that you
+learned about it and go use more uh
+widely available networks. They're very
+difficult. Um you know think uh if I say
+like thick net any anybody uh you know
+some of the old Yeah. So think uh
+thicknet for uh manufacturing very
+temperamental a lot of collisions you
+had to follow the cabling diagram for
+all your main trunks all your branches
+and if you got your resistor for your
+terminating of your network in the wrong
+place nothing would communicate um you
+know very difficult but to kind of fast
+forward through that and again the
+reason I'm starting off with this is
+just to kind of illustrate you know I
+don't have a traditional security
+background I very much come through
+everything I'm going to talk today, you
+know, from a practical operational um
+standpoint.
+So, as I continued my electrical
+engineering career, uh through working
+for systems integrating, putting control
+systems out in these environments, I
+realized like, hey, we don't know a lot
+about networks. I can tell you
+everything about digital IO, how PLC's
+work, how to program an HMI. Um but once
+we start connecting these on anything
+more than maybe a small LAN, we have no
+idea what we're talking about. Um people
+are started asking like hey put a manage
+switch in what's a managed switch I
+didn't know. Uh so that's really where I
+started seeing this gap uh among my
+colleagues like hey there's there's a
+lot of information here and it's stuff
+that probably IT professionals already
+knew. So I started learning uh what I
+could about um you know network
+infrastructure and started applying that
+within industrial environments. We
+started our f first and I realize you
+can't really see any of this on a screen
+this small. Um, but we [clears throat]
+started our first OT uh networking
+practice within the company I worked for
+and started doing green field and
+brownfield uh OT network installations
+and then from that we built our security
+practice and our assessment p practice
+out from that. So I spent several years
+doing u OT network security assessments.
+Everything from developing asset
+inventories to calculating end of life
+for assets, things that aren't supported
+anymore. Uh trying to identify
+vulnerabilities manually because I
+didn't have all the cool tools uh that
+our our IT uh uh friends had at the
+time. So, you know, [clears throat] from
+that running that practice, I was
+actually on a manu or at a manufacturing
+facility. Um, who remembers any it was
+2017 uh the not pay you attack, right?
+It was pretty uh pretty impactful um for
+me. uh being at a manufacturing facility
+that was running, you know, I think over
+10 lines, uh everything's humming,
+everything's moving, you know, probably,
+you know, making over a quarter million
+dollars an hour uh in in salailable
+goods grind or ground to a halt.
+Everything went idle, product wasn't
+moving,
+and nobody knew what was going on. All
+those systems that were running our
+production floor just ground to a
+complete hole. So for me that was kind
+of like oh it's more than just the
+network infrastructure. There's
+definitely a a security element to to
+everything that we're doing out here um
+as well. Now uh because we were good at
+our jobs, we were able to get a lot of
+their manufacturing systems up and
+running within a couple days. Uh but
+their uh warehouse management system,
+their ERP system, they couldn't move
+product out of their warehouse for three
+months. And you know, for any business
+that's doing just in time manufacturing,
+three months of not moving product out
+the door is uh a significant problem. I
+think that that company is still uh
+battling with their insurance provider
+um to get some money out of that and
+here we are almost almost 10 years
+later. Uh so from that I started
+building my security expertise. I went
+to work for a um a uh security uh
+services company doing OT uh consulting
+and from that I think over the last
+several years I've done you know upwards
+of over you know 50 just OT specific uh
+security assessments. So I'm going to
+share with you guys uh a bit today
+>> [clears throat]
+>> uh about you know what what we've
+learned in those those assessments. But
+before we do uh you know we're going to
+kind of talk a little bit about you know
+why you know OT matters. I know there
+was another OT, you know, more focused
+on machine learning AI talk before this.
+So, if we're covering familiar ground,
+I'll try to go quick through through
+here. Um, and I don't know why these are
+going automatically, so hopefully we
+don't have any automation in there
+that's going to get us screwed up. But,
+so to talk through OT concepts, you
+know, I really want to just start with
+why these things are important to us.
+So, they are literally helping us get
+through every aspect of our daily life.
+You go to the supermarket, every product
+in that supermarket has passed through
+some sort of automation. The electricity
+providing us light in this room is at a
+generation station. It goes through the
+transmission lines. It gets through the
+smart metering that's now in place to
+get to this building. Um you talk
+through your um your data centers for
+your banks. There's automation
+technology providing the resources for
+the energy management, the the
+temperature management, your your
+building management systems for for
+everything there. It's really embedded
+um you know in a layer of everything
+that that that we work with. Even a room
+like this, the technology, you know,
+beyond just electricity for the lights,
+you have temperature management, you
+might have access management, you have
+building security, you know, all these
+systems, you know, might fall um, you
+know, maybe just beyond, you know, the
+typical IT uh type systems. So that's
+why we care about about OT.
+So before we get [clears throat] uh
+further in the presentation, we're just
+going to kind of you know in simple
+terms talk through uh the differences
+between you know and and start to define
+you know information technology and and
+and OT technology. So you know
+information technology you know very
+simply you know could be everything from
+you know a modern you know web app code
+an application running on a server um
+you know it could be uh you know a
+variety of different uh types of
+systems. uh operational technology is
+going to be, you know, a little bit more
+of a mix of similar systems, but there's
+going to be a hardware element. It's
+going to interact with the real world.
+There's going to be uh sensors out there
+detecting states of change in real
+environments and then um you know,
+whether it be a a pump uh you know, via
+a motor drive or um you know, some sort
+of mechanically operated robot, it's
+going to actually have a real uh impact
+in the environment. So instead of just
+showing up on a web page let's say it's
+going to you know be able to move box
+from A to B uh or uh control product
+moving through a manufacturing facility
+or controlling I think more uh
+critically you know the flow of
+electricity uh you know in the grid you
+know opening you know big uh uh switches
+and and and breakers in that environment
+um you know can have a quite a quite an
+impact. So [clears throat]
+now that we've kind of defined those
+terms, you know, we want to kind of look
+at how the priorities shift uh between
+those environment. So who's heard of the
+CIA triad? All right. So we should, I
+think, you know, as classically, you
+know, IT practitioners, we should be
+familiar with that. So you know, that
+typically starts with confidentiality. I
+have you here down at the bottom because
+we're going to kind of compare this to
+to OT. Um, and you'll see an addition up
+here at the top, safety. Uh, in OT,
+that's actually going to be our number
+one. We are worried about maintaining
+safety in our process. You know, we
+have, let's say, infant formula hitting
+out on the market. We want to make sure
+that product is safe for the consumer.
+Um, if you are in energy generation, you
+want to make sure your substation, your
+switchyard is safe and secure because
+you don't want, you know, potentially
+loss of life um, uh, to occur. And then
+from that we kind of work through the
+CIA triad in in reverse order. You're
+going to have availability first. These
+systems need to be available when you
+know a um a controller sends a signal to
+maybe a remote controller or an RTU
+let's say which is a remote terminal
+unit uh to switch one of those inputs
+that I talked or outputs on and off to
+control a motor. You need that to work.
+So that availability needs to be there.
+So as as a result of that
+uh these systems just inherently over
+the years were designed not really with
+security in mind. They were designed
+with access in mind. Um and then okay
+hey once we have availability you know
+we'll move on through integrity and then
+uh confidentiality. Coincidentally
+they're not very confidential. A lot of
+what our product does is gather that
+information uh just from the wire. We
+look at passive or traffic passively on
+the network and we can pull a lot of
+great information about the assets, how
+they're working um you know how they're
+communicating with other assets uh just
+just off the uh uh the information that
+they have in that that packet. We're
+starting to see more you know advanced
+concepts like encryption and
+authentication to protect these these
+signals. Um but yeah, again it's it's
+kind of um you know at the bottom there
+for for OT. So [clears throat]
+now that we've kind of defined you know
+IT versus OT and we kind of talked
+through some differences you know why
+does it come become important from a
+security standpoint and why do we even
+have to do a security assessments in our
+OT environments? Uh over the years the
+technology has become more advanced. Um
+so once we had over here I have a
+picture of you know maybe a you know I'd
+say I don't know I I don't want to date
+it maybe a 50 year old at this point. uh
+you know typical control center maybe
+for um you know a power plant. These
+controllers, these knobs, these outputs
+were all you know hardwired discrete
+signals within a facility. If you wanted
+to make a change here, you had to show
+up, go through security, get into that
+room and actually turn a knob. Now on
+the the right side there, a lot of this
+has been replaced by more traditional IT
+type equipment. You have your servers,
+you have your end endpoint workstations.
+Uh they are all connected to devices out
+in the field that are on Ethernet-based
+networks. And with that comes
+vulnerabilities, remote access,
+applications and everything that you
+know traditional IT type practitioners
+have been aware of for uh for some time.
+So in simple terms with that techn
+addition of technology over time that
+that risk profile changes.
+So, [clears throat] one of the things
+we've seen as as we've done assessments,
+no, sorry the angle here. It's kind of
+hard to see see the screen a little bit,
+but here we basically just kind of have
+a rundown, you know, through all the
+assessments. And this is a pretty common
+graph I've seen in a number of different
+roles um in different capacities, but it
+it holds true uh just to kind of
+categorize where a lot of companies are
+on their OT cyber cyber journey. Most of
+the organizations, 60% of the
+organizations are going to kind of fall
+into this uh what we call reaction. If
+something happens, we're going to react
+to it. We're going to fix it. We're
+going to put out the fire. Uh we also
+kind of classify that as blissful
+ignorance. We don't want to know what's
+out there. We just need it to work and
+we'll fix it if it breaks. If it if it's
+working, don't touch it.
+um where you know in in other parts of
+uh the industry especially more critical
+industry your your energy generation
+especially like oil and gas you're going
+to have companies over here in the the
+10%. They've been pioneering security in
+these environments for you know the last
+couple decades. Uh and now we're
+starting to see you know as
+organizations down here try to move up
+that curve uh they're kind of reaping
+the rewards of advancements in this
+field driven by by the top 10%. Um so
+here you know again we kind of just see
+I have outlined several you know items.
+It it typically starts with okay we
+don't know what we have we can't protect
+it let's start with an asset inventory
+and then once we start identifying you
+know what we have out there and how it's
+connected how could we better architect
+these networks um a lot of these
+networks were uh kind of ad hoc uh they
+weren't really built with a network
+engineering background it was like hey I
+have a device there's a network port on
+it now let me put a switch out there and
+connect these two devices and then from
+that and we used to call it network
+sprawl it is unmanaged switch after
+unmanaged switch after unmanaged switch
+connected one after another and then
+fast forward 15 years of that you don't
+understand why the network goes down and
+then you know I I've done um I had an
+assessment uh years ago they had
+they had to add shifts to production
+to make up for network outages
+throughout the week.
+What's that costing the company? We went
+in after the assessment. We we rebuilt
+their their OT network. We migrated all
+their devices. We gave every line its
+own subnet, its own VLAN. We segmented
+everything, put in a DMZ, uh isolated it
+from the IT network, started giving them
+some layers of protection through other
+other means. Um they were able to
+actually lose their second shift
+throughout the whole week. Um and gain
+that time back. That's, you know, that's
+payroll. that's, you know, just people
+standing around waiting for the network
+to, you know, start working again to to
+get those production lines moving. Um,
+we did that over a period of time. But,
+um, you know, that was an example of
+segmentation and without,
+[clears throat] you know, that asset
+inventory. That's again where we started
+like what do we have out there and how
+do we go about re reorganizing that? And
+then once you get past that, you know,
+you start to think about other things
+like, okay, I have the basics under
+control. Let me start looking at things
+like uh intrusion detection. Uh how do I
+manage my attack surface? U can I start
+looking at maybe hey putting some
+endpoint protection on OT servers that
+are maybe in the boundary between my IT
+and my my OT.
+[snorts and clears throat]
+So now we're going to start exploring
+you know we've kind of identified where
+organizations are you know within that
+environment. We're going to explore just
+some of the examples of attack surfaces
+that we see in um I don't know why
+that's sorry
+I don't know why this is uh advancing
+but I'll try to keep on top of it. Um,
+okay.
+We might not be talking about example
+attack services, but primarily we're
+going to be talking about um, you know,
+everything from distributed control
+systems, uh, programmable logic
+controllers. I normally have another
+slide in this presentation that kind of
+talks through, you know, all these are
+really computers running some form of
+operating system. They're not going to
+be, uh, you know, they could be your
+Windows machines. You might see some of
+them out there. Um, but you're also
+going to see um, you know, more
+traditional industrial uh, type uh, type
+devices. So, here we're just going to
+kind of go ahead um, into some risk
+examples. These are actual examples that
+we would see when we were doing uh,
+assessments. One, uh, rogue access
+points. This is pretty common in OT. You
+have a somebody doing a an upgrade to a
+uh, line. They have a a laptop that
+they've brought from their organization.
+they have some uh specific software to
+update this PLC or this drive or this
+HMI. Um, and they don't want to actually
+connect to that switch. So, they're
+going to put in a little TPLink
+access point on the switch, get their
+own little Wi-Fi network, connect to
+that, and then they're going to go
+online and make changes as they walk
+around and observe the the plant floor
+because that's sometimes very important.
+They need to see what's going on to be
+able to make a change. It could be a
+fine tune adjustment to a a motor speed
+for a conveyor or something like that.
+However, I see some faces going up and
+down kind of laughing. That's probably
+something we wouldn't allow in a
+traditional office environment like,
+"Hey, let me bring my own uh wireless
+infrastructure." Where this gets
+complicated too, uh with OEMs, people
+providing these manufacturers and other
+industries with equipment, they put
+their own remote access uh routers in
+with LTE modems, especially with the
+proliferation of LTE and now 5G. I mean,
+they're showing up. You don't even know
+you bought it. Uh, you put the, you
+know, million-dollar piece of equipment
+in your manufacturing facility and it
+has remote access and unless you have
+something looking for that, uh, you
+know, it could be some time before
+before you find it. So, you know, 15
+years ago, we'd go through and catalog
+those things manually, uh, because they
+were out of band. They might not be
+directly on the plant network. They
+could be on a a segmented network that
+doesn't have routable access, uh, but
+could have direct control to, uh,
+different manufacturing systems. So it's
+definitely something uh you know we we
+saw out there also um you know I talked
+earlier about management uh managed
+ports and things like that u a lot of
+unmanaged switches so people can just
+connect to the network uh without any
+sort of network access control um and
+that can cause any number of uh problems
+in the in the network also detecting
+changes uh to sensitive pieces of
+equipment. Um you have a lot of uh
+safety relays, safety controllers and
+things like that. Again, monitoring
+safety uh is critical. Uh how are we
+detecting changes to those those types
+of uh systems. A lot of these uh you
+know, again, 1015 years ago, you might
+actually have to physically go out
+there, plug into a controller, make the
+change. You'd have a code, a passcode or
+something like that. You know, no user
+awareness or anything. Now, these are
+all getting connected to the network.
+So, being able to uh detect those is
+definitely something we're looking at.
+And then this is actually one that came
+out of our our lab. Um, this is a uh a
+torque wrench. Again, 15, 20 years ago,
+you wanted to make a change, you might
+have to take a laptop out, plug into a
+USB port or console port, make a change.
+Uh, now these are Bluetooth or
+wirelessly connected. Uh, and they were
+able to actually do a remote code
+execution to get root access and change
+the torque settings while leaving the
+screen uh value for whatever the torque
+setting was intact. So, if you're, let's
+say, uh, on a line torquing on the lug
+nuts on a car and that torque setting
+changed, are you going to know if it
+says it's doing what it's supposed to
+do? Um, you know, that's not necessarily
+a torque wrench you'd use for that
+application, but I think the the point
+is still valid. Um, you know, it's
+something you definitely want to want to
+be aware of in these environments.
+[snorts]
+So as [clears throat] as this
+digitalization has has occurred over the
+last you know 15 20 years that we've
+probably heard like IoT convergence and
+things like that you know this attack
+surface has uh gotten much larger and
+and as it's gotten larger you know it's
+brought in you know several new
+challenges adjacent to more traditional
+OT type systems over here which we've
+been kind of getting a good handle on uh
+we've seen the introduction um to
+industry 4.0 like smart building
+technologies, uh, Jace controllers, uh,
+and other types of devices, um, I'm
+trying to think of the camera, um,
+access cameras and stuff like that, your
+security cameras, all these used to be
+kind of out of band managed systems that
+maybe had one connection, uh, to maybe a
+local network. Now they're all, you
+know, um, you know, you hope they're on
+their own VLAN somewhere in [laughter]
+kind of isolated from the rest of your
+network. But we would see a lot of those
+systems adjacent to our OT systems with
+very little controls in between them to
+protect isolation and those that
+environment is oftent times you know I'd
+say next to credential uh compromise
+using the same credentials let's say in
+IT and OT and then your IT credentials
+get compromised and now you've extended
+that compromise into your OT network. Um
+having devices, smart devices adjacent
+to your OT network without proper
+controls. Um you know proper
+segmentation is definitely u you know
+something we want to do there. You know
+we see a lot of those devices that could
+impact our production uh dangerously
+close without controls uh in that
+environment. Uh these are just some you
+know more recent risk uh examples. Um
+and I'll try to point things out up
+here. have Modbus leading the charge as
+far as cyber exposure publicly on the
+internet. Modbus is a protocol we use in
+OT quite a bit. The next three uh
+protocols, Niagara, Fox, CANX, Backnet
+before you get into other traditional OT
+protocols are all building management
+system protocols. So with that um you
+know we really see that that kind of OT
+building management type protocols as
+almost a um
+similar similar territory. And then
+again over here in the activist claims,
+building automation is at the top um
+along with food and beverage wastewater
+energy manufacturing and these
+equivalencies between BMS and and OT um
+really are kind of interesting to me as
+far as just seeing how uh close they are
+to our OT networks and how much uh an
+impact in one you know building
+automation controller could could you
+know let's say impact uh the production
+environment. So before we start to
+protect these systems there are my red
+boxes. All right we need you know again
+kind of going back to that graph where
+organizations are uh we need visibility.
+So um you know we start building our
+asset inventory classifying IT assets
+versus OT assets what's IoT what do we
+know about them what vendors we have in
+the environment uh as well as you know
+what firmwares they're running uh and
+then we start to identify like CPEs that
+we can determine our vulnerabilities in
+OT. We don't necessarily scan those
+devices directly like we would with some
+products. Uh we try to calculate the
+vulnerabilities so we have as as light
+of an imprint u on those OT environments
+as we can. Uh we also commonly look at
+ways we can segment these environments.
+Here I have a a logical graph. You know
+who's talking to what over what
+protocol. Uh a lot of these uh OT
+environments the controls engineers
+think everything needs to talk to every
+everything and that's not really the
+case. there are very specific
+conversations occurring in your
+environment and a lot of times they
+don't have these diagrams uh to be able
+to map that that out. Um so that's
+definitely something you know in
+assessments you know we'll look at for
+documentation that doesn't doesn't exist
+and help them you know try to recreate
+that where we can uh who knows what the
+Purdue model is. All right we got some
+more hands. So over here is actually
+probably one of the closest
+representations uh I've seen to what's
+in my brain when I think about the
+Purdue model um with actual
+environmental traffic and it's actually
+calling out hey I have level zero
+devices talking to level four devices in
+this case or level two devices talking
+to level four devices in this case. uh
+it's able to actually kind of um you
+know put those uh devices um you know we
+classify them by layer and then you know
+start looking for conversations that
+maybe go between zones that shouldn't
+exist and start trying to clamp down uh
+maybe move a host or introduce a proxy
+or something at an intermediate layer to
+provide you know a higher degree of
+isolation. So we are running a little
+bit out of time here. I've never I I
+don't think hit um a timeline for a
+talk, but uh you know, a lot of times
+these environments, we can't patch them.
+So, we're we're looking for additional
+layers of protection. Everything
+starting again with segmentation,
+network architecture, uh extending that
+in identity access management, making
+sure we have secure remote access, you
+know, maybe above and beyond um you
+know, a traditional IT type uh product,
+but then also into maintenance and
+resiliency, you know, do we have
+backups? Are they tested? are they
+available? Um, you know, should
+something occur. So, I'll kind of wrap
+things up here. I do have a couple more
+more slides. Um, but one of the other
+things that we would always see is, you
+know, we got to keep the human layer in
+the loop. Anybody know what movie that's
+referencing?
+>> War games. All right, we got one. Um but
+you know we would we would do these
+assessments and we can evaluate
+technology and processes but a lot of
+times we'd also see hey they don't have
+the skill set on the OT side to be able
+to implement some of the more you know
+advanced recommendations that we have.
+So there's definitely a gap there. Um
+and you know we definitely try to you
+know get these teams that maybe aren't
+traditionally not talking uh with one
+another uh together and and really um
+you know we just can't throw technology
+you know at this problem. We got to get
+the process and the people uh you know
+involved as well. So that being said, I
+am at time so I'll try not to go too
+much over. Um, but thank you all and uh
+hope you enjoy the rest of the
+>> [applause]

@@ -1,0 +1,1790 @@
+ABOUT
+================================================================================
+Title: From Data Streaming to Autonomous Action: Building the Foundation for Industrial AI
+Author/Channel: Barbara
+Channel URL: https://www.youtube.com/channel/UCpXse1fflw6Xo5RMFtLwCEA
+Video URL: https://www.youtube.com/watch?v=4ClHtyh6mWo
+Video ID: 4ClHtyh6mWo
+Published: 2026-09-15
+Duration: 59:10
+Views: 54
+Likes: 1
+Comments: Unknown
+
+Description:
+On September 9, 2026, Barbara took part in the Industrial AI Summit 2026, the conference hosted by IIoT World that brought together industrial leaders, technology providers, and AI practitioners to explore how Industrial AI is moving from pilots to production across manufacturing, energy, and critical infrastructure.
+
+David Purón, CEO of Barbara, joined the session “From Data Streaming to Autonomous Action: Building the Foundation for Industrial AI”, alongside Kudzai Manditereza, Senior Industry Solutions Advocate at HiveMQ, Peter Sorowka, CEO of Cybus, and Jonathan Alexander, Global Manufacturing AI and Advanced Analytics Manager at Albemarle, in a conversation moderated by Hamish Mackenzie, Advisory Board Member at IIoT World. The session examined the progression from descriptive awareness to autonomous operation, and the security, governance, and trust mechanisms that make it possible to safely extend AI authority in industrial environments.
+
+
+Key Topics:
+00:00 Industrial AI Summit 2026: Session 3
+05:30 Where Are Manufacturers Stuck in the AI Value Chain?
+08:15 Why Historian-Centric Architectures Block Agentic AI
+11:20 Application-Centric vs Infrastructure-Centric Data Collection
+16:00 Do LLMs Really Need Clean Data? The Contextualization Debate
+22:15 Edge vs Cloud: Three Factors That Decide
+27:15 Scaling AI from One Plant to Eighteen
+30:20 Agentic AI vs Classic AI: When Each Makes Sense
+35:50 Human in the Loop: Four Levels of AI Autonomy
+41:05 Measurable Outcomes: What Manufacturers Can Expect
+46:00 Technology vs Culture: What Is the Real Blocker?
+
+About Industrial AI Summit
+The Industrial AI Summit 2026 was a free, two-day virtual conference hosted by IIoT World on September 9-10, 2026. The event featured live interactive panels on agentic and physical AI in manufacturing, AI-powered energy management, edge AI and small language models, digital twins, cybersecurity for AI-connected operations, and measurable AI ROI. Speakers included practitioners deploying AI across discrete manufacturing, process industries, automotive, and energy. 
+
+#IndustrialAI #AgenticAI #DataStreaming #ManufacturingAI #IndustrialAISummit
+
+
+MACHINE PROCESSED DATA
+================================================================================
+OpenAI model: gpt-5.6-luna
+
+# From Data Streaming to Autonomous Action: Building the Foundation for Industrial AI
+
+## Authors, speakers, credentials, and contacts
+
+This source is a recorded panel discussion rather than a conventional research paper.
+
+### Author/channel
+- **Barbara** — listed as the author/channel in the supplied material.
+- **Channel:** https://www.youtube.com/channel/UCpXse1fflw6Xo5RMFtLwCEA
+- **Video:** https://www.youtube.com/watch?v=4ClHtyh6mWo
+- **Credentials, affiliation, and personal contact details:** Not provided. The material identifies Barbara as the channel publishing the recording.
+
+### Panelists
+
+- **David Purón**
+  - CEO and co-founder of **Barbara**
+  - Leads Barbara, described as an edge AI platform for industrial companies that simplifies the deployment and orchestration of industrial applications and AI models through secure edge computing
+  - Serial entrepreneur
+  - Named to the **Forbes 100 list of Spain’s top entrepreneurs**
+  - International speaker on AI, industrial edge computing, cybersecurity, and digital transformation
+  - **Personal contact details:** Not provided
+
+- **Kudzai Manditereza**
+  - Senior Industry Solutions Advocate at **HiveMQ**
+  - Founder of **industry4.tv**
+  - Helps industrial professionals apply data, AI, and IoT to scalable smart manufacturing
+  - Has spent more than 10 years educating professionals through tutorials, podcasts, newsletters, and talks
+  - Named a **Top 100 Industry 4.0 influencer** and **Smart Manufacturing Executive of the Year**
+  - **Personal contact details:** Not provided
+
+- **Peter Sorowka**
+  - CEO of **Cybus**
+  - Expert in industrial IoT and the technical architecture of data-driven production
+  - Founded Cybus in 2015
+  - Cybus focuses on secure governance, strong IoT edge capabilities, and smart-factory solutions
+  - Has spent more than 10 years advising industry on decentralized smart factories and data-driven services
+  - **Personal contact details:** Not provided
+
+- **Jonathan Alexander**
+  - Global Manufacturing AI and Advanced Analytics Manager at **Albemarle Corporation**
+  - 15 years of experience across operations, engineering, continuous improvement, and manufacturing excellence
+  - Applies AI, machine learning, and advanced analytics to improve OEE, quality, reliability, throughput, and material utilization
+  - Focuses on making digital transformation practical, scalable, and embedded in daily plant operations
+  - **Personal contact details:** Not provided
+
+### Moderator
+
+- **Hamish Mackenzie**
+  - Advisory Board Member at **IIoT World**
+  - Former IDC analyst
+  - Runs a consulting and advisory practice focused on go-to-market activities for software companies
+  - Has done this work for approximately 25 years in Munich
+  - **Personal contact details:** Not provided
+  - The transcript mentions LinkedIn but does not supply a LinkedIn URL.
+
+### Other contact and event information
+
+- **IIoT World channel/event contact:** No direct contact details were provided.
+- **Conference:** Industrial AI Summit 2026, hosted by IIoT World.
+- **Sponsors named in the transcript:** HiveMQ, Cybus, and Barbara.
+- **Company websites or individual email addresses:** Not provided.
+
+---
+
+## Summary
+
+The discussion examines why industrial AI often succeeds in isolated pilots but struggles to become a scalable, autonomous operational capability. The central argument is that manufacturers have made substantial progress in collecting industrial data, but their architectures remain oriented toward historical analytics rather than real-time operational intelligence.
+
+The panel identifies the missing foundation as a combination of:
+
+1. A reusable industrial data and integration layer  
+2. Rich operational context and semantic meaning  
+3. Edge-capable execution for time-critical decisions  
+4. Governance, identity, access control, auditability, and rollback  
+5. A gradual, risk-based path from human assistance to autonomy  
+
+The speakers distinguish between using AI to analyze historical data and using AI agents to respond to live industrial conditions. Historian-centric architectures are considered adequate for storing data and supporting retrospective analysis, but insufficient for real-time, multi-application, agentic operations. The proposed alternative is an infrastructure-centric architecture in which applications consume shared, contextualized data through a common foundation rather than repeatedly connecting directly to individual machines and systems.
+
+A major technical issue is contextualization. Jonathan Alexander describes manufacturing context as the knowledge of how equipment, processes, recipes, product grades, and people’s operating practices relate to one another. Much of this knowledge remains in the heads of subject-matter experts. Kudzai Manditereza emphasizes that contextualization is not only about cleaning or structuring data; it is about giving data meaning. For example, a “work order” may have different meanings and downstream implications in different companies or processes.
+
+Peter Sorowka challenges the assumption that industrial AI must wait for perfectly clean data. He argues that modern large language models can handle messy, unstructured inputs more effectively than earlier machine-learning systems. However, the other panelists clarify that models still require sufficient domain context to understand proprietary manufacturing processes, engineering drawings, equipment relationships, and operational consequences. The discussion therefore converges on a distinction between data cleanliness and semantic meaning: perfect data preparation is not always necessary, but relevant context is.
+
+The panel also presents hybrid edge-cloud architectures as the practical direction for industrial AI. Edge execution is favored when latency, data volume, or operational reliability makes cloud round trips unsuitable. Cloud execution remains appropriate for model training, historical analysis, benchmarking, and non-real-time reporting. The speakers note that the proper boundary depends on the industrial site, the number of plants involved, network conditions, and the criticality of the process.
+
+Scalability is presented as an infrastructure and repeatability problem rather than simply an AI-model problem. A successful pilot may depend on plant-specific engineering effort, but replication can fail because other plants use different PLC vendors, network configurations, security policies, and equipment. David Purón argues that industrial AI needs an orchestration layer capable of zero-touch provisioning, portable applications and models, and batch management across multiple facilities. This would transform rollout from a bespoke engineering project into a more repeatable software distribution and configuration process.
+
+On autonomy, the panel rejects an abrupt transition to fully autonomous control. Instead, the speakers describe a staged model:
+
+- AI informs a human decision-maker.
+- AI proposes an action that requires human approval.
+- AI acts while a human supervises in real time.
+- AI operates with human review of exceptions or periodic samples.
+- Fully autonomous operation may be considered only for suitable, sufficiently understood problems.
+
+The panel strongly differentiates agentic AI from conventional AI. Conventional machine-learning models remain valuable for prediction, detection, and recommendation. Agentic AI becomes useful when a problem requires a chain of actions, such as detecting an anomaly, retrieving relevant data, consulting equipment documentation, checking maintenance history, and coordinating the next operational step. The speakers recommend beginning with the operational problem rather than selecting agentic AI simply because it is technologically fashionable.
+
+The human and organizational dimensions are treated as equally important to the technology. Operational subject-matter experts—such as automation engineers, maintenance teams, SCADA engineers, and process engineers—should remain responsible for supervising AI systems. However, industrial personnel may not be IT, Linux, Kubernetes, or networking specialists. The panel therefore emphasizes making AI infrastructure accessible to OT personnel as part of IT/OT convergence.
+
+The expected outcomes include improvements to existing manufacturing KPIs, such as asset utilization, quality, reliability, throughput, and other operational measures. The speakers cite examples discussed during the session, including reported savings from classic AI in water treatment and reported improvements in selected industrial KPIs. The panel also describes a root-cause-analysis use case in which a system combines maintenance records, process data, documentation, procedures, and contextual information to produce an investigation result much faster than traditional manual analysis.
+
+The final conclusion is that the main barrier is not necessarily the availability of AI technology. More difficult challenges include organizational ownership, OT/IT alignment, plant-versus-corporate governance, standardization versus local autonomy, safety, accountability, and trust. The authors’ overall position is that industrial AI should be built on durable infrastructure and governance while allowing models and intelligence layers to evolve over time.
+
+---
+
+## Key technical ideas
+
+### 1. Replace historian-centric architectures with operational data foundations
+
+Traditional architectures commonly send machine data into a historian or data lake for later analysis. The panel argues that this limits AI to retrospective use.
+
+A more capable architecture would expose industrial data through a shared infrastructure layer that supports:
+
+- Real-time distribution
+- Multiple data consumers
+- Operational applications
+- AI models and agents
+- Potentially controlled interaction with production systems
+
+This changes the data layer from passive storage into an operational interface.
+
+### 2. Move from application-centric to infrastructure-centric integration
+
+In an application-centric design, each AI or software use case connects directly to its required machines and systems. This creates repeated connectivity work and locks contextualization inside individual applications.
+
+An infrastructure-centric design provides a reusable abstraction layer:
+
+- Applications connect to the shared infrastructure.
+- The infrastructure connects to industrial data sources.
+- Context and integration work can be reused across use cases.
+- The same foundation can be deployed across plants with different equipment.
+
+This is presented as a central requirement for scaling beyond a single pilot.
+
+### 3. Treat context as semantic meaning, not only data cleanliness
+
+The discussion distinguishes three related concepts:
+
+- **Structure:** Whether data is organized and technically readable
+- **Cleanliness:** Whether data has been labeled, normalized, or corrected
+- **Meaning:** What the data represents within a particular industrial process
+
+The panel argues that large language models can often work with imperfect or unstructured inputs, but agents still need domain meaning to reason about consequences, relationships, and operational dependencies. Knowledge graphs and semantic models are proposed as ways to represent this meaning.
+
+### 4. Preserve model independence through modular architectures
+
+Industrial data foundations should outlast individual AI models, vendors, and tools. The recommended approach is to separate relatively stable elements from rapidly changing ones:
+
+- Manufacturing processes and business purposes are comparatively stable.
+- Data organization and connectivity form a durable foundation.
+- Models, algorithms, and visualization layers will change more quickly.
+
+Modular architecture allows a model or intelligence component to be replaced without rebuilding the entire industrial data system.
+
+### 5. Use hybrid edge-cloud deployment
+
+The panel identifies three main factors for deciding whether an AI workload belongs at the edge:
+
+1. **Latency:** Whether the system must react in real time  
+2. **Data volume:** Whether transmitting all data to the cloud is impractical or expensive  
+3. **Reliability:** Whether operation must continue independently of corporate or wide-area networks  
+
+Edge execution is associated with autonomous operational control and time-sensitive industrial processes. Cloud execution is considered suitable for historical analysis, training, benchmarking, and non-real-time reporting.
+
+### 6. Build an orchestration layer for multi-plant scalability
+
+Scaling from one factory to many requires infrastructure that can absorb plant heterogeneity. The proposed capabilities include:
+
+- Zero-touch provisioning
+- Deployment of protocol connectors
+- Portable applications and AI models
+- Containerized or otherwise portable infrastructure
+- Batch configuration and change management
+- Centralized governance with local operational flexibility
+
+The objective is to make multi-site rollout resemble software distribution and configuration rather than repeating a custom engineering project at every plant.
+
+### 7. Apply agentic AI to operational exceptions
+
+The panel positions agentic AI as especially suitable for exception handling rather than replacing deterministic control systems. An agent could:
+
+- Receive an anomaly signal from a predictive model
+- Investigate related operational data
+- Retrieve documentation
+- Check maintenance history
+- Create or update a work order
+- Recommend next steps
+- Request human approval at defined points
+
+This creates a division of labor in which deterministic systems manage control, predictive models generate signals, and agents coordinate multi-step investigation and response.
+
+### 8. Introduce graduated autonomy
+
+The proposed autonomy model is based on increasing levels of delegation and supervision:
+
+- Human-led, AI-informed
+- Human approval required before action
+- Human supervision while AI acts
+- Human review by exception or sampling
+- Potential full autonomy for narrowly defined, sufficiently trusted tasks
+
+The appropriate level depends on risk tolerance, operational criticality, and the consequences of an incorrect action.
+
+### 9. Govern AI as an industrial actor
+
+If AI can influence production, it requires more than model accuracy. The panel identifies the need for:
+
+- AI identity
+- Access-control rules
+- Policies limiting actions
+- Audit logging
+- Traceability of decisions and actions
+- Versioning
+- Rollback capability
+- Clear human responsibility
+
+These mechanisms are described as necessary for maintaining control as AI systems become more autonomous.
+
+### 10. Keep AI out of unsuitable deterministic control loops
+
+The participants express caution about placing large language models directly inside critical control systems. Their concerns include non-deterministic behavior and the difficulty of guaranteeing predictable process execution.
+
+The suggested pattern is to use AI externally to support investigation, recommendations, orchestration, and operational decisions while retaining deterministic control for core machine and process loops.
+
+### 11. Start with the operational problem, not the newest technology
+
+A recurring recommendation is to select the simplest technology that solves the problem:
+
+- Classic AI remains effective for prediction and optimization.
+- Agentic AI is justified when the task requires multi-step reasoning and coordination.
+- The OT organization should help define the use case and lead operational adoption.
+- AI initiatives should be measured against existing manufacturing KPIs.
+
+### 12. Make AI operable by OT personnel
+
+Industrial AI cannot depend entirely on specialized IT teams after deployment. The people operating the plant must be able to supervise and troubleshoot the system.
+
+The panel therefore frames IT/OT convergence as making IT capabilities usable by OT teams, including personnel responsible for automation, maintenance, SCADA, and process engineering.
+
+
+TRANSCRIPT
+================================================================================
+Transcript source: English transcript (automatically generated)
+
+[music]
+[music]
+[music]
+Welcome to the board IoT World Advisory
+Board member Haish McKenzie. The floor
+is yours.
+>> Thanks very much Luchian. So welcome
+everybody. Good morning, good afternoon
+or good evening depending on where you
+are. My name's Hamish McKenzie. Thanks
+for joining this session which is called
+data stream from data streaming to
+autonomous action building the
+foundation for industrial AI sponsored
+today by Hivemq Cyers and Barbara if you
+want to tell us who you are where you
+are in the chat please go ahead and do
+that while you do that I'm just going to
+cover a couple of bits of housekeeping
+as I'm sure most of you know it's an
+hourong session I'll be introducing the
+topic introducing our guests um and
+we'll be having a great discussion I'm
+sure we've got a lot to get through
+today so I'm going to really try and uh
+get through the intro quite quickly. Um,
+if you have any questions that you that
+come up in your mind, please get them in
+to the Q&A function in the platform.
+Don't put them in the chat because we'll
+lose them. We won't be able to see them.
+It'll just make it a lot easier and
+you'll be more likely to get your
+question answered if you put your
+question in the Q&A function. So, please
+do that and we will do our best to leave
+five or 10 minutes at the end to get
+through as many of those questions as we
+can. So, with that said, time to focus
+on the session. Um, most manufacturers
+want to deploy Agentic AI on the plant
+floor today, but many efforts stall
+because they're built on architectures
+designed for historical analytics and
+not operational intelligence. And so in
+this session, we'll examine the
+progression from descriptive awareness
+to autonomous operation and the
+security, governance, and trust
+mechanisms that make it possible to
+safely extend AI authority within
+industrial environments. So that's what
+we're going to be covering. Um, and I
+would like now to introduce our guests.
+First off, we have Kudzai Manditariza,
+senior industry solutions advocate at
+HMQ. He's the founder of industry4.tv
+and he helps industrial professionals
+apply data, AI, and IoT to scalable SP
+smart smart manufacturing. He's been
+spent over 10 years educating
+professionals via tutorials, podcasts,
+newsletters, and talks. And he's been
+named a top 100 industry 4.0 influencer
+and smart manufacturing executive of the
+year. So, we're delighted to have Kudsai
+with us.
+Then we have Peter Sara who's CEO of
+Cybers, expert in indust industrial IoT
+and the technical architecture of
+datadriven production. He founded Cybers
+in 2015 and Cyberus is focused on secure
+governance strong IoT edge and smart
+factory solutions and he spent 10 years
+over 10 years advising industry on
+decentralized smart factories and
+datadriven services. Great to have Peter
+with us. Then we have David Puron who is
+the CEO and co-founder of Barbara leads
+uh Barbara which is an edge AI platform
+for industrial companies simplifying
+deployment and orchestration of
+industrial apps and AI models via cyber
+seccure edge computing. He's a serial
+entrepreneur. He's been named to the
+Forbes 100 list of Spain's top
+entrepreneurs and he's a frequent
+international speaker on AI industrial
+edge computing cyber security and
+digital transformation. So fantastic to
+have David with us. Then we have
+Jonathan Alexander who's global
+manufacturing AI and advanced analytics
+manager at at Albamar Corporation. He
+has 15 years of experience across
+operations, engineering, continuous
+improvement and manufacturing
+excellence. And he applies AI, machine
+learning, and advanced analytics to
+improve OEE quality, reliability,
+throughput, and material utilization.
+And he's focused on making digital
+transformation practical, scalable, and
+embedded in daily plant operations. So
+Jonathan, amazing to have you here as
+well. Thank you for joining us. Um, very
+few words about me. I'm a former IDC
+analyst. I'm a current IoT World
+Advisory Board member and I've been
+running my consultant consulting
+advisory practice on go to market for
+various software companies um, for the
+last 25 years here in Munich. So, if you
+want to find out who I am, look me up on
+LinkedIn. I'd be very happy to connect
+with you. And with all that said, just a
+quick reminder, get your questions into
+the Q&A function. And it think it's now
+more than about time that we really get
+stuck into the topic we have today. So I
+want to start off as I usually do in
+these sessions with a bit of context. Um
+so let's talk about where we actually
+are uh in this process right now. Um so
+Jonathan if I can come to you first. If
+we think of industrial ai value chain as
+collection historiization
+contextualization and intelligence where
+do you see that most manufacturers are
+stuck today and why?
+Yeah, it's a great question and it's
+funny that you said that we're going to
+switch to uh context because that's the
+the answer I would give is to me um over
+the past maybe even 10 to 20 years uh
+manufacturing has almost conquered uh
+collecting data. um that's um of course
+there's still challenges out there and
+and certain equipment make it uh more
+difficult than others but I would say at
+an industry level that that has been
+solved and uh but this context layer
+especially now in the age of AI is
+really I think the the biggest gap to
+people um scaling AI solutions whether
+that's on the machine learning side you
+know advanced analytics visualization
+business intelligence or if that's uh
+generative AI and agentic AI. And so
+you're you're hearing all of these terms
+come out in the industry about uh
+knowledge graphs and uh the semantic
+model and all of that is just context of
+your manufacturing organization. And so
+what is context? Well, it's it's really
+what uh kind of everything about how
+things work, how people use it, how
+people think about your manufacturing
+process, uh the equipment, the
+production lines, um the different
+recipes or product grades, all of this
+is context and right now it lives inside
+your people's head. So the biggest
+challenge is uh working with your
+subject matter experts, your existing
+people to try to not only extract that
+information uh from them uh but also put
+it in the right format that is
+digestible by all those other solutions
+and that's where knowledge graphs are
+are getting so popular these days.
+>> Okay, fantastic. Yeah, and I I can
+certainly tell you I mean my most of my
+work is in the go to market area and we
+have exactly the same problem. I come
+across [clears throat] it time and time
+again. Loads of knowledge in people's
+heads. Um which is not it's not
+findable. It's not discoverable and it's
+certainly not accessible to to to AI. So
+very very um widespread problem I I
+think. Um all right. So Peter, if I can
+come to you next. Um, so most
+manufacturers have access to their shop
+floor data and and as we've as
+Jonathan's already said, most people
+have mastered the kind of collecting of
+collection of data. Um, but very few
+actually have AI running on it in
+production across their plants. So what
+do you think is stopping them closing
+that gap and what is it costing them not
+being able to close that gap?
+Yeah, I think we really have to
+differentiate a little bit um about what
+we are talking and I think you you um
+touched upon that brilliantly in your
+intro. Um one thing is using AI for
+analytics. Um so collecting data
+Jonathan as you said is a a problem
+which is generally solved. putting it
+into an historian or into a data lake uh
+snowflake database whatever you like and
+then running
+analytics if it's machine learning an
+LLM whatever on historical data I think
+that's that's one bucket
+the other bucket and I think that's more
+interesting and that's what we are
+actually what what I think will be more
+interesting in the future is actually
+applying agentic
+capabilities directly to the shop floor
+to not only um analyze historical data
+but be able to react in real time of
+what of uh to what's happening today u
+in the production probably taking
+real-time decisions
+>> maybe in the first place only proposing
+real-time decisions uh which would be
+signed off by a human but but later on
+um probably getting more and more
+autonomous
+um and I think this is the operational
+part of AI capabilities in the shop
+floor and what's stopping people from
+doing that? I think it's it's a number
+of things. First of all, it's the
+architecture because we have historian
+centric architectures everywhere. Um
+although and and hyphenq and us uh cyers
+we are providers of of MQTT brokers and
+and usually we we we really collect
+data. We are able to distribute them in
+real time across many subscribers,
+sources and syncs but still uh most
+manufacturers still just forward the
+data into a historian to store it. And
+this is the the very very narrow
+viewpoint um of data collection.
+Typically
+very rarely I see that people actually
+use this this layer this collection
+layer as an interface that can also be
+used to control uh manufacturing. So
+it's first of all I think it's an
+architectural decision not a
+technological an architectural
+>> and second um what you really need uh uh
+is a governance framework uh which
+allows you to not only uh set the right
+policies and rules to prevent the AI of
+do uh from doing uh uh malicious things
+accidentally setting a wrong parameter
+on the machine something like that
+moving the robot in the wrong action but
+also being able to audit that. Uh you
+probably have to think about giving AI
+an identity which uh which has access
+control rules and so on. I think this is
+really new territory for everybody. Um
+there are no best practices, no concepts
+uh in the world uh yet and I think this
+is what uh what we can foresee for
+tomorrow. Uh what we really have to to
+dig into in order to um to to bring the
+industry into this agentic world. What's
+costing them? I think it's an innovation
+uh speech question.
+>> Um uh but as I said it's completely new
+territory and I'm I'm pretty convinced
+that the next year uh or two will will
+bring us forward into this uh direction.
+>> Okay. Fantastic. Thank you. Um all
+right. So
+in our discussions prior to the call the
+questions um we discussed we would we
+would talk about today um it came
+through that actually the found there's
+a very foundational constraint going on
+here so kudzai I wanted to come to you
+um on that what it is it what is it
+about from an architectural perspective
+what it is about today's manufacturing
+data architectures that makes it
+difficult to scale data and AI
+initiatives um and make sure that you
+get ROI from them because everybody body
+is starting to talk now about not just
+how to implement AI but where's where's
+the ROI so could I could you perhaps
+talk to that a bit a little bit
+>> yeah absolutely
+so I mean I I would you know start by
+you know saying
+to some extent yes the manufacturers
+have um you have mastered you know data
+collection but to to some extent again
+there's still a challenge in exactly how
+they approach that data collection
+Right? Because that the the the
+prevailing mentality was that you um it
+was more applicationcentric whereby to
+collect data you're connecting your
+applications directly to your sources of
+data your equipment right and that is
+something that we have seen to be um a a
+big cause of of the lack of scalability.
+uh because what I mean by that is that
+fundamentally to to to scale a solution
+on AI use cases really revolves around
+you being able to you know come up with
+that hypothesis you know being able to
+put that hypothesis to test. So maybe
+you know on on a single line or single
+site and then rolling it out onto you
+know other lines other sides and then
+you know moving from another use case to
+another use case and so on and so forth
+and do that with as leaky friction uh as
+possible. But the biggest challenge as I
+mentioned is that companies still
+approach the data collection you know
+before we get to the contextualization
+layer in in this applicationcentric
+approach whereby for each and every use
+case they need to set up a dedicated
+connect connection or or dedicated
+infrastructure to access the data that
+is needed right and and and the
+challenge is that you you're repeating
+the same use case so you may you know
+prove the use case for say predictive
+maintenance But now you want to use um
+AI for you know quality control then you
+need to set up the same or repeat the
+same connectivity infrastructure. So
+that's why you get stuck in that one use
+case that may have worked on um you know
+that one line and then it um it's it's
+actually worse because as you may know
+the the it's really rare to find an
+enterprise company where you've got the
+same set of manufacturing equipment
+across the all their you know infra all
+their you know uh infrastructure the
+same set of configuration. So even if
+you do actually successfully connect
+your equipment in in line one, it means
+it's it's a it's actually a new project
+entirely in in site two because it's a
+different set of equipment all together.
+So you can't it's not repeatable, right?
+So in as much as you can you know
+address a use case in that one line.
+Furthermore going to the you know the
+point that um uh you know my my
+colleagues here have already talked
+about that this idea of a context layer
+more Jonathan you know mentioned this
+idea that the context contextualization
+layer is really where things grind to a
+hold and it goes back again to that
+issue whereby if you're connecting your
+applications directly to data sources it
+means the contextualization that you're
+performing remains locked in that one
+application it is not accessible to
+application two application three or use
+case two or use scan three. So you're
+not only repeating connectivity, you're
+also repeating contextualization effort.
+So you're contextualizing inside the
+app, right? And then that kind of like
+also you know brings that um slows you
+down how how how much you can actually
+scale your solution. So what you need
+rather is to you know take that um
+infrastructurecentric
+approach to integration whereby you're
+not integrating applications directly to
+their data sources but you're creating
+that foundation layer that data
+foundation layer that context layer that
+you know Jonathan was talking about
+whereby applications are connecting to
+the infrastructure they're not
+connecting to other applications or
+other devices so they're sharing that
+information through the infrastructure
+which then allows you to use that same
+pool of information to you know address
+all the use cases and scale it out
+because now with that foundation you've
+created an abstraction. So it doesn't
+matter if in site two they've got
+different equipment, site three they've
+got different equipment because you're
+you're using that abstraction interface
+as something that you can you know
+deploy repeatedly across different areas
+which then allows you to you know to to
+scale your use cases.
+>> Okay, fantastic. Thank you. Um all
+right, Peter, so let me come to you back
+to you. Um, so let's say we've got data
+flowing by the MQTT, the naming
+structure is clean, but only from
+machines that can already talk and only
+in one direction. It seems to me like a
+lot of the real work is still ahead. Um,
+to what extent do you think that's
+that's the case?
+>> Yeah, I mean I want to challenge a
+little bit what what just has been said.
+Um,
+>> okay. Although although I agree that
+contextualization, knowledge graph, how
+does data relate and so on is helpful
+and required for AI as well.
+>> Mhm.
+>> So when I use chat to help my daughter
+with her homework, it's totally
+sufficient to take my smartphone, make a
+photograph of her bad handwritten
+sketches, and it will just magically
+understand everything correctly. Mhm.
+>> So I think LLMs
+are incredibly capable of working with
+not clean
+pretty messy data.
+>> Okay.
+>> Much better than uh machine learning in
+the past. I mean it it always was like
+this. Yeah. In like five, six, seven
+years ago when we talked about data
+analytics, we always said 90% of the
+work is data labeling and data
+cleansing. This is not true anymore.
+Why? Why? Why why why do we keep
+repeating that? That's not true for
+LLMs. Of course, LLMs have an easier
+time if they if they have more context,
+but they are way better and way faster
+and working with unstructured data than
+we humans are. So, I think this is first
+of all a myth I I I really want to
+challenge. Um
+>> well maybe uh I think this is a good
+topic because we need to have some some
+competing opinions here because I think
+the discussion people will find
+interesting.
+>> Yes.
+>> You know one of the things that I've
+been uh thinking about is is a large
+language model. Like I mean some of the
+stuff that you can do at home with
+chatbt or claude is is incredible. Um
+just yesterday uh we um I was having
+some issues with our HVAC system and you
+could take a picture of the label, you
+know, and say troubleshoot this for me.
+But we've tried that at the plant and
+and it wasn't trained on any of our
+manufacturing equipment or any of our
+manufacturing processes. We're taking
+our PIDs, our drawings, and and having
+it explain how the recycle loop works
+and and it doesn't understand it. And I
+think that's what makes manufacturing so
+uh that context layer so important is
+that these large language most of our
+process data and engineering drawings
+they're not public and and enthropic
+doesn't have a copy and uh so they're
+not included in that model. So you you
+have to understand what's what's
+included in the base frontier models and
+then what what data needs you have and
+then the context layer is closing that
+gap. And so if they have general
+information that can be applicable, you
+don't need any extra context, you can
+use the base model.
+>> But I disagree. I think it just depends
+on
+>> where in manufacturing um and what type
+of question that you're you're
+answering. Um and and then even even
+then you get into let's say like you're
+looking at an ERP system or MEES system
+or data historian where you have
+millions of records. when you feed that
+and connect that to a large language
+model, you exceed the context window.
+And so when so when you do that, you you
+have to extrapolate. And so they have
+these approaches called text to SQL
+where you convert your prompt and it has
+to go into like a a SQL or you know
+another programming language to take a
+subset of all that data to extrapolate
+this. And even anthropic wrote some
+papers about how they large language
+models hasn't solved business analytics
+yet. Um so I'd encourage you know if
+someone's interested in that trying to
+uh do that is look up the anthropic
+paper about uh business models and uh
+it's pretty pretty fascinating.
+>> So Peter you come back on that and then
+I want to cut one also wants to say
+something. So but Peter I I think it's
+another misconception. I mean it's a
+large language model. It's not a large
+brain memory model. So it's a
+misconception that an AI knows
+everything from the top of its head. Uh
+so I I you don't need uh your private
+factory plans trained in the model for
+the model to be able to understand it.
+You you still have to supply it. That's
+of course true. You have to supply the
+context, but the context can be a badly
+scanned PDF uh of of a drawing or a
+photograph. Of course, of course, the
+model needs context. The agents need
+context to to to rationalize. Um
+um but I'm pretty sure I I don't say
+contextualization makes no sense. That's
+not what I say.
+>> Sure.
+>> But I say um it's no excuse
+not to apply AI in in manufacturing
+because we say yeah we don't have clean
+data. We cannot use it yet.
+>> Yeah. That's a good point.
+>> Yeah. You you can you have to supply
+enough context and the context not
+doesn't need to be very well structured
+and it will be surprisingly helpful
+already. That's that's the point I was
+wanted to make.
+>> Yeah, that's a fair point.
+>> Great. Kudz, you want to you want to say
+something?
+>> Yeah, I want to jump in quickly there. I
+know at the risk of really spending too
+much time on this topic of
+contextualization, but I think it's it's
+super important to, you know, to to try
+and clarify this. So, kind of really
+agree with know what you know Jonathan
+is saying. So, I think, you know, Peter,
+there's obviously truth to the idea
+that, you know, the LLM are solving this
+structure. They can actually analyze
+data the data that is not really well
+structured and structured. But that's
+not the actual problem that we're
+sitting here with here. We're sitting
+with the problem of meaning, right? So
+it's not about how well structured. So
+context goes beyond just the payload
+with the units and everything well
+structured. It's what exactly what what
+does it actually mean to say this is a
+work order which may be different
+remember from company one to company two
+to company 3. So it's not a universal
+thing that CH GBT could really answer
+you when you take a Walmart of your
+daughter the church DP can can structure
+it and answer it but there's no meaning
+behind to say you know why exactly are
+you doing this where is it going what
+are the you know uh the implications of
+failing this homework so there's no
+meaning around that so the idea of
+knowledge graphs and that semantic
+backbone is to give it is to connect
+those elements those structures
+to give that full picture to the agent
+so that the agent knows that if this is
+a work order what happens if it's
+completed which means I need to do ABC
+and D if I need to do ABC and D what
+else is downstream that is connected to
+it that could be impacted so what is
+missing is the meaning not so much the
+the structuring of the data itself
+>> all right so just I'm going to have to
+skip through this slightly um just in
+the interest of time maybe Jonathan very
+quickly Um what about um you know the we
+can't although AI is evolving extremely
+quickly obviously data architecture
+can't. So how do you how do you handle
+that data so that it you know that it's
+going to outlive any specific model or
+tool um you know that it can it can
+still be useful even as AI is you know
+the the pace of development is is
+accelerating.
+Yeah, it's a big challenge every I mean
+what just GPT6 Astra just came out you
+know and so everybody's like how do I
+switch my claude account to to back to
+chat GPT uh even I'm talking about that
+and uh so I what I try to think about is
+what what things aren't changing in your
+manufacturing organization. So, one
+might be and and I'm going to I'm going
+to try to simplify it, right? But
+there's nuances here, but I'm going to
+speak to it simply. Your manufacturing
+processes are are basically not
+changing, right? And that's like uh how
+you create things. I mean, you're going
+to have innovation there, of course, but
+like let's just from a AI perspective,
+that's not changing. And then the the
+end of how your business really
+functions and operates and uh your your
+purpose of your department or your role,
+right? that that fundamentally isn't
+changing too much and and so what's
+changing is this piece in the middle
+which is uh what type the intelligence
+layer and so what I what I say is try to
+build and focus on putting what things
+if you do now probably are going to uh
+stay for the true for the next 5 to 10
+years. One of that is just putting your
+data in an organized place. Um, I think
+that it it is going to hold true. Now,
+exactly what that looks like, I'm not
+sure. But if if you don't have any of
+your data connected and talking to each
+other,
+>> Mhm.
+>> that that's going to be a problem long
+term. So, I think you can you can kind
+of anchor your your efforts there. And
+then when it comes to the uh some of the
+contextualization layers, those will
+change over time, but there's some
+pieces that that the the models will
+never know. Um and so trying to figure
+out those and going u all in on that I
+think is a good idea and then the models
+the algorithms the visualization layers
+all those are going to change and so you
+know you don't want to you still want to
+build things that can scale but you do
+it in a mindset and maybe there it's
+kind of like modulars to where if the
+model changes all you have to do is
+switch to the next one right and this
+and you don't have to redo the entire uh
+structure So, it's about laying that
+right foundation.
+>> All right, fantastic. Thanks very much,
+Jonathan. So, I want to move on now. Um,
+and especially because we haven't spoken
+to David yet. So, apologies, David, that
+it's taken a bit of a longer time to get
+to. Um, but, uh, I want to start talking
+about um, edge versus cloud now. So, the
+session premise is that centralization
+first architectures break down for
+operational decisions. So, in practice,
+in your view, which decisions genuinely
+have to stay at the edge and which are
+perfectly fine in the cloud?
+>> Yeah. So um so uh Jonathan was talking
+about making the the data available
+right and and we come from from a world
+where in industrial environments the
+data has been traditionally centralized
+in historians in in many things. So let
+me start by saying that most of the
+projects we we do today use hybrid
+architectures. So the centralized
+architecture is no longer valid for for
+a for an industry. So to your question
+the key issue is um which decisions can
+tolerate like a round trip to a central
+system and and go back right. So um for
+example if uh we used to work with an
+architecture so Paul if you can uh share
+that that architecture that I I share
+with you which is always hybrid. So um
+this this architecture [snorts]
+is being implemented in in different uh
+projects and we have an edge layer uh
+that holds uh protocol connectors uh
+MQTT brokers um and and so on so forth
+and we have a similar architecture uh
+with databases and everything in the
+cloud but we can run AI models both at
+the cloud and at the edge. So um how do
+you decide what to put in the edge?
+Mainly three factors. So the first one
+is latency. There are many models that
+need to react in real time. We're
+working for example with a chemical
+manufacturers um Argos cement
+manufacturer where we are automating a
+process with AI where the flame in the
+process is changing in fractions of
+seconds. So you really need the model to
+to be able to to access this this data
+in in real time. The second is data
+volume uh which relates to to cost.
+Obviously, if you are running, for
+example, a computer vision model, it
+makes no sense to send all the streams
+to to the cloud. And and last but not
+least, the third one is reliability. If
+you have a an autonomous operation model
+that is controlling a process, you don't
+want this model to to depend on the
+corporate network or or the wide access
+network. So um what's perfectly fine in
+the cloud uh models related to training
+historical analysis benchmarking
+non-realtime reporting but here we were
+talking about the cases that Peter was
+describing at the very beginning agentic
+AI uh autonomous operations and those
+models normally have a lot of
+constraints around latency data volume
+and reliabilities and those models are
+normally uh running in the cloud. So
+again I think the the data is not
+challenging anymore the context is uh
+maybe challenges maybe not there are
+different opinions but what it is true
+is that the infrastructure is is always
+very challenging and that's a point
+where where many companies are
+overlooking.
+>> Okay fantastic thank you. Um and so
+Peter in that context what happens on
+the shop floor if the connection to the
+central level or the cloud drops how
+autonomous should a system remain in
+that in that situation?
+>> Yeah, I mean there there's the
+theoretical
+textbook answer would be of course
+completely autonomous and everything
+should be super decoupled and robust and
+so on and then there's a reality we see
+in practice today already. I mean first
+of all we have to differentiate a little
+bit what is what does central mean at
+all? Uh are we talking about one site
+one one factory and central is the data
+center on site or are we talking about a
+like a uh a fleet of factory so like a
+like a group of factories uh across
+spread across a country or a continent
+or the world uh and central could be the
+group it um or are we talking about a
+cloud data center like in AWS or Azure I
+mean there there are many many different
+layers
+And uh we started cyber in 2015 uh in
+Germany which is a quite conservative
+country uh when it comes to uh digital
+dependencies. Um and back in 2015 nobody
+wanted to move any data into the cloud
+uh for privacy reason for dependency
+reason and so on. Uh at least not
+manufacturing data. Spinal speeds were
+very critical. Um uh everybody was on
+Salesforce in the same time but u that's
+a different story. um uh I think this
+has changed in these 10 years. So we see
+many uh companies move workloads um into
+the cloud anyway not only manufacturing
+workloads al also business workloads and
+there was one point where where I talked
+to a customer of us and I asked if they
+really want to make themselves so
+dependent on the cloud and then they
+said you know if our internet connection
+drops you know how many teams meetings
+will stop immediately business won't run
+anyway we have SAP in the cloud we have
+everything in the cloud nothing would
+work our mees uh SAPDM for example is a
+pure cloud
+everything is dependent. Um so we can
+anyway only continue the work orders we
+currently have on the shop floor and
+then everything is offline. So I think
+the the general sentiment um uh having
+an easier mind moving actual production
+workloads in the cloud and increasing
+this dependency
+because of its uh lower cost to operate
+easier to keep secure because somebody
+else like AWS or Microsoft or Google can
+can operate data setters much more
+reliable than your local team can and
+[snorts] higher innovation speed. These
+are the factors that speak pro moving
+things to the cloud. And of course,
+there's a risk assessment dependent on
+what are you manufacturing, how stables
+your internet connection, do you have a
+fiberglass connection, so on. Um, and I
+think this is a trade-off every company
+has to make for themselves.
+>> Okay. Fantastic. So, um, you mentioned
+there, you know, having to define
+whether we're talking about one factory
+or or multiple. Um, and I I want to move
+on now to scalability. Um so David many
+industrial manufacturers um have already
+proven that AI works in to whatever
+extent in one plant. Um the problem
+comes when they try and replicate that
+in other plants uh other locations when
+a project stalls in that circumstance.
+What is usually the biggest problem in
+your in your experience?
+>> Yeah. So this was already mentioned by
+by Kai and and it all comes to
+repeatability. So if you have a like a
+big company that that are running 18
+factories or 20 factories, uh you do the
+pilot in one factory and and everything
+works perfectly. You you have like a
+very well dedicated engineering team
+that that solve any problem in that
+factory. Um the pilot takes like uh
+three months, four months, six months,
+whatever. Um and everybody's happy. But
+then you go to the second factory and
+the PLC vendor is different or the
+network configuration is different, the
+security policies are different and that
+goes on and on to to every all of these
+factories right so I don't know how to
+call this um eerogenity or reputability
+scalability but the reality is that if
+you want AI to scale you need an AI
+infrastructure and we come back to to
+the infrastructure which is always the
+the piece that that many people um
+ignore. or you need an AI infrastructure
+that absorbs that complexity. Um what
+does it mean? Um you need an
+infrastructure that is able to provision
+in zero touch new applications new
+protocol connectors. Uh you need um
+applications and models to be portable
+to be in Docker containers or or or
+different uh portable infrastructure.
+you need to be able to manage in batches
+the changes uh in all the factories and
+everything. And what we are seeing is
+that that this is uh in many cases um
+slowing down the the acceleration of the
+projects and and they end up in what we
+call the purgatory of the PC, right? And
+we have uh for example a customer uh GB
+foods which is a food and and beverage
+manufacturer where we were able to to do
+the the engineering project in uh in the
+first plan very quickly but then we
+start having uh different issues on this
+on the other plans and what we did is to
+implement u an HAI orchestration layer
+that that is something that that helps
+you overcome those um those
+infrastructure issues and uh so that the
+the the project is not an engineering
+project. It's more a kind of a software
+distribution and and configuration
+project. So I think this is something
+that that needs to be uh needs to be
+taken into account.
+>> Um all right, thanks. So um I'm going to
+I'm going to skip ahead now um because
+we're we're running short of time and
+we've got quite a few questions coming
+in. Um so I want to it's very important
+for me in these sessions to always bring
+the human aspect in. Um and so I want to
+talk about that in in two different
+areas. First of all, in terms of trust.
+So what do you uh what do you let AI do
+and and to what extent is the human in
+the loop um important in various
+situations? What does that how do you
+even define that? And then uh in terms
+of who um kind of takes responsibility
+um for for for the for the ROI. So I'm
+going to come to all of you now and just
+ask you um in terms of your your you
+know slightly different angles on on
+this whole trust aspect. So David I'll
+start off with you. Um, so how do you
+decide which problems actually justify
+completely auton autonomous AI?
+>> Yeah. Well, it's it's that's a very good
+question because there's a huge um uh
+trend about putting aentic AI wherever,
+right?
+uh and and this is why uh many people is
+is talking about uh machine learning and
+and convolutional networks and gradient
+boosting and things as classic AI or
+legacy AI in front of agentic AI. But
+the funny thing is that most of these
+classical AI or or legacy AI models are
+the ones that are providing real value
+into into the customers. So um so um
+when agentic AI is uh is necessary um
+for me is when the problem is no longer
+about making a prediction or or doing a
+recommendation but more about creating
+like a chain uh that decides what to do
+next. Like imagine for example using AI
+to troubleshoot an industrial incident.
+Uh you need to have different models.
+one detecting an anomaly, another
+looking into the relevant data, another
+retrieving uh equipment documentation,
+check the maintenance history and
+everything and that that really requires
+different models coordinated. But this
+is only valid for really really complex
+problems. So um we have customers like
+Axion in the water treatment plant that
+that are predicting the amount of
+chemicals with what we call classic AI
+and is providing uh more than 200 uh 50k
+savings per per plant. So of course I
+[snorts] support uh Agentic AI and this
+is in in our product road map but the
+reality is that most of our customers
+can solve the current problems with uh
+with simpler models and and we can
+support both agentic and simpler models
+and and we always recommend to start
+with the problem and not with the
+technology.
+>> Okay. Yeah. No that very good point. Um
+so could I if a customer or or a company
+does want to use AI agents where in your
+view does the boundary sit between the
+AI human approval and deterministic
+control? Can you just give us your your
+view on that?
+>> Yeah absolutely. So I mean the where
+agentic AI needs to first and foremost
+be applied in in in in manufacturing. So
+know agree with David that it's not
+really more for the predictive aspect of
+it but it works in combination with the
+predictive uh u uh you know know
+elements that already exist within your
+shaw. So agentic AI is more for handling
+operational exceptions right. So an
+anomaly detection. So the prediction
+model can detect it anomaly. But what
+happens when an anomaly is detected
+right? You need to lock that into a work
+as a work order in your maintenance
+system or you need to go down and
+investigate. You need to go and check a
+PDF document and you know go into the
+historian and do all of these things
+that in many cases may not be value
+adding. Right? So because you've got all
+these highly skilled people spend the
+whole day just chasing one problem that
+is not also you know consequential if
+given or handed over to or delegated to
+an air agent to investigate and then
+sort of like have those uh you know
+checks in between where the the engineer
+actually you know checks to see at
+different stages. So you define those
+stages where an an engineer needs to
+intervene or where an air agent needs to
+request the approval of the engineer to
+move on to the next step. So those are
+are workflows that um can be automated
+using know agentic air that are not
+directly closing the loop to your
+control system. In fact, we obviously,
+you know, don't believe that we're
+actually at a stage yet where Agentic AI
+is able to, you know, intervene on on
+the actual, you know, control on the SH
+flow, but more on handling those uh, you
+know, uh, orchestrations,
+uh, you know, that happen when a certain
+exception uh, occurs, anomaly is
+detected or, you know, a production line
+speed starting to drop, you need to
+perform some investigations. This is
+something that is suitable for an an an
+air agent and then leave the
+deterministic stuff to your traditional
+you know control and know more for uh
+predictive maintenance or predictive
+models for for the migle layer that that
+that sort of like you know provides
+those signals to the agentic AI.
+>> Mhm. Okay. Um and just just to kind of
+take a specific example then Peter. So
+for example let's say an agent has
+changed something on a machine who is
+normally the person who who can who can
+see what that what the agent has done
+and potentially you know reverse it or
+change it if if necessary.
+>> Yeah. Let's let's probably add a few
+more shades of gray here because we we
+we speak about AI or no AI. Uh this is
+it sounds like black and white. Um what
+I like to do is draw the parallel to
+autonomous driving. Um
+>> in autonomous driving we have since
+years agreed on I think it's five levels
+of autonomy, right? Where level five is
+a fully autonomous car like the the
+cyber caps now in in in Austin, Texas. I
+think it's the first time we really have
+that. Um uh level one was uh basically
+your cruise control that keeps the
+distance to to the car in front of you.
+So, so what we we increase driver
+assistance
+um step by step the car takes actions.
+Yeah. Like uh lane control, speed
+control and so on.
+>> And and and I think I think this is this
+is what how we have to look at agentic
+manufacturing as well. It's not like we
+we we we flip a switch and suddenly
+everything is fully automated. So first
+of all we will use AI to
+support a human uh in taking a decision.
+Yeah, making things easier to
+understand, give context, uh give
+recommendations and and the the action
+is to the human. Then that might be
+turned around. Maybe an AI proposes an
+action and the human signs it off and
+says, "Okay, you can do that." And step
+by step, we will increase experience,
+trust uh with the technologies, the
+models will evolve. Uh uh the we will
+get used to that. We will probably adapt
+manufacturing processes to it and then
+step by step the autonomy will increase.
+I think that's this is step by step and
+then um as it increases of course we
+have standard IT tools like audit
+logging
+uh really tracing actions uh versioning
+being able to roll back decisions uh and
+so on which is the actual answer to your
+question uh so of course uh this this
+all needs to be traced uh and governed
+um and I think this is a layer of
+control that we really have to to to to
+keep because honestly speaking, if I
+would ask Claude today to just connect
+these 100 machines with OPCA to my MEES,
+it will work all night all night, but
+tomorrow everything will be connected
+without any middleware. Uh it will just
+make something up and it will somehow
+work. But what we will will have lost is
+control. Um so I think all architectures
+that we that we draw now are not a
+technical pre- requirement for things to
+work at all but they are a technical
+pre- requirement to first of all
+maintain control and second maintain a
+system that we can maintain extend over
+time uh and still uh yeah be remain in
+control about what's actually happening
+uh in the whole factory.
+>> Okay, fantastic. So let let's stay on
+that for a minute, Jonathan. Um, human
+in the loop. It's one of those phrases.
+I've already said it at least a couple
+of times today, I think. Um, it's one of
+those phrases we all use, but it
+nobody's quite sure exactly what it
+means. So, in this in the context of
+what we're talking about manufacturing,
+what is the human actually doing in that
+instance? I mean, maybe it's different
+every time. Is it sometimes they're
+approving every action, they're
+monitoring by exception or so? You know,
+what what is the range that we're
+talking about there from your
+perspective, Jonathan?
+Yeah, and I love Peter's example of the
+autonomous driving. I'm in Houston,
+Texas, so I'm only three hours away from
+Austin and and have my eyes on uh I
+can't wait for the the um what's it
+called? The cyber taxi or whatever he
+calls it. Um but it does get that's a
+great example and
+um I actually tried to break this down
+and and uh I was actually trying to
+create a flowchart for decision making
+or if you're going to use AI
+uh what what scenarios of actions would
+you would you allow AI to take and so
+where where does that human in the loop
+uh fall within? And what what I ended up
+with is kind of expanding on human in
+the loop and and it and capturing maybe
+some other categories. So I have four
+ways of of differentiating this. So the
+first one is uh instead of saying human
+in the loop which is kind of a very
+broad umbrella term no one precisely
+understands what it mean. So I've broken
+it up into four. So one is is human-led
+AI informed. And so basically AI gives
+you information and then you decide you
+take the action. So nothing's like
+queued up and nothing's like automated.
+Um and so then I'd put human in the loop
+there and that's where AI you're
+actually in the loop of the decision-
+making process or the action. So AI does
+something and then it sits there and
+waits for you
+and then nothing moves until somebody
+approves it.
+>> Okay. And then we have human on the
+loop. And this is where AI acts and
+somebody's kind of watching in real time
+but can stop it. So it's kind of like
+you're like a supervisor. So it keeps
+going but then somebody's kind of
+monitoring it. And then you might have
+human over the loop and where you don't
+have somebody watching live but maybe
+you're reviewing samples or certain
+exceptions. So it keeps running and then
+you know every week or every day or
+however you want to structure it. But
+all those uh which one to use out of
+those and and you can break it down in
+in lots of different ways. It really
+goes back to like your risk tolerance
+and I think that's the key piece is if
+something in this loop happens and and
+something goes wrong uh how how critical
+will that be to your business. So uh Kai
+mentioned that you know and I fully
+agree with that I don't see large
+language models being embedded into like
+the control system anytime soon because
+we we want these uh pieces of equipment
+to run. They can support some of the the
+externally some of the decision making
+but they're not going to be a
+fundamental process of a control loop.
+And I think that's where uh why you know
+they're not deterministic. Um so really
+the the the question is when you're
+trying to think on versus over or in the
+loop versus on the loop, it's all about
+your risk tolerance and at what
+frequency do you want to take action?
+And so that's that's how I'd break it
+down.
+>> Fantastic. I think that's that's
+extremely helpful. Um all right. So um I
+think uh we'll we'll just we're going to
+cover um the kind of accountability
+responsibility uh very quickly if
+possible guys. So I think if if you
+[clears throat] can just keep your
+answers as brief as possible and then I
+want to ask you all for for just for
+some conclusions in terms of where you
+think the future is is heading with this
+um and what what outcomes can
+manufacturers really um you know
+realistically expect to achieve uh when
+when they start uh with their AI
+integrations. So so David just very
+briefly um so you've run your pilot
+whoever's been helping you with the
+integration has left. um who is really
+then looking after everything from from
+then on who who has the internal
+responsibility to to drive forward once
+the initial pilot is over usually.
+>> Yeah. Well, Jonathan were describing it
+perfectly. So there's needs to be
+someone in the subfloor uh who is
+supervising the AI whether more
+interactively or less interactively but
+someone needs to be supervising and
+operating that that I and in my
+experience the most successful uh
+projects are when the people supervising
+the the AI and working with AI are the
+same that are running the operations. So
+the subject matter experts as as were
+defined by Jonathan in in the beginning.
+So the automation engineer, the
+maintenance team, the SCADA engineer,
+the process engineer. So these people
+needs to be in the loop or on the loop
+or whatever. And the challenge that they
+have in in many cases is that they are
+not IT experts at all. And if you need
+to interact with some AI infrastructure
+and you need to understand when an AI
+model is failing and and you need
+probably to stop that AI model or or or
+troubleshoot something. Uh normally
+those people is is not an IT expert.
+They are not Linux experts. uh uh they
+don't know about Kubernetes, they don't
+know about networking and everything. So
+we need to bring it capabilities into
+OT. So this is what this is how we
+define the IT OT convergence. It's not
+putting it technology inside the factory
+but making it accessible to the OT
+people who is who ultimately needs to to
+operate this and this is basically the
+the philosophy that that we follow at at
+Barbara.
+>> Okay. Fantastic. So, okay, in the
+interest of time, I want to leave five
+minutes at the end for questions. I'm
+going to I'm going to try and wrap this
+up now. So, I want to come to each of
+you, as I said, and and we're just going
+to talk a little bit about outcomes and
+where you think this is all heading. So,
+I'll come to you first, Jonathan. Um,
+where what measurable outcomes do you
+think that manufacturers can really
+expect here? Um, and what do you how do
+you see the future evolving over the
+next two years? And I'll let you choose
+which which you want to focus on.
+Oh, I can't I can't hear you. Is that
+just me?
+>> Well, I pressed the button, but I
+clicked right above it. So,
+>> I need some more human on the loop or or
+maybe I have to be in the loop here.
+>> Yeah, I I'm very optimistic about the
+future of manufacturing. I mean, I I've
+been in the the industry. Uh I worked in
+the plants. I'd spend four to six hours
+a day in the control rooms. And I
+remember um uh having to go outside and
+listen to the machines with the
+operators and he's he would say, "Okay,
+we need to change the the acid dose from
+3 to 2.8 and he's hearing something and
+I would sit there and I would listen and
+every day I would come up and try to
+listen to the same machine and I never
+got it right." Um but there are some
+some mechanisms there and that what
+we're seeing is is AI is changing that
+intelligence layer and it's uh enabling
+us to solve these uh problems that have
+never been solved at scale. Um and it's
+it's moving so quickly. So I think it's
+very exciting. It's going to allow a lot
+of manufacturer companies to become more
+competitive if they can go and embrace
+AI. Um uh there's tremendous challenges.
+We've spoken about all of them across
+every layer of operations, but but
+ultimately I think that the technology
+is touching almost every single function
+in the business and every single data
+source. Um and so those that embrace it,
+I think they're the ones that going to
+be successful long term.
+>> Fantastic. Thank you very much. So
+Peter, um, couple of examples from you
+in terms of outcomes, ROI that
+manufacturers can expect and and and how
+you see the future over the next couple
+of years.
+>> Um, yeah, of course, I mean, there's
+at least here in Germany, most uh COOs
+um I'm current talking with say uh in
+order to stay competitive
+uh in the market, we need to uh lower
+our manufacturing costs significantly.
+And that is a lot of labor costs that
+need to be lowered. So I have heard
+people say we need to be able to have
+the same output of the production with
+half the number of people by 2030 things
+like that.
+>> So this of course means uh you have to
+um at least replace some roles um with
+uh with different capabilities. I think
+this is this is the first thing but in
+the end this is not only a technological
+this is an an organizational
+transformation question. Yeah,
+>> it's a question of budgeting. It's a
+question of who takes the ownership of
+this transformation process. So I think
+this is uh if that's my concluding word
+maybe how today um it's not only
+technology it's changing the
+organization to be digital and AI native
+and this is the hard part. The
+technology is surprisingly not the hard
+part I would say.
+>> Yeah. Yeah. No very very very true.
+um couple of examples from you on on the
+outcomes the manufacturers can expect
+and and how you see the future
+developing in the next two years.
+>> Yeah. Yeah. So I mean ultimately the the
+the the opportunity that agentic
+manufacturing you know presents for
+manufacturers is the the ability to move
+from more you know focusing on
+incremental gains you know like you know
+the Toyota systems where you get better
+each day you know because the problems
+of today are you know arguably different
+you know than that where you're really
+expected to to to change a product
+overnight. So maybe a shifting from
+making this kind of car to a different
+kind of car all together. So the the the
+the the biggest opportunity for agentic
+manufacturing is that to build an
+adaptive organization that is able to
+you know to to to to compete and you
+know keep up but that is you know you
+know not there yet in the future. Right
+now the outcomes that manufacturers can
+expect from AI are really around you
+know using AI to improve those existing
+KPIs that they they were already chasing
+before AI you know came through not
+really some new business models. So
+better asset utilization and and and and
+things like that. In fact, I was
+recently, you know, just preparing for
+this looking at a report by Deoid that
+mentioned an opportunity of uh getting,
+you know, 20% improvement on those
+existing KPIs that has been reported by
+manufacturers just using it to, you
+know, you know, address your existing
+KPIs.
+>> Okay, fantastic. Thank you. Uh David,
+very quickly, um your thoughts on on the
+future.
+>> Yeah, very quickly. I think there is no
+future. I mean, there is is is a
+present. So we've been talking a lot
+about future future future but the
+reality is that we're already working
+with companies who are using AI uh and
+and doing uh five six% of of um
+improvements in in different KPIs. So my
+recommendation to those companies who
+who want to join these processes, let
+the let the OT team lead the lead the
+project and and have support from multi-
+teams, but but definitely get the OT
+people to to really decide where to use
+AI and and it can be implemented. We
+don't need to wait one year or two
+years.
+>> Okay, fantastic. Thank you very much,
+David. So we're going to just have time
+for a couple of questions. Um I want to
+go to one which actually speaks to
+something that um that Peter was talking
+about a minute ago. He said really that
+the technology is not necessarily the
+issue. Um so so the question is what is
+the actual you know in terms of getting
+to to whatever level of autonomous we're
+talking about? Um, is the main blocker
+usually the technology or is it
+something to do with safety and security
+or is it just the internal culture they
+you know the fear of of of the risk of
+signing off on on a high level of
+autonomy for example?
+So do you want to answer that one Peter?
+Yeah, I mean what what we see and this
+is not the not only with AI but the
+whole digitization uh uh ecosystem has a
+problem since 10 years that we we have a
+big gap between what's happening in the
+OT and in the IT and what's happening in
+the sites versus what's happening in the
+group or on the corporate level.
+>> Yeah. So I think really coming up with a
+with a consistent strategy that
+satisfies both the standardization
+demands of corporate and the autonomy
+demands of of the sites because the
+sites know their production process
+best. This is the hardest challenge and
+I think this is uh what companies should
+focus on from a strategic perspective.
+It's much it's it's probably more
+important than any particular technology
+choice.
+>> Okay. Fantastic. Um there's another one
+here. Um in terms of your own
+experiences, where can I find it? Uh
+it [snorts] was about um
+yeah, root cause analysis. So do any of
+you have experience of using AI for root
+cause analysis in the manufacturing
+environments?
+>> Yeah, we we actually have a root cause
+analysis agent that we're currently uh
+building. Um, I'm in manufacturing
+excellence and and continuous
+improvement is as part of that.
+>> Um, I think the hardest part uh I'd say
+around root cause analysis is pulling
+from all the different data sources. And
+so if you're thinking about solving a
+problem, you need to get historical
+information. Um, and so that could be
+your maintenance failures in your ERP or
+SAP system. It could be your process
+data, temperatures, pressures, and flows
+and your historian. It could be your
+equipment manuals and procedures. It can
+be um some of that context that we were
+talking about earlier. And so trying to
+connect to all of those um that for us
+has actually been a pretty big
+challenge. But once you make the
+connection and you apply that context
+layer, I mean it it is unbelievable
+things that we spent months u uh doing
+root cause investigations and meetings.
+one single prompt. Once you build that
+infrastructure, 30 seconds later, um it
+we get to the same conclusion. [snorts]
+>> Fantastic. All right. Thanks. Um guys,
+I'm afraid we have unfortunately run out
+of time. If you haven't, um if we didn't
+get to your question, we will do our
+best to get back to you on your
+questions. Uh we have a record of
+everything that people have asked. Uh
+and we will work with the panelists to
+try and get you some answers uh as soon
+as we can. Um so it just remains for me
+to say a big thank you to our speakers
+for this session. Um, great discussion.
+Uh, we had to skip over a few things
+because there's there was so much to
+talk about, but hopefully we covered a
+lot of ground and gave you a lot of
+value. Uh, because obviously the
+audience, this is your this is why we're
+doing this. Um, thank you again to the
+sponsors. So, Hive MQ Cybers and Barbara
+today. Thank you very much. If it wasn't
+for the sponsorship, then then the event
+wouldn't be happening at all. So, we're
+incredibly grateful for you for that. Um
+thanks to all our attendees and uh it's
+I'll be back again in in an hour or so
+um for for another session but the next
+session today first of all is physical
+AI in production the data infrastructure
+gap holding industrial operations back.
+So enjoy that one and I will see you
+again in an hour. Thank you very much
+everybody.
